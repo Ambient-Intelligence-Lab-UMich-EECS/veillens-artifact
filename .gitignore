@@ -1,0 +1,42 @@
+# --- data, weights, outputs: never committed (see docs/DATA.md) ---
+data/
+runs/
+*.pt
+*.pth
+*.pth.tar
+*.safetensors
+*.ckpt
+
+# --- credentials: never committed, in any form ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.netrc
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# --- editors / OS ---
+.DS_Store
+.idea/
+.vscode/
+
+# --- archives ---
+*.tar.gz
+*.tgz
+*.zip
+
+# Keep the small JSON that documents what the tool emits, and the manifests.
+!examples/**/*.json
+!manifests/*.json

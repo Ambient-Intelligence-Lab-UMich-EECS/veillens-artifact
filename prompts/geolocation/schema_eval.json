@@ -1,0 +1,88 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reasoning": {
+            "type": "string",
+            "additionalProperties": false,
+            "description": "Step-by-step analysis of visual clues."
+        },
+        "location_estimate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "number",
+                    "description": "Latitude in decimal degrees"
+                },
+                "longitude": {
+                    "type": "number",
+                    "description": "Longitude in decimal degrees"
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": [
+                        "High",
+                        "Medium",
+                        "Low"
+                    ],
+                    "description": "Model's confidence level"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Country, State/Province, City if known"
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude",
+                "confidence",
+                "region"
+            ]
+        },
+        "critical_features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "geolocation_description",
+                            "properties"
+                        ],
+                        "properties": {
+                            "geolocation_description": {
+                                "type": "string",
+                                "description": "How this visual clue informs location (signals, patterns, regional cues)."
+                            },
+                            "properties": {
+                                "type": "array",
+                                "description": "Level(s) at which this clue is informative.",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "country level clue",
+                                        "city level clue",
+                                        "street level clue"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "features"
+            ]
+        }
+    },
+    "required": [
+        "reasoning",
+        "location_estimate",
+        "critical_features"
+    ]
+}

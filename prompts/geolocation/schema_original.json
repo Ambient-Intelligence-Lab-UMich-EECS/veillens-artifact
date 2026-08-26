@@ -1,0 +1,102 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reasoning": {
+            "type": "string",
+            "additionalProperties": false,
+            "description": "Step-by-step analysis of visual clues."
+        },
+        "location_estimate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "type": "number",
+                    "description": "Latitude in decimal degrees"
+                },
+                "longitude": {
+                    "type": "number",
+                    "description": "Longitude in decimal degrees"
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": [
+                        "High",
+                        "Medium",
+                        "Low"
+                    ],
+                    "description": "Model's confidence level"
+                },
+                "region": {
+                    "type": "string",
+                    "description": "Country, State/Province, City if known"
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude",
+                "confidence",
+                "region"
+            ]
+        },
+        "critical_features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "object_description",
+                            "non_geolocation_element",
+                            "geolocation_element",
+                            "target_concept",
+                            "properties"
+                        ],
+                        "properties": {
+                            "object_description": {
+                                "type": "string",
+                                "description": "A concise, visually grounded description of a single concrete object or region in the image (e.g., 'blue street sign on a wall', 'white license plate on a red car'). Avoid abstract or relational terms."
+                            },
+                            "non_geolocation_element": {
+                                "type": "string",
+                                "description": "A short list or comma-separated description of alternative, non-location-specific visual attributes that allow SDXL to regenerate a similar object in a neutralized style (e.g., color, material, shape, lighting)."
+                            },
+                            "geolocation_element": {
+                                "type": "string",
+                                "description": "A short list or comma-separated description of all visual cues that explicitly reveal location information (e.g., text, language, landmarks, store names, architectural styles, license plates)."
+                            },
+                            "target_concept": {
+                                "type": "string",
+                                "description": "The main object or concept for detection (e.g., 'street sign', 'license plate', 'building number'). "
+                            },
+                            "properties": {
+                                "type": "array",
+                                "description": "Level(s) at which this clue is informative.",
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "country level clue",
+                                        "city level clue",
+                                        "street level clue"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "features"
+            ]
+        }
+    },
+    "required": [
+        "reasoning",
+        "location_estimate",
+        "critical_features"
+    ]
+}

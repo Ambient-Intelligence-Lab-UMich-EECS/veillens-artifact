@@ -1,0 +1,109 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reasoning": {
+            "type": "string",
+            "additionalProperties": false,
+            "description": "Step-by-step analysis of visual clues."
+        },
+        "personal_info_privacy_score": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "score": {
+                    "type": "number",
+                    "description": "privacy score between 0.0 and 1.0. Higher means more privacy risk"
+                },
+                "confidence": {
+                    "type": "string",
+                    "enum": [
+                        "High",
+                        "Medium",
+                        "Low"
+                    ],
+                    "description": "Model's confidence level"
+                }
+            },
+            "required": [
+                "score",
+                "confidence"
+            ]
+        },
+        "critical_features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "object_description",
+                            "Anonymized_element",
+                            "privacy_element",
+                            "target_concept",
+                            "severity_level",
+                            "attributes"
+                        ],
+                        "properties": {
+                            "object_description": {
+                                "type": "string",
+                                "description": "A concise, visually grounded description of a single concrete object or region in the image. Avoid abstract or relational terms."
+                            },
+                            "Anonymized_element": {
+                                "type": "string",
+                                "description": "A short list or comma-separated description of alternative, anonymized visual attributes that allow SDXL to regenerate a similar object in a neutralized style."
+                            },
+                            "privacy_element": {
+                                "type": "string",
+                                "description": "A short list or comma-separated description of all visual cues that explicitly reveal privacy information."
+                            },
+                            "target_concept": {
+                                "type": "string",
+                                "description": "The main object or concept for detection (e.g., 'street sign', 'license plate', 'building number'). "
+                            },
+                            "severity_level": {
+                                "type": "integer",
+                                "enum": [1, 2, 3, 4],
+                                "description": "Privacy level from 1 (highest privacy risk) to 4 (lowest privacy risk)"
+                            },
+                            "attributes": {
+                                "type": "array",
+                                "description": "attribute(s) that this clue belong to",
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "Biometric data (identifiable faces, fingerprints, iris scans)",
+                                        "Government identlfiers (passport, driver's license, SSN, national ID)",
+                                        "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+                                        "Medical data (prescriptions, heath records, medical imagery) ",
+                                        "Financial data (credit cards, bank statements, account numbers) ",
+                                        "Nudity or Intimate content ",
+                                        "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+                                        "Personal attributes (age, gender, physical appearance) ",
+                                        "Location information (addresses, GPS, identifiable landmarks)", 
+                                        "Activities & behaviors (habits, routines, consumption patterns) ",
+                                        "Property & assets (vehicles, homes without addresses) ",
+                                        "Generic documents or digital artifacts ",
+                                        "Metadata or background information ",
+                                        "Crowds or distant unidentifiable individuals "
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "features"
+            ]
+        }
+    },
+    "required": [
+        "reasoning",
+        "personal_info_privacy_score",
+        "critical_features"
+    ]
+}

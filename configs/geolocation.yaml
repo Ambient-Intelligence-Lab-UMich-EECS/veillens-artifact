@@ -1,0 +1,85 @@
+# VeilLens — geolocation setting.
+#
+# Every value here is either reported in the paper or needed to locate a file. Paths use
+# ${paths.*} placeholders, resolved from VEILLENS_DATA / VEILLENS_RUNS / VEILLENS_MODELS /
+# VEILLENS_GSAM2 at load time, so this file is machine-independent.
+
+dataset:
+  dataset_json_file: "${paths.data}/cityscapes/dataset.json"
+
+experiment:
+  privacy_class: geolocation
+  # Which cue granularities to remove. Any subset of:
+  #   "country level clue", "city level clue", "street level clue"
+  mask_level: ["street level clue", "city level clue"]
+  # Round-2 iterations after the round-1-only pass, so the run writes up to max_iter + 1
+  # protected images (iter 0 = round 1's cues, then one per verification gate).
+  max_iter: 3
+  # Stop iterating an image once the oracle's prediction is at least this far off (km).
+  val_dist: 5.0
+
+prompts:
+  round1_schema: "prompts/geolocation/schema_original.json"
+  round1_prompt: "prompts/geolocation/defense_base_prompt.txt"
+  round2_schema: "prompts/geolocation/schema_original.json"
+  round2_prompt: "prompts/geolocation/phase2_base_prompt.txt"
+  eval_schema:   "prompts/geolocation/schema_eval.json"
+  eval_prompt:   "prompts/geolocation/attack_base_prompt.txt"
+
+# Round-2 residual search. fine_grained: false verifies the whole image each iteration;
+# true runs the multi-scale sliding-window search over crops instead.
+round2_regions:
+  fine_grained: false
+  crop_width: 768
+  crop_height: 768
+  overlap_percent: 0.1
+  upscale_target: 1024
+
+models:
+  grounded_sam2_root: "${paths.gsam2}"
+  sam2_checkpoint: "${paths.models}/sam2/sam2.1_hiera_large.pt"
+  sam2_model_config: "configs/sam2.1/sam2.1_hiera_l.yaml"      # Hydra name, relative to the sam2 package
+  grounding_dino_config: "grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+  grounding_dino_checkpoint: "${paths.models}/gdino/groundingdino_swint_ogc.pth"
+  sdxl_base_model: "diffusers/stable-diffusion-xl-1.0-inpainting-0.1"
+  controlnet_depth: "diffusers/controlnet-depth-sdxl-1.0-small"
+  midas_model: "DPT_Hybrid"
+
+detection:
+  box_threshold: 0.3
+  text_threshold: 0.3
+  top_k_boxes: 3          # detection boxes kept per cue, after target-concept filtering
+  device: "cuda"
+
+generation:
+  num_inference_steps: 50
+  guidance_scale: 7.5
+  controlnet_conditioning_scale: 0.7
+  strength: 0.8
+  generator_seed: 42
+  # Prepended to every inpainting prompt; it sets the visual style of edited regions and
+  # therefore affects the perceptual-quality metrics.
+  positive_prompt_prefix: "Mid century artstyle, cartoonistic artstyle, 1960s cartoon style"
+  default_negative_prompt: "blurry, ugly, distorted, low quality, bad anatomy, watermark, text, duplicate, mutilated, extra fingers, poorly drawn hands, poorly drawn face, deformed, bad proportions"
+
+performance:
+  use_fp16: true
+  use_tf32: true
+  enable_attention_slicing: true
+  enable_vae_tiling: true
+
+# The defense oracle: round-1 cue discovery, round-2 residual analysis, and the per-iteration gate.
+reasoning:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+# The attacker that measures residual risk. Its numbers are what the paper reports, so changing
+# this model changes the measurement, not the defense.
+evaluation:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+output:
+  base_dir: "${paths.runs}/geolocation"

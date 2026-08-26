@@ -1,0 +1,80 @@
+# VeilLens — compositional-privacy setting (CPRT rubric over VISPR images).
+#
+# Every value here is either reported in the paper or needed to locate a file. Paths use
+# ${paths.*} placeholders, resolved from VEILLENS_DATA / VEILLENS_RUNS / VEILLENS_MODELS /
+# VEILLENS_GSAM2 at load time, so this file is machine-independent.
+
+dataset:
+  # 500 CPRT-Bench test rows over VISPR test2017. The images are not redistributable;
+  # see docs/DATA.md for how to fetch them.
+  dataset_json_file: "${paths.repo_root}/manifests/compositional_500.json"
+
+experiment:
+  # "compositional" is the canonical name; "personal_info" and "pi" are accepted aliases,
+  # because cached result records were written under the older spelling.
+  privacy_class: compositional
+  # Severity level: remove cues at or below this level of the four-level CPRT taxonomy
+  # (1 = severe, 4 = low risk).
+  mask_level: 2
+  # Round-2 iterations after the round-1-only pass. The compositional setting has no
+  # distance-based early stop, so the loop always runs the full budget.
+  max_iter: 1
+
+prompts:
+  round1_schema: "prompts/compositional/schema_original.json"
+  round1_prompt: "prompts/compositional/defense_base_prompt.txt"
+  round2_schema: "prompts/compositional/schema_original.json"
+  round2_prompt: "prompts/compositional/defense_base_prompt.txt"
+  eval_schema:   "prompts/compositional/schema_original.json"
+  eval_prompt:   "prompts/compositional/defense_base_prompt.txt"
+
+round2_regions:
+  fine_grained: false
+  crop_width: 768
+  crop_height: 768
+  overlap_percent: 0.1
+  upscale_target: 1024
+
+models:
+  grounded_sam2_root: "${paths.gsam2}"
+  sam2_checkpoint: "${paths.models}/sam2/sam2.1_hiera_large.pt"
+  sam2_model_config: "configs/sam2.1/sam2.1_hiera_l.yaml"      # Hydra name, relative to the sam2 package
+  grounding_dino_config: "grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+  grounding_dino_checkpoint: "${paths.models}/gdino/groundingdino_swint_ogc.pth"
+  sdxl_base_model: "diffusers/stable-diffusion-xl-1.0-inpainting-0.1"
+  controlnet_depth: "diffusers/controlnet-depth-sdxl-1.0-small"
+  midas_model: "DPT_Hybrid"
+
+detection:
+  box_threshold: 0.3
+  text_threshold: 0.3
+  top_k_boxes: 3
+  device: "cuda"
+
+generation:
+  num_inference_steps: 50
+  guidance_scale: 7.5
+  controlnet_conditioning_scale: 0.7
+  strength: 0.8
+  generator_seed: 42
+  positive_prompt_prefix: "Mid century artstyle, cartoonistic artstyle, 1960s cartoon style"
+  default_negative_prompt: "blurry, ugly, distorted, low quality, bad anatomy, watermark, text, duplicate, mutilated, extra fingers, poorly drawn hands, poorly drawn face, deformed, bad proportions"
+
+performance:
+  use_fp16: true
+  use_tf32: true
+  enable_attention_slicing: true
+  enable_vae_tiling: true
+
+reasoning:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+evaluation:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+output:
+  base_dir: "${paths.runs}/compositional"
