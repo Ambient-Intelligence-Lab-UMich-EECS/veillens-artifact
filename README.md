@@ -13,7 +13,7 @@ VeilLens takes an image and a privacy goal and runs a four-stage loop:
 | **Reason** | A VLM oracle says what is inferable, and which visual evidence supports it | `src/veillens/reason/` |
 | **Ground** | Each cue, described in words, becomes a pixel mask (Grounding DINO → SAM 2) | `src/veillens/ground/` |
 | **Edit** | The selected cues are inpainted away (SDXL + depth ControlNet), preserving the rest | `src/veillens/edit/` |
-| **Verify** | The oracle re-reads the edited image; if it still leaks, the loop runs again | `src/veillens/loop/` |
+| **Verify** | The oracle re-reads the edited image; if it still leaks at the granularity you asked for, the loop runs again | `src/veillens/verify/`, `src/veillens/loop/` |
 
 Because the reasoning step is explicit, you can see *why* something was flagged rather than getting
 an opaquely blurred photo back.
@@ -55,6 +55,15 @@ veillens-score examples/results/geolocation/evaluation_results.json
 veillens-score examples/results/compositional/run_evaluation_results.json --setting compositional
 ```
 
+`veillens-score` reports the distribution — how far off the attacker was. `veillens-verify` reports
+the verdict — whether the cue granularities the run promised to remove are actually gone, by two
+independent criteria. It reads the run's own JSON, so it needs no key and no GPU either:
+
+```bash
+veillens-verify examples/results/geolocation \
+    --responses results/geolocation_100/evaluation/gpt-5.2/responses
+```
+
 ## Check an install before spending anything
 
 ```bash
@@ -78,8 +87,11 @@ experiment:
   privacy_class: geolocation                              # geolocation | compositional
   mask_level: ["street level clue", "city level clue"]    # which cues to remove
   max_iter: 3                                             # reason→edit→verify rounds
-  val_dist: 5.0                                           # stop once the oracle is this far off (km)
 ```
+
+`mask_level` is the only protection knob, and verification is derived from it: removing street- and
+city-level cues is city-level protection, so the loop iterates until the attacker is at least 10 km
+wrong and every image is checked against 10 km. There is no second threshold to keep in sync.
 
 ## Compare against prior work
 
@@ -131,6 +143,7 @@ directory.
 |---|---|
 | [docs/USAGE.md](docs/USAGE.md) | Every entry point, every config key, reading the output tree |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How the loop and its worker queues fit together |
+| [docs/VERIFICATION.md](docs/VERIFICATION.md) | The granularity ladder, the two pass criteria, and what `mask_level` derives |
 | [docs/DATA.md](docs/DATA.md) | Datasets and weights: source, licence, target directory, size |
 | [docs/BASELINES.md](docs/BASELINES.md) | The five prior-work defenses: install, run, and what is faithful to upstream |
 | [THIRD_PARTY.md](THIRD_PARTY.md) | Third-party components and their licences |

@@ -1,7 +1,8 @@
 # Usage
 
-Three commands ship: `veillens-protect` runs the loop, `veillens-baseline` runs a prior-work
-defense on the same images, and `veillens-score` reads what either of them wrote.
+Four commands ship: `veillens-protect` runs the loop, `veillens-baseline` runs a prior-work
+defense on the same images, `veillens-score` reads what either of them wrote, and
+`veillens-verify` turns a finished run into a per-image verdict.
 
 ## `veillens-score` — no key, no GPU, no data
 
@@ -16,6 +17,26 @@ veillens-score examples/results/compositional/run_evaluation_results.json --sett
 For geolocation it reports the fraction of images the attacker still localises within each
 distance threshold, before and after protection. For compositional privacy it reports the mean
 risk score before and after, and the relative reduction.
+
+## `veillens-verify` — no key, no GPU, no data
+
+Where `veillens-score` reports a distribution, this reports a verdict: whether the cue
+granularities the run promised to remove are actually gone.
+
+```bash
+veillens-verify runs/geolocation/my_run
+veillens-verify examples/results/geolocation \
+    --responses results/geolocation_100/evaluation/gpt-5.2/responses
+```
+
+Two criteria per image, both derived from `experiment.mask_level` and reported separately: the
+attacker must be at least the target rung's distance from the truth (10 km under city-level
+protection), **and** its own report must name no surviving cue at a protected granularity. A
+criterion that could not be computed is reported as such and never counts as a pass.
+
+A live run writes the same report itself, to `evaluation_results/verification.json`. The full
+model — the granularity ladder, why there are two criteria, and what the attacker prompt has to
+allow for the second one to mean anything — is in [VERIFICATION.md](VERIFICATION.md).
 
 ## `veillens-protect --dry-run` — validate an install
 
@@ -61,7 +82,13 @@ One file per privacy setting, in `configs/`. Every key is listed here.
 | `privacy_class` | `geolocation` or `compositional`. Determines the schema, the prompts, the evaluation metric, and what `mask_level` means. `personal_info` and `pi` are accepted aliases for `compositional` |
 | `mask_level` | **geolocation**: any subset of `["country level clue", "city level clue", "street level clue"]`. **compositional**: an integer 1–4; level N removes cues of severity ≤ N (1 = severe) |
 | `max_iter` | Round-2 iterations after the round-1-only pass. The run writes up to `max_iter + 1` protected images: iteration 0 removes round 1's cues, then one image per verification gate |
-| `val_dist` | **geolocation only.** Stop iterating an image once the oracle's prediction is at least this far off, in km. The compositional setting has no distance-based stop and always runs the full budget |
+| `gate_requires_residual_clear` | Also require the oracle to report no surviving cue at a protected granularity before an image may stop. Default `false`; strictly stronger than the distance gate, and strictly more iterations |
+
+There is no separate stop-distance key. The threshold is derived from `mask_level`: the coarsest
+protected granularity picks a rung on the ladder, and the rung fixes the distance — street → 1 km,
+city → 10 km, country → 100 km. `experiment.val_dist` was that key and is now rejected at load, so a
+stale config fails loudly instead of running under a threshold that no longer matches what it
+removes. See [VERIFICATION.md](VERIFICATION.md).
 
 ### `prompts`
 

@@ -5,9 +5,18 @@ response. **Reasoning only — no images are included.** The aggregate these res
 is [`examples/results/geolocation/evaluation_results.json`](../../examples/results/geolocation/evaluation_results.json),
 which is byte-identical to the source run's own aggregate and so is not duplicated here.
 
-The run is the loop of `configs/geolocation.yaml` with `max_iter: 3` and `val_dist: 5.0`: read the
-image, remove the street- and city-level cues, **re-read the edited image**, and stop as soon as the
-oracle's guess is at least 5 km off — otherwise edit again, up to three verifications.
+The run is the loop of `configs/geolocation.yaml` with `max_iter: 3` and the then-current
+`val_dist: 5.0`: read the image, remove the street- and city-level cues, **re-read the edited
+image**, and stop as soon as the oracle's guess is at least 5 km off — otherwise edit again, up to
+three verifications.
+
+> **Produced before the granularity verification change.** This run used the superseded
+> `experiment.val_dist: 5.0` stop rule and the earlier attacker prompt, which required the attacker
+> to report at least one street-level clue. The current code derives its stop threshold from
+> `experiment.mask_level` instead — city-level protection stops at **10 km**, not 5 — and the
+> attacker prompt now permits an empty clue list. Both the defense's behaviour and the measuring
+> instrument therefore differ from what produced the numbers below, and these responses cannot be
+> used to evaluate the residual-cue criterion. See [docs/VERIFICATION.md](../../docs/VERIFICATION.md).
 
 ```
 results/geolocation_100/

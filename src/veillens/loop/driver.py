@@ -39,6 +39,8 @@ from veillens.metrics.geodesic import DistanceCalculator
 from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, RUN_SUBDIRS
 from veillens.privacy.spec import get_spec
 from veillens.reason.oracle import PrivacyOracle
+from veillens.verify.granularity import target_rung, threshold_km, verdict
+from veillens.verify.report import RunVerification
 from veillens.vlm.registry import client_from_config
 
 logger = logging.getLogger(__name__)
@@ -121,6 +123,8 @@ class ProtectionLoop:
         self.dataset = []
         self.phase_cache = {}
         self.evaluation_results = {}
+        # Stage IV verdicts, one per image, built as each evaluation entry is created.
+        self._verdicts = {}
 
         # Timing tracking
         self.phase_timings = {}
@@ -680,6 +684,7 @@ class ProtectionLoop:
                 print(f"[Phase 5] Failed to evaluate {image_id}")
 
         self._save_evaluation_results()
+        self._save_verification()
         self._print_summary_statistics()
 
         print("[Phase 5] Completed evaluation and reporting")
@@ -733,6 +738,19 @@ class ProtectionLoop:
         total_pixels = img.shape[0] * img.shape[1]
         mask_percentage = float(total_mask_pixels / total_pixels * 100) if total_pixels > 0 else 0.0
 
+        # Stage IV: does the finished image actually meet the granularity the run targeted?
+        # Both criteria are recorded per image -- the distance one needs the dataset label and so
+        # is an offline measurement; the residual one reads the granularity labels the attacker
+        # itself emitted and needs no label at all.
+        image_verdict = verdict(
+            image_id,
+            privacy_class=self.spec.name,
+            mask_level=self.config['experiment']['mask_level'],
+            error=processed_error,
+            attacker_result=processed_result,
+        )
+        self._verdicts[image_id] = image_verdict
+
         # Create evaluation entry
         self.evaluation_results[image_id] = {
             self.spec.gt_output_key: self.spec.serialize_ground_truth(ground_truth),
@@ -753,7 +771,8 @@ class ProtectionLoop:
                     'gpt_response': self.spec.extract_prediction_summary(processed_result),
                     self.spec.error_increase_key: error_increase,
                     'mask_pixels': total_mask_pixels,
-                    'mask_percentage': mask_percentage
+                    'mask_percentage': mask_percentage,
+                    'verification': image_verdict.as_json()
                 }
             ]
         }
@@ -925,6 +944,34 @@ class ProtectionLoop:
         with open(out_path, 'w') as f:
             json.dump(payload, f, indent=2)
         print(f"[Pipeline] Saved clue stats to {out_path}")
+
+    def _save_verification(self):
+        """
+        Write the granularity verdict for the run, and print it.
+
+        This is Stage IV's output: not how far off the attacker was, but whether the cue
+        granularities `experiment.mask_level` promised to remove are actually gone. Built from
+        the verdicts already computed per image in `_create_evaluation_entry`, so it costs no
+        extra API calls.
+        """
+        if not self._verdicts:
+            return
+
+        mask_level = self.config['experiment']['mask_level']
+        report = RunVerification(
+            privacy_class=self.spec.name,
+            mask_level=mask_level,
+            target_rung=target_rung(self.spec.name, mask_level),
+            threshold_km=threshold_km(self.spec.name, mask_level),
+            residual_source=str(self.dirs['eval_cache']),
+            verdicts=dict(self._verdicts),
+            matched=len(self._verdicts),
+        )
+
+        out_path = self.dirs['evaluation_results'] / 'verification.json'
+        report.write(out_path)
+        print(report.render())
+        print(f"[Pipeline] Saved verification to {out_path}")
 
     def _print_timing_summary(self, total_time: float):
         """

@@ -25,6 +25,8 @@ from typing import Any, Dict, Mapping
 import yaml
 
 from veillens import paths
+from veillens.privacy.registry import canonical_name
+from veillens.verify.granularity import CLUE_LEVEL_TO_RUNG, target_rung
 
 __all__ = ["load_config", "validate_config", "substitute_paths", "REQUIRED_SECTIONS"]
 
@@ -84,7 +86,8 @@ def validate_config(config: Dict[str, Any], *, check_dataset: bool = True) -> No
             ``--dry-run`` style checks on a machine that has the code but not the data.
 
     Raises:
-        ValueError: a required section is missing.
+        ValueError: a required section is missing, or ``experiment`` carries a key that no
+            longer means anything.
         FileNotFoundError: the dataset manifest is absent and *check_dataset* is set.
     """
     missing = [s for s in REQUIRED_SECTIONS if s not in config]
@@ -94,6 +97,8 @@ def validate_config(config: Dict[str, Any], *, check_dataset: bool = True) -> No
             f"Expected all of: {', '.join(REQUIRED_SECTIONS)}"
         )
 
+    _validate_experiment(config.get("experiment") or {})
+
     if check_dataset:
         manifest = Path(config["dataset"]["dataset_json_file"])
         if not manifest.exists():
@@ -101,6 +106,39 @@ def validate_config(config: Dict[str, Any], *, check_dataset: bool = True) -> No
                 f"Dataset manifest not found: {manifest}\n"
                 "Set VEILLENS_DATA to where your datasets live, or see docs/DATA.md."
             )
+
+
+def _validate_experiment(experiment: Mapping[str, Any]) -> None:
+    """
+    Reject experiment keys that would silently do nothing.
+
+    A config key that is documented but dead is a reproducibility failure, not a harmless
+    leftover: it tells a reader the run was controlled by something that never ran. So a
+    superseded key is an error at load, with the migration in the message, rather than a value
+    quietly ignored at runtime.
+    """
+    if "val_dist" in experiment:
+        raise ValueError(
+            "experiment.val_dist is no longer read. The loop now stops at the threshold derived "
+            "from experiment.mask_level: the coarsest protected cue granularity picks a rung on "
+            "the ladder, and the rung fixes the distance (city-level protection => 10 km).\n"
+            "Remove the key. See docs/VERIFICATION.md."
+        )
+
+    mask_level = experiment.get("mask_level")
+    if mask_level is None:
+        raise ValueError(
+            "experiment.mask_level is required: it is what the run removes and what "
+            "verification checks. See docs/VERIFICATION.md."
+        )
+
+    privacy_class = canonical_name(experiment.get("privacy_class", "geolocation"))
+    if privacy_class == "geolocation" and target_rung(privacy_class, mask_level) is None:
+        raise ValueError(
+            f"experiment.mask_level={mask_level!r} names no known cue granularity, so no "
+            f"verification rung can be derived from it. Expected a list drawn from: "
+            f"{', '.join(CLUE_LEVEL_TO_RUNG)}."
+        )
 
 
 def load_config(config_path: str | Path, *, validate: bool = True,

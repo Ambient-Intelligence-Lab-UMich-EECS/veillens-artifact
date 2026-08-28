@@ -21,7 +21,9 @@ from pathlib import Path
 
 from veillens.config import load_config, validate_config
 from veillens.paths import resolve
+from veillens.privacy.registry import canonical_name
 from veillens.privacy.spec import get_spec
+from veillens.verify.granularity import target_rung, threshold_km
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -42,7 +44,8 @@ the loop, per image:
   ground    each cue is localised to a mask (Grounding DINO + SAM 2)
   edit      selected cues are inpainted away (SDXL + ControlNet)
   verify    the oracle re-reads the result; if it still leaks, iterate
-            (bounded by experiment.max_iter and experiment.val_dist)
+            (bounded by experiment.max_iter, and by the distance derived
+             from experiment.mask_level -- see docs/VERIFICATION.md)
 """,
     )
     parser.add_argument("--config", required=True,
@@ -113,9 +116,16 @@ def _summarise(config: dict) -> None:
     print(f"  mask level    : {experiment.get('mask_level')}")
     # max_iter counts R2 iterations; R1's own inpainting iteration adds one more.
     print(f"  max rounds    : {int(experiment.get('max_iter', 1)) + 1}")
-    val_dist = experiment.get('val_dist')
-    print(f"  stop when     : error >= {val_dist} km" if val_dist is not None
-          else "  stop when     : max rounds reached (no distance-based stop)")
+    privacy_class = canonical_name(experiment.get('privacy_class', 'geolocation'))
+    mask_level = experiment.get('mask_level')
+    rung = target_rung(privacy_class, mask_level)
+    limit = threshold_km(privacy_class, mask_level)
+    if limit is not None:
+        print(f"  target        : {rung} ({limit:g} km, derived from mask_level)")
+        print(f"  stop when     : error >= {limit:g} km, or max rounds reached")
+    else:
+        print("  target        : no distance rung for this privacy class")
+        print("  stop when     : max rounds reached (no distance-based stop)")
     print(f"  dataset       : {config['dataset']['dataset_json_file']}")
     evaluation = config.get('evaluation', {})
     reasoning = config.get('reasoning') or evaluation

@@ -3,6 +3,14 @@
 Every VLM response that still exists behind the MAPILLARY geolocation experiment, one file per
 response. **Reasoning only — no images are included.**
 
+> **Produced before the granularity verification change.** This run used the superseded
+> `experiment.val_dist: 5.0` stop rule and the earlier attacker prompt, which required the attacker
+> to report at least one street-level clue. The current code derives its stop threshold from
+> `experiment.mask_level` instead — city-level protection stops at **10 km**, not 5 — and the
+> attacker prompt now permits an empty clue list. Both the defense's behaviour and the measuring
+> instrument therefore differ from what produced the numbers below, and these responses cannot be
+> used to evaluate the residual-cue criterion. See [docs/VERIFICATION.md](../../docs/VERIFICATION.md).
+
 This folder is smaller than its siblings, and the reason is not editorial. Most of the run's caches
 have been deleted from the filesystem. What is here is what survives; the gaps are enumerated rather
 than smoothed over, because the gaps are the finding.

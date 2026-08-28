@@ -52,6 +52,7 @@ all = ["veillens[ground,edit,baselines]"]
 veillens-protect = "veillens.cli.protect:main"
 veillens-baseline = "veillens.cli.baseline:main"
 veillens-score = "veillens.cli.score:main"
+veillens-verify = "veillens.cli.verify:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

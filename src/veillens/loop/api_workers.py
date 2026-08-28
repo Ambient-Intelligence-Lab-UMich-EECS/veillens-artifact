@@ -31,6 +31,7 @@ from veillens.loop.queues import (
 from veillens.loop.state import GlobalState, ImageState
 from veillens.privacy.spec import get_spec
 from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR
+from veillens.verify.granularity import residual_cues, target_rung, threshold_km
 
 logger = logging.getLogger(__name__)
 
@@ -76,6 +77,22 @@ class APIQueueHandler:
         # The iteration gate is the defense's own control loop, not the reported metric, so it
         # runs on the reasoning backend -- the same oracle that produced the clues it is checking.
         self.gate_role = 'reason'
+
+        # What "protected enough to stop" means, derived from the granularity the run targets
+        # rather than set by hand. mask_level says which cue granularities to remove; the coarsest
+        # of them fixes the rung, and the rung fixes the distance. One knob, so the thing being
+        # removed and the thing being checked cannot drift apart.
+        mask_level = config['experiment']['mask_level']
+        self.target_rung = target_rung(self.spec.name, mask_level)
+        self.stop_threshold_km = threshold_km(self.spec.name, mask_level)
+        self.mask_level = mask_level
+
+        # Off by default: the gate stops on distance alone, which is the criterion the reported
+        # numbers use. Turning this on additionally requires the oracle to report no surviving cue
+        # at a protected granularity -- strictly stronger, and strictly more iterations.
+        self.gate_requires_residual_clear = bool(
+            config['experiment'].get('gate_requires_residual_clear', False)
+        )
 
         # Output paths
         self.output_base = Path(config['output']['base_dir'])
@@ -344,10 +361,10 @@ class APIQueueHandler:
 
         For iter i, runs a full-image GPT prediction on the image entering iter i
         (gray-masked R1 image for iter 1; working image for iter >=2). Caches as
-        iter{i}_full_img.json. If the prediction's location error >= val_dist (km),
-        marks the image as "stop after current iter" — the compositor will copy the
-        in-flight working image to final.png once outstanding SD work for iter (i-1)
-        completes (or immediately if no SD work is pending). Otherwise pushes an
+        iter{i}_full_img.json. If the prediction's location error clears the threshold derived
+        from experiment.mask_level (km), marks the image as "stop after current iter" — the
+        compositor will copy the in-flight working image to final.png once outstanding SD work
+        for iter (i-1) completes (or immediately if no SD work is pending). Otherwise pushes an
         r2_setup SegTask to begin iter i's regional R2.
         """
         state = self.gs.get_image(task.image_id)
@@ -400,18 +417,30 @@ class APIQueueHandler:
             except Exception as e:
                 logger.warning(f"[Gate iter{iter_idx}] {task.image_id}: error metric failed: {e}")
 
-        val_dist = float(self.config['experiment'].get('val_dist', float('inf')))
-        # Only apply the val_dist gate when the metric is a geolocation distance (km).
-        # For personal_info the metric is a unitless score diff; never stop early.
+        # Only apply the distance gate when the metric is a geolocation distance (km). The
+        # compositional metric is a unitless score diff with no rung on the ladder, so
+        # stop_threshold_km is None there and the loop always runs its full budget.
         should_stop = (
-            self.spec.name == 'geolocation'
+            self.stop_threshold_km is not None
             and err is not None
-            and err >= val_dist
+            and err >= self.stop_threshold_km
         )
 
+        residual = None
+        if should_stop and self.gate_requires_residual_clear:
+            residual = residual_cues(result, self.spec.name, self.mask_level)
+            if residual:
+                should_stop = False
+
+        threshold_note = (
+            f"threshold={self.stop_threshold_km} km (rung={self.target_rung}, from mask_level)"
+            if self.stop_threshold_km is not None
+            else "threshold=n/a (no distance rung for this privacy class)"
+        )
+        residual_note = f", residual_cues={len(residual)}" if residual is not None else ""
         logger.info(
             f"[Gate iter{iter_idx}] {task.image_id}: err={err}, "
-            f"val_dist={val_dist}, stop={should_stop}"
+            f"{threshold_note}{residual_note}, stop={should_stop}"
         )
 
         if should_stop:

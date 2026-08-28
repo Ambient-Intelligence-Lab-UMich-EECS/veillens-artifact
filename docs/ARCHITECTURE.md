@@ -7,10 +7,14 @@ The four stages of the paper map onto the package like this:
 | I — reason | `reason/oracle.py` | `PrivacyOracle.get_geolocation_prediction` |
 | II — ground | `ground/segmenter.py` | `GroundedSAM2Segmenter.segment` |
 | III — edit | `edit/{pipeline,inpaint,control}.py` | `ControlNetInpainter.inpaint_batch` |
-| IV — verify | `loop/{driver,api_workers,seg_worker}.py` | the gate and final-eval tasks |
+| IV — verify | `verify/granularity.py`, `loop/{driver,api_workers}.py` | `verify.verdict`, the gate and final-eval tasks |
 
-There is no `verify/` module. Verification is not a separate stage in the code — it is the same
-oracle from stage I re-reading an edited image, so it lives in the loop that schedules it.
+Stage IV is split, and the split is deliberate. *Re-reading* the edited image is the same oracle
+from stage I, so it stays in the loop that schedules it — the gate and the final-eval task. *Deciding
+whether the result counts as protected* is `verify/`, which is pure functions over a run's own JSON:
+no model, no network, no GPU. That is what lets `veillens-verify` re-derive the verdict for a
+finished run offline, and what keeps the pass criterion in one place instead of spread across a
+config value, a gate comparison and a reporting threshold. See [VERIFICATION.md](VERIFICATION.md).
 
 ## Why there are three queues
 

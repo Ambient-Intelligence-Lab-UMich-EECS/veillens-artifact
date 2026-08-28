@@ -84,7 +84,8 @@ class ImageState:
     # Multi-iteration R2 tracking
     # r2_iter: 0 = the R1-only iteration, 1 = first R2 iteration, 2 = second, ...
     r2_iter: int = 0
-    # Set by gate eval when err_km >= val_dist; honored by compositor on next is_complete()
+    # Set by gate eval when the error clears the granularity-derived threshold; honored by
+    # the compositor on the next is_complete()
     stop_after_current_iter: bool = False
 
     # Completion flags

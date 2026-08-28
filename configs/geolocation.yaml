@@ -11,12 +11,19 @@ experiment:
   privacy_class: geolocation
   # Which cue granularities to remove. Any subset of:
   #   "country level clue", "city level clue", "street level clue"
+  #
+  # This is the only protection knob, and verification is derived from it. The coarsest level
+  # listed sets the target rung on the granularity ladder, and the rung sets the distance the
+  # attacker must be wrong by: street -> 1 km, city -> 10 km, country -> 100 km. Removing street
+  # and city cues is city-level protection, so the loop stops at 10 km and every image is checked
+  # against 10 km. There is no separate threshold to keep in sync. See docs/VERIFICATION.md.
   mask_level: ["street level clue", "city level clue"]
   # Round-2 iterations after the round-1-only pass, so the run writes up to max_iter + 1
   # protected images (iter 0 = round 1's cues, then one per verification gate).
   max_iter: 3
-  # Stop iterating an image once the oracle's prediction is at least this far off (km).
-  val_dist: 5.0
+  # Also require the oracle to report no surviving cue at a protected granularity before an image
+  # may stop. Strictly stronger than the distance gate alone, and strictly more iterations.
+  gate_requires_residual_clear: false
 
 prompts:
   round1_schema: "prompts/geolocation/schema_original.json"

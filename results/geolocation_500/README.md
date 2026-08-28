@@ -3,6 +3,14 @@
 Every VLM response behind the 500-image Cityscapes geolocation experiment, one file per response.
 **Reasoning only — no images are included.**
 
+> **Produced before the granularity verification change.** This run used the superseded
+> `experiment.val_dist: 5.0` stop rule and the earlier attacker prompt, which required the attacker
+> to report at least one street-level clue. The current code derives its stop threshold from
+> `experiment.mask_level` instead — city-level protection stops at **10 km**, not 5 — and the
+> attacker prompt now permits an empty clue list. Both the defense's behaviour and the measuring
+> instrument therefore differ from what produced the numbers below, and these responses cannot be
+> used to evaluate the residual-cue criterion. See [docs/VERIFICATION.md](../../docs/VERIFICATION.md).
+
 The experiment is a matrix: seven image conditions — the unprotected frame, VeilLens, and the five
 baselines of [`docs/BASELINES.md`](../../docs/BASELINES.md) — each read by four independent VLMs.
 **Eight of its twenty-eight cells exist.** What has been run end to end is the unprotected reference

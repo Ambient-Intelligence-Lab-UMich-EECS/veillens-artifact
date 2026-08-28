@@ -3,7 +3,8 @@ Great-circle distance, and the summary statistics built on it.
 
 This is the geolocation error metric: how far the attacker's guess landed from the truth. It is
 load-bearing twice -- once as the reported number, and once as the iteration gate, which stops
-working on an image when the guess is at least `experiment.val_dist` km off.
+working on an image when the guess is at least as far off as the granularity the run targets
+requires (`experiment.mask_level` -> rung -> km; see `veillens.verify.granularity`).
 """
 
 import math

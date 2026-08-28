@@ -14,11 +14,16 @@ experiment:
   # because cached result records were written under the older spelling.
   privacy_class: compositional
   # Severity level: remove cues at or below this level of the four-level CPRT taxonomy
-  # (1 = severe, 4 = low risk).
+  # (1 = severe, 4 = low risk). Verification checks exactly this: an image passes when the
+  # attacker's final report names no surviving cue at severity <= 2. See docs/VERIFICATION.md.
   mask_level: 2
-  # Round-2 iterations after the round-1-only pass. The compositional setting has no
-  # distance-based early stop, so the loop always runs the full budget.
+  # Round-2 iterations after the round-1-only pass. Compositional risk is a unitless score with
+  # no rung on the distance ladder, so there is no early stop and the loop always runs the full
+  # budget.
   max_iter: 1
+  # Require the oracle to report no surviving cue at severity <= mask_level before an image may
+  # stop. Off by default; with no distance gate, this is the only stop rule available here.
+  gate_requires_residual_clear: false
 
 prompts:
   round1_schema: "prompts/compositional/schema_original.json"
