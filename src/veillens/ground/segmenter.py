@@ -5,8 +5,11 @@ Stage 2 (grounding), detection + segmentation half.
 an open-set text prompt, they are filtered against the cue's target concept, and SAM 2 turns the
 surviving boxes into masks.
 
-Extracted verbatim from the original monolithic `core/sdxl_pipeline.py`; only the imports and the
-Grounded-SAM-2 path bootstrap changed.
+Grounding DINO scores every text token against every box, and the box with the highest overall
+score is often not the one that matches the cue: a prompt like "campaign poster on a fence" will
+happily return the fence. `select_boxes_by_target_concept` aligns the target concept's tokens to
+their positions in the caption and re-ranks on those columns alone, which is why the segmenter
+carries its own `predict_with_token_scores` instead of calling upstream's `predict`.
 """
 
 from __future__ import annotations

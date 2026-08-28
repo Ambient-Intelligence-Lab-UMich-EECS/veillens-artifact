@@ -4,10 +4,13 @@ API Queue Handler for Parallel Pipeline
 This module provides async workers that consume from the API queue,
 process GPT evaluation requests, and dispatch follow-up tasks.
 
-Workflow:
-- R1_EVAL: Call GPT → Cache result → Update state → Push to seg_queue
-- R2_EVAL: Call GPT → Cache result → Update state → Check 5-complete → Dispatch seg tasks
-- FINAL_EVAL: Call GPT → Cache result → Update state → Increment complete counter
+Task types, and what each does when it comes off the queue:
+
+- R1_EVAL     the oracle lists the clues in the original image; push a segmentation task
+- R2_EVAL     the oracle re-reads one region of an edited image; dispatch that region's
+              segmentation task immediately rather than waiting for its siblings
+- GATE_EVAL   the iteration gate: still leaking, and budget left? Iterate, or finalise
+- FINAL_EVAL  the attacker scores the finished image; this is the reported measurement
 """
 
 import asyncio
