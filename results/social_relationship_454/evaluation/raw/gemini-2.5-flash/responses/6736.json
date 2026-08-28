@@ -1,0 +1,29 @@
+{
+  "img_id": "6736",
+  "predictions": {
+    "1 2": 3,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 6,
+    "2 3": 2,
+    "2 4": 2,
+    "2 5": 6,
+    "3 4": 2,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 2,
+    "3 4": 2,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 (older woman) and P2 (older man) are standing very close, both actively preparing food for a shared meal in a domestic setting. Their proximity and shared domestic task strongly suggest a romantic partnership. => couple\n[P1-P3]: P1 (older woman) and P3 (older man) are standing near each other, both engaged in preparing food at what appears to be a family gathering. Their similar age and shared activity in this setting point to a family relationship. => family-members\n[P1-P4]: P1 (older woman) and P4 (younger man) are at the same casual meal, with a significant age difference. This typical age gap and the family-like setting strongly indicate a parent-child or similar family relationship. => family-members\n[P1-P5]: P5 is identified as P4's hand holding a utensil, not a distinct person. As the categories are for social relationships between people, no such relationship can exist between a person (P1) and a hand/object (P5). => no-relationship\n[P2-P3]: P2 (older man) and P3 (older man) are standing in close proximity, both preparing food at the same gathering. Their similar age and shared activity in a domestic setting suggest they are family members. => family-members\n[P2-P4]: P2 (older man) and P4 (younger man) are at the same meal with a significant age difference. The multi-generational gathering in a home setting points to a family relationship. => family-members\n[P2-P5]: P5 is identified as P4's hand holding a utensil, not a distinct person. As the categories are for social relationships between people, no such relationship can exist between a person (P2) and a hand/object (P5). => no-relationship\n[P3-P4]: P3 (older man) and P4 (younger man) are both present at the same casual meal with a noticeable age difference. This is characteristic of a family relationship in a multi-generational setting. => family-members\n[P3-P5]: P5 is identified as P4's hand holding a utensil, not a distinct person. As the categories are for social relationships between people, no such relationship can exist between a person (P3) and a hand/object (P5). => no-relationship\n[P4-P5]: P5 is identified as P4's hand holding a utensil. P5 is a body part of P4, not a separate person. Therefore, there is no social relationship between P4 and P5 as distinct individuals. => no-relationship",
+  "timestamp": 1787940798.953518
+}

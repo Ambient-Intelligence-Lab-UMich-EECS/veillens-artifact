@@ -1,0 +1,15 @@
+{
+  "img_id": "11555",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are nearly identical bounding boxes that identify the same adult male riding the motorcycle, so they do not represent two distinct people interacting. => no-relationship\n[P1-P3]: The adult male (P1) is driving a motorcycle with a young child (P3) securely seated in front of him, suggesting a protective parent-child bond. => family-members\n[P2-P3]: The adult male (P2) is safely transporting the young child (P3) in a close, caretaking posture typical of a father and child. => family-members",
+  "timestamp": 1787937654.1022599
+}

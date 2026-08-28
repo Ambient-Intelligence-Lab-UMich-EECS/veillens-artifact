@@ -1,0 +1,41 @@
+{
+  "img_id": "14727",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 5": 6,
+    "2 5": 6
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 4",
+    "2 3",
+    "2 4",
+    "3 4",
+    "3 5"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    5
+  ],
+  "subjects_unmatched": [
+    3,
+    4
+  ],
+  "num_preds_detected": 6,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: Scene looks like a news interview at a zoo; P2 is operating a professional camera aimed at P1, standing a few feet away with no physical contact, indicating a work-related interaction between media worker and interviewee. => professional\n\n[P1-P5]: P5 is far in the background among other visitors, not oriented toward P1 and with no interaction; casual setting suggests they are just bystanders at the zoo. => no-relationship\n\n[P2-P5]: P2 is focused on filming while P5 is a distant visitor with no engagement or contact; their roles and distance imply no connection. => no-relationship",
+  "timestamp": 1776888000.1132102
+}

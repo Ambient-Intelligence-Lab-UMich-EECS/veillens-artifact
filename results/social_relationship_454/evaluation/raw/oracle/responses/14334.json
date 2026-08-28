@@ -1,0 +1,63 @@
+{
+  "img_id": "14334",
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "3 4": 6,
+    "1 2": 2,
+    "1 3": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 7": 6,
+    "2 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 6": 6,
+    "2 6": 6
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 5",
+    "1 7",
+    "2 3",
+    "2 5",
+    "2 7",
+    "3 4",
+    "3 5",
+    "3 6",
+    "3 7",
+    "4 5",
+    "4 6",
+    "4 7",
+    "5 6",
+    "5 7",
+    "6 7"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    6
+  ],
+  "subjects_unmatched": [
+    3,
+    4,
+    5,
+    7
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 7,
+  "raw_response": "[P1-P2]: They are at a street market standing very close, oriented toward the same stall; the adult holds groceries and appears to attend to the child, suggesting a caregiver-child dynamic. => family-members\n\n[P1-P6]: Same market but P6 is far in the background with no eye contact or interaction with the child, indicating no connection. => no-relationship\n\n[P2-P6]: P2 is shopping at the stall while P6 is distant and not engaged with her; no visible interaction or shared activity. => no-relationship",
+  "timestamp": 1776888225.443261
+}

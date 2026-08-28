@@ -1,0 +1,37 @@
+{
+  "img_id": "3162",
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 4,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 1,
+    "5 6": 6,
+    "1 3": 6,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 4
+  },
+  "raw_response": "[P1-P3]: P1 is an elderly woman walking with a walker in the foreground, while P3 is a staff member standing in the background with no interaction between them. => no-relationship\n[P1-P4]: P1 and P4 are individuals walking in different parts of the snowy scene without interacting. => no-relationship\n[P1-P5]: P1 is walking in the foreground while P5 walks down the hill in the background, showing no signs of connection. => no-relationship\n[P1-P6]: P1 is an elderly woman walking, and P6 is a uniformed staff member in the distance, with no interaction. => no-relationship\n[P2-P3]: P2 is an elderly man walking in the foreground, and P3 is a uniformed worker in the background, with no connection. => no-relationship\n[P2-P4]: P2 and P4 are walking independently in different directions in a public space. => no-relationship\n[P2-P5]: P2 and P5 are pedestrians walking in the snowy area without acknowledging each other. => no-relationship\n[P2-P6]: P2 is a pedestrian and P6 is a uniformed worker in the background, with no interaction between them. => no-relationship\n[P3-P4]: P3 is a staff member standing by, and P4 is a pedestrian walking away, with no interaction. => no-relationship\n[P3-P5]: P3 is a uniformed staff member and P5 is a person walking nearby, showing no connection. => no-relationship\n[P3-P6]: Both P3 and P6 are wearing matching high-visibility yellow jackets and standing together, indicating they are colleagues working as event staff or security. => professional\n[P4-P5]: P4 and P5 are pedestrians walking near each other on the snowy hill but appear to be independent and not interacting. => no-relationship\n[P4-P6]: P4 is walking away up the hill while P6 is a uniformed worker standing in the background, with no interaction. => no-relationship\n[P5-P6]: P5 is walking down the hill and P6 is a uniformed staff member standing nearby, with no interaction. => no-relationship",
+  "timestamp": 1787936382.1240149
+}

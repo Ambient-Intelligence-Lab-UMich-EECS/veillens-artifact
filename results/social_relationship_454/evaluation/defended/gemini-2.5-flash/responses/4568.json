@@ -1,0 +1,14 @@
+{
+  "img_id": "4568",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "ground_truth": {},
+  "raw_response": "[P1-P2]: P1 is on a phone call, smiling and facing away from the group, while P2 is actively engaged in the table discussion with P4. There is no direct interaction or shared activity between them. => no-relationship\n[P1-P3]: P1 is preoccupied with a phone call, not interacting with anyone at the table. P3 is focused on documents, engaged in the group discussion. There are no visual cues of interaction between P1 and P3. => no-relationship\n[P1-P4]: P1 is speaking on the phone, visibly separate from the activity at the table. P4 is focused on documents, participating in a group discussion. They are in the same room but are not interacting. => no-relationship\n[P2-P3]: P2 and P3 are seated next to each other at a conference table, appearing to participate in the same meeting or discussion, with P3 looking at documents and P2 smiling towards P4. Their professional attire and the meeting setting indicate a work context. => professional\n[P2-P4]: P2 is smiling and looking at P4, who is pointing at documents on the table. They are seated across from each other, engaged in a shared activity within a professional setting, suggesting a collaborative interaction. => professional\n[P3-P4]: P3 is looking at documents on the table, as is P4 who is pointing to them. They are part of the same group engaged in a meeting or discussion, and their shared focus on the documents in a professional setting indicates a work relationship. => professional",
+  "timestamp": 1787939655.2632103
+}

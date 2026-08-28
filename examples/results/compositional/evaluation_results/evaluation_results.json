@@ -1,0 +1,99 @@
+{
+  "2017_15522226": {
+    "ground_truth_score": 0.8205075012089644,
+    "feature_results": [
+      {
+        "feature_removed": "none",
+        "read_by": "defense oracle",
+        "error_score": 0.00949249879103553,
+        "gpt_response": {
+          "score": 0.83,
+          "confidence": "High"
+        },
+        "error_score_increase": 0.0,
+        "mask_pixels": 0,
+        "mask_percentage": 0.0
+      },
+      {
+        "feature_removed": "severity<=2",
+        "error_score": 0.20050750120896443,
+        "gpt_response": {
+          "score": 0.62,
+          "confidence": "High"
+        },
+        "error_score_increase": 0.1910150024179289,
+        "mask_pixels": 174358,
+        "mask_percentage": 22.17076619466146,
+        "verification": {
+          "target_rung": null,
+          "threshold_km": null,
+          "metric_threshold": null,
+          "metric_unit": null,
+          "error": 0.20050750120896443,
+          "metric_pass": null,
+          "residual_pass": false,
+          "residual_cues": [
+            {
+              "description": "frontal, well-lit face of the person looking at the camera",
+              "level": 1,
+              "malformed": false
+            }
+          ],
+          "passed": false,
+          "reason": "no metric pass line for this privacy class; 1 residual cue(s) at a protected granularity"
+        }
+      }
+    ]
+  },
+  "2017_16257673": {
+    "ground_truth_score": 0.8201212301597973,
+    "feature_results": [
+      {
+        "feature_removed": "none",
+        "read_by": "defense oracle",
+        "error_score": 0.10012123015979735,
+        "gpt_response": {
+          "score": 0.72,
+          "confidence": "High"
+        },
+        "error_score_increase": 0.0,
+        "mask_pixels": 0,
+        "mask_percentage": 0.0
+      },
+      {
+        "feature_removed": "severity<=2",
+        "error_score": 0.24012123015979736,
+        "gpt_response": {
+          "score": 0.58,
+          "confidence": "High"
+        },
+        "error_score_increase": 0.14,
+        "mask_pixels": 163021,
+        "mask_percentage": 23.308959782210835,
+        "verification": {
+          "target_rung": null,
+          "threshold_km": null,
+          "metric_threshold": null,
+          "metric_unit": null,
+          "error": 0.24012123015979736,
+          "metric_pass": null,
+          "residual_pass": false,
+          "residual_cues": [
+            {
+              "description": "left seated person\u2019s unobstructed face with glasses, mid-shot",
+              "level": 1,
+              "malformed": false
+            },
+            {
+              "description": "right seated person\u2019s unobstructed face with glasses, mid-shot",
+              "level": 1,
+              "malformed": false
+            }
+          ],
+          "passed": false,
+          "reason": "no metric pass line for this privacy class; 2 residual cue(s) at a protected granularity"
+        }
+      }
+    ]
+  }
+}

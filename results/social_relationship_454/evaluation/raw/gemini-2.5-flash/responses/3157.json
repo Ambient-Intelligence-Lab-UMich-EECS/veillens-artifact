@@ -1,0 +1,29 @@
+{
+  "img_id": "3157",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 1,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 1,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is behind a cart and P2 is walking directly past him, but there is no clear interaction, shared gaze, or body language indicating a connection beyond being in the same public space. => no-relationship\n[P1-P3]: P1 is by a cart on the left, while P3 is walking with bags further right; they are distant and show no interaction. => no-relationship\n[P1-P4]: P1 is by a cart on the left, and P4 is standing near market stalls further right; there is no shared activity or interaction. => no-relationship\n[P1-P5]: P1 is on the far left with a cart, and P5 is a child standing by a market stall on the far right; they are distant and show no interaction. => no-relationship\n[P2-P3]: P2 and P3 are walking in the same general direction but without any interaction, shared gaze, or close physical proximity indicating a connection. => no-relationship\n[P2-P4]: P2 is walking past on the left, while P4 is standing near a market stall further right, showing no interaction or shared activity. => no-relationship\n[P2-P5]: P2 is a man walking on the left, and P5 is a child standing far away on the right, with no apparent connection or interaction. => no-relationship\n[P3-P4]: P3 and P4, both adults, are standing in relatively close proximity in a market setting, suggesting they are engaged in the shared social activity of shopping or browsing together. => friends\n[P3-P5]: P3 is an adult with luggage further back, while P5 is a child standing prominently in the foreground; they are distant and show no interaction. => no-relationship\n[P4-P5]: P4, an adult, is standing directly behind P5, a young girl, both in front of a market stall, strongly suggesting P4 is accompanying P5 in a familial capacity. => family-members",
+  "timestamp": 1787940700.7680728
+}

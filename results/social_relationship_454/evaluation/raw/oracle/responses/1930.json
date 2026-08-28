@@ -1,0 +1,54 @@
+{
+  "img_id": "1930",
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 1,
+    "1 3": 6,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 6": 6,
+    "2 3": 6,
+    "2 6": 6,
+    "3 6": 6
+  },
+  "missed_pairs": [
+    "1 4",
+    "1 5",
+    "2 4",
+    "2 5",
+    "3 4",
+    "3 5",
+    "4 5",
+    "4 6",
+    "5 6"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    6
+  ],
+  "subjects_unmatched": [
+    4,
+    5
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P2]: Street-market scene; both seated close on the ground, oriented toward each other with relaxed posture and casual clothes, appearing to chat without physical contact. This suggests informal companionship. => friends\n\n[P1-P3]: Busy market setting; P3 stands by a stall while P1 sits on the ground farther away, not looking at or engaging with each other; different postures/activities. => no-relationship\n\n[P1-P6]: Market scene; P6 (a small child) is far to the left near stalls while P1 sits elsewhere, no eye contact or interaction, different activities. => no-relationship\n\n[P2-P3]: P2 is seated on the ground while P3 stands near a clothing rack; they\u2019re several meters apart with no body orientation or engagement. => no-relationship\n\n[P2-P6]: P2 sits facing P1, while the child P6 is distant near the vendors; no visible interaction or attention between them. => no-relationship\n\n[P3-P6]: Both are near stalls, but P3 is an adult standing by clothing racks while P6 is a child looking elsewhere; no proximity-based interaction or shared activity is evident. => no-relationship",
+  "timestamp": 1776887640.252633
+}

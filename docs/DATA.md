@@ -21,6 +21,12 @@ $VEILLENS_DATA/
 │   └── vehicle/train/<city>/*.json         per-frame GPS — the geolocation ground truth
 ├── vispr/
 │   └── test2017/2017_*.jpg                 compositional-privacy image pool  (17 GB)
+├── pisc/
+│   ├── image/%05d.jpg                      people-in-social-context photos   (7.3 GB)
+│   ├── relationship.json                   pairwise relationship labels
+│   ├── annotation_image_info.json          person boxes, one list per image
+│   └── relationship_split/relation_*idx.json
+├── pisc_annotated/<image_id>.jpg           written by the manifest builder, not downloaded
 ├── models/
 │   ├── sam2/sam2.1_hiera_large.pt          857 MB
 │   ├── gdino/groundingdino_swint_ogc.pth   662 MB
@@ -35,6 +41,7 @@ $VEILLENS_DATA/
 |---|---|---|---|
 | **Cityscapes** | geolocation | yes | <https://www.cityscapes-dataset.com/> — you need `leftImg8bit_trainvaltest` **and** the vehicle metadata package, which carries the GPS |
 | **VISPR** | compositional privacy | no | <https://tribhuvanesh.github.io/vpa/> — the images CPRT-Bench annotates |
+| **PISC** | social relationship | no | <https://zenodo.org/record/1059155> — People in Social Context; you need the images plus `relationship.json`, `annotation_image_info.json` and `relationship_split/` |
 
 Both restrict redistribution, which is why neither is vendored here. `manifests/` carries the
 image identifiers and ground-truth labels only, so the exact evaluated sets are pinned even though
@@ -82,6 +89,39 @@ curl -sL https://datasets.d2.mpi-inf.mpg.de/orekondy17iccv/test2017.tar.gz \
 ```
 
 That still transfers 17.4 GB, so it is a disk optimisation, not a bandwidth one.
+
+### Social relationship: PISC boxes, labels, and the box overlay
+
+```bash
+python -m veillens.datasets.pisc \
+    --pisc-root $VEILLENS_DATA/pisc \
+    --annotated-dir $VEILLENS_DATA/pisc_annotated \
+    --num-images 500 --seed 0 \
+    --output manifests/social_relation_500.json
+```
+
+This does two jobs. It writes a schema-v2 manifest carrying each image's person boxes and its
+annotated pair labels, and it renders `pisc_annotated/<image_id>.jpg` — the same photo with one
+coloured, numbered rectangle per subject. The overlay is not decoration: the attack is *pairwise*,
+so both the defense oracle and the adversary are asked about "P1 and P2", and without the drawn
+boxes neither knows who that is.
+
+Three things about PISC's own layout are easy to trip over:
+
+* The image directory is **`image/`**, singular. Scripts elsewhere that say `images/` are written
+  against a different unpacking of the same archive.
+* **Person ids are positions.** There is no id field on a box; subject `k` is `bbox[k-1]`.
+* **Ids are spelled two ways** — annotation keys are unpadded (`"599"`), image files are
+  zero-padded (`00599.jpg`) — and `annotation_image_info.json` stores its id as an int while every
+  other file uses a string.
+
+Some distributions ship the images as split tarball chunks (`images-00`…`images-03`) rather than an
+unpacked tree; reassemble with `cat images-0* | tar xzf -`. **Check that first**, because a partly
+unpacked archive does not fail loudly: the builder simply skips the images it cannot find and
+selects from what remains, which is a biased sample of the split rather than a random one. It
+reports a `missing_image` count for exactly this reason, and records it in the manifest's
+`provenance` block along with the split, the seed and the label histogram — so a manifest built
+against an incomplete tree says so, forever.
 
 ## Model weights
 

@@ -1,0 +1,32 @@
+{
+  "img_id": "2412",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 2,
+    "3 4": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Casual fishing outing on a boat; they stand close and converse without affectionate touch, dressed for leisure, suggesting companions in the same social group. => friends\n\n[P1-P3]: Same boat/fishing context; P3 is nearby but not directly interacting, with relaxed posture and casual attire indicating they\u2019re part of the same outing. => friends\n\n[P1-P4]: Standing adjacent discussing gear on the boat; cooperative body language and casual clothes with no intimacy point to companions on a trip. => friends\n\n[P2-P3]: On the same small boat with casual attire and no physical interaction; proximity implies they\u2019re together socially rather than strangers. => friends\n\n[P2-P4]: Very close with her hand resting on his shoulder during a relaxed boat trip; comfortable touch and notable age gap suggest a parent\u2013child type bond. => family-members\n\n[P3-P4]: Two adults near the fishing gear, casually positioned without intimacy or transactional cues, indicating they\u2019re part of the same social outing. => friends",
+  "timestamp": 1776887958.0169299
+}

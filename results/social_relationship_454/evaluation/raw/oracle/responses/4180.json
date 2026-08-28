@@ -1,0 +1,25 @@
+{
+  "img_id": "4180",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They appear to be chatting at a formal outdoor event; P1 is smiling toward P2 while P2 gestures mid-conversation. Both wear business suits and are not physically intimate, suggesting a work-context interaction. => professional\n\n[P1-P3]: They are near each other at the same formal gathering, dressed in business attire, with P1 observing the exchange and smiling; no physical contact or intimacy. This points to colleagues at an event. => professional\n\n[P2-P3]: They stand close, directly facing and talking, with P2 gesturing and P3 engaged; both are in professional dress at what looks like a ceremony or meeting. The cues fit a work relationship. => professional",
+  "timestamp": 1776888769.163165
+}

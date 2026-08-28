@@ -17,6 +17,7 @@ from typing import Dict, Iterable
 from veillens.privacy.spec import (
     COMPOSITIONAL_SPEC,
     GEOLOCATION_SPEC,
+    SOCIAL_RELATION_SPEC,
     PrivacyClassSpec,
 )
 
@@ -27,6 +28,7 @@ __all__ = ["register_spec", "get_spec_by_name", "available_specs", "canonical_na
 _SPECS: Dict[str, PrivacyClassSpec] = {
     "geolocation": GEOLOCATION_SPEC,
     "compositional": COMPOSITIONAL_SPEC,
+    "social_relation": SOCIAL_RELATION_SPEC,
 }
 
 #: Older spellings that must keep resolving. Do not remove these; cached results depend on them.
@@ -34,6 +36,8 @@ LEGACY_ALIASES: Dict[str, str] = {
     "personal_info": "compositional",
     "pi": "compositional",
     "geo": "geolocation",
+    "relationship": "social_relation",
+    "social_relationship": "social_relation",
 }
 
 

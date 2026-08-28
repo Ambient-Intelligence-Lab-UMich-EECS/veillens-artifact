@@ -1,0 +1,21 @@
+{
+  "img_id": "10645",
+  "predictions": {
+    "3 4": 4,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: P3 and P4 are standing together in front of a screen, wearing microphones and sporty attire, suggesting they are co-hosts or colleagues presenting at an event. => professional\n[P3-P5]: P3 is a presenter on stage while P5 is an audience member recording the event, indicating no personal social connection. => no-relationship\n[P3-P6]: P3 is presenting to an audience that includes P6, who is merely a spectator with no direct interaction with P3. => no-relationship\n[P4-P5]: P4 is an event host on stage, and P5 is a member of the audience taking a picture, showing no social or personal relationship. => no-relationship\n[P4-P6]: P4 is on stage performing or presenting, while P6 is sitting in the crowd as a bystander. => no-relationship\n[P5-P6]: P5 and P6 are both individuals in the audience watching the presentation, with no visual cues to suggest they know each other. => no-relationship",
+  "timestamp": 1787939546.1955886
+}

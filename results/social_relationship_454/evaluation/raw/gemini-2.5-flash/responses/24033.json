@@ -1,0 +1,33 @@
+{
+  "img_id": "24033",
+  "predictions": {
+    "1 6": 6,
+    "1 7": 6,
+    "2 6": 6,
+    "3 6": 5,
+    "3 7": 5,
+    "3 8": 4,
+    "4 6": 6,
+    "5 6": 5,
+    "5 7": 5,
+    "6 7": 6,
+    "6 8": 5,
+    "7 8": 5
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "3 8": 5,
+    "6 7": 6,
+    "7 8": 6,
+    "2 6": 6,
+    "6 8": 6,
+    "3 6": 6,
+    "3 7": 6
+  },
+  "raw_response": "[P1-P6]: P1 is a person's reflection in the background, likely a customer or bystander, while P6 is a customer in the foreground wearing a red cape. They are both in a commercial setting but show no direct social interaction. => no-relationship\n[P1-P7]: P1 and P7 are both reflections of individuals in the background of the barbershop, likely customers or bystanders. There are no visual cues of interaction or connection between them. => no-relationship\n[P2-P6]: P2 is a customer receiving a haircut, and P6 is another customer in the foreground wearing a red cape. They are both clients in the same commercial space but show no direct interaction. => no-relationship\n[P3-P6]: P3 is the reflection of the barber (P5) providing a service, and P6 is a customer in the barbershop. Their roles define a commercial relationship within this setting. => commercial\n[P3-P7]: P3 is the reflection of the barber (P5), a service provider, while P7 is a reflection of another person in the barbershop, likely a customer. Their roles within this commercial establishment imply a commercial relationship. => commercial\n[P3-P8]: P3 is the reflection of the barber (P5), and P8 is another person reflected in the mirror wearing a red apron, indicating they are also a barber or employee. They are colleagues in the same workplace. => professional\n[P4-P6]: P4 is a reflection of a person sitting, likely a waiting customer, and P6 is another customer in the foreground. They are both clients in the same barbershop but show no direct interaction. => no-relationship\n[P5-P6]: P5 represents the hands of the barber cutting P2's hair, while P6 is a customer in the foreground. The barber (P5) is a service provider, and P6 is a customer, establishing a commercial relationship. => commercial\n[P5-P7]: P5 represents the hands of the barber (service provider), and P7 is a reflection of another person in the barbershop, likely a customer. Their roles within the commercial setting imply a commercial relationship. => commercial\n[P6-P7]: P6 is a customer in the foreground, and P7 is a reflection of another person in the background, likely also a customer or bystander. They are co-present in the barbershop without direct interaction. => no-relationship\n[P6-P8]: P6 is a customer in the foreground, and P8 is a reflection of a person wearing a barber's apron, indicating an employee. Their roles define a commercial relationship within this setting. => commercial\n[P7-P8]: P7 is a reflection of a person in the background, likely a customer, while P8 is a reflection of a barber (employee). Their respective roles in the barbershop establish a commercial relationship. => commercial",
+  "timestamp": 1787940882.8629158
+}

@@ -1,0 +1,15 @@
+{
+  "img_id": "123",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "raw_response": "[P1-P2]: P1 is engaged in a task in the foreground while P2 is walking far away in the background with no interaction. => no-relationship\n[P1-P3]: P1 (an adult) and P3 (a child) are in close proximity, doing a shared chore (sweeping) together, indicating a likely parent-child bond. => family-members\n[P2-P3]: P3 is occupied with a task in the foreground alongside P1, while P2 is a distant pedestrian with no connection to them. => no-relationship",
+  "timestamp": 1787937913.1236172
+}

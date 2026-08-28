@@ -1,0 +1,34 @@
+{
+  "img_id": "6404",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 4,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "2 3": 4
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    1,
+    4
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 4,
+  "raw_response": "[P2-P3]: Two people on horseback in matching police uniforms are close and facing each other in a park, with P3 gesturing as if discussing something with P2; no physical intimacy, just work-related interaction. => professional",
+  "timestamp": 1776889128.4669306
+}

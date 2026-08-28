@@ -82,6 +82,28 @@ were written under the older spellings.
 
 Adding a privacy class means writing one spec and registering it. Nothing in `loop/` changes.
 
+## Grounding without a detector
+
+Stage II has two entrances, and which one a clue takes is a property of the clue rather than of the
+privacy class. The usual one is `segment()`: Grounding DINO proposes boxes for the clue's language
+description and SAM 2 refines them. The other is `segment_boxes()`, which takes boxes already in
+hand and goes straight to SAM 2.
+
+The social-relationship setting uses the second, because PISC ships person boxes and subject ids and
+the paper's intervention policy is to use them: *"we use dataset-provided person boxes and IDs to
+isolate relationship reasoning from person discovery."* Its spec implements `feature_boxes`, which
+maps a nominated `subject_id` to that subject's box and narrows it to a head band; the seg worker
+asks every spec for boxes first and falls through to detection when it gets `None`. With
+`detection.use_grounding_dino: false` the detector is never loaded, so that setting needs neither
+the SwinT weights nor the compiled deformable-attention kernel.
+
+Two other seams exist for the same reason. `format_item_context` appends per-image text to every
+prompt — the social-relationship prompts have to name which numbered subjects form an annotated
+pair, and only the manifest knows that. `eval_original` asks Phase 5 to read the *unedited* image
+with the attacker rather than reusing the defense oracle's round-1 response, which a setting needs
+when its headline number is one adversary's accuracy before versus after. Both default to the
+existing behaviour, so the two shipped settings are unaffected.
+
 ## The VLM layer
 
 `vlm/base.py` defines the client interface and image encoding; `vlm/openai_client.py` implements it

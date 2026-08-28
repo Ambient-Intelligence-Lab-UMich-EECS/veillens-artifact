@@ -1,0 +1,41 @@
+{
+  "img_id": "20691",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 4,
+    "3 5": 4,
+    "4 5": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 7,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are in the middle of a baseball play at a base, very close with P2 tagging P1 who is sliding; both wear player uniforms/helmets on the field. => professional\n\n[P1-P3]: P3 stands just behind the play watching attentively like an umpire/coach, with no physical contact and official\u2011style attire. => professional\n\n[P1-P4]: P4, in black official attire, is positioned behind the play observing the action; no contact with P1. => professional\n\n[P1-P5]: Both wear baseball gear but are far apart with no interaction; P5 appears on the sideline while P1 is in play on the field. => professional\n\n[P2-P3]: P2 is making a tag while P3 stands nearby observing in official attire, indicating a player\u2013official interaction. => professional\n\n[P2-P4]: P4 is another official behind the play watching P2\u2019s tag attempt; no personal interaction beyond the game. => professional\n\n[P2-P5]: Both are players in uniform, separated by distance with no direct contact, participating in the same game. => professional\n\n[P3-P4]: Both appear to be officials/umpires standing behind the play, positioned to judge the action together. => professional\n\n[P3-P5]: P3 looks like an umpire while P5 is a player on the sideline; they are part of the same game without personal interaction. => professional\n\n[P4-P5]: P4 is an on\u2011field official and P5 a player in gear; they share the game context but no personal contact. => professional",
+  "timestamp": 1776887384.4724033
+}

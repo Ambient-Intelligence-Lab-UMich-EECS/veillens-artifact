@@ -1,0 +1,21 @@
+{
+  "img_id": "1930",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 1,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "Here is the analysis for each pair:\n\n[P3-P4]: P3 (the man in the cap on the left foreground) is sitting with his back to the camera, while P4 (standing in the background) is far away and engaged in a separate activity, showing no interaction. => no-relationship\n[P3-P5]: P3 (the man in the cap on the left foreground) is sitting with his back to the camera, while P5 (standing in the background) is far away and interacting with P4, showing no connection to P3. => no-relationship\n[P3-P6]: P3 (the man in the cap on the left foreground) is sitting with his back to the camera, and P6 (the child walking in the background) is distant with no visible interaction or shared attention. => no-relationship\n[P4-P5]: P4 and P5 are standing in close proximity near a market stall, with P5 looking directly towards P4, indicating they are companions engaged in a shared activity like shopping. => friends\n[P4-P6]: P4 is an adult engaged with P5 near a stall, while P6 is a child walking nearby at some distance, with no visible interaction or shared attention between them. => no-relationship\n[P5-P6]: P5 is an adult interacting with P4 near a stall, while P6 is a child walking independently at some distance, with no visible interaction or attention from P5 towards P6. => no-relationship",
+  "timestamp": 1787939637.5499911
+}

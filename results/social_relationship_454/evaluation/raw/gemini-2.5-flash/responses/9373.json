@@ -1,0 +1,17 @@
+{
+  "img_id": "9373",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 6,
+    "4 7": 6
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1,
+    "4 7": 6
+  },
+  "raw_response": "[P1-P2]: P1 is in the background left, seemingly engaged with others like P4 and P6, while P2 is in the background right, engaged with P7. There is no direct interaction, shared gaze, or close proximity between P1 and P2. => no-relationship\n[P1-P3]: P1 is on the far left side of the background, and P3 is on the far right, actively serving at a table. They are spatially distant and show no interaction, shared focus, or acknowledgment of each other. => no-relationship\n[P2-P3]: P2 is in the middle-right background, looking left, while P3 is in the far right mid-ground, focused on the table she is serving from. They are not interacting and are engaged in different activities. => no-relationship\n[P4-P7]: P4 is in the far left background as part of a group with P1 and P6, and P7 is in the middle-right background with P2. They are spatially separated and show no signs of interaction, shared focus, or mutual awareness. => no-relationship",
+  "timestamp": 1787940810.6406338
+}

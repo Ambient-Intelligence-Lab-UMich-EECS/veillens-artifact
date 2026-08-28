@@ -1,0 +1,23 @@
+{
+  "img_id": "1531",
+  "predictions": {
+    "1 2": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 4": 6,
+    "2 5": 6,
+    "3 5": 6,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is a musician performing on stage while P2 is an audience member recording from the crowd, indicating they are strangers with no direct connection. => no-relationship\n[P1-P4]: Both individuals are musicians performing together on stage as part of a band, which is their shared work environment. => professional\n[P1-P5]: Both individuals are band members playing instruments on stage, collaborating in a professional capacity. => professional\n[P2-P4]: P2 is a spectator in the audience and P4 is a performer on stage, showing no personal or social relationship between them. => no-relationship\n[P2-P5]: P2 is an audience member and P5 is a performer, meaning they are strangers simply present in the same venue. => no-relationship\n[P3-P5]: P3 is in the audience watching the concert while P5 is performing on stage, indicating a lack of any social connection. => no-relationship\n[P4-P5]: Both P4 and P5 are musicians performing together on stage, indicating they are colleagues in a band. => professional",
+  "timestamp": 1787937511.6387835
+}

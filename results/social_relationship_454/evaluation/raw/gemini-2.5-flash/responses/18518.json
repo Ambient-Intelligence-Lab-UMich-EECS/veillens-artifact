@@ -1,0 +1,29 @@
+{
+  "img_id": "18518",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 6,
+    "2 4": 1,
+    "2 5": 1,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 1
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1's bounding box is entirely contained within P2's, and both encompass the same individual. Since this implies they are the same person, there is no distinct inter-personal social relationship to classify. => no-relationship\n[P1-P3]: P1 is actively playing a game, while P3 is a partially visible arm on the far right, with no visible interaction or shared focus between them. They appear to be in the same public space but without a social connection. => no-relationship\n[P1-P4]: Both P1 and P4 are holding Wii remotes and are in close proximity, suggesting they are playing a game together. P1 is smiling and P4 is looking towards P1, indicating shared engagement and interaction. => friends\n[P1-P5]: P1 is playing a game, and P5 is standing directly behind P4 (who is playing with P1) in very close proximity. This suggests P5 is part of the same group as P1 and P4, likely observing or waiting. => friends\n[P2-P3]: As P2 refers to the same person as P1, this pair is equivalent to P1 and P3. There is no visible interaction or shared focus between them, suggesting they are unrelated individuals in the same public space. => no-relationship\n[P2-P4]: As P2 refers to the same person as P1, this pair is equivalent to P1 and P4. They are playing a game together, showing shared engagement and interaction. => friends\n[P2-P5]: As P2 refers to the same person as P1, this pair is equivalent to P1 and P5. P5 is in close proximity to the group (P1 and P4) and appears to be part of their social circle. => friends\n[P3-P4]: P4 is engaged in playing a game with P1, while P3 is a partially visible arm on the right, showing no direct interaction or shared focus with P4. They appear to be unrelated individuals in the same public space. => no-relationship\n[P3-P5]: P3 is a partially visible arm on the far right, and P5 is an obscured person behind P4. There are no visual cues of interaction, shared gaze, or shared activity connecting these two individuals. => no-relationship\n[P4-P5]: P4 is playing a game, and P5 is standing directly behind P4 in very close proximity. This close physical proximity in a public setting strongly suggests they are together, possibly as friends or family, observing the game. => friends",
+  "timestamp": 1787940567.5031536
+}

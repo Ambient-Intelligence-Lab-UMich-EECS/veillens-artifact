@@ -1,0 +1,70 @@
+{
+  "aachen_000000_000019": {
+    "ground_truth_coords": [
+      50.780881831805594,
+      6.108147476339736
+    ],
+    "feature_results": [
+      {
+        "feature_removed": "none",
+        "error_km": 1.8495924327029571,
+        "gpt_response": {
+          "latitude": 50.776,
+          "longitude": 6.083,
+          "confidence": "High",
+          "region": "Germany, North Rhine\u2013Westphalia, Aachen"
+        },
+        "error_increase_km": 0.0,
+        "mask_pixels": 0,
+        "mask_percentage": 0.0
+      },
+      {
+        "feature_removed": "street level clue, city level clue",
+        "error_km": 61.67927961582535,
+        "gpt_response": {
+          "latitude": 50.94,
+          "longitude": 6.95,
+          "confidence": "Medium",
+          "region": "Germany, North Rhine\u2013Westphalia, Cologne"
+        },
+        "error_increase_km": 59.829687183122395,
+        "mask_pixels": 557827,
+        "mask_percentage": 26.59926414489746
+      }
+    ]
+  },
+  "erfurt_000000_000019": {
+    "ground_truth_coords": [
+      50.97094291122226,
+      11.012115883342986
+    ],
+    "feature_results": [
+      {
+        "feature_removed": "none",
+        "error_km": 1.477735455039934,
+        "gpt_response": {
+          "latitude": 50.978,
+          "longitude": 11.03,
+          "confidence": "Medium",
+          "region": "Germany, Thuringia, Erfurt"
+        },
+        "error_increase_km": 0.0,
+        "mask_pixels": 0,
+        "mask_percentage": 0.0
+      },
+      {
+        "feature_removed": "street level clue, city level clue",
+        "error_km": 317.72254419715125,
+        "gpt_response": {
+          "latitude": 48.137,
+          "longitude": 11.575,
+          "confidence": "Low",
+          "region": "Germany, Bavaria, Munich (approximate)"
+        },
+        "error_increase_km": 316.24480874211133,
+        "mask_pixels": 1054789,
+        "mask_percentage": 50.2962589263916
+      }
+    ]
+  }
+}

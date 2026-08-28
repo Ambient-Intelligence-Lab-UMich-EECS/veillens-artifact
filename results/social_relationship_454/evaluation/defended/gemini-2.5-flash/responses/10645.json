@@ -1,0 +1,21 @@
+{
+  "img_id": "10645",
+  "predictions": {
+    "3 4": 4,
+    "3 5": 4,
+    "3 6": 4,
+    "4 5": 1,
+    "4 6": 1,
+    "5 6": 1
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: P3 is a presenter or performer on stage. P4, represented by a hand/part in the audience, is observing the event, indicating a professional interaction between a speaker and an attendee. => professional\n[P3-P5]: P3 is a presenter or performer on stage, while P5 is an audience member actively recording the event. This constitutes a professional interaction within the context of a public event. => professional\n[P3-P6]: P3 is a presenter or performer on stage. P6 is an audience member, making their interaction a standard professional one between a speaker and an attendee. => professional\n[P4-P5]: P4, depicted as a hand/arm, is in extremely close proximity to P5's hand and phone, suggesting P4 is a companion or friend attending the event alongside P5. => friends\n[P4-P6]: P4 is positioned very close to P5, who is immediately next to P6 in the audience. This spatial arrangement implies P4 and P6 are together at the event as companions. => friends\n[P5-P6]: P5 and P6 are standing or sitting directly next to each other as audience members, strongly suggesting they are attending the event together and share a social relationship. => friends",
+  "timestamp": 1787939549.3665671
+}

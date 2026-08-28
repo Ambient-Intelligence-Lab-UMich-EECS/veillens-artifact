@@ -1,0 +1,15 @@
+{
+  "img_id": "7778",
+  "predictions": {
+    "1 2": 2,
+    "1 4": 2,
+    "2 4": 2
+  },
+  "ground_truth": {
+    "1 2": 2,
+    "2 4": 2,
+    "1 4": 2
+  },
+  "raw_response": "[P1-P2]: P1 is an adult male and P2 is a very young child, both participating in cross-country skiing. P1 is looking down towards P2, suggesting supervision or teaching, which, combined with their close proximity and the age difference, strongly indicates a parent-child relationship. => family-members\n[P1-P4]: P1 is an adult male and P4 is an adult female, both engaging in the same recreational activity (cross-country skiing) and appearing to be part of the same social group as P2 (a child likely related to P1). This shared context and activity strongly suggest a familial relationship, likely a couple or siblings. => family-members\n[P2-P4]: P2 is a very young child and P4 is an adult female. Given that P1 is likely a parent to P2, and P4 appears to be a family member to P1 (as analyzed above), it logically follows that P4 is also a family member to P2, such as a mother or other close relative. => family-members",
+  "timestamp": 1787940723.2379758
+}

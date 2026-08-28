@@ -17,7 +17,7 @@ import asyncio
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 
 import cv2
 
@@ -165,6 +165,18 @@ class APIQueueHandler:
     # R1 Evaluation Handler
     # =========================================================================
 
+    def _item_context(self, state: ImageState) -> Optional[str]:
+        """
+        The per-image prompt suffix for this setting, or None if it needs none.
+
+        Only a setting that asks about specific things the dataset names -- which subjects are
+        annotated, which pairs to answer about -- defines `format_item_context`. For the shipped
+        settings this is None and the prompt goes out exactly as it does today.
+        """
+        if self.spec.format_item_context is None:
+            return None
+        return self.spec.format_item_context(state.item)
+
     async def _process_r1_eval(self, task: APITask):
         """
         Process Round 1 evaluation task.
@@ -185,6 +197,7 @@ class APIQueueHandler:
             task.image_path,
             schema_type='original',
             role='reason',
+            prompt_context=self._item_context(state),
         )
 
         if not result:
@@ -270,7 +283,8 @@ class APIQueueHandler:
             predicted_location=state.init_pred_loc,
             region_name=region,
             cache_key_override=state.image_name,
-            role='reason'
+            role='reason',
+            prompt_context=self._item_context(state),
         )
 
         if not result:
@@ -378,7 +392,8 @@ class APIQueueHandler:
         result = await self.api.get_geolocation_prediction(
             task.image_path,
             schema_type='original',
-            role=self.gate_role
+            role=self.gate_role,
+            prompt_context=self._item_context(state),
         )
 
         if not result:
@@ -558,13 +573,13 @@ class APIQueueHandler:
             logger.error(f"No state for image {task.image_id}")
             return
 
-        # Call GPT API with eval schema. For personal_info, the same schema is
-        # reused for the final eval (it already exposes the privacy score).
-        eval_schema_type = 'eval' if self.spec.name == 'geolocation' else 'original'
+        # Which schema the attacker answers under is the spec's to say: the compositional
+        # setting reuses its round-1 schema, which already exposes the privacy score.
         result = await self.api.get_geolocation_prediction(
             task.image_path,
-            schema_type=eval_schema_type,
-            role='eval'
+            schema_type=self.spec.eval_schema_type,
+            role='eval',
+            prompt_context=self._item_context(state),
         )
 
         if not result:

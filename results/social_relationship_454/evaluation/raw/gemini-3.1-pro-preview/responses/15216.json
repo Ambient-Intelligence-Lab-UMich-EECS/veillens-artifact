@@ -1,0 +1,21 @@
+{
+  "img_id": "15216",
+  "predictions": {
+    "1 2": 5,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 5,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 is behind a counter taking money from P2, who is making a purchase, indicating a clear transactional interaction. => commercial\n[P1-P3]: P1 is occupied at the counter, while P3 is standing in the background with no interaction between them. => no-relationship\n[P1-P4]: P1 is working at the counter and P4 is seated in the background, showing no social connection. => no-relationship\n[P2-P3]: P2 is engaged in a transaction at the counter, and P3 is merely a bystander in the background. => no-relationship\n[P2-P4]: P2 is paying at the counter while P4 sits distantly in the background, indicating they are unrelated people in the same space. => no-relationship\n[P3-P4]: Both P3 and P4 are in the background, engaged in separate activities (standing vs. sitting) with no interaction. => no-relationship",
+  "timestamp": 1787937170.210356
+}

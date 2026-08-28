@@ -1,0 +1,23 @@
+{
+  "img_id": "19139",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 3,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 3,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is in the background, focused on the table, while P2 is in the foreground, focused on P5. They are present at the same event but show no direct interaction or shared activity. => no-relationship\n[P1-P5]: P1 is in the background, while P5 is in the foreground interacting with P2. There is no visual cue of direct interaction or connection between P1 and P5. => no-relationship\n[P2-P3]: P2 is in the foreground interacting with P5, while P3 is a blurred figure in the distant background, looking away. There is no proximity, interaction, or shared focus between them. => no-relationship\n[P2-P4]: P2 is in the foreground, while P4 is in the mid-ground, blurred, and slightly behind P5. There is no direct interaction or physical contact, and P4 appears to be an observer or another guest. => no-relationship\n[P2-P5]: P2 and P5 are in close proximity, sharing a knife to cut a multi-tiered celebratory cake. Their shared focus, physical contact, and the nature of the activity (cake cutting, often associated with weddings) strongly suggest a romantic partnership. => couple\n[P3-P5]: P3 is a blurred figure in the distant background, looking away, while P5 is in the foreground interacting with P2. There is no interaction or connection visible between P3 and P5. => no-relationship\n[P4-P5]: P4 is in the mid-ground, blurred, and slightly behind P5. They are at the same event, but there is no direct interaction, physical contact, or shared focus between them. => no-relationship",
+  "timestamp": 1787940553.973739
+}

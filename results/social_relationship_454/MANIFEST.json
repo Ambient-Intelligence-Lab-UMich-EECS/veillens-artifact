@@ -37,11 +37,14 @@
     "root": "pipeline2/data_sc",
     "process_reasoning": "pipeline2/data_sc/pred_output/gpt-5_20260422_154635/responses/<image_id>.json",
     "raw_attack": {
+      "gemini-2.5-flash": "pipeline2/data_sc/attack_output/gemini_gemini-2.5-flash_20260828_140337",
       "gemini-3.1-flash-lite": "pipeline2/data_sc/attack_output/gemini_gemini-3.1-flash-lite_20260528_002253",
       "gemini-3.1-pro-preview": "pipeline2/data_sc/attack_output/gemini_gemini-3.1-pro-preview_20260528_002436"
     },
     "defended_attack": {
+      "gemini-2.5-flash": "pipeline2/data_sc/def_eval/gemini_gemini-2.5-flash_20260828_135210",
       "gemini-3.1-flash-lite": "pipeline2/data_sc/def_eval/gemini_gemini-3.1-flash-lite_20260528_011603",
+      "gemini-3.1-pro-preview": "pipeline2/data_sc/def_eval/gemini_gemini-3.1-pro-preview_20260828_135212",
       "gpt-5.2": "pipeline2/data_sc/def_eval/openai_gpt-5.2_20260528_031757"
     },
     "scripts": {
@@ -65,29 +68,48 @@
       "attribution": "the source run directory is named gpt-5_20260422_154635 and predict_from_detection.py sets MODEL='gpt-5'; no response file carries a model field",
       "read_image": "the original PISC image; this stage runs its OWN person detector rather than using ground-truth boxes",
       "coverage_caveat": "detection misses subjects, so only 1109 of the 1518 ground-truth pairs received an answer (73.1%). Accuracy over all 1518 pairs is 0.5323; over the 1109 answered pairs it is 0.7286. The two attack.py runs use ground-truth boxes and answer ~100% of pairs, so gpt-5's number is NOT directly comparable to theirs.",
-      "empty_raw_response": 52
+      "empty_raw_response": 52,
+      "also_exposed_as": "evaluation/raw/oracle/responses/<image_id>.json (byte-identical copies)"
     },
     "evaluation": {
       "path": "evaluation/<condition>/<model>/responses/<image_id>.json",
       "layout_note": "This experiment has two attack conditions, so evaluation/ carries an extra level (raw|defended) that results/compositional_500 and results/geolocation_100 do not have.",
       "raw": {
-        "what": "attack.py on annotated/<image_id>.jpg \u2014 every subject boxed and numbered",
+        "what": "attack.py on annotated/<image_id>.jpg \u2014 every subject boxed and numbered. The oracle evaluator is the exception: it reads the unannotated image and runs its own detector.",
         "runs": [
           {
+            "model": "oracle",
+            "responses": 454,
+            "bytes": 397389,
+            "gt_pairs": 1518,
+            "answered_pairs": 1109,
+            "six_way_all_pairs": 0.5323,
+            "three_way_all_pairs": 0.5718,
+            "protocol": "own detector, not ground-truth boxes \u2014 see evaluation/raw/oracle/summary.json"
+          },
+          {
+            "model": "gemini-2.5-flash",
+            "responses": 454,
+            "bytes": 425375,
+            "gt_pairs": 1518,
+            "six_way": 0.6785,
+            "three_way": 0.7411
+          },
+          {
             "model": "gemini-3.1-flash-lite",
-            "responses": 200,
-            "bytes": 169345,
-            "gt_pairs": 646,
-            "six_way": 0.6827,
-            "three_way": 0.726
+            "responses": 454,
+            "bytes": 391489,
+            "gt_pairs": 1518,
+            "six_way": 0.6785,
+            "three_way": 0.7484
           },
           {
             "model": "gemini-3.1-pro-preview",
-            "responses": 161,
-            "bytes": 119688,
-            "gt_pairs": 528,
-            "six_way": 0.7311,
-            "three_way": 0.7784
+            "responses": 454,
+            "bytes": 344707,
+            "gt_pairs": 1518,
+            "six_way": 0.7095,
+            "three_way": 0.7701
           }
         ]
       },
@@ -95,11 +117,25 @@
         "what": "attack.py on def_img/<image_id>.jpg \u2014 only the subjects NOT predicted to be in a relationship are boxed",
         "runs": [
           {
+            "model": "gemini-2.5-flash",
+            "responses": 41,
+            "bytes": 33769,
+            "correct_six_way": 57,
+            "correct_three_way": 59
+          },
+          {
             "model": "gemini-3.1-flash-lite",
             "responses": 41,
             "bytes": 29358,
             "correct_six_way": 50,
             "correct_three_way": 53
+          },
+          {
+            "model": "gemini-3.1-pro-preview",
+            "responses": 41,
+            "bytes": 25345,
+            "correct_six_way": 61,
+            "correct_three_way": 64
           },
           {
             "model": "gpt-5.2",
@@ -111,20 +147,25 @@
         ]
       },
       "coverage_matrix": {
+        "oracle": [
+          "raw"
+        ],
+        "gemini-2.5-flash": [
+          "raw",
+          "defended"
+        ],
         "gemini-3.1-flash-lite": [
           "raw",
           "defended"
         ],
         "gemini-3.1-pro-preview": [
-          "raw"
-        ],
-        "gpt-5": [
-          "process only (detection pipeline)"
+          "raw",
+          "defended"
         ],
         "gpt-5.2": [
           "defended"
         ],
-        "note": "four distinct models appear, but no single condition was run with all four and only gemini-3.1-flash-lite has both conditions."
+        "note": "all 454 raw images carry 4 evaluators (oracle, gemini-2.5-flash, gemini-3.1-flash-lite, gemini-3.1-pro-preview) and all 41 defended images carry 4 (the three gemini models plus gpt-5.2). The oracle is gpt-5 running the detection pipeline: it reads the unprotected image with its own person detector rather than ground-truth boxes, so it answers only 1109 of 1518 pairs and is NOT protocol-comparable to the other three raw evaluators. Its responses are byte-identical copies of process/<image_id>/round1_full_img.json. gpt-5.2 is defended-only."
       }
     }
   },
@@ -146,28 +187,43 @@
   "defense_abstention": "see defense_abstention.json",
   "headline_numbers": {
     "raw": {
-      "gemini-3.1-flash-lite": {
-        "six_way": 0.6827,
-        "three_way": 0.726,
-        "pairs": 646
-      },
-      "gemini-3.1-pro-preview": {
-        "six_way": 0.7311,
-        "three_way": 0.7784,
-        "pairs": 528
-      },
-      "gpt-5_answered_pairs_only": {
+      "oracle_answered_pairs_only": {
         "six_way": 0.7286,
         "three_way": 0.7827,
         "pairs": 1109
       },
-      "gpt-5_all_pairs": {
+      "oracle_all_pairs": {
         "six_way": 0.5323,
         "three_way": 0.5718,
+        "pairs": 1518
+      },
+      "gemini-2.5-flash": {
+        "six_way": 0.6785,
+        "three_way": 0.7411,
+        "pairs": 1518
+      },
+      "gemini-3.1-flash-lite": {
+        "six_way": 0.6785,
+        "three_way": 0.7484,
+        "pairs": 1518
+      },
+      "gemini-3.1-pro-preview": {
+        "six_way": 0.7095,
+        "three_way": 0.7701,
         "pairs": 1518
       }
     },
     "defended": {
+      "gemini-2.5-flash": {
+        "A_over_1518": {
+          "six_way": 0.0375,
+          "three_way": 0.0389
+        },
+        "B_over_1373": {
+          "six_way": 0.0415,
+          "three_way": 0.043
+        }
+      },
       "gemini-3.1-flash-lite": {
         "A_over_1518": {
           "six_way": 0.0329,
@@ -176,6 +232,16 @@
         "B_over_1373": {
           "six_way": 0.0364,
           "three_way": 0.0386
+        }
+      },
+      "gemini-3.1-pro-preview": {
+        "A_over_1518": {
+          "six_way": 0.0402,
+          "three_way": 0.0422
+        },
+        "B_over_1373": {
+          "six_way": 0.0444,
+          "three_way": 0.0466
         }
       },
       "gpt-5.2": {
@@ -190,42 +256,61 @@
       }
     },
     "relative_reduction": {
-      "only_model_with_both_conditions": "gemini-3.1-flash-lite",
-      "note": "gemini-3.1-pro-preview has no defended run and gpt-5.2 has no raw run, so no other model yields a before/after pair.",
+      "models_with_both_conditions": [
+        "gemini-2.5-flash",
+        "gemini-3.1-flash-lite",
+        "gemini-3.1-pro-preview"
+      ],
+      "note": "all three gemini models now have raw and defended runs over the same 41 images and the same 396 ground-truth pairs, so the paired before/after below is the defensible reduction figure. The cross-set A/B accounting that earlier versions carried is retired: raw and defended no longer differ in image set, so no denominator correction is needed. gpt-5.2 remains defended-only.",
       "paired_same_images": {
-        "images": 17,
-        "gt_pairs": 180,
-        "raw": {
-          "six_way": 0.6667,
-          "three_way": 0.6778
+        "gemini-2.5-flash": {
+          "images": 41,
+          "gt_pairs": 396,
+          "raw": {
+            "six_way": 0.6793,
+            "three_way": 0.7348
+          },
+          "defended": {
+            "six_way": 0.1439,
+            "three_way": 0.149
+          },
+          "relative_reduction": {
+            "six_way": 0.7881,
+            "three_way": 0.7973
+          }
         },
-        "defended": {
-          "six_way": 0.1444,
-          "three_way": 0.15
+        "gemini-3.1-flash-lite": {
+          "images": 41,
+          "gt_pairs": 396,
+          "raw": {
+            "six_way": 0.7172,
+            "three_way": 0.7828
+          },
+          "defended": {
+            "six_way": 0.1263,
+            "three_way": 0.1338
+          },
+          "relative_reduction": {
+            "six_way": 0.8239,
+            "three_way": 0.829
+          }
         },
-        "relative_reduction": {
-          "six_way": 0.7833,
-          "three_way": 0.7787
-        },
-        "note": "the only genuine before/after: same model, same images, same ground-truth pairs in both conditions. This is the defensible reduction figure."
-      },
-      "cross_set_A": {
-        "raw_six_way": 0.6827,
-        "defended_six_way": 0.0329,
-        "relative_reduction_six_way": 0.9518,
-        "raw_three_way": 0.726,
-        "defended_three_way": 0.0349,
-        "relative_reduction_three_way": 0.9519,
-        "note": "raw is measured over this model's 200-image run; defended over all 454 images. Different image sets, so this is not a paired comparison and it flatters the defense."
-      },
-      "cross_set_B": {
-        "raw_six_way": 0.6827,
-        "defended_six_way": 0.0364,
-        "relative_reduction_six_way": 0.9467,
-        "raw_three_way": 0.726,
-        "defended_three_way": 0.0386,
-        "relative_reduction_three_way": 0.9468,
-        "note": "same caveat as A, with the 71 never-anonymized images excluded from the defended denominator."
+        "gemini-3.1-pro-preview": {
+          "images": 41,
+          "gt_pairs": 396,
+          "raw": {
+            "six_way": 0.6768,
+            "three_way": 0.7298
+          },
+          "defended": {
+            "six_way": 0.154,
+            "three_way": 0.1616
+          },
+          "relative_reduction": {
+            "six_way": 0.7724,
+            "three_way": 0.7785
+          }
+        }
       }
     }
   },

@@ -1,0 +1,27 @@
+{
+  "img_id": "8088",
+  "predictions": {
+    "1 4": 5,
+    "2 3": 1,
+    "2 4": 5,
+    "2 5": 5,
+    "2 6": 1,
+    "3 4": 5,
+    "3 5": 5,
+    "3 6": 1,
+    "4 6": 5
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "1 4": 6,
+    "2 3": 1,
+    "2 5": 5,
+    "2 4": 6,
+    "2 6": 1,
+    "3 4": 6,
+    "3 5": 5,
+    "3 6": 1
+  },
+  "raw_response": "[P1-P4]: P4 is likely a server reaching out to the area, while P1 is a customer seated in the background. Their interaction is limited to a service context. => commercial\n\n[P2-P3]: P2 and P3 are seated together as part of the group of customers in the establishment. Their shared posture and setting indicate they are friends or acquaintances socializing together. => friends\n\n[P2-P4]: P2 is a customer and P4 represents the service staff reaching into the scene. This is a typical interaction between a customer and a service provider. => commercial\n\n[P2-P5]: P5 is wearing a traditional serving outfit (dirndl) and is positioned standing while attending to the seated customers. This indicates a professional relationship between the server and the customer. => commercial\n\n[P2-P6]: P2 and P6 are both seated at the same table, facing each other and engaging in conversation. They appear to be friends or family members sharing a meal or drink. => friends\n\n[P3-P4]: P3 is a customer seated in the establishment and P4 is a server in the background. Their relationship is defined by the service interaction within the commercial space. => commercial\n\n[P3-P5]: P5 is dressed in uniform as a server interacting with or overseeing the table where P3 is seated. This is a clear professional, service-based connection. => commercial\n\n[P3-P6]: P3 and P6 are both seated at the same table, part of the same small group of customers. Their proximity and shared activity suggest a relationship as friends. => friends\n\n[P4-P6]: P4 is reaching into the area as a server, while P6 is a customer seated at the table. Their relationship is purely transactional based on the service context. => commercial",
+  "timestamp": 1787936264.2450337
+}

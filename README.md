@@ -18,7 +18,10 @@ VeilLens takes an image and a privacy goal and runs a four-stage loop:
 Because the reasoning step is explicit, you can see *why* something was flagged rather than getting
 an opaquely blurred photo back.
 
-Two privacy settings ship here: **geolocation** and **compositional privacy**.
+Three privacy settings ship here: **geolocation**, **compositional privacy**, and
+**social relationship**. The third differs in one structural way: PISC supplies person boxes and
+subject ids, so it skips open-set detection and anonymizes the faces of the subjects that carry a
+relationship — see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ---
 
@@ -46,23 +49,31 @@ it before anything long.
 
 Copy `.env.example` to `.env` and set `OPENAI_API_KEY` if you intend to run the loop.
 
+## Watch it run
+
+[`demo.mp4`](demo.mp4) walks a recorded geolocation run through the loop one stage at a time —
+the oracle naming what it can infer and from which cues, each cue being grounded to a mask, the
+choice of what to remove, the edit, and the verification gate deciding whether to iterate. Two and
+a half minutes, and it needs nothing installed.
+
 ## Try it with no API key and no GPU
 
-`veillens-score` reads the JSON a run already wrote, so the bundled examples work immediately:
+`examples/results/` carries two images per privacy setting, copied out of real runs: the aggregate,
+the attacker's raw reply, and the before/after pair. Both offline commands take the directory:
 
 ```bash
-veillens-score examples/results/geolocation/evaluation_results.json
-veillens-score examples/results/compositional/run_evaluation_results.json --setting compositional
+veillens-score  examples/results/geolocation        # also: compositional, social_relation
+veillens-verify examples/results/geolocation
 ```
 
 `veillens-score` reports the distribution — how far off the attacker was. `veillens-verify` reports
 the verdict — whether the cue granularities the run promised to remove are actually gone, by two
-independent criteria. It reads the run's own JSON, so it needs no key and no GPU either:
+independent criteria. Both read the run's own JSON, so neither needs a key or a GPU.
 
-```bash
-veillens-verify examples/results/geolocation \
-    --responses results/geolocation_100/evaluation/gpt-5.2/responses
-```
+Two images per setting show the format and the edit; they are not evidence of effect size. The
+reported numbers come from the full runs in [`results/`](results/), and
+[`examples/results/README.md`](examples/results/README.md) says what each sample does and does not
+demonstrate — including the social-relationship pair, where the attacker is *not* fooled.
 
 ## Check an install before spending anything
 
@@ -84,7 +95,7 @@ you are most likely to change:
 
 ```yaml
 experiment:
-  privacy_class: geolocation                              # geolocation | compositional
+  privacy_class: geolocation                # geolocation | compositional | social_relation
   mask_level: ["street level clue", "city level clue"]    # which cues to remove
   max_iter: 3                                             # reason→edit→verify rounds
 ```
@@ -118,12 +129,12 @@ src/veillens/     the package — reason/ ground/ edit/ loop/ privacy/ …
 configs/          one file per privacy setting
 prompts/          the prompts and JSON schemas the oracle is given, verbatim
 manifests/        image identifiers and ground-truth labels for the evaluated sets
-examples/         per-example records from finished runs, for veillens-score
+examples/         two worked images per privacy setting, for veillens-score and -verify
 results/          every VLM response behind a finished experiment, one file per response
 scripts/          one-off setup helpers (baseline weight download)
-tests/            offline test suite: no key, no GPU, no data
 docs/             usage, architecture, baselines, and where the data comes from
 third_party/      the Grounded-SAM-2 and GeoShield submodules — see Install
+demo.mp4          screen recording of a full run
 ```
 
 ## Where data goes

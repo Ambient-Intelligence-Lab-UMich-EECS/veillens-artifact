@@ -1,0 +1,14 @@
+{
+  "img_id": "2734",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 5": 1,
+    "2 3": 2,
+    "2 5": 1,
+    "3 5": 1
+  },
+  "ground_truth": {},
+  "raw_response": "Here is the classification for each pair:\n\n[P1-P2]: Both are formally dressed men in the background, distant from each other and not visibly interacting. They appear to be merely bystanders in the same event space. => no-relationship\n[P1-P3]: P1 is a man in the background, while P3 is a small, blurred person far in the background. There is no visible interaction or proximity between them. => no-relationship\n[P1-P5]: P1 is a formally dressed guest at the wedding of the couple in P5. Attending a wedding signifies a social connection and shared social activity with the couple. => friends\n[P2-P3]: P3, a smaller person, is positioned very closely behind and partially obscured by P2. This strong proximity and size difference suggest a protective or familial bond, likely parent-child. => family-members\n[P2-P5]: P2 is a formally dressed guest at the wedding of the couple in P5. Attending a wedding signifies a social connection and shared social activity with the couple. => friends\n[P3-P5]: P3, a smaller person, is a guest at the wedding of the couple in P5. Attending a wedding signifies a social connection and shared social activity with the couple. => friends",
+  "timestamp": 1787939646.9050593
+}

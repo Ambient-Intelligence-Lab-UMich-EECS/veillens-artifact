@@ -1,0 +1,29 @@
+{
+  "img_id": "18824",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 6,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 6,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are on the field wearing football attire, actively participating in a sporting event or training session, suggesting they are colleagues or teammates. => professional\n[P1-P3]: P1 is a player on the field, while P3 is a spectator in the stands. They are in different roles and locations with no apparent interaction. => no-relationship\n[P1-P4]: Both are on the field in similar football kits and appear to be players engaged in the same sporting activity, indicating a professional relationship as teammates or opponents. => professional\n[P1-P5]: Both are on the field in football attire, with P5 wearing goalkeeper gloves. They are involved in the same professional activity, likely as teammates or part of the same training staff. => professional\n[P2-P3]: P2 is a player or staff member on the field, and P3 is a spectator in the stands. There is no direct interaction or shared activity between them. => no-relationship\n[P2-P4]: Both are on the field wearing similar football kits (P2's says \"ARSENAL\"), indicating they are likely teammates or fellow players involved in the same professional activity. => professional\n[P2-P5]: Both are on the field in football attire, with P2's jersey saying \"ARSENAL\" and P5 in goalkeeper gear. They are performing related roles in a professional sporting context. => professional\n[P3-P4]: P3 is a spectator in the stands, and P4 is a player on the field. They are in distinct roles and lack any direct social connection. => no-relationship\n[P3-P5]: P3 is a spectator in the stands, while P5 is a player or staff member on the field. They do not share a direct relationship or interaction. => no-relationship\n[P4-P5]: Both individuals are on the field wearing football attire, with P5 equipped as a goalkeeper. They are part of the same professional sporting event or training, likely as teammates. => professional",
+  "timestamp": 1787940239.6489341
+}

@@ -2,8 +2,9 @@
 
 Every VLM response behind the compositional-privacy experiment, one file per response.
 **Reasoning only — no images are included.** The image set is the one named in
-[`manifests/compositional_500.json`](../../manifests/compositional_500.json); the aggregate
-score files those responses roll up into are in
+[`manifests/compositional_500.json`](../../manifests/compositional_500.json); the per-image scores
+those responses roll up into are in [`index.csv`](index.csv). Two of the 500 images appear as a
+worked before/after pair in
 [`examples/results/compositional/`](../../examples/results/compositional/).
 
 ```
@@ -25,8 +26,9 @@ read of the **unprotected** input: what it believes is inferable, which visual c
 inference, a severity level per cue, and a risk score.
 
 That file is also the raw baseline. Its `personal_info_privacy_score.score` equals the
-`feature_removed: "none"` entry in `run_evaluation_results.json` for all 500 images — checked,
-zero mismatches. The 0.3138 raw mean is the mean of these 500 numbers.
+`feature_removed: "none"` entry in the source run's own `evaluation_results.json` for all 500
+images — checked against that run, zero mismatches; the `raw_score` column of `index.csv` is that
+same number. The 0.3138 raw mean is the mean of these 500 numbers.
 
 `round2_<k>.json` is the same oracle re-reading crops of the image after round 1's edits landed.
 The count varies with how many rounds an image needed: 42 images have none, 421 have two, 37 have
@@ -50,9 +52,9 @@ image set exists on the filesystem this folder was built from. Both models were 
 there applies here. Until those two runs are performed, this folder holds two evaluators.
 
 **GPT-5.2 is an attribution, not a record.** The response files carry no model field, and neither
-does `run_evaluation_results.json`. `configs/compositional.yaml` names an `evaluation.model`, but
+does the source run's aggregate. `configs/compositional.yaml` names an `evaluation.model`, but
 that is the default for a *new* run rather than a record of this one. `gemini-3.1-flash-lite` is
-different — the source `evaluation_results.json` names it in a top-level `model` field.
+different — the second attacker's aggregate names it in a top-level `model` field.
 
 ## Response shape
 

@@ -1,0 +1,27 @@
+{
+  "img_id": "8088",
+  "predictions": {
+    "1 4": 5,
+    "2 3": 1,
+    "2 4": 5,
+    "2 5": 5,
+    "2 6": 1,
+    "3 4": 5,
+    "3 5": 5,
+    "3 6": 1,
+    "4 6": 5
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "1 4": 6,
+    "2 3": 1,
+    "2 5": 5,
+    "2 4": 6,
+    "2 6": 1,
+    "3 4": 6,
+    "3 5": 5,
+    "3 6": 1
+  },
+  "raw_response": "[P1-P4]: P1 is a seated patron, while P4 is the arm of an employee reaching toward the table to provide service. => commercial\n[P2-P3]: P2 and P3 are seated together at the table, smiling and enjoying a shared social outing. => friends\n[P2-P4]: P2 is a customer seated at the table, while P4 is the arm of a staff member performing a service task. => commercial\n[P2-P5]: P2 is a seated guest, while P5 is standing nearby in a traditional uniform, acting as a hostess or server. => commercial\n[P2-P6]: Both individuals are seated next to each other, participating as part of the same social group at the table. => friends\n[P3-P4]: P3 is a seated customer enjoying a drink, and P4 is the arm of a service worker. => commercial\n[P3-P5]: P3 is a customer socializing at the table, while P5 is an employee in uniform attending to the guests. => commercial\n[P3-P6]: P3 and P6 are seated around the same table, sharing a casual social activity together. => friends\n[P4-P6]: P4 is the arm of a service worker reaching toward the table where customer P6 is seated. => commercial",
+  "timestamp": 1787937831.8167143
+}

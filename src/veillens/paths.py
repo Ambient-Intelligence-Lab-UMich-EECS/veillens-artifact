@@ -28,6 +28,7 @@ from pathlib import Path
 __all__ = [
     "RUN_SUBDIRS",
     "INTERMEDIATE_DIR",
+    "RESIZED_INPUTS_DIR",
     "SEGMENTATION_DIR",
     "FINAL_DIR",
     "REPO_ROOT",
@@ -51,6 +52,11 @@ RUN_SUBDIRS = {
     "evaluation_results": "evaluation_results",
     "phase_cache": "phase_cache",
 }
+
+#: Where a downscaled copy of the input is staged, for privacy classes that cap input
+#: resolution (see ``PrivacyClassSpec.max_input_dim``). Created only when a run actually
+#: scales something, so a run that caps nothing leaves no empty directory behind.
+RESIZED_INPUTS_DIR = "resized_inputs"
 
 #: Per-image output lives under ``<base_dir>/<INTERMEDIATE_DIR>/<image_name>/``.
 INTERMEDIATE_DIR = "intermediate"

@@ -93,7 +93,7 @@ class PrivacyOracle:
 
             self.last_request_time = time.time()
 
-    async def get_geolocation_prediction(self, image_path: str, schema_type: str = 'eval', predicted_location: str = None, region_name: str = None, cache_key_override: str = None, role: str = 'reason') -> Optional[Dict]:
+    async def get_geolocation_prediction(self, image_path: str, schema_type: str = 'eval', predicted_location: str = None, region_name: str = None, cache_key_override: str = None, role: str = 'reason', prompt_context: str = None) -> Optional[Dict]:
         """
         Get geolocation prediction for a single image
 
@@ -106,6 +106,10 @@ class PrivacyOracle:
             role: Which backend answers -- 'reason' for the defense loop, 'eval' for the final
                 measurement. Must be passed explicitly: schema_type does not imply it, because
                 the compositional spec runs its final eval through the 'original' schema.
+            prompt_context: Per-image text appended to whichever prompt is selected. The shipped
+                prompts ask about the whole image and need none; a setting that asks about
+                specific subjects has to name them, and only the manifest knows which. Supplied
+                by PrivacyClassSpec.format_item_context, so a None here is the unmodified prompt.
 
         Returns:
             Dict with prediction data or None if failed
@@ -144,6 +148,9 @@ class PrivacyOracle:
                         selected_prompt = self.spec.get_round1_prompt()
                 else:
                     selected_prompt = self.spec.get_eval_prompt()
+
+                if prompt_context:
+                    selected_prompt = f"{selected_prompt}\n{prompt_context}"
 
                 # Names this call in any per-call record the backend keeps. Same stem the
                 # truncated-response dump below uses, so the two line up.

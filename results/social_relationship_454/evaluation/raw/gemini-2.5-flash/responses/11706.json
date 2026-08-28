@@ -1,0 +1,21 @@
+{
+  "img_id": "11706",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 1,
+    "2 3": 6,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are seated very close together, both smiling and looking relaxed in a casual setting, suggesting mutual comfort and shared enjoyment of the activity or company. => friends\n[P1-P3]: P1 and P3 are separated by significant physical distance and another person (P4), and exhibit no direct interaction or shared focus, with P3 concentrating on his own laptop. => no-relationship\n[P1-P4]: P4 is seated directly behind P1, in very close proximity, and both are part of the same casual group lounging together, indicating a shared social context and connection. => friends\n[P2-P3]: P2 and P3 are physically separated by P1 and P4, exhibit no direct interaction, and are engaged in separate activities and social sub-groups within the scene. => no-relationship\n[P2-P4]: Although P1 is seated between them, P2 and P4 are part of the same close group lounging together in a casual setting, implying a shared social bond. => friends\n[P3-P4]: P4 is seated immediately in front of P3, and both are present in the same casual social setting, indicating they are part of the same social gathering. => friends",
+  "timestamp": 1787940768.1667433
+}

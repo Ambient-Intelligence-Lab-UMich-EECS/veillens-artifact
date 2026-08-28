@@ -195,10 +195,11 @@ async def run_baseline(config: Dict[str, Any], method: str, params: Dict[str, An
         print(f"\n[baseline] wrote {len(protected)} protected images; evaluation skipped")
         return root
 
-    # The compositional spec runs its final read through the round-1 schema, which already
-    # exposes the privacy score; only geolocation has a separate attack schema. Same rule the
-    # loop applies, and it has to stay the same rule for the numbers to line up.
-    schema_type = "eval" if spec.name == "geolocation" else "original"
+    # Which schema the attacker answers under is the spec's to say -- the compositional setting
+    # runs its final read through the round-1 schema, which already exposes the privacy score.
+    # Reading it from the spec rather than restating the rule is what keeps a baseline's numbers
+    # comparable with the loop's: there is now one place the rule can be wrong.
+    schema_type = spec.eval_schema_type
 
     evaluation_section = config["evaluation"]
     client = client_from_config(evaluation_section)

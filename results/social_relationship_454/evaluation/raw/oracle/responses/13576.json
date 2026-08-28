@@ -1,0 +1,32 @@
+{
+  "img_id": "13576",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They\u2019re in a home living room playing a motion-control video game, standing a few feet apart facing the TV in casual clothes with no physical contact\u2014just a shared leisure activity. => friends\n\n[P1-P3]: Both are part of the same at\u2011home gaming session; casual attire, nearby but not interacting directly, and no signs of intimacy or formality. => friends\n\n[P1-P4]: In the living room, P4 is holding a game controller while P1 also faces the TV; casual clothing and relaxed posture, no contact or romantic cues. => friends\n\n[P2-P3]: They stand close on the right side during the game, oriented toward the TV; casual setting and body language without affection or professional vibe. => friends\n\n[P2-P4]: Side\u2011by\u2011side actively playing with controllers/straps in a home environment; playful but non\u2011intimate body language and casual attire. => friends\n\n[P3-P4]: Next to each other within the same casual gaming gathering at home; relaxed posture, no physical contact or transactional context. => friends",
+  "timestamp": 1776889184.6942909
+}

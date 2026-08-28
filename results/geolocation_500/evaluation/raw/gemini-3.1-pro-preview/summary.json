@@ -7,54 +7,67 @@
   "role": "independent scorer; none of these four models is inside a protection loop",
   "scored_image": "readydata/dataset_random_500/raw/<image_id>_leftImg8bit.png",
   "images_in_set": 500,
-  "responses": 100,
+  "responses": 500,
   "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
   "error_km": {
-    "n": 100,
-    "mean_km": 43.467,
+    "n": 500,
+    "mean_km": 38.989,
     "median_km": 0.613,
-    "min_km": 0.015,
-    "max_km": 466.833,
-    "within_0.5km_pct": 49.0,
-    "within_1km_pct": 57.0,
-    "within_5km_pct": 66.0,
-    "within_10km_pct": 67.0,
-    "within_25km_pct": 72.0,
-    "within_100km_pct": 82.0
+    "min_km": 0.003,
+    "max_km": 495.919,
+    "within_0.5km_pct": 46.6,
+    "within_1km_pct": 58.6,
+    "within_5km_pct": 71.4,
+    "within_10km_pct": 72.8,
+    "within_25km_pct": 77.2,
+    "within_100km_pct": 85.2
   },
-  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 100 responses, to 0.0 km at R = 6371.0",
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 500 responses, to 0.0 km at R = 6371.0",
   "source_runs": [
     {
       "dataset": "dataset_random_100",
       "run": "gpt_image_100_resume_b_20260813_152619",
       "manifest": "dataset.json",
       "images": 100,
-      "declared_failures": 0
+      "declared_failures": 0,
+      "answers_first_seen_here": 100,
+      "timestamp": "2026-08-13T16:41:44.157825"
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_c2_20260824_203916",
+      "manifest": "dataset_new400_c2_raw.json",
+      "images": 400,
+      "declared_failures": 155,
+      "answers_first_seen_here": 245,
+      "timestamp": "2026-08-24T22:57:52.065843"
     },
     {
       "dataset": "dataset_random_500",
       "run": "gpt_image_500_new400_c_20260820_000954",
       "manifest": "dataset_new400.json",
       "images": 400,
-      "declared_failures": 400
+      "declared_failures": 400,
+      "answers_first_seen_here": 0,
+      "timestamp": "2026-08-20T02:26:30.157952"
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_d_20260828_010344",
+      "manifest": "dataset_new400_d_raw.json",
+      "images": 82,
+      "declared_failures": 0,
+      "answers_first_seen_here": 82,
+      "timestamp": "2026-08-28T02:08:55.737041"
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_k2_20260824_211116",
+      "manifest": "dataset_new400_k2_raw.json",
+      "images": 98,
+      "declared_failures": 23,
+      "answers_first_seen_here": 73,
+      "timestamp": "2026-08-24T23:45:05.920544"
     }
-  ],
-  "unscored": {
-    "count": 400,
-    "why": "gemini-3.1-pro-preview hits a 250-requests-per-model-per-day cap; every unscored call returned HTTP 429 and was recorded with a null error and a null location_estimate. No reasoning was produced, so no file is emitted.",
-    "image_ids": [
-      "aachen_000001_000019",
-      "aachen_000009_000019",
-      "aachen_000017_000019",
-      "aachen_000025_000019",
-      "aachen_000033_000019",
-      "aachen_000042_000019",
-      "aachen_000050_000019",
-      "aachen_000058_000019",
-      "aachen_000066_000019",
-      "aachen_000075_000019",
-      "..."
-    ],
-    "coverage_pct": 20.0
-  }
+  ]
 }

@@ -1,0 +1,19 @@
+{
+  "img_id": "11574",
+  "predictions": {
+    "1 3": 6,
+    "2 3": 6,
+    "2 5": 2,
+    "3 4": 2,
+    "3 5": 6
+  },
+  "ground_truth": {
+    "1 3": 6,
+    "2 3": 6,
+    "2 5": 2,
+    "3 5": 6,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P3]: The two adults are sitting apart and facing different directions, indicating they likely belong to separate groups sharing the same public park space. => no-relationship\n[P2-P3]: The seated adult is physically distant and looking away from the boy's play activity, showing no visual connection or interaction with him. => no-relationship\n[P2-P5]: The young boy and teenage girl are in close proximity and engaged in the same casual baseball activity, a typical dynamic for siblings. => family-members\n[P3-P4]: The standing individual is positioned immediately in front of the seated adult, sharing personal space and a common line of sight, suggesting they are together as a family unit. => family-members\n[P3-P5]: There is a noticeable physical distance and lack of shared focus between the seated adult and the standing girl, indicating they belong to different social groups. => no-relationship",
+  "timestamp": 1787936541.608298
+}

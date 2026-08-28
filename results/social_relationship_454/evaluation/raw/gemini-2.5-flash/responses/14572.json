@@ -1,0 +1,39 @@
+{
+  "img_id": "14572",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: Both are young children in very close proximity, sharing a playground activity. This strongly suggests they are siblings or close family members. => family-members\n[P1-P3]: P1 is a young child and P3 is an adult woman positioned directly behind P1 and P2 in a supervisory role in a playground. This indicates a parental or guardian relationship. => family-members\n[P1-P4]: P1 is a young child in the foreground, while P4 is an adult male, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P1-P5]: P1 is a young child in the foreground, while P5 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P1-P6]: P1 is a young child in the foreground, while P6 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P2-P3]: P2 is a young child and P3 is an adult woman positioned directly behind P2 and P1 in a supervisory role in a playground. This indicates a parental or guardian relationship. => family-members\n[P2-P4]: P2 is a young child, while P4 is an adult male, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P2-P5]: P2 is a young child, while P5 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P2-P6]: P2 is a young child, while P6 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P3-P4]: P3 is an adult woman in the foreground, while P4 is an adult male, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P3-P5]: P3 is an adult woman in the foreground, while P5 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P3-P6]: P3 is an adult woman in the foreground, while P6 is an adult, blurry and distant in the background, with no interaction or shared context. => no-relationship\n[P4-P5]: P4 and P5 are both distant, blurry background figures showing no direct interaction or shared focus, despite being in the same park. => no-relationship\n[P4-P6]: P4 and P6 are both distant, blurry background figures showing no direct interaction or shared focus, despite being in the same park. => no-relationship\n[P5-P6]: Despite their close proximity in the blurry background (one sitting, one standing next to them), P5 and P6 exhibit no clear visual cues of interaction or shared social engagement beyond co-presence. => no-relationship",
+  "timestamp": 1787940930.839518
+}

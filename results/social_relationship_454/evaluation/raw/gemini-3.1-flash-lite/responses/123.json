@@ -1,0 +1,15 @@
+{
+  "img_id": "123",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "raw_response": "[P1-P2]: P1 is engaged in an activity at a shop front while P2 is walking in the distance in a different area. There is no visible interaction between them, suggesting they are strangers. => no-relationship\n\n[P1-P3]: P1 and P3 are standing together and both are engaged in the same activity of sweeping the ground with brooms. The proximity and shared task suggest a familial relationship, likely parent and child. => family-members\n\n[P2-P3]: P2 is walking in the background at a distance from P3. They are not interacting and appear to be unrelated bystanders. => no-relationship",
+  "timestamp": 1787936275.921304
+}

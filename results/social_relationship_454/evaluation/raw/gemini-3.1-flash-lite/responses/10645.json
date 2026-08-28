@@ -1,0 +1,39 @@
+{
+  "img_id": "10645",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 5,
+    "1 6": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 5,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 3": 6,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 appear to be presenters or participants at a coordinated event, sharing the stage and attention. They show a level of professional camaraderie consistent with co-hosts or panelists. => professional\n\n[P1-P3]: P3 is a member of the audience in the foreground, with no clear social connection or interaction with P1. They are simply co-present in the same large event space. => no-relationship\n\n[P1-P4]: P4 appears to be another audience member or participant located near the stage, but with no evidence of a direct personal or professional bond. => no-relationship\n\n[P1-P5]: P5 is an audience member holding a phone to record/photograph the event, placing them in the role of a consumer or spectator relative to P1. Their interaction is limited to the performer-audience dynamic. => commercial\n\n[P1-P6]: P6 is a member of the audience whose view or presence is incidental to P1's role on stage. There is no evidence of a direct relationship. => no-relationship\n\n[P2-P3]: Both are part of the audience/scene, but there is no evidence of interaction or familiarity between them. => no-relationship\n\n[P2-P4]: P4 is seated among the audience while P2 is on stage, suggesting they are strangers within the same event setting. => no-relationship\n\n[P2-P5]: P5 is an audience member capturing the event, while P2 is the subject on stage, indicating a typical consumer-performer dynamic. => commercial\n\n[P2-P6]: P6 is an audience member with no visible connection to P2 on stage. => no-relationship\n\n[P3-P4]: Both appear to be members of the audience in the same area, but there is no specific evidence of a social bond. => no-relationship\n\n[P3-P5]: Both are audience members in the crowd, likely strangers sharing the same viewing space. => no-relationship\n\n[P3-P6]: Both are audience members near each other, but there is no clear interaction indicating a prior relationship. => no-relationship\n\n[P4-P5]: Both are individuals in the audience capturing or observing the stage, acting as bystanders in the same setting. => no-relationship\n\n[P4-P6]: Both are audience members positioned near one another with no clear social connection. => no-relationship\n\n[P5-P6]: Both are audience members in the same area, with P5 focused on the stage and P6 being a nearby attendee, suggesting they are strangers. => no-relationship",
+  "timestamp": 1787936248.620894
+}

@@ -1,0 +1,25 @@
+{
+  "img_id": "3708",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 1,
+    "2 3": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Indoor party/club scene; P1 is engaged with someone else while P2 stands apart near a pillar, with no eye contact or touch and clear distance/barrier between them. Attire is party casual but there\u2019s no interaction. => no-relationship\n\n[P1-P3]: At a party, they\u2019re close together with P3 raising a bottle and moving toward P1 as if dancing/cheering; relaxed, social body language and shared activity but no romantic intimacy. => friends\n\n[P2-P3]: Same party setting but they\u2019re separated by space and a pillar, not oriented toward each other and not interacting physically. => no-relationship",
+  "timestamp": 1776887968.2745984
+}

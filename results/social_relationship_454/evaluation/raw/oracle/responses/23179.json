@@ -1,0 +1,37 @@
+{
+  "img_id": "23179",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 5": 6,
+    "2 3": 6
+  },
+  "missed_pairs": [
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "subjects_unmatched": [
+    4
+  ],
+  "num_preds_detected": 8,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: At an outdoor caf\u00e9, they\u2019re seated very close at the same table, casually dressed, appearing to converse while dining; no overt romantic contact. => friends\n\n[P1-P3]: In the caf\u00e9 setting, P1 is at one table while P3 sits at another with back turned; they show no interaction or eye contact. => no-relationship\n\n[P1-P5]: P1 is dining at the table, whereas P5 is a distant passerby/standing in the doorway; no engagement or proximity. => no-relationship\n\n[P2-P3]: P2 sits at P1\u2019s table while P3 is at a neighboring table with back turned; no physical or social interaction visible. => no-relationship",
+  "timestamp": 1776887942.3137274
+}

@@ -1,9 +1,11 @@
 # Geolocation, 100 images, iterative verification — VLM reasoning
 
 Every VLM response behind the iterative-verification geolocation experiment, one file per
-response. **Reasoning only — no images are included.** The aggregate these responses roll up into
-is [`examples/results/geolocation/evaluation_results.json`](../../examples/results/geolocation/evaluation_results.json),
-which is byte-identical to the source run's own aggregate and so is not duplicated here.
+response. **Reasoning only — no images are included.** The per-image numbers these responses roll
+up into are in [`index.csv`](index.csv); the source run's own `evaluation_results.json` is not
+shipped. [`examples/results/geolocation/`](../../examples/results/geolocation/) carries two worked
+before/after pairs, but from a separate four-image smoke run rather than from this one, so its
+numbers are not a subset of the table here.
 
 The run is the loop of `configs/geolocation.yaml` with `max_iter: 3` and the then-current
 `val_dist: 5.0`: read the image, remove the street- and city-level cues, **re-read the edited

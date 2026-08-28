@@ -1,0 +1,29 @@
+{
+  "img_id": "19897",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "2 5": 2,
+    "3 4": 2,
+    "3 5": 2,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 2,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "2 4": 2,
+    "3 4": 2,
+    "3 5": 2
+  },
+  "raw_response": "[P1-P2]: P1, an older male, is standing close to P2, a younger male, while P2 is engaged in playing a video game. This shared activity and multi-generational proximity in a home setting strongly suggest a familial relationship, likely father-son. => family-members\n[P1-P3]: P1 is an older male, while P3 is a younger female sitting apart. Although there's no direct interaction, their presence in a casual home environment alongside other likely family members indicates a social connection, most plausibly as extended family members (e.g., father-daughter or uncle-niece). => family-members\n[P1-P4]: P1 is an older male and P4 is a young child. P4 is in the immediate vicinity of P2, who is connected to P1. This multi-generational pairing in a domestic setting strongly points to a family relationship, such as grandfather-grandchild or grand-uncle-grandnephew. => family-members\n[P1-P5]: Similar to P1 and P3, P1 is an older male and P5 is a younger female sitting apart without direct interaction. In the context of a family home, it's highly probable they are family members (e.g., P1 as father/uncle and P5 as daughter/niece). => family-members\n[P2-P3]: P2 is a young adult male and P3 is a young adult female. They are not directly interacting; P2 is playing a game, and P3 is on a device. Given the home setting and presence of other family, they are most likely family (e.g., siblings, or P2's partner and thus P4's mother) rather than unrelated strangers. => family-members\n[P2-P4]: P2 is a young adult male and P4 is a young child standing very close to P2's leg. This intimate proximity and significant age difference are strong visual cues for a parent-child or older sibling-younger sibling relationship. => family-members\n[P2-P5]: Similar to P2 and P3, P2 is a young adult male and P5 is a young adult female, not directly interacting. Within a family home setting, it is most plausible they share a familial connection (e.g., siblings, or P2's partner and thus P4's mother). => family-members\n[P3-P4]: P3 is a young adult female and P4 is a young child, without direct interaction. Given the strong family indicators for P1, P2, and P4, P3 is likely a family member such as P4's mother or aunt. => family-members\n[P3-P5]: P3 and P5 are two young adult females sitting very closely together on a couch, indicating a comfortable and familiar relationship. In a home environment with multiple generations likely present as family, it's most consistent to classify them as family members (e.g., sisters or cousins). => family-members\n[P4-P5]: P4 is a young child and P5 is a young adult female, with no direct interaction. Given the overall family context of the scene, it is highly probable P5 is a family member to P4, such as their mother or aunt. => family-members",
+  "timestamp": 1787940659.735628
+}

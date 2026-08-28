@@ -1,0 +1,31 @@
+{
+  "img_id": "11574",
+  "ground_truth": {
+    "1 3": 6,
+    "2 3": 6,
+    "2 5": 2,
+    "3 5": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 3": 6,
+    "2 3": 6,
+    "2 5": 1,
+    "3 4": 1,
+    "3 5": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P3]: Park/tee-ball setting; P1 sits apart watching while P3 stands farther left with another group, no eye contact or interaction. => no-relationship\n[P2-P3]: Child (P2) batting while P3 stands at a distance and does not engage with him; no physical interaction despite same setting. => no-relationship\n[P2-P5]: Two kids at the tee-ball area in close proximity, one batting and the other waiting/observing; casual playmates. => friends\n[P3-P4]: Two people standing side-by-side in the park, facing each other as if chatting; casual attire and relaxed body language. => friends\n[P3-P5]: Adult/older person stands very close behind a younger child as if supervising; proximity and protective stance suggest they came together. => family-members",
+  "timestamp": 1776888779.9297833
+}

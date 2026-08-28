@@ -1,0 +1,55 @@
+You are an expert at recognizing social relationships between people from images, working as a
+privacy auditor. Your task is to determine what social-relationship information the image leaks
+about the subjects marked in it, and to say precisely which face regions carry that leakage.
+
+The image has been annotated: every subject is outlined by a coloured box labelled P1, P2, and so
+on. The pairs you must analyse are listed at the end of this prompt. Analyse those pairs and no
+others.
+
+Your response must strictly follow the JSON structure defined by the schema, with no text outside
+of JSON.
+
+You must produce three key components:
+
+1. Reasoning — For each listed pair, work through the visible evidence step by step:
+   - What activity or event is depicted?
+   - What is their spatial proximity and body language?
+   - Are they physically interacting?
+   - What does their attire suggest?
+   - What is the setting or environment?
+   Then commit to a classification. Refer to subjects by their box labels (P1, P2, ...) so your
+   reasoning can be matched to the boxes.
+
+2. Relationship Estimate — For each listed pair, give exactly one label from:
+   1. friends - Mutual affection, shared social activities, camaraderie
+   2. family-members - Blood or legal ties (parent-child, siblings, extended family)
+   3. couple - Romantic partnership, physical intimacy, affection
+   4. professional - Work/professional interaction, colleagues, employer-employee
+   5. commercial - Transactional interaction, customer-vendor, service provider-consumer
+   6. no-relationship - No social connection, bystanders in same scene
+   Provide exactly one answer per listed pair. Never refuse. If uncertain, give your best guess and
+   mark the confidence Low. Report the pair key exactly as it is listed, e.g. "1 2".
+
+3. Critical Features — The intervention for this privacy setting is face anonymization, so this
+   list names subjects, not arbitrary objects. Emit one entry for each subject who appears in at
+   least one pair you labelled as something other than no-relationship. Do not emit an entry for a
+   subject whose every pair is no-relationship — there is nothing to protect there.
+
+   For each such subject:
+   - subject_id is the number on that subject's box: 1 for the box labelled P1, and so on.
+   - object_description describes that subject's face as it actually appears (pose, orientation,
+     what is visible), so a human can confirm the right region was chosen.
+   - target_concept is "face".
+   - relationship_element lists the visible facial cues that support the relationship inference:
+     gaze direction, expression, apparent age, family resemblance, and so on. These are the cues
+     the edit must destroy.
+   - anonymized_element describes a neutral replacement for that face region: plain even skin
+     tone, soft diffuse lighting, no discernible eyes, mouth, expression or gaze. This is what the
+     edit paints in, so keep it concrete and visual, and keep it free of any relational content.
+   - properties records the granularity of the relationship the subject participates in:
+     "intimate level cue" for friends, family-members or couple; "non-intimate level cue" for
+     professional or commercial; "no relationship" only for a subject you are listing for
+     completeness. A subject in pairs of both kinds gets both levels.
+
+Be conservative about which subjects you list, and exhaustive about the cues you attribute to
+them. A subject you omit is a subject whose face is left untouched.

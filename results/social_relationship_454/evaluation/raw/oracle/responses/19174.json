@@ -1,0 +1,34 @@
+{
+  "img_id": "19174",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "predictions": {
+    "2 3": 1
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    1,
+    4
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 4,
+  "raw_response": "[P2-P3]: They appear to be at a casual get-together in a home, with P2 playing a video game and P3 standing nearby watching; both have relaxed posture and casual attire, indicating a social activity among peers rather than work or a transaction. => friends",
+  "timestamp": 1776889318.1464045
+}

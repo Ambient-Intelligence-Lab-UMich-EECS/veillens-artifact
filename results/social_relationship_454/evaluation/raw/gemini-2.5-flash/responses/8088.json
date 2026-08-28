@@ -1,0 +1,27 @@
+{
+  "img_id": "8088",
+  "predictions": {
+    "1 4": 5,
+    "2 3": 1,
+    "2 4": 5,
+    "2 5": 5,
+    "2 6": 1,
+    "3 4": 5,
+    "3 5": 5,
+    "3 6": 1,
+    "4 6": 5
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "1 4": 6,
+    "2 3": 1,
+    "2 5": 5,
+    "2 4": 6,
+    "2 6": 1,
+    "3 4": 6,
+    "3 5": 5,
+    "3 6": 1
+  },
+  "raw_response": "[P1-P4]: P1 is a patron in the winery, and P4's visible arm behind the counter indicates a staff role. Their distinct positions and the setting define a commercial relationship. => commercial\n[P2-P3]: P2 and P3 are seated at the same table in a social setting, but are not directly interacting with each other in this moment. Their shared presence implies they are part of the same social group. => friends\n[P2-P4]: P2 is a customer seated at a table, and P4's arm is behind the counter, indicating a staff role. Their roles and positions establish a commercial relationship. => commercial\n[P2-P5]: P2 is a customer and P5 is dressed as a server or host behind the counter. Their distinct roles and the setting indicate a commercial relationship. => commercial\n[P2-P6]: P2 and P6 are seated closely at a table, facing each other and engaged in conversation, clearly indicating mutual interaction and shared social activity. => friends\n[P3-P4]: P3 is a patron enjoying a drink, and P4's position behind the counter suggests a staff role. Their roles and the setting define a commercial relationship. => commercial\n[P3-P5]: P3 is a customer, and P5, the server/host, is looking directly towards P3 or the group P3 is with, indicating a commercial interaction. => commercial\n[P3-P6]: P3 and P6 are patrons seated at the same table as part of a social group, implying a shared social connection, even if not directly interacting. => friends\n[P4-P6]: P4 is positioned as staff behind the counter, and P6 is a customer seated at a table. Their roles and the setting indicate a commercial relationship. => commercial",
+  "timestamp": 1787941030.0412817
+}

@@ -26,6 +26,7 @@ dist/
 venv/
 .pytest_cache/
 .ruff_cache/
+tests/
 
 # --- editors / OS ---
 .DS_Store
@@ -37,6 +38,7 @@ venv/
 *.tgz
 *.zip
 
-# Keep the small JSON that documents what the tool emits, and the manifests.
+# Keep the worked examples (records and the before/after images) and the manifests.
 !examples/**/*.json
+!examples/**/*.jpg
 !manifests/*.json

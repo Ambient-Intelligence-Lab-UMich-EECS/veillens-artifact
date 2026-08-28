@@ -1,0 +1,34 @@
+{
+  "img_id": "11706",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    4
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Casual indoor hangout with laptops; they sit shoulder-to-shoulder on the same couch, smiling and relaxed with slight contact. Their loungewear and cozy living-room setting suggest peers spending time together. => friends\n\n[P1-P3]: Same casual gathering; P3 is just behind P1 on the couch, both on laptops with no intimate contact, relaxed body language. Shared informal attire and environment imply they\u2019re part of the same social group. => friends\n\n[P2-P3]: They are in the same relaxed lounge setting using laptops, near each other but not touching or showing romantic cues. Casual clothing and group hangout context point to a social, peer relationship. => friends",
+  "timestamp": 1776888361.0025625
+}

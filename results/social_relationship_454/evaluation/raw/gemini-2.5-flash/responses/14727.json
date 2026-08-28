@@ -1,0 +1,27 @@
+{
+  "img_id": "14727",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 4,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is a young girl being interviewed, and P2 is a camera operator filming the interview, indicating a professional interaction. => professional\n[P1-P3]: P3 is holding a microphone and facing P1, who appears to be answering questions, clearly representing a reporter-interviewee dynamic. => professional\n[P1-P4]: P1 is engaged in an interview, while P4 is a child bystander observing from a distance with no direct interaction. => no-relationship\n[P1-P5]: P1 is being interviewed, and P5 is a child bystander in the background, with no evident social connection to P1. => no-relationship\n[P2-P3]: P3 is a reporter with a microphone, and P2 is a camera operator filming the scene, indicating they are colleagues working together. => professional\n[P2-P4]: P2 is focused on filming, and P4 is a child spectator; there is no interaction or connection between them. => no-relationship\n[P2-P5]: P2 is operating a camera, and P5 is a child watching from the background, showing no direct social ties. => no-relationship\n[P3-P4]: P3 is conducting an interview, while P4 is a child bystander observing the event without engaging with P3. => no-relationship\n[P3-P5]: P3 is working as a reporter, and P5 is a child spectating the scene; there is no interaction or relationship between them. => no-relationship",
+  "timestamp": 1787940227.4390135
+}

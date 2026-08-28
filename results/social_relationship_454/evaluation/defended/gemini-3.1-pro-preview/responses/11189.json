@@ -1,0 +1,29 @@
+{
+  "img_id": "11189",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "1 7": 4,
+    "2 5": 6,
+    "2 6": 6,
+    "2 7": 6,
+    "5 6": 4,
+    "5 7": 4,
+    "6 7": 4
+  },
+  "ground_truth": {
+    "5 6": 1,
+    "5 7": 1,
+    "1 6": 1,
+    "1 7": 1,
+    "1 5": 1,
+    "1 2": 6,
+    "6 7": 1,
+    "2 5": 6,
+    "2 7": 6,
+    "2 6": 6
+  },
+  "raw_response": "[P1-P2]: They are seated at different tables facing away from each other with no interaction, acting as bystanders in the same large event. => no-relationship\n[P1-P5]: They are seated at the same table during what appears to be a conference or professional banquet, indicating they are colleagues or networking attendees. => professional\n[P1-P6]: They are sitting adjacently at the same table in a conference setting, suggesting they are colleagues or professional acquaintances. => professional\n[P1-P7]: They are seated near each other at a banquet table during a professional event, likely colleagues. => professional\n[P2-P5]: They are seated at separate tables facing different directions with no interaction. => no-relationship\n[P2-P6]: They are at different tables in a large event room and are not interacting with one another. => no-relationship\n[P2-P7]: They are seated at separate tables with no physical or social connection visible in the scene. => no-relationship\n[P5-P6]: Both are seated at the same table during a professional presentation or banquet, indicating a collegial relationship. => professional\n[P5-P7]: They are sharing a table at a professional conference or corporate event, pointing to a work-related relationship. => professional\n[P6-P7]: They are seated at the same table and participating in a shared professional or networking event. => professional",
+  "timestamp": 1787939558.8823743
+}

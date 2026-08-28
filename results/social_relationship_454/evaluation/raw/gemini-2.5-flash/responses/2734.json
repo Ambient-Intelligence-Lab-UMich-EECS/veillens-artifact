@@ -1,0 +1,19 @@
+{
+  "img_id": "2734",
+  "predictions": {
+    "1 6": 1,
+    "2 6": 1,
+    "3 6": 6,
+    "4 6": 6,
+    "5 6": 3
+  },
+  "ground_truth": {
+    "5 6": 3,
+    "4 6": 6,
+    "1 6": 6,
+    "3 6": 6,
+    "2 6": 6
+  },
+  "raw_response": "Here's the analysis of each pair:\n\n[P1-P6]: P1 is a formally dressed individual present at what appears to be a wedding, looking towards the central couple (P5 and P6). As a guest at such an event, P1 likely shares a social connection with P6, and 'friends' is a reasonable classification for a general guest without more specific family cues. => friends\n[P2-P6]: P2 is another formally dressed individual, visible in the background and somewhat blurred, also appearing to be a guest at the same event as P6. Similar to P1, their presence at the wedding suggests a social connection, making 'friends' a suitable classification. => friends\n[P3-P6]: P3 is extremely blurred and distant in the background, making it difficult to discern their features or any clear interaction with P6. They appear to be merely present in the same scene without a discernible social connection to P6. => no-relationship\n[P4-P6]: P4 is a bounding box located directly on top of P6's head and does not appear to encompass a separate, distinct person. Therefore, there is no social relationship to be classified between two distinct individuals. => no-relationship\n[P5-P6]: P5 is a woman in a wedding dress and P6 is a man in a suit, embracing and dancing intimately, which are clear visual cues for a romantic partnership at a wedding event. => couple",
+  "timestamp": 1787940763.1277485
+}

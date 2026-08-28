@@ -1,0 +1,29 @@
+{
+  "img_id": "14334",
+  "predictions": {
+    "3 4": 5,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "4 7": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "6 7": 6
+  },
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "3 4": 6,
+    "5 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "raw_response": "Here is the analysis for each pair:\n\n[P3-P4]: P3 appears to be a customer holding shopping bags at a market stall, while P4 is the vendor behind the counter displaying produce and a scale. Their interaction is transactional. => commercial\n[P3-P5]: P3 is a person (customer), but P5 is clearly an inanimate object (a white item hanging on a pole). There is no social connection between a person and an object. => no-relationship\n[P3-P6]: P3 is a customer, and P6 is a blurry, distant person in the background. There is no visible interaction or shared activity between them. => no-relationship\n[P3-P7]: P3 is a person (customer), but P7 is clearly an inanimate object (a bag of produce on the stall). There is no social connection between a person and an object. => no-relationship\n[P4-P5]: P4 is a person (vendor), but P5 is clearly an inanimate object (a white item hanging on a pole). There is no social connection between a person and an object. => no-relationship\n[P4-P6]: P4 is a vendor, and P6 is a blurry, distant person in the background. They are in the same general setting but show no signs of interaction or shared social connection. => no-relationship\n[P4-P7]: P4 is a person (vendor), but P7 is clearly an inanimate object (a bag of produce on the stall). While P7 is part of P4's goods, it is not a person, so no social relationship exists. => no-relationship\n[P5-P6]: P5 is an inanimate object, and P6 is a blurry, distant person. No social connection can exist between an object and a person. => no-relationship\n[P5-P7]: P5 is an inanimate object, and P7 is also an inanimate object. There is no social connection between two objects. => no-relationship\n[P6-P7]: P6 is a blurry, distant person, but P7 is an inanimate object (a bag of produce). No social connection can exist between a person and an object. => no-relationship",
+  "timestamp": 1787939577.7925737
+}

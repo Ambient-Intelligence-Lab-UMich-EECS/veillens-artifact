@@ -1,0 +1,32 @@
+{
+  "img_id": "11139",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are both working in a rustic bakery\u2014P1 kneels shaping dough while P2 tends the oven; close proximity, no affection, and work attire in a shop setting indicate co-workers. => professional\n\n[P1-P3]: P1 prepares dough on the left while P3 stands by the counter with flatbreads; separated but within the same work area, no personal interaction, both dressed for manual work. => professional\n\n[P1-P4]: P1 kneels preparing items while P4 stands with tools near shelves; same workshop environment, task-focused body language, no social/affection cues. => professional\n\n[P2-P3]: P2 operates the oven and P3 is beside the prep counter a few steps away; coordinated positions in the bakery and similar attire suggest colleagues rather than a personal relationship. => professional\n\n[P2-P4]: P2 works at the oven while P4 handles tools behind him; close spatial arrangement and task-focused behavior in a bakery setting imply co-workers. => professional\n\n[P3-P4]: P3 stands by the counter as P4 manages tools/shelves; both are engaged in the same workspace with no personal interaction, indicating a work relationship. => professional",
+  "timestamp": 1776889232.958561
+}

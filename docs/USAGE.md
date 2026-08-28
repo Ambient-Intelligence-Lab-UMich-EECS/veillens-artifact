@@ -7,16 +7,22 @@ defense on the same images, `veillens-score` reads what either of them wrote, an
 ## `veillens-score` — no key, no GPU, no data
 
 Reads the JSON a run already produced and prints the aggregate table. This is the fastest way to
-see what the pipeline emits, and it works straight from a clone:
+see what the pipeline emits, and it works straight from a clone — `examples/results/` ships two
+images per setting, taken from real runs:
 
 ```bash
-veillens-score examples/results/geolocation/evaluation_results.json
-veillens-score examples/results/compositional/run_evaluation_results.json --setting compositional
+veillens-score examples/results/geolocation
+veillens-score examples/results/compositional
+veillens-score examples/results/social_relation
 ```
+
+The setting is sniffed from the error key the results were written under, so `--setting` is only
+needed to override it.
 
 For geolocation it reports the fraction of images the attacker still localises within each
 distance threshold, before and after protection. For compositional privacy it reports the mean
-risk score before and after, and the relative reduction.
+risk score before and after, and the relative reduction. For social relationship it reports
+pairwise accuracy, six-way and three-way, over two denominators.
 
 ## `veillens-verify` — no key, no GPU, no data
 
@@ -25,9 +31,21 @@ granularities the run promised to remove are actually gone.
 
 ```bash
 veillens-verify runs/geolocation/my_run
-veillens-verify examples/results/geolocation \
-    --responses results/geolocation_100/evaluation/gpt-5.2/responses
+veillens-verify examples/results/geolocation
 ```
+
+The bundled examples carry their own `eval_cache/`, so both criteria are computed with no extra
+flag. `--responses` exists for a run whose attacker responses sit elsewhere, or one evaluated by
+several attackers — the residual criterion is then computed against whichever you name:
+
+```bash
+veillens-verify runs/geolocation/my_run \
+    --responses runs/geolocation/my_run/evaluation/gpt-5.2/responses
+```
+
+The archived trees under `results/` ship the raw responses and a per-image `index.csv`, but not
+the `evaluation_results.json` those numbers were derived from, so they are read as tables rather
+than verified.
 
 Two criteria per image, both derived from `experiment.mask_level` and reported separately: the
 attacker must be at least the target rung's distance from the truth (10 km under city-level
@@ -79,8 +97,8 @@ One file per privacy setting, in `configs/`. Every key is listed here.
 
 | Key | Meaning |
 |---|---|
-| `privacy_class` | `geolocation` or `compositional`. Determines the schema, the prompts, the evaluation metric, and what `mask_level` means. `personal_info` and `pi` are accepted aliases for `compositional` |
-| `mask_level` | **geolocation**: any subset of `["country level clue", "city level clue", "street level clue"]`. **compositional**: an integer 1–4; level N removes cues of severity ≤ N (1 = severe) |
+| `privacy_class` | `geolocation`, `compositional` or `social_relation`. Determines the schema, the prompts, the evaluation metric, and what `mask_level` means. `personal_info` and `pi` are aliases for `compositional`; `relationship` and `social_relationship` for `social_relation` |
+| `mask_level` | **geolocation**: any subset of `["country level clue", "city level clue", "street level clue"]`. **compositional**: an integer 1–4; level N removes cues of severity ≤ N (1 = severe). **social_relation**: any subset of `["intimate level cue", "non-intimate level cue"]` |
 | `max_iter` | Round-2 iterations after the round-1-only pass. The run writes up to `max_iter + 1` protected images: iteration 0 removes round 1's cues, then one image per verification gate |
 | `gate_requires_residual_clear` | Also require the oracle to report no surviving cue at a protected granularity before an image may stop. Default `false`; strictly stronger than the distance gate, and strictly more iterations |
 
@@ -116,6 +134,41 @@ Checkpoint paths and HuggingFace model IDs. `grounded_sam2_root` defaults to
 boxes are kept per cue after target-concept filtering. A cue whose object is not detected above
 threshold is left unmasked rather than force-matched.
 
+`use_grounding_dino` (default `true`) turns open-set detection off. A setting whose regions come
+from its dataset — `social_relation` reads PISC's person boxes — never calls the detector, so with
+this `false` its weights are not loaded and its compiled CUDA extension is not required. `--dry-run`
+stops checking for both.
+
+### `intervention`
+
+Only read by settings that ground from dataset boxes; absent from the other configs.
+
+| Key | Meaning |
+|---|---|
+| `mask_scope` | `face` cuts the person mask SAM 2 returned down to its top band; `person` inpaints the whole silhouette |
+| `head_width_multiple` | Band height as a multiple of the head's width, read off the mask's topmost rows |
+| `head_fraction` | Floor on that height, as a share of the mask's own height |
+| `width_fraction` | Share of the head rows' width, centred. `1.0` (the default) clips nothing — the band is already confined to the person by intersection |
+
+SAM 2 is always prompted with the dataset's whole person box; the narrowing happens on the mask.
+That is not interchangeable with narrowing the box: an annotation box's top band is only the head
+for a subject standing upright, and on someone crouched or bent forward it is background and
+shoulder.
+
+The band's height is the larger of the two estimates above. A fixed share of the figure's height
+cannot serve both poses — a head is a small fraction of a standing silhouette and a large one of a
+crouched silhouette — so the primary rule scales with the head's own width, which does not change
+with pose, and the fraction is kept only as a floor. The mask is also clipped to the subject's own
+annotation box before the band is cut, so a mask that bleeds past the person cannot mask their
+neighbour.
+
+**Known limitation.** This is geometry over a segmentation, not face detection, and it is only as
+good as the silhouette SAM 2 returns. On clean, upright, well-separated subjects it lands on the
+face; where SAM 2's person mask bleeds into a patterned garment or the sky behind it, the band
+inherits that and the edit is both larger than a face and off-centre. Spot-check
+`intermediate/<image>/round1/` before trusting a large run, and treat a face detector inside the
+dataset box as the upgrade path if the heuristic proves too coarse for your images.
+
 ### `generation`
 
 SDXL parameters: `num_inference_steps`, `guidance_scale`, `controlnet_conditioning_scale`,
@@ -137,6 +190,28 @@ are reported. Keeping them apart is what makes the measurement independent of th
 
 `base_dir` is the run directory.
 
+## Building a manifest
+
+Geolocation and social relationship build theirs from a dataset checkout; the compositional
+manifest ships in `manifests/`.
+
+```bash
+python -m veillens.datasets.cityscapes \
+    --cityscapes-root $VEILLENS_DATA/cityscapes \
+    --output $VEILLENS_DATA/cityscapes/dataset.json --images-per-city 25
+
+python -m veillens.datasets.pisc \
+    --pisc-root $VEILLENS_DATA/pisc \
+    --annotated-dir $VEILLENS_DATA/pisc_annotated \
+    --num-images 500 --seed 0 \
+    --output manifests/social_relation_500.json
+```
+
+The PISC builder also writes the box overlay each image is evaluated with — a coloured rectangle
+labelled `P1`, `P2`, … per annotated subject — because a prompt that asks about "P1 and P2" is
+meaningless without it. It reports what it skipped and records the same counts in the manifest's
+`provenance` block; see [DATA.md](DATA.md) for why that matters.
+
 ## The output tree
 
 ```
@@ -146,16 +221,34 @@ are reported. Keeping them apart is what makes the measurement independent of th
 ├── evaluation_results/           the aggregate veillens-score reads
 ├── phase_cache/                  resume state
 ├── depth/<image>.png             MiDaS depth map, computed once per image
+├── resized_inputs/<image>.jpg    only when the setting caps input resolution — see below
 └── intermediate/<image>/
-    ├── original.png              the input, copied
-    ├── round1/                   after round 1's edits
+    ├── original.png              the input as processed (downscaled, if the setting caps it)
+    ├── round1/                   the grey composite: what round 1 decided to remove. Diagnostic
     ├── segmentation/             per-cue masks and overlays
     ├── working/                  the image as it is being edited
-    └── final/                    iter0…iterN snapshots, and <image>_final.png
+    └── final/                    iter0…iterN snapshots, and <image>_final.png — the inpainted
+                                  result, and the image the attacker is scored on
 ```
 
 A run is resumable: `phase_cache/` records which images finished, and re-running the same config
 skips them.
+
+### Input resolution
+
+Nothing in the edit path bounds resolution: SDXL inpaints at whatever size it is handed, so a
+multi-megapixel source asks for a single allocation large enough to exhaust a 48 GB GPU. A privacy
+setting whose dataset ships full-frame camera originals therefore declares a cap, as
+`max_input_dim` on its `PrivacyClassSpec`.
+
+**Compositional caps the long side at 1024**, because VISPR ships unresized originals up to ~10
+megapixels. Geolocation (Cityscapes, 2048×1024) and social relationship (PISC, web-sized) declare
+no cap; their images are already bounded.
+
+The scaling happens once, before anything reads the image: the downscaled copy is written to
+`resized_inputs/` and becomes the run's input, so the masks, the depth map and the attacker's
+reading are all in one coordinate space. An image already within the cap is used verbatim and is
+not re-encoded.
 
 ## `veillens-baseline` — the same images, the same attacker, a different defense
 

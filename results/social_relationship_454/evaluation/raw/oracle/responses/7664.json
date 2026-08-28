@@ -1,0 +1,43 @@
+{
+  "img_id": "7664",
+  "ground_truth": {
+    "4 5": 1,
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 1,
+    "2 5": 1,
+    "2 4": 1,
+    "3 4": 1,
+    "3 5": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "missed_pairs": [
+    "1 5",
+    "2 5",
+    "3 5",
+    "4 5"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [
+    5
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: Home kitchen potluck; they stand close at the island with cups in casual clothes, relaxed posture and likely chatting, no physical contact. => friends\n\n[P1-P3]: Same casual gathering; a few feet apart with no direct interaction, but similar attire and setting suggest fellow guests at the same social event. => friends\n\n[P1-P4]: In the same kitchen party; some distance and no contact, but the informal setting and attire imply acquaintances at a friendly get\u2011together rather than any formal role. => friends\n\n[P2-P3]: Side\u2011by\u2011side at the buffet with cups, casually dressed and mingling; no intimacy or transactional cues. => friends\n\n[P2-P4]: Both in the kitchen during a potluck, separated by one person and the counter; informal context points to being fellow attendees. => friends\n\n[P3-P4]: Closest pair on the right; casual attire in a home kitchen and P3 oriented toward P4 suggest light conversation at a social gathering. => friends",
+  "timestamp": 1776887320.9152188
+}

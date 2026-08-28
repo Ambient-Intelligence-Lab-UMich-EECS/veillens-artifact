@@ -1,0 +1,21 @@
+{
+  "img_id": "18903",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 6,
+    "2 4": 4,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "raw_response": "[P1-P2]: Both individuals are wearing baseball uniforms and are in close proximity, with P2 extending a hand towards P1, indicating an interaction within a sporting context. => professional\n[P1-P3]: P3 is the hand and forearm of P2, making a gesture towards P1. This gesture is part of the professional interaction between P1 and P2 in their baseball setting. => professional\n[P1-P4]: Both P1 and P4 are dressed in baseball uniforms, signifying they are colleagues or competitors within the professional sports environment, even without direct interaction visible. => professional\n[P2-P3]: P3 is clearly an anatomical part of P2 (P2's hand and arm). As P3 is not a distinct social entity from P2, there can be no social relationship between them. => no-relationship\n[P2-P4]: Both individuals are in baseball uniforms, indicating they share a professional context as players or team members, despite not directly interacting in this moment. => professional\n[P3-P4]: P3 is a hand belonging to P2, and P4 is another baseball player. As P3 is not a distinct social entity and there is no interaction between the hand and P4, no social relationship exists. => no-relationship",
+  "timestamp": 1787940786.7896335
+}

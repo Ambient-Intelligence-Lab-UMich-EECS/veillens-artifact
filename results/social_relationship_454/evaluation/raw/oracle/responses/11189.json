@@ -1,0 +1,65 @@
+{
+  "img_id": "11189",
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 1,
+    "5 7": 1,
+    "1 3": 6,
+    "1 6": 1,
+    "1 7": 1,
+    "1 4": 6,
+    "1 5": 1,
+    "1 2": 6,
+    "6 7": 1,
+    "2 5": 6,
+    "2 4": 6,
+    "2 7": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6
+  },
+  "predictions": {
+    "3 4": 4,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "4 7": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "6 7": 6
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4",
+    "1 5",
+    "1 6",
+    "1 7",
+    "2 4",
+    "2 5",
+    "2 6",
+    "2 7"
+  ],
+  "subjects_matched": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "subjects_unmatched": [
+    1,
+    2
+  ],
+  "num_preds_detected": 23,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 7,
+  "raw_response": "[P3-P4]: This looks like a conference dinner in a hotel ballroom; both wear business\u2011casual attire and sit close at the same table, turned toward each other as if conversing, with no physical intimacy. => professional\n\n[P3-P5]: Same conference setting, but they are at different tables far apart, not facing or engaging with each other and no contact. => no-relationship\n\n[P3-P6]: In the banquet setting, they are seated at separate tables with no eye contact or interaction; attire is business casual. => no-relationship\n\n[P3-P7]: Conference/banquet environment; they are distant at different tables and not engaging or touching. => no-relationship\n\n[P4-P5]: Hotel ballroom event; they are far apart at different tables with no interaction or body-language connection. => no-relationship\n\n[P4-P6]: Professional banquet scene, but these two are at different tables and not acknowledging each other. => no-relationship\n\n[P4-P7]: Same conference setting; they are separated across tables with no visible engagement. => no-relationship\n\n[P5-P6]: Banquet/conference room; they sit at different nearby tables and do not face or interact with each other. => no-relationship\n\n[P5-P7]: Both are attendees in business-casual attire, but they are at separate tables without engagement or contact. => no-relationship\n\n[P6-P7]: Conference dinner setting; they appear to be at adjacent but different tables and are not interacting or oriented toward each other. => no-relationship",
+  "timestamp": 1776887473.2960725
+}

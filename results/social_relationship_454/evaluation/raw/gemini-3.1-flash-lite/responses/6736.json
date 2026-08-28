@@ -1,0 +1,29 @@
+{
+  "img_id": "6736",
+  "predictions": {
+    "1 2": 3,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "2 5": 2,
+    "3 4": 2,
+    "3 5": 2,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 2,
+    "3 4": 2,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are standing near each other participating in food preparation for a communal meal, suggesting a domestic partnership. => couple\n\n[P1-P3]: These two appear to be collaborating in a shared domestic space, with P3 assisting in meal preparation alongside P1, indicating a close family bond. => family-members\n\n[P1-P4]: P1 is an older adult hosting or preparing food for the younger P4, who is seated at the dinner table, indicating a generational family connection. => family-members\n\n[P1-P5]: P5 is a small child being held or attended to, likely by P1 or someone nearby, placing them within the same family gathering. => family-members\n\n[P2-P3]: P2 and P3 are standing together as peers, both actively preparing food for a group setting, which suggests they are family members or long-term partners. => family-members\n\n[P2-P4]: As the older generation standing and serving, P2 shares a clear domestic and caretaking role toward the younger, seated P4. => family-members\n\n[P2-P5]: P2 is present in the same intimate household environment as the young child P5, indicating a shared family unit. => family-members\n\n[P3-P4]: P3 is positioned in the same informal home dining context as P4, representing an intergenerational family dynamic. => family-members\n\n[P3-P5]: Both are part of the same small household social gathering, with P3 being an older member interacting in the same space as the child P5. => family-members\n\n[P4-P5]: P4 and P5 are both seated at the table as part of the younger generation being served by the adults, indicating they are siblings or cousins. => family-members",
+  "timestamp": 1787936168.1462286
+}

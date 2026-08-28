@@ -1,0 +1,29 @@
+{
+  "img_id": "16166",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1, an older man, and P2, a young boy, are sitting closely together on the grass, suggesting a close familial bond like grandfather and grandson. => family-members\n[P1-P3]: P1 and P3 are sitting together in the same small group on the grass, sharing a casual snack, indicating they are part of the same family. => family-members\n[P1-P4]: P1 is sitting in the foreground while P4 is a person walking in the distant background, showing no interaction. => no-relationship\n[P1-P5]: P1 is seated in the foreground, and P5 is standing in the background crowd with no connection between them. => no-relationship\n[P2-P3]: P2 and P3 are two boys sitting right next to each other within a family group, strongly pointing to them being brothers. => family-members\n[P2-P4]: P2 is seated in the foreground, whereas P4 is just passing by in the background, showing no interaction. => no-relationship\n[P2-P5]: P2 is sitting in the foreground group, and P5 is a person standing in the background without any interaction. => no-relationship\n[P3-P4]: P3 is seated in the foreground eating, while P4 is walking in the background, indicating no connection. => no-relationship\n[P3-P5]: P3 is in the foreground group, and P5 is standing in the background, showing no relationship. => no-relationship\n[P4-P5]: Both P4 and P5 are individuals in the background crowd, with P4 walking past the standing P5, showing no evident interaction. => no-relationship",
+  "timestamp": 1787938052.5335062
+}

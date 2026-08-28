@@ -1,0 +1,15 @@
+{
+  "img_id": "123",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 2,
+    "2 3": 6
+  },
+  "raw_response": "[P1-P2]: P1 is an adult sweeping near a storefront, while P2 is a distant figure walking further down the street. They show no interaction or awareness of each other, indicating no social connection. => no-relationship\n[P1-P3]: P1 is an adult sweeping, and P3 is a young child closely mimicking the adult's sweeping action with a broom. Their close proximity, shared activity, and significant age difference strongly suggest a parent-child or guardian-child relationship. => family-members\n[P2-P3]: P2 is an adult walking in the distant background, while P3 is a young child engaged in sweeping in the foreground. They are far apart, engaged in separate activities, and show no signs of interaction or connection. => no-relationship",
+  "timestamp": 1787941031.9384203
+}

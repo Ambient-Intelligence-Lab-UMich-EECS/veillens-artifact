@@ -1,0 +1,123 @@
+# VeilLens — social-relationship setting (pairwise relationship inference over PISC).
+#
+# Every value here is either reported in the paper or needed to locate a file. Paths use
+# ${paths.*} placeholders, resolved from VEILLENS_DATA / VEILLENS_RUNS / VEILLENS_MODELS /
+# VEILLENS_GSAM2 at load time, so this file is machine-independent.
+#
+# This setting differs from the other two in one structural way: it does not discover its own
+# regions. PISC ships person boxes and subject ids, so the intervention policy is to reason about
+# the annotated subject pairs and anonymize the faces of the subjects that carry a relationship.
+# Grounding DINO is therefore switched off, and SAM 2 is prompted with the dataset's boxes.
+
+dataset:
+  # Built by:
+  #   python -m veillens.datasets.pisc --pisc-root $VEILLENS_DATA/pisc \
+  #       --annotated-dir $VEILLENS_DATA/pisc_annotated --num-images 500 --seed 0 \
+  #       --output manifests/social_relation_500.json
+  # The images are not redistributable; see docs/DATA.md.
+  dataset_json_file: "${paths.repo_root}/manifests/social_relation_500.json"
+
+experiment:
+  privacy_class: social_relation
+  # Which relationship granularities to suppress evidence for. Any subset of:
+  #   "intimate level cue", "non-intimate level cue"
+  #
+  # Both listed is the paper's target: "We set the social-relationship target to no relationship,
+  # suppressing evidence for both intimate and non-intimate relationship inference." Verification
+  # is derived from this and nothing else -- an image passes when the attacker recovers none of
+  # its annotated pairs and cites no surviving cue at either level. See docs/VERIFICATION.md.
+  mask_level: ["intimate level cue", "non-intimate level cue"]
+  # Round-2 iterations after the round-1-only pass. Zero: the intervention here is deterministic
+  # face anonymization rather than clue-conditioned editing, so there is nothing for a second
+  # round to discover that the first did not already have from the dataset. The run writes one
+  # protected image per input.
+  max_iter: 0
+  gate_requires_residual_clear: false
+
+prompts:
+  round1_schema: "prompts/social_relation/schema_original.json"
+  round1_prompt: "prompts/social_relation/defense_base_prompt.txt"
+  round2_schema: "prompts/social_relation/schema_original.json"
+  round2_prompt: "prompts/social_relation/phase2_base_prompt.txt"
+  eval_schema:   "prompts/social_relation/schema_eval.json"
+  eval_prompt:   "prompts/social_relation/attack_base_prompt.txt"
+
+# Unused at max_iter 0, and the values matter if it is ever raised: the dataset's boxes are in
+# full-image pixels, so fine_grained must stay false or round 2 would prompt SAM 2 with
+# full-image coordinates inside a cropped frame.
+round2_regions:
+  fine_grained: false
+  crop_width: 768
+  crop_height: 768
+  overlap_percent: 0.1
+  upscale_target: 1024
+
+models:
+  grounded_sam2_root: "${paths.gsam2}"
+  sam2_checkpoint: "${paths.models}/sam2/sam2.1_hiera_large.pt"
+  sam2_model_config: "configs/sam2.1/sam2.1_hiera_l.yaml"      # Hydra name, relative to the sam2 package
+  # Declared but not loaded: use_grounding_dino is false below. Kept so every shipped config
+  # answers the same set of reads, and so raising the flag needs no other edit.
+  grounding_dino_config: "grounding_dino/groundingdino/config/GroundingDINO_SwinT_OGC.py"
+  grounding_dino_checkpoint: "${paths.models}/gdino/groundingdino_swint_ogc.pth"
+  sdxl_base_model: "diffusers/stable-diffusion-xl-1.0-inpainting-0.1"
+  controlnet_depth: "diffusers/controlnet-depth-sdxl-1.0-small"
+  midas_model: "DPT_Hybrid"
+
+detection:
+  # The dataset supplies the boxes, so no open-set detector runs and neither its weights nor its
+  # compiled CUDA extension are needed. The two thresholds below are Grounding DINO's and are
+  # inert while this is false.
+  use_grounding_dino: false
+  box_threshold: 0.3
+  text_threshold: 0.3
+  top_k_boxes: 3
+  device: "cuda"
+
+# What "anonymize the face regions within the corresponding boxes" means in pixels. SAM 2 is
+# prompted with the dataset's whole person box, and the silhouette it returns is cut down to its
+# own top band. Narrowing the mask rather than the box matters: an annotation box's top band is
+# only the head for someone standing upright, and on a crouched subject it is background and
+# shoulder.
+#
+# The band's height comes from the head's own width, which is pose-invariant, with the height
+# fraction kept as a floor. A fixed fraction of the figure's height cannot serve both poses: a
+# head is a small share of a standing silhouette and a large share of a crouched one.
+intervention:
+  mask_scope: face          # face | person
+  head_width_multiple: 1.6  # band height as a multiple of the head's width
+  head_fraction: 0.30       # floor on that height, as a share of the mask's own height
+  width_fraction: 1.0       # share of the head rows' width, centred; 1.0 clips nothing
+
+generation:
+  num_inference_steps: 50
+  guidance_scale: 7.5
+  controlnet_conditioning_scale: 0.7
+  strength: 0.8
+  generator_seed: 42
+  # Prepended to every inpainting prompt. Deliberately not the cartoon style the other two
+  # settings use: a stylised face still reads as a face with an expression, and expression is one
+  # of the cues this setting has to remove.
+  positive_prompt_prefix: "Smooth featureless surface, soft diffuse lighting, no facial features"
+
+performance:
+  use_fp16: true
+  use_tf32: true
+  enable_attention_slicing: true
+  enable_vae_tiling: true
+
+# The defense oracle: round-1 subject selection and, if max_iter is raised, residual analysis.
+reasoning:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+# The attacker that measures relationship leakage. It reads both the original and the protected
+# image, because the reported number is one adversary's accuracy before versus after.
+evaluation:
+  backend: "openai"
+  model: "gpt-5"
+  concurrent_requests: 3
+
+output:
+  base_dir: "${paths.runs}/social_relation"

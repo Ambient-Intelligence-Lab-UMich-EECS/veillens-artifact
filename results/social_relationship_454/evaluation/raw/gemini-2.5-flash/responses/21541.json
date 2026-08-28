@@ -1,0 +1,31 @@
+{
+  "img_id": "21541",
+  "predictions": {
+    "1 2": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "2 4": 6,
+    "2 5": 4,
+    "2 6": 4,
+    "3 4": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 4
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 6": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "5 6": 4,
+    "2 5": 4,
+    "2 4": 6,
+    "2 6": 4,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are dressed in tennis attire, holding rackets, and shaking hands over the net in what appears to be a formal tennis match context. This is a typical gesture between competitors or participants in a professional sports event. => professional\n[P1-P4]: P1 is a tennis player engaged in a handshake, while P4 is a distant figure in the background with no direct interaction or proximity to P1. => no-relationship\n[P1-P5]: Both are tennis players participating in the same event; P1 is shaking hands with P2, who is P5's teammate or fellow participant. Their shared context is a professional sports match. => professional\n[P1-P6]: Both are tennis players participating in the same event; P1 is shaking hands with P2, who is P6's teammate or fellow participant. Their shared context is a professional sports match. => professional\n[P2-P4]: P2 is a tennis player engaged in a handshake, while P4 is a distant figure in the background with no direct interaction or proximity to P2. => no-relationship\n[P2-P5]: P2 and P5 are standing close together on the same side of the net, both in tennis attire with rackets, suggesting they are teammates or fellow competitors in a professional sporting context. => professional\n[P2-P6]: P2 and P6 are standing close together on the same side of the net, both in tennis attire with rackets, suggesting they are teammates or fellow competitors in a professional sporting context. => professional\n[P3-P4]: P3 appears to be a match official or ball girl, while P4 is a distant bystander in the background, showing no direct interaction or connection. => no-relationship\n[P4-P5]: P4 is a background figure, and P5 is a tennis player; there is no direct interaction, proximity, or shared activity between them. => no-relationship\n[P4-P6]: P4 is a background figure, and P6 is a tennis player; there is no direct interaction, proximity, or shared activity between them. => no-relationship\n[P5-P6]: P5 and P6 are standing very close to each other on the same side of the net, both in tennis attire with rackets, indicating they are teammates or colleagues within the professional tennis context. => professional",
+  "timestamp": 1787940659.7324202
+}

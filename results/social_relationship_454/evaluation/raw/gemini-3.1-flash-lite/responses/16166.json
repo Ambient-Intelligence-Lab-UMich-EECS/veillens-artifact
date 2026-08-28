@@ -1,0 +1,29 @@
+{
+  "img_id": "16166",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are sitting together in a shared activity, and P2's proximity and informal posture suggest they are part of the same family unit. => family-members\n\n[P1-P3]: P3 is a child sitting directly beside P1, sharing the same space and activity, indicating a family relationship. => family-members\n\n[P1-P4]: P4 is standing nearby, but their distance and lack of engagement with the seated group suggest they are just bystanders. => no-relationship\n\n[P1-P5]: P5 is standing behind the group, and given the context of a public gathering, there is no evidence of a direct social link to P1. => no-relationship\n\n[P2-P3]: P3 is a child positioned between P1 and P2, and their shared activity and proximity strongly indicate they are siblings or children with the adult P1. => family-members\n\n[P2-P4]: P4 is standing in the background with no physical or social engagement with the group seated in the foreground. => no-relationship\n\n[P2-P5]: P5 is standing behind the seated group, representing a separate individual in a crowded public scene. => no-relationship\n\n[P3-P4]: P4 is physically distant and appears to be a separate individual or bystander at the gathering. => no-relationship\n\n[P3-P5]: P5 is standing in the background and is not interacting with the children in the foreground. => no-relationship\n\n[P4-P5]: Both individuals are standing in the background of the scene, likely just bystanders passing by or watching the event independently. => no-relationship",
+  "timestamp": 1787936301.4091072
+}

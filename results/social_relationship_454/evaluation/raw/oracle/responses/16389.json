@@ -1,0 +1,41 @@
+{
+  "img_id": "16389",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 4,
+    "3 5": 4,
+    "4 5": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: Both wear identical ski-patrol-style uniforms on a snowy slope and stand side-by-side with neutral posture; no affectionate or transactional cues. => professional\n[P1-P3]: A bit apart but in the same patrol uniform within the same group setting; interaction looks like team coordination, not personal. => professional\n[P1-P4]: Separated by others yet all in matching staff gear on a ski area; neutral body language, no intimacy. => professional\n[P1-P5]: Furthest apart but clearly members of the same uniformed ski team in a work setting. => professional\n[P2-P3]: Very close, possibly conversing during a patrol/instructor briefing; matching uniforms indicate coworkers. => professional\n[P2-P4]: Near each other in a lineup wearing identical staff jackets; posture suggests group coordination rather than friendship/romance. => professional\n[P2-P5]: Part of the same uniformed group on skis; no physical contact or customer-vendor signals. => professional\n[P3-P4]: Standing close with similar uniforms and gear on the slope; context is a staff group. => professional\n[P3-P5]: In the same ski-patrol uniforms within one scene; neutral body language, no other ties implied. => professional\n[P4-P5]: Side-by-side in identical staff jackets on a ski run; appear to be colleagues on duty. => professional",
+  "timestamp": 1776888685.7378464
+}

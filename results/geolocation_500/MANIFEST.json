@@ -30,7 +30,7 @@
     }
   },
   "source_run": {
-    "root": "/nfs/turbo/coe-kesuniot1/veillens-data/experiment/readydata",
+    "root": "/scratch/kesuniot_root/kesuniot0/jackyjin/veillens-data/benchmark/readydata",
     "defended_images": "dataset_random_500/gpt-image/defended/<image_id>_defended.png (all 500 present)",
     "raw_images": "dataset_random_500/raw/<image_id>_leftImg8bit.png",
     "evaluation": "<dataset>/evaluation/<run>/<image_set>/<provider>/<model>/results.json - a positional array of responses with no image id",
@@ -48,6 +48,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T15:34:50.765410"
         },
         {
@@ -56,6 +57,7 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 0,
+          "answers_first_seen_here": 400,
           "timestamp": "2026-08-20T01:34:53.938470"
         }
       ],
@@ -66,6 +68,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T15:40:06.432229"
         },
         {
@@ -74,6 +77,7 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 0,
+          "answers_first_seen_here": 400,
           "timestamp": "2026-08-20T01:51:06.471843"
         }
       ],
@@ -84,7 +88,17 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T16:41:44.157825"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_c2_20260824_203916",
+          "manifest": "dataset_new400_c2_raw.json",
+          "images": 400,
+          "declared_failures": 155,
+          "answers_first_seen_here": 245,
+          "timestamp": "2026-08-24T22:57:52.065843"
         },
         {
           "dataset": "dataset_random_500",
@@ -92,7 +106,26 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 400,
+          "answers_first_seen_here": 0,
           "timestamp": "2026-08-20T02:26:30.157952"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_d_20260828_010344",
+          "manifest": "dataset_new400_d_raw.json",
+          "images": 82,
+          "declared_failures": 0,
+          "answers_first_seen_here": 82,
+          "timestamp": "2026-08-28T02:08:55.737041"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_k2_20260824_211116",
+          "manifest": "dataset_new400_k2_raw.json",
+          "images": 98,
+          "declared_failures": 23,
+          "answers_first_seen_here": 73,
+          "timestamp": "2026-08-24T23:45:05.920544"
         }
       ],
       "raw/gemini-2.5-flash": [
@@ -102,6 +135,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T15:38:58.525503"
         },
         {
@@ -110,6 +144,7 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 0,
+          "answers_first_seen_here": 400,
           "timestamp": "2026-08-20T00:55:35.731438"
         }
       ],
@@ -120,6 +155,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T12:37:13.986333"
         },
         {
@@ -128,6 +164,7 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 0,
+          "answers_first_seen_here": 400,
           "timestamp": "2026-08-20T00:42:08.581304"
         }
       ],
@@ -138,6 +175,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 1,
+          "answers_first_seen_here": 99,
           "timestamp": "2026-08-13T12:56:46.319526"
         },
         {
@@ -146,7 +184,17 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 1,
+          "answers_first_seen_here": 399,
           "timestamp": "2026-08-20T01:02:09.715163"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_e_20260828_011033",
+          "manifest": "dataset_new400_e_gpt-image.json",
+          "images": 2,
+          "declared_failures": 0,
+          "answers_first_seen_here": 2,
+          "timestamp": "2026-08-28T01:13:39.400768"
         }
       ],
       "gpt-image/gemini-3.1-pro-preview": [
@@ -156,7 +204,17 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T13:52:58.914838"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_c2_20260824_203916",
+          "manifest": "dataset_new400_c2_gpt-image.json",
+          "images": 152,
+          "declared_failures": 149,
+          "answers_first_seen_here": 3,
+          "timestamp": "2026-08-24T23:03:03.469433"
         },
         {
           "dataset": "dataset_random_500",
@@ -164,7 +222,26 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 152,
+          "answers_first_seen_here": 248,
           "timestamp": "2026-08-20T02:25:53.941077"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_d_20260828_010344",
+          "manifest": "dataset_new400_d_gpt-image.json",
+          "images": 2,
+          "declared_failures": 0,
+          "answers_first_seen_here": 2,
+          "timestamp": "2026-08-28T01:06:33.614944"
+        },
+        {
+          "dataset": "dataset_random_500",
+          "run": "gpt_image_500_new400_k2_20260824_211116",
+          "manifest": "dataset_new400_k2_gpt-image.json",
+          "images": 152,
+          "declared_failures": 3,
+          "answers_first_seen_here": 147,
+          "timestamp": "2026-08-24T22:49:34.250904"
         }
       ],
       "gpt-image/gemini-2.5-flash": [
@@ -174,6 +251,7 @@
           "manifest": "dataset.json",
           "images": 100,
           "declared_failures": 0,
+          "answers_first_seen_here": 100,
           "timestamp": "2026-08-13T15:32:13.949579"
         },
         {
@@ -182,6 +260,7 @@
           "manifest": "dataset_new400.json",
           "images": 400,
           "declared_failures": 0,
+          "answers_first_seen_here": 400,
           "timestamp": "2026-08-20T00:30:40.553326"
         }
       ]
@@ -248,12 +327,12 @@
             },
             "gemini-3.1-pro-preview": {
               "dir": "evaluation/raw/gemini-3.1-pro-preview",
-              "responses": 100,
-              "bytes": 161930,
+              "responses": 500,
+              "bytes": 797736,
               "model_id_in_artifacts": "gemini-3.1-pro-preview",
               "attribution": "recorded in the source results.json under metadata.model",
-              "coverage": "100/500 - 400 unscored",
-              "unscored_reason": "gemini-3.1-pro-preview hits a 250-requests-per-model-per-day cap; every unscored call returned HTTP 429 and was recorded with a null error and a null location_estimate. No reasoning was produced, so no file is emitted."
+              "coverage": "500/500",
+              "unscored_reason": null
             },
             "gemini-2.5-flash": {
               "dir": "evaluation/raw/gemini-2.5-flash",
@@ -281,21 +360,21 @@
             },
             "gemini-3-flash-preview": {
               "dir": "evaluation/gpt-image/gemini-3-flash-preview",
-              "responses": 498,
-              "bytes": 652439,
+              "responses": 500,
+              "bytes": 655198,
               "model_id_in_artifacts": "gemini-3-flash-preview",
               "attribution": "recorded in the source results.json under metadata.model",
-              "coverage": "498/500 - 2 unscored",
-              "unscored_reason": "the API call failed; the run recorded a null error for these images"
+              "coverage": "500/500",
+              "unscored_reason": null
             },
             "gemini-3.1-pro-preview": {
               "dir": "evaluation/gpt-image/gemini-3.1-pro-preview",
-              "responses": 348,
-              "bytes": 578060,
+              "responses": 500,
+              "bytes": 828756,
               "model_id_in_artifacts": "gemini-3.1-pro-preview",
               "attribution": "recorded in the source results.json under metadata.model",
-              "coverage": "348/500 - 152 unscored",
-              "unscored_reason": "gemini-3.1-pro-preview hits a 250-requests-per-model-per-day cap; every unscored call returned HTTP 429 and was recorded with a null error and a null location_estimate. No reasoning was produced, so no file is emitted."
+              "coverage": "500/500",
+              "unscored_reason": null
             },
             "gemini-2.5-flash": {
               "dir": "evaluation/gpt-image/gemini-2.5-flash",
@@ -349,24 +428,11 @@
       "confidence",
       "region"
     ],
-    "note": "Exactly the two keys of prompts/eval_schema.json - checked on all 3446 files. No critical_features and no image_path: the benchmark's attacker prompt does not ask for them. Which image each response read is fixed by its filename, which comes from the positional alignment above."
+    "note": "Exactly the two keys of prompts/eval_schema.json - checked on all 4000 files. No critical_features and no image_path: the benchmark's attacker prompt does not ask for them. Which image each response read is fixed by its filename, which comes from the positional alignment above."
   },
   "unscored": {
-    "total": 554,
-    "gemini-3.1-pro-preview": {
-      "gpt-image": 152,
-      "raw": 400,
-      "why": "A 250-requests-per-model-per-day cap. Every unscored call returned HTTP 429 with a null error and a null location_estimate, so no reasoning exists to archive. The 400-image half was scheduled as one 800-call job; it exhausted the day's quota part way through the gpt-image set and never reached the raw set at all.",
-      "consequence": "gemini-3.1-pro-preview's raw row covers 100 images and its gpt-image row covers 348. Its raw-versus-protected comparison is over the 100 images both cover, not over 500, and its two rows in the headline table are not on the same sample as the other three evaluators'."
-    },
-    "gemini-3-flash-preview": {
-      "gpt-image": 2,
-      "image_ids": [
-        "aachen_000083_000019",
-        "weimar_000000_000019"
-      ],
-      "why": "two API failures, one in each half; recorded in the run's own failures list"
-    }
+    "total": 0,
+    "note": "Every one of the 4,000 calls in the matrix returned a scored answer. The gemini-3.1-pro-preview quota gap that shaped the first build was closed by backfill chunks c2, k2 and d; the two gemini-3-flash-preview failures were retried in chunk e."
   },
   "perceptual_metrics": {
     "file": "perceptual_metrics.json",
@@ -381,23 +447,23 @@
       "passed": true
     },
     {
-      "check": "every emitted response parses as JSON and carries a non-empty 'reasoning'",
-      "result": "3446/3446",
-      "passed": true
-    },
-    {
-      "check": "every response has exactly the keys of prompts/eval_schema.json",
-      "result": "3446/3446 (reasoning + location_estimate{latitude, longitude, confidence, region})",
-      "passed": true
-    },
-    {
-      "check": "emitted bodies are deep-equal to the source objects",
-      "result": "3446 responses, 0 differences",
+      "check": "every emitted response parses as JSON, carries a non-empty 'reasoning', and has exactly the keys of prompts/eval_schema.json",
+      "result": "4000/4000",
       "passed": true
     },
     {
       "check": "recomputed haversine(ground truth, location_estimate) equals the recorded error",
-      "result": "3446/3446 exact at R = 6371.0 (max deviation 0 km)",
+      "result": "4000/4000 at R = 6371.0 (max deviation 0 km)",
+      "passed": true
+    },
+    {
+      "check": "every unscored cell is a recorded API failure in the source, not a dropped file",
+      "result": "0 unscored, all carrying the source's error string; 4000 - 4000 = 0",
+      "passed": true
+    },
+    {
+      "check": "perceptual_metrics.json covers every image pair and no SSIM exceeds 1.0",
+      "result": "500 pairs, ssim n=500 in [0.5453, 0.9504]",
       "passed": true
     },
     {
@@ -407,22 +473,17 @@
     },
     {
       "check": "every index.csv error cell equals the recorded prediction_errors_km",
-      "result": "3446 populated cells, 0 mismatches (exact, full round-trip precision)",
+      "result": "4000 populated cells, 0 mismatches (exact, full round-trip precision)",
       "passed": true
     },
     {
-      "check": "index.csv ground-truth coordinates equal dataset.json exactly",
-      "result": "500/500 round-trip exactly",
+      "check": "index.csv n_responses equals the response files on disk",
+      "result": "4000 == 4000",
       "passed": true
     },
     {
-      "check": "index.csv n_responses equals the files on disk",
-      "result": "3446 == 3446",
-      "passed": true
-    },
-    {
-      "check": "every unscored cell is a recorded API failure in the source, not a dropped file",
-      "result": "554 unscored, all 554 carry the source's error string; 4000 - 3446 = 554",
+      "check": "emitted bodies are deep-equal to the source objects",
+      "result": "4000 responses, 0 differences",
       "passed": true
     },
     {
@@ -431,13 +492,13 @@
       "passed": true
     },
     {
-      "check": "each half's mean and count reproduce the source run's own summary.json",
-      "result": "16/16 run-halves",
+      "check": "each run's mean and count reproduce that run's own summary.json",
+      "result": "23/23 run-cells",
       "passed": true
     },
     {
-      "check": "perceptual_metrics.json covers every image pair and no SSIM exceeds 1.0",
-      "result": "500 pairs, ssim n=500 in [0.5453, 0.9504]",
+      "check": "index.csv ground-truth coordinates equal dataset.json exactly",
+      "result": "500/500 round-trip exactly",
       "passed": true
     },
     {
@@ -448,21 +509,19 @@
   ],
   "totals": {
     "images": 500,
-    "response_files": 3446,
-    "bytes": 6499902,
+    "response_files": 4000,
+    "bytes": 7389163,
     "process_responses": 0,
-    "evaluation_responses": 3446,
+    "evaluation_responses": 4000,
     "cells_filled": 8,
     "cells_empty": 20,
     "responses_by_condition": {
-      "raw": 1600,
-      "gpt-image": 1846
+      "raw": 2000,
+      "gpt-image": 2000
     },
-    "images_with_all_eight_responses": 99,
+    "images_with_all_eight_responses": 500,
     "images_by_response_count": {
-      "6": 153,
-      "7": 248,
-      "8": 99
+      "8": 500
     }
   },
   "index_csv": {

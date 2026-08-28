@@ -1,0 +1,21 @@
+{
+  "img_id": "23821",
+  "predictions": {
+    "1 2": 5,
+    "1 3": 5,
+    "1 4": 4,
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "raw_response": "[P1-P2]: P1 is actively pouring wine, acting as a service provider, while P2 is standing nearby, observing the interaction, suggesting he is a customer or guest waiting for service. => commercial\n[P1-P3]: P1 is pouring wine into a glass, and P3 is directly engaging to receive it. This indicates a clear transactional interaction where P1 is the server and P3 is the customer. => commercial\n[P1-P4]: P1 is serving wine, and P4 is positioned further down the table next to what appears to be product boxes, also observing the activity. This suggests they are both involved in hosting or working at the event. => professional\n[P2-P3]: P2 and P3 are standing close together at the table, both attending the event and observing the wine being poured. Their proximity and shared activity suggest they are together as companions. => friends\n[P2-P4]: P2 and P4 are separated by other individuals and a significant distance on the table. There is no direct interaction, shared focus, or body language indicating a specific relationship between them beyond being at the same event. => no-relationship\n[P3-P4]: P3 is engaged in receiving service from P1, while P4 is further away, by the boxes. There is no interaction, shared gaze, or proximity to suggest a social connection between P3 and P4. => no-relationship",
+  "timestamp": 1787940677.2754238
+}

@@ -1,0 +1,19 @@
+{
+  "img_id": "10709",
+  "predictions": {
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 1
+  },
+  "ground_truth": {
+    "1 3": 1,
+    "2 3": 6,
+    "3 4": 6,
+    "2 4": 6,
+    "1 4": 6
+  },
+  "raw_response": "[P1-P3]: P1 and P3 are sitting closely together, sharing a meal, and wearing matching sports jerseys, which suggests they are enjoying a social outing together. => friends\n[P1-P4]: P1 and P4 (whose hand is visible reaching for food) are sharing a meal at the same table, indicating they belong to the same social dining group. => friends\n[P2-P3]: P2 appears as a reflection of someone outside the restaurant and is not interacting with P3, who is dining inside. => no-relationship\n[P2-P4]: P2 is a bystander seen in a window reflection, with no social connection or interaction with P4, who is part of the dining group inside. => no-relationship\n[P3-P4]: P3 and P4 are sitting at the same table sharing food, pointing to a casual, friendly relationship between members of the same dining party. => friends",
+  "timestamp": 1787936492.411471
+}

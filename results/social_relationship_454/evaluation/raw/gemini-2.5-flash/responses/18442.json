@@ -1,0 +1,21 @@
+{
+  "img_id": "18442",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 4,
+    "2 3": 1,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "raw_response": "Here is the classification for each pair:\n\n- P1-P2: P1 and P2 are seated at the same table, both focused on individual laptops in a shared study or work environment. Their close proximity, even without direct interaction, suggests they are likely sharing this activity as part of a group, such as friends studying together. => friends\n- P1-P3: P1 and P3 are at the same table, each focused on their own laptop or books. Similar to P1 and P2, their presence together in this shared study context implies a social connection, likely as friends or acquaintances. => friends\n- P1-P4: P1 and P4 are at the same table; P4 is wearing an ID badge, which signifies a formal affiliation with an institution (e.g., academic or work). Even without direct interaction, this suggests they are colleagues or fellow members of the same professional or academic environment. => professional\n- P2-P3: P2 and P3 are seated very close to each other at the same table, both engaged with their individual laptops. This close proximity in a shared study setting strongly implies they are part of the same social group, such as friends studying together. => friends\n- P2-P4: P2 and P4 are at the same table, and P4 is wearing an ID badge, indicating a shared institutional context. This suggests they are likely colleagues or fellow students/researchers within the same professional or academic setting, even if not actively interacting. => professional\n- P3-P4: P3 and P4 are seated next to each other at the same table. P4's ID badge indicates a formal affiliation, suggesting a shared professional or academic environment with P3. Their close proximity further supports a connection as colleagues or fellow members. => professional",
+  "timestamp": 1787941035.6116908
+}

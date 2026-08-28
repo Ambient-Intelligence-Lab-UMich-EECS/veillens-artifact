@@ -1,0 +1,19 @@
+{
+  "img_id": "12099",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 8": 6,
+    "4 8": 6,
+    "5 8": 6
+  },
+  "ground_truth": {
+    "5 8": 6,
+    "4 8": 6,
+    "3 8": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P3-P4]: P3 is a spectator sitting in the stands, while P4 is an event staff member wearing a high-visibility vest closer to the field. They have different roles and are not interacting. => no-relationship\n[P3-P5]: P3 is a spectator in the stands, and P5 is an event staff member on a lower level. There is no visible interaction or shared purpose beyond being in the same venue. => no-relationship\n[P3-P8]: P3 is a spectator sitting alone, and P8 consists of two other spectators sitting further away in a different section of the stands. They are simply individuals attending the same event without any apparent connection. => no-relationship\n[P4-P8]: P4 is event staff near the field, and P8 consists of spectators in the upper stands. They are geographically distant and have distinctly different roles, showing no interaction. => no-relationship\n[P5-P8]: P5 is event staff near the field, and P8 consists of spectators in the upper stands. Their separate locations and roles indicate no personal or professional relationship. => no-relationship",
+  "timestamp": 1787939558.492186
+}

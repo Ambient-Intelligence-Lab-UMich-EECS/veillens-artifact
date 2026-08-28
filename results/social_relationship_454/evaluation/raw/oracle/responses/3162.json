@@ -1,0 +1,50 @@
+{
+  "img_id": "3162",
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 1,
+    "5 6": 6,
+    "1 3": 6,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 4
+  },
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 4,
+    "4 5": 1,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 6,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P3]: Snowy outdoor area near a building; P1 is by a grill while P3 in high-visibility gear stands farther uphill. No interaction and different roles/attire. => no-relationship\n\n[P1-P4]: P1 is at the grill on the slope; P4 is farther up walking with someone else. No engagement or proximity. => no-relationship\n\n[P1-P5]: P1 remains by the grill; P5 is walking uphill with P4, not looking toward P1. No contact or shared activity. => no-relationship\n\n[P1-P6]: P6 in reflective clothing is near P3 and away from P1. No interaction or common task. => no-relationship\n\n[P2-P3]: P2 stands near P1 mid-slope while P3, in safety gear, is higher up by the building. They are distant with no engagement. => no-relationship\n\n[P2-P4]: P2 is mid-slope; P4 is farther up walking away. No proximity or interaction. => no-relationship\n\n[P2-P5]: P2 and P5 are separated on the slope with no eye contact or shared action. => no-relationship\n\n[P2-P6]: P2 is apart from P6, who appears to be with P3 in work attire. No visible interaction. => no-relationship\n\n[P3-P4]: P3 wears high-visibility gear near the building; P4 is a passerby uphill. They are not interacting. => no-relationship\n\n[P3-P5]: P3 is in work gear; P5 walks with P4 and is distant from P3. No contact or shared activity. => no-relationship\n\n[P3-P6]: Both stand close together in matching high-visibility clothing near the building, suggesting they\u2019re on the same job. => professional\n\n[P4-P5]: They walk side-by-side in casual winter clothes, close in proximity with shared direction and pace, but no overt intimacy. => friends\n\n[P4-P6]: P4 is walking away uphill while P6 stands with P3; they\u2019re distant and uninvolved. => no-relationship\n\n[P5-P6]: P5 is with P4 uphill; P6 is near P3 in work gear. No proximity or interaction. => no-relationship",
+  "timestamp": 1776888262.7469673
+}

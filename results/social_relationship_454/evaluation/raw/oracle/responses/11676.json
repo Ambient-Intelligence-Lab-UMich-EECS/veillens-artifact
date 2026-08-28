@@ -1,0 +1,25 @@
+{
+  "img_id": "11676",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: A baseball game is depicted; P2 is batting while P1 stands behind the fence at a distance with no interaction. P1\u2019s casual attire versus P2\u2019s uniform suggests P1 is a spectator. => no-relationship\n\n[P1-P3]: In the same game, P3 is the catcher in full gear, while P1 is a distant spectator behind the fence with no engagement. Different roles/attire and no contact indicate no social tie shown. => no-relationship\n\n[P2-P3]: They are batter and catcher on the field, in close proximity, actively engaged in the sport with uniforms and gear. This indicates an organized, role-based interaction. => professional",
+  "timestamp": 1776889460.7592216
+}

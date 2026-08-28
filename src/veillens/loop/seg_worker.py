@@ -222,13 +222,14 @@ class SegmentationQueueHandler:
         mask_paths = []
         if features:
             for idx, feature in enumerate(features):
+                # Only for the log lines and the mask filename; _segment_feature reads what it
+                # needs off the feature itself.
                 object_desc = feature.get('object_description', '')
-                target_concept = feature.get('target_concept', None)
 
-                # Segment using Grounded SAM 2
+                # Segment: dataset-supplied boxes when the spec has them, detection otherwise
                 try:
-                    _, seg_masks, boxes, labels = self.pipeline.segmenter.segment(
-                        task.image_path, object_desc, target_concept
+                    _, seg_masks, boxes, labels = self._segment_feature(
+                        task.image_path, feature, state
                     )
 
                     if len(seg_masks) == 0:
@@ -411,11 +412,11 @@ class SegmentationQueueHandler:
         try:
             for feature in features:
                 object_desc = feature.get('object_description', '')
-                target_concept = feature.get('target_concept', None)
 
                 try:
-                    _, seg_masks, boxes, labels = self.pipeline.segmenter.segment(
-                        temp_path, object_desc, target_concept
+                    # Full-frame round 2, so dataset boxes are still in the right coordinates.
+                    _, seg_masks, boxes, labels = self._segment_feature(
+                        temp_path, feature, state
                     )
 
                     if len(seg_masks) == 0:
@@ -558,7 +559,13 @@ class SegmentationQueueHandler:
                 cv2.imwrite(temp_path, upscaled_bgr)
 
             try:
-                # Segment on upscaled region
+                # Segment on upscaled region.
+                #
+                # Deliberately the detection path even for a setting that supplies its own boxes:
+                # those boxes are in full-image pixels and this is a cropped, upscaled frame, so
+                # feeding them to SAM 2 here would mask a region of the wrong image. A setting
+                # that grounds from a dataset should run with `round2_regions.fine_grained: false`
+                # (or no round 2 at all), which keeps every prompt in the full-image frame.
                 _, seg_masks, boxes, labels = self.pipeline.segmenter.segment(
                     temp_path, object_desc, target_concept
                 )
@@ -738,6 +745,49 @@ class SegmentationQueueHandler:
     # =========================================================================
     # Utility Methods: Feature Loading
     # =========================================================================
+
+    def _segment_feature(self, image_path: str, feature: Dict, state: ImageState):
+        """
+        Turn one clue into masks, by whichever route this setting grounds with.
+
+        Two routes, and the choice is a property of the clue rather than of the privacy class: if
+        the spec can name the boxes for this feature -- because the dataset shipped them -- SAM 2
+        is prompted with them directly and no detector runs. Otherwise the clue is grounded from
+        its language description, which is what every text-discovered cue does.
+
+        A spec may also narrow what came back -- the social-relationship setting prompts SAM 2
+        with a whole person box and then keeps only the head band of the silhouette, because that
+        is the region its policy edits and SAM 2 segments a person far better than it segments a
+        rectangle cut out of one.
+
+        Returns whatever the segmenter returns: ``(image_source, masks, boxes, labels)``.
+        """
+        options = self.config.get('intervention', {})
+
+        boxes = None
+        if self.spec.feature_boxes is not None:
+            boxes = self.spec.feature_boxes(feature, state.item, options)
+
+        if boxes is not None:
+            image_source, masks, out_boxes, labels = \
+                self.pipeline.segmenter.segment_boxes(image_path, boxes)
+        else:
+            image_source, masks, out_boxes, labels = self.pipeline.segmenter.segment(
+                image_path,
+                feature.get('object_description', ''),
+                feature.get('target_concept', None),
+            )
+
+        if self.spec.refine_mask is not None and len(masks):
+            refined = np.stack([
+                np.asarray(self.spec.refine_mask(mask, feature, state.item, options))
+                for mask in masks
+            ])
+            # A refinement that leaves nothing is the same outcome as an ungrounded clue, and the
+            # caller already handles that: better to skip the clue than to inpaint an empty mask.
+            masks = refined if refined.any() else np.array([])
+
+        return image_source, masks, out_boxes, labels
 
     def _load_and_filter_features(self, pred_path: str) -> List[Dict]:
         """

@@ -1,0 +1,25 @@
+{
+  "img_id": "3568",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a home kitchen they appear to be casually chatting across the counter, standing a few feet apart with relaxed posture and no physical contact. Casual attire and domestic setting suggest a friendly social visit rather than work or a transaction. => friends\n\n[P1-P3]: P3 sits/leans toward P1 while they converse in the kitchen, showing comfortable proximity and informal body language without affection or formality. Their casual clothes and setting imply a friendly hangout. => friends\n\n[P2-P3]: Around the kitchen island, P2 leans toward P3 who is seated and facing her; they seem engaged in relaxed conversation with no intimate or professional cues. The casual home environment points to a friendly relationship. => friends",
+  "timestamp": 1776887841.783767
+}

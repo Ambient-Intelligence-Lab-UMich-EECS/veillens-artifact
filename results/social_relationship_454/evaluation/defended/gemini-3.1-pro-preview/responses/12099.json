@@ -1,0 +1,19 @@
+{
+  "img_id": "12099",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 8": 6,
+    "4 8": 6,
+    "5 8": 6
+  },
+  "ground_truth": {
+    "5 8": 6,
+    "4 8": 6,
+    "3 8": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P3-P4]: P3 is a spectator sitting in the stands, while P4 is an official or substitute sitting on the sideline bench, indicating different roles and no interaction. => no-relationship\n[P3-P5]: P3 is a spectator in the stands, whereas P5 is a staff member or substitute on the sideline; there is no interaction or connection between them. => no-relationship\n[P3-P8]: Both are spectators attending the game, but they are seated far apart in different rows without any signs of social connection. => no-relationship\n[P4-P8]: P4 is seated on the sideline bench in a working role, and P8 is a spectator sitting up in the stands, showing no interaction. => no-relationship\n[P5-P8]: P5 is part of the sideline staff or a substitute, while P8 is a spectator in the stands, with no visual cues suggesting they know each other. => no-relationship",
+  "timestamp": 1787939566.767073
+}

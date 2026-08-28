@@ -1,0 +1,25 @@
+{
+  "img_id": "7100",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They\u2019re at a celebration event cutting a ceremonial cake together; they stand very close with hands on the same knife, smiling. With P2 in a suit and P1 casually dressed in an event tent, this looks like colleagues participating in a public ceremony. => professional\n\n[P1-P3]: Both are side by side around the cake, cooperating on the cut and smiling; their hands converge on the knife. The casual/event T\u2011shirt on P3 and the public celebration setting suggest an organized event role rather than a personal bond. => professional\n\n[P2-P3]: They are physically interacting by jointly holding the cake-cutting knife, standing close and smiling. P2\u2019s suit and P3\u2019s event T\u2011shirt in a tent with a celebration banner indicate an official/public function, implying colleagues. => professional",
+  "timestamp": 1776888311.9101968
+}

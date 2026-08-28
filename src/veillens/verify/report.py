@@ -30,7 +30,10 @@ from veillens.verify.granularity import (
     COMPOSITIONAL,
     GEOLOCATION,
     LADDER_KM,
+    RELATION_LEVELS,
+    SOCIAL_RELATION,
     ImageVerdict,
+    metric_threshold,
     protected_levels,
     target_rung,
     threshold_km,
@@ -54,16 +57,25 @@ _SEVERITY_LABEL = re.compile(r"severity\s*<=\s*(\d+)")
 # ---------------------------------------------------------------------------
 
 
+#: Each setting names its error differently, which is what lets an archived run be identified
+#: from its results file alone. Kept beside `_error_of`, which reads the same table in the other
+#: direction, so a new class cannot be added to one and forgotten in the other.
+ERROR_KEYS: Dict[str, str] = {
+    GEOLOCATION: "error_km",
+    COMPOSITIONAL: "error_score",
+    SOCIAL_RELATION: "error_relation",
+}
+
+
 def sniff_privacy_class(evaluation_results: Mapping[str, Any]) -> str:
-    """Geolocation runs key their error as ``error_km``; compositional as ``error_score``."""
+    """Identify the setting from the error key its results were written under. See `ERROR_KEYS`."""
     for entry in evaluation_results.values():
         if not isinstance(entry, Mapping):
             continue
         for item in entry.get("feature_results") or []:
-            if "error_km" in item:
-                return GEOLOCATION
-            if "error_score" in item:
-                return COMPOSITIONAL
+            for privacy_class, key in ERROR_KEYS.items():
+                if key in item:
+                    return privacy_class
     return GEOLOCATION
 
 
@@ -93,24 +105,24 @@ def infer_mask_level(evaluation_results: Mapping[str, Any], privacy_class: str) 
         label = item.get("feature_removed")
         if not isinstance(label, str):
             continue
-        if privacy_class == GEOLOCATION:
+        if privacy_class in (GEOLOCATION, SOCIAL_RELATION):
+            known = CLUE_LEVEL_TO_RUNG if privacy_class == GEOLOCATION else RELATION_LEVELS
             levels = [part.strip().lower() for part in label.split(",")]
-            levels = [level for level in levels if level in CLUE_LEVEL_TO_RUNG]
+            levels = [level for level in levels if level in known]
             if levels:
                 return levels
         else:
             match = _SEVERITY_LABEL.search(label)
             if match:
                 return int(match.group(1))
-    return [] if privacy_class == GEOLOCATION else None
+    return [] if privacy_class in (GEOLOCATION, SOCIAL_RELATION) else None
 
 
 def _error_of(entry: Mapping[str, Any], privacy_class: str) -> Optional[float]:
     item = _protected_entry(entry)
     if item is None:
         return None
-    key = "error_km" if privacy_class == GEOLOCATION else "error_score"
-    value = item.get(key)
+    value = item.get(ERROR_KEYS.get(privacy_class, "error_score"))
     try:
         return float(value)
     except (TypeError, ValueError):
@@ -126,11 +138,14 @@ def find_response_dirs(run_dir: Path) -> List[Path]:
     """
     Directories under *run_dir* that hold one attacker response per image.
 
-    Covers the live layout (``eval_cache/``) and the archived one
-    (``evaluation/<model>/responses/``) without hardcoding either depth.
+    Covers the loop's layout (``eval_cache/``), a baseline run's (``attacker_cache/``, the
+    defended readings -- the shared ``_attacker_cache`` of unprotected originals is a different
+    name and is not picked up), and the archived one (``evaluation/<model>/responses/``), without
+    hardcoding any depth.
     """
     found: List[Path] = []
-    for pattern in ("eval_cache", "**/eval_cache", "**/responses"):
+    for pattern in ("eval_cache", "attacker_cache",
+                    "**/eval_cache", "**/attacker_cache", "**/responses"):
         for candidate in run_dir.glob(pattern):
             if candidate.is_dir() and any(candidate.glob("*.json")) and candidate not in found:
                 found.append(candidate)
@@ -151,24 +166,39 @@ def load_responses(directory: Path) -> Dict[str, Dict[str, Any]]:
     return index
 
 
+#: A prefix match is only allowed to differ by a whole suffix, not by more digits. Without this,
+#: image ``img1`` matches a cache named ``img10`` and gets verified against another image's
+#: response -- a wrong answer that looks exactly like a right one.
+_SUFFIX_START = ("_", "-", ".")
+
+
 def _match(image_id: str, index: Mapping[str, Dict[str, Any]]) -> Optional[Dict[str, Any]]:
     """
     Find this image's response.
 
-    Exact first. Failing that, allow one side to be a prefix of the other, because the loop names
-    caches after the image *file* stem while results are keyed by image id -- Cityscapes ids gain
-    a ``_leftImg8bit`` suffix on the way to disk. Ties break toward the closest match.
+    Exact first. Failing that, allow one side to be a prefix of the other *at a separator*,
+    because the loop names caches after the image file stem while results are keyed by image id --
+    Cityscapes ids gain a ``_leftImg8bit`` suffix on the way to disk.
+
+    Returns ``None`` when the match is ambiguous. Verifying an image against the wrong image's
+    attacker response would produce a plausible table from mismatched data, which is worse than
+    reporting the residual criterion as not computed.
     """
     if image_id in index:
         return index[image_id]
-    candidates = [
-        key for key in index
-        if key.startswith(image_id) or image_id.startswith(key)
-    ]
-    if not candidates:
+
+    candidates = [key for key in index if _is_suffix_extension(key, image_id)]
+    if len(candidates) != 1:
         return None
-    candidates.sort(key=lambda key: abs(len(key) - len(image_id)))
     return index[candidates[0]]
+
+
+def _is_suffix_extension(key: str, image_id: str) -> bool:
+    """True when one of the two is the other plus a separator-delimited suffix."""
+    longer, shorter = (key, image_id) if len(key) > len(image_id) else (image_id, key)
+    if not longer.startswith(shorter):
+        return False
+    return longer[len(shorter):].startswith(_SUFFIX_START)
 
 
 # ---------------------------------------------------------------------------
@@ -181,10 +211,42 @@ class RunVerification:
     privacy_class: str
     mask_level: Any
     target_rung: Optional[str]
+    #: Geolocation only, and always kilometres. `metric_criterion` is what the report renders.
     threshold_km: Optional[float]
     residual_source: Optional[str]
     verdicts: Dict[str, ImageVerdict] = field(default_factory=dict)
     matched: int = 0
+
+    # -- the metric criterion, in whatever this setting measures -------------
+
+    @property
+    def metric_threshold(self) -> Optional[float]:
+        """The value an image's error must reach to pass, or None if this setting has no line."""
+        return metric_threshold(self.privacy_class, self.mask_level)
+
+    @property
+    def metric_criterion(self) -> str:
+        """One sentence naming what the metric criterion requires, in this setting's own terms."""
+        limit = self.metric_threshold
+        if limit is None:
+            return "not applicable: this privacy class has no per-image metric pass line"
+        if self.privacy_class == GEOLOCATION:
+            return f"attacker error >= {limit:g} km, derived from mask_level"
+        if self.privacy_class == SOCIAL_RELATION:
+            return "attacker recovers none of the image's annotated pairs"
+        return f"attacker error >= {limit:g}"
+
+    @property
+    def metric_label(self) -> str:
+        """The short column label for the metric row of the rendered table."""
+        limit = self.metric_threshold
+        if limit is None:
+            return "metric   (not applicable)"
+        if self.privacy_class == GEOLOCATION:
+            return f"metric   (error ≥ {limit:g} km)"
+        if self.privacy_class == SOCIAL_RELATION:
+            return "metric   (no annotated pair recovered)"
+        return f"metric   (error ≥ {limit:g})"
 
     # -- tallies ------------------------------------------------------------
 
@@ -254,12 +316,9 @@ class RunVerification:
             "protected_levels": sorted(
                 protected_levels(self.privacy_class, self.mask_level), key=str
             ),
+            "metric_threshold": self.metric_threshold,
             "criterion": {
-                "metric": (
-                    f"attacker error >= {self.threshold_km} km, derived from mask_level"
-                    if self.threshold_km is not None
-                    else "not applicable: this privacy class has no distance rung"
-                ),
+                "metric": self.metric_criterion,
                 "residual": "no cue at a protected granularity survives in the attacker's report",
                 "combined": "both must hold; a criterion that could not be computed is not a pass",
             },
@@ -299,15 +358,19 @@ class RunVerification:
         lines: List[str] = []
         out = lines.append
 
-        label = "Geolocation" if self.privacy_class == GEOLOCATION else "Compositional privacy"
+        label = {
+            GEOLOCATION: "Geolocation",
+            COMPOSITIONAL: "Compositional privacy",
+            SOCIAL_RELATION: "Social relationship",
+        }.get(self.privacy_class, self.privacy_class)
         out(f"\nVerification — {label}, {self.n} images\n")
 
         if self.threshold_km is not None:
             out(f"  target granularity : {self.target_rung} "
                 f"(attacker must be ≥ {self.threshold_km:g} km off)")
         else:
-            out("  target granularity : n/a — no distance rung for this privacy class; "
-                "the residual criterion is the verdict")
+            out("  target granularity : n/a — no distance rung for this privacy class")
+        out(f"  metric criterion   : {self.metric_criterion}")
         protected = sorted(protected_levels(self.privacy_class, self.mask_level), key=str)
         out(f"  protected cues     : {', '.join(str(p) for p in protected) or '(none)'}")
         if self.residual_source:
@@ -322,10 +385,7 @@ class RunVerification:
         out("")
         out(f"  {'':38s}{'pass':>8s}{'fail':>8s}{'not computed':>15s}")
         out("  " + "-" * 67)
-        metric_label = (
-            f"metric   (error ≥ {self.threshold_km:g} km)" if self.threshold_km is not None
-            else "metric   (not applicable)"
-        )
+        metric_label = self.metric_label
         for name, attribute in ((metric_label, "metric_pass"),
                                 ("residual (no protected cue survives)", "residual_pass"),
                                 ("both", "passed")):

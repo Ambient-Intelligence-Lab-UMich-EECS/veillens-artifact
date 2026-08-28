@@ -1,0 +1,32 @@
+{
+  "img_id": "9937",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They\u2019re at a reception holding wine in a restaurant/bar setting; they aren\u2019t adjacent (P4 between them), no physical contact, and wear semi-formal attire typical of a work event. => professional\n\n[P1-P3]: Opposite ends of the group at the same toast, no interaction beyond smiling for the photo; both in business attire in a venue that looks like a professional gathering. => professional\n\n[P1-P4]: Standing next to each other toasting, friendly smiles but no intimate touch; business-casual clothing in a reception environment suggests coworkers. => professional\n\n[P2-P3]: Side by side with wine glasses, polite smiles and no touching; semi-formal dress in a social-work setting. => professional\n\n[P2-P4]: Adjacent in the middle, toasting with neutral body language and no physical intimacy; attire and venue imply a work function. => professional\n\n[P3-P4]: Separated by P2 within the group, sharing the same toast without direct interaction; suits and restaurant/bar environment signal a professional event. => professional",
+  "timestamp": 1776888207.0872781
+}

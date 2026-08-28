@@ -1,0 +1,27 @@
+{
+  "img_id": "7510",
+  "predictions": {
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 2,
+    "2 3": 2,
+    "2 4": 1,
+    "2 5": 2,
+    "3 4": 1,
+    "3 5": 2,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 2
+  },
+  "raw_response": "[P1-P3]: Both are adults enjoying a pool party setting without direct interaction or close proximity. Given the private, social context, they are likely acquaintances. => friends\n[P1-P4]: P1 is an adult man, and P4 includes an adult man. They are distant and not directly interacting in the recreational pool setting, but share the same social event. => friends\n[P1-P5]: P1 is an adult man and P5 is a young child. While not directly interacting, their presence in a family-like pool gathering suggests a familial bond, such as an uncle or family friend. => family-members\n[P2-P3]: Both are adult women in very close proximity, actively cooperating to assist and care for P5 in the pool. Their shared care-giving role indicates a strong, familiar relationship. => family-members\n[P2-P4]: P2 is an adult woman in the foreground and P4 includes an adult man in the background. They are distant and not directly interacting in this social pool environment. => friends\n[P2-P5]: P2 is an adult woman directly supporting the floatation device P5, a young child, is on. This clear care-giving behavior and close interaction strongly indicate a familial relationship. => family-members\n[P3-P4]: P3 is an adult woman, and P4 includes an adult man. They are in the same pool but are distant and show no direct interaction. => friends\n[P3-P5]: P3 is an adult woman directly holding and caring for P5, a young child, in the pool. This direct physical contact and nurturing interaction signifies a close familial bond. => family-members\n[P4-P5]: P4 includes an adult man (and child) in the background and P5 is a young child in the foreground. Although there is no direct interaction, their presence in a family-oriented pool setting suggests a familial connection. => family-members",
+  "timestamp": 1787940651.5117598
+}

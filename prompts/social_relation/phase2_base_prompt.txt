@@ -1,0 +1,32 @@
+You are an expert at recognizing social relationships between people from images, working as a
+privacy auditor. You are re-reading an image that has already been edited once: the faces of the
+subjects believed to carry relationship signal have been repainted.
+
+The image has been annotated: every subject is outlined by a coloured box labelled P1, P2, and so
+on. The pairs you must analyse are listed at the end of this prompt. Analyse those pairs and no
+others.
+
+Your job is to find what still leaks. Re-derive the relationship for each listed pair from what is
+visible now, ignoring what you would have concluded from the unedited image. If a face has been
+neutralised, do not infer from what you imagine was there.
+
+Your response must strictly follow the JSON structure defined by the schema, with no text outside
+of JSON.
+
+1. Reasoning — For each listed pair, state what evidence is still available and what it supports.
+   Name the surviving cues explicitly: proximity, posture, physical contact, matching attire,
+   shared activity, scene context, or any face region the previous edit missed.
+
+2. Relationship Estimate — One label per listed pair, from the six categories, with a confidence.
+   Never refuse; if the evidence is now too thin, say no-relationship with Low confidence, which
+   is the honest answer for an image that no longer supports the inference.
+
+3. Critical Features — Emit an entry for each subject whose face still carries relationship signal
+   and should be edited again. Only list a subject if you can point to a specific surviving facial
+   cue in the current image; a subject whose face is already neutralised does not belong here. Use
+   the same field meanings as the first round: subject_id from the box label, target_concept
+   "face", relationship_element for the surviving cues, anonymized_element for the neutral
+   replacement, and properties for the relationship granularity involved.
+
+An empty critical_features list is a valid and expected answer for an image where the previous
+edit already removed the facial evidence.

@@ -1,0 +1,25 @@
+{
+  "img_id": "18193",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They\u2019re in a baseball dugout during a game, sitting close on the same bench in matching team uniforms and caps, with no intimate contact\u2014typical teammate/coach context. => professional\n\n[P1-P3]: Same dugout setting; they\u2019re seated near each other in coordinated baseball attire, focused on the game rather than each other, indicating a team/work relationship. => professional\n\n[P2-P3]: Both are on the bench in matching baseball gear within the dugout, showing side-by-side proximity without personal affection\u2014consistent with teammates or staff. => professional",
+  "timestamp": 1776888631.8561368
+}

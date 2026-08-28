@@ -1,0 +1,23 @@
+{
+  "img_id": "1531",
+  "predictions": {
+    "1 2": 5,
+    "1 4": 4,
+    "1 5": 4,
+    "2 4": 5,
+    "2 5": 5,
+    "3 5": 5,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is a musician on stage performing, while P2 is an audience member recording the show. This represents a service provider-consumer relationship. => commercial\n[P1-P4]: Both P1 and P4 are on stage, playing instruments as part of a musical performance, indicating they are colleagues in a band. => professional\n[P1-P5]: Both P1 and P5 are on stage, engaged in a musical performance, suggesting they are band members working together. => professional\n[P2-P4]: P2 is an audience member observing the performance, and P4 is a musician on stage. This is a transactional interaction between a consumer and a service provider. => commercial\n[P2-P5]: P2 is in the audience, while P5 is on stage performing, establishing a service provider-consumer interaction. => commercial\n[P3-P5]: P3 is in the audience, and P5 is a musician on stage, representing a consumer watching a service provider. => commercial\n[P4-P5]: Both P4 and P5 are on stage, performing together as part of the same musical act. => professional",
+  "timestamp": 1787940918.3943725
+}

@@ -1,0 +1,46 @@
+{
+  "img_id": "21541",
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 6": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "5 6": 4,
+    "2 5": 4,
+    "2 4": 6,
+    "2 6": 4,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 4": 6
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 5",
+    "1 6",
+    "2 4",
+    "2 5",
+    "2 6",
+    "3 4",
+    "4 5",
+    "4 6",
+    "5 6"
+  ],
+  "subjects_matched": [
+    1,
+    4
+  ],
+  "subjects_unmatched": [
+    2,
+    3,
+    5,
+    6
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P4]: This is a tennis match scene where P1 (a player in tennis attire at the net) is shaking hands with another player, while P4 is a casually dressed spectator standing behind the fence in the background. They are far apart with no interaction or contact, indicating no direct social connection. => no-relationship",
+  "timestamp": 1776888304.9237826
+}

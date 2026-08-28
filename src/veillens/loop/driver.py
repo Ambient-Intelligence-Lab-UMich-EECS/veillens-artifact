@@ -36,7 +36,7 @@ from veillens.loop.queues import (
 from veillens.loop.seg_worker import start_seg_worker
 from veillens.loop.state import LEVELS, ClueStatsTracker, GlobalState
 from veillens.metrics.geodesic import DistanceCalculator
-from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, RUN_SUBDIRS
+from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, RESIZED_INPUTS_DIR, RUN_SUBDIRS
 from veillens.privacy.spec import get_spec
 from veillens.reason.oracle import PrivacyOracle
 from veillens.verify.granularity import target_rung, threshold_km, verdict
@@ -125,6 +125,9 @@ class ProtectionLoop:
         self.evaluation_results = {}
         # Stage IV verdicts, one per image, built as each evaluation entry is created.
         self._verdicts = {}
+        # Attacker readings of the *unedited* images, for specs that set `eval_original`. Empty
+        # for the settings that take their "before" from the defense oracle's round-1 response.
+        self._original_attacker_results = {}
 
         # Timing tracking
         self.phase_timings = {}
@@ -206,6 +209,7 @@ class ProtectionLoop:
         print("[Phase 1] Caching original images...")
         cached_count = 0
         cleared_count = 0
+        resized_count = 0
         for item in self.dataset:
             image_id = item['image_id']
             image_path = Path(item['image_path'])
@@ -223,13 +227,71 @@ class ProtectionLoop:
                 cleared_count += 1
             intermediate_dir.mkdir(parents=True, exist_ok=True)
 
-            original_cache_path = intermediate_dir / f"original{image_path.suffix}"
-            shutil.copy2(image_path, original_cache_path)
+            # A privacy class may cap input resolution. When it does, the run processes the
+            # downscaled copy and `image_path` is repointed at it here -- which is what puts
+            # every later reader (segmentation, depth, SD, the attacker) in one coordinate
+            # space, and what makes `original.*` below the image that was actually processed.
+            source_path = self._stage_input(image_path)
+            if source_path != image_path:
+                item['image_path'] = str(source_path)
+                resized_count += 1
+
+            original_cache_path = intermediate_dir / f"original{source_path.suffix}"
+            shutil.copy2(source_path, original_cache_path)
             cached_count += 1
 
         if cleared_count:
             print(f"[Phase 1] Cleared {cleared_count} stale intermediate folders")
         print(f"[Phase 1] Cached {cached_count} original images")
+        if resized_count:
+            print(f"[Phase 1] Scaled {resized_count} input(s) to a "
+                  f"{self.spec.max_input_dim}px long side (see {RESIZED_INPUTS_DIR}/)")
+
+    def _stage_input(self, image_path: Path) -> Path:
+        """
+        The image this run will actually process.
+
+        Returns *image_path* unchanged unless the privacy class caps input resolution
+        (:attr:`PrivacyClassSpec.max_input_dim`), in which case a copy scaled so its long side
+        equals the cap is written under ``resized_inputs/`` and that path is returned instead.
+
+        The cap is not a performance tweak. Nothing in the edit path bounds resolution --
+        :class:`SDXLInpaintingPipeline` inpaints at whatever size it is handed -- so a
+        multi-megapixel source asks for a single allocation large enough to exhaust a 48 GB GPU.
+        Scaling once here, rather than at inpaint time, keeps the masks, the depth map and the
+        attacker's reading in one coordinate space.
+
+        The staged file keeps the image's own filename: ``eval_cache`` entries are named from
+        this path's stem, so staging under a shared name would collide across images.
+        """
+        cap = self.spec.max_input_dim
+        if not cap:
+            return image_path
+
+        image = cv2.imread(str(image_path))
+        if image is None:
+            raise RuntimeError(f"Could not read image: {image_path}")
+
+        height, width = image.shape[:2]
+        longest = max(height, width)
+        if longest <= cap:
+            return image_path
+
+        scale = cap / longest
+        resized = cv2.resize(
+            image,
+            (round(width * scale), round(height * scale)),
+            interpolation=cv2.INTER_AREA,       # the correct filter for downscaling
+        )
+
+        staged_dir = self.output_base / RESIZED_INPUTS_DIR
+        staged_dir.mkdir(parents=True, exist_ok=True)
+        staged_path = staged_dir / image_path.name
+        params = ([cv2.IMWRITE_JPEG_QUALITY, 95]
+                  if staged_path.suffix.lower() in {".jpg", ".jpeg"} else [])
+        if not cv2.imwrite(str(staged_path), resized, params):
+            raise RuntimeError(f"Could not write staged input: {staged_path}")
+        return staged_path
 
     # ========================================================================
     # PHASE 2: Original Evaluation
@@ -361,7 +423,8 @@ class ProtectionLoop:
             self.global_state.add_image(
                 image_id=image_id,
                 image_path=image_path,
-                ground_truth=item.get(self.spec.ground_truth_field)
+                ground_truth=item.get(self.spec.ground_truth_field),
+                item=item,
             )
 
             # Push R1 eval task for every image
@@ -654,19 +717,25 @@ class ProtectionLoop:
 
         print(f"[Phase 5] Evaluating {len(to_evaluate)} processed images...")
 
-        # Batch async evaluation. Personal-info uses the same schema as Round 1
-        # for the final eval (the schema already exposes the privacy score we need),
-        # so route it through the 'original' branch instead of 'eval'.
-        eval_schema_type = 'eval' if self.spec.name == 'geolocation' else 'original'
+        # Which schema the attacker answers under is the spec's to say: the compositional
+        # setting reuses its round-1 schema, which already exposes the privacy score we need.
         tasks = []
         for item, final_path in to_evaluate:
             image_id = item['image_id']
-            task = self.geo_api.get_geolocation_prediction(final_path, schema_type=eval_schema_type,
-                                                           role='eval')
+            task = self.geo_api.get_geolocation_prediction(
+                final_path,
+                schema_type=self.spec.eval_schema_type,
+                role='eval',
+                prompt_context=self._item_context(item),
+            )
             tasks.append((image_id, item, task))
 
         # Execute all tasks concurrently using gather
         results = await asyncio.gather(*[task for _, _, task in tasks])
+
+        # Some settings need the "before" reading taken by the attacker rather than by the
+        # defense oracle -- see _read_originals_with_attacker.
+        await self._read_originals_with_attacker(to_evaluate)
 
         # Process results
         for (image_id, item, _), result in zip(tasks, results):
@@ -689,6 +758,54 @@ class ProtectionLoop:
 
         print("[Phase 5] Completed evaluation and reporting")
 
+    def _item_context(self, item: Dict) -> Optional[str]:
+        """The per-image prompt suffix for this setting, or None if it needs none."""
+        if self.spec.format_item_context is None:
+            return None
+        return self.spec.format_item_context(item)
+
+    async def _read_originals_with_attacker(self, to_evaluate):
+        """
+        Measure the unedited image with the *attacker*, for settings whose headline is before/after.
+
+        By default the "before" reading is the defense oracle's round-1 response, which is free --
+        the loop already paid for it. That is fine when the reported quantity is an error the two
+        models measure the same way, and wrong when the reported quantity is one adversary's
+        accuracy before versus after: attributing the raw number to the defense oracle compares
+        two different models and calls the difference protection.
+
+        So a spec can ask for one extra attacker call per image. Results land in
+        ``eval_cache/<name>_orig_eval.json`` and are picked up by `_create_evaluation_entry`.
+        """
+        if not self.spec.eval_original:
+            return
+
+        print(f"[Phase 5] Reading {len(to_evaluate)} unedited images with the attacker "
+              "(spec.eval_original)")
+        tasks = [
+            self.geo_api.get_geolocation_prediction(
+                item['image_path'],
+                schema_type=self.spec.eval_schema_type,
+                role='eval',
+                prompt_context=self._item_context(item),
+            )
+            for item, _ in to_evaluate
+        ]
+        results = await asyncio.gather(*tasks)
+
+        for (item, _), result in zip(to_evaluate, results):
+            if not result:
+                # Left absent rather than faked. `_create_evaluation_entry` falls back to the
+                # oracle's round-1 reading and records `read_by` so the results file says which
+                # model produced this image's "before" number; writing nothing here would drop
+                # the image from the comparison instead.
+                print(f"[Phase 5] Attacker failed on the unedited {item['image_id']}")
+                continue
+            path = self.dirs['eval_cache'] / f"{Path(item['image_path']).stem}_orig_eval.json"
+            with open(path, 'w') as handle:
+                json.dump(result, handle, indent=2)
+            self._original_attacker_results[item['image_id']] = result
+
     def _create_evaluation_entry(self, item: Dict, processed_result: Dict):
         """
         Create evaluation entry comparing original and processed predictions.
@@ -704,10 +821,16 @@ class ProtectionLoop:
         image_id = item['image_id']
         ground_truth = self.spec.normalize_ground_truth(item[self.spec.ground_truth_field])
 
-        # Load original prediction
-        original_pred_path = self.phase_cache[image_id]['prediction']
-        with open(original_pred_path, 'r') as f:
-            original_result = json.load(f)
+        # The "before" reading. When the spec asked for it, this is the attacker on the
+        # unedited image; otherwise it is the defense oracle's round-1 response, which the loop
+        # produced anyway. See _read_originals_with_attacker.
+        original_result = self._original_attacker_results.get(image_id)
+        before_read_by = "attacker"
+        if original_result is None:
+            before_read_by = "defense oracle"
+            original_pred_path = self.phase_cache[image_id]['prediction']
+            with open(original_pred_path, 'r') as f:
+                original_result = json.load(f)
 
         # Calculate errors via the spec
         original_error = self.spec.compute_error(ground_truth, original_result)
@@ -757,6 +880,12 @@ class ProtectionLoop:
             'feature_results': [
                 {
                     'feature_removed': 'none',
+                    # Which model produced this reading. Normally the defense oracle's round-1
+                    # response, which the loop paid for anyway; 'attacker' when the spec asked
+                    # for a separate adversary pass, or a mix if that pass failed on some images.
+                    # A before/after claim is only as good as the two readings coming from the
+                    # same model, so the file records it rather than leaving it to be assumed.
+                    'read_by': before_read_by,
                     self.spec.error_key: original_error,
                     'gpt_response': self.spec.extract_prediction_summary(original_result),
                     self.spec.error_increase_key: 0.0,

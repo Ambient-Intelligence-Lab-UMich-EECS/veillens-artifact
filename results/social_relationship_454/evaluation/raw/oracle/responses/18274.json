@@ -1,0 +1,67 @@
+{
+  "img_id": "18274",
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 2,
+    "3 4": 6,
+    "1 2": 6,
+    "1 3": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 7": 2,
+    "2 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "2 3": 6,
+    "2 6": 2,
+    "2 7": 2,
+    "3 6": 6,
+    "3 7": 6,
+    "6 7": 2
+  },
+  "missed_pairs": [
+    "1 4",
+    "1 5",
+    "2 4",
+    "2 5",
+    "3 4",
+    "3 5",
+    "4 5",
+    "4 6",
+    "4 7",
+    "5 6",
+    "5 7"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    6,
+    7
+  ],
+  "subjects_unmatched": [
+    4,
+    5
+  ],
+  "num_preds_detected": 8,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 7,
+  "raw_response": "[P1-P2]: Outdoor public space; they stand a few meters apart and face different directions with no interaction. => no-relationship\n[P1-P3]: P3 is far in the background on the walkway while P1 is in the foreground; no attention or contact. => no-relationship\n[P1-P6]: P6 is busy bending over a skateboard while P1 is off to the side walking; no engagement. => no-relationship\n[P1-P7]: P7 faces away near the central group while P1 is separate and not interacting. => no-relationship\n[P2-P3]: P2 is in the foreground while P3 is distant behind the fence; no eye contact or activity together. => no-relationship\n[P2-P6]: They are right next to each other in the central cluster in a casual park setting; age difference and grouping suggest a family outing. => family-members\n[P2-P7]: The older woman stands very close to the younger girl as part of the same small group; casual setting suggests a parent/relative relationship. => family-members\n[P3-P6]: P3 is far away on the walkway while P6 is in the foreground adjusting gear; no interaction. => no-relationship\n[P3-P7]: Large distance and no orientation toward each other; just bystanders in the same park. => no-relationship\n[P6-P7]: They stand close with a teen between them, appearing like a small group in a park; likely relatives rather than strangers. => family-members",
+  "timestamp": 1776889071.4549723
+}

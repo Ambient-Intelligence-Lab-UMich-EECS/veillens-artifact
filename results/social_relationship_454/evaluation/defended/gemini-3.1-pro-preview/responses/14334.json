@@ -1,0 +1,29 @@
+{
+  "img_id": "14334",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "4 7": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "6 7": 6
+  },
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "3 4": 6,
+    "5 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "raw_response": "[P3-P4]: P3 is a pedestrian walking in the background and P4 is a market vendor, with no interaction or visual connection between them. => no-relationship\n[P3-P5]: P3 is a pedestrian and P5 highlights inanimate plastic bags, meaning no social relationship is possible. => no-relationship\n[P3-P6]: P3 and P6 are both individuals in different areas of the background with no awareness or interaction. => no-relationship\n[P3-P7]: P3 is a pedestrian and P7 is a bag of mushrooms, precluding any human social relationship. => no-relationship\n[P4-P5]: P4 is a vendor and P5 represents plastic bags hanging at the stall, lacking any human social connection. => no-relationship\n[P4-P6]: P4 is occupied at his market stall while P6 is a distant background figure, showing no interaction. => no-relationship\n[P4-P7]: P4 is a vendor and P7 highlights a bag of mushrooms on his stall, meaning this is a person-object pair. => no-relationship\n[P5-P6]: P5 is a stack of plastic bags and P6 is a person in the background, so no social connection exists. => no-relationship\n[P5-P7]: P5 and P7 both highlight inanimate objects (plastic bags and mushrooms), making any social relationship impossible. => no-relationship\n[P6-P7]: P6 is a person in the background and P7 is a bag of mushrooms on a stall, so there is no social interaction. => no-relationship",
+  "timestamp": 1787939597.453796
+}

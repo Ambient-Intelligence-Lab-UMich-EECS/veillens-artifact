@@ -1,0 +1,29 @@
+{
+  "img_id": "22522",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 6,
+    "1 5": 1,
+    "2 3": 1,
+    "2 4": 6,
+    "2 5": 1,
+    "3 4": 6,
+    "3 5": 1,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "raw_response": "[P1-P2]: Both individuals are dressed in costume-like, festive attire and are posing together for a photo, suggesting they are friends sharing a social outing. => friends\n[P1-P3]: P1 is in a light party outfit while P3 is in a formal suit; their spatial proximity and collective engagement in the photo suggests they are part of the same social group, likely friends. => friends\n[P1-P4]: They are standing in the same scene but have distinct dress styles and are part of different subgroups, suggesting they are bystanders to each other. => no-relationship\n[P1-P5]: They are part of the same broader group posing for a picture, sharing the activity of the moment, which implies they are friends or acquaintances. => friends\n[P2-P3]: Both are part of the same group posing for a photo together in front of a landmark, indicating a social connection as friends. => friends\n[P2-P4]: These individuals are positioned at opposite ends of the group with different attire and activities, appearing as acquaintances or bystanders within the same outing. => no-relationship\n[P2-P5]: They are part of a larger group of people gathered for a photo, suggesting they are acquaintances or friends within a social circle. => friends\n[P3-P4]: P3 is in formal wear and P4 is in athletic gear; they appear to be in the same location for a group photo but lack specific interaction, suggesting no direct relationship. => no-relationship\n[P3-P5]: While both are in the same overall group photo, they are separated by physical space and attire, likely making them acquaintances or friends within the same outing. => friends\n[P4-P5]: Both are wearing similar neon athletic shirts and helmets, suggesting they are colleagues or teammates working together. => professional",
+  "timestamp": 1787936235.9779234
+}

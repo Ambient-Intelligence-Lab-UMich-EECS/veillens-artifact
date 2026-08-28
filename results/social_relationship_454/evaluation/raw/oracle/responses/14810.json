@@ -1,0 +1,25 @@
+{
+  "img_id": "14810",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 3
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They are at an animal park watching a deer through a fence; the child stands very close to the kneeling adult, who appears to supervise. Casual outing clothes with a backpack and the protective posture imply a parent-child on a zoo visit. => family-members\n[P1-P3]: Same zoo visit; the woman stands right next to the child and man, sharing the scene. No direct touch with the child, but close proximity within the group and day-trip attire suggest a mother-child relationship. => family-members\n[P2-P3]: On the same outing, the woman rests her hand on the man\u2019s shoulder while they stand very close watching the animal. The affectionate touch and shared day-trip gear imply romantic partners. => couple",
+  "timestamp": 1776889434.9011598
+}

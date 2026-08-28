@@ -1,0 +1,32 @@
+{
+  "img_id": "5808",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They appear to be on a building-painting job; P2 is on a ladder working while P1 sits near supplies on the tarp, in similar casual/work attire and no affectionate interaction. => professional\n\n[P1-P3]: Both are in the same work zone by the ladder and tools; P1 sits while P3 stands working, suggesting coworkers rather than any personal bond. => professional\n\n[P1-P4]: Though farther apart, P4 paints on a ladder while P1 remains among the supplies at the same site, indicating shared work context. => professional\n\n[P2-P3]: They are right next to each other at the ladder, seemingly collaborating on the painting task, with focused body language and work clothes. => professional\n\n[P2-P4]: Both are on ladders painting the building, separated but clearly engaged in the same task with similar attire and equipment. => professional\n\n[P3-P4]: Each is working on the building in the same setup with tarps, ladders, and paint, implying they are part of the same crew. => professional",
+  "timestamp": 1776888723.5804856
+}

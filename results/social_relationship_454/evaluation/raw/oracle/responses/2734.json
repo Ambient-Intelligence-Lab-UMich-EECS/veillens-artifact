@@ -1,0 +1,34 @@
+{
+  "img_id": "2734",
+  "ground_truth": {
+    "5 6": 3,
+    "4 6": 6,
+    "1 6": 6,
+    "3 6": 6,
+    "2 6": 6
+  },
+  "predictions": {
+    "4 6": 2
+  },
+  "missed_pairs": [
+    "1 6",
+    "2 6",
+    "3 6",
+    "5 6"
+  ],
+  "subjects_matched": [
+    4,
+    6
+  ],
+  "subjects_unmatched": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 6,
+  "raw_response": "[P4-P6]: This is a wedding scene; P6 appears to be the bride, and P4 (a child) stands very close to her during an intimate moment with the groom, suggesting he\u2019s part of the wedding party or close kin. Their proximity in this private setting points to a familial tie. => family-members",
+  "timestamp": 1776888200.0788631
+}

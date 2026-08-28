@@ -8,7 +8,7 @@ and a global completion counter.
 
 from dataclasses import dataclass, field
 from threading import Lock, RLock
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
@@ -45,6 +45,10 @@ class ImageState:
         image_name: Stem of image filename (without extension)
         init_pred_loc: Predicted location from R1 evaluation (for R2 context)
         ground_truth: Ground truth coordinates from dataset
+        item: The manifest row this image came from, kept whole. A setting whose prompts have to
+            name something the dataset knows -- which subjects are annotated, which pairs to
+            answer about -- reads it through PrivacyClassSpec.format_item_context and
+            PrivacyClassSpec.feature_boxes.
         r1_pred_path: Path to cached R1 prediction JSON
         depth_path: Path to cached depth map
         r1_final_image: Path to gray-masked R1 image (for R2 evaluation)
@@ -68,6 +72,8 @@ class ImageState:
     # Location tracking
     init_pred_loc: Optional[str] = None
     ground_truth: Optional[Dict[str, float]] = None
+    #: The manifest row, verbatim. See the class docstring.
+    item: Optional[Dict[str, Any]] = None
 
     # R1 state
     r1_pred_path: Optional[str] = None
@@ -257,7 +263,8 @@ class GlobalState:
         self._lock = RLock()
 
     def add_image(self, image_id: str, image_path: str,
-                  ground_truth: Optional[Dict[str, float]] = None) -> ImageState:
+                  ground_truth: Optional[Dict[str, float]] = None,
+                  item: Optional[Dict[str, Any]] = None) -> ImageState:
         """
         Add a new image to track.
 
@@ -265,6 +272,7 @@ class GlobalState:
             image_id: Unique identifier
             image_path: Path to image file
             ground_truth: Optional ground truth coordinates
+            item: Optional manifest row, for settings whose prompts or masks need it
 
         Returns:
             The created ImageState instance
@@ -273,7 +281,8 @@ class GlobalState:
             state = ImageState(
                 image_id=image_id,
                 image_path=image_path,
-                ground_truth=ground_truth
+                ground_truth=ground_truth,
+                item=item
             )
             self.images[image_id] = state
             return state

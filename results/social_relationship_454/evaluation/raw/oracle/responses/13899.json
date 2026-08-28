@@ -1,0 +1,25 @@
+{
+  "img_id": "13899",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: This looks like a small talk/panel; P2 holds a microphone while P1 sits beside him listening\u2014close proximity, no physical contact, casual event attire in an indoor venue with gear. Their roles suggest co-participants/colleagues in a discussion. => professional\n\n[P1-P3]: The scene is the same event; P1 is on the \u201cstage\u201d seating while P3 sits separately in a folding chair with no interaction, oriented more like an attendee. This implies a participant\u2013audience dynamic rather than a personal tie. => professional\n\n[P2-P3]: P2 is speaking with a microphone and P3 appears to be an audience member seated apart, no touch or intimacy, casual clothing in a meeting setting. This is a speaker\u2013attendee interaction. => professional",
+  "timestamp": 1776889433.546237
+}

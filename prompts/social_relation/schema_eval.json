@@ -1,0 +1,112 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reasoning": {
+            "type": "string",
+            "description": "Step-by-step analysis of the visual evidence for each listed pair."
+        },
+        "relationship_estimate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pairs": {
+                    "type": "array",
+                    "description": "One entry per pair listed in the prompt, and no others.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "pair",
+                            "label",
+                            "confidence"
+                        ],
+                        "properties": {
+                            "pair": {
+                                "type": "string",
+                                "description": "The pair key exactly as listed in the prompt: two subject numbers separated by a single space, smaller first, e.g. '1 2'."
+                            },
+                            "label": {
+                                "type": "string",
+                                "enum": [
+                                    "friends",
+                                    "family-members",
+                                    "couple",
+                                    "professional",
+                                    "commercial",
+                                    "no-relationship"
+                                ],
+                                "description": "The relationship between the two subjects."
+                            },
+                            "confidence": {
+                                "type": "string",
+                                "enum": [
+                                    "High",
+                                    "Medium",
+                                    "Low"
+                                ],
+                                "description": "Model's confidence in this pair's label."
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "pairs"
+            ]
+        },
+        "critical_features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "description": "The visual cues actually relied on to reach the labels above. An empty list is a valid answer for an image that supports no relationship inference.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "relationship_description",
+                            "subject_ids",
+                            "properties"
+                        ],
+                        "properties": {
+                            "relationship_description": {
+                                "type": "string",
+                                "description": "How this visible cue informs the relationship (e.g. 'the two are holding hands and leaning together')."
+                            },
+                            "subject_ids": {
+                                "type": "array",
+                                "description": "The numbered subjects this cue concerns.",
+                                "items": {
+                                    "type": "integer"
+                                }
+                            },
+                            "properties": {
+                                "type": "array",
+                                "description": "Level(s) at which this cue is informative.",
+                                "minItems": 1,
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "intimate level cue",
+                                        "non-intimate level cue",
+                                        "no relationship"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "features"
+            ]
+        }
+    },
+    "required": [
+        "reasoning",
+        "relationship_estimate",
+        "critical_features"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "img_id": "8858",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 1,
+    "2 3": 6,
+    "2 4": 1,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 1,
+    "2 3": 6,
+    "2 4": 1,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 has her arm around P2 in a close, posed manner at a social gathering, indicating a friendly connection. => friends\n[P1-P3]: P3 is an image displayed on a television screen, not a person present in the room, so there is no social connection. => no-relationship\n[P1-P4]: P1 has her arm around P4's shoulder as they pose together for a photo, which is typical behavior for friends. => friends\n[P2-P3]: P3 is merely a face on a TV screen, meaning no actual social interaction or relationship exists with P2. => no-relationship\n[P2-P4]: P2 and P4 are standing together as part of a group posing for a photo in a casual social setting, suggesting they are friends. => friends\n[P3-P4]: Since P3 is an image on a TV and not a real person in the scene, there is no social relationship with P4. => no-relationship",
+  "timestamp": 1787937205.8484874
+}

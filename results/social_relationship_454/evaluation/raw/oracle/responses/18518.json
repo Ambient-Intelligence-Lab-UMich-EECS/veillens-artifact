@@ -1,0 +1,43 @@
+{
+  "img_id": "18518",
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "predictions": {
+    "1 2": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 4",
+    "1 5",
+    "2 3",
+    "2 4",
+    "2 5",
+    "3 4",
+    "3 5",
+    "4 5"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3,
+    4,
+    5
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are standing close at a game demo station, both holding controllers and focused on the same screen, indicating they\u2019re participating together. Casual attire and shared leisure activity suggest peers hanging out rather than a work or transactional interaction. => friends",
+  "timestamp": 1776887622.2602243
+}

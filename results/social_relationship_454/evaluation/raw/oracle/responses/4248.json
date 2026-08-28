@@ -1,0 +1,27 @@
+{
+  "img_id": "4248",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "predictions": {
+    "2 3": 2
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3"
+  ],
+  "subjects_matched": [
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    1
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P2-P3]: They are in a home living room; both in casual home attire, with P2 on the couch and P3 standing in the doorway, no direct interaction but sharing the same domestic space. The relaxed, at-home context and age difference suggest they are relatives in the same household. => family-members",
+  "timestamp": 1776887823.9921737
+}

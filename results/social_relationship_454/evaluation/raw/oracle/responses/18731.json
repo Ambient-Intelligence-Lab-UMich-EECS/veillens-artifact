@@ -1,0 +1,35 @@
+{
+  "img_id": "18731",
+  "ground_truth": {
+    "4 5": 1,
+    "1 2": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 5": 1,
+    "2 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 5": 1,
+    "2 5": 1
+  },
+  "missed_pairs": [
+    "1 4",
+    "2 4",
+    "4 5"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    5
+  ],
+  "subjects_unmatched": [
+    3,
+    4
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: In a casual indoor gathering where others are gaming, P1 (in a blue costume) stands close behind P2 with relaxed, informal body language and no professional or transactional cues. Their proximity in a party-like setting suggests they\u2019re part of the same social group. => friends\n\n[P1-P5]: P1 is nearby while P5 (holding a game controller) plays in the same apartment setting; both wear casual/party attire and show no romantic or commercial interaction. Being in the same relaxed group activity implies a friendly relationship. => friends\n\n[P2-P5]: P2 stands next to the gamers while P5 is actively playing; casual clothes, relaxed demeanor, and shared social environment (living-room gaming) indicate they\u2019re hanging out together rather than in a professional or commercial context. => friends",
+  "timestamp": 1776889102.06024
+}

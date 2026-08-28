@@ -1,0 +1,29 @@
+{
+  "img_id": "11189",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "1 7": 4,
+    "2 5": 6,
+    "2 6": 6,
+    "2 7": 6,
+    "5 6": 4,
+    "5 7": 4,
+    "6 7": 4
+  },
+  "ground_truth": {
+    "5 6": 1,
+    "5 7": 1,
+    "1 6": 1,
+    "1 7": 1,
+    "1 5": 1,
+    "1 2": 6,
+    "6 7": 1,
+    "2 5": 6,
+    "2 7": 6,
+    "2 6": 6
+  },
+  "raw_response": "Here is the analysis for each pair:\n\n[P1-P2]: P1 and P2 are seated at different tables, quite far apart, with no visual cues of interaction or shared attention. They are simply individuals co-located in the same large venue. => no-relationship\n[P1-P5]: P1 and P5 are seated at the same table at what appears to be a professional event. Although not actively interacting in this specific moment, their shared context at the same table implies a professional connection or shared attendance. => professional\n[P1-P6]: P1 and P6 are seated closely side-by-side at the same table, both wearing what appear to be ID badges. P6 is looking towards P1, indicating a likely conversation or shared engagement in a professional setting. => professional\n[P1-P7]: P1 and P7 are seated at the same table at a professional event. While P1 is looking right and P7 is interacting with someone else, their shared table and event context suggest a professional relationship or shared attendance. => professional\n[P2-P5]: P2 is at a different table far from P5, with no visual cues of interaction, shared attention, or social connection. They are simply co-located in the same room. => no-relationship\n[P2-P6]: P2 is at a different table far from P6, with no visual cues of interaction, shared attention, or social connection. They are simply co-located in the same room. => no-relationship\n[P2-P7]: P2 is at a different table far from P7, with no visual cues of interaction, shared attention, or social connection. They are simply co-located in the same room. => no-relationship\n[P5-P6]: P5 and P6 are seated at the same table at a professional event. Despite no direct interaction observed between them (P5's back is turned, P6 is interacting with P1), their shared context at the same table implies a professional connection. => professional\n[P5-P7]: P5 and P7 are seated at the same table at a professional event. P7 is interacting with the person next to P5, and while P5 is not directly engaged with P7, their shared table and event context suggest a professional relationship or acquaintance. => professional\n[P6-P7]: P6 and P7 are seated at the same table at a professional event. P6 is interacting with P1, and P7 is interacting with another person. Their shared table and event context suggest a professional relationship or acquaintance, even without direct interaction between them. => professional",
+  "timestamp": 1787939553.2473204
+}

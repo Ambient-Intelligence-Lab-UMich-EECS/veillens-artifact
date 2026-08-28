@@ -1,0 +1,28 @@
+{
+  "img_id": "21369",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 3,
+    "2 4": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "2 3": 6,
+    "2 4": 3
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: On a beach wedding scene, they walk in the same group and wear formal attire, but they are not interacting (P2 is holding P4\u2019s hand) and show no intimacy. => friends\n\n[P1-P3]: P1 in a tux walks ahead while P3, more casually dressed, follows at some distance with no engagement or contact, suggesting he\u2019s just another beachgoer nearby. => no-relationship\n\n[P2-P3]: In the beach setting, P2 is focused on P4 and holding hands with him, while P3 trails behind without eye contact or contact with P2. => no-relationship\n\n[P2-P4]: They are side by side, holding hands, dressed formally at what looks like a beach wedding, showing clear affectionate body language. => couple",
+  "timestamp": 1776889021.7941644
+}

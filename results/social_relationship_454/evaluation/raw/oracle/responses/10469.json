@@ -1,0 +1,25 @@
+{
+  "img_id": "10469",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a home kitchen, both appear to be preparing food, standing near each other and oriented toward the same task with casual attire and relaxed posture\u2014no commercial or work cues. => family-members\n\n[P1-P3]: Side by side at the stove in a domestic kitchen, they seem to be cooking together comfortably in casual clothing, suggesting a household relationship rather than a professional one. => family-members\n\n[P2-P3]: Both older women share the same home kitchen activity and space, casually dressed and collaborating without transactional or work signals. => family-members",
+  "timestamp": 1776887716.6385677
+}

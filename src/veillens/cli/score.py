@@ -12,7 +12,8 @@ against results produced on a cluster.
 
 For geolocation the metric is the share of images an adversary localises within N km
 (``@0.5 km`` is roughly city-block precision). For compositional privacy it is the mean
-model-assigned privacy-risk score, before and after.
+model-assigned privacy-risk score, before and after. For social relationship it is the
+adversary's pair-classification accuracy, six-way and three-way, before and after.
 """
 
 from __future__ import annotations
@@ -124,6 +125,108 @@ def _report_compositional(data: Dict[str, Any]) -> int:
     return 0
 
 
+def _relationship_totals(data: Dict[str, Any]) -> Dict[str, Any]:
+    """
+    Re-score every image's pairs from the responses the run recorded.
+
+    Deliberately recomputed rather than read off ``error_relation``: the per-image error is one
+    number over one label space, and the reported table needs four (six-way and three-way, over
+    two denominators). Everything needed is in ``gpt_response.predictions``, which the spec writes
+    in normalised pair-key form for exactly this reason.
+    """
+    from veillens.metrics.relationship import pair_accuracy
+
+    totals = {
+        "images": 0,
+        "pairs": 0,
+        "before": {"six": [0, 0], "three": [0, 0], "answered": 0},
+        "after": {"six": [0, 0], "three": [0, 0], "answered": 0},
+    }
+
+    for entry in data.values():
+        if not isinstance(entry, dict):
+            continue
+        truth = entry.get("ground_truth_relations")
+        if not truth:
+            continue
+        results = entry.get("feature_results") or []
+
+        readings = {}
+        for item in results:
+            if item.get("feature_removed") == "none":
+                readings.setdefault("before", item)
+        for item in reversed(results):
+            if item.get("feature_removed") != "none":
+                readings.setdefault("after", item)
+                break
+        if "before" not in readings or "after" not in readings:
+            continue
+
+        totals["images"] += 1
+        totals["pairs"] += len(truth)
+        for when, item in readings.items():
+            predictions = (item.get("gpt_response") or {}).get("predictions") or {}
+            six = pair_accuracy(truth, predictions)
+            three = pair_accuracy(truth, predictions, three_way=True)
+            totals[when]["six"][0] += six.correct
+            totals[when]["six"][1] += six.total
+            totals[when]["three"][0] += three.correct
+            totals[when]["three"][1] += three.total
+            totals[when]["answered"] += six.answered
+
+    return totals
+
+
+def _report_social_relation(data: Dict[str, Any]) -> int:
+    totals = _relationship_totals(data)
+    if not totals["images"]:
+        print("error: no relationship predictions found — is this a social-relationship run?",
+              file=sys.stderr)
+        return 1
+
+    def accuracy(correct: int, denominator: int) -> float:
+        return 100.0 * correct / denominator if denominator else float("nan")
+
+    def cell(value: float) -> str:
+        # A reduction against a zero baseline is undefined, not zero, and printing "nan%" invites
+        # it to be read as a number. That happens whenever the adversary was already wrong on
+        # every raw pair -- rare at scale, routine on a handful of images.
+        return "      n/a" if value != value else f"{value:9.1f}%"
+
+    print(f"\nSocial relationship — {totals['images']} images, {totals['pairs']} annotated pairs\n")
+
+    # Two denominators, both reported. Over every annotated pair, a pair the adversary declined to
+    # answer counts against it, which is the number the defense is entitled to claim. Over
+    # answered pairs only, it does not -- that isolates how well the adversary does when it does
+    # commit. They diverge exactly when the protected image stops the adversary answering at all,
+    # which is a real effect but not the same claim, so neither is reported alone.
+    for label, denominator_of in (
+        ("all annotated pairs", lambda side, space: totals[side][space][1]),
+        ("answered pairs only", lambda side, space: totals[side]["answered"]),
+    ):
+        print(f"  over {label}")
+        print(f"    {'':10}{'original':>10}{'protected':>11}{'reduction':>11}")
+        print("    " + "-" * 42)
+        for space, name in (("six", "6-way"), ("three", "3-way")):
+            before = accuracy(totals["before"][space][0], denominator_of("before", space))
+            after = accuracy(totals["after"][space][0], denominator_of("after", space))
+            reduction = 100.0 * (before - after) / before if before else float("nan")
+            print(f"    {name:10}{cell(before)}{cell(after)}{cell(reduction)}")
+        print()
+
+    print(f"  pairs answered : original {totals['before']['answered']}, "
+          f"protected {totals['after']['answered']}, of {totals['pairs']}")
+    if totals["before"]["six"][0] == 0:
+        print("  note           : the adversary recovered no pair on the *unprotected* images "
+              "either,\n                   so there is no baseline to reduce and the reduction "
+              "column is undefined.")
+    if totals["after"]["answered"] < totals["pairs"]:
+        print("  note           : the adversary left some pairs unanswered on the protected "
+              "images.\n                   The two denominators above differ by exactly those "
+              "pairs.")
+    return 0
+
+
 def main(argv: List[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         prog="veillens-score",
@@ -132,11 +235,12 @@ def main(argv: List[str] | None = None) -> int:
         epilog="""
 examples:
   veillens-score runs/geolocation/test_iter3
-  veillens-score examples/results/compositional --setting compositional
+  veillens-score examples/results/compositional
 """,
     )
     parser.add_argument("run_dir", help="run directory, or an evaluation_results.json")
-    parser.add_argument("--setting", choices=["geolocation", "compositional", "auto"],
+    parser.add_argument("--setting",
+                        choices=["geolocation", "compositional", "social_relation", "auto"],
                         default="auto", help="which metric to report (default: sniff it)")
     parser.add_argument("--thresholds", default=",".join(str(t) for t in DEFAULT_THRESHOLDS_KM),
                         help="comma-separated km thresholds for geolocation")
@@ -157,13 +261,17 @@ examples:
 
     setting = args.setting
     if setting == "auto":
-        first = next((v for v in data.values() if isinstance(v, dict)), {})
-        results = first.get("feature_results") or [{}]
-        setting = "geolocation" if "error_km" in results[0] else "compositional"
+        # Reuses `veillens.verify.report.sniff_privacy_class`, which reads the same ERROR_KEYS
+        # table, so veillens-score and veillens-verify can never disagree about what a results
+        # file is -- and a fourth setting only has to be added in one place.
+        from veillens.verify.report import sniff_privacy_class
+        setting = sniff_privacy_class(data)
 
     if setting == "geolocation":
         thresholds = tuple(float(t) for t in args.thresholds.split(","))
         return _report_geolocation(data, thresholds)
+    if setting == "social_relation":
+        return _report_social_relation(data)
     return _report_compositional(data)
 
 

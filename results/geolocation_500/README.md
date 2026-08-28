@@ -33,12 +33,12 @@ results/geolocation_500/
     ├── raw/                              the unprotected frame
     │   ├── gpt-5.2/                        summary.json + responses/<image_id>.json   500
     │   ├── gemini-3-flash-preview/                                                    500
-    │   ├── gemini-3.1-pro-preview/                                                    100
+    │   ├── gemini-3.1-pro-preview/                                                    500
     │   └── gemini-2.5-flash/                                                          500
     ├── gpt-image/                        one gpt-image-2 edit per frame
     │   ├── gpt-5.2/                                                                   500
-    │   ├── gemini-3-flash-preview/                                                    498
-    │   ├── gemini-3.1-pro-preview/                                                    348
+    │   ├── gemini-3-flash-preview/                                                    500
+    │   ├── gemini-3.1-pro-preview/                                                    500
     │   └── gemini-2.5-flash/                                                          500
     ├── veillens/PENDING.json             the method itself — never run on these 500
     ├── rand-noise/PENDING.json
@@ -47,7 +47,7 @@ results/geolocation_500/
     └── geoshield/PENDING.json
 ```
 
-500 images, **3,446 responses**. 99 images have all eight, 248 have seven, 153 have six.
+500 images, **4,000 responses** — the matrix is complete: every image carries all eight.
 
 Condition directories are named for `veillens-baseline --method`, so a finished run drops into the
 slot already waiting for it.
@@ -131,15 +131,14 @@ Percentage of images located within each threshold (strictly `<`). **Higher is w
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | **raw**, GPT-5.2 | 16.8 | 29.2 | 45.6 | 46.2 | 50.0 | 65.6 | 500 | 108.7 | 25.14 km |
 | **raw**, Gemini 3 Flash | 40.6 | 55.4 | 67.6 | 68.6 | 72.6 | 85.0 | 500 | 46.4 | 0.78 km |
-| **raw**, Gemini 3.1 Pro | 49.0 | 57.0 | 66.0 | 67.0 | 72.0 | 82.0 | *100* | 43.5 | 0.61 km |
+| **raw**, Gemini 3.1 Pro | 46.6 | 58.6 | 71.4 | 72.8 | 77.2 | 85.2 | 500 | 39.0 | 0.61 km |
 | **raw**, Gemini 2.5 Flash | 15.0 | 29.0 | 45.8 | 47.2 | 53.4 | 72.4 | 500 | 86.3 | 18.19 km |
 | `gpt-image`, GPT-5.2 | 4.8 | 8.6 | 16.6 | 17.0 | 19.6 | 40.2 | 500 | 197.5 | 162.83 km |
-| `gpt-image`, Gemini 3 Flash | 14.3 | 22.3 | 32.7 | 33.7 | 37.3 | 55.0 | 498 | 131.2 | 70.42 km |
-| `gpt-image`, Gemini 3.1 Pro | 13.8 | 18.7 | 27.3 | 27.9 | 30.7 | 42.2 | *348* | 164.3 | 139.42 km |
+| `gpt-image`, Gemini 3 Flash | 14.2 | 22.2 | 32.6 | 33.6 | 37.2 | 54.8 | 500 | 132.1 | 71.25 km |
+| `gpt-image`, Gemini 3.1 Pro | 15.4 | 21.8 | 31.6 | 32.4 | 34.8 | 50.6 | 500 | 140.5 | 89.70 km |
 | `gpt-image`, Gemini 2.5 Flash | 7.6 | 15.8 | 26.6 | 27.6 | 31.2 | 54.4 | 500 | 153.9 | 72.03 km |
 
-The two italicised `n`s are not 500 and those rows are **not on the same sample as the others** —
-see the quota gap below.
+Every row is *n* = 500 and every row is the same 500 images.
 
 The raw rows are the finding to read first: **Gemini 3 Flash puts the median image within 780 m of
 its true position**, and Gemini 3.1 Pro within 610 m, on ordinary dashcam frames with no landmark
@@ -151,12 +150,12 @@ defence is a claim relative to whichever of these attackers is being run.
 | Evaluator | n | raw median | edited median | < 25 km, raw → edited | further | closer | unchanged |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | GPT-5.2 | 500 | 25.14 km | 162.83 km | 50.0% → 19.6% | 331 | 130 | 39 |
-| Gemini 3 Flash | 498 | 0.78 km | 70.42 km | 72.5% → 37.3% | 377 | 121 | 0 |
-| Gemini 3.1 Pro | 100 | 0.61 km | 129.65 km | 72.0% → 29.0% | 76 | 19 | 5 |
+| Gemini 3 Flash | 500 | 0.78 km | 71.25 km | 72.6% → 37.2% | 379 | 121 | 0 |
+| Gemini 3.1 Pro | 500 | 0.61 km | 89.70 km | 77.2% → 34.8% | 379 | 101 | 20 |
 | Gemini 2.5 Flash | 500 | 18.19 km | 72.03 km | 53.4% → 31.2% | 316 | 183 | 1 |
 
 The edit helps against every evaluator, and it is nowhere near a fix. Gemini 3 Flash still places
-**a third of the edited images inside 25 km**, and on 121 of 498 images it located the edited photo
+**a third of the edited images inside 25 km**, and on 121 of 500 images it located the edited photo
 *better* than the original. "Unchanged" is the model returning the same rounded coordinate for both
 pictures — a city-centroid guess the edit never disturbed; GPT-5.2 does this on 39 images.
 
@@ -164,25 +163,49 @@ Median is the honest column here. The means are dragged by a long tail of images
 country, and a defence that moves one guess from Aachen to Portugal buys a large mean improvement
 for no privacy that a 25 km threshold would not already have granted.
 
-## The quota gap
+## How the Gemini 3.1 Pro cells were filled
 
-`gemini-3.1-pro-preview` is incomplete, and not for a reason that re-reading the archives can fix:
-the model has a **250-requests-per-model-per-day cap**. Its 800 calls for the 400-image half were
-scheduled as one job; it exhausted the day's quota part way through the `gpt-image` set and **never
-reached the `raw` set at all**. Every unscored call returned HTTP 429 with a null error and a null
-location estimate, so there is no reasoning to archive and no file is emitted.
+Both Gemini 3.1 Pro cells were incomplete for most of this set's life, and the reason is worth
+recording because it shapes what the archives look like. The model has a
+**250-requests-per-model-per-day cap**. Its 1,000 calls do not fit in a day, so the first job
+exhausted the quota part way through the `gpt-image` set and never reached `raw` at all. Every
+blocked call returned HTTP 429 with a null estimate, which the runner records as a null error rather
+than dropping the row, so alignment survived and the gap was resumable.
 
-| | scored | unscored | covers |
-|---|---:|---:|---|
-| `gpt-image` / Gemini 3.1 Pro | 348 | 152 | the 100-image half, plus 248 of the 400 |
-| `raw` / Gemini 3.1 Pro | 100 | 400 | the 100-image half only |
+It was closed by scheduling the remainder as further chunks on later days, each built against the
+ids still missing so no call was ever paid for twice:
 
-Its raw-versus-protected comparison is therefore over **the 100 images both cover**, not over 500,
-and its two rows in the table above are on different samples from each other. The other gap is
-smaller and ordinary: two API failures for Gemini 3 Flash on the edited images
-(`aachen_000083_000019`, `weimar_000000_000019`), both named in the runs' own `failures` lists.
+| chunk | date | new `gpt-image` answers | new `raw` answers |
+|---|---|---:|---:|
+| `gpt_image_100_*` / `_resume_b_*` | 2026-08-13 | 100 | 100 |
+| `gpt_image_500_new400_c_*` | 2026-08-20 | 248 | 0 |
+| `gpt_image_500_new400_k2_*` | 2026-08-24 | 147 | 73 |
+| `gpt_image_500_new400_c2_*` | 2026-08-24 | 3 | 245 |
+| `gpt_image_500_new400_d_*` | 2026-08-28 | 2 | 82 |
+| | | **500** | **500** |
 
-Blank cells in `index.csv` always mean the call failed. No response file was dropped — checked.
+Answers are unioned by `image_id` with the first non-null winning, so a later chunk that hit the cap
+again could not erase an earlier success. The other gap was smaller and ordinary: two API failures
+for Gemini 3 Flash on the edited images (`aachen_000083_000019`, `weimar_000000_000019`), retried in
+`gpt_image_500_new400_e_*` and both scored.
+
+**The Pro numbers moved a long way when the sample grew.** The 2026-08-20 snapshot published its
+edited row on 348 images (median 139.42 km) and its paired row on the 100-image half (median
+129.65 km, 29.0% inside 25 km). On all 500 those become **89.70 km and 34.8%**. The raw row moved
+much less: median 0.61 km then and now.
+
+The direction of that shift is the 100-image half being harder on the edited side — its edited
+median is 129.65 km against 76.48 km on the other 400 — but that difference is **not clearly beyond
+sampling noise** (Mann-Whitney *p* = 0.065), and both halves are balanced the same way, 5 images per
+city and 20 per city across the same 20 cities. Gemini 3 Flash shows the same direction more
+strongly (106.79 vs 68.34 km, *p* = 0.019); GPT-5.2 and Gemini 2.5 Flash show essentially nothing
+(*p* = 0.51, 0.43). So this is offered as a caution, not a finding about the images.
+
+The safe reading is the plain one: a 100- or 348-image cell was never interchangeable with a
+500-image one, and the *n* column is not decoration. Any row here with *n* < 500 should not be read
+against the rows beside it — which, now, none are.
+
+`index.csv` now has no blank error cells. No response file was dropped — checked.
 
 ## Image quality
 
@@ -233,9 +256,9 @@ One run, `gpt_image_100_20260813_122752`, predates configs being archived. Its l
 which matches `dataset.json` exactly, so the fallback is unambiguous.
 
 The mapping is confirmed by evidence that was not used to build it: recomputing
-`haversine(ground truth, location_estimate)` for every one of the 3,446 responses reproduces the
+`haversine(ground truth, location_estimate)` for every one of the 4,000 responses reproduces the
 recorded `prediction_errors_km` **exactly** — zero difference, not merely small — at R = 6371.0 km.
-A misalignment would have to survive 3,446 exact coincidences.
+A misalignment would have to survive 4,000 exact coincidences.
 
 Answers are unioned by `image_id` across every matching run, any non-null answer winning, which is
 the same rule as `benchmark/analysis/merge_gpt_image_500.py`. A 10-image smoke run
@@ -244,21 +267,27 @@ already covers.
 
 ## What was checked
 
-All 14 passed; `MANIFEST.json` records them in machine-readable form.
+Everything here is built by
+[`benchmark/analysis/build_geolocation_500_artifact.py`](../../benchmark/analysis/build_geolocation_500_artifact.py)
+in the VeilLens repository, which re-derives every file from the run archives and refuses to write
+if any check below fails. Re-running it on unchanged archives reproduces this directory byte for
+byte; that is how the backfill was folded in without disturbing what was already published.
+
+All 13 passed; `MANIFEST.json` records them in machine-readable form.
 
 - the two halves partition the 500-image set — 100 + 400, disjoint, union equals `dataset.json`
-- every emitted response parses as JSON with a non-empty `reasoning` — 3,446/3,446
-- every response carries exactly the keys of `prompts/eval_schema.json` — 3,446/3,446
-- emitted bodies are deep-equal to the source objects — 3,446, zero differences
-- recomputed `haversine(gt, prediction)` equals the recorded error — 3,446/3,446, **exactly**
+- every emitted response parses as JSON, carries a non-empty `reasoning`, and has exactly the keys
+  of `prompts/eval_schema.json` — 4,000/4,000
+- emitted bodies are deep-equal to the source objects — 4,000, zero differences
+- recomputed `haversine(gt, prediction)` equals the recorded error — 4,000/4,000, **exactly**
 - `index.csv` lists the 500 once, in `dataset.json` order
-- every `index.csv` error cell equals the source's `prediction_errors_km` exactly — 3,446 cells,
+- every `index.csv` error cell equals the source's `prediction_errors_km` exactly — 4,000 cells,
   written at full round-trip precision rather than rounded
 - `index.csv` ground-truth coordinates equal `dataset.json` exactly — 500/500
-- `index.csv` response counts equal the files on disk — 3,446
-- every unscored cell is a recorded API failure carrying the source's error string — 554/554,
-  and 4,000 − 3,446 = 554
+- `index.csv` response counts equal the files on disk — 4,000
+- every unscored cell is a recorded API failure carrying the source's error string — 0 unscored,
+  and 4,000 − 4,000 = 0
 - each `summary.json` recomputes from the response files beside it — 8/8 cells
-- each half's mean and count reproduce the source run's own `summary.json` — 16/16 run-halves
+- each run's mean and count reproduce that run's own `summary.json` — 23/23 run-cells
 - `perceptual_metrics.json` covers all 500 pairs and no SSIM exceeds 1.0
 - `results/geolocation_100/` covers exactly the 100-image half of this set

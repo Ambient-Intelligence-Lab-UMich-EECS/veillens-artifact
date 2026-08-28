@@ -1,0 +1,25 @@
+{
+  "img_id": "18746",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 8,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They are on a ski slope, both in ski gear, but they stand several meters apart facing other people and show no interaction or contact. The mountain resort setting suggests many unrelated skiers nearby. => no-relationship\n\n[P1-P3]: In the same skiing setting, P1 is on the far right and P3 on the left; they face different directions and are busy with others, with no proximity or engagement. => no-relationship\n\n[P2-P3]: Both are skiers on the slope, but they are separated and each seems occupied with a different companion, with no eye contact or physical interaction. => no-relationship",
+  "timestamp": 1776887334.0763583
+}

@@ -1,0 +1,33 @@
+{
+  "img_id": "24033",
+  "predictions": {
+    "1 6": 6,
+    "1 7": 6,
+    "2 6": 5,
+    "3 6": 6,
+    "3 7": 6,
+    "3 8": 5,
+    "4 6": 6,
+    "5 6": 5,
+    "5 7": 6,
+    "6 7": 6,
+    "6 8": 6,
+    "7 8": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "3 8": 5,
+    "6 7": 6,
+    "7 8": 6,
+    "2 6": 6,
+    "6 8": 6,
+    "3 6": 6,
+    "3 7": 6
+  },
+  "raw_response": "[P1-P6]: P1 is reflected in the mirror in the foreground, while P6 is the individual whose back is towards us in the immediate foreground, placing them in the same salon setting. They share no direct interaction as one is a reflection and the other is a service provider. => no-relationship\n\n[P1-P7]: P1 is a customer reflected in the mirror, while P7 is also reflected in the background as a customer in a salon setting. They are both clients in the same establishment. => no-relationship\n\n[P2-P6]: P2 is a customer being served by P6, who is the hairdresser. This is a professional service interaction. => commercial\n\n[P3-P6]: P6 is a hairdresser working on a client (P2), while P3 is visible in the mirror as another client being attended to or waiting. They are both customers in the same commercial setting. => no-relationship\n\n[P3-P7]: P3 and P7 are both seen in the mirror, appearing as individuals within the salon environment, likely as fellow customers or bystanders. They share the same commercial space. => no-relationship\n\n[P3-P8]: P3 appears to be a barber or assistant working in the salon, while P8 is a client sitting in a chair being served. This represents a professional service interaction. => commercial\n\n[P4-P6]: P4 is a client waiting in the salon, while P6 is the hairdresser currently working. They are present in the same professional space but are not interacting directly. => no-relationship\n\n[P5-P6]: P6 is a hairdresser providing a service to P2, while P5 is the person P6 is actively working on. There is a direct service interaction between them. => commercial\n\n[P5-P7]: P5 and P7 are both present in the salon as customers, sharing the same commercial space. There is no evidence of a personal relationship. => no-relationship\n\n[P6-P7]: P6 is a hairdresser currently busy with a client, while P7 is another person within the same salon space. They are not interacting. => no-relationship\n\n[P6-P8]: P6 is the hairdresser working on P2, while P8 is a client being attended to in the salon. They are working in the same commercial environment. => no-relationship\n\n[P7-P8]: P7 and P8 are both clients visible within the salon's mirror reflections, sharing the same commercial service setting. => no-relationship",
+  "timestamp": 1787936207.9574509
+}

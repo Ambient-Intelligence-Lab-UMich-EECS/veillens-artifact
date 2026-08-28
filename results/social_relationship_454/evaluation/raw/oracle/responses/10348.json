@@ -1,0 +1,25 @@
+{
+  "img_id": "10348",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 3
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 3
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Rainy street scene; P1 is walking past with his own umbrella while P2 stands still under another, not looking at or interacting with him. Their distance and lack of engagement suggest strangers. => no-relationship\n\n[P1-P3]: In the same rainy sidewalk setting, P1 walks by while P3 stands under an umbrella, and they show no eye contact or interaction. => no-relationship\n\n[P2-P3]: They are close together under the same umbrella, facing each other and conversing in casual attire on a rainy sidewalk, indicating personal companionship. => couple",
+  "timestamp": 1776888658.7393305
+}

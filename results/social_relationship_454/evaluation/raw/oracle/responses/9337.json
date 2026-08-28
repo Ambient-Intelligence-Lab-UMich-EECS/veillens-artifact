@@ -1,0 +1,41 @@
+{
+  "img_id": "9337",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 1,
+    "3 5": 1,
+    "4 5": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: At a baseball game; P1 is a uniformed player while P2 is an adult in a dark polo/shorts like a coach/official, near but not affectionate. => professional\n\n[P1-P3]: Baseball game; both wear the same team uniform and stand close in a player line, suggesting teammates greeting each other. => friends\n\n[P1-P4]: Same baseball uniforms and standing side-by-side in the team line on the field, casual camaraderie. => friends\n\n[P1-P5]: Same team uniforms; P5 is approaching the line smiling as if to high-five, indicating teammate camaraderie. => friends\n\n[P2-P3]: On a baseball field; P3 is a player in uniform while P2 looks like a coach/official in non-player attire, nearby without affection. => professional\n\n[P2-P4]: Baseball setting; P4 is a player, P2 appears to be a coach/official walking along the line, no social intimacy. => professional\n\n[P2-P5]: Very close on the field; P5 is a player and P2 seems to be a coach/official accompanying him. => professional\n\n[P3-P4]: Both are uniformed players standing together in the line, typical teammate interaction. => friends\n\n[P3-P5]: Same uniforms; P5 is coming through the line smiling near P3 as if exchanging a high-five. => friends\n\n[P4-P5]: Baseball teammates in matching uniforms with P5 approaching the line near P4, friendly team interaction. => friends",
+  "timestamp": 1776888448.3759031
+}

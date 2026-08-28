@@ -1,0 +1,21 @@
+{
+  "img_id": "14606",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 4,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 4,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 is part of a media crew conducting an interview, while P2 appears to be an independent bystander observing from the background. => no-relationship\n[P1-P3]: P1 is engaged in professional media work, whereas P3 is merely an onlooker watching the scene unfold without any interaction. => no-relationship\n[P1-P4]: P1 is part of a news crew actively conducting a formal on-camera interview with P4, indicating a work-related interaction. => professional\n[P2-P3]: Both P2 and P3 are bystanders watching the interview from the background; despite their spatial proximity, there is no visible interaction or evidence of a relationship. => no-relationship\n[P2-P4]: P2 is observing P4 being interviewed, but there is no direct interaction or recognizable social connection between the bystander and the subject. => no-relationship\n[P3-P4]: P3 is a bystander watching P4 give an interview, with no visual cues suggesting a personal or professional connection between them. => no-relationship",
+  "timestamp": 1787937516.8772407
+}

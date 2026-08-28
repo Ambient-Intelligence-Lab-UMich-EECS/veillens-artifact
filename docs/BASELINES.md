@@ -10,6 +10,17 @@ veillens-baseline --method rand-noise --config configs/geolocation.yaml
 veillens-score runs/geolocation/baselines/rand-noise
 ```
 
+Scoring gives the distance distribution. To judge a baseline at the same cue granularity VeilLens
+targets — and get the residual-cue criterion alongside the distance one — verify it. A baseline
+carries no `mask_level` of its own, so name the target:
+
+```bash
+veillens-verify runs/geolocation/baselines/geoshield \
+    --mask-level "street level clue,city level clue"
+```
+
+See [VERIFICATION.md](VERIFICATION.md).
+
 ## The five
 
 | Method | What it does | Key settings | Needs |
@@ -185,6 +196,6 @@ so no architecture is vendored here.
 
 For the `gpt-image` baseline both of the first two are archived rather than absent:
 [`results/geolocation_500/`](../results/geolocation_500/) holds all four attackers' reasoning over
-500 Cityscapes frames — 3,446 responses, raw and protected — plus per-image SSIM, LPIPS, CLIP-IQA
+500 Cityscapes frames — 4,000 responses, raw and protected — plus per-image SSIM, LPIPS, CLIP-IQA
 and LIQE. It is the only baseline that has been run end to end; that folder's README says exactly
 which cells of the seven-condition matrix are still empty, and why.

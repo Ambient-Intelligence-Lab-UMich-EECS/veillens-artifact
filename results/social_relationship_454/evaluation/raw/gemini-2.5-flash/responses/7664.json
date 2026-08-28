@@ -1,0 +1,29 @@
+{
+  "img_id": "7664",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 2,
+    "1 5": 1,
+    "2 3": 1,
+    "2 4": 2,
+    "2 5": 1,
+    "3 4": 2,
+    "3 5": 1,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 1,
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 1,
+    "2 5": 1,
+    "2 4": 1,
+    "3 4": 1,
+    "3 5": 1
+  },
+  "raw_response": "[P1-P2]: Both are young adult males in close proximity at a casual home gathering, engaged with food and drinks. Their relaxed posture and shared activity suggest a friendly relationship. => friends\n[P1-P3]: Both are adult males at a casual home gathering. While not directly interacting, they are sharing the same social space and activity, indicating they are likely friends. => friends\n[P1-P4]: P1 is a younger adult male and P4 is an older adult male, sharing a domestic kitchen setting and a social event. The age difference in this context strongly suggests a family connection. => family-members\n[P1-P5]: P5 is partially obscured behind P1, indicating very close proximity within the same social gathering. This close placement implies a known, casual relationship. => friends\n[P2-P3]: Both are young adult males standing in close proximity in a casual home kitchen, engaged with food and cooking activities. Their shared context points to a friendly relationship. => friends\n[P2-P4]: P2 is a younger adult male and P4 is an older adult male, both actively participating in the kitchen activities at a home gathering. The significant age difference and domestic setting are strong indicators of a familial bond. => family-members\n[P2-P5]: P2 is at the counter and P5 is nearby behind P1, indicating they are part of the same group in a social setting. They are likely known to each other in a casual capacity. => friends\n[P3-P4]: P3 is a younger adult male and P4 is an older adult male, standing very close together and both observing the stove in a domestic setting. This close interaction and age gap strongly suggest a family relationship. => family-members\n[P3-P5]: Both are adults at a casual home gathering. Though not in direct interaction or close proximity, they are part of the same social event. => friends\n[P4-P5]: P4 is an older adult male and P5 is a younger adult, both present at a domestic social gathering. The age difference and shared intimate setting suggest a family connection. => family-members",
+  "timestamp": 1787940531.633499
+}

@@ -1,0 +1,27 @@
+{
+  "img_id": "15589",
+  "ground_truth": {
+    "1 3": 4,
+    "3 4": 4,
+    "1 4": 4
+  },
+  "predictions": {
+    "1 3": 4,
+    "1 4": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P3]: At an outdoor night event, P1 is operating a camcorder aimed toward P3, who appears to be holding a device (mic/phone) and engaging someone; they are coordinated in task, standing near but not showing intimacy. => professional\n\n[P1-P4]: P1 is focused on filming while P4 is conversing with others to the left; there\u2019s distance, no eye contact or interaction, just shared public space and casual coats/hats. => no-relationship\n\n[P3-P4]: Although they\u2019re in the same crowd, P3 faces another subject while P4 talks with someone else; no physical interaction or mutual attention. => no-relationship",
+  "timestamp": 1776888908.9919055
+}

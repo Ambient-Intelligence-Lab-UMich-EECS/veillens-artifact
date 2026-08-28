@@ -14,8 +14,8 @@ No API calls, no GPU, no model weights, and no config file: a run records the gr
 targeted in its own results, so archived runs verify too.
 
     veillens-verify runs/geolocation/test_iter3
-    veillens-verify results/geolocation_100
-    veillens-verify results/compositional_500 --setting compositional
+    veillens-verify examples/results/geolocation
+    veillens-verify examples/results/compositional
 """
 
 from __future__ import annotations
@@ -55,8 +55,10 @@ def _load_evaluation(run_dir: Path) -> Dict[str, Any]:
         # pairing instead.
         hint = (
             f"\n\n{run_dir} is an archived run: it has index.csv and the raw responses, but no "
-            "evaluation_results.json.\nVerify it by naming both halves explicitly, e.g.\n\n"
-            "    veillens-verify examples/results/geolocation \\\n"
+            "evaluation_results.json, so there is no per-image error to verify against.\n"
+            "Read it as a table instead, or point this at a run directory that has one and name "
+            "these responses:\n\n"
+            "    veillens-verify <run-with-evaluation_results.json> \\\n"
             f"        --responses {run_dir}/evaluation/<model>/responses\n"
         )
     raise FileNotFoundError(
@@ -124,7 +126,7 @@ examples:
 """,
     )
     parser.add_argument("run_dir", help="run directory, or an evaluation_results.json")
-    parser.add_argument("--setting", choices=["geolocation", "compositional", "auto"],
+    parser.add_argument("--setting", choices=["geolocation", "compositional", "social_relation", "auto"],
                         default="auto", help="privacy class (default: sniff it from the results)")
     parser.add_argument("--mask-level", default=None,
                         help="override the protected granularity, e.g. "
@@ -158,7 +160,7 @@ examples:
               "which granularity was protected.\n"
               "       Verify the run's own evaluation_results.json instead (in this repository, "
               "the compositional one is\n"
-              "       examples/results/compositional/run_evaluation_results.json).",
+              "       examples/results/compositional/evaluation_results/evaluation_results.json).",
               file=sys.stderr)
         return 1
 

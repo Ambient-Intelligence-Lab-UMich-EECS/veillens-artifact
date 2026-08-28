@@ -1,0 +1,34 @@
+{
+  "img_id": "20260",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 4": 6,
+    "2 4": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Youth soccer game on a field; they\u2019re close and running toward the play with no affectionate contact, and their different uniforms (yellow vs blue) indicate opposing teams. => no-relationship\n\n[P1-P4]: Same soccer match; P4 dribbles at left while P1 in yellow approaches, with no physical contact and clearly different team colors. => no-relationship\n\n[P2-P4]: Youth soccer game; both wear blue jerseys and move near each other in the same direction, suggesting coordination as teammates. => friends",
+  "timestamp": 1776888225.657956
+}

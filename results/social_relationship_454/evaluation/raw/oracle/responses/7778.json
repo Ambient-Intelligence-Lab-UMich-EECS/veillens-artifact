@@ -1,0 +1,26 @@
+{
+  "img_id": "7778",
+  "ground_truth": {
+    "1 2": 2,
+    "2 4": 2,
+    "1 4": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 4": 3,
+    "2 4": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are cross-country skiing; the adult is very close, holding and guiding the small child, both in casual winter gear on a snowy trail. => family-members\n\n[P1-P4]: Two adults skiing together near the child on a recreational outing; they move in the same direction and appear to be accompanying the child as partners. => couple\n\n[P2-P4]: The adult stays close and attentive to the small child during the ski activity, suggesting a parent-child dynamic in this family outing. => family-members",
+  "timestamp": 1776889206.2189298
+}

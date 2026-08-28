@@ -1,0 +1,32 @@
+{
+  "img_id": "1867",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 10,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Busy winter street; they walk side-by-side in close proximity with aligned direction but no physical contact\u2014casual attire suggests companions out together. => friends\n\n[P1-P3]: On a city sidewalk they are several feet apart, moving in opposite directions with no eye contact or interaction. => no-relationship\n\n[P1-P4]: P4 is farther in the background facing away while P1 walks past; no engagement or contact in this street setting. => no-relationship\n\n[P2-P3]: P2 is on the phone walking with P1 while P3 passes by carrying a bag; different directions and no acknowledgment. => no-relationship\n\n[P2-P4]: They are distant and oriented away from each other on a public street with no interaction. => no-relationship\n\n[P3-P4]: Both are pedestrians in the scene but separated by distance and orientation, with no visible engagement. => no-relationship",
+  "timestamp": 1776889347.3712475
+}

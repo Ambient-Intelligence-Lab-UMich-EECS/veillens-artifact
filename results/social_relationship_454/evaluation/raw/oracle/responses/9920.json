@@ -1,0 +1,32 @@
+{
+  "img_id": "9920",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 6,
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Outdoor casual hangout; P1 leans his head close to P2 as they pose with smiles, showing comfort but no overt romantic gesture. => friends\n\n[P1-P3]: They are side-by-side in a playful photo with a frisbee, relaxed body language and casual clothes in a street setting. => friends\n\n[P1-P4]: P4 is only a cropped arm at the edge with no interaction or shared activity with P1. => no-relationship\n\n[P2-P3]: Standing very close while P3 shows a frisbee, they appear to be posing together in a friendly, playful manner. => friends\n\n[P2-P4]: P4\u2019s partial arm shows no contact or engagement with P2 in the scene. => no-relationship\n\n[P3-P4]: P3 is involved with the central group, while P4 is just an out-of-frame arm with no visible interaction. => no-relationship",
+  "timestamp": 1776888805.7055655
+}

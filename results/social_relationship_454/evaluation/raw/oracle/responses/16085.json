@@ -1,0 +1,32 @@
+{
+  "img_id": "16085",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: This is baseball batting practice at a cage; P1 is swinging while P2 stands nearby observing. Their matching uniforms and team setting suggest teammates/coach-player with no personal intimacy. => professional\n\n[P1-P3]: During batting practice, P3 stands right by the cage gesturing toward P1 as he swings, likely instructing or pitching. Same team attire and training context imply a team/coach-player interaction. => professional\n\n[P1-P4]: P1 is batting while P4 waits on the side in the same uniform near equipment, indicating participation in the same practice. They appear to be teammates rather than socially intimate. => professional\n\n[P2-P3]: Both are positioned outside the cage in close proximity, watching and possibly coordinating the drill, wearing identical baseball uniforms. This points to colleagues on the same team/coaching staff. => professional\n\n[P2-P4]: They are on opposite sides of the cage, observing the session, dressed alike in team uniforms at a stadium. Their interaction fits teammates/coaches working together. => professional\n\n[P3-P4]: Both wear the same baseball uniform around the batting cage, with P3 engaged in directing the drill and P4 waiting. This indicates team colleagues in a practice setting. => professional",
+  "timestamp": 1776889362.5131922
+}

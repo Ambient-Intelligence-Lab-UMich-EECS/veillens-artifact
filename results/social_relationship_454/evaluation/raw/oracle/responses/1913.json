@@ -1,0 +1,25 @@
+{
+  "img_id": "1913",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They are playing in a soccer match on a field; close in space and focused on the ball, not each other. Different uniforms suggest opposing teams with an organized sport interaction. => professional\n\n[P1-P3]: On a soccer field during play, oriented toward the ball with no personal contact. Different uniforms indicate opponents in a structured game. => professional\n\n[P2-P3]: Both wear the same red/white kit and move in coordination during the match on the field; no personal affection shown, just team play. => professional",
+  "timestamp": 1776887692.4415443
+}

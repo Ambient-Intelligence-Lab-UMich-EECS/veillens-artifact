@@ -1,0 +1,47 @@
+{
+  "reasoning": "- Activity/event: Two people seated outdoors, appearing relaxed in a leisure context.\n- Spatial proximity/body language: Extremely close; one sits on the other's lap. Their faces are very close, leaning toward each other, suggesting affection.\n- Physical interaction: Arms around each other; embracing/hugging.\n- Attire: Casual, consistent with a relaxed personal outing, not indicative of work or a transaction.\n- Setting: Outdoor area with natural surroundings; no signs of a workplace or commercial exchange.\nGiven the intimate posture (lap-sitting, embrace, near-kissing), this strongly indicates a romantic relationship rather than friendship or family, and clearly not professional/commercial.",
+  "relationship_estimate": {
+    "pairs": [
+      {
+        "pair": "1 2",
+        "label": "couple",
+        "confidence": "High"
+      }
+    ]
+  },
+  "critical_features": {
+    "features": [
+      {
+        "relationship_description": "They are embracing with arms around each other while one sits on the other's lap, indicating romantic intimacy.",
+        "subject_ids": [
+          1,
+          2
+        ],
+        "properties": [
+          "intimate level cue"
+        ]
+      },
+      {
+        "relationship_description": "Their faces are very close, leaning in as if about to kiss, signaling romantic affection.",
+        "subject_ids": [
+          1,
+          2
+        ],
+        "properties": [
+          "intimate level cue"
+        ]
+      },
+      {
+        "relationship_description": "Casual attire in a relaxed outdoor setting with no signs of work or transaction, reducing likelihood of professional/commercial ties.",
+        "subject_ids": [
+          1,
+          2
+        ],
+        "properties": [
+          "no relationship"
+        ]
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/veillens-runs/social_relation_smoke/intermediate/9545/final/9545_final.png"
+}

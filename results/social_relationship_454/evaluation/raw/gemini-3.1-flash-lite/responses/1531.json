@@ -1,0 +1,23 @@
+{
+  "img_id": "1531",
+  "predictions": {
+    "1 2": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 4": 5,
+    "2 5": 5,
+    "3 5": 5,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is a performer on stage while P2 is an audience member filming the performance, indicating no direct personal relationship. => no-relationship\n\n[P1-P4]: P1 and P4 are both band members playing instruments on stage together, which is a standard collaborative work environment. => professional\n\n[P1-P5]: P1 and P5 are both band members performing on stage simultaneously, indicating a working relationship. => professional\n\n[P2-P4]: P2 is an audience member watching P4 perform on stage, establishing a commercial/consumer relationship through the ticketed event. => commercial\n\n[P2-P5]: P2 is an audience member watching P5 perform on stage, establishing a commercial/consumer relationship through the ticketed event. => commercial\n\n[P3-P5]: P3 is in the audience watching the performers on stage, including P5, placing them in a commercial/consumer relationship. => commercial\n\n[P4-P5]: P4 and P5 are both band members collaborating on stage during a musical performance. => professional",
+  "timestamp": 1787936224.8458269
+}

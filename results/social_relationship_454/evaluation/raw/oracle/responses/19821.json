@@ -1,0 +1,32 @@
+{
+  "img_id": "19821",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: A skateboarding hangout in a city square; P1 stands a few steps away on a ledge while P2 is with the group, no physical contact, both with skateboards and casual skate attire. Likely buddies skating together => friends\n\n[P1-P3]: Same skate session and setting; P1 is slightly apart but oriented to the camera like the others, no interaction, matching skate gear. Appears part of the same friend group => friends\n\n[P1-P4]: Public plaza skate scene; P1 and P4 aren\u2019t touching but share the same boards/attire and group pose. Likely friends skating together => friends\n\n[P2-P3]: They stand shoulder-to-shoulder, smiling and posing with boards in casual skatewear in the same spot. Clear camaraderie => friends\n\n[P2-P4]: Same activity and environment; though P3 stands between them, they\u2019re posing together with similar gear and relaxed body language. Group camaraderie suggests friendship => friends\n\n[P3-P4]: Very close proximity, posing with boards, casual attire, and shared skate context in the plaza. Looks like buddies => friends",
+  "timestamp": 1776889355.0090172
+}

@@ -1,0 +1,25 @@
+{
+  "img_id": "17974",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 1,
+    "2 3": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: This looks like an ultimate frisbee game; they wear different jerseys, keep some distance, and aren\u2019t interacting directly. They appear to be players on opposing sides without a personal tie. => no-relationship\n\n[P1-P3]: Both wear matching black uniforms and move in coordination during the play, suggesting they are teammates in a shared recreational activity. => friends\n\n[P2-P3]: They are in close proximity with offensive/defensive stances around the disc, wearing different jerseys, indicating competitive opponents rather than acquaintances. => no-relationship",
+  "timestamp": 1776889252.4470577
+}

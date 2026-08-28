@@ -1,0 +1,123 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "reasoning": {
+            "type": "string",
+            "description": "Step-by-step analysis of the visual evidence for each listed pair."
+        },
+        "relationship_estimate": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "pairs": {
+                    "type": "array",
+                    "description": "One entry per pair listed in the prompt, and no others.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "pair",
+                            "label",
+                            "confidence"
+                        ],
+                        "properties": {
+                            "pair": {
+                                "type": "string",
+                                "description": "The pair key exactly as listed in the prompt: two subject numbers separated by a single space, smaller first, e.g. '1 2'."
+                            },
+                            "label": {
+                                "type": "string",
+                                "enum": [
+                                    "friends",
+                                    "family-members",
+                                    "couple",
+                                    "professional",
+                                    "commercial",
+                                    "no-relationship"
+                                ],
+                                "description": "The relationship between the two subjects."
+                            },
+                            "confidence": {
+                                "type": "string",
+                                "enum": [
+                                    "High",
+                                    "Medium",
+                                    "Low"
+                                ],
+                                "description": "Model's confidence in this pair's label."
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "pairs"
+            ]
+        },
+        "critical_features": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "features": {
+                    "type": "array",
+                    "description": "One entry per subject whose face should be anonymized. A subject that appears in no relationship-bearing pair does not belong here.",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "subject_id",
+                            "object_description",
+                            "target_concept",
+                            "anonymized_element",
+                            "relationship_element",
+                            "properties"
+                        ],
+                        "properties": {
+                            "subject_id": {
+                                "type": "integer",
+                                "description": "The number on this subject's box in the image, e.g. 1 for the box labelled P1. Must be one of the subjects listed in the prompt."
+                            },
+                            "object_description": {
+                                "type": "string",
+                                "description": "A concise visual description of this subject's face as it appears in the image (e.g. 'face of the seated person on the left, turned toward the camera')."
+                            },
+                            "target_concept": {
+                                "type": "string",
+                                "description": "The region being edited. Use 'face'."
+                            },
+                            "anonymized_element": {
+                                "type": "string",
+                                "description": "A short comma-separated description of a neutral replacement for the face region that carries no relational signal: plain skin tone, soft even lighting, no discernible eyes, expression or gaze. This is used as the positive prompt for the inpainting model."
+                            },
+                            "relationship_element": {
+                                "type": "string",
+                                "description": "A short comma-separated list of the visible facial cues that support the relationship inference (e.g. 'mutual gaze, shared smile, apparent age and resemblance'). This is used as the negative prompt for the inpainting model."
+                            },
+                            "properties": {
+                                "type": "array",
+                                "description": "The relationship granularity this subject's face supports, taken from the pairs the subject appears in.",
+                                "items": {
+                                    "type": "string",
+                                    "enum": [
+                                        "intimate level cue",
+                                        "non-intimate level cue",
+                                        "no relationship"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "features"
+            ]
+        }
+    },
+    "required": [
+        "reasoning",
+        "relationship_estimate",
+        "critical_features"
+    ]
+}

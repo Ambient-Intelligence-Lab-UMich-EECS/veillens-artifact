@@ -10,6 +10,11 @@ score is often not the one that matches the cue: a prompt like "campaign poster 
 happily return the fence. `select_boxes_by_target_concept` aligns the target concept's tokens to
 their positions in the caption and re-ranks on those columns alone, which is why the segmenter
 carries its own `predict_with_token_scores` instead of calling upstream's `predict`.
+
+Detection is the half a setting can skip. `segment_boxes` takes boxes that are already known and
+goes straight to SAM 2, which is what the social-relationship setting does with the person boxes
+its dataset ships. With `detection.use_grounding_dino: false` the detector is never loaded at all,
+so that path needs neither the SwinT weights nor the compiled deformable-attention kernel.
 """
 
 from __future__ import annotations
@@ -71,7 +76,11 @@ class GroundedSAM2Segmenter:
     """Handles object detection and segmentation using Grounded-SAM-2"""
 
     def __init__(self, config: Dict[str, Any]):
-        _require_deformable_attention_kernel()
+        # A setting whose regions come from its dataset never calls the detector, so demanding its
+        # weights and its compiled kernel would be a prerequisite for work that never happens.
+        self.use_grounding_dino = bool(config['detection'].get('use_grounding_dino', True))
+        if self.use_grounding_dino:
+            _require_deformable_attention_kernel()
         self.config = config
         self.device = config['detection']['device']
         self.logger = logging.getLogger(__name__)
@@ -115,19 +124,24 @@ class GroundedSAM2Segmenter:
         self.sam2_predictor = SAM2ImagePredictor(self.sam2_model)
 
         # Build Grounding DINO model (inside autocast context)
-        grounding_config = grounded_sam2_root / config['models']['grounding_dino_config']
-        grounding_checkpoint = config['models']['grounding_dino_checkpoint']
+        if not self.use_grounding_dino:
+            self.grounding_model = None
+            print("\nGrounding DINO disabled (detection.use_grounding_dino: false) — "
+                  "boxes come from the dataset")
+        else:
+            grounding_config = grounded_sam2_root / config['models']['grounding_dino_config']
+            grounding_checkpoint = config['models']['grounding_dino_checkpoint']
 
-        print(f"\nLoading Grounding DINO model from {grounding_checkpoint}...")
-        print("      (This may take 1-2 minutes on networked storage...)")
-        dino_start = time.time()
-        self.grounding_model = load_model(
-            model_config_path=str(grounding_config),
-            model_checkpoint_path=grounding_checkpoint,
-            device=self.device
-        )
-        dino_time = time.time() - dino_start
-        print(f"      ✓ Grounding DINO model loaded in {dino_time:.1f}s")
+            print(f"\nLoading Grounding DINO model from {grounding_checkpoint}...")
+            print("      (This may take 1-2 minutes on networked storage...)")
+            dino_start = time.time()
+            self.grounding_model = load_model(
+                model_config_path=str(grounding_config),
+                model_checkpoint_path=grounding_checkpoint,
+                device=self.device
+            )
+            dino_time = time.time() - dino_start
+            print(f"      ✓ Grounding DINO model loaded in {dino_time:.1f}s")
 
     def predict_with_token_scores(
         self,
@@ -323,6 +337,14 @@ class GroundedSAM2Segmenter:
         Returns:
             Tuple of (image_source, masks, boxes, labels)
         """
+        if not self.use_grounding_dino:
+            raise RuntimeError(
+                "segment() needs Grounding DINO, but detection.use_grounding_dino is false. "
+                "A setting that supplies its own boxes should reach SAM 2 through "
+                "segment_boxes(); a setting that discovers its regions from text must leave the "
+                "detector enabled."
+            )
+
         # Load image
         image_source, image = load_image(image_path)
 
@@ -382,6 +404,69 @@ class GroundedSAM2Segmenter:
             self.logger.info(f"✓ Segmented {len(masks)} object(s)")
 
         return image_source, masks, input_boxes, labels
+
+    def segment_boxes(
+        self,
+        image_path: str,
+        boxes_xyxy: Any,
+    ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, List[str]]:
+        """
+        Segment regions whose boxes are already known, without running detection.
+
+        This is the second half of :meth:`segment` on its own. Where that method has to *find* the
+        object a language cue names, here the caller already has the box -- from a dataset that
+        ships person boxes and ids, or from any detector run outside this class -- so the only work
+        left is turning a box into a mask.
+
+        Args:
+            image_path: Path to input image.
+            boxes_xyxy: ``(k, 4)`` boxes in **absolute pixel xyxy**, the same convention
+                :meth:`segment` converts Grounding DINO's normalised cxcywh output into before
+                prompting SAM 2. Anything array-like is accepted.
+
+        Returns:
+            The same ``(image_source, masks, boxes, labels)`` tuple :meth:`segment` returns, so the
+            two are interchangeable at every call site. ``masks`` is ``(k, H, W)``; an empty box
+            list yields the same empty result an undetected cue does.
+        """
+        image_source, _ = load_image(image_path)
+
+        boxes = np.asarray(boxes_xyxy, dtype=np.float32).reshape(-1, 4)
+        if boxes.shape[0] == 0:
+            self.logger.warning("segment_boxes called with no boxes")
+            return image_source, np.array([]), np.array([]), []
+
+        # A box that runs off the frame is not an error in the annotation so much as a rounding
+        # artefact of one, but SAM 2 answers a partly out-of-frame prompt with noise, so clip.
+        height, width = image_source.shape[:2]
+        boxes[:, [0, 2]] = boxes[:, [0, 2]].clip(0, width)
+        boxes[:, [1, 3]] = boxes[:, [1, 3]].clip(0, height)
+
+        self.sam2_predictor.set_image(image_source)
+        # multimask_output=True, unlike the detection path. A detector's box is already tight
+        # around the thing it found, so SAM 2's single proposal is usually right. A box from a
+        # dataset is drawn around a whole person, and asked for one answer SAM 2 sometimes returns
+        # a degenerate one that bleeds into a patterned shirt or the sky behind them. Asking for
+        # its three candidates and keeping the highest-scoring one costs nothing and avoids that.
+        masks, scores, _ = self.sam2_predictor.predict(
+            point_coords=None,
+            point_labels=None,
+            box=boxes,
+            multimask_output=True,
+        )
+
+        masks = np.asarray(masks)
+        scores = np.asarray(scores)
+        if masks.ndim == 4:
+            # (k, 3, H, W) -> the best of the three per box.
+            best = scores.argmax(axis=1)
+            masks = np.stack([masks[i, best[i]] for i in range(masks.shape[0])])
+        elif masks.ndim == 3 and masks.shape[0] == scores.shape[-1]:
+            # (3, H, W) for a single box.
+            masks = masks[int(scores.argmax())][None]
+
+        self.logger.info(f"✓ Segmented {len(masks)} given box(es)")
+        return image_source, masks, boxes, ["given box"] * len(boxes)
 
     @staticmethod
     def combine_masks(masks: np.ndarray) -> np.ndarray:

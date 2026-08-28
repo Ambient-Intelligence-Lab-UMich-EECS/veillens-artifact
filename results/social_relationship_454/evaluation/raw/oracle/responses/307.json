@@ -1,0 +1,27 @@
+{
+  "img_id": "307",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 3": 4
+  },
+  "missed_pairs": [
+    "1 2",
+    "2 3"
+  ],
+  "subjects_matched": [
+    1,
+    3
+  ],
+  "subjects_unmatched": [
+    2
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P3]: They are on a sports field during a football play; both wear athletic jerseys (likely on opposing teams), are some distance apart, and engaged in the game without personal interaction. This suggests an organized sport/colleague-like context. => professional",
+  "timestamp": 1776887593.2668421
+}

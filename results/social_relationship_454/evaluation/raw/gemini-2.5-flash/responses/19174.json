@@ -1,0 +1,21 @@
+{
+  "img_id": "19174",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 1,
+    "2 3": 6,
+    "2 4": 1,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "raw_response": "[P1-P2]: Both individuals are present at a casual social gathering where a video game is being played, suggesting a shared activity and camaraderie in a relaxed setting. => friends\n[P1-P3]: P1 is relaxed on a couch while P3 stands by the door, showing no direct interaction, shared focus, or close proximity between them. => no-relationship\n[P1-P4]: P1 and P4 are seated very close together on the same couch in a relaxed posture, implying a comfortable and close social bond, likely sharing the casual activity. => friends\n[P2-P3]: P2 is actively engaged in playing a video game, while P3 is standing distant by the door, with no visible interaction or shared activity. => no-relationship\n[P2-P4]: P2 is playing the video game, and P4 is seated on the couch facing the screen, indicating shared engagement in the recreational activity as friends would. => friends\n[P3-P4]: P3 is standing near the door and P4 is seated on a distant couch, with no apparent interaction, shared focus, or close proximity between them. => no-relationship",
+  "timestamp": 1787940741.1479683
+}

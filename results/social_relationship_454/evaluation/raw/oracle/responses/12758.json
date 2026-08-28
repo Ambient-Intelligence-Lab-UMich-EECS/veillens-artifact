@@ -1,0 +1,25 @@
+{
+  "img_id": "12758",
+  "ground_truth": {
+    "1 2": 5,
+    "1 3": 2,
+    "2 3": 5
+  },
+  "predictions": {
+    "1 2": 5,
+    "1 3": 2,
+    "2 3": 5
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a bakery setting, the child (P1) stands at the counter facing the uniformed worker (P2) who is bagging pastries; they are close across the counter with businesslike posture and no personal intimacy. => commercial\n\n[P1-P3]: The adult woman (P3) stands very close behind/next to P1, watching him as he orders; their casual attire and her supervisory stance suggest she\u2019s accompanying him. => family-members\n\n[P2-P3]: P2 is in store uniform behind the register while P3 is a casual shopper on the customer side, positioned for a service interaction rather than a personal one. => commercial",
+  "timestamp": 1776889480.5221622
+}

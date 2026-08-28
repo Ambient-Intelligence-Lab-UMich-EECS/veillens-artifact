@@ -1,0 +1,55 @@
+{
+  "img_id": "17916",
+  "ground_truth": {
+    "4 7": 1,
+    "4 5": 1,
+    "1 2": 1,
+    "1 3": 1,
+    "1 7": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 1,
+    "2 5": 1,
+    "2 4": 1,
+    "2 7": 1,
+    "5 7": 1,
+    "3 4": 1,
+    "3 5": 1,
+    "3 7": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 4": 1,
+    "1 7": 1,
+    "2 4": 1,
+    "2 7": 1,
+    "4 7": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 5",
+    "2 3",
+    "2 5",
+    "3 4",
+    "3 5",
+    "3 7",
+    "4 5",
+    "5 7"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4,
+    6,
+    7
+  ],
+  "subjects_unmatched": [
+    3,
+    5
+  ],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 7,
+  "raw_response": "[P1-P2]: A casual beach picnic/camping scene; both wear relaxed clothing and are at the same campsite, with P1 standing nearby while P2 chats animatedly\u2014no touching or work-like cues. => friends\n\n[P1-P4]: Same beach gathering with casual attire; P1 stands close to P4\u2019s chair within the group area, indicating shared social time rather than formality or intimacy. => friends\n\n[P1-P7]: At the same picnic table setup, P1 stands near while P7 prepares items; casual dress and shared environment but no physical contact. => friends\n\n[P2-P4]: They sit close in camp chairs, facing and conversing/laughing in a relaxed beach setting with no intimate gestures. => friends\n\n[P2-P7]: Both are at the picnic table area in casual beachwear; close proximity as part of the same social activity, interacting around food/drinks without romantic or transactional cues. => friends\n\n[P4-P7]: Seated within the same campsite cluster, casually dressed and sharing the picnic setup, suggesting a social outing; no signs of romance or commerce. => friends",
+  "timestamp": 1776888050.4625008
+}

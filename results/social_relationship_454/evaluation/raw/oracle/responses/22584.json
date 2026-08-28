@@ -1,0 +1,26 @@
+{
+  "img_id": "22584",
+  "ground_truth": {
+    "2 3": 1,
+    "3 4": 1,
+    "2 4": 1
+  },
+  "predictions": {
+    "2 3": 6,
+    "2 4": 4,
+    "3 4": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 8,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P2-P3]: This looks like a business/networking event (name tags, business attire, meeting room). They\u2019re near each other but P3 faces away talking to someone else while P2 engages with P4; no eye contact or interaction. => no-relationship\n\n[P2-P4]: At the same professional mixer, they face each other closely, smiling and conversing, both in business attire with name tags; no physical intimacy, just discussion. => professional\n\n[P3-P4]: P3\u2019s body is turned away and he\u2019s engaged with another person, while P4 is talking to P2; no engagement or contact between them despite being in the same room. => no-relationship",
+  "timestamp": 1776888486.3551059
+}

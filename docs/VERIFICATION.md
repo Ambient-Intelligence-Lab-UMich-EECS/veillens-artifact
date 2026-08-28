@@ -48,9 +48,9 @@ beyond picking the radius.
 
 **Residual** — the attacker's own report names no surviving cue at a protected granularity.
 
-This needs no ground truth at all. It reads `critical_features[].properties` (geolocation) or
-`critical_features[].severity_level` (compositional) — labels the attacker already emits under its
-schema. It is the criterion that is actually *about* granularity, and it is strictly the stricter
+This needs no ground truth at all. It reads `critical_features[].properties` (geolocation and
+social relationship) or `critical_features[].severity_level` (compositional) — labels the attacker
+already emits under its schema. It is the criterion that is actually *about* granularity, and it is strictly the stricter
 of the two: an image can be 400 km mislocated and still have the attacker pointing at a legible
 street sign.
 
@@ -109,6 +109,22 @@ The prompt now asks for the clues the attacker actually relied on and states tha
 `critical_features` list is a valid answer. This is a change to the measurement instrument: numbers
 produced before it are not comparable to numbers produced after.
 
+## Verifying a baseline
+
+A prior-work defense targets no granularity — it perturbs the image and that is all — so its
+results carry no `mask_level` to recover. Name the target you want it judged against and the same
+two criteria apply, which is what makes the comparison in [BASELINES.md](BASELINES.md) a comparison
+rather than two different measurements:
+
+```bash
+veillens-verify runs/geolocation/baselines/geoshield \
+    --mask-level "street level clue,city level clue"
+```
+
+The attacker's readings of the defended images live in the method's `attacker_cache/`, which
+`veillens-verify` finds on its own. (The shared `_attacker_cache/` of *unprotected* originals is a
+different directory and is not picked up.)
+
 ## Compositional privacy
 
 Compositional risk is a unitless CPRT score, not a distance, so it has no rung and no metric
@@ -119,6 +135,36 @@ which is exactly the paper's "suppressing both level 1 and 2 identifiers".
 No score pass-line is invented here. The paper reports mean score and relative reduction for this
 setting and defines no per-image failure threshold, so `veillens-verify` reports the distribution
 beside the residual verdict and leaves it at that.
+
+## Social relationship
+
+`mask_level: ["intimate level cue", "non-intimate level cue"]` is the paper's target: *"We set the
+social-relationship target to no relationship, suppressing evidence for both intimate and
+non-intimate relationship inference."* Both criteria apply, and neither is a distance.
+
+**Metric** — the attacker recovers none of the image's annotated pairs. The per-image error is the
+share of pairs it got wrong, so the pass line is 1.0. `target_rung` is `None`, `threshold_km` is
+`None`, and `metric_threshold` carries the 1.0 — `threshold_km` stays kilometres-only so its name
+never has to be read as anything else.
+
+An unanswered pair counts as not recovered. That is the conservative reading for the *metric*, but
+it is generous to the defense in aggregate: an adversary that returns nothing at all would score as
+perfect protection. So `veillens-score` reports relationship accuracy over two denominators — every
+annotated pair, and answered pairs only — and prints how many pairs went unanswered. They diverge
+exactly when the protected image stops the adversary committing, which is a real effect but a
+different claim from getting the answer wrong.
+
+**Residual** — the attacker cites no surviving cue tagged `intimate level cue` or
+`non-intimate level cue`. The schema admits a third value, `no relationship`, which is deliberately
+not protectable: it is the answer the defense is trying to push the adversary towards, so counting
+a surviving no-relationship cue as a leak would make the criterion unpassable by construction. It
+is recognised as a valid label and treated as out of scope, exactly like a country-level cue under
+city-level protection.
+
+Accuracy is reported six-way over PISC's own labels and three-way over the standard grouping
+(`friends`/`family-members`/`couple` → intimate, `professional`/`commercial` → non-intimate,
+`no-relationship` → no relation). Both are recomputed from the same responses rather than read from
+separate runs; the grouping lives in one place, `veillens/metrics/relationship.py:THREE_WAY`.
 
 ## What changed, and what it invalidates
 

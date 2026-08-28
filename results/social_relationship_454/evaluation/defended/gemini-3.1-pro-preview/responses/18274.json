@@ -1,0 +1,21 @@
+{
+  "img_id": "18274",
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 2,
+    "3 4": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P3]: They are far apart, facing different directions, and showing no signs of interaction in this public space. => no-relationship\n[P1-P4]: They are in different parts of the scene, not looking at each other or interacting in any way. => no-relationship\n[P1-P5]: P1 is a distant pedestrian showing no awareness of or interaction with the baby P5. => no-relationship\n[P3-P4]: They are separated by distance and engaged in separate activities, with no visual connection. => no-relationship\n[P3-P5]: P3 is walking away in the background, completely disconnected from the baby P5 in the foreground. => no-relationship\n[P4-P5]: P4 is physically holding and caring for the baby P5, strongly indicating a parent-child bond. => family-members",
+  "timestamp": 1787939606.232547
+}

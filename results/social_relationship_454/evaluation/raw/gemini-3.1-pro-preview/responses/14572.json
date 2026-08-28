@@ -1,0 +1,39 @@
+{
+  "img_id": "14572",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are two young children playing together on the same piece of playground equipment, strongly suggesting they are siblings. => family-members\n[P1-P3]: P3 is an adult closely supervising and physically supporting the playground ride for child P1, indicating a parent-child relationship. => family-members\n[P1-P4]: P1 is a child playing in the foreground, while P4 is an unrelated adult standing in the distant background. => no-relationship\n[P1-P5]: P1 is engaged in play in the foreground with no connection to P5, who is sitting on a swing in the background. => no-relationship\n[P1-P6]: P1 is focused on the ride in the foreground, while P6 is a bystander walking past in the background. => no-relationship\n[P2-P3]: P3 is acting in a parental role, actively supervising and holding the ride for child P2. => family-members\n[P2-P4]: P2 is a child in the foreground, showing no interaction or connection to P4 in the background. => no-relationship\n[P2-P5]: P2 is playing in the foreground, unaware of the presence of P5 in the background. => no-relationship\n[P2-P6]: P2 is a child in the foreground, completely unengaged with the passing bystander P6. => no-relationship\n[P3-P4]: P3 is occupied with supervising children in the foreground, while P4 is simply another park-goer in the background. => no-relationship\n[P3-P5]: P3 is focused on the children she is with, showing no interaction with P5 in the background. => no-relationship\n[P3-P6]: P3 is tending to the children, with no visible connection to P6 walking in the background. => no-relationship\n[P4-P5]: P4 and P5 are both background figures engaged in separate activities with no interaction. => no-relationship\n[P4-P6]: P4 and P6 are individuals in the background facing different directions, appearing as unrelated bystanders. => no-relationship\n[P5-P6]: P5 and P6 are just different people occupying the background of the park scene with no social connection. => no-relationship",
+  "timestamp": 1787937475.7856398
+}

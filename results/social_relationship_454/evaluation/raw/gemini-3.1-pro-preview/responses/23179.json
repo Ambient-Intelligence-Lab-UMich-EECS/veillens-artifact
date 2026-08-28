@@ -1,0 +1,23 @@
+{
+  "img_id": "23179",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "raw_response": "[P1-P2]: P1 is sitting at a table in the foreground, while P2 is sitting at a separate table behind her facing away, indicating they are just strangers in the same restaurant. => no-relationship\n[P1-P3]: P1 is dining at the foreground table and P3 is at a different table in the background with her back turned, showing no interaction. => no-relationship\n[P1-P4]: P1 is posing at her own table, while P4 is engaged with her own group at a separate table in the background. => no-relationship\n[P1-P5]: P1 is eating at a restaurant, and P5 is simply a pedestrian walking by in the far background. => no-relationship\n[P2-P3]: P2 and P3 are sitting side-by-side at the same table sharing a meal, indicating a casual social bond among group members. => friends\n[P2-P4]: P2 and P4 are sitting at the same table together, sharing a casual social dining experience. => friends\n[P3-P4]: P3 and P4 are part of the same group dining together at the background table, engaging in a shared social activity. => friends",
+  "timestamp": 1787937615.9943242
+}

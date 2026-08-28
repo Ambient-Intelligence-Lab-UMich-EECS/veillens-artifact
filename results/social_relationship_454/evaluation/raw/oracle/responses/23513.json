@@ -1,0 +1,25 @@
+{
+  "img_id": "23513",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 3,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Two older adults sit on the same couch watching the laptop activity, in casual home attire and relaxed posture; their similar age and comfortable presence suggest a long-term domestic bond despite no overt touch. => couple\n\n[P1-P3]: P3 operates a laptop while P1 watches closely beside her on a living-room couch; casual clothing and relaxed body language with no transactional cues suggest a familial interaction. => family-members\n\n[P2-P3]: P3 sits between them using a laptop that P2 attentively watches; close proximity in a home setting and informal attire indicate a family tech-help moment rather than work or commerce. => family-members",
+  "timestamp": 1776888647.0299952
+}

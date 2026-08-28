@@ -1,0 +1,9 @@
+{
+  "reasoning": "Step 1 (Country Level): The image contains several strong indicators that place it in Germany. The red circular sign with a blue background and a red cross is the standard German 'Absolutes Halteverbot' (No stopping) sign (StVO sign 283). The traffic lights have the distinctive black casing with a white border used throughout Germany. Furthermore, the visible Mercedes star on the hood of the camera vehicle, along with the image's aspect ratio and specific top-edge distortion, are hallmark signatures of the 'Cityscapes' computer vision dataset, which was primarily recorded in German cities.\n\nStep 2 (City Level): The Cityscapes dataset features a specific list of cities. The architectural style—characterized by functional, blocky, post-war reconstruction—is highly typical of North Rhine-Westphalia (NRW). Demographic clues support this: the 'EFES' sign indicates a Turkish business, which is very common in the region, while the bakery sign 'Kostorz' features a surname of Polish origin, reflecting the historical 'Ruhrpolen' immigration to the Ruhr and Lower Rhine areas. This narrows the location down to NRW cities in the dataset, such as Bochum, Mönchengladbach, or Krefeld.\n\nStep 3 (Street Level): The scene shows a multi-lane one-way street in a city center, approaching an intersection with a left turn leading to a 'Parking-Centrum'. To the left, a business is clearly marked as 'CITY DANCE SCHOOL'. Based on the specific combination of these businesses, the 'Parking-Centrum' terminology, and the road layout, this scene aligns closely with the central ring or arterial one-way streets of Krefeld. While the exact street requires local knowledge of the dance school's historical location, the coordinates can be reasonably estimated to the central district of Krefeld.",
+  "location_estimate": {
+    "latitude": 51.332,
+    "longitude": 6.561,
+    "confidence": "Medium",
+    "region": "Krefeld, North Rhine-Westphalia, Germany"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "img_id": "14572",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: P2 is a young child sitting on a play structure being attended to by P3, while P1 is another young child sitting on the same structure. They appear to be siblings or playmates at a park. => family-members\n\n[P1-P3]: P3 is an adult woman interacting closely with and supporting P1 on the play structure. This indicates a parent-child relationship. => family-members\n\n[P1-P4]: P4 is a distant adult standing in the background, showing no interaction or engagement with P1. => no-relationship\n\n[P1-P5]: P5 is in the background, appearing to be a bystander or someone else at the park, with no connection to the child P1. => no-relationship\n\n[P1-P6]: P6 is a person in the background, separate from the primary activity and not interacting with P1. => no-relationship\n\n[P2-P3]: P3 is an adult woman actively supervising and holding the play structure for P2. This indicates a parent-child relationship. => family-members\n\n[P2-P4]: P4 is a distant bystander with no observable social connection to P2. => no-relationship\n\n[P2-P5]: P5 is a person in the background with no connection to the child P2. => no-relationship\n\n[P2-P6]: P6 is a distant figure in the background with no connection to the child P2. => no-relationship\n\n[P3-P4]: Both are adults in a public park setting, but they are distant and show no sign of interaction. => no-relationship\n\n[P3-P5]: P5 is a distant person in the background, unrelated to the adult P3. => no-relationship\n\n[P3-P6]: P6 is a distant person in the background, unrelated to the adult P3. => no-relationship\n\n[P4-P5]: Both are background figures in the park, appearing to be unrelated individuals or strangers. => no-relationship\n\n[P4-P6]: Both are background figures in the park, appearing to be unrelated individuals or strangers. => no-relationship\n\n[P5-P6]: Both are background figures in the park, appearing to be unrelated individuals or strangers. => no-relationship",
+  "timestamp": 1787936224.2677314
+}

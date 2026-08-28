@@ -1,0 +1,27 @@
+{
+  "img_id": "6978",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They appear to be playing a casual game of frisbee in a park; P2 is jumping for the disc while P1 is close by participating. Their athletic attire and shared recreational context suggest they are companions/teammates rather than strangers. => friends",
+  "timestamp": 1776889388.1386795
+}

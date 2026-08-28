@@ -1,0 +1,29 @@
+{
+  "img_id": "22522",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 5,
+    "1 5": 5,
+    "2 3": 1,
+    "2 4": 5,
+    "2 5": 5,
+    "3 4": 5,
+    "3 5": 5,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are standing close together in elaborate outfits, holding identical objects and posing, indicating they are attending an event together. => friends\n[P1-P3]: P1 and P3 are part of the same group posing with matching items, suggesting they are social companions enjoying an event. => friends\n[P1-P4]: P1 is dressed up for an event while P4 wears a high-visibility uniform and helmet near a pedicab, indicating a customer and service provider dynamic. => commercial\n[P1-P5]: P1 is an event attendee and P5 is a uniformed pedicab driver, pointing to a service-based or transactional setting. => commercial\n[P2-P3]: P2 and P3 are posing together with matching items, showing they are part of the same social group participating in an activity. => friends\n[P2-P4]: P2 is a customer in a festive outfit while P4 is working in uniform, reflecting a commercial service relationship. => commercial\n[P2-P5]: P2 is participating in an event while P5 is working in uniform as a pedicab driver, suggesting a customer-vendor interaction. => commercial\n[P3-P4]: P3 is a formally dressed attendee while P4 is working in uniform, indicating a service provider and customer relationship. => commercial\n[P3-P5]: P3 is part of a social group at an event and P5 is a uniformed worker, showing a commercial service interaction. => commercial\n[P4-P5]: P4 and P5 are wearing identical bright green shirts and bike helmets next to a pedicab, clearly indicating they are coworkers. => professional",
+  "timestamp": 1787937596.5583425
+}

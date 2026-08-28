@@ -1,0 +1,27 @@
+{
+  "img_id": "1324",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "3 4": 2,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 (young adult) and P2 (child) are casually dressed and eating in a home environment. The age difference and shared domestic activity strongly suggest they are related. => family-members\n[P1-P3]: P1 (young adult) and P3 (adult with laptop) are both present in a casual home setting with P2 (child) nearby, suggesting a shared domestic environment and family bond. => family-members\n[P1-P4]: P1 and P4 refer to the same individual, where P4 is a part of P1. A social relationship cannot exist between a person and themselves. => no-relationship\n[P1-P5]: P1 is the young adult male, and P5 is the leg of P3. Analyzing the relationship between P1 and P3, they appear to be family members in a domestic setting. => family-members\n[P2-P3]: P2 (child) and P3 (adult) are in close proximity in a home environment, with P3 appearing to supervise or accompany P2 during a meal. This indicates a parental or guardianship role. => family-members\n[P2-P5]: P2 is the child, and P5 is the leg of P3. Analyzing the relationship between P2 and P3, they are in a domestic setting with the adult caring for the child, suggesting family ties. => family-members\n[P3-P4]: P3 is the adult with the laptop, and P4 is the head of P1. Analyzing the relationship between P3 and P1, they are in a shared home environment with a child, indicating a family relationship. => family-members\n[P3-P5]: P3 and P5 refer to the same individual, where P5 is a part of P3. A social relationship cannot exist between a person and themselves. => no-relationship\n[P4-P5]: P4 is the head of P1, and P5 is the leg of P3. Analyzing the relationship between P1 and P3, they are in a domestic setting likely forming part of the same family unit. => family-members",
+  "timestamp": 1787940622.0930943
+}

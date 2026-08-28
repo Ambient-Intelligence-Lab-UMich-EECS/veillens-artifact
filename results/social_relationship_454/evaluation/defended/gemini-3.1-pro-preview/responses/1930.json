@@ -1,0 +1,21 @@
+{
+  "img_id": "1930",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 1,
+    "3 6": 6,
+    "4 5": 1,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: The bounding boxes for P3 and P4 appear to enclose the body and head of the same individual, meaning they are not two distinct people. => no-relationship\n[P3-P5]: P3 and P5 are walking closely side-by-side in the same direction, indicating they are companions engaged in a shared activity. => friends\n[P3-P6]: P3 and P6 are walking in the same background area but show no visual signs of interaction or being together. => no-relationship\n[P4-P5]: Since P4 is the same person as P3, this individual is walking alongside P5 as a companion. => friends\n[P4-P6]: P4 and P6 are merely in the same general area without any physical or social interaction. => no-relationship\n[P5-P6]: P5 and P6 are present in the same scene but are walking independently without any interaction. => no-relationship",
+  "timestamp": 1787939659.2115815
+}

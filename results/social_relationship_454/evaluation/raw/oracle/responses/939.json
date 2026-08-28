@@ -1,0 +1,35 @@
+{
+  "img_id": "939",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 3": 4,
+    "1 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [
+    "1 2",
+    "2 3",
+    "2 4"
+  ],
+  "subjects_matched": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    2
+  ],
+  "num_preds_detected": 8,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P3]: They are on stage at a live music performance; P1 is singing into a mic while P3 plays an upright bass nearby, focused on their instruments with no physical contact, wearing performance/casual musician attire in a club setting. => professional\n\n[P1-P4]: In a bar/club performance setting, P1 sings while P4 is at the drum kit; they are close on the same stage, not interacting intimately, and their clothing and instruments indicate band roles. => professional\n\n[P3-P4]: Both are musicians (bass and drums) performing together on the same stage in a club, concentrating on their instruments without personal interaction, suggesting bandmates/colleagues. => professional",
+  "timestamp": 1776889120.1789727
+}

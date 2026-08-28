@@ -1,0 +1,23 @@
+{
+  "img_id": "23179",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 1,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 1,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are both seated at the same table, facing the same direction, which suggests they are dining together. Given the casual, social setting, they are likely friends or family. => friends\n\n[P1-P3]: P1 is sitting at a table with P2 and P4, while P3 is seated at a separate table facing away. There is no interaction between P1 and P3. => no-relationship\n\n[P1-P4]: P4 is seated directly at the same table as P1 and P2, indicating they are part of the same dining group. Their shared activity of eating suggests a social relationship. => friends\n\n[P1-P5]: P5 is walking in the background past the restaurant area. There is no indication of interaction or awareness between P1 and P5. => no-relationship\n\n[P2-P3]: P2 and P3 are seated at adjacent tables in a public restaurant setting. There is no evidence of interaction or connection between them. => no-relationship\n\n[P2-P4]: P2 and P4 are both seated at the same table as P1, participating in the same group dining experience. This proximity and shared activity indicate a social connection. => friends\n\n[P3-P4]: P3 is seated at a distinct table separate from the group including P4. They appear to be strangers to each other in this public environment. => no-relationship",
+  "timestamp": 1787936238.9198902
+}

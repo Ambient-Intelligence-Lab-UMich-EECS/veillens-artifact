@@ -1,0 +1,33 @@
+{
+  "reasoning": "A person is shown holding a small card while facing the camera. The individual\u2019s face is central, sharp, and fully visible, which constitutes biometric data enabling identification (Level 1). The card displays a distinctive logo/letters but no readable personal name or numbers, so it contributes only minor contextual risk. With a clear identifiable face as the dominant clue and a low-risk document present, the overall privacy risk is high. Confidence is high because the face is unobstructed and close-up.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal, well-lit face of the person looking at the camera",
+        "Anonymized_element": "blurred or pixelated face, face covered with solid shape/emoji, turned-away head",
+        "privacy_element": "full unobstructed facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "small handheld card with colored background and prominent logo/letters",
+        "Anonymized_element": "blank card, solid color, no text or logo",
+        "privacy_element": "distinctive logo/initials that could indicate affiliation or brand",
+        "target_concept": "card",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/veillens-runs/compositional/artifact_rerun_pilot/intermediate/2017_15522226/final/2017_15522226_final.png"
+}

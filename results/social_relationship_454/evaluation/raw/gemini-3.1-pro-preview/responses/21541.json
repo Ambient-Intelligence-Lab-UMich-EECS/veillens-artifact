@@ -1,0 +1,31 @@
+{
+  "img_id": "21541",
+  "predictions": {
+    "1 2": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "2 4": 6,
+    "2 5": 4,
+    "2 6": 4,
+    "3 4": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 4
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 6": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "5 6": 4,
+    "2 5": 4,
+    "2 4": 6,
+    "2 6": 4,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are standing together as doubles partners on the same side of the tennis court, indicating a collaborative professional sporting relationship. => professional\n[P1-P4]: P1 is a tennis player on the court, while P4 is a spectator in the background, with no interaction between them. => no-relationship\n[P1-P5]: P1 and P5 are opponents in a formal tennis match, representing a professional competitive relationship. => professional\n[P1-P6]: P1 and P6 are opposing players shaking hands over the net, engaging in a standard professional sporting gesture of respect. => professional\n[P2-P4]: P2 is a participant in the tennis match, and P4 is watching from the background without any interaction. => no-relationship\n[P2-P5]: P2 and P5 are competitors on opposite sides of the net in an organized tennis match, indicating a professional relationship. => professional\n[P2-P6]: P2 and P6 are opponents in a formal tennis match, participating in the post-match formalities on court. => professional\n[P3-P4]: P3 appears to be court personnel or an official, and P4 is a spectator, both in the background with no social connection to each other. => no-relationship\n[P4-P5]: P4 is a spectator in the stands and P5 is a player on the court, showing no interaction. => no-relationship\n[P4-P6]: P4 is observing from the background, while P6 is a player engaged in a post-match handshake, with no connection between them. => no-relationship\n[P5-P6]: P5 and P6 are standing together on the same side of the net as doubles partners, indicating a professional athletic partnership. => professional",
+  "timestamp": 1787936421.4385588
+}

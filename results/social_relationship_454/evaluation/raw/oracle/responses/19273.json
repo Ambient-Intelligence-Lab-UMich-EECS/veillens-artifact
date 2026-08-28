@@ -1,0 +1,56 @@
+{
+  "img_id": "19273",
+  "ground_truth": {
+    "4 6": 2,
+    "4 5": 2,
+    "5 6": 2,
+    "1 3": 2,
+    "1 6": 2,
+    "1 4": 2,
+    "1 5": 2,
+    "1 2": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "2 4": 2,
+    "2 6": 2,
+    "3 4": 2,
+    "3 5": 2,
+    "3 6": 2
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 4": 1,
+    "1 6": 1,
+    "2 4": 1,
+    "2 6": 1,
+    "4 6": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 5",
+    "2 3",
+    "2 5",
+    "3 4",
+    "3 5",
+    "3 6",
+    "4 5",
+    "5 6"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8
+  ],
+  "subjects_unmatched": [
+    3,
+    5
+  ],
+  "num_preds_detected": 7,
+  "num_preds_matched": 6,
+  "num_gt_subjects": 8,
+  "raw_response": "[P1-P2]: They\u2019re at a casual group meal in a restaurant, sitting a few feet across the same table with relaxed postures and smiles, no intimate or transactional cues, both in casual clothes. => friends\n\n[P1-P4]: Both are seated at the same dining table in a restaurant, casually dressed and relaxed, with no signs of professional roles or romantic intimacy. => friends\n\n[P1-P6]: P6 appears to be part of the same table gathering behind/near P1; casual attire, no physical interaction, and the restaurant setting suggests a shared social meal. => friends\n\n[P2-P4]: They share the same restaurant table, facing the camera with drinks/menus present; casual dress and easy body language point to a social outing rather than work or commerce. => friends\n\n[P2-P6]: Both are positioned on the far side of the table during a group meal, casually dressed and not engaged in any transaction or work activity. => friends\n\n[P4-P6]: They\u2019re at the same dining table in a relaxed restaurant setting, near but not interacting physically, dressed casually, indicating a social gathering. => friends",
+  "timestamp": 1776887404.5470195
+}

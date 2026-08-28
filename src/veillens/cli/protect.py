@@ -74,7 +74,14 @@ def _check_referenced_paths(config: dict) -> list[str]:
             problems.append(f"missing {label}: {rel}")
 
     models = config.get("models", {})
-    for key in ("sam2_checkpoint", "grounding_dino_checkpoint"):
+    # A setting whose regions come from its dataset never loads the detector, so its weights and
+    # its compiled kernel are not prerequisites for that run. Checking them anyway would make
+    # --dry-run fail on an install that is complete for the run it is about to do.
+    uses_detector = bool(config.get("detection", {}).get("use_grounding_dino", True))
+    checkpoints = ["sam2_checkpoint"]
+    if uses_detector:
+        checkpoints.append("grounding_dino_checkpoint")
+    for key in checkpoints:
         value = models.get(key)
         if value and not Path(value).exists():
             problems.append(f"missing {key}: {value}  (see docs/DATA.md)")
@@ -84,7 +91,7 @@ def _check_referenced_paths(config: dict) -> list[str]:
             f"missing grounded_sam2_root: {root}\n"
             "      git submodule update --init --recursive third_party/Grounded-SAM-2"
         )
-    elif root:
+    elif root and uses_detector:
         # GroundingDINO's deformable-attention kernel is a compiled extension, not Python. A
         # checkout without it imports fine and loads weights fine, then raises
         # `name '_C' is not defined` on the first detection -- which the loop catches per cue and
@@ -126,6 +133,8 @@ def _summarise(config: dict) -> None:
     else:
         print("  target        : no distance rung for this privacy class")
         print("  stop when     : max rounds reached (no distance-based stop)")
+    if not config.get("detection", {}).get("use_grounding_dino", True):
+        print("  grounding     : dataset-supplied boxes (Grounding DINO disabled)")
     print(f"  dataset       : {config['dataset']['dataset_json_file']}")
     evaluation = config.get('evaluation', {})
     reasoning = config.get('reasoning') or evaluation

@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows two people at a conference table with their faces clearly visible and frontal, which constitutes identifiable biometric data (highest severity). A readable organization logo/acronym appears on the front banner, providing workplace/location context that can link the individuals to a specific institution. A desk nameplate has partially legible text but not enough to confirm a name. These clues together create a high privacy risk primarily driven by the identifiable faces, reinforced by contextual affiliation. Score reflects strong, central, and unoccluded evidence; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left seated person\u2019s unobstructed face with glasses, mid-shot",
+        "Anonymized_element": "blurred face, pixelated facial region, solid-color oval mask over face",
+        "privacy_element": "full facial features visible (eyes, nose, mouth), distinctive hairstyle and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "right seated person\u2019s unobstructed face with glasses, mid-shot",
+        "Anonymized_element": "blurred face, pixelated facial region, solid-color oval mask over face",
+        "privacy_element": "full facial features visible (eyes, nose, mouth), distinctive hairline and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "conference table banner with readable organization acronym and name",
+        "Anonymized_element": "blank banner, generic pattern without text or logos",
+        "privacy_element": "organization name and acronym visible, institutional branding",
+        "target_concept": "organization logo/banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "desk nameplate with partially legible handwritten text",
+        "Anonymized_element": "blank nameplate with no text or symbols",
+        "privacy_element": "presence of potential name/identifier (text not clearly readable)",
+        "target_concept": "nameplate",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/veillens-runs/compositional/artifact_rerun_pilot/intermediate/2017_16257673/final/2017_16257673_final.png"
+}
