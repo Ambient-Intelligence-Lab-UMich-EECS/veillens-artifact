@@ -16,12 +16,12 @@ import logging
 import shutil
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, Optional, Tuple
 
 import cv2
 import numpy as np
 
-from veillens.edit.adapter import SDXLPipelineAdapter
+from veillens.edit.pipeline import SDXLInpaintingPipeline
 from veillens.loop.api_workers import APIQueueHandler
 from veillens.loop.batching import (
     GlobalBatchQueueManager,
@@ -35,7 +35,7 @@ from veillens.loop.queues import (
 from veillens.loop.seg_worker import start_seg_worker
 from veillens.loop.state import LEVELS, ClueStatsTracker, GlobalState
 from veillens.metrics.geodesic import DistanceCalculator
-from veillens.paths import RUN_SUBDIRS
+from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, RUN_SUBDIRS
 from veillens.privacy.spec import get_spec
 from veillens.reason.oracle import GeoLocationAPI
 from veillens.vlm.registry import client_from_config
@@ -120,8 +120,8 @@ class GeoLocationPipeline:
         )
         self.distance_calc = DistanceCalculator()
 
-        # SDXL adapter (initialized lazily when needed)
-        self.sdxl_adapter = None
+        # Model stack: loaded on first use, because --dry-run must not touch the GPU.
+        self.sdxl_pipeline = None
 
         # Dataset and results
         self.dataset = []
@@ -219,7 +219,7 @@ class GeoLocationPipeline:
             # reader -- the scorer, the demo exporter -- has no way to tell them from
             # this run's output and will happily mix two runs together. Clearing here
             # makes "always start fresh" (see _initialize_all_states_parallel) true.
-            intermediate_dir = self.output_base / "intermediate" / image_name
+            intermediate_dir = self.output_base / INTERMEDIATE_DIR / image_name
             if intermediate_dir.exists():
                 shutil.rmtree(intermediate_dir)
                 cleared_count += 1
@@ -236,46 +236,6 @@ class GeoLocationPipeline:
     # ========================================================================
     # PHASE 2: Original Evaluation
     # ========================================================================
-
-    def _filter_cached_items(self, dataset: List[Dict]) -> List[Dict]:
-        """
-        Filter out images that are already processed (cache check).
-
-        Args:
-            dataset: Full dataset items
-
-        Returns:
-            List of items that need processing
-        """
-        items_to_process = []
-
-        for item in dataset:
-            image_id = item['image_id']
-            image_name = Path(item['image_path']).stem
-
-            # Check Round 1 cache
-            image_cache_dir = self.dirs['original_cache'] / image_name
-            round1_cache = image_cache_dir / "round1_full_img.json"
-            round1_processed = self.output_base / "intermediate" / image_name / "round1" / f"{image_name}_round1.png"
-
-            # Check if fully processed (both Round 1 and Round 2). Match both the legacy
-            # single-pass naming (round2_*.json) and the multi-iteration naming (iter*_round2_*.json).
-            round2_files = (
-                list(image_cache_dir.glob("round2_*.json"))
-                + list(image_cache_dir.glob("iter*_round2_*.json"))
-            ) if image_cache_dir.exists() else []
-            final_file = self.output_base / "intermediate" / image_name / "final" / f"{image_name}_final.png"
-
-            if round1_cache.exists() and round1_processed.exists() and round2_files and final_file.exists():
-                print(f"[Cache] {image_id} fully processed, skipping")
-                # Load results into phase_cache
-                self.phase_cache[image_id]['prediction'] = str(round2_files[0]) if round2_files else None
-                self.phase_cache[image_id]['final'] = str(final_file)
-                continue
-
-            items_to_process.append(item)
-
-        return items_to_process
 
     async def run_parallel_pipeline(self):
         """
@@ -298,9 +258,9 @@ class GeoLocationPipeline:
         print("PARALLEL PIPELINE: Complete Parallelism Mode")
         print("=" * 60)
 
-        # Initialize SDXL adapter
-        if self.sdxl_adapter is None:
-            self.sdxl_adapter = SDXLPipelineAdapter(self.config)
+        # Load Grounding DINO, SAM 2, MiDaS and SDXL.
+        if self.sdxl_pipeline is None:
+            self.sdxl_pipeline = SDXLInpaintingPipeline(self.config)
 
         # Initialize global state and queue manager
         self.global_state = GlobalState()
@@ -354,10 +314,11 @@ class GeoLocationPipeline:
         logger.info(f"[Parallel] Started {num_api_workers} API workers")
 
         # Step 3: Start segmentation worker (thread)
-        seg_thread = start_seg_worker(
+        # Daemon thread; the run ends when the driver's own loop finishes, so no join.
+        start_seg_worker(
             self.queue_manager,
             self.global_state,
-            self.sdxl_adapter.pipeline,
+            self.sdxl_pipeline,
             self.config,
             event_loop,
             self.clue_stats
@@ -440,12 +401,10 @@ class GeoLocationPipeline:
         while not self.global_state.is_all_complete():
             current_time = time.time()
 
-            # Check if SD queue should flush
-            seg_empty = self.queue_manager.seg_queue_empty()
+            # SDXL runs only after segmentation has been idle long enough.
             seg_empty_duration = self.queue_manager.get_seg_empty_duration()
 
             ready_batches = self.queue_manager.sd_queue.get_ready_batches(
-                seg_queue_empty=seg_empty,
                 seg_empty_duration=seg_empty_duration,
                 timeout=self.queue_manager.sd_flush_timeout
             )
@@ -518,7 +477,7 @@ class GeoLocationPipeline:
 
             # Run SDXL inpainting in thread pool to avoid blocking event loop
             batch_results = await asyncio.to_thread(
-                self.sdxl_adapter.pipeline.inpainter.inpaint_batch,
+                self.sdxl_pipeline.inpainter.inpaint_batch,
                 images, masks, depth_maps, prompts, neg_prompts
             )
 
@@ -540,7 +499,7 @@ class GeoLocationPipeline:
         image_name = state.image_name
 
         # Load or create intermediate image
-        intermediate_dir = self.output_base / "intermediate" / image_name / "working"
+        intermediate_dir = self.output_base / INTERMEDIATE_DIR / image_name / "working"
         intermediate_dir.mkdir(parents=True, exist_ok=True)
         intermediate_path = intermediate_dir / f"{image_name}_working.png"
 
@@ -565,12 +524,12 @@ class GeoLocationPipeline:
         state.add_mask_path(item.mask_path)
 
         # Increment finished count
-        finished = state.increment_finished_clue()
+        state.increment_finished_clue()
 
         # Check iter completion
         if state.is_complete():
             iter_idx = state.r2_iter
-            final_dir = self.output_base / "intermediate" / image_name / "final"
+            final_dir = self.output_base / INTERMEDIATE_DIR / image_name / FINAL_DIR
             final_dir.mkdir(parents=True, exist_ok=True)
 
             # Per-iter snapshot of the current working image
@@ -601,33 +560,6 @@ class GeoLocationPipeline:
                 logger.info(
                     f"[Complete] {item.image_id}: finalized after iter {iter_idx}, pushed final_eval"
                 )
-
-    def _upscale_region_proportional(
-        self,
-        region: np.ndarray,
-        upscale_target: int
-    ) -> np.ndarray:
-        """
-        Upscale region proportionally based on aspect ratio.
-
-        The longer dimension scales to upscale_target, shorter scales proportionally.
-        Example: 768x768 -> 2048x2048, 768x512 -> 2048x1365
-
-        Args:
-            region: Region image array (H, W, C)
-            upscale_target: Target size for longer dimension
-
-        Returns:
-            Upscaled region array
-        """
-        h, w = region.shape[:2]
-        if w >= h:
-            new_w = upscale_target
-            new_h = int(h * (upscale_target / w))
-        else:
-            new_h = upscale_target
-            new_w = int(w * (upscale_target / h))
-        return cv2.resize(region, (new_w, new_h), interpolation=cv2.INTER_LANCZOS4)
 
     def _composite_single_result(self, working_image, inpainted_crop, item):
         """Composite single inpainted crop onto working image."""
@@ -1085,7 +1017,3 @@ class GeoLocationPipeline:
         print("PIPELINE COMPLETED")
         print("=" * 60)
 
-
-if __name__ == "__main__":
-    print("This module is not meant to be run directly.")
-    print("Use pipeline.py to run the full pipeline.")

@@ -5,8 +5,8 @@ The four stages of the paper map onto the package like this:
 | Stage | Module | Entry point |
 |---|---|---|
 | I — reason | `reason/oracle.py` | `GeoLocationAPI.get_geolocation_prediction` |
-| II — ground | `ground/segmenter.py` | `GroundedSAM2Segmenter.segment_by_description` |
-| III — edit | `edit/{pipeline,inpaint,control,adapter}.py` | `ControlNetInpainter.inpaint_batch` |
+| II — ground | `ground/segmenter.py` | `GroundedSAM2Segmenter.segment` |
+| III — edit | `edit/{pipeline,inpaint,control}.py` | `ControlNetInpainter.inpaint_batch` |
 | IV — verify | `loop/{driver,api_workers,seg_worker}.py` | the gate and final-eval tasks |
 
 There is no `verify/` module. Verification is not a separate stage in the code — it is the same
@@ -65,7 +65,7 @@ each class has its own queue, since a diffusion batch requires identical dimensi
 
 Round 2 has two modes. With `fine_grained: false` the whole image is re-read each iteration. With
 `fine_grained: true` the frame is divided into overlapping crops by
-`edit/adapter.py:_calculate_sliding_window_regions`, each is upscaled and re-read separately, and
+`loop/seg_worker.py:_calculate_sliding_window_regions`, each is upscaled and re-read separately, and
 the cues found in each are grounded in that crop's coordinate frame.
 
 ## What makes it generic

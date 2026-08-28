@@ -54,8 +54,9 @@ class GroundedSAM2Segmenter:
             print("Using float16 precision for Grounding DINO compatibility")
             torch.autocast(device_type="cuda", dtype=torch.float16).__enter__()
 
-            # Enable TF32 for performance on Ampere+ GPUs
-            if torch.cuda.is_available() and torch.cuda.get_device_properties(0).major >= 8:
+            # TF32 needs an Ampere-or-newer GPU; on anything older the flags are ignored.
+            if (config['performance']['use_tf32']
+                    and torch.cuda.get_device_properties(0).major >= 8):
                 torch.backends.cuda.matmul.allow_tf32 = True
                 torch.backends.cudnn.allow_tf32 = True
                 print("TF32 enabled for matmul and cuDNN")
@@ -300,14 +301,12 @@ class GroundedSAM2Segmenter:
 
         # Detect objects with Grounding DINO
         self.logger.info(f"Detecting objects: {text}")
-        dino_start = time.time()
         boxes, confidences, token_logits, labels = self.predict_with_token_scores(
             image=image,
             caption=text,
             box_threshold=self.config['detection']['box_threshold'],
             text_threshold=self.config['detection']['text_threshold']
         )
-        dino_time = time.time() - dino_start
 
         # A clue whose object cannot be detected above threshold is left unmasked; the caller
         # handles the empty result with a len(masks) == 0 check.
@@ -334,7 +333,6 @@ class GroundedSAM2Segmenter:
         input_boxes = box_convert(boxes=boxes, in_fmt="cxcywh", out_fmt="xyxy").numpy()
 
         # Segment with SAM2
-        sam2_start = time.time()
         self.sam2_predictor.set_image(image_source)
         masks, scores, logits = self.sam2_predictor.predict(
             point_coords=None,
@@ -342,7 +340,6 @@ class GroundedSAM2Segmenter:
             box=input_boxes,
             multimask_output=False,
         )
-        sam2_time = time.time() - sam2_start
 
         # Convert to (n, H, W) format
         if masks.ndim == 4:
@@ -353,106 +350,6 @@ class GroundedSAM2Segmenter:
             self.logger.info(f"✓ Segmented {len(masks)} object(s)")
 
         return image_source, masks, input_boxes, labels
-
-    def segment_batch(
-        self,
-        image_path: str,
-        object_descriptions: List[str],
-        target_concepts: List[str] = None
-    ) -> List[Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]]:
-        """
-        Batch segment multiple objects in the same image with SAM2 embedding caching.
-
-        Optimizes segmentation by:
-        1. Loading image ONCE
-        2. Computing SAM2 embeddings ONCE (set_image)
-        3. Running Grounding DINO for each object_description (sequential)
-        4. Running SAM2 predict() for each detection (reusing embeddings)
-
-        Args:
-            image_path: Path to input image
-            object_descriptions: List of object descriptions to segment
-            target_concepts: List of target concepts for detection. Optional.
-
-        Returns:
-            List of (image_source, masks, boxes, labels) tuples
-        """
-        # Load image ONCE
-        image_source, image = load_image(image_path)
-
-        # Handle None target_concepts
-        if target_concepts is None:
-            target_concepts = [None] * len(object_descriptions)
-
-        # Set SAM2 image ONCE (compute embeddings)
-        print(f"[BATCH] Computing SAM2 embeddings for {len(object_descriptions)} clues...")
-        sam2_setup_start = time.time()
-        self.sam2_predictor.set_image(image_source)
-        sam2_setup_time = time.time() - sam2_setup_start
-        print(f"  ✓ SAM2 embeddings computed ({sam2_setup_time*1000:.1f}ms)")
-
-        results = []
-        h, w, _ = image_source.shape
-
-        for idx, object_description in enumerate(object_descriptions):
-            print(f"[BATCH] Processing clue {idx + 1}/{len(object_descriptions)}: {object_description[:50]}...")
-
-            # Ensure text prompt ends with a dot
-            text = object_description.lower()
-            if not text.endswith('.'):
-                text += '.'
-
-            # Detect objects with Grounding DINO (per-caption)
-            dino_start = time.time()
-            boxes, confidences, token_logits, labels = self.predict_with_token_scores(
-                image=image,
-                caption=text,
-                box_threshold=self.config['detection']['box_threshold'],
-                text_threshold=self.config['detection']['text_threshold']
-            )
-            dino_time = time.time() - dino_start
-
-            # A clue whose object cannot be detected above threshold is left unmasked; the empty
-            # entry keeps this result list index-aligned with the input clue list.
-            if len(boxes) == 0:
-                print(f"  ⚠️  No boxes above threshold ({self.config['detection']['box_threshold']}) - skipping this feature")
-                results.append((image_source, np.array([]), np.array([]), []))
-                continue
-            else:
-                # Apply target concept filtering if provided
-                if target_concepts[idx]:
-                    boxes, token_logits, selected_indices = self.select_boxes_by_target_concept(
-                        boxes=boxes,
-                        token_logits=token_logits,
-                        target_concept=target_concepts[idx],
-                        full_caption=text,
-                        text_threshold=self.config['detection']['text_threshold']
-                    )
-                    labels = [labels[i] for i in selected_indices]
-                    self.logger.debug(f"After target filtering: {len(boxes)} box(es)")
-
-            # Convert boxes for SAM2
-            boxes = boxes * torch.Tensor([w, h, w, h])
-            input_boxes = box_convert(boxes=boxes, in_fmt="cxcywh", out_fmt="xyxy").numpy()
-
-            # Segment with SAM2 (reusing embeddings from set_image)
-            sam2_start = time.time()
-            masks, scores, logits = self.sam2_predictor.predict(
-                point_coords=None,
-                point_labels=None,
-                box=input_boxes,
-                multimask_output=False,
-            )
-            sam2_time = time.time() - sam2_start
-
-            # Convert to (n, H, W) format
-            if masks.ndim == 4:
-                masks = masks.squeeze(1)
-
-            results.append((image_source, masks, input_boxes, labels))
-
-        print(f"[BATCH] ✓ Batch segmentation complete ({len(object_descriptions)} clues)")
-        return results
 
     @staticmethod
     def combine_masks(masks: np.ndarray) -> np.ndarray:

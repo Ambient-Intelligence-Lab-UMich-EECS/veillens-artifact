@@ -27,11 +27,9 @@ from dotenv import load_dotenv
 
 from veillens.vlm.base import VLMError
 
-# Per-call failures go to the logger, not to print. They used to go to stdout while every other
-# component logged to stderr, so under Slurm the diagnosis for a failed run landed in the .out file
-# and the timeline it belonged to was in .err -- which is exactly how a token-ceiling truncation
-# spent a run looking like an unexplained hang. The __main__ CLI report at the bottom of this file
-# still prints, because there it is the output rather than a diagnostic.
+# Per-call failures go to the logger, not to print, so that a truncated response or a rate-limit
+# retry lands in the same stream as the rest of the run's timeline rather than interleaved into
+# whatever the caller happens to be printing.
 logger = logging.getLogger(__name__)
 
 
@@ -223,18 +221,3 @@ class GeoLocationAPI:
                 # Any other unexpected exception
                 logger.error(f"Unexpected error for {image_path}: {e}")
                 return None
-
-    async def batch_predict(self, image_paths: list) -> Dict[str, Optional[Dict]]:
-        """
-        Process multiple images concurrently
-
-        Returns:
-            Dict mapping image paths to prediction results
-        """
-        tasks = [self.get_geolocation_prediction(path) for path in image_paths]
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-
-        return {
-            path: result if not isinstance(result, Exception) else None
-            for path, result in zip(image_paths, results)
-        }

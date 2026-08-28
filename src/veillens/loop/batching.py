@@ -351,56 +351,29 @@ class GlobalBatchQueueManager(BatchQueueManager):
 
         self.queues[size_class]["items"].append(batch_item)
 
-    def mark_image_segmented(self, image_id: str):
-        """
-        Mark that an image has completed segmentation.
-
-        This is used for the hybrid flush strategy to determine when all
-        images have been processed and remaining clues should be flushed.
-
-        Args:
-            image_id: Image that completed segmentation
-        """
-        self.images_segmented += 1
-
-    def should_flush(self, queue_name: str, seg_queue_empty: bool = False,
+    def should_flush(self, queue_name: str,
                      seg_empty_duration: float = 0.0, timeout: float = 5.0) -> bool:
         """
-        Determine if a queue should be flushed for parallel pipeline.
+        Decide whether a size-class queue should be handed to SDXL.
 
-        CRITICAL RULE: SD only flushes when seg_queue is empty (or has been empty
-        for timeout). This prevents GPU contention between segmentation and diffusion.
-
-        Flushes when ANY condition is met:
-        - Batch size reached AND seg_queue is empty (efficient batching)
-        - Seg queue has been empty for >= timeout (avoid deadlock)
+        The single rule is GPU exclusivity: diffusion starts only once the segmentation
+        queue has been idle for `timeout` seconds, so SAM 2 and SDXL never contend for
+        the device. A full batch does NOT trigger a flush on its own -- batching is an
+        efficiency, exclusivity is a correctness constraint.
 
         Args:
             queue_name: Name of the queue to check (e.g., "small", "large", "full")
-            seg_queue_empty: Whether the segmentation queue is currently empty
             seg_empty_duration: How long (seconds) the seg queue has been empty
-            timeout: Timeout threshold in seconds (from config's sd_flush_timeout)
+            timeout: Seconds of segmentation idleness required before flushing
 
         Returns:
             True if the queue should be flushed, False otherwise
         """
-        queue_info = self.queues[queue_name]
-        num_items = len(queue_info["items"])
-        batch_size = queue_info["batch_size"]
-
-        # No items, nothing to flush
-        if num_items == 0:
+        if not self.queues[queue_name]["items"]:
             return False
+        return seg_empty_duration >= timeout
 
-        # Condition 1: Batch size reached AND seg_queue is empty
-        # Wait for seg_queue to be empty to avoid GPU contention
-        if seg_empty_duration >= timeout:
-            return True
-
-        return False
-
-    def get_ready_batches(self, seg_queue_empty: bool = False,
-                          seg_empty_duration: float = 0.0,
+    def get_ready_batches(self, seg_empty_duration: float = 0.0,
                           timeout: float = 5.0) -> List[Tuple[str, List[BatchItemWithImageId]]]:
         """
         Get batches that are ready to flush based on the flush strategy.
@@ -409,9 +382,8 @@ class GlobalBatchQueueManager(BatchQueueManager):
         according to the configured flush strategy.
 
         Args:
-            seg_queue_empty: Whether the segmentation queue is currently empty
             seg_empty_duration: How long (seconds) the seg queue has been empty
-            timeout: Timeout threshold in seconds (from config's sd_flush_timeout)
+            timeout: Seconds of segmentation idleness required before flushing
 
         Returns:
             List of (size_class, batch_items) tuples for batches ready to process
@@ -422,7 +394,7 @@ class GlobalBatchQueueManager(BatchQueueManager):
             items = queue_info["items"]
             batch_size = queue_info["batch_size"]
 
-            if not self.should_flush(size_class, seg_queue_empty, seg_empty_duration, timeout):
+            if not self.should_flush(size_class, seg_empty_duration, timeout):
                 continue
 
             # Pop a batch from the queue

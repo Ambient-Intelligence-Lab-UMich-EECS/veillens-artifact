@@ -313,11 +313,6 @@ class GlobalState:
         with self._lock:
             return (self.num_complete, self.total_images)
 
-    def get_all_image_ids(self) -> List[str]:
-        """Get list of all tracked image IDs."""
-        with self._lock:
-            return list(self.images.keys())
-
     def get_pending_images(self) -> List[str]:
         """Get list of image IDs that are not yet complete."""
         with self._lock:

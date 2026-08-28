@@ -88,7 +88,7 @@ class QueueManager:
         api_queue: Async queue for API tasks
         seg_queue: Thread-safe queue for segmentation tasks
         sd_queue: Reference to GlobalBatchQueueManager (set externally)
-        sd_flush_timeout: Seconds to wait before flushing SD queue when seg empty
+        sd_flush_timeout: Seconds of segmentation idleness required before SDXL may run
     """
 
     def __init__(self, config: Dict[str, Any]):
@@ -173,10 +173,6 @@ class QueueManager:
         """Mark current API task as complete."""
         self.api_queue.task_done()
 
-    def api_queue_empty(self) -> bool:
-        """Check if API queue is empty."""
-        return self.api_queue.empty()
-
     def api_queue_size(self) -> int:
         """Get number of tasks in API queue."""
         return self.api_queue.qsize()
@@ -188,12 +184,6 @@ class QueueManager:
     def put_seg_task(self, task: SegTask) -> None:
         """Add task to segmentation queue (thread-safe)."""
         self.seg_queue.put(task)
-
-    async def put_seg_task_async(self, task: SegTask) -> None:
-        """Add task to segmentation queue from async context."""
-        # Use run_in_executor for thread-safe access from async
-        loop = asyncio.get_event_loop()
-        await loop.run_in_executor(None, self.seg_queue.put, task)
 
     def get_seg_task(self, timeout: Optional[float] = None) -> Optional[SegTask]:
         """
@@ -292,16 +282,6 @@ class QueueManager:
 
         return status
 
-    def log_status(self, logger) -> None:
-        """Log current queue status."""
-        status = self.get_status()
-        logger.info(
-            f"Queue Status - API: {status['api_queue_size']}, "
-            f"Seg: {status['seg_queue_size']}, "
-            f"SD: {status.get('sd_queue_total', 'N/A')}, "
-            f"Seg empty: {status['seg_empty_duration']:.1f}s"
-        )
-
     # =========================================================================
     # Shutdown
     # =========================================================================
@@ -313,26 +293,6 @@ class QueueManager:
     def is_shutdown(self) -> bool:
         """Check if shutdown has been requested."""
         return self._shutdown
-
-    async def wait_for_api_queue_empty(self) -> None:
-        """Wait for API queue to be empty and all tasks processed."""
-        await self.api_queue.join()
-
-    def wait_for_seg_queue_empty(self, timeout: Optional[float] = None) -> bool:
-        """
-        Wait for segmentation queue to be empty.
-
-        Args:
-            timeout: Max seconds to wait
-
-        Returns:
-            True if queue emptied, False if timeout
-        """
-        try:
-            self.seg_queue.join()
-            return True
-        except Exception:
-            return False
 
 
 # Convenience functions for creating tasks

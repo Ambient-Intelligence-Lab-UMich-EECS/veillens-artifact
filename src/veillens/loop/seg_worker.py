@@ -35,6 +35,7 @@ from veillens.loop.queues import (
 )
 from veillens.loop.state import ClueStatsTracker, GlobalState, ImageState
 from veillens.privacy.spec import get_spec
+from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, SEGMENTATION_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -656,7 +657,7 @@ class SegmentationQueueHandler:
         GATE_EVAL(iter+1) (advance) or FINAL_EVAL (terminate). Called from the seg
         worker thread; uses run_coroutine_threadsafe to enqueue async API tasks.
         """
-        final_dir = self.output_base / "intermediate" / state.image_name / "final"
+        final_dir = self.output_base / INTERMEDIATE_DIR / state.image_name / FINAL_DIR
         final_dir.mkdir(parents=True, exist_ok=True)
         iter_snapshot = final_dir / f"iter{iter_idx}_{state.image_name}_final.png"
 
@@ -810,7 +811,7 @@ class SegmentationQueueHandler:
             sub = "full_img"
         else:
             sub = f"iter{iter_idx}_{region_safe}"
-        seg_dir = self.output_base / "intermediate" / image_name / "segmentation" / sub
+        seg_dir = self.output_base / INTERMEDIATE_DIR / image_name / SEGMENTATION_DIR / sub
         seg_dir.mkdir(parents=True, exist_ok=True)
 
         mask_path = seg_dir / f"{sanitized_desc}_mask.png"
@@ -852,7 +853,7 @@ class SegmentationQueueHandler:
         the same choice when it starts a working image from scratch.
         """
         working = (
-            self.output_base / "intermediate" / state.image_name
+            self.output_base / INTERMEDIATE_DIR / state.image_name
             / "working" / f"{state.image_name}_working.png"
         )
         return str(working) if working.exists() else state.image_path
@@ -868,7 +869,7 @@ class SegmentationQueueHandler:
         Returns:
             Path to saved image
         """
-        r1_dir = self.output_base / "intermediate" / image_name / "round1"
+        r1_dir = self.output_base / INTERMEDIATE_DIR / image_name / "round1"
         r1_dir.mkdir(parents=True, exist_ok=True)
 
         r1_path = r1_dir / f"{image_name}_round1.png"
@@ -1017,7 +1018,7 @@ class SegmentationQueueHandler:
         regions = self._calculate_sliding_window_regions(w, h, crop_w, crop_h, overlap)
 
         # Create crop directory (iter-specific)
-        crop_dir = self.output_base / "intermediate" / image_name / "r1_crops" / f"iter{iter_idx}"
+        crop_dir = self.output_base / INTERMEDIATE_DIR / image_name / "r1_crops" / f"iter{iter_idx}"
         crop_dir.mkdir(parents=True, exist_ok=True)
 
         crops = {}

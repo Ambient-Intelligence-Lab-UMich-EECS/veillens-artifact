@@ -14,7 +14,7 @@ import asyncio
 import json
 import logging
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict
 
 import cv2
 
@@ -27,6 +27,7 @@ from veillens.loop.queues import (
 )
 from veillens.loop.state import GlobalState, ImageState
 from veillens.privacy.spec import get_spec
+from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR
 
 logger = logging.getLogger(__name__)
 
@@ -311,42 +312,6 @@ class APIQueueHandler:
         self.qm.put_seg_task(seg_task)
         logger.debug(f"[R2 Seg Dispatch iter{iter_idx}] Pushed seg task for {state.image_id} {region}")
 
-    async def _dispatch_r2_seg_tasks(self, state: ImageState):
-        """
-        DEPRECATED: Legacy method that dispatched all regions at once.
-
-        Now using _dispatch_r2_seg_task_for_region() to dispatch immediately
-        after each region's API response.
-
-        Kept for reference but no longer called.
-        """
-        # Iterate over actual r2_pred_paths instead of hardcoded region list
-        for pred_path in state.r2_pred_paths:
-            if "FAILED" in pred_path:
-                continue
-
-            # Extract region name from path (e.g., "round2_0.json" -> "0")
-            import re
-            match = re.search(r'round2_(\d+)\.json', pred_path)
-            if not match:
-                logger.warning(f"[R2 Seg Dispatch] Could not parse region from path: {pred_path}")
-                continue
-
-            region = match.group(1)
-
-            # Get crop path (R1 final image crop for this region)
-            crop_path = self._get_r1_crop_path(state.image_id, state.image_name, region)
-
-            # Push seg task
-            seg_task = create_seg_task(
-                image_id=state.image_id,
-                region=region,
-                image_path=crop_path,
-                pred_path=pred_path
-            )
-            self.qm.put_seg_task(seg_task)
-            logger.debug(f"[R2 Seg Dispatch] Pushed seg task for {state.image_id} {region}")
-
     def _get_r1_crop_path(self, image_id: str, image_name: str, region: str, iter_idx: int = 1) -> str:
         """
         Get path to iter-specific regional crop for R2 evaluation.
@@ -363,7 +328,7 @@ class APIQueueHandler:
         Returns:
             Path to regional crop image
         """
-        crop_dir = self.output_base / "intermediate" / image_name / "r1_crops" / f"iter{iter_idx}"
+        crop_dir = self.output_base / INTERMEDIATE_DIR / image_name / "r1_crops" / f"iter{iter_idx}"
         return str(crop_dir / f"{image_name}_{region}.png")
 
     # =========================================================================
@@ -457,7 +422,7 @@ class APIQueueHandler:
                 # Prefer the working image (post-SD result) when it exists; only
                 # fall back to task.image_path (the iter source) if no SD has run.
                 working_path = (
-                    self.output_base / "intermediate" / state.image_name
+                    self.output_base / INTERMEDIATE_DIR / state.image_name
                     / "working" / f"{state.image_name}_working.png"
                 )
                 source = str(working_path) if working_path.exists() else task.image_path
@@ -511,7 +476,7 @@ class APIQueueHandler:
         in-flight SD work pending.
         """
 
-        final_dir = self.output_base / "intermediate" / state.image_name / "final"
+        final_dir = self.output_base / INTERMEDIATE_DIR / state.image_name / FINAL_DIR
         final_dir.mkdir(parents=True, exist_ok=True)
         final_path = final_dir / f"{state.image_name}_final.png"
 
@@ -586,7 +551,7 @@ class APIQueueHandler:
         state.final_eval = str(cache_path)
 
         # Increment completion counter
-        num_complete = self.gs.increment_complete()
+        self.gs.increment_complete()
         completed, total = self.gs.get_progress()
 
         logger.info(f"[Final Eval] {task.image_id}: Complete ({completed}/{total})")
@@ -623,32 +588,3 @@ class APIQueueHandler:
 
         return cache_path
 
-
-async def create_api_workers(
-    queue_manager: QueueManager,
-    global_state: GlobalState,
-    geo_api,
-    config: Dict[str, Any],
-    num_workers: int = 3
-) -> List[asyncio.Task]:
-    """
-    Create and start API worker tasks.
-
-    Args:
-        queue_manager: QueueManager instance
-        global_state: GlobalState instance
-        geo_api: GeoLocationAPI instance
-        config: Pipeline configuration
-        num_workers: Number of concurrent workers
-
-    Returns:
-        List of asyncio.Task objects for the workers
-    """
-    handler = APIQueueHandler(queue_manager, global_state, geo_api, config)
-
-    tasks = []
-    for i in range(num_workers):
-        task = asyncio.create_task(handler.run(worker_id=i))
-        tasks.append(task)
-
-    return tasks
