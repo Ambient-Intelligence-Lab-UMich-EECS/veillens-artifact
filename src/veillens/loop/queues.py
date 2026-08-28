@@ -204,10 +204,6 @@ class QueueManager:
         """Mark current segmentation task as complete."""
         self.seg_queue.task_done()
 
-    def seg_queue_empty(self) -> bool:
-        """Check if segmentation queue is empty."""
-        return self.seg_queue.empty()
-
     def seg_queue_size(self) -> int:
         """Get number of tasks in segmentation queue."""
         return self.seg_queue.qsize()

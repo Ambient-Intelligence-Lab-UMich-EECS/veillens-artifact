@@ -374,3 +374,33 @@ class ClueStatsTracker:
     def snapshot(self) -> Tuple[Dict[Tuple[str, str], int], Dict[Tuple[str, str], int]]:
         with self._lock:
             return dict(self.selected), dict(self.skipped)
+
+    def assert_something_was_grounded(self) -> None:
+        """
+        Raise unless at least one selected clue was actually localised.
+
+        If the oracle proposed clues and not one of them could be grounded, no image was edited,
+        and the "protected" outputs are byte-for-byte the originals. The evaluation still runs
+        and still produces a table -- the attacker simply re-reads the same photographs -- so a
+        broken install is indistinguishable from a weak result. That is what an unbuilt
+        GroundingDINO extension does: every detection raises `name '_C' is not defined`, the loop
+        logs "no ground" per clue, and the run completes with exit 0.
+
+        Zero clues selected is a legitimate outcome (the oracle found nothing to remove). Zero
+        grounded out of many selected is not.
+        """
+        if not self.has_data():
+            return
+        selected, skipped = self.snapshot()
+        n_selected = sum(selected.values())
+        n_grounded = n_selected - sum(skipped.values())
+        if n_selected == 0 or n_grounded > 0:
+            return
+        raise RuntimeError(
+            f"grounding produced nothing: {n_selected} clues were selected and 0 were localised, "
+            "so no image was edited and the evaluation compares the originals with themselves.\n"
+            "The usual cause is GroundingDINO's compiled extension being absent, which makes "
+            "every detection raise `name '_C' is not defined`; the per-clue errors are in the log "
+            "at ERROR level. Run `veillens-protect --config <config> --dry-run`, which checks "
+            "for it."
+        )

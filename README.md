@@ -32,6 +32,18 @@ pip install -e .            # core: config validation + scoring, no GPU needed
 pip install -e '.[all]'     # everything: grounding, editing
 ```
 
+To run the loop you also need SAM 2 and GroundingDINO, which are not on PyPI and come from the
+submodule. **Both build CUDA extensions, and GroundingDINO's is not optional:** without it every
+detection fails at inference time, so the loop grounds nothing, edits nothing, and still finishes.
+
+```bash
+pip install --no-build-isolation -e third_party/Grounded-SAM-2
+pip install --no-build-isolation -e third_party/Grounded-SAM-2/grounding_dino
+```
+
+This needs `nvcc` and `CUDA_HOME` set. `--dry-run` (below) checks the extension is built, so run
+it before anything long.
+
 Copy `.env.example` to `.env` and set `OPENAI_API_KEY` if you intend to run the loop.
 
 ## Try it with no API key and no GPU

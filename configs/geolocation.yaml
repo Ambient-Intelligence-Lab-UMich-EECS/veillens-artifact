@@ -60,7 +60,6 @@ generation:
   # Prepended to every inpainting prompt; it sets the visual style of edited regions and
   # therefore affects the perceptual-quality metrics.
   positive_prompt_prefix: "Mid century artstyle, cartoonistic artstyle, 1960s cartoon style"
-  default_negative_prompt: "blurry, ugly, distorted, low quality, bad anatomy, watermark, text, duplicate, mutilated, extra fingers, poorly drawn hands, poorly drawn face, deformed, bad proportions"
 
 performance:
   use_fp16: true

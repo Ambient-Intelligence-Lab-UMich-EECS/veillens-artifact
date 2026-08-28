@@ -104,4 +104,7 @@ any dataset.
 veillens-protect --config configs/geolocation.yaml --dry-run
 ```
 
-lists every missing file, with the command to fix it. Run it before starting a long job.
+lists every missing file — and every unbuilt CUDA extension — with the command to fix it. Run it
+before starting a long job: the GroundingDINO extension in particular fails at inference rather
+than at import, so without this check a run gets all the way to a score table before the problem
+shows.

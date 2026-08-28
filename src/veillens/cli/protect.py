@@ -2,8 +2,8 @@
 """
 Run the VeilLens protection loop over a dataset.
 
-    veillens-protect --config configs/geolocation/base.yaml
-    veillens-protect --config configs/geolocation/base.yaml --dry-run
+    veillens-protect --config configs/geolocation.yaml
+    veillens-protect --config configs/geolocation.yaml --dry-run
 
 ``--dry-run`` resolves and validates everything the run would need — config schema, prompt and
 schema files, model checkpoints, the dataset manifest — and then exits without making an API
@@ -32,10 +32,10 @@ def _build_parser() -> argparse.ArgumentParser:
         epilog="""
 examples:
   # check an install without spending anything
-  veillens-protect --config configs/geolocation/base.yaml --dry-run
+  veillens-protect --config configs/geolocation.yaml --dry-run
 
   # protect the compositional-privacy set
-  veillens-protect --config configs/compositional/base.yaml
+  veillens-protect --config configs/compositional.yaml
 
 the loop, per image:
   reason    a VLM oracle lists the cues that leak the target attribute, and why
@@ -81,6 +81,22 @@ def _check_referenced_paths(config: dict) -> list[str]:
             f"missing grounded_sam2_root: {root}\n"
             "      git submodule update --init --recursive third_party/Grounded-SAM-2"
         )
+    elif root:
+        # GroundingDINO's deformable-attention kernel is a compiled extension, not Python. A
+        # checkout without it imports fine and loads weights fine, then raises
+        # `name '_C' is not defined` on the first detection -- which the loop catches per cue and
+        # logs as "no ground". A whole run then completes, reports success, and writes a score
+        # table computed from images nothing ever edited. Check for the built object here, where
+        # it costs nothing, rather than discovering it an hour and several hundred API calls in.
+        gdino = Path(root) / "grounding_dino"
+        if not list((gdino / "groundingdino").glob("_C*.so")):
+            problems.append(
+                "GroundingDINO CUDA extension is not built (no _C*.so in\n"
+                f"      {gdino / 'groundingdino'}).\n"
+                "      Detection silently returns nothing without it. Build it with:\n"
+                f"      pip install --no-build-isolation -e {gdino}\n"
+                "      (needs nvcc and CUDA_HOME; see third_party/Grounded-SAM-2/INSTALL.md)"
+            )
     manifest = Path(config["dataset"]["dataset_json_file"])
     if not manifest.exists():
         problems.append(f"missing dataset manifest: {manifest}  (see docs/DATA.md)")
@@ -164,6 +180,11 @@ def main(argv: list[str] | None = None) -> int:
     except KeyboardInterrupt:
         print("\ninterrupted", file=sys.stderr)
         return 130
+    except RuntimeError as exc:
+        # The loop raises this when a run finished but produced nothing usable -- a result that
+        # must not be reported as success just because every stage returned.
+        print(f"\nrun failed: {exc}", file=sys.stderr)
+        return 1
 
     elapsed = time.time() - started
     hours, rem = divmod(int(elapsed), 3600)

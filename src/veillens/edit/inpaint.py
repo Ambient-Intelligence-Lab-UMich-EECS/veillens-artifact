@@ -76,95 +76,14 @@ class ControlNetInpainter:
 
         print("      ✓ All optimizations applied")
 
-    def inpaint(
-        self,
-        image: Image.Image,
-        mask: Image.Image,
-        depth_map: Image.Image,
-        prompt: str,
-        negative_prompt: str = "blurry, ugly, distorted, low quality"
-    ) -> Image.Image:
-        """
-        Perform inpainting with ControlNet conditioning.
-
-        Args:
-            image: Original image
-            mask: Inpainting mask (white = inpaint area)
-            depth_map: Depth map
-            prompt: Text prompt for generation
-            negative_prompt: Negative prompt
-
-        Returns:
-            Inpainted image
-        """
-        gen_config = self.config['generation']
-
-        # Apply the style prefix that every generation shares
-        positive_prefix = gen_config.get('positive_prompt_prefix', '')
-        if positive_prefix:
-            prompt = f"{positive_prefix}, {prompt}"
-
-        # Prepare generator
-        generator = None
-        if gen_config['generator_seed'] is not None:
-            generator = torch.Generator(device=self.device).manual_seed(gen_config['generator_seed'])
-
-        # Get original image dimensions to preserve aspect ratio
-        orig_width, orig_height = image.size
-
-        # Round dimensions to a multiple of 8 for optimal SDXL performance
-        target_width = ((orig_width + _ROUND_TO - 1) // _ROUND_TO) * _ROUND_TO
-        target_height = ((orig_height + _ROUND_TO - 1) // _ROUND_TO) * _ROUND_TO
-
-        print(f"Original image size: {orig_width}x{orig_height}")
-        if target_width != orig_width or target_height != orig_height:
-            print(f"Rounded to: {target_width}x{target_height} (multiple of {_ROUND_TO})")
-        print(f"Generating inpainted image with prompt: {prompt}")
-        print(f"Steps: {gen_config['num_inference_steps']}, Guidance Scale: {gen_config['guidance_scale']}")
-
-        # Create progress bar callback (disabled when logging to file)
-        progress_bar = tqdm(total=gen_config['num_inference_steps'], desc="Generating", unit="step", disable=not sys.stdout.isatty())
-
-        def callback_on_step_end(pipe, step_index, timestep, callback_kwargs):
-            progress_bar.update(1)
-            return callback_kwargs
-
-        control_image = depth_map
-        conditioning_scale = gen_config['controlnet_conditioning_scale']
-
-        # Generate with dimensions that preserve aspect ratio
-        result = self.pipe(
-            prompt=prompt,
-            negative_prompt=negative_prompt,
-            image=image,
-            mask_image=mask,
-            control_image=control_image,
-            height=target_height,
-            width=target_width,
-            num_inference_steps=gen_config['num_inference_steps'],
-            guidance_scale=gen_config['guidance_scale'],
-            controlnet_conditioning_scale=conditioning_scale,
-            num_images_per_prompt=1,
-            strength=gen_config['strength'],
-            generator=generator,
-            callback_on_step_end=callback_on_step_end,
-        )
-
-        progress_bar.close()
-        print("✓ Generation complete")
-
-        return result.images[0]
-
     def _to_pil_rgb(self, img):
         """Convert numpy array or PIL to RGB PIL Image."""
-        from PIL import Image
         if isinstance(img, np.ndarray):
             return Image.fromarray(img).convert('RGB')
         return img.convert('RGB') if img.mode != 'RGB' else img
 
     def _to_pil_l(self, img):
         """Convert numpy array or PIL to grayscale PIL Image."""
-        from PIL import Image
         if isinstance(img, np.ndarray):
             return Image.fromarray(img).convert('L')
         return img.convert('L') if img.mode != 'L' else img

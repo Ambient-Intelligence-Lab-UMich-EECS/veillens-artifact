@@ -23,9 +23,16 @@ veillens-protect --config configs/geolocation.yaml --dry-run
 ```
 
 Resolves and checks everything the run would need — config sections, prompt and schema files,
-model checkpoints, the Grounded-SAM-2 submodule, the dataset manifest — then exits without making
-an API call or touching a GPU. It exits non-zero and lists what is missing, with the command to
-fix each one.
+model checkpoints, the Grounded-SAM-2 submodule and its compiled GroundingDINO extension, the
+dataset manifest — then exits without making an API call or touching a GPU. It exits non-zero and
+lists what is missing, with the command to fix each one.
+
+The extension check is there because its absence is not a loud failure. A checkout without the
+built `_C` object imports cleanly and loads weights cleanly, then raises on the first detection.
+The loop catches that per clue, records "no ground", and runs to completion — reporting success
+and a full score table computed by re-reading images nothing ever edited. The loop now refuses to
+finish that way (it raises if clues were selected and none were grounded), but the dry run is what
+catches it before you have spent an hour and a few hundred API calls.
 
 ## `veillens-protect` — run the loop
 
@@ -33,7 +40,8 @@ fix each one.
 veillens-protect --config configs/geolocation.yaml
 ```
 
-Needs `OPENAI_API_KEY`, a CUDA GPU, the model weights, and the images. See `docs/DATA.md`.
+Needs `OPENAI_API_KEY`, a CUDA GPU, the model weights, the images, and the submodule's compiled
+extensions (see the install section of `README.md`). See `docs/DATA.md` for the data.
 
 ## The config
 

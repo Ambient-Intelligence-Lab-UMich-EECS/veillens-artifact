@@ -1013,7 +1013,9 @@ class GeoLocationPipeline:
         self._print_clue_stats()
         self._save_clue_stats()
 
+        # A run that grounded nothing edited nothing; refuse to call that success.
+        self.clue_stats.assert_something_was_grounded()
+
         print("\n" + "=" * 60)
         print("PIPELINE COMPLETED")
         print("=" * 60)
-
