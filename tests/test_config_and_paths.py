@@ -17,6 +17,11 @@ from veillens.config import load_config, substitute_paths, validate_config
 from veillens.datasets.schema import load_manifest
 
 CONFIG_FILES = sorted((paths.REPO_ROOT / "configs").rglob("*.yaml"))
+# Configs the pipeline loads and validates. `baselines.yaml` is hyperparameters for
+# `veillens-baseline` -- it has no dataset:, experiment: or output: section by design, and is
+# checked in tests/test_baselines.py instead. It stays in CONFIG_FILES for the rules that apply
+# to every YAML we ship, such as containing no machine-specific path.
+PIPELINE_CONFIGS = [p for p in CONFIG_FILES if p.name != "baselines.yaml"]
 
 
 def test_repo_root_looks_right():
@@ -45,7 +50,7 @@ def test_unknown_placeholder_is_an_error():
         substitute_paths("${paths.nope}/x", {"data": "/D"})
 
 
-@pytest.mark.parametrize("config_path", CONFIG_FILES, ids=lambda p: str(p.name))
+@pytest.mark.parametrize("config_path", PIPELINE_CONFIGS, ids=lambda p: str(p.name))
 def test_every_shipped_config_loads(config_path):
     config = load_config(config_path, check_dataset=False)
     validate_config(config, check_dataset=False)
@@ -59,7 +64,7 @@ def test_no_config_contains_a_machine_specific_path(config_path):
         assert bad not in text, f"{config_path.name} still hardcodes {bad}"
 
 
-@pytest.mark.parametrize("config_path", CONFIG_FILES, ids=lambda p: str(p.name))
+@pytest.mark.parametrize("config_path", PIPELINE_CONFIGS, ids=lambda p: str(p.name))
 def test_configs_follow_the_data_root(config_path, monkeypatch):
     """Every path a config produces must move when VEILLENS_DATA moves."""
     monkeypatch.setenv("VEILLENS_DATA", "/tmp/somewhere-else")

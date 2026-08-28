@@ -44,6 +44,8 @@ def _roots() -> Dict[str, str]:
         # already have checked out elsewhere, so VEILLENS_GSAM2 redirects it. Exposed as a
         # placeholder so a config can name it without hardcoding either location.
         "gsam2": str(paths.grounded_sam2_root()),
+        # Same story for GeoShield, which only the baselines need.
+        "geoshield": str(paths.geoshield_root()),
     }
 
 

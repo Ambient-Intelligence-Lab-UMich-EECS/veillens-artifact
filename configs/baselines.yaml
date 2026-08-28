@@ -1,0 +1,82 @@
+# VeilLens — prior-work baselines.
+#
+# Hyperparameters only. The dataset, the attacker and the output root come from the pipeline
+# config you pass alongside this one, so every baseline is measured on the same images by the same
+# attacker as VeilLens itself:
+#
+#     veillens-baseline --method rand-noise --config configs/geolocation.yaml
+#
+# Paths use ${paths.*}, resolved from VEILLENS_DATA / VEILLENS_MODELS / VEILLENS_GEOSHIELD at load
+# time. Weights: python scripts/fetch_baseline_weights.py --method all
+
+# Gaussian blur on a uniformly random subset of pixels. No weights, no GPU — the control that
+# every other method has to beat at the same pixel budget.
+rand-noise:
+  pixel_ratio: 0.1
+  blur_ksize: 51              # must be odd; an even value is rounded up
+  blur_sigma: 0               # 0 = OpenCV derives it from the kernel size
+  seed: 42                    # combined with the image id, so the scatter is per-image
+
+# EAST text detection, then Gaussian blur inside the detected boxes.
+ocr-blur:
+  east_model: "${paths.models}/east/frozen_east_text_detection.pb"
+  conf_threshold: 0.2         # EAST score threshold; low, to catch small distant signage
+  nms_threshold: 0.3
+  max_ratio: 0.4              # hard ceiling on the fraction of the frame that may be blurred
+  input_width: 1920           # EAST input is square and must be a multiple of 32
+  input_height: 1920
+  blur_ksize: 31
+  box_padding: 8              # grow each box, so glyph edges are covered too
+
+# Union-CAM-masked PGD against a Places365 scene-classifier ensemble.
+mm-pgd:
+  models:
+    - arch: resnet18
+      weight_path: "${paths.models}/places365/resnet18_places365.pth.tar"
+    - arch: resnet50
+      weight_path: "${paths.models}/places365/resnet50_places365.pth.tar"
+  # 8/255, deliberately the same L-infinity budget as geoshield: the comparison between the two
+  # is the paper's evidence that epsilon alone says almost nothing about perceptual cost.
+  epsilon: 0.03137
+  num_steps: 20
+  alpha: null                 # null = epsilon / num_steps
+  cam_percentile: 20          # keep the top 20% of Union-CAM saliency
+  cam_target_layer: layer4
+  cam_blur_sigma: 1.0         # speckle removal on each CAM before the union
+  use_amp: true
+  device: cuda
+
+# Ensemble feature-matching PGD over three CLIP surrogates (upstream: thinwayliu/Geoshield).
+geoshield:
+  backbones: ["B16", "B32", "Laion"]   # also available: L336
+  # In 0-255 units, as upstream writes them: epsilon 8 is the 8/255 bound, alpha 1 the 1/255 step.
+  epsilon: 8
+  alpha: 1.0
+  steps: 100
+  # Upstream resizes then centre-crops to a square, so a 2:1 frame would lose half its width.
+  # Frames are split into square tiles and attacked tile by tile; at 1024 a Cityscapes frame
+  # gives two 1024x1024 tiles and both transforms are the identity.
+  input_res: 1024
+  crop_scale: [0.5, 0.9]
+  use_source_crop: true
+  use_target_crop: true
+  # Upstream's geo_loss wants a caption of the scene and ships a placeholder that returns this
+  # one sentence for every image. The published comparison was run with that placeholder, so it
+  # is what is reproduced here. See docs/BASELINES.md before changing it.
+  description: "A scenic outdoor photograph."
+  seed: 2023
+  device: cuda
+
+# One gpt-image-2 edit per frame, from the round-1 reasoning prompt with its ending swapped from
+# "emit JSON" to "emit the edited image". The only baseline that makes paid API calls.
+gpt-image:
+  model: "gpt-image-2"
+  prompt: "prompts/{privacy_class}/defense_image_edit_prompt.txt"
+  size: "auto"                # matches the source aspect ratio most closely
+  quality: "high"             # low | medium | high | auto — drives cost
+  # input_fidelity: "high"    # gpt-image-1 only. gpt-image-2 rejects it with
+                              # invalid_input_fidelity_model, which the runner treats as a
+                              # refusal — so setting it fails every image, not just some.
+  max_retries: 5
+  timeout: 300                # seconds per call
+  concurrency: 4              # in-flight requests

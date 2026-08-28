@@ -81,6 +81,22 @@ experiment:
   val_dist: 5.0                                           # stop once the oracle is this far off (km)
 ```
 
+## Compare against prior work
+
+Five prior-work defenses ship alongside the loop, and run on the same images scored by the same
+attacker — which is the only way the comparison means anything:
+
+```bash
+pip install -e '.[baselines]'
+python scripts/fetch_baseline_weights.py --method all
+veillens-baseline --method all --config configs/geolocation.yaml --dry-run
+veillens-baseline --method rand-noise --config configs/geolocation.yaml
+veillens-score runs/geolocation/baselines/rand-noise
+```
+
+`rand-noise`, `ocr-blur`, `mm-pgd`, `geoshield` and `gpt-image`. Only `gpt-image` costs money;
+`rand-noise` needs no weights and no GPU. See [docs/BASELINES.md](docs/BASELINES.md).
+
 ---
 
 ## Repository layout
@@ -92,9 +108,10 @@ prompts/          the prompts and JSON schemas the oracle is given, verbatim
 manifests/        image identifiers and ground-truth labels for the evaluated sets
 examples/         per-example records from finished runs, for veillens-score
 results/          every VLM response behind a finished experiment, one file per response
+scripts/          one-off setup helpers (baseline weight download)
 tests/            offline test suite: no key, no GPU, no data
-docs/             usage, architecture, and where the data comes from
-third_party/      the Grounded-SAM-2 submodule — needs building, see Install
+docs/             usage, architecture, baselines, and where the data comes from
+third_party/      the Grounded-SAM-2 and GeoShield submodules — see Install
 ```
 
 ## Where data goes
@@ -115,6 +132,7 @@ directory.
 | [docs/USAGE.md](docs/USAGE.md) | Every entry point, every config key, reading the output tree |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How the loop and its worker queues fit together |
 | [docs/DATA.md](docs/DATA.md) | Datasets and weights: source, licence, target directory, size |
+| [docs/BASELINES.md](docs/BASELINES.md) | The five prior-work defenses: install, run, and what is faithful to upstream |
 | [THIRD_PARTY.md](THIRD_PARTY.md) | Third-party components and their licences |
 
 ## Licence

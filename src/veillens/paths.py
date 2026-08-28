@@ -14,6 +14,9 @@ sensible default inside the repo.
     VEILLENS_DATA    datasets and model weights   (default: <repo>/data)
     VEILLENS_RUNS    pipeline output              (default: <repo>/runs)
     VEILLENS_MODELS  checkpoints                  (default: $VEILLENS_DATA/models)
+
+Two third-party checkouts are found the same way: ``VEILLENS_GSAM2`` and
+``VEILLENS_GEOSHIELD`` override the submodules under ``third_party/``.
 """
 
 from __future__ import annotations
@@ -36,6 +39,8 @@ __all__ = [
     "models_root",
     "resolve",
     "bootstrap_grounded_sam2",
+    "geoshield_root",
+    "bootstrap_geoshield",
 ]
 
 
@@ -128,4 +133,41 @@ def bootstrap_grounded_sam2() -> Path:
         text = str(entry)
         if text not in sys.path:
             sys.path.insert(0, text)
+    return root
+
+
+def geoshield_root() -> Path:
+    """
+    Where the GeoShield submodule lives.
+
+    Overridable with ``VEILLENS_GEOSHIELD``, for a checkout that already exists elsewhere.
+    """
+    override = os.environ.get("VEILLENS_GEOSHIELD")
+    if override:
+        return Path(override)
+    return REPO_ROOT / "third_party" / "GeoShield"
+
+
+def bootstrap_geoshield() -> Path:
+    """
+    Put GeoShield on ``sys.path`` so its ``surrogates`` package imports.
+
+    Upstream is a script repository, not an installable package, so the only way to reach the
+    CLIP feature extractors and the ensemble loss -- which are the GeoShield baseline's actual
+    attack objective -- is to prepend its root. Idempotent.
+
+    Raises:
+        FileNotFoundError: if the submodule is missing, with the command to fix it.
+    """
+    root = geoshield_root()
+    if not (root / "surrogates").is_dir():
+        raise FileNotFoundError(
+            f"GeoShield not found at {root}.\n"
+            "Initialise the submodule:\n"
+            "    git submodule update --init third_party/GeoShield\n"
+            "or point VEILLENS_GEOSHIELD at an existing checkout."
+        )
+    text = str(root)
+    if text not in sys.path:
+        sys.path.insert(0, text)
     return root

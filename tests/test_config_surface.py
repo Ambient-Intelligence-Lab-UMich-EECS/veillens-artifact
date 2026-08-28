@@ -20,7 +20,12 @@ import yaml
 from veillens import paths
 
 SRC = paths.REPO_ROOT / "src"
-CONFIGS = sorted((paths.REPO_ROOT / "configs").glob("*.yaml"))
+# Pipeline configs only. `baselines.yaml` is a different kind of file -- its sections are method
+# names, not pipeline sections, and its keys are constructor parameters rather than quoted
+# subscripts -- so it is checked by the same two rules under the right definition of "read" in
+# tests/test_baselines.py.
+CONFIGS = sorted(p for p in (paths.REPO_ROOT / "configs").glob("*.yaml")
+                 if p.name != "baselines.yaml")
 SOURCE_TEXT = "".join(p.read_text() for p in SRC.rglob("*.py"))
 
 

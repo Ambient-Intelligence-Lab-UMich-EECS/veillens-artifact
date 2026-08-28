@@ -23,8 +23,10 @@ $VEILLENS_DATA/
 │   └── test2017/2017_*.jpg                 compositional-privacy image pool  (17 GB)
 ├── models/
 │   ├── sam2/sam2.1_hiera_large.pt          857 MB
-│   └── gdino/groundingdino_swint_ogc.pth   662 MB
-└── hf_cache/                               diffusion weights, fetched on first use
+│   ├── gdino/groundingdino_swint_ogc.pth   662 MB
+│   ├── east/frozen_east_text_detection.pb   92 MB   baselines only
+│   └── places365/resnet{18,50}_places365.pth.tar    baselines only
+└── hf_cache/                               diffusion and CLIP weights, fetched on first use
 ```
 
 ## Datasets
@@ -97,6 +99,27 @@ diffusers/controlnet-depth-sdxl-1.0-small            ~611 MB
 
 MiDaS DPT-Hybrid comes from `torch.hub` on first use. Budget roughly **8 GB** for weights before
 any dataset.
+
+### Baselines
+
+Only needed if you run `veillens-baseline`. One command fetches both, verifies them against a
+recorded SHA-256, and puts them where `configs/baselines.yaml` expects:
+
+```bash
+python scripts/fetch_baseline_weights.py --method all      # 230 MB
+python scripts/fetch_baseline_weights.py --check           # verify, download nothing
+```
+
+| Weight | Size | Used by | Source |
+|---|---|---|---|
+| `frozen_east_text_detection.pb` | 92 MB | `ocr-blur` | the frozen EAST graph OpenCV's text-detection sample points at |
+| `resnet18_places365.pth.tar` | 43 MB | `mm-pgd` | <http://places2.csail.mit.edu/models_places365/> |
+| `resnet50_places365.pth.tar` | 93 MB | `mm-pgd` | same |
+
+`geoshield` needs no download here: its three CLIP surrogates come from HuggingFace on first use
+(about **6 GB** into `$HF_HOME`, most of it LAION ViT-G/14), and its code comes from the
+`third_party/GeoShield` submodule. `gpt-image` needs only `OPENAI_API_KEY`. See
+[BASELINES.md](BASELINES.md).
 
 ## Verifying an install
 

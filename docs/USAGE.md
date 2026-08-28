@@ -1,6 +1,7 @@
 # Usage
 
-Two commands ship: `veillens-protect` runs the loop, `veillens-score` reads what a run wrote.
+Three commands ship: `veillens-protect` runs the loop, `veillens-baseline` runs a prior-work
+defense on the same images, and `veillens-score` reads what either of them wrote.
 
 ## `veillens-score` — no key, no GPU, no data
 
@@ -128,3 +129,20 @@ are reported. Keeping them apart is what makes the measurement independent of th
 
 A run is resumable: `phase_cache/` records which images finished, and re-running the same config
 skips them.
+
+## `veillens-baseline` — the same images, the same attacker, a different defense
+
+```bash
+veillens-baseline --method all --config configs/geolocation.yaml --dry-run
+veillens-baseline --method rand-noise --config configs/geolocation.yaml --limit 4
+veillens-score runs/geolocation/baselines/rand-noise
+```
+
+Five methods: `rand-noise`, `ocr-blur`, `mm-pgd`, `geoshield`, `gpt-image`, or `all`. The pipeline
+config supplies the dataset, the attacker and the output root; the method's own hyperparameters
+come from `configs/baselines.yaml`. Output lands in `<base_dir>/baselines/<method>/` and carries an
+`evaluation_results/evaluation_results.json` in the same format as above, so `veillens-score` reads
+it unchanged.
+
+Full details, including which parts of the GeoShield baseline are upstream's and which are not:
+[BASELINES.md](BASELINES.md).

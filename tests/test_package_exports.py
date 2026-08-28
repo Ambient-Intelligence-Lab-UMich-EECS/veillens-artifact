@@ -44,7 +44,9 @@ def test_there_is_something_to_check():
 def test_reexported_names_are_defined_in_their_source_module(init):
     tree = ast.parse(init.read_text())
     for node in tree.body:
-        if not isinstance(node, ast.ImportFrom) or node.module is None:
+        # `from __future__ import annotations` and anything else outside the package has no
+        # file under src/ to resolve against; only our own re-exports are the point here.
+        if not isinstance(node, ast.ImportFrom) or not (node.module or "").startswith("veillens"):
             continue
         source = _module_path(node.module)
         if not source.exists():
