@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a single person posing indoors. The person\u2019s face is largely visible despite oversized sunglasses, making biometric identification plausible. A distinctive ankle tattoo provides an additional unique identifying marker. No names, documents, or explicit location identifiers are visible. The highest-severity clue is Level 1 (face/biometrics). Combined with the tattoo (Level 3), the overall risk is moderate-to-high. Confidence is medium because sunglasses partly obscure the eyes.",
+  "personal_info_privacy_score": {
+    "score": 0.53,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s face with oversized dark sunglasses, visible nose, mouth, jawline, hairstyle",
+        "Anonymized_element": "face blurred or cropped, larger opaque mask, turned head away",
+        "privacy_element": "recognizable facial structure, hairstyle, partial facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small circular tattoo on right inner ankle above strap heel",
+        "Anonymized_element": "skin-toned cover-up, socks/longer hem, remove tattoo via retouch",
+        "privacy_element": "distinctive tattoo design acting as unique identifier",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10688111.jpg"
+}

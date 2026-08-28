@@ -1,0 +1,38 @@
+{
+  "reasoning": "The image shows two performers on stage with faces visible and centered. These constitute biometric identifiers (Level 1). No names, documents, or explicit location details are present. The performance context indicates an activity but does not add sensitive information. Due to multiple visible faces providing identifiable biometric data without additional reinforcing identifiers, the risk is high but not severe. Image grain reduces clarity slightly.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing male-presenting performer\u2019s face at center holding a guitar and singing into a microphone",
+        "Anonymized_element": "blurred face region, generic featureless oval, turned-away head pose, lowered lighting obscuring facial details",
+        "privacy_element": "clearly visible facial features, front-facing pose, central and well-lit",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left-side performer\u2019s face in profile near a microphone",
+        "Anonymized_element": "blurred facial region, generic featureless profile, head turned further away, occluding shadow",
+        "privacy_element": "visible facial profile with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13931643.jpg"
+}

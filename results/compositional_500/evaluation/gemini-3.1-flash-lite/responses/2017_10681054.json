@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image captures individuals at a public sports event. Most of the faces have been digitally masked, reducing the direct identifiability of the subjects. The remaining visible individuals are dressed in sports or umpire uniforms, which is contextually expected for the setting. There are no clear identifying documents, names, or highly sensitive personal information present. The privacy risk is extremely low, as the key biometric identifiers have been effectively neutralized.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Group of individuals on a baseball field with faces masked by grey overlays",
+        "Anonymized_element": "generic crowd members, spectators, sports participants",
+        "privacy_element": "human silhouettes",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Uniform worn by an individual on the right",
+        "Anonymized_element": "plain blue shirt, generic sports official attire",
+        "privacy_element": "umpire uniform",
+        "target_concept": "clothing",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10681054/final/2017_10681054_final.png"
+}

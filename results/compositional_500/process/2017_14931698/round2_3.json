@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person\u2019s torso with the face obscured. Two privacy-relevant elements are visible: a conference-style ID badge on the chest (text unreadable) and a prominent event logo with the words \u201ccreative commons global summit 2011.\u201d No biometric identifiers are visible. The event name and year reveal activity/affiliation and time, and the badge reinforces attendance even though details aren\u2019t legible. With Level 3 activity inference as the highest severity and a supporting Level 4 generic badge, the overall risk is moderate. Confidence is high because these elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular ID badge clipped near the left chest, text area obscured",
+        "Anonymized_element": "remove badge, replace with blank fabric patch, generic button",
+        "privacy_element": "ID badge form factor suggesting name/affiliation even if unreadable",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "colorful logo and text reading \u201ccreative commons global summit 2011\u201d at bottom-left",
+        "Anonymized_element": "generic abstract logo, remove text, replace with plain shape",
+        "privacy_element": "event name and year indicating conference attendance and timeframe",
+        "target_concept": "event logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14931698/r1_crops/2017_14931698_3.png"
+}

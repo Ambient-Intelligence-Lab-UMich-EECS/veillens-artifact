@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image is a close-up of printed sheet music with no people or biometric data. The only personal-information cue is a legible photographer\u2019s watermark/signature with a full name and date in the bottom-right corner, which is a non-unique identifier and timestamp. This Level 2 clue drives a moderate risk; other visible elements are generic document content. With a single clear L2 feature and no reinforcing identifiers, the overall risk is moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.26,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bottom-right corner cursive watermark showing a person\u2019s name and date",
+        "Anonymized_element": "remove watermark, blank margin, generic paper texture, crop corner",
+        "privacy_element": "readable personal name, handwritten signature style, date",
+        "target_concept": "watermark/signature",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed sheet music page with legible musical notation and Latin text",
+        "Anonymized_element": "blur text, partial crop, generic abstract notes without readable words",
+        "privacy_element": "legible document content",
+        "target_concept": "document page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13043541.jpg"
+}

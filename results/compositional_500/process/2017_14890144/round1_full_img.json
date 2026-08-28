@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows a crowded parade on a canal boat with many clearly visible, front-facing people, including close-up faces, which constitutes biometric identifiers (Level 1). A large readable banner mentions a gay student association and multiple pride symbols (rainbow flag), enabling sensitive inferences about sexual orientation or affiliation (Level 2). The banner text also reveals a likely city (Amsterdam), adding location context (Level 3). Crowds of additional identifiable spectators appear along the banks. The combination of numerous identifiable faces with sensitive-affiliation text yields a high privacy risk. Confidence is high because the clues are central and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.73,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of a person in ornate outfit at the bow of the boat",
+        "Anonymized_element": "blurred or pixelated face, generic mask, turned-away head",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of participants on the left side of the boat with unobstructed faces",
+        "Anonymized_element": "blurred faces, silhouetted heads, generic face placeholders",
+        "privacy_element": "multiple distinct, identifiable faces",
+        "target_concept": "faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large white banner on the bow reading an organization name with the word 'Gay' and city reference",
+        "Anonymized_element": "blank banner, generic pattern, text removed or replaced with neutral slogan",
+        "privacy_element": "readable organization name, explicit reference to 'Gay', city name",
+        "target_concept": "event banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rainbow pride flag held by a participant near the front-left of the boat",
+        "Anonymized_element": "solid-color flag with no symbolic meaning",
+        "privacy_element": "rainbow pride symbolism implying sexual orientation or affiliation",
+        "target_concept": "pride flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "group of spectators standing along the canal with many visible faces",
+        "Anonymized_element": "blurred crowd faces, distant silhouettes",
+        "privacy_element": "numerous identifiable faces in background",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14890144.jpg"
+}

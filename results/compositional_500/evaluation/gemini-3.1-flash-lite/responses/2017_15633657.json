@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image is a satellite photograph of North America and the Caribbean. It contains technical metadata in the top-left corner including the satellite name, date, time, and agency. This information is non-identifying for any individual and relates only to a public domain geographical record, posing no privacy risk to persons.",
+  "personal_info_privacy_score": {
+    "score": 0.0,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Technical metadata text in the top-left corner of the satellite image.",
+        "Anonymized_element": "removed text, empty corner",
+        "privacy_element": "NOAA GOES 13, 120626 1645 UTC, NASA GSFC GOES Project",
+        "target_concept": "metadata",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15633657/final/2017_15633657_final.png"
+}

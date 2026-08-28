@@ -1,0 +1,74 @@
+{
+  "reasoning": "The image shows a lively street parade with multiple clearly visible participant faces at close range, which constitutes biometric identifiers. Some faces are unobstructed and centrally framed, while others wear sunglasses but still remain identifiable. Additionally, several circular printed headshots are attached to yellow smiley banners, adding further biometric exposure. A storefront sign with readable business text provides a soft location cue. The highest severity present is Level 1 (identifiable faces), repeated across several individuals and also via printed photos, which together drive a high privacy risk. No government IDs, financial, or medical data are visible. The final score reflects multiple strong biometric clues with a minor reinforcing location element.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right parade participant\u2019s face wearing sunglasses and a blond wig",
+        "Anonymized_element": "blurred face, generic head silhouette, keep costume but remove facial details",
+        "privacy_element": "identifiable facial structure, mouth and nose visible despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center woman in white blouse with unobstructed face",
+        "Anonymized_element": "blurred face, neutralized skin features, generic head shape",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "midground man with glasses and bald head, facing camera",
+        "Anonymized_element": "blurred face, remove distinct facial contours, generic head silhouette",
+        "privacy_element": "recognizable facial features and head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "circular printed headshot attached to yellow smiley banner",
+        "Anonymized_element": "blank circle without photo, abstract pattern or solid color",
+        "privacy_element": "photographic face image in printed form",
+        "target_concept": "printed face photo",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront plaque with readable text 'LETTING AGENT' on right building facade",
+        "Anonymized_element": "blank signboard, remove text and logos",
+        "privacy_element": "business name text providing place-of-business clue",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12332187.jpg"
+}

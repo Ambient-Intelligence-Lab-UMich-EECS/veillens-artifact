@@ -1,0 +1,31 @@
+{
+  "img_id": "21541",
+  "predictions": {
+    "1 2": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "2 4": 6,
+    "2 5": 4,
+    "2 6": 1,
+    "3 4": 6,
+    "4 5": 6,
+    "4 6": 6,
+    "5 6": 1
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 6": 4,
+    "1 4": 6,
+    "1 5": 4,
+    "5 6": 4,
+    "2 5": 4,
+    "2 4": 6,
+    "2 6": 4,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are wearing similar athletic uniforms and are shaking hands across the net, suggesting a sports competition. This indicates a professional or competitive athletic relationship. => professional\n\n[P1-P4]: P4 is standing in the background while P1 is actively playing a match in the foreground, suggesting they are bystanders in the same sports environment. => no-relationship\n\n[P1-P5]: P1 and P5 are shaking hands across the net after a tennis match, a standard gesture of professional sportsmanship. => professional\n\n[P1-P6]: P1 and P6 are both participating in the same tennis match as opponents, indicated by their positions on opposite sides of the net and their uniforms. => professional\n\n[P2-P4]: P2 is a player on the court while P4 is a spectator or person in the background, showing no direct interaction. => no-relationship\n\n[P2-P5]: P2 and P5 appear to be teammates or competitors interacting within the context of the tennis tournament. => professional\n\n[P2-P6]: P2 and P6 are teammates or individuals playing together, as they are standing on the same side of the net wearing identical attire. => friends\n\n[P3-P4]: P3 and P4 are both standing in the background, likely spectators or event staff watching the match, but there is no evidence of interaction between them. => no-relationship\n\n[P4-P5]: P4 is a person in the background, while P5 is an active player on the court, with no signs of personal connection. => no-relationship\n\n[P4-P6]: P4 is a background figure and P6 is an active player, meaning they are likely strangers in the same venue. => no-relationship\n\n[P5-P6]: P5 and P6 are both on the same side of the net dressed in identical sports uniforms, suggesting they are doubles partners. => friends",
+  "timestamp": 1779942258.0641234
+}

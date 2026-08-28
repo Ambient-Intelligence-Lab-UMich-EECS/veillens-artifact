@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows parade participants with one clearly visible, unobstructed face on the left, which constitutes biometric data. Additional cues include a large, readable building/venue sign that can serve as a recognizable landmark, and revealing festival attire that borders on intimate content. The dancing/celebratory pose also reflects an activity context. The presence of a clear face (Level 1) drives the risk, with location and attire cues compounding it. Overall this yields a high-but-not-maximal privacy risk. Confidence is high due to clear visibility of the primary clues.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of a woman wearing a teal feathered headpiece on the left side of the float",
+        "Anonymized_element": "blank smooth face region, applied blur, generic opaque mask or visor",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, unique hairstyle/headpiece context",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "tall vertical building sign in background with large readable letters",
+        "Anonymized_element": "blank sign, remove text/logo, generic geometric panel",
+        "privacy_element": "recognizable venue/brand lettering that can identify place",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "left performer\u2019s revealing carnival costume with exposed midriff, cleavage, and thighs",
+        "Anonymized_element": "less revealing outfit, higher-coverage clothing, plain fabric without emphasis",
+        "privacy_element": "suggestive/skimpy attire implying intimate exposure",
+        "target_concept": "revealing clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right foreground participant with raised arms in celebratory dance pose on a float",
+        "Anonymized_element": "neutral seated pose, arms lowered, cropped to remove gesture",
+        "privacy_element": "dancing/celebration behavior at a public event",
+        "target_concept": "dancing pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11733853/r1_crops/2017_11733853_0.png"
+}

@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a person in a red polka\u2011dot bikini standing by a hot tub with face fully obscured, so no identifiable biometric data is visible. The main privacy risks come from intimate attire revealing body contours (Level 2), plus visible personal physical attributes and leisure activity context (Level 3). Background rooftops and a recognizable mountainous landscape give weak location cues (Level 3). Without names or IDs, risk is moderate rather than high.",
+  "personal_info_privacy_score": {
+    "score": 0.36,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red polka-dot bikini worn by a person, upper and lower pieces clearly visible",
+        "Anonymized_element": "modest one-piece swimsuit, towel wrap, plain t-shirt and shorts",
+        "privacy_element": "revealing swimwear, intimate body contours",
+        "target_concept": "bikini/swimwear",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person\u2019s torso and hair with face area masked",
+        "Anonymized_element": "looser clothing, reduced body contour detail, neutral hairstyle crop",
+        "privacy_element": "body shape, skin exposure, hair color/length",
+        "target_concept": "body/torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background with residential rooftops, backyard hot tub edge, and mountainous landscape",
+        "Anonymized_element": "blurred generic background, plain sky and trees, remove distinct rooftops",
+        "privacy_element": "residential setting cues, distinctive terrain, presence of private hot tub",
+        "target_concept": "background/landscape",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13002952/r1_crops/2017_13002952_0.png"
+}

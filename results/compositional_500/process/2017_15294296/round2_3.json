@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows a group of people at what appears to be a public celebration; most faces are deliberately obscured, so biometric identifiers are not visible. There are no readable names, documents, IDs, or financial/medical items. The primary privacy-relevant clues are contextual: event-specific accessories (colorful bead necklaces) and a two\u2011way radio suggesting participation or role, which reveal activities/behaviors. Additional low-risk background elements include a school bus and a small crowd of unidentifiable individuals. With no Level 1\u20132 elements present, overall risk is low to moderate due to activity context only.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "cluster of colorful bead necklaces worn by the person in the red top",
+        "Anonymized_element": "plain single-color necklace, remove beads, generic scarf",
+        "privacy_element": "event-specific Mardi Gras-style beads indicating participation in a particular celebration",
+        "target_concept": "beaded necklaces",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "black handheld two-way radio clipped to the left hip of the person in the red top",
+        "Anonymized_element": "empty belt clip, generic pouch, remove device",
+        "privacy_element": "radio device implying event staff/participant role or habitual activity",
+        "target_concept": "two-way radio",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "group of multiple people with faces obscured in the foreground",
+        "Anonymized_element": "fewer people, background-only silhouettes",
+        "privacy_element": "presence of a crowd without identifiable faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "yellow school bus partially visible in the background",
+        "Anonymized_element": "generic vehicle shape, blurred background vehicle",
+        "privacy_element": "contextual background object providing general scene context",
+        "target_concept": "school bus",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15294296/r1_crops/2017_15294296_3.png"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a parade scene with one foreground person whose face is clearly visible (partly with sunglasses) and many spectators\u2019 faces in the background. These constitute Level 1 biometric identifiers. A readable marquee sign includes a community college name that can reveal geographic location, adding Level 3 location risk. The combination of a prominent identifiable face, multiple additional faces, and a location-indicating sign yields a high overall privacy risk. The clues are clear and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person\u2019s face with short blond hair and sunglasses",
+        "Anonymized_element": "blur or pixelate face, turn head away, replace with generic head silhouette",
+        "privacy_element": "identifiable facial features, hairstyle, visible skin contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "row of spectators\u2019 faces along the sidewalk behind the float",
+        "Anonymized_element": "apply crowd face blurring, lower detail silhouettes, faces turned away",
+        "privacy_element": "multiple identifiable faces in crowd",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "street-side marquee sign with readable community college name and event text",
+        "Anonymized_element": "blank sign, generic non-specific text, remove institution/place names",
+        "privacy_element": "readable institution/place name indicating geographic location",
+        "target_concept": "place-name sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16280644/r1_crops/2017_16280644_0.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a public parade with numerous spectators whose faces are clearly visible. Identifiable faces constitute biometric data (highest severity). Additionally, a large brick marquee sign with readable institution/name text provides location information. The combination of multiple identifiable faces and a legible location cue increases the overall privacy risk beyond a simple crowd scene. Because these clues are central and clear, the risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "sidewalk crowd region with multiple spectators’ faces visible",
+        "Anonymized_element": "blurred or pixelated faces, turned-away heads, generic silhouettes",
+        "privacy_element": "full unobstructed faces, eyes and unique facial features",
+        "target_concept": "faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "brick roadside marquee sign with readable institution/name and event text",
+        "Anonymized_element": "blank sign, blurred text, generic brick pillar without lettering",
+        "privacy_element": "readable place/institution name, specific event details indicating location",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16280644/final/2017_16280644_final.png"
+}

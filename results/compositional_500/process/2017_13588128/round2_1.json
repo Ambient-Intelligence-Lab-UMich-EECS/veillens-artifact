@@ -1,0 +1,23 @@
+{
+  "reasoning": "The region shows the exterior of a single residential house behind a fence with trees. No faces, people, plates, or readable addresses/signs are visible. The only privacy-relevant cue is the identifiable property appearance, which is a low-risk Level 4 clue on its own and not reinforced by other identifiers. Thus the overall risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stone two-story house exterior with front porch and windows",
+        "Anonymized_element": "generic building facade, simplified/blurred stone texture, neutralized window and porch details",
+        "privacy_element": "recognizable residential property exterior and architectural layout",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13588128/r1_crops/2017_13588128_1.png"
+}

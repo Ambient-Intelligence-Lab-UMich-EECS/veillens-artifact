@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows an open booklet with readable Italian title text and a small logo/branding mark. There are no faces, IDs, financial/medical data, or explicit personal identifiers. The visible clues are generic document content and branding that could weakly suggest affiliation or locale but do not identify a person. Thus the highest severity is low (Level 4), and overall privacy risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left page of booklet with readable Italian title text near bottom",
+        "Anonymized_element": "blurred text area, generic placeholder text, plain color page",
+        "privacy_element": "readable document title/content, language indicating region",
+        "target_concept": "document page text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small logo/branding mark at bottom of right page",
+        "Anonymized_element": "blank area, generic geometric icon without branding",
+        "privacy_element": "recognizable logo/branding that hints at organization or affiliation",
+        "target_concept": "logo/branding",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14028890/r1_crops/2017_14028890_0.png"
+}

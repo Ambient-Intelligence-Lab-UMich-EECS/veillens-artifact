@@ -1,0 +1,81 @@
+{
+  "reasoning": "The image shows three people standing on a wooden deck outdoors. All three faces are clearly visible and front-facing, which exposes biometric identifiers (highest severity). Additional contextual clues include a readable embroidered logo on the middle person\u2019s polo that appears to name an organization, and a readable sports team name/logo on the right person\u2019s T\u2011shirt, revealing affiliations or interests. The deck and bench suggest a private property setting but without any address. Given multiple clear faces (Level 1) reinforced by a workplace/organization logo (Level 2) and activity/affiliation cues (Level 3), the overall privacy risk is high. Confidence is high because the cues are central, sharp, and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s full frontal face",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic synthetic face",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "middle person\u2019s full frontal face",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic synthetic face",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s full frontal face",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic synthetic face",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "embroidered logo/text on middle person\u2019s polo shirt (reads an organization acronym/name)",
+        "Anonymized_element": "plain polo shirt, no text or logo, generic solid color",
+        "privacy_element": "readable organization name/acronym indicating possible workplace or affiliation",
+        "target_concept": "clothing logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sports team name and star logo on right person\u2019s T\u2011shirt",
+        "Anonymized_element": "plain T\u2011shirt, no text or logo, generic solid color",
+        "privacy_element": "readable sports team name/logo indicating personal interest/affiliation",
+        "target_concept": "clothing logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wooden deck and bench structure surrounding the subjects",
+        "Anonymized_element": "generic blurred outdoor background, minimal structural detail",
+        "privacy_element": "distinctive home-like deck/bench suggesting private property",
+        "target_concept": "home deck",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12399182.jpg"
+}

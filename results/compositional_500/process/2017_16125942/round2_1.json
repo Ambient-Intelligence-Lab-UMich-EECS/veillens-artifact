@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows the front of a customized car with the hood up, revealing an engine and distinctive flame paint. There are no faces, license plates, text, or documents. The only privacy-relevant element is the recognizable property (custom vehicle appearance and engine mods) which could weakly identify an owner. Thus the highest severity present is Level 4 and overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front hood and fender of a car with distinctive flame paint and a right headlight",
+        "Anonymized_element": "solid dark paint without decals, generic headlight styling, subtle reflections only",
+        "privacy_element": "unique custom flame decals and styling that can make the vehicle recognizable",
+        "target_concept": "vehicle exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "open engine bay with visible supercharger and pulleys",
+        "Anonymized_element": "closed hood, generic engine cover, simplified mechanical shapes without distinctive aftermarket parts",
+        "privacy_element": "recognizable aftermarket supercharger setup that can uniquely identify the car build",
+        "target_concept": "car engine",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16125942/r1_crops/2017_16125942_1.png"
+}

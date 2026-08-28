@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a printed shuttle ticket with readable textual details. The most privacy-relevant element is the venue name \u201cPIONEER HIGH SCHOOL,\u201d which can signal a specific location (Level 3). Additional low-risk elements include a visible ticket serial number \u201c04053\u201d and the year/branding (\u201c2015,\u201d \u201cTheRide\u201d), which are generic document/metadata cues (Level 4). There are no faces, names, financial or government IDs. Overall risk is low-to-moderate due to the location reference, with clear legibility yielding high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Readable text \u201cPIONEER HIGH SCHOOL\u201d at the bottom-left of the ticket",
+        "Anonymized_element": "blank line, blurred text, generic placeholder venue text",
+        "privacy_element": "venue name indicating potential geographic location",
+        "target_concept": "venue name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Red serial number \u201c04053\u201d printed at the top-left of the ticket",
+        "Anonymized_element": "randomized digits, XXXXXX, or removed number",
+        "privacy_element": "unique ticket/serial number on document",
+        "target_concept": "serial number on ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Vertical strip with \u201c2015\u201d and \u201cTheRide\u201d branding on the left side of the ticket",
+        "Anonymized_element": "generic yearless strip, no brand/logo, plain graphic",
+        "privacy_element": "event year and service branding",
+        "target_concept": "branding/date text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11311837/r1_crops/2017_11311837_1.png"
+}

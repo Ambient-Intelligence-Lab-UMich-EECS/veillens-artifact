@@ -1,0 +1,55 @@
+{
+  "reasoning": "Faces and text on placards are obscured, so direct biometric or textual identifiers are not present. However, the scene clearly shows a public demonstration with multiple handheld protest signs, allowing a sensitive inference about political activity and an activity/behavior signal. A large crowd provides contextual reinforcement but individuals are not identifiable. Overall risk is moderate due to the political-activity inference without direct identification.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large placard held overhead by central person",
+        "Anonymized_element": "lowered empty hands, neutral handheld object not resembling a sign, plain background without raised item",
+        "privacy_element": "raised protest sign implying participation in a public demonstration or political cause",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "cluster of smaller handheld placards in the background",
+        "Anonymized_element": "remove placards, replace with neutral blank boards not held by people, or hands without items",
+        "privacy_element": "multiple protest signs indicating organized demonstration and political/social advocacy",
+        "target_concept": "protest signs (background)",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "dense crowd of people gathered in an outdoor area",
+        "Anonymized_element": "sparser gathering, fewer people, generic park scene without assembly",
+        "privacy_element": "group assembly context suggesting attendance at a public event or protest",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "distinctive blue patterned hat on a person near the bottom right",
+        "Anonymized_element": "plain solid-color hat with generic pattern or no pattern",
+        "privacy_element": "unique clothing pattern that could aid recognition when combined with other context",
+        "target_concept": "distinctive clothing item",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13244350/final/2017_13244350_final.png"
+}

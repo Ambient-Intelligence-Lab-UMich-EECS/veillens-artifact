@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image shows a small meeting in a conference room. Faces are obscured, so no identifiable biometric data is visible. There is a badge-like card on the central person, but any text is not readable. Visible cues mainly reveal general personal attributes (hair, clothing, jewelry) and a generic work/meeting activity. No government IDs, financial or medical data, explicit location markers, or nudity are present. Given only Level 3–4 clues without legible identifiers, the privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "square badge-like card on the central person’s chest with no readable text",
+        "Anonymized_element": "blank solid-colored badge, no text or logos, generic plastic card",
+        "privacy_element": "potential name/affiliation area (unreadable)",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "distinctive long auburn hair and visible jewelry (watch, ring, necklace) on central person",
+        "Anonymized_element": "neutral hair color or covered by cap, minimal jewelry or none",
+        "privacy_element": "recognizable personal style cues (hair, accessories)",
+        "target_concept": "personal appearance",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "people seated around a table with papers and a projector screen",
+        "Anonymized_element": "empty meeting room, remove papers and screen content",
+        "privacy_element": "participation in a meeting/workshop",
+        "target_concept": "meeting activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13536165/final/2017_13536165_final.png"
+}

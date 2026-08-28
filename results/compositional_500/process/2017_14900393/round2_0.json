@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows two people\u2019s bare lower legs and feet while lounging on an outdoor sofa, with a blurred urban skyline in the background. No faces, names, text, or IDs are visible. The main privacy signals are minor personal attributes from exposed limbs and weak location context from the skyline. These are Level 3 clues and do not strongly identify a person on their own; background furnishings add only low-level context. Overall risk is low with clear but limited evidence, so the score is kept small with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "exposed lower legs and feet of two people resting on a sofa",
+        "Anonymized_element": "add blanket or longer clothing, reduce skin visibility, smooth/remove distinctive marks",
+        "privacy_element": "visible bare skin on legs/feet, small distinctive marks or scars",
+        "target_concept": "legs/feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant, blurred city buildings and skyline beyond the railing",
+        "Anonymized_element": "replace with generic sky or abstract blur, remove recognizable building shapes",
+        "privacy_element": "urban skyline silhouettes that could hint at city location",
+        "target_concept": "city skyline",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "outdoor railing and cushioned sofa indicating a balcony/patio setting",
+        "Anonymized_element": "generic plain background without home furnishings, neutral surface",
+        "privacy_element": "home-like furnishing and balcony context",
+        "target_concept": "household furnishing/background",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14900393/r1_crops/2017_14900393_0.png"
+}

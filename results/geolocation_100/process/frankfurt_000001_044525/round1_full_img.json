@@ -1,0 +1,99 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic, EU-style long white license plates with a blue band, blue circular bicycle-path signs, and rectangular blue street-name plates with white lettering. The road markings (short rectangular dashed lines across the junction and a diagonally hatched bicycle crossing) match German StVO conventions. A kiosk banner reads \u201cFrankfurter Allgemeine,\u201d a German newspaper, further reinforcing Germany. Neighboring countries with similar markings (Austria, Netherlands) typically use different street-name plate styles and slightly different junction markings; the combination here fits Germany best.\nCity level: The mix of prewar-looking midrise apartment blocks, newer infill, and a modern cylindrical high-rise in the distance suggests a large German city with a central business district nearby. The presence of the \u201cFrankfurter Allgemeine\u201d masthead could appear anywhere in Germany, but the skyline element of a glassy cylindrical tower and broad, tree-lined urban arterials is characteristic of Frankfurt am Main. Other candidates like D\u00fcsseldorf or Cologne have different, more identifiable towers near comparable boulevards; the overall street furniture and dense financial-district-adjacent feel lean toward Frankfurt.\nStreet level: Specific cues include a wide multi-lane boulevard with a right-side protected cycle lane marked by dense dashed guidance lines at the intersection, blue street-name plates on poles, and a kiosk on the left corner carrying national newspaper signage. Bollards line the sidewalk on the right, and a modern cylindrical tower is centered down the corridor. These features together narrow to a Frankfurt inner-city arterial near the financial district; however, without a fully legible street name or landmark, the exact street remains uncertain.\n",
+  "location_estimate": {
+    "latitude": 50.112,
+    "longitude": 8.673,
+    "confidence": "Low",
+    "region": "Germany, Hesse, Frankfurt am Main"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shop sign on a blue kiosk",
+        "non_geolocation_element": "blue rectangular banner, white serif text, glossy paper ads, shaded lighting",
+        "geolocation_element": "German-language newspaper masthead 'Frankfurter Allgemeine' visible on the banner",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on a gray pole",
+        "non_geolocation_element": "blue rectangle, white sans-serif letters, metal pole",
+        "geolocation_element": "German-style white-on-blue street-name plate with German-language text",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a black car",
+        "non_geolocation_element": "long white rectangle, black text, reflective surface",
+        "geolocation_element": "EU-style plate with blue band and German formatting (long format with regional code and hyphen)",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bicycle sign on a pole",
+        "non_geolocation_element": "blue circular sign, white bicycle pictogram, reflective surface",
+        "geolocation_element": "German StVO traffic sign style for mandatory cycle path (Zeichen 237)",
+        "target_concept": "bicycle sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "traffic light on a tall pole",
+        "non_geolocation_element": "black vertical housing, multiple lenses, right-side placement",
+        "geolocation_element": "German-style signal head shape and mounting conventions",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "road markings on the asphalt",
+        "non_geolocation_element": "white short rectangular dashes, diagonal hatch pattern, high-contrast paint",
+        "geolocation_element": "German junction guidance markings and cycle crossing pattern typical to StVO",
+        "target_concept": "road markings",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bollard on a sidewalk edge",
+        "non_geolocation_element": "short metal post, cylindrical shape, evenly spaced row",
+        "geolocation_element": "Common German urban bollard style used to protect sidewalks and cycle lanes",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "office tower in the background",
+        "non_geolocation_element": "tall cylindrical glass fa\u00e7ade, silver color, modern design",
+        "geolocation_element": "Skyline element resembling Frankfurt\u2019s modern high-rises",
+        "target_concept": "office tower",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/frankfurt/frankfurt_000001_044525_leftImg8bit.png"
+}

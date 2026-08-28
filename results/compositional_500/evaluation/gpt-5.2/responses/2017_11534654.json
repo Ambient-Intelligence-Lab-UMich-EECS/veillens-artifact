@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows an empty football stadium and field with a recognizable team logo. No readable personal identifiers, faces, or documents are visible. The primary privacy signal is location inference from the distinct team/stadium branding. A few people are present far away on the field, but they are too small to identify, contributing only minimal risk. With no Level 1–2 elements and only a Level 3 location cue plus distant individuals, the overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Seahawks team logo painted on the field near the sideline",
+        "Anonymized_element": "plain green turf, blurred/abstract logo, generic field marking",
+        "privacy_element": "recognizable team logo indicating specific stadium/city",
+        "target_concept": "team logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "small distant figures standing on the field near the 30-yard line",
+        "Anonymized_element": "empty field, blurred figures, non-human props",
+        "privacy_element": "presence of people though faces are unidentifiable",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11534654/final/2017_11534654_final.png"
+}

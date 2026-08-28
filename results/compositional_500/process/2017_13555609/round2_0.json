@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows several people whose faces are obscured, so no direct biometric identifiers are visible. Remaining privacy cues are contextual: visible bodies and clothing indicate general personal attributes, a clear handshake reflects a social interaction, and a distinctive building exterior (arched windows, pergola, picket fence) could aid coarse location inference. A person holding a takeaway cup hints at consumption behavior. With no readable names, IDs, or financial/medical data, the highest severity is Level 3 and overall risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "full-body silhouette of a person in an orange jacket and jeans, face obscured",
+        "Anonymized_element": "crop above shoulders, neutral-colored generic clothing, reduce body detail",
+        "privacy_element": "body shape and posture, clothing style indicating general age/appearance",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "two people\u2019s hands extended in a handshake near the center-right",
+        "Anonymized_element": "hands separated, neutral arm positions, occlude handshake",
+        "privacy_element": "handshake gesture indicating social interaction/relationship",
+        "target_concept": "handshake",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "gray building facade with tall arched windows and a white pergola over a gate",
+        "Anonymized_element": "generic wall without distinctive windows or structures, simplified background",
+        "privacy_element": "distinctive architectural features that can help infer location",
+        "target_concept": "building exterior",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person on the left holding a black-and-red disposable cup",
+        "Anonymized_element": "empty hand, plain object without brand, remove cup",
+        "privacy_element": "visible beverage cup indicating consumption habit",
+        "target_concept": "drink cup",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13555609/r1_crops/2017_13555609_0.png"
+}

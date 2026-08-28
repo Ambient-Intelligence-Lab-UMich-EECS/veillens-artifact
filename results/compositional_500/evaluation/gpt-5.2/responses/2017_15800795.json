@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a public parade with numerous clearly visible, unobstructed faces including a central performer and several spectators. Identifiable faces constitute Level 1 biometric data, which alone creates high risk. A readable storefront sign in the background can hint at location (Level 3), modestly increasing linkage risk. No government IDs, financial, medical, or nudity are present. Given multiple direct facial identifiers and minor contextual location cues, the overall privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central performer’s uncovered face in the foreground",
+        "Anonymized_element": "blurred face, pixelated facial region, opaque mask, tinted visor",
+        "privacy_element": "full face, eyes, nose, mouth, unique facial features and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "spectator’s face at center-right above blue barrier, looking left",
+        "Anonymized_element": "blurred face region, pixelation, oval patch",
+        "privacy_element": "full face, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "spectator’s face near center wearing sunglasses, partially tilted upward",
+        "Anonymized_element": "pixelated face, sunglasses plus mask, oval patch",
+        "privacy_element": "facial structure visible despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "spectator’s face at left side of crowd holding a booklet",
+        "Anonymized_element": "blurred facial area, pixelation",
+        "privacy_element": "recognizable face with eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "kneeling photographer’s face at bottom-left edge of crowd",
+        "Anonymized_element": "pixelated face, blur patch",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "storefront sign with readable word 'Select' and fruit logo in background",
+        "Anonymized_element": "blank sign, generic pattern without text or logos",
+        "privacy_element": "business name text and logo that can hint at location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800795/final/2017_15800795_final.png"
+}

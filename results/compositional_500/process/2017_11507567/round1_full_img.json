@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows people on a city street during a costumed event. Two foreground individuals have visible faces (one partially obscured by sunglasses, another in side profile), which constitutes biometric identifiers. A race/event bib with a readable participant number is attached to one person, creating a non-unique identifier that can link to a roster and the activity. Additional background faces are present but small and less identifiable. The highest severity is Level 1 (faces), reinforced by the Level 2 bib identifier and contextual crowd/activity cues. Overall risk is moderate-to-high with clear, central subjects; confidence is medium due to partial occlusion on one face and distance for others.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground woman in pink striped costume with cat ears; face visible despite sunglasses",
+        "Anonymized_element": "replace with generic face silhouette or blur, keep sunglasses and costume; reduce facial detail",
+        "privacy_element": "recognizable facial structure, hairstyle, partial eyes/nose/mouth despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second woman in black-red-white costume; right-side facial profile visible",
+        "Anonymized_element": "profile blurred or replaced with neutral head shape; retain hair texture without facial detail",
+        "privacy_element": "recognizable facial profile including nose, mouth, jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "race/event bib pinned near the waist with readable number '25' and small text",
+        "Anonymized_element": "blank bib with no number or text; generic solid color rectangle",
+        "privacy_element": "participant number, event branding/text that can link identity to roster",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background group of people along sidewalk with small, partially visible faces",
+        "Anonymized_element": "de-emphasized silhouettes or blurred heads with no facial detail",
+        "privacy_element": "multiple distant faces, low detail",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11507567.jpg"
+}

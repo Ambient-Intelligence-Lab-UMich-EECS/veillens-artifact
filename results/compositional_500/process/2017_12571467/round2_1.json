@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a small indoor concert scene. One person\u2019s face on the right is clearly visible and unobscured, which is strong biometric identifying information (highest severity). Additional cues include a distinct wrist tattoo on the same person and a foreground individual actively playing an electric guitar, indicating musical activity. These elements combine to sustain a high privacy risk primarily driven by the identifiable face; the tattoo and activity context add moderate supporting risk. Confidence is high due to clear visibility of the face and tattoo.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a person standing near a large fan at the back of the stage area",
+        "Anonymized_element": "blurred face, pixelation, solid-color oval covering facial region, turned-away head",
+        "privacy_element": "clear facial features including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black ink tattoo on the inside of the right wrist of the person near the back",
+        "Anonymized_element": "skin without markings, lightly blurred skin area, neutral skin tone patch",
+        "privacy_element": "distinct wrist tattoo pattern that can uniquely identify the person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "electric guitar held and played by the foreground person (face obscured)",
+        "Anonymized_element": "generic prop instrument with minimal detail, partial crop to reduce activity cue",
+        "privacy_element": "performance context showing musical activity and role",
+        "target_concept": "musical instrument (guitar)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12571467/r1_crops/2017_12571467_1.png"
+}

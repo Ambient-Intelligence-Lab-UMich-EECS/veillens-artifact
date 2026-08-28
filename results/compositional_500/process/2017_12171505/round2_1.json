@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows a performer in a revealing carnival costume with many bystanders whose faces are clearly visible. Multiple unobscured, identifiable faces constitute Level 1 biometric data. The performer\u2019s exposed body in minimal attire adds Level 2 nudity/intimate content and personal attributes, and the dance/performance context indicates activities/behaviors. The combination of several Level 1 faces with sensitive attire yields a high privacy risk. Confidence is high because features are central, clear, and unoccluded.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a woman at right holding a white phone, looking toward the performer",
+        "Anonymized_element": "blurred face, pixelated features, occluding sticker or mask",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "unobscured face of a man in a yellow shirt at center holding a camera/phone",
+        "Anonymized_element": "blurred face, pixelated features, occluding sticker or mask",
+        "privacy_element": "full face with distinct facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "older man\u2019s face on left wearing a striped polo shirt, looking toward the parade",
+        "Anonymized_element": "blurred face, pixelated features, occluding sticker or mask",
+        "privacy_element": "recognizable face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "region of background spectators with multiple visible faces behind the performer",
+        "Anonymized_element": "apply crowd-face blur across the region",
+        "privacy_element": "several identifiable faces in one area",
+        "target_concept": "faces region",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "performer\u2019s revealing carnival bra/top and exposed midriff/cleavage",
+        "Anonymized_element": "less revealing opaque costume, modest neckline, added coverage",
+        "privacy_element": "minimal coverage of chest area, intimate body exposure",
+        "target_concept": "revealing costume",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "performer\u2019s large feathered headdress and dance posture indicating a public performance",
+        "Anonymized_element": "generic non-descript headwear, neutral pose",
+        "privacy_element": "distinctive performance attire signaling participation in a public event",
+        "target_concept": "performance attire/behavior",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12171505/r1_crops/2017_12171505_1.png"
+}

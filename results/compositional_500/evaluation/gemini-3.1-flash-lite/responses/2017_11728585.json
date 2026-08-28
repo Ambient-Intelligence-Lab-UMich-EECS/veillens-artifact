@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image features a person whose head and upper body have been redacted or masked. While the facial features are obscured, the visible hair, neck, and shoulder structure still allow for the inference of personal attributes such as gender and approximate age. Since the most sensitive biometric data (the face) has been effectively anonymized, the remaining privacy risk relates primarily to personal attributes and potential identity leakage from the identifiable body features, resulting in a moderate privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Upper body of a person with obscured head",
+        "Anonymized_element": "Generic silhouette, blurred body, neutral clothing, generic frame",
+        "privacy_element": "visible hair, visible neck and shoulder contour, inferred gender",
+        "target_concept": "human subject",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11728585/final/2017_11728585_final.png"
+}

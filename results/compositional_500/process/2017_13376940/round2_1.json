@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a seated person in a wheelchair on a nighttime street. The face is obscured and not identifiable, so biometric risk is low. The primary privacy signal is the visible wheelchair, which can imply disability (a sensitive inference). Background elements include a parked minivan and a distant, unidentifiable person, which contribute only minor contextual risk. With no readable text or IDs, the risk is driven mainly by the sensitive-inference cue of the wheelchair, resulting in a moderate score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.36,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manual wheelchair next to and beneath the seated person",
+        "Anonymized_element": "generic chair or bench, bicycle, shopping cart, or abstract seating object",
+        "privacy_element": "assistive mobility device indicating possible disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant person standing on the left sidewalk, out of focus",
+        "Anonymized_element": "remove person, replace with empty sidewalk or abstract silhouette",
+        "privacy_element": "presence of another person who is unidentifiable",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "parked silver minivan in background",
+        "Anonymized_element": "generic blurred vehicle, non-descript sedan shape, or empty curb",
+        "privacy_element": "distinct vehicle as personal property without plate details",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13376940/r1_crops/2017_13376940_1.png"
+}

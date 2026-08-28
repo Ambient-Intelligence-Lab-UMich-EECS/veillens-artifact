@@ -1,0 +1,71 @@
+{
+  "reasoning": "The image shows a public parade scene with several clearly visible, front-facing individuals. Multiple unobstructed faces constitute biometric identifiers (Level 1). Additionally, a handheld sign and a sash both contain readable text \u201cDANCIN(G) MAN 504,\u201d which act as non-unique identifiers linked to a specific moniker and number, reinforcing identifiability when combined with faces. No financial, medical, or government IDs are present. Given multiple Level 1 faces plus Level 2 textual identifiers, the overall privacy risk is high with strong, clear evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the man in the center wearing a black-and-white shirt and sash",
+        "Anonymized_element": "blurred face, turned head profile, generic placeholder face",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing face of the woman in a red top with bead necklaces at left of center",
+        "Anonymized_element": "blurred face, turned head, generic placeholder face",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing face of the man in a purple, green, and yellow striped top on the right",
+        "Anonymized_element": "blurred face, turned head, generic placeholder face",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld parade sign above center-left reading \u201cDANCIN MAN 504\u201d",
+        "Anonymized_element": "blank sign, generic shapes or pattern, no text",
+        "privacy_element": "readable nickname/title and number",
+        "target_concept": "sign with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sash worn by central man with readable text \u201cDANCING MAN 504\u201d",
+        "Anonymized_element": "plain sash with no text or logos",
+        "privacy_element": "readable nickname/title and number",
+        "target_concept": "sash with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15294296.jpg"
+}

@@ -1,0 +1,79 @@
+{
+  "reasoning": "The image shows three people working at laptops with multiple clear, front/side-view faces that are identifiable, which is Level 1 biometric data. Two participants wear visible name badges with legible or partially legible text, adding Level 2 non-unique identifiers. Laptop screens display readable code and window text, revealing activity context and generic digital content (Levels 3\u20134). The combination of several identifiable faces with possible names elevates the risk to high. The faces are central and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left participant\u2019s face in profile, well-lit and close to camera",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center participant\u2019s frontal face above keyboard",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "instructor\u2019s face behind laptops, partially frontal",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "paper name badge on left participant\u2019s chest",
+        "Anonymized_element": "blank badge, solid color, no text or logos",
+        "privacy_element": "handwritten/printed name text, potential affiliation icons",
+        "target_concept": "name badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "paper name badge on center participant\u2019s chest",
+        "Anonymized_element": "blank badge, solid color, no text or logos",
+        "privacy_element": "handwritten/printed name text, potential affiliation icons",
+        "target_concept": "name badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right laptop screen showing readable code editor window",
+        "Anonymized_element": "blank screen, generic wallpaper, blurred text/code",
+        "privacy_element": "readable code and filenames, on-screen text revealing work context",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13597673.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image depicts football players wearing team uniforms on a field. While the team name 'RAVENS' and jersey number '22' are visible, these are public-facing team identifiers rather than private personal information. No faces are clearly identifiable, and there are no government IDs or sensitive personal documents present. The risk level is low as the elements constitute general sporting context.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "football jersey with the text 'RAVENS' and the number '22'",
+        "Anonymized_element": "generic jersey, plain colors, no team name or number",
+        "privacy_element": "team name 'RAVENS', jersey number '22'",
+        "target_concept": "team identifier",
+        "severity_level": 4,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10523599/final/2017_10523599_final.png"
+}

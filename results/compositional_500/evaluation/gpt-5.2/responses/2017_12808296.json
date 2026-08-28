@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a public event with many attendees facing the stage. Several audience members’ faces are clearly visible and identifiable, which constitutes biometric data (Level 1). Multiple distinct faces in the foreground reinforce the risk, even without names or other identifiers. No government IDs, financial, medical, or explicit location details are visible. The presence of multiple identifiable faces drives a moderate-to-high privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row attendee’s face at center-left, facing stage, visible eyes, nose, and mouth",
+        "Anonymized_element": "blurred face, pixelated face, solid-color oval mask",
+        "privacy_element": "clear facial features, identifiable visage, distinctive glasses/hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "attendee wearing a light cap at lower-left, face turned toward stage, partially side-lit but identifiable",
+        "Anonymized_element": "pixelated face, blurred facial area, generic silhouette mask",
+        "privacy_element": "visible facial profile with nose, mouth, beard outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "foreground right-side attendee’s face in profile, illuminated by stage light",
+        "Anonymized_element": "blurred or pixelated profile, neutral mask over head",
+        "privacy_element": "recognizable facial profile, ear and jawline visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12808296/final/2017_12808296_final.png"
+}

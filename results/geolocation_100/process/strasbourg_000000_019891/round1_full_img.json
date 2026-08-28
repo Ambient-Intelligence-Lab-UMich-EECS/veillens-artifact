@@ -1,0 +1,98 @@
+{
+  "reasoning": "Country-level: The vehicles have long white EU-style plates and the rear car is a Peugeot, suggesting Europe and specifically France where Peugeots are very common. Traffic signage uses French-style circular red-bordered signs (30 speed limit, no-entry) and the storefront signs visible contain French words, pointing strongly to France. Architecture includes traditional timber-framed houses with steep roofs and green shutters, characteristic of Alsace in northeastern France. City-level: The scene shows flower-decked bridge railings over a canal and a street with embedded tram tracks running alongside the carriageway\u2014this combination is emblematic of Strasbourg\u2019s historic center, which has extensive tram lines and canals, especially around Petite France. The dense half-timbered facades, narrow streets, and tourist foot traffic fit Strasbourg more than other Alsatian cities like Colmar or Mulhouse, which have fewer central tram corridors by canals. Street-level: The bridge parapet with planter boxes, adjacent tram reservation separated by a curb, and a cluster of half-timbered buildings directly beyond the bridge resemble the Petite France quarter near central canals. The mix of hotel signage, 30 km/h zone sign, and a no-entry sign at a T-intersection with tracks and a zebra crossing help distinguish this particular junction within Strasbourg\u2019s canal-side streets.",
+  "location_estimate": {
+    "latitude": 48.5839,
+    "longitude": 7.7455,
+    "confidence": "Medium",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a blue car",
+        "non_geolocation_element": "white color, rectangular shape, reflective surface, rear position, daylight",
+        "geolocation_element": "EU-style long plate format typical of France, French alphanumeric pattern with blue EU band",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round speed limit sign on a pole",
+        "non_geolocation_element": "white circle, red border, black numerals, metal pole, urban lighting",
+        "geolocation_element": "number 30 in French/European style glyphs, sign design matches French road signage",
+        "target_concept": "speed limit sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red no-entry sign on a pole",
+        "non_geolocation_element": "red circle, horizontal white bar, metal pole, near intersection",
+        "geolocation_element": "design consistent with French/European traffic control standards",
+        "target_concept": "no-entry sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram tracks in the roadway",
+        "non_geolocation_element": "shiny steel rails, parallel lines, embedded in pavement, curb-separated lane",
+        "geolocation_element": "presence of a modern tram network, a hallmark of Strasbourg city center",
+        "target_concept": "tram tracks",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "timber-framed facade with green shutters",
+        "non_geolocation_element": "dark wooden beams, white infill, green window shutters, steep roof",
+        "geolocation_element": "Alsatian half-timbered architectural style typical of Strasbourg region",
+        "target_concept": "facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bridge railing with flower planters on the side",
+        "non_geolocation_element": "black metal railing, stone posts, colorful flowers, along sidewalk",
+        "geolocation_element": "decorated canal bridges common in Strasbourg\u2019s Petite France quarter",
+        "target_concept": "railing",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop sign above a door",
+        "non_geolocation_element": "rectangular board, muted colors, mounted above entrance",
+        "geolocation_element": "French-language text visible on the sign",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "zebra pedestrian crossing across the street",
+        "non_geolocation_element": "white parallel stripes, painted on asphalt, near intersection",
+        "geolocation_element": "marking style aligns with French urban crossings near tram lanes",
+        "target_concept": "pedestrian crossing",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/strasbourg/strasbourg_000000_019891_leftImg8bit.png"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a laminated card lying on a wooden surface, but all interior content is blank/obscured and no text, numbers, photo, or logos are legible. This constitutes only a generic document cue without any identifiable or sensitive details. The highest severity present is Level 4 (generic document), with no Level 1\u20133 signals. Therefore the privacy risk is low, and confidence is high because the lack of legible content is clear.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear plastic/laminated card with interior content area obscured",
+        "Anonymized_element": "plain opaque card, solid color rectangle, no markings or logos",
+        "privacy_element": "document-like card form factor suggesting an ID or badge",
+        "target_concept": "ID card",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11174421/r1_crops/2017_11174421_0.png"
+}

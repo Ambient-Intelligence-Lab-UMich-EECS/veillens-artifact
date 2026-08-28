@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a dense public demonstration with many visible, identifiable faces and several readable protest placards alongside prominent national flags. The highest-severity clues are multiple unobscured faces (Level 1 biometric data). These are compounded by explicit political messaging on signs (Level 2 sensitive inference) and the evident participation in a political rally (activities/behaviors), reinforced by national flags suggesting political context and rough location. Despite some areas being occluded by a gray mask, enough clear cues remain to pose a high privacy risk. Score reflects strong Level 1 signals plus reinforcing Level 2\u20133 context. Confidence is medium due to partial occlusion and varying face sizes.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clustered faces of individuals in the upper-right crowd near the speaker podium",
+        "Anonymized_element": "blurred faces, low-detail silhouettes, generic skin-toned ovals",
+        "privacy_element": "full faces with eyes, nose, mouth clearly visible enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white protest placard near top-center with readable Turkish slogan in red text",
+        "Anonymized_element": "blank signboard, text removed or blurred, generic solid color",
+        "privacy_element": "explicit political message linking participants to a cause",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large red national flag with white crescent and star held above the crowd on the left side",
+        "Anonymized_element": "plain red flag with no symbols, neutral color banner",
+        "privacy_element": "national symbol implying political/national affiliation and event context",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13279528/r1_crops/2017_13279528_1.png"
+}

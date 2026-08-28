@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows two people posing, both with clear, front-facing, well-lit faces that are easily identifiable, which constitutes biometric data (highest severity). Additional contextual cues include a pageant-style sash with readable text and a jeweled crown, revealing participation in a specific public event/activity. These Level 3 contextual clues reinforce the identifiability of the individuals. With two prominent, unobstructed faces and supporting context, the privacy risk is high. Confidence is high because the clues are central and unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "young woman's full, front-facing face with eyes visible",
+        "Anonymized_element": "blurred face, pixelated facial region, solid-color oval mask over face, crop above shoulders",
+        "privacy_element": "full face, clear eyes, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "older man's full, front-facing face with eyes visible",
+        "Anonymized_element": "blurred face, pixelated facial region, solid-color oval mask over face, crop above shoulders",
+        "privacy_element": "full face, clear eyes, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sash worn by the woman with readable large text",
+        "Anonymized_element": "blank sash, solid color with no text or logos",
+        "privacy_element": "readable event/title text revealing participation",
+        "target_concept": "sash with text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ornate jeweled crown/tiara on the woman's head",
+        "Anonymized_element": "plain headband or neutral hair accessory",
+        "privacy_element": "distinctive pageant crown indicating event role",
+        "target_concept": "crown/tiara",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13140959.jpg"
+}

@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a woman standing beside a vehicle/trailer, with her face visibly blurred so no identifiable biometric details or text are readable. This removes the most severe Level 1 risk. Remaining cues include the person’s body/attire and hairstyle (personal attributes) and a distinctive car exterior in the foreground (property/asset). There are no legible plates, addresses, or documents. Overall risk is low, driven mainly by Level 3 personal-attribute visibility with a minor contribution from the vehicle context. Confidence is high because clues are clear and limited.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "standing person’s body from shoulders to feet with visible hairstyle and clothing",
+        "Anonymized_element": "replace with generic silhouette or blurred body, neutral plain clothing, reduce detail/contrast",
+        "privacy_element": "body shape, clothing style, hairstyle",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "silver car rear/side without readable license plate",
+        "Anonymized_element": "generic unbranded vehicle shape, remove logos and distinctive styling cues, neutral matte color",
+        "privacy_element": "distinctive car model features, vehicle color and body style",
+        "target_concept": "vehicle exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10263842/final/2017_10263842_final.png"
+}

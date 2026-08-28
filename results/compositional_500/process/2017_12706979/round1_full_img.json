@@ -1,0 +1,49 @@
+{
+  "reasoning": "The image shows a man\u2019s side-profile next to a mirror that also reflects his head and neck. These constitute identifiable facial biometrics. Additionally, a readable caption at the bottom includes a person\u2019s first name along with a place and precise date/time, which are sensitive contextual identifiers. The presence of Level 1 biometric data reinforced by a second facial view, combined with Level 2/3 textual identifiers and location, yields a high privacy risk. The cues are clear and centrally visible, supporting high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-side profile of a man\u2019s face and ear near the window",
+        "Anonymized_element": "face blurred or pixelated, turned fully away, silhouette without facial detail",
+        "privacy_element": "identifiable facial profile, ear shape, beard/mustache outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "reflection of the same man\u2019s head and neck in the mirror",
+        "Anonymized_element": "reflection blurred, mirror fogged or replaced with blank surface",
+        "privacy_element": "additional facial/ear contours visible via reflection",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bottom caption text line overlaid on the image",
+        "Anonymized_element": "blank caption area, generic decorative line with no text",
+        "privacy_element": "readable first name, place name, full date and time",
+        "target_concept": "caption text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12706979.jpg"
+}

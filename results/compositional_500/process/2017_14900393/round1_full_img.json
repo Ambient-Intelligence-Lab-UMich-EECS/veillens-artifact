@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows two people\u2019s lower legs and feet reclining on an outdoor sofa; faces and any direct identifiers are not visible. There are no documents, text, or ID-like items. Background shows a blurred urban skyline from a balcony, which provides only vague location context. The highest detected severity is Level 3 due to observable personal attributes (body parts) and a mild activity cue (relaxing). These clues are limited and non-identifying, so the overall privacy risk is low. Confidence is high because the visible elements are clear and non-ambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare lower legs and feet of a person on the left side of the sofa",
+        "Anonymized_element": "long pants or blanket covering legs and feet, crop to remove limbs, add neutral clothing",
+        "privacy_element": "exposed skin and body features that reveal personal attributes such as physique or approximate age",
+        "target_concept": "exposed legs/feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bare lower legs and feet of a person on the right side of the sofa",
+        "Anonymized_element": "long pants or blanket covering legs and feet, crop to remove limbs, add neutral clothing",
+        "privacy_element": "exposed skin and body features that reveal personal attributes such as physique or approximate age",
+        "target_concept": "exposed legs/feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "balcony railing with blurred urban skyline in the background",
+        "Anonymized_element": "uniform sky or generic blurred background, indoor setting",
+        "privacy_element": "cityscape context that could hint at general location",
+        "target_concept": "city skyline",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "reclining pose on outdoor sofa",
+        "Anonymized_element": "neutral empty sofa without people, seated posture with clothing covering legs",
+        "privacy_element": "visible leisure activity suggesting relaxation at home or on balcony",
+        "target_concept": "relaxed pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14900393.jpg"
+}

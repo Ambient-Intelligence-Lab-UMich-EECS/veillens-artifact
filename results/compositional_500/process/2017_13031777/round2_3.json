@@ -1,0 +1,34 @@
+{
+  "reasoning": "This crop shows a side view of a person with the face area obscured, leaving visible an ear, hair, neck, and part of the shoulder. No readable text, documents, or explicit identifiers are present. Without an identifiable face, the strongest cues are personal attributes like hairstyle and ear shape, which are weak-to-moderate identifiers on their own. There is no nudity or sensitive content. Overall risk is low, driven by personal attributes only, with medium confidence due to clear visibility of the ear and hairstyle but absence of direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible ear on the side of the head with surrounding hair",
+        "Anonymized_element": "subtle blur of ear contours, generic hair silhouette, reduced detail",
+        "privacy_element": "distinct ear shape, hairstyle pattern and length",
+        "target_concept": "ear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "exposed neck and partial shoulder/upper back area",
+        "Anonymized_element": "add clothing collar or scarf, soften skin details",
+        "privacy_element": "skin tone and neck/shoulder contours implying body characteristics",
+        "target_concept": "neck/shoulder",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/r1_crops/2017_13031777_3.png"
+}

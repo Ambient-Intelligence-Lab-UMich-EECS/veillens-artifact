@@ -1,0 +1,27 @@
+{
+  "img_id": "7044",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Outdoor public-safety setting with mounted officers; P2 is on a horse in uniform and P1 also wears a high-visibility work jacket. They are close but not interacting personally, suggesting they are on duty at the same event. => professional",
+  "timestamp": 1776888801.6935756
+}

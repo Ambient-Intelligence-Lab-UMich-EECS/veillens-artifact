@@ -1,0 +1,29 @@
+{
+  "img_id": "11189",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 4,
+    "1 6": 4,
+    "1 7": 4,
+    "2 5": 6,
+    "2 6": 6,
+    "2 7": 6,
+    "5 6": 4,
+    "5 7": 4,
+    "6 7": 4
+  },
+  "ground_truth": {
+    "5 6": 1,
+    "5 7": 1,
+    "1 6": 1,
+    "1 7": 1,
+    "1 5": 1,
+    "1 2": 6,
+    "6 7": 1,
+    "2 5": 6,
+    "2 7": 6,
+    "2 6": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are seated in the same room at a formal banquet or conference setting, but there is no direct interaction or physical proximity suggesting a personal connection. They appear to be attendees of the same event. => no-relationship\n\n[P1-P5]: These individuals are seated at the same table, engaging in the shared activity of a conference meal. Their proximity and participation in the same event indicate a professional social dynamic. => professional\n\n[P1-P6]: These two individuals are sitting directly next to each other at a table, actively conversing and sharing space. Their body language and engagement strongly suggest a professional acquaintance or colleague relationship. => professional\n\n[P1-P7]: These individuals are seated at the same table in a professional conference setting, participating in the group discussion. Their shared environment and engagement indicate they are colleagues or professional associates. => professional\n\n[P2-P5]: They are seated at different tables and are not interacting. Their only connection is being part of the same large event, characterizing them as bystanders. => no-relationship\n\n[P2-P6]: They are seated at different tables and are not engaged in any social interaction. There is no evidence of a relationship beyond sharing the same venue. => no-relationship\n\n[P2-P7]: They are at different tables in a large conference room with no observable interaction. They are simply bystanders at the same event. => no-relationship\n\n[P5-P6]: These individuals are seated at the same table, participating in the same conference activities. This indicates a professional association common among attendees of such events. => professional\n\n[P5-P7]: Both are seated at the same table at a conference, partaking in the same event activities. They are professional colleagues or associates in this context. => professional\n\n[P6-P7]: These individuals are seated at the same table during a professional conference, sharing the same space and event focus. Their presence together indicates a professional social relationship. => professional",
+  "timestamp": 1779945368.3415577
+}

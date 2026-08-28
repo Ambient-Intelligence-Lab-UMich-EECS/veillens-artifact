@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a person holding a small orange fruit. The primary privacy-relevant element is the person\u2019s face, which is largely visible though slightly out of focus. This constitutes biometric data and also reveals general personal attributes (age/gender appearance). No names, documents, addresses, or other identifiers are present. Because a Level 1 biometric cue is present but not sharply detailed and lacks reinforcing context, the overall risk is moderate. Confidence is medium due to the softness of the facial details.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of an adult wearing glasses, slightly out of focus",
+        "Anonymized_element": "strong blur or pixelation over face, replace with generic head silhouette, obscure eyes/nose/mouth",
+        "privacy_element": "visible facial structure and features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15321981.jpg"
+}

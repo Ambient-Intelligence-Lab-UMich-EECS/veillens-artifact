@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a person\u2019s head and neck in profile, but the facial area is heavily obscured so no identifiable facial features are visible. There are no texts, documents, or explicit identifiers. The remaining cues (ear shape, hairstyle silhouette, neck/shoulder) reveal only general physical appearance. Thus the highest severity present is Level 3 (personal attributes). With no clear biometric identifiers or sensitive content, overall risk is low. Confidence is medium due to partial human features being visible but anonymized.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "profile of a human head with face masked/obscured, visible ear and hair",
+        "Anonymized_element": "crop further to hair only, add stronger blur over head and ear, replace with generic silhouette",
+        "privacy_element": "facial outline, ear shape, hairstyle silhouette",
+        "target_concept": "face profile",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/r1_crops/2017_13031777_0.png"
+}

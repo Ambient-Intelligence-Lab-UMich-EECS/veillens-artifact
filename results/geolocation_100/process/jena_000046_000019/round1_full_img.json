@@ -1,0 +1,75 @@
+{
+  "reasoning": "Country-level: The circular yellow bus stop sign with a green \u201cH\u201d and the electronic timetable display are characteristic of German public transport (\u201cHaltestelle\u201d). Posters in the shelters show German words, and traffic signage (blue mandatory-direction sign) matches German/continental EU style. Cobblestone gutters and mature plane trees lining a narrow carriageway also fit many German towns. These cues strongly indicate Germany over neighboring countries (e.g., Austria/Switzerland use different bus stop symbols).\nCity-level: No distinctive skyline, landmark, or transit branding unique to a specific German city is visible. The architecture (stucco mid-rise blocks with sash windows), cobbled edge lanes, and sheltered bus stops are common across many medium-sized German cities; thus, alternatives like Bonn, Mainz, Heidelberg, or Ulm cannot be excluded.\nStreet-level: The scene shows a two-lane urban street with cobblestone parking strip on the right, multiple German \u201cH\u201d bus stop signs in a row, and an LED timetable mounted to a blue pole at the right curb. A mandatory-straight/keep-right blue sign is placed just beyond the stops. These elements define a specific stop cluster along a tree-lined corridor but are insufficient to uniquely name the street without more text or landmarks.",
+  "location_estimate": {
+    "latitude": 51.0,
+    "longitude": 10.0,
+    "confidence": "Medium",
+    "region": "Germany"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow bus stop sign on a pole",
+        "non_geolocation_element": "yellow circular panel, green ring, metal pole, daylight",
+        "geolocation_element": "green 'H' symbol used for German Haltestelle bus stops",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black timetable display on a blue pole",
+        "non_geolocation_element": "rectangular LED screen, black casing, blue vertical pole, amber digits",
+        "geolocation_element": "German-style real-time bus display format and typography",
+        "target_concept": "timetable display",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular poster inside a glass shelter",
+        "non_geolocation_element": "rectangular print, glass walls, metal frame, advertisement imagery",
+        "geolocation_element": "German-language text visible on the advertisement",
+        "target_concept": "poster",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue mandatory-direction sign on a post",
+        "non_geolocation_element": "round blue sign, white arrow, metal post",
+        "geolocation_element": "EU-style traffic sign design consistent with Germany",
+        "target_concept": "direction sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone parking strip at the right curb",
+        "non_geolocation_element": "gray cobblestones, rectangular stones, curb edge",
+        "geolocation_element": "European old-town street paving style common in Germany",
+        "target_concept": "parking strip",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "glass bus shelter at the curb",
+        "non_geolocation_element": "transparent glass panels, dark metal frame, bench inside",
+        "geolocation_element": "co-location with German 'H' bus stop system",
+        "target_concept": "bus shelter",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/jena/jena_000046_000019_leftImg8bit.png"
+}

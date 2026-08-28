@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a large outdoor crowd at an event. Several people in the foreground have clearly visible faces with discernible features, which constitutes biometric data. There are no readable names, badges, or location-specific signs, and the big screen only shows hands. The highest severity comes from identifiable faces (Level 1). Because faces are present but not extremely close-up and some are partially angled, the risk is high but not maximal. Score reflects multiple Level 1 cues without reinforcing identifiers. Confidence is medium due to moderate distance and partial occlusions.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Man\u2019s face at center-right foreground, looking left with eyes, nose, and mouth visible",
+        "Anonymized_element": "blurred face, pixelated/mosaic, generic head silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Woman with short red hair at right foreground, side of face visible with profile features",
+        "Anonymized_element": "blurred/pixelated face, neutralized generic profile",
+        "privacy_element": "identifiable facial profile including nose, mouth, jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Older man at left-center foreground facing camera with full facial features visible",
+        "Anonymized_element": "mosaic blur over face, replace with generic non-descript head",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14333425.jpg"
+}

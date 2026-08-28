@@ -1,0 +1,95 @@
+{
+  "reasoning": "The crop shows a public demonstration with multiple clearly visible, identifiable faces and several political flags. The highest-severity clues are Level 1 biometric data from several unobstructed faces. Political party-style flags introduce Level 2 sensitive inferences (political views) and also indicate the activity of participating in a protest. Together, the combination of multiple identifiable faces with political context yields a high privacy risk. The evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in white tank top on right side, side-profile face visible with sunglasses on head",
+        "Anonymized_element": "face blurred or replaced with back-of-head, neutral hat without facial view",
+        "privacy_element": "identifiable facial features, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "curly red-haired woman at left edge facing camera, full face visible",
+        "Anonymized_element": "face blurred, generic head silhouette, turned-away pose",
+        "privacy_element": "identifiable facial features, distinctive hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bearded man with glasses near center-left, frontal face visible",
+        "Anonymized_element": "face blurred, remove glasses detail, turned-away head",
+        "privacy_element": "identifiable facial features, facial hair, eyewear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "smiling woman in gray shirt near center, frontal face visible",
+        "Anonymized_element": "face blurred, turned-away pose",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "short-blonde-haired woman near right holding a can, partial but identifiable face",
+        "Anonymized_element": "face blurred, replace with non-descript profile/back of head",
+        "privacy_element": "identifiable facial features, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of colorful political-style flags at right with distinct color patterns and symbols",
+        "Anonymized_element": "plain solid-color flags with no symbols or text",
+        "privacy_element": "political symbolism/logos implying affiliation or views",
+        "target_concept": "flag with political symbols",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld protest placard behind center group, circular sign on a stick",
+        "Anonymized_element": "blank sign with no message or replaced with neutral object",
+        "privacy_element": "protest signage indicating participation in demonstration",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12030881/r1_crops/2017_12030881_0.png"
+}

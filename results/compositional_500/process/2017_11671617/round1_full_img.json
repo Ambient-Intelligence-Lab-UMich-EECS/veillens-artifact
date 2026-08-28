@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a single person covered in mud, wearing a bikini and sitting in a mud pit. The person\u2019s face is clearly visible in profile, providing identifiable biometric data (highest severity). The revealing swimwear constitutes intimate content. The scene also discloses a specific leisure activity (mud event), and general physical attributes are visible. Combined, these cues raise the privacy risk, led by the identifiable face and supported by intimate attire and contextual behavior. The image is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s face in right-profile view with mud partially covering but facial features recognizable",
+        "Anonymized_element": "blurred or pixelated face, generic oval with no features, face turned away, mask/helmet",
+        "privacy_element": "recognizable facial structure, eyes/nose/mouth profile enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "mud-covered bikini top and bottom on the person\u2019s torso and hips",
+        "Anonymized_element": "plain t-shirt and shorts, one-piece suit with full coverage, towel or neutral opaque clothing",
+        "privacy_element": "revealing swimwear exposing body contours indicating intimate context",
+        "target_concept": "bikini/swimwear",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "surrounding mud pit surface where the person is seated",
+        "Anonymized_element": "clean neutral ground or mat without mud, generic textured surface",
+        "privacy_element": "participation in a messy mud activity/event",
+        "target_concept": "activity context (mud pit)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "visible physique and hairstyle of the person (arm, legs, torso outline, long dark hair)",
+        "Anonymized_element": "looser clothing obscuring body shape, neutral cap or hood",
+        "privacy_element": "apparent gender presentation and physical appearance cues",
+        "target_concept": "physical appearance",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11671617.jpg"
+}

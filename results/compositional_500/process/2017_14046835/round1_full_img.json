@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a small crowd at an outdoor event, with several people\u2019s faces clearly visible and unobstructed, which constitutes biometric identifiers (Level 1). One person on the right also wears a visible orthopedic knee brace, allowing a potential sensitive health inference (Level 2). There are no readable names, documents, or location-specific identifiers. The presence of multiple clear faces drives the risk high, with the knee brace adding contextual sensitivity. Overall this yields a high but not extreme privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of person in blue jersey on far right, looking down at phone",
+        "Anonymized_element": "blurred face, pixelated facial region, head turned away",
+        "privacy_element": "clear identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person under tan umbrella near center",
+        "Anonymized_element": "blurred face, pixelated facial region, umbrella-only with obscured person",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in navy beanie and scarf on right side",
+        "Anonymized_element": "blurred face, pixelated facial region, head turned away",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in blue cap on far left, smiling",
+        "Anonymized_element": "blurred face, pixelated facial region, head turned away",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orthopedic knee brace on right leg of person in blue jersey at right foreground",
+        "Anonymized_element": "long pants with no visible brace, neutral pant leg",
+        "privacy_element": "visible medical brace implying injury/health condition",
+        "target_concept": "knee brace",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14046835.jpg"
+}

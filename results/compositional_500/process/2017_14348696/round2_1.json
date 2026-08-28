@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows a crowded outdoor market with several clearly visible, front-facing human faces, including an adult and a child. These are direct biometric identifiers (Level 1). Additionally, a readable storefront sign (\u201cSTELLA ARTOIS\u201d) and recognizable building facades provide contextual location cues (Level 3). The combination is primarily driven by multiple identifiable faces, so the privacy risk is high; contextual location elements add moderate reinforcement. Visibility is clear, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of an adult person in the center-left crowd line, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with generic head silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), unobstructed frontal view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of an adult person near the right side of the crowd, partially turned but clearly visible",
+        "Anonymized_element": "blurred face, pixelated facial region, generic head shape",
+        "privacy_element": "identifiable facial features, mostly unobstructed view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child\u2019s face sitting on an adult\u2019s shoulders near the red market canopy on the right",
+        "Anonymized_element": "blurred/pixelated face, generic child head silhouette",
+        "privacy_element": "identifiable facial features of a minor",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "readable storefront sign \u201cSTELLA ARTOIS\u201d on the building facade at upper right",
+        "Anonymized_element": "blank fascia, generic unreadable sign, neutral texture",
+        "privacy_element": "business name text that can be linked to a specific venue/location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14348696/r1_crops/2017_14348696_1.png"
+}

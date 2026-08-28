@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows two clearly visible, unobstructed faces at close range, which are strong biometric identifiers (Level 1). In addition, a readable protest sign with a social/political message is visible, enabling sensitive inferences about political views and participation (Level 2). A lit storefront sign in the background could hint at location (Level 3). The combination of identifiable faces with political activity elevates overall risk. The clues are central and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "full frontal face of a middle-aged person at left-center wearing dark coat",
+        "Anonymized_element": "pixelated or blurred face, generic head silhouette without facial details, lowered contrast",
+        "privacy_element": "full face with clear features (eyes, nose, mouth), identifiable hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "full frontal face of a younger person at right-center holding a poster",
+        "Anonymized_element": "pixelated or blurred face, generic head silhouette without facial details",
+        "privacy_element": "full face with clear features, distinctive curly hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handheld protest poster with large, readable slogan text",
+        "Anonymized_element": "blank poster, abstract shapes or colors, illegible scribbles",
+        "privacy_element": "readable political/social message indicating participation in a protest",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "illuminated storefront sign in the background with partially readable brand text",
+        "Anonymized_element": "blank lightbox, generic pattern without text or logos",
+        "privacy_element": "store/brand name that may reveal a specific venue or area",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10837455/r1_crops/2017_10837455_1.png"
+}

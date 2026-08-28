@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a topless person with an exposed breast while the face is obscured. This constitutes intimate nudity, a Level 2 privacy risk, which is highly sensitive even without identifiable facial features. Additional visible body characteristics (hair, shoulder/arm, skin) reveal physical appearance (Level 3). With clear, central visibility of nudity and no mitigating obfuscation besides the masked face, the overall risk is high. Confidence is high due to the unambiguous visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.78,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare upper torso with exposed breast partially covered by a hand",
+        "Anonymized_element": "add opaque top or towel, blur/censor chest area, crop above chest",
+        "privacy_element": "visible breast/chest, intimate exposure",
+        "target_concept": "nudity (breast)",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "head and shoulders with distinctive medium-length hair; facial features obscured",
+        "Anonymized_element": "crop below neck, generic background silhouette, neutralized hair shape",
+        "privacy_element": "distinctive hairstyle and physique revealing physical appearance",
+        "target_concept": "head/shoulders (physical appearance)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800485/r1_crops/2017_15800485_0.png"
+}

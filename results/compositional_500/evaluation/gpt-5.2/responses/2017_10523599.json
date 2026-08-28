@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows the back of an American football player. No faces are visible, so there is no biometric exposure. The clearest privacy cues are a readable team name “RAVENS” and jersey number “22,” which can link to a roster in certain contexts. The sports uniform and gear also reveal participation in American football (an activity). These are moderate, context-dependent identifiers without direct personal or sensitive data. Overall risk is limited but real due to potential linkage via team/number, leading to a moderate-low score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of jersey with large number 22 and text \"RAVENS\" across the shoulders",
+        "Anonymized_element": "plain jersey with generic pattern, remove text and numbers, neutral color",
+        "privacy_element": "readable team name, readable jersey number",
+        "target_concept": "jersey text/number",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "football helmet and shoulder pads worn by central person",
+        "Anonymized_element": "generic athletic apparel without sport-specific gear",
+        "privacy_element": "sport-specific equipment indicating participation in American football",
+        "target_concept": "sports equipment on person",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10523599/final/2017_10523599_final.png"
+}

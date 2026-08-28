@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows an indoor dining scene with a server preparing a drink. A prominently visible adult face on the right is clear and identifiable, which constitutes biometric data (highest severity). A second person\u2019s partial face is at the left edge but is dim and not clearly identifiable, adding minor risk. There are no readable names, documents, financial/medical details, or precise location indicators. The overall risk is driven mainly by the clear face, so the score is moderate-to-high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "well-lit adult face of the server on the right side of the frame wearing a dark jacket and bow tie",
+        "Anonymized_element": "blurred face, generic smooth oval without facial features, turned-away head profile",
+        "privacy_element": "full facial features visible including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "partially visible person at far left edge with dim, cropped face and shoulder",
+        "Anonymized_element": "crop further to remove face, blur facial region",
+        "privacy_element": "partial facial features that may allow recognition to acquaintances",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13265646.jpg"
+}

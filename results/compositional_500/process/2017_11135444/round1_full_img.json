@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a full handwritten diary/journal page with clearly legible text. Within the text, several personal names are visible (e.g., peers mentioned), which constitutes Level 2 risk. Additional lines describe personal activities and behaviors at a social event, including alcohol-related details and dancing, and even a specific expense amount, which add Level 3 contextual risk. No faces, IDs, addresses, or account numbers are visible. Because the names are readable and reinforced by behavioral context, the overall privacy risk is moderate. Confidence is high due to the clarity and legibility of the handwriting.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "legible personal names within handwritten diary text near the top and middle of the page",
+        "Anonymized_element": "replace names with generic placeholders, blur or rewrite as initials, lorem ipsum text",
+        "privacy_element": "readable given names of individuals in the narrative",
+        "target_concept": "handwritten names",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sentences describing alcohol rules, bar availability, dancing, and social interactions in the middle and lower sections",
+        "Anonymized_element": "generic event description without alcohol or behavior details, paraphrased neutral text",
+        "privacy_element": "explicit references to drinking, dancing, and socializing habits",
+        "target_concept": "behavioral text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "line stating the event 'all cost 130 crowns' in the mid-page text",
+        "Anonymized_element": "remove or generalize amount to 'it cost some money'",
+        "privacy_element": "specific spending amount and currency",
+        "target_concept": "expense mention",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "entire handwritten diary page with page number 68 occupying the frame",
+        "Anonymized_element": "blank notebook page, or heavily blurred/abstracted handwriting",
+        "privacy_element": "extensive legible first-person narrative linked to a date-less personal entry",
+        "target_concept": "diary page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11135444.jpg"
+}

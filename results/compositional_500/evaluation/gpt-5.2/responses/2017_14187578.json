@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a mostly blank sheet of paper on a wall with a visible QR code-like block on the right edge. There are no people, faces, names, addresses, or other legible identifiers. The only privacy-relevant element is the machine-readable code that could encode information, but its contents are not readable here. The highest severity present is Level 4 (generic document artifact). With a single weak clue and no compositional reinforcement, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black-and-white QR/data matrix code printed along the right edge of the paper",
+        "Anonymized_element": "blank margin, solid color rectangle, blurred mosaic without scannable pattern",
+        "privacy_element": "machine-readable code that may encode URL, ID, or contact details",
+        "target_concept": "QR code",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14187578/final/2017_14187578_final.png"
+}

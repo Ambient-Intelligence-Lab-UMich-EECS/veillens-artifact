@@ -1,0 +1,80 @@
+{
+  "condition": "gpt-image",
+  "condition_note": "GPT Image 2, one single-shot privacy edit from a fixed prompt",
+  "evaluator_label": "gemini-3.1-pro-preview",
+  "model_id_recorded_in_artifacts": "gemini-3.1-pro-preview",
+  "attribution": "recorded in the source results.json under metadata.model",
+  "role": "independent scorer; none of these four models is inside a protection loop",
+  "scored_image": "readydata/dataset_random_500/gpt-image/defended/<image_id>_defended.png",
+  "images_in_set": 500,
+  "responses": 348,
+  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
+  "error_km": {
+    "n": 348,
+    "mean_km": 164.299,
+    "median_km": 139.417,
+    "min_km": 0.011,
+    "max_km": 763.259,
+    "within_0.5km_pct": 13.8,
+    "within_1km_pct": 18.7,
+    "within_5km_pct": 27.3,
+    "within_10km_pct": 27.9,
+    "within_25km_pct": 30.7,
+    "within_100km_pct": 42.2
+  },
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 348 responses, to 0.0 km at R = 6371.0",
+  "source_runs": [
+    {
+      "dataset": "dataset_random_100",
+      "run": "gpt_image_100_20260813_122752",
+      "manifest": "dataset.json",
+      "images": 100,
+      "declared_failures": 0
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_c_20260820_000954",
+      "manifest": "dataset_new400.json",
+      "images": 400,
+      "declared_failures": 152
+    }
+  ],
+  "unscored": {
+    "count": 152,
+    "why": "gemini-3.1-pro-preview hits a 250-requests-per-model-per-day cap; every unscored call returned HTTP 429 and was recorded with a null error and a null location_estimate. No reasoning was produced, so no file is emitted.",
+    "image_ids": [
+      "lindau_000018_000019",
+      "lindau_000020_000019",
+      "lindau_000023_000019",
+      "lindau_000025_000019",
+      "lindau_000027_000019",
+      "lindau_000029_000019",
+      "lindau_000031_000019",
+      "lindau_000034_000019",
+      "lindau_000036_000019",
+      "lindau_000038_000019",
+      "..."
+    ],
+    "coverage_pct": 69.6
+  },
+  "vs_raw_on_the_same_images": {
+    "n": 100,
+    "raw": {
+      "mean_km": 43.467,
+      "median_km": 0.613,
+      "within_5km_pct": 66.0,
+      "within_25km_pct": 72.0
+    },
+    "gpt-image": {
+      "mean_km": 162.194,
+      "median_km": 129.649,
+      "within_5km_pct": 27.0,
+      "within_25km_pct": 29.0
+    },
+    "images_moved_further_away": 76,
+    "images_located_closer_after_the_edit": 19,
+    "median_per_image_change_km": 70.356,
+    "identical_coordinate_before_and_after": 5,
+    "note": "'moved further away' + 'located closer' + 'identical coordinate before and after' = n. An identical pair is the model returning the same rounded lat/lon for both images — a city-centroid guess the edit did not disturb."
+  }
+}

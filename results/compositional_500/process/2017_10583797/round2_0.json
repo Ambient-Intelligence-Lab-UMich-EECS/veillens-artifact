@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a public outdoor gathering with multiple visible faces. At least two individuals in the foreground/midground have clear, frontal faces that are identifiable, which is a Level 1 biometric risk. A larger background crowd contains many smaller, less identifiable faces that contribute contextual risk. There are no visible government IDs, financial or medical details, and no legible names. The composition yields moderate-to-high privacy risk primarily from biometric exposure, slightly reinforced by observable participation in a public event.",
+  "personal_info_privacy_score": {
+    "score": 0.5,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground seated man with gray hair at lower right, facing camera",
+        "Anonymized_element": "blurred/pixelated face, replaced with generic non-descript facial area, head turned away",
+        "privacy_element": "full face, visible eyes and facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "midground man in blue sleeveless jersey with sunglasses, facing toward camera",
+        "Anonymized_element": "blurred/pixelated face, generic eyewear shape without facial detail, head turned away",
+        "privacy_element": "exposed face with recognizable features despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background crowd region with many small, partially obscured faces",
+        "Anonymized_element": "de-emphasized crowd silhouettes, reduced facial detail, generic blurred heads",
+        "privacy_element": "numerous tiny faces and body postures indicating attendance at an event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10583797/r1_crops/2017_10583797_0.png"
+}

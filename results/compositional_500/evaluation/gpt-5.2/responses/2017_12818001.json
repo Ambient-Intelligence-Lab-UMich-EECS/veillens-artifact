@@ -1,0 +1,43 @@
+{
+  "reasoning": "Two people take a selfie with faces deliberately obscured, so no biometric identifiers are exposed. The main privacy risk comes from a distinctive cathedral-like building in the background that could reveal location. Secondary risks include the intimate/couple selfie pose indicating relationship/behavior and the distinctive clothing/accessories that could aid re-identification when combined with location. With no names, documents, or readable text, overall risk is moderate. Confidence is medium due to some ambiguity about how uniquely identifiable the landmark is.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large gothic-style cathedral with tall spire in the background",
+        "Anonymized_element": "generic skyline, blurred architecture, nondescript buildings without unique features",
+        "privacy_element": "recognizable landmark architecture that can pinpoint city or site",
+        "target_concept": "landmark building",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "two individuals in a close, affectionate selfie pose",
+        "Anonymized_element": "neutral standing pose, increased spacing, non-affectionate posture",
+        "privacy_element": "affectionate pose implying relationship and activity context",
+        "target_concept": "couple pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "distinctive clothing and accessories on left person (plaid shirt, scarf, straw hat, glasses)",
+        "Anonymized_element": "plain solid-color clothing, generic hat without distinctive style, remove glasses",
+        "privacy_element": "unique outfit and accessories that can help re-identification when combined with other clues",
+        "target_concept": "clothing/accessories",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12818001/final/2017_12818001_final.png"
+}

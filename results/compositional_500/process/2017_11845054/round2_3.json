@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person from torso to feet seated in a wheelchair, with a cigarette in hand. No face or direct identifiers are visible. The wheelchair implies a potential mobility-related disability (a Level 2 sensitive inference). The cigarette reveals a smoking habit (Level 3 activity). These cues are clear and central but not linked to identity, so overall risk is moderate. Confidence is high due to unambiguous objects and visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "wheelchair frame and seat supporting a person\u2019s lower body",
+        "Anonymized_element": "ordinary chair or bench seating, generic stool, crop to remove mobility device elements",
+        "privacy_element": "visible wheelchair structure implying mobility impairment",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "person\u2019s hand holding a cigarette near the wheel area",
+        "Anonymized_element": "empty hand, pen or neutral object, hand cropped/occluded",
+        "privacy_element": "cigarette indicating smoking behavior",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11845054/r1_crops/2017_11845054_3.png"
+}

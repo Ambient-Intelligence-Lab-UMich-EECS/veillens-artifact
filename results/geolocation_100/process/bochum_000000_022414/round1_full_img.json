@@ -1,0 +1,86 @@
+{
+  "reasoning": "Country level: The scene shows multiple German-language signs, including \u201cReha Sanit\u00e4tshaus,\u201d a blue parking sign with German supplementary text, and a .de domain on a storefront. The round green \u201cH\u201d bus stop sign and the yellow diamond priority-road sign are standard in Germany. Vehicles have EU-style plates and traffic keeps to the right. These cues strongly indicate Germany and rule out neighboring countries with different signage conventions. City level: The rear car\u2019s license plate begins with \u201cWAT,\u201d which is the registration code for Wattenscheid, a district of Bochum in North Rhine\u2013Westphalia. Visible tram tracks embedded in the roadway match Bochum/Gelsenkirchen\u2019s Stra\u00dfenbahn network. The dense midrise commercial street fabric with tram right-of-way and blue pedestrian guard rails is typical for central Wattenscheid. Street level: A blue street-name sign on the right pole appears to read with an umlaut and \u201c-stra\u00dfe,\u201d suggesting a specific local street. The combination of tram tracks, central commercial frontage, and local plate \u201cWAT\u201d narrows the spot to central Wattenscheid streets where line 302 runs through the shopping corridor. Exact corner is uncertain, but it resembles an intersection in Bochum-Wattenscheid\u2019s town center near the tram corridor.",
+  "location_estimate": {
+    "latitude": 51.478,
+    "longitude": 7.139,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, Bochum (Wattenscheid)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a black car",
+        "non_geolocation_element": "white color, rectangular shape, reflective surface, rear placement",
+        "geolocation_element": "EU plate format with German font and the local prefix 'WAT'",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue shop sign above a glass storefront",
+        "non_geolocation_element": "blue background, white letters, rectangular panel, lit interior",
+        "geolocation_element": "German words 'Reha Sanit\u00e4tshaus' and website ending '.de'",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round green-and-yellow bus stop sign on a pole",
+        "non_geolocation_element": "round shape, green ring, white face, mounted on metal pole",
+        "geolocation_element": "German-style 'H' Haltestelle symbol",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow diamond traffic sign on a gray pole",
+        "non_geolocation_element": "diamond shape, yellow center with white border, metal pole",
+        "geolocation_element": "German/central-European priority-road symbol usage",
+        "target_concept": "traffic sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue street name sign on a traffic light pole",
+        "non_geolocation_element": "blue rectangle, white text, mounted near signal head",
+        "geolocation_element": "German street suffix '-stra\u00dfe' with an umlauted name",
+        "target_concept": "street name sign",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram tracks in the asphalt at the center",
+        "non_geolocation_element": "parallel steel rails set in dark pavement, straight alignment",
+        "geolocation_element": "on-street tramway indicating cities with tram networks like Bochum/Gelsenkirchen",
+        "target_concept": "tram tracks",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue parking sign on a metal post",
+        "non_geolocation_element": "square blue sign with white 'P', reflective material",
+        "geolocation_element": "German supplementary plate style beneath the 'P'",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/bochum/bochum_000000_022414_leftImg8bit.png"
+}

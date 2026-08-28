@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows a graduation ceremony with multiple clearly visible faces, including a central person in green academic regalia and several attendees in the background. Identifiable faces constitute Level 1 biometric risk. Additionally, the wooden podium bears the readable university name, revealing institutional/location information (Level 3). The combination of multiple identifiable faces with the institution name increases linkage risk. No government IDs, financial, or medical data are visible. Overall risk is high due to several direct, clear facial biometrics reinforced by contextual location text.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central person in green academic gown facing camera with clear facial features",
+        "Anonymized_element": "blurred face, generic oval mask, turned head away, low-detail facial region",
+        "privacy_element": "full face, eyes and mouth visible, distinctive facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "graduate on left in black gown and white cap, side profile of face while shaking hands",
+        "Anonymized_element": "blurred profile, generic silhouette, face turned fully away",
+        "privacy_element": "partial side face with nose, mouth, and cheek visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "seated attendee with white beard applauding, face clearly visible",
+        "Anonymized_element": "blurred face, anonymized oval, low-detail rendering",
+        "privacy_element": "clear facial features including eyes, nose, mouth, beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wooden podium with readable text and logo of a specific university",
+        "Anonymized_element": "blank podium surface, generic non-descript logo, unreadable text",
+        "privacy_element": "institution name/logo revealing organization and potential location",
+        "target_concept": "organization name/logo on podium",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11270878.jpg"
+}

@@ -1,0 +1,71 @@
+{
+  "reasoning": "The scene shows a crowded street festival with several clearly visible, front-facing individuals in the foreground whose facial features are identifiable. These constitute biometric data (Level 1). Additional contextual clues such as readable street/event banners and vendor stall signs can hint at the event and location (Level 3) and indicate activities/consumption patterns. With multiple unobscured faces centrally framed, the overall privacy risk is high despite the lack of names or official IDs.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central foreground person with glasses resting hand on chin, face fully visible",
+        "Anonymized_element": "blurred face region, low-detail oval skin-tone patch, remove glasses detail",
+        "privacy_element": "full face with eyes, nose, mouth, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground person slightly left of center, face looking toward camera",
+        "Anonymized_element": "blurred facial area, generic skin-tone gradient, reduced facial detail",
+        "privacy_element": "full face with identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground right-side person with shaved head in profile, facial features visible",
+        "Anonymized_element": "profile blur, simplified silhouette without facial details",
+        "privacy_element": "side profile with identifiable facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street banner hanging on pole with event advertisement text",
+        "Anonymized_element": "blank banner, abstract pattern, no text or logos",
+        "privacy_element": "readable event name/text that can tie to city/venue",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "food stall signboard reading cuisine name and prices above the tent",
+        "Anonymized_element": "plain colored board, generic shapes, no readable text or prices",
+        "privacy_element": "readable vendor/stall name and menu that indicate event context and activity",
+        "target_concept": "stall signboard",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11360448.jpg"
+}

@@ -1,0 +1,70 @@
+{
+  "reasoning": "This crop shows a public event with one partially visible identifiable face near a podium, which constitutes Level 1 biometric data. Multiple reinforcing location cues are present: a podium placard naming a specific university/city, a branded event banner, and a recognizable provincial flag, all of which can pinpoint the venue. Audience members are largely out of focus. Combining one Level 1 face with several strong Level 3 location indicators yields a high but not extreme privacy risk. Confidence is high because the cues are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated older man near podium with side-profile face visible",
+        "Anonymized_element": "blurred face, replaced with generic skin-tone oval, head turned away",
+        "privacy_element": "visible facial features including eyes, nose, mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "podium placard with readable text showing university name and city",
+        "Anonymized_element": "blank placard, abstract logo with no text, solid color panel",
+        "privacy_element": "institution name, city/location label",
+        "target_concept": "sign with place name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "standing banner to the left with readable 'u district' branding and slogan",
+        "Anonymized_element": "plain banner with geometric pattern, no text or logos",
+        "privacy_element": "organization branding, slogan that can identify event/location",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "provincial flag (blue-white-red with sun) behind podium",
+        "Anonymized_element": "generic multicolor flag without distinctive emblem",
+        "privacy_element": "distinctive provincial emblem enabling regional geolocation",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "out-of-focus audience heads in foreground",
+        "Anonymized_element": "further blurred silhouettes, cropped lower frame",
+        "privacy_element": "presence of people, but faces not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16093829/r1_crops/2017_16093829_0.png"
+}

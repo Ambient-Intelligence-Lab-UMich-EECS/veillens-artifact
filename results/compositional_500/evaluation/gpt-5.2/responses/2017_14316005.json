@@ -1,0 +1,76 @@
+{
+  "reasoning": "The image shows a public march with numerous clearly visible, front-facing faces and multiple rainbow pride flags. Identifiable faces constitute Level 1 biometric exposure. The pride flags and march context enable a sensitive inference about LGBTQ+ identity/support (Level 2) and participation in a specific public activity. A readable street sign provides minor location context (Level 3). The combination of multiple Level 1 faces with Level 2 contextual signals yields a high privacy risk. Clues are central and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right participant in a red long-sleeve top with an unobstructed face",
+        "Anonymized_element": "blurred face, smooth skin-tone oval, remove eye/nose/mouth details",
+        "privacy_element": "clear frontal facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "left-front marcher in gray t-shirt and blue cap holding a pole, face visible",
+        "Anonymized_element": "blur face, generic oval with no features",
+        "privacy_element": "distinct facial features, frontal/three-quarter view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "mid-ground cluster of participants with multiple recognizable faces",
+        "Anonymized_element": "blur or pixelate all faces in the cluster",
+        "privacy_element": "multiple identifiable faces with visible eyes, noses, mouths",
+        "target_concept": "faces (group)",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "large rainbow pride flag at the left edge of the scene",
+        "Anonymized_element": "solid-color flag with neutral pattern, no rainbow symbolism",
+        "privacy_element": "rainbow pride symbolism implying LGBTQ+ identity/support",
+        "target_concept": "pride flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "set of rainbow flags held by marchers in the background on the right",
+        "Anonymized_element": "generic solid-color flags without symbolic meaning",
+        "privacy_element": "repeated rainbow pride symbols indicating participation in LGBTQ+ event",
+        "target_concept": "pride flags (group)",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "black street sign reading 'MAIN' on a pole in the left midground",
+        "Anonymized_element": "blank sign or generic, unreadable text",
+        "privacy_element": "readable street name suggesting approximate location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14316005/final/2017_14316005_final.png"
+}

@@ -1,0 +1,39 @@
+{
+  "img_id": "14290",
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 3,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 2": 3,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "4 5": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: On a riverside promenade, they walk side\u2011by\u2011side in close proximity; she faces him and seems to touch/hold his arm while both wear casual coats. Their intimate body language suggests a romantic pair. => couple\n\n[P1-P3]: They are several meters apart on the walkway with no eye contact or interaction, each moving independently in casual winter attire. => no-relationship\n\n[P1-P4]: The small figure (P4) is far to the right near benches while P1 is on the left; no engagement or contact in this public setting. => no-relationship\n\n[P1-P5]: P5 is behind and separate from P1 with no physical interaction or attention between them on the promenade. => no-relationship\n\n[P2-P3]: P2 is engaged with P1 while P3 walks farther back; no eye contact or touch, just separate pedestrians. => no-relationship\n\n[P2-P4]: They are widely separated in the scene with no signs of interaction in this public walkway. => no-relationship\n\n[P2-P5]: Although P5 is somewhat behind P2, there\u2019s no body-language connection or contact\u2014just another passerby. => no-relationship\n\n[P3-P4]: These two are in the mid\u2011background but not interacting; P3 walks along the path while P4 is off to the right by benches, suggesting unrelated pedestrians. => no-relationship\n\n[P4-P5]: They are distant from each other and oriented differently with no engagement in the public setting. => no-relationship",
+  "timestamp": 1776887614.0258653
+}

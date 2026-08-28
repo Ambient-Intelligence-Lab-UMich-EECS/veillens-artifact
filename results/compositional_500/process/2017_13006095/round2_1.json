@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a street demonstration with many people and handheld placards. No clear, identifiable faces or textual details are legible, but the presence of protest signs signals political participation, which is a sensitive inference even without identity. The crowd itself contains distant, unidentifiable individuals contributing low contextual risk. With a Level 2 sensitive-inference clue (protest signage) and supporting Level 4 crowd context but no direct identifiers, the overall risk is moderate. Confidence is medium due to lack of legible text or identifiable faces.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handheld placard/protest sign held above the crowd",
+        "Anonymized_element": "blank signboard with no symbols or text, generic solid color, non-descript poster",
+        "privacy_element": "protest signage indicating political demonstration/stance",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "dense crowd of distant people along the street, faces small and not discernible",
+        "Anonymized_element": "silhouetted figures, fewer people, backs turned, added motion blur",
+        "privacy_element": "multiple individuals with distant faces and body outlines",
+        "target_concept": "crowd of people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13006095/r1_crops/2017_13006095_1.png"
+}

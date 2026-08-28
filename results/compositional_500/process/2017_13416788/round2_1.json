@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows several people outdoors near a tent, but all faces are deliberately obscured and there are no readable names, logos, addresses, or documents. Thus, no Level 1 or Level 2 identifiers are present. Remaining signals are contextual: a person holds a smartphone and a drink cup (minor behavior/asset cues), and there are unidentifiable bystanders. These low-to-moderate clues do not strongly expose identity, yielding a low overall risk score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear plastic cup held in left hand of foreground person",
+        "Anonymized_element": "empty generic cup, opaque cup, remove beverage",
+        "privacy_element": "visible beverage consumption implying social activity or event",
+        "target_concept": "drink cup",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "smartphone held in the same person\u2019s right hand",
+        "Anonymized_element": "blank phone-shaped object, screen off, no visible device details",
+        "privacy_element": "personal device ownership, potential on-screen content (though not readable)",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two additional people in the background with faces obscured",
+        "Anonymized_element": "remove or further blur background figures",
+        "privacy_element": "presence of bystanders and partial silhouettes",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13416788/r1_crops/2017_13416788_1.png"
+}

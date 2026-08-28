@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a storefront with readable signage indicating a specific shopping center/store names and a partially visible person inside a doorway. No clear faces, IDs, or financial/medical items are visible. The highest severity comes from location-identifying text (Level 3). A distant, non-identifiable person adds minor contextual risk. Together these cues suggest moderate but limited personal-information exposure focused on location rather than identity.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront wall sign with readable place/store name near the arches",
+        "Anonymized_element": "blank sign panel, generic geometric pattern, no text or logos",
+        "privacy_element": "readable location name/logo on building facade",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical hanging banner with shop branding fixed to the facade",
+        "Anonymized_element": "plain banner, solid color, abstract pattern, no text",
+        "privacy_element": "store/brand name text indicating a specific venue",
+        "target_concept": "hanging banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person standing just inside doorway, seen from behind through window",
+        "Anonymized_element": "empty interior, blurred silhouette, generic mannequin",
+        "privacy_element": "human presence, body outline (no identifiable face)",
+        "target_concept": "person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11411998/r1_crops/2017_11411998_0.png"
+}

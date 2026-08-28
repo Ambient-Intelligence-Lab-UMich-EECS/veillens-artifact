@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a printed shuttle ticket with legible text including a specific place name (\u201cPioneer High School\u201d), the service/event name (\u201cArtFairRide/TheRide\u201d) with year \u201c2015,\u201d and a visible ticket serial number \u201c04053.\u201d No faces or personal identifiers appear. The highest-severity clue is Level 3 location information from the school name; additional Level 4 clues are the document itself and metadata like the event name, year, and ticket number. These cues together pose a modest privacy risk by situating the scene in a particular locale and event but do not identify a person directly.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Readable text line on ticket stating 'PIONEER HIGH SCHOOL'",
+        "Anonymized_element": "replace with generic text like 'LOCAL HIGH SCHOOL' or blank area",
+        "privacy_element": "specific location name of an institution",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Logo and header text on ticket showing 'ArtFairRide' and 'TheRide 2015'",
+        "Anonymized_element": "generic logo, remove brand and year, neutral header",
+        "privacy_element": "organization/event name and year which can imply locale and timeframe",
+        "target_concept": "ticket header text/logo",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Red printed ticket serial number '04053' at top edge",
+        "Anonymized_element": "replace with zeros or abstract pattern, no digits",
+        "privacy_element": "unique ticket number on document",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11311837/r1_crops/2017_11311837_0.png"
+}

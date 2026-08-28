@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows a street demonstration with multiple clearly visible, front-facing faces, which are strong biometric identifiers (Level 1). Several participants are near the camera and unobstructed, while many more faces are visible in the background. The presence of a protest banner reveals participation in a public demonstration, enabling behavioral and potential political inferences (Level 2). Together these cues create a high privacy risk, driven mainly by identifiable faces. Confidence is high due to clarity and centrality of the faces and the evident march context.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center woman\u2019s unobstructed face looking forward",
+        "Anonymized_element": "blurred face, pixelated facial features, turned-away head, generic silhouette",
+        "privacy_element": "full frontal face, visible eyes/nose/mouth, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "left-side woman with short white hair, clear facial view",
+        "Anonymized_element": "face blurred, pixelated, or replaced with non-descript profile",
+        "privacy_element": "clear facial geometry and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background region containing many smaller faces of marchers",
+        "Anonymized_element": "region blurred, faces de-identified or replaced with generic silhouettes",
+        "privacy_element": "multiple identifiable faces, individual features partially visible",
+        "target_concept": "crowd faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large banner carried by participants at the front of the march",
+        "Anonymized_element": "plain neutral banner with no cues of protest or cause",
+        "privacy_element": "visible participation in a public demonstration implying social/political stance",
+        "target_concept": "protest banner",
+        "severity_level": 2,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14588632/r1_crops/2017_14588632_0.png"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a person reclining on a bed in a bedroom. The face is deliberately obscured, so no identifiable biometrics are visible. Privacy signals mainly come from personal attributes (body/clothing, hairstyle) and the activity of lying on a bed in a private indoor setting. The environment (mattress, pillows, corner of a room) gives weak location/home-context cues. With no readable identifiers or explicit nudity, the highest severity is moderate (Level 3). The combined cues justify a moderate but limited risk score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially masked face area with visible hair and general facial outline",
+        "Anonymized_element": "fully blurred or cropped-out head region, add neutral background where head was",
+        "privacy_element": "partial facial outline, hairstyle hinting at appearance",
+        "target_concept": "face region",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person\u2019s body reclined on a bed mattress",
+        "Anonymized_element": "change pose to sitting with back turned, replace with empty bed, or crop below shoulders",
+        "privacy_element": "lying-on-bed posture indicating private indoor activity",
+        "target_concept": "person posture on bed",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bedroom furnishings including mattress surface and pillows in room corner",
+        "Anonymized_element": "generic plain bedding, simplified texture, less distinctive furnishings",
+        "privacy_element": "home/bedroom setting implying residence context",
+        "target_concept": "bedroom furnishings",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10272356/r1_crops/2017_10272356_1.png"
+}

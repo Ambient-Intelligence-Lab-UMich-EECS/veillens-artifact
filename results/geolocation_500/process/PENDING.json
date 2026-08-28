@@ -1,0 +1,10 @@
+{
+  "part": "1 - reasoning during the VeilLens protection loop",
+  "expected_path": "process/<image_id>/round1_full_img.json  (+ iter<N>_full_img.json per verification)",
+  "expected_images": 500,
+  "present": 0,
+  "status": "not run",
+  "why": "No VeilLens protection run covers this image set. The largest Cityscapes geolocation run on disk is 100 images (pipeline2/result/test_iter3), and those 100 ids are a subset of these 500. Its reasoning is already archived, in full, at results/geolocation_100/. Runs of 217 and 200 images exist but are on other image sets or other configurations, and none of them extends past the 100 ids shared with this set.",
+  "consequence": "Nothing in this folder measures VeilLens itself on 500 images. Everything here is the GPT Image 2 baseline and the unprotected reference.",
+  "the_100_already_archived": "results/geolocation_100/process/<image_id>/"
+}

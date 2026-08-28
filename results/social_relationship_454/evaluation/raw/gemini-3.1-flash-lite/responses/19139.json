@@ -1,0 +1,23 @@
+{
+  "img_id": "19139",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 1,
+    "2 5": 3,
+    "3 5": 6,
+    "4 5": 1
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 3,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are both standing in the same area near a cake, but P1 is turned away and busy with a task while P2 is focused on a different pair. They appear to be unrelated guests at the same event. => no-relationship\n\n[P1-P5]: P1 is standing in the background while P5 is in the foreground focused on cutting a cake with P2. There is no visible interaction or orientation between them. => no-relationship\n\n[P2-P3]: P2 is occupied with P5, while P3 is standing in the background watching. They are likely fellow attendees at the same event without a specific connection. => no-relationship\n\n[P2-P4]: P2 is focused on P5, while P4 is standing nearby observing the event. They are likely acquaintances or guests at the same social gathering. => friends\n\n[P2-P5]: P2 and P5 are standing closely together, holding a knife to cut a wedding-style cake, which indicates a romantic partnership. Their body language and the context of the activity strongly suggest a romantic bond. => couple\n\n[P3-P5]: P3 is in the background observing the couple, and P5 is engaged in the activity of cutting the cake. They are likely guests at the same event. => no-relationship\n\n[P4-P5]: P4 is standing near P5 and appears to be watching the cake-cutting ceremony with interest. They are likely friends or family members sharing in the celebration. => friends",
+  "timestamp": 1779942229.415921
+}

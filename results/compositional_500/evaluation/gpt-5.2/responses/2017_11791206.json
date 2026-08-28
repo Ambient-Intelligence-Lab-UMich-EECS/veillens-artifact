@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image shows a clinical setting with several people in scrubs and gloves working around a covered body on a hospital bed. Faces appear deliberately obscured, and no readable names, documents, or IDs are visible. There are no clear biometric identifiers or government/financial/medical records. The main privacy signal is the medical context and activity, which can imply someone receiving care, plus occupational cues about the staff. These are Level 3 contextual clues rather than direct identifiers. Given the absence of legible identity information and the obfuscated faces, the overall risk is moderate-low. Confidence is medium due to clear medical context but limited identifying detail.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "covered body on a hospital-style bed with white sheets",
+        "Anonymized_element": "generic bed or table with neutral cloth, remove patient-like contours, non-clinical sheet texture",
+        "privacy_element": "implication of a patient receiving medical care",
+        "target_concept": "hospital bed with covered body",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "hands wearing blue medical gloves performing a procedure near the covered body",
+        "Anonymized_element": "bare hands or neutral work gloves away from body, repositioned hands not suggesting treatment",
+        "privacy_element": "active medical procedure implied by gloved hands near patient",
+        "target_concept": "medical gloves in use",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "people wearing blue/green medical scrubs around the bed",
+        "Anonymized_element": "generic casual clothing without clinical appearance",
+        "privacy_element": "occupational/clinical context indicating healthcare staff presence",
+        "target_concept": "medical scrubs",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "ceiling-mounted clinical lights and equipment above the group",
+        "Anonymized_element": "standard office-style ceiling without specialized fixtures",
+        "privacy_element": "hospital/clinical environment cue reinforcing medical context",
+        "target_concept": "clinical overhead lights",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11791206/final/2017_11791206_final.png"
+}

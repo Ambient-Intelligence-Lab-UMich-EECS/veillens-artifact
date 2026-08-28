@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a crowded outdoor scene with several individuals; some faces are masked but multiple others remain unobscured and reasonably identifiable at mid-range. This constitutes Level 1 biometric exposure. Additionally, a foreground person is wearing revealing swimwear with much of the back exposed, which is intimate attire (Level 2). There are no legible names, documents, or addresses. The combination of multiple visible faces and intimate clothing raises the overall privacy risk. Score reflects strong but not maximal risk due to moderate resolution and partial obstructions, with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of person in white tank top on the left foreground, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic oval mask",
+        "privacy_element": "full face with visible eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of person wearing a red headband near image center, mid-ground",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic oval mask",
+        "privacy_element": "full face with visible features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of person on the far right mid-ground wearing light-colored shirt",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic oval mask",
+        "privacy_element": "full facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "foreground person with back-facing bikini top and exposed back/shoulders",
+        "Anonymized_element": "less revealing top, covered back with t-shirt or tank, neutral clothing",
+        "privacy_element": "revealing swimwear indicating intimate attire and body exposure",
+        "target_concept": "revealing clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11222334/final/2017_11222334_final.png"
+}

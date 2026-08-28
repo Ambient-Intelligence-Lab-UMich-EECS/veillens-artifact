@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a dense public gathering with many clearly visible human faces; several foreground faces are sharp and directly identifiable, which constitutes biometric data (Level 1). Large rainbow pride flags are prominently displayed, which can imply sensitive associations (sexual orientation/political expression) for nearby participants (Level 2). While no readable addresses or names are visible, the combination of identifiable faces with sensitive-event symbolism elevates risk beyond basic crowd context. Overall this supports a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear frontal face of a person near center-right wearing sunglasses and smiling",
+        "Anonymized_element": "blurred face region, pixelated facial features, generic opaque mask",
+        "privacy_element": "distinct facial geometry, visible mouth and cheeks, partially visible eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clear side-profile face of a person near center-left with short dark hair",
+        "Anonymized_element": "pixelated/blurred facial area, occluded with neutral object",
+        "privacy_element": "recognizable profile including nose, eyes, chin outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow flag held aloft on right side of frame",
+        "Anonymized_element": "solid-color flag, abstract pattern with no identity-related symbolism",
+        "privacy_element": "rainbow pride flag suggesting LGBTQ+ affiliation or political stance",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "smaller rainbow flag raised at upper-left foreground",
+        "Anonymized_element": "plain single-color pennant, abstract gradient with no cultural meaning",
+        "privacy_element": "rainbow pride flag implying LGBTQ+ or political association",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10835768.jpg"
+}

@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a small indoor music performance. Faces are fully obscured, and no legible names, documents, IDs, or financial/medical items are visible. The main residual signals relate to activities (playing guitar/drums) and generic personal appearance (clothing), which are Level 3 and Level 4 risks and do not strongly identify a person. There are no clear location identifiers beyond a generic venue interior. Given the absence of Level 1–2 clues and only mild Level 3–4 context, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "brown electric guitar held and strummed by a person at the left foreground",
+        "Anonymized_element": "crop out the guitar, replace with neutral object, render as generic instrument silhouette without distinctive details",
+        "privacy_element": "depicts a specific hobby/behavior (live music performance)",
+        "target_concept": "guitar",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "green-gold cymbal on a drum set at the bottom-right on a stage",
+        "Anonymized_element": "remove drum kit, replace with generic stage object, blur equipment shapes",
+        "privacy_element": "indicates participation in a live music setting, suggests venue-type context",
+        "target_concept": "drum set/cymbal",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "black graphic T-shirt worn by the guitarist",
+        "Anonymized_element": "plain solid-color shirt without graphics or text",
+        "privacy_element": "clothing style contributes to personal appearance cues",
+        "target_concept": "clothing (shirt)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12571467/final/2017_12571467_final.png"
+}

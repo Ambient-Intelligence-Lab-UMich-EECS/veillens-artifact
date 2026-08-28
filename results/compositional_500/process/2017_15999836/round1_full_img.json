@@ -1,0 +1,49 @@
+{
+  "reasoning": "The image shows several printed event tickets with legible text. They include a venue name and street address, event dates/times, seating details, and unique ticket serial numbers. No faces, names, or government/financial identifiers are present. The highest-severity clues are Level 3 (location information and implied activity/attendance) but they are not linked to an identifiable person. Serial numbers are document-specific (Level 4). Combined, these cues pose a low overall personal-information risk.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed address line at the bottom of each ticket showing the venue\u2019s street address and contact details",
+        "Anonymized_element": "blank line, generic placeholder text without address or numbers, lightly blurred text region",
+        "privacy_element": "street address text, phone number text, venue name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical strip on the right edge of each ticket with a visible serial number",
+        "Anonymized_element": "blank margin, randomized digits not tied to real tickets, subtle pattern without numbers",
+        "privacy_element": "unique ticket serial number",
+        "target_concept": "ticket serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue handwritten/printed event date and start time near the top of each ticket",
+        "Anonymized_element": "redacted or replaced with generic month/year, removed time info",
+        "privacy_element": "specific event date and start time",
+        "target_concept": "event date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15999836.jpg"
+}

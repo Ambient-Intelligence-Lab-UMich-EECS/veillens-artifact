@@ -1,0 +1,15 @@
+{
+  "img_id": "16166",
+  "predictions": {
+    "1 4": 6,
+    "1 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 4": 6,
+    "1 5": 6
+  },
+  "raw_response": "[P1-P4]: Outdoor gathering/picnic scene; P1 is seated in the foreground while P4 is a separate standing figure at the far right with no engagement, no proximity, and no interaction. Their attire doesn\u2019t indicate a shared role, and they appear to be unrelated attendees in the same event. => no-relationship\n\n[P1-P5]: Same public outdoor event; P5 is standing behind/away from P1 with back turned and no shared focus, touch, or coordinated activity. The distance and lack of body-language connection suggest they\u2019re just in the same crowd. => no-relationship\n\n[P4-P5]: Both are standing in the background near each other but oriented differently with no clear mutual attention or contact. Clothing and context look like general event attendees rather than coworkers or a transaction. => no-relationship",
+  "timestamp": 1779952711.8210986
+}

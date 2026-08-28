@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a blue sports court with the clearly readable words \u201cParalympic Games\u201d and the Paralympic symbol, plus a visible sports wheelchair with a seated person\u2019s silhouette (no face or identifiers). The branding and wheelchair strongly imply disability and participation in a specific athletic context, which falls under sensitive inference even without identity. No biometric face or government/financial info is visible. Compositional risk arises from the event logo reinforcing the disability implication from the wheelchair. Hence a moderate privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manual sports wheelchair with seated person in side view; facial features not visible",
+        "Anonymized_element": "replace with generic athletic silhouette without mobility aid, or neutral chair shape, de-branded sports equipment",
+        "privacy_element": "wheelchair implying mobility impairment/disability; active sports participation",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white 'Paralympic Games' text and logo printed on blue court surface",
+        "Anonymized_element": "generic event text, abstract logo, or blank court with no readable wording",
+        "privacy_element": "explicit event branding revealing Paralympic context, implying disability and specific affiliation",
+        "target_concept": "event logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10895938/r1_crops/2017_10895938_0.png"
+}

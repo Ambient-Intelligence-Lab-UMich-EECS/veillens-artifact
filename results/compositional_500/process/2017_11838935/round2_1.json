@@ -1,0 +1,107 @@
+{
+  "reasoning": "The crop shows a group photo in front of a residence. Multiple individuals have clearly visible, unobstructed faces, which constitute biometric identifiers and allow recognition; this is the highest-severity element. A readable house-number plaque (\u201c6\u201d) appears near the door, adding location context that can combine with faces to increase re-identification risk. No names or direct IDs are visible. Given several strong Level 1 facial clues reinforced by a Level 3 location clue, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost standing person with blue headband, full face visible",
+        "Anonymized_element": "blurred or pixelated face, neutral oval mask, turned-away head",
+        "privacy_element": "full frontal face with visible eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "second person from left wearing brown graphic T-shirt, full face visible",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "third person from left in plaid shirt, face visible",
+        "Anonymized_element": "face blur or obfuscation, neutral mask",
+        "privacy_element": "unobstructed facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center person in white top, smiling face visible",
+        "Anonymized_element": "pixelated/blurred face, replaced with neutral oval",
+        "privacy_element": "clear facial features including eyes and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person behind center wearing glasses and striped shirt, face visible",
+        "Anonymized_element": "blurred face, remove glasses reflection, neutral mask",
+        "privacy_element": "recognizable face with glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "shorter person in dark hoodie near center-right, face visible",
+        "Anonymized_element": "face obfuscated or pixelated",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person in mint green top near right, face visible",
+        "Anonymized_element": "blurred/pixelated face",
+        "privacy_element": "unobstructed facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "house-number plaque with numeral '6' next to the door",
+        "Anonymized_element": "blank plaque, decorative symbol without numbers, smudged digits",
+        "privacy_element": "readable house number '6' indicating specific address unit",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11838935/r1_crops/2017_11838935_1.png"
+}

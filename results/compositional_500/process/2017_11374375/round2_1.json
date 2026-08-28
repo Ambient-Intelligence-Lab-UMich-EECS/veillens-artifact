@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a lottery payment cheque/voucher. The recipient\u2019s full name is clearly readable next to \u201cPAY TO,\u201d and a distinct handwritten signature is visible, both of which are Level 2 risks. The \u201cSA Lotteries\u201d logo reveals the organization and implies lottery participation and regional context, adding Level 3 risk. These direct, legible clues combine to produce a high-moderate privacy risk. Confidence is high due to clarity and centrality of the text and signature.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed recipient name \u201cBeau Giles\u201d next to the 'PAY TO' label on the cheque",
+        "Anonymized_element": "blur or replace with placeholder text, generic name field with no readable text",
+        "privacy_element": "full personal name, payment recipient field",
+        "target_concept": "recipient name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Blue-ink handwritten signature on the right side of the cheque",
+        "Anonymized_element": "blank signature line, generic non-identifiable scribble, remove ink stroke",
+        "privacy_element": "unique handwritten signature used for authorization",
+        "target_concept": "signature",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "'SA Lotteries' logo in the upper-left corner of the document",
+        "Anonymized_element": "generic logo without text, neutral color block, remove brand name",
+        "privacy_element": "organization name/brand revealing lottery participation and region",
+        "target_concept": "organization logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Cheque/voucher layout with 'PAY TO' field and preprinted form elements",
+        "Anonymized_element": "generic blank form, remove financial instrument layout cues",
+        "privacy_element": "financial instrument format indicating payment/cheque",
+        "target_concept": "cheque document area",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11374375/r1_crops/2017_11374375_1.png"
+}

@@ -1,0 +1,107 @@
+{
+  "reasoning": "The image shows a group of people posing on a house porch. Multiple faces are clearly visible with direct frontal views, which are strong biometric identifiers (Level 1). A house number plaque next to the door appears readable (\u201c6\u201d), adding location information (Level 3). The visible exterior doorway/porch further contextualizes location and property (Level 4). The combination of many identifiable faces with a partial address cue produces a high privacy risk. Score reflects strong, central, unoccluded faces and reinforcing location context. Confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of person in white t-shirt standing far right",
+        "Anonymized_element": "blurred or pixelated face, face replaced with neutral oval, head turned away",
+        "privacy_element": "full unobstructed face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in mint-green shirt near right side",
+        "Anonymized_element": "blurred face, neutralized facial features, head turned",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in white scoop-neck top near center",
+        "Anonymized_element": "pixelated face, generic smooth oval, cropped above neck",
+        "privacy_element": "distinct, well-lit facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of seated person with glasses in foreground",
+        "Anonymized_element": "blurred face and glasses removed, generic eyewear without eyes shown",
+        "privacy_element": "clear facial features and eyewear increasing distinctiveness",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in blue t-shirt on far left",
+        "Anonymized_element": "face pixelation, replace with neutral oval, turn head away",
+        "privacy_element": "clear face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of person in dark hoodie near right-center",
+        "Anonymized_element": "blurred/pixelated face, head turned or cropped",
+        "privacy_element": "full face visible for identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "house number plaque beside the front door showing the digit '6'",
+        "Anonymized_element": "blank plaque, smudged/removed number, generic wall texture",
+        "privacy_element": "readable house number that narrows address",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinct residential doorway and porch area with brick pillars",
+        "Anonymized_element": "plain interior-style backdrop, generic wall without architectural details",
+        "privacy_element": "recognizable exterior of a specific residence",
+        "target_concept": "house exterior/doorway",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11838935.jpg"
+}

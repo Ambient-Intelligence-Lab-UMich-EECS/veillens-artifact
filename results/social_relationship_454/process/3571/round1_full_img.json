@@ -1,0 +1,54 @@
+{
+  "img_id": "3571",
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 3": 4,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 6,
+    "2 3": 4,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [
+    "1 5",
+    "1 6",
+    "2 5",
+    "2 6",
+    "3 5",
+    "3 6",
+    "4 5",
+    "4 6",
+    "5 6"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [
+    5,
+    6
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P2]: They are in a basketball game in a gym; close with defensive/offensive body language, different team jerseys, interacting competitively but not affectionately. => professional\n\n[P1-P3]: Same white team uniforms on the court in the same play; moderate distance, oriented as teammates without personal contact. => professional\n\n[P1-P4]: P1 is playing on court while P4 stands off to the side/by a doorway in street clothes; far apart with no interaction. => no-relationship\n\n[P2-P3]: On-court opponents in different uniforms within the same play area; competitive posture, no personal contact. => professional\n\n[P2-P4]: P2 is an active player; P4 appears to be a background spectator/side observer, distant with no engagement. => no-relationship\n\n[P3-P4]: P3 is a player on the court; P4 is off-court in the background with no interaction or matching attire. => no-relationship",
+  "timestamp": 1776888268.4654934
+}

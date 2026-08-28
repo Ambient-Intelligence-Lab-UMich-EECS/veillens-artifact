@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a public street with several people. Most faces are either turned away, distant, out of focus, or visibly masked, so no identifiable biometric data is exposed. There are no readable names, documents, addresses, or financial/medical items. The main residual signals are contextual: a distinctive costume on a foreground person that could make them recognizable within an event context, and a general crowd in a public place. These are Level 3–4 clues and do not combine with any higher-severity identifiers. Therefore the overall privacy risk is low, based on mild activity/appearance cues without direct identification.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person on right wearing a distinctive costume dress with playing-card motifs and a headband",
+        "Anonymized_element": "plain dress with solid colors, no motifs or symbols; neutral headband",
+        "privacy_element": "distinctive costume style and motifs that can make the person recognizable at a specific event",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "group of people standing along the sidewalk at an intersection; faces distant/turned away/obscured",
+        "Anonymized_element": "blurred silhouettes with reduced detail; fewer people",
+        "privacy_element": "presence of a public crowd, partial silhouettes of individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11507567/final/2017_11507567_final.png"
+}

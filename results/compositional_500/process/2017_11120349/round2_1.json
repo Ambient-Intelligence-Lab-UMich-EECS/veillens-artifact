@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a mixed-media collage with fragments of printed forms, a partial URL, handwritten notes, numbers, and stickers. There are no faces, IDs, financial or medical items, or unique personal identifiers. The visible clues are generic document text and metadata-like elements (URL, numbers), which carry low standalone privacy risk. Compositionally they do not reveal identity or sensitive traits. Therefore the score remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "fragment of a printed form with partial URL text near the right edge",
+        "Anonymized_element": "plain paper texture, remove/blur all text and URL, generic pattern",
+        "privacy_element": "legible website URL fragment, printed instructional text",
+        "target_concept": "printed form/label",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "area with black handwritten words on white scrap in the center-right",
+        "Anonymized_element": "blank paper scrap, faint scribbles without words, abstract strokes",
+        "privacy_element": "handwritten text that could carry personal notes",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small red-orange rectangular sticker with number 0.84 near the top-right",
+        "Anonymized_element": "solid-color sticker without numbers or symbols",
+        "privacy_element": "numeric value printed on sticker",
+        "target_concept": "price/value sticker",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11120349/r1_crops/2017_11120349_1.png"
+}

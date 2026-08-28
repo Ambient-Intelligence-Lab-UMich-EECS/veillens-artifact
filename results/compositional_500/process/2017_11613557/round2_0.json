@@ -1,0 +1,70 @@
+{
+  "reasoning": "This crop shows a large group of people outdoors. Several individuals\u2019 faces are clearly visible, centered, and unobstructed, which constitutes biometric identifiers (Level 1). Additional contextual cues indicate a fitness/running activity via athletic outfits and a hydration belt (Level 3). The background includes a distinctive building facade but no readable signage. Because multiple clear faces are present, the highest severity is Level 1, yielding a high overall privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row person in light blue jacket with fully visible face looking at camera",
+        "Anonymized_element": "blurred face, turned-away head, neutral skin-toned patch",
+        "privacy_element": "clear full face, eyes and facial structure visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "front-row person in black athletic top near right side with uncovered face",
+        "Anonymized_element": "face pixelation, generic oval mask, head turned sideways",
+        "privacy_element": "distinct facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "middle-row person in gray top without sunglasses, face centered and sharp",
+        "Anonymized_element": "low-detail face render, blur, replace with generic silhouette",
+        "privacy_element": "recognizable facial geometry and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "front-right kneeling person wearing a black hydration/running belt with bottles",
+        "Anonymized_element": "plain belt without bottles, crop or remove belt",
+        "privacy_element": "specialized running gear indicating exercise routine",
+        "target_concept": "hydration belt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background cylindrical brick structure with adjacent glass-block wall",
+        "Anonymized_element": "generic blurred building wall, simplified texture",
+        "privacy_element": "distinctive building facade that could hint at venue/location",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11613557/r1_crops/2017_11613557_0.png"
+}

@@ -1,0 +1,25 @@
+{
+  "reasoning": "The crop shows a wide roadway beside a construction site with a single pedestrian far in the distance. No faces, license plates, or readable text are visible. The only personal-information cue is the presence of an unidentifiable person, which provides minimal privacy risk without identifying details or sensitive context. Therefore, the highest severity present is low (Level 4), and the overall risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small, distant pedestrian walking along the fenced sidewalk near the construction site",
+        "Anonymized_element": "empty sidewalk, blur the figure heavily, replace with generic silhouette lacking detail",
+        "privacy_element": "human presence, body outline and clothing that minimally suggests personal attributes",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12753454/r1_crops/2017_12753454_1.png"
+}

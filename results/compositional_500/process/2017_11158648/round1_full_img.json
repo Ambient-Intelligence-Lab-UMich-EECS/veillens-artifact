@@ -1,0 +1,71 @@
+{
+  "reasoning": "Two individuals in military dress are centered, both with unobstructed, high-resolution faces, which are directly identifying (Level 1). They hold a diploma where the institution name \u201cUnited States Naval War College\u201d is readable, revealing affiliation and activity (education/credential). Visible military uniforms with rank insignia and ribbons further disclose occupational affiliation and personal attributes. These cues reinforce each other to identify persons and context, yielding a high privacy risk. The evidence is clear and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s unobstructed face with clear facial features",
+        "Anonymized_element": "blurred face, pixelated face, cropped head, generic silhouette",
+        "privacy_element": "full face, identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s unobstructed face with clear facial features",
+        "Anonymized_element": "blurred face, pixelated face, cropped head, generic silhouette",
+        "privacy_element": "full face, identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "certificate held between the two people with readable heading",
+        "Anonymized_element": "blank certificate, no text, no logo, generic paper",
+        "privacy_element": "institution name text, credential context",
+        "target_concept": "certificate",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s military uniform with rank stripes and multiple service ribbons",
+        "Anonymized_element": "plain dark suit, remove insignia and ribbons, generic buttons",
+        "privacy_element": "military affiliation, rank insignia, service ribbons",
+        "target_concept": "military uniform insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left person\u2019s military uniform with rank stripes and nameplate (text not legible)",
+        "Anonymized_element": "plain dark suit, remove insignia and nameplate",
+        "privacy_element": "military affiliation, rank insignia, potential nameplate",
+        "target_concept": "military uniform insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11158648.jpg"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a golfer mid-swing at an event tee area. The person\u2019s face is clearly visible and identifiable, which is a Level 1 biometric risk. Readable event signage with Korean text and branding can hint at the event and locale, adding Level 3 location context. The visible golf action reflects a specific activity/behavior. With a strong, central face and reinforcing contextual clues, the overall privacy risk is high. Confidence is high because all cues are clear and unobstructed.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face in three-quarter view wearing a white cap",
+        "Anonymized_element": "face blurred or pixelated, neutral shading, head turned away, sunglasses obscuring eyes",
+        "privacy_element": "clear identifiable facial features including eyes, nose, mouth, and contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "golfer holding a driver and executing a swing posture",
+        "Anonymized_element": "neutral standing pose, arms lowered, no club visible",
+        "privacy_element": "specific sports action indicating participation in golf",
+        "target_concept": "sports action",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "event signboard with readable Korean text and LG branding near the tee box",
+        "Anonymized_element": "blank banner with no text or logos, generic colors",
+        "privacy_element": "readable event name/branding and possible date/location cues",
+        "target_concept": "event sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16250907.jpg"
+}

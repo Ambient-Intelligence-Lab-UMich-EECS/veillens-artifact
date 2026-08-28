@@ -1,0 +1,38 @@
+{
+  "reasoning": "The image shows a small group of people relaxing on a beach. Two individuals\u2019 faces are visible: one woman in the center looking toward the camera (wearing sunglasses) and another woman at left in profile. These are biometric identifiers (Level 1), though distance and sunglasses reduce clarity. No names, documents, addresses, or explicit sensitive data are legible. Context implies casual leisure activity only. Given the presence of identifiable faces but limited reinforcing clues, the overall privacy risk is moderate to high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman standing/sitting near center wearing sunglasses and swimsuit with face visible",
+        "Anonymized_element": "apply face blur, turn head away, crop above shoulders, add larger hat and shadow",
+        "privacy_element": "visible facial features, partial profile despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on left side of frame in profile with face partially lit",
+        "Anonymized_element": "blur face, crop frame to remove head, replace with back-of-head view",
+        "privacy_element": "recognizable facial outline and features in profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13943855.jpg"
+}

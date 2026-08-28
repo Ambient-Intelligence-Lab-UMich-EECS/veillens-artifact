@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a crowded street scene with several clearly visible, unobscured faces of different individuals at close to mid distance. These identifiable faces constitute biometric data, which is Level 1 severity. No readable names, documents, or specific addresses are visible, and signage appears out of focus, so the main risk is from multiple identifiable faces rather than additional identifiers. Because several distinct faces are sharp and central, the overall privacy risk is high. Confidence is high given the clarity of the faces.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male face at far left wearing a white shirt",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, occluding mask or sticker",
+        "privacy_element": "full frontal face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "adult female face near center-left with short hair",
+        "Anonymized_element": "blurred face, pixelation, head turned away, mask",
+        "privacy_element": "identifiable facial features in focus",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "child's face at front-center wearing a light blue backpack",
+        "Anonymized_element": "pixelated or blurred face, cartoon sticker overlay, face turned away",
+        "privacy_element": "recognizable child’s facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "elderly woman’s face right-center in dark clothing",
+        "Anonymized_element": "blurred face, pixelation, occluding mask",
+        "privacy_element": "clear facial features facing camera",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "adult female face at right holding a pink bag",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, mask overlay",
+        "privacy_element": "clear facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "uniformed officer’s face center-right wearing a peaked cap",
+        "Anonymized_element": "blurred face, pixelation, turned-away head",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10085019/final/2017_10085019_final.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a street demonstration with many people holding protest signs, two uniformed police officers, and a visible building banner reading \u201cNYU\u2026\u201d. Text on individual placards is not legible and faces are small/blurred, but the presence of protest signage enables a sensitive inference about political participation (Level 2). The NYU banner suggests a specific institutional/location context (Level 3). Numerous distant, largely unidentifiable faces add minor biometric/crowd risk (Level 4). Combined, these cues yield a moderate privacy risk. Confidence is medium due to limited facial legibility and unreadable placard text.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular protest placard held above the crowd (text not legible)",
+        "Anonymized_element": "blank sign, abstract pattern, plain color board without slogans",
+        "privacy_element": "protest signage implying political demonstration or activism",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical building banner on the left facade with readable 'NYU' text",
+        "Anonymized_element": "blank banner, generic pattern, no institution name or logo",
+        "privacy_element": "institution name revealing probable location/landmark",
+        "target_concept": "building banner with institution name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large group of people in the street with small, indistinct faces",
+        "Anonymized_element": "reduced crowd density, blur/noise strengthening, backs-only silhouettes",
+        "privacy_element": "crowd of distant individuals with partially visible faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13006095/r1_crops/2017_13006095_0.png"
+}

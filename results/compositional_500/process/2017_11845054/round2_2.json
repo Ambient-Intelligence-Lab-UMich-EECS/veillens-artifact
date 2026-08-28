@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person seated in a clearly identifiable wheelchair, with the large wheel and frame visible, and the person holding a cigarette. No face or explicit identifiers are shown. The wheelchair implies a sensitive inference about disability (Level 2), and the cigarette indicates a behavioral habit (Level 3). Without biometric identity, the risk is moderate but meaningful from the sensitive inference. Score reflects the presence of Level 2 evidence with reinforcing behavioral context. Confidence is high because both cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side view of a wheelchair\u2019s large wheel and frame next to a seated person",
+        "Anonymized_element": "replace with generic chair armrest, remove large wheel and push rim, neutral tubular frame without mobility-aid cues",
+        "privacy_element": "wheelchair frame and large wheel, push rim indicating mobility aid",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "small cigarette held between the person\u2019s fingers near the wheel",
+        "Anonymized_element": "empty hand, generic pen-like object, crop out cigarette tip",
+        "privacy_element": "cigarette stick and smoking gesture",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11845054/r1_crops/2017_11845054_2.png"
+}

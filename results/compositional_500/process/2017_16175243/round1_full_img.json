@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a small group at a public demonstration. The foreground person\u2019s face is clearly visible in profile, and another participant\u2019s face is also visible, providing identifiable biometric data (Level 1). A readable protest sign conveys a specific stance, allowing sensitive inference about political views and participation (Level 2). No names, IDs, or location details are legible. The combination of identifiable faces with a political message elevates the overall risk to high. Confidence is high because these elements are central and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person\u2019s uncovered face in profile (green beanie, looking right)",
+        "Anonymized_element": "blurred face, pixelated features, turned head away, add scarf covering lower face",
+        "privacy_element": "clear facial features, skin texture, unique hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background participant\u2019s face with glasses and beard (neon green jacket)",
+        "Anonymized_element": "blurred/pixelated face, remove glasses detail, turned head away",
+        "privacy_element": "distinct facial features, eyes/nose/mouth visible, facial hair pattern",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld cardboard protest sign reading a clear slogan",
+        "Anonymized_element": "blank cardboard, abstract shapes only, illegible scribbles",
+        "privacy_element": "readable political/environmental slogan indicating stance and participation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16175243.jpg"
+}

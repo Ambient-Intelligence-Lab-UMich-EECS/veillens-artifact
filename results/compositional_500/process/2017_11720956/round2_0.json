@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a dog lying on a patterned couch. In the lower-left corner there is a small stack of paper documents, but any text is out of focus and not legible. No people, faces, IDs, or other direct identifiers are visible. The only privacy-relevant element is the presence of generic papers, which poses low risk since no details can be read and there is no reinforcing context.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small stack of paper documents on the table edge in the lower-left corner",
+        "Anonymized_element": "blank sheets, no visible text, generic notepad",
+        "privacy_element": "printed text layout that could contain personal details if legible",
+        "target_concept": "paper documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11720956/r1_crops/2017_11720956_0.png"
+}

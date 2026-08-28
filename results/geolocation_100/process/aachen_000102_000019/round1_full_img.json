@@ -1,0 +1,78 @@
+{
+  "reasoning": "Country: The scene shows EU-style features: blue parking signs with a white P, right-side driving, and white EU license plates with a blue band. Text on the central building reads \u201cHOCHSCHULE F\u00dcR MUSIK UND TANZ,\u201d clearly German, pointing to Germany rather than neighboring countries. Architecture (19th\u2013early 20th century stone facades, narrow cobbled sidewalks with metal bollards) is typical of German inner-city streets.\nCity: The exact institution name strongly suggests the Hochschule f\u00fcr Musik und Tanz K\u00f6ln (University of Music and Dance Cologne), a well-known German conservatory whose main campus is in Cologne, with additional sites in Wuppertal and Aachen. The large freestanding stone-front building with the inscription across ground-floor windows matches images of HfMT buildings in Cologne. The dense central-city block layout, angled curbside parking, and blue street-name plates also fit Cologne\u2019s inner districts north of the cathedral rather than the hillier, more varied streetscapes near Wuppertal\u2019s Stadthalle.\nStreet: The view looks down a short, quiet one-way side street terminating at the conservatory facade, with continuous waist\u2011high metal bollards lining the left sidewalk, angle\u2011in parking bays on the right, and multiple blue P signs. The distinctive inscription \u201cHOCHSCHULE F\u00dcR MUSIK UND TANZ\u201d on the gray stone building at the street\u2019s end is a unique marker that identifies this exact frontage near the HfMT K\u00f6ln main building in the Kunibertsviertel area (around Unter Krahnenb\u00e4umen). These combined features differentiate this block from adjacent Cologne streets lacking the conservatory facade and bollard line.",
+  "location_estimate": {
+    "latitude": 50.946,
+    "longitude": 6.96,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, Cologne (K\u00f6ln)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "building sign above a doorway with bold sans-serif letters",
+        "non_geolocation_element": "gray stone background, black lettering, rectangular sign band, overcast lighting",
+        "geolocation_element": "German text \u201cHOCHSCHULE F\u00dcR MUSIK UND TANZ\u201d naming a specific institution",
+        "target_concept": "building sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking sign on a pole at the right sidewalk",
+        "non_geolocation_element": "blue square sign, white letter, metal pole, reflective surface",
+        "geolocation_element": "European style white \u201cP\u201d on blue with German-format supplementary plate beneath",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a dark hatchback at the right curb",
+        "non_geolocation_element": "rectangular white plate, black characters, blue band on the left, reflective finish",
+        "geolocation_element": "EU plate with German D/EU stars format typical for Germany",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street name sign on a building facade at mid-right",
+        "non_geolocation_element": "small blue rectangular plate, white text, mounted on stone wall",
+        "geolocation_element": "German-style street name formatting indicating German language signage",
+        "target_concept": "street name sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "facade of gray stone building at the end of the street",
+        "non_geolocation_element": "light gray stone cladding, grid of square windows, neoclassical proportions",
+        "geolocation_element": "institutional facade associated with the conservatory named on its ground level",
+        "target_concept": "facade",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of metal bollards along the left sidewalk",
+        "non_geolocation_element": "short dark metal posts, cylindrical shape, evenly spaced line",
+        "geolocation_element": "bollard style common in German inner cities",
+        "target_concept": "bollards",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/aachen/aachen_000102_000019_leftImg8bit.png"
+}

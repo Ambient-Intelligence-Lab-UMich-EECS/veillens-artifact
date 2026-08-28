@@ -1,0 +1,72 @@
+{
+  "reasoning": "This regional crop shows multiple clearly identifiable faces, including a centered child and several adults in the background. These frontal, well-lit faces constitute Level 1 biometric data. No readable names, addresses, or financial/medical items are visible, and storefront text is not legible. The presence of multiple distinct faces (one being a minor) increases identification risk, leading to a high but not extreme score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "centered child\u2019s face wearing a green shirt, seated and looking forward",
+        "Anonymized_element": "blurred face, pixelated facial region, turned-away head, generic smooth facial area without features",
+        "privacy_element": "full frontal face with visible eyes, nose, and mouth (minor)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult woman\u2019s face with short hair and glasses, right background, smiling",
+        "Anonymized_element": "blurred face, remove glasses details, turned-away head",
+        "privacy_element": "clear adult face with recognizable features and eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult man\u2019s face behind the child, center-left background, neutral expression",
+        "Anonymized_element": "pixelated facial area, generic head silhouette, turned-away head",
+        "privacy_element": "frontal adult face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "older man\u2019s face in the upper background, slightly right of center",
+        "Anonymized_element": "blurred face, smoothed facial features, turned-away head",
+        "privacy_element": "recognizable adult face with age-related features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult woman\u2019s face on the far left, seated, partially turned toward camera",
+        "Anonymized_element": "pixelated face, generic skin-toned patch, turned-away head",
+        "privacy_element": "clearly visible adult face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11730503/r1_crops/2017_11730503_1.png"
+}

@@ -1,0 +1,106 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic, EU-style blue circular keep-right sign, and a white bicycle lane marking common in continental Europe. Multiple signs are in German (\u201cKOMMERZ HOTEL\u201d), and cars display EU plates with the German DIN font and hyphenated city code, indicating Germany. Architecture and street furniture (bollards, yield sign style) also match Germany. City level: In the background is a large indoor arena with a prominent steel ring/arch and blue cladding, strongly resembling the LANXESS Arena in K\u00f6ln-Deutz. A tall cylindrical glass tower visible left aligns with the K\u00f6lnTriangle tower skyline near the Rhine. Overhead tram catenary wires fit Cologne\u2019s KVB Stadtbahn network in Deutz. These elements collectively indicate Cologne (K\u00f6ln), North Rhine\u2013Westphalia. Street level: The view appears on the approach to the arena area with a small central island/mini-roundabout, bike racks along the sidewalk, and mixed-use midrise buildings. The sightline that places the LANXESS Arena to the right-front with the K\u00f6lnTriangle further left behind trees is characteristic of streets around Willy-Brandt-Platz/Deutz-Kalker Stra\u00dfe by the arena. The specific mix of the arena fa\u00e7ade, the island with a keep-right sign, and nearby hotel signage distinguishes this immediate block near the arena entrances.",
+  "location_estimate": {
+    "latitude": 50.9385,
+    "longitude": 6.9803,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, Cologne (Deutz / LANXESS Arena area)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "hotel sign above a doorway",
+        "non_geolocation_element": "white letters, rectangular panel, backlit, mounted above glass entrance",
+        "geolocation_element": "text: 'KOMMERZ HOTEL' in German",
+        "target_concept": "hotel sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a black car",
+        "non_geolocation_element": "white plate, black DIN-style font, blue strip on the left, rear position",
+        "geolocation_element": "EU plate format with German city code pattern (e.g., two-letter code with seal)",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "keep-right sign on a pole",
+        "non_geolocation_element": "blue circular sign, white downward arrow, metal pole, reflective surface",
+        "geolocation_element": "EU-standard traffic sign design used in Germany",
+        "target_concept": "keep-right sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yield sign on a pole",
+        "non_geolocation_element": "inverted red triangle with white center, mounted on gray pole",
+        "geolocation_element": "German/EU yield sign style",
+        "target_concept": "yield sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "stadium roof with steel arch",
+        "non_geolocation_element": "curved steel truss, blue cladding, large scale structure",
+        "geolocation_element": "distinctive ring-arch of LANXESS Arena",
+        "target_concept": "stadium roof",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "glass tower in the background",
+        "non_geolocation_element": "tall cylindrical shape, glass curtain wall, gray tone",
+        "geolocation_element": "silhouette consistent with K\u00f6lnTriangle tower",
+        "target_concept": "glass tower",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bicycle lane marking on asphalt",
+        "non_geolocation_element": "white painted bicycle pictogram, solid lane line, dark asphalt",
+        "geolocation_element": "German-style bike lane marking conventions",
+        "target_concept": "bicycle lane marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bike rack row near the curb",
+        "non_geolocation_element": "multiple parked bicycles, metal stands, sidewalk edge",
+        "geolocation_element": "dense urban cycling infrastructure typical in Cologne but not unique",
+        "target_concept": "bike rack",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram wire above the roadway",
+        "non_geolocation_element": "overhead catenary line, gray support poles, suspended cables",
+        "geolocation_element": "presence of Stadtbahn overhead wiring consistent with Cologne\u2019s KVB network",
+        "target_concept": "tram wire",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/cologne/cologne_000120_000019_leftImg8bit.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows two people posing in a photo booth. Both faces are visible and reasonably identifiable: the man\u2019s full face is unobstructed, and the woman\u2019s face is mostly visible despite oversized novelty glasses and a fake mustache prop. These constitute biometric data, which is the highest-severity category present. There are no readable names, documents, or location indicators. Given two central, well-lit faces and absence of other identifiers, the privacy risk is mainly from facial identifiability, leading to a moderately high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Man\u2019s frontal face with eyeglasses, looking at the camera",
+        "Anonymized_element": "blurred face, pixelated face, replaced with plain oval mask, turned head away",
+        "privacy_element": "full frontal face, visible eyes and facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Woman\u2019s face mostly visible behind oversized orange novelty glasses and fake mustache prop",
+        "Anonymized_element": "opaque mask, blurred face, pixelated face, remove facial features",
+        "privacy_element": "facial outline and features still discernible despite props",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12071035.jpg"
+}

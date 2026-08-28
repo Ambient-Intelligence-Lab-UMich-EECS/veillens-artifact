@@ -1,0 +1,37 @@
+{
+  "reasoning": "The crop shows a large outdoor concert crowd facing a colorful stage. Individual faces are small and not identifiable, but the scene reveals attendance at a specific public event via a readable \u201cSummer of Love\u201d banner. No names, government IDs, or close-up biometric details are visible. The highest relevant level is moderate (Level 3) from activities/location context, combined with a low-risk crowd cue. This yields a low overall privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "dense crowd of people with small, indistinct faces viewed from behind and at a distance",
+        "Anonymized_element": "replace with generic silhouettes, apply coarse face blurring, reduce person detail",
+        "privacy_element": "presence of many people, human faces even if not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "stage banner reading \u201cSummer of Love\u201d with distinctive colorful graphics",
+        "Anonymized_element": "blank banner, abstract pattern, remove readable text and logos",
+        "privacy_element": "readable event name, distinctive event branding",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16061365/r1_crops/2017_16061365_0.png"
+}

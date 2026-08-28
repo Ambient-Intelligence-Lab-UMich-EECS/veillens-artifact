@@ -1,0 +1,36 @@
+{
+  "reasoning": "The regional crop shows the back insert of a commercial CD case with clearly readable printed text. It exposes several personal names (performer and composers) and a publisher mailing address including city, state, ZIP, and country. There are no faces or biometric identifiers. The highest severity present is Level 2 due to explicit names, combined with Level 3 location information (address). As these are printed on a product rather than a private individual, the overall risk is moderate-low but real because the text is legible and could be repurposed.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed mailing address at bottom-left of the CD back cover (Box 374, Lomita, CA 90717, USA)",
+        "Anonymized_element": "city only without street or box, remove ZIP, replace with generic placeholder text, blurred digits",
+        "privacy_element": "specific mailbox number, city and state, ZIP code, country",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "List of names in track credits and header (e.g., performer and composers)",
+        "Anonymized_element": "generic role labels, initials only, placeholder track titles with no personal names",
+        "privacy_element": "full personal names printed in text",
+        "target_concept": "names text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11582428/r1_crops/2017_11582428_0.png"
+}

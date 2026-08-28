@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a colorful advertising poster with stylized text (\u201cWise Guys Buy Astra Fireworks\u201d) and graphics. There are no real people, faces, IDs, addresses, or other personal identifiers. The only privacy-relevant element is generic document text/branding, which carries minimal risk. Highest severity is Level 4 and not compositional with anything else, so overall risk is very low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.03,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "colorful poster area with large readable text and brand name",
+        "Anonymized_element": "remove or blur text, replace with abstract shapes or solid colors, generic non-branded graphics",
+        "privacy_element": "readable product brand name, advertising slogan",
+        "target_concept": "poster text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15972923/r1_crops/2017_15972923_0.png"
+}

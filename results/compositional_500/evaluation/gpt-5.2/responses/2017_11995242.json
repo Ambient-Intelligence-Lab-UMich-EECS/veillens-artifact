@@ -1,0 +1,44 @@
+{
+  "reasoning": "The central person’s face is obscured, so no direct biometric identifier is visible. The backdrop prominently displays the event name and logos, revealing a specific conference context, and the person is clearly on stage with a headset mic and belt pack, indicating a public-speaking activity. A small, distant attendee face is partially visible in the corner but not identifiable. These are Level 3 and Level 4 clues that provide contextual location/activity signals without direct identifiers, leading to a moderate but limited privacy risk. Confidence is medium due to clear event branding but absence of faces or unique identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large green stage backdrop with repeated readable 'TechCrunch Disrupt' logos",
+        "Anonymized_element": "abstract patterned backdrop, no text or logos, generic gradient",
+        "privacy_element": "event name readable, company logos, conference branding",
+        "target_concept": "event logo/banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "headset microphone on the speaker’s cheek with wireless belt pack clipped at waist",
+        "Anonymized_element": "no microphone visible, generic clothing without equipment, remove belt pack",
+        "privacy_element": "on-stage speaking equipment signaling role/activity",
+        "target_concept": "headset microphone and belt pack",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "small, distant person’s head in lower-left corner of the frame",
+        "Anonymized_element": "crop out corner, blur the small head, replace with background",
+        "privacy_element": "partial face of bystander (distant, not identifiable)",
+        "target_concept": "distant audience face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11995242/final/2017_11995242_final.png"
+}

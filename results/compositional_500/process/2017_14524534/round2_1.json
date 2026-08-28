@@ -1,0 +1,62 @@
+{
+  "reasoning": "This crop shows several people at a meeting table with multiple clearly visible faces, including one frontal face and several side profiles. Biometric identifiers are the highest-severity elements, as facial features are discernible enough for recognition. These cues also reveal personal attributes like approximate age and gender and indicate participation in a meeting context. No readable names, IDs, or other sensitive documents are legible. The presence of multiple identifiable faces drives a high but not extreme risk score. Confidence is high due to clear visibility of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "young woman at center facing camera with full facial features visible",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic silhouette",
+        "privacy_element": "full frontal face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman on left foreground in profile holding a pen",
+        "Anonymized_element": "profile blurred, head turned further away, generic silhouette",
+        "privacy_element": "clear side profile with identifiable facial contour and ear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "balding man behind left woman with partial side face visible",
+        "Anonymized_element": "blurred facial area, head cropped or obscured",
+        "privacy_element": "recognizable side facial features and hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman writing at table with head slightly bowed, partial face visible",
+        "Anonymized_element": "face area blurred, head further down or obscured by object",
+        "privacy_element": "partial but identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14524534/r1_crops/2017_14524534_1.png"
+}

@@ -1,0 +1,92 @@
+{
+  "reasoning": "The image shows a social setting with three women in the foreground and several people in the background. Multiple full, clearly identifiable faces are visible, which is Level 1 biometric data. Additional context shows alcoholic beverages on the table, indicating activities/behaviors (Level 3). The presence of several strong, central, unobstructed faces dominates the risk, while the activity clues mildly increase it. No government IDs, financial or medical information are visible. Overall risk is high due to multiple identifiable faces; confidence is high because the faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "full face of the woman on the left in the foreground, looking at camera",
+        "Anonymized_element": "blurred/pixelated face, replaced with neutral silhouette, obscured eyes and mouth",
+        "privacy_element": "clear facial features, unobstructed eyes, nose, and mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "full face of the woman in the center foreground with short blonde hair",
+        "Anonymized_element": "blurred/pixelated face, neutralized skin texture, obscured eyes and mouth",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "full face of the woman on the right in the foreground, smiling",
+        "Anonymized_element": "blurred/pixelated face, generic silhouette, obscured eyes and mouth",
+        "privacy_element": "clear facial features and expression enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background man in light blue shirt, partial profile face visible",
+        "Anonymized_element": "blurred face region, generic head shape without features",
+        "privacy_element": "recognizable facial features despite being slightly off-angle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background man in dark suit, facing camera and smiling",
+        "Anonymized_element": "blurred/pixelated face region, neutralized features",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wine glass with light-colored wine in front of the right woman",
+        "Anonymized_element": "opaque cup or empty glass without alcoholic cues",
+        "privacy_element": "distinct wine glass shape and wine appearance implying alcohol consumption",
+        "target_concept": "wine glass",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tall cocktail glass with pink drink and ice on the table",
+        "Anonymized_element": "opaque cup or non-alcoholic generic beverage, no garnish",
+        "privacy_element": "cocktail glass form and mixed drink appearance suggesting alcohol consumption",
+        "target_concept": "cocktail glass",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13465259.jpg"
+}

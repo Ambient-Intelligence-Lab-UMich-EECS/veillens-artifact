@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a single sheet of handwritten technical notes with partially legible terms (e.g., config paths, software components, and setup reminders). There are no names, faces, addresses, financial or government identifiers. The content could hint at work-related activities but remains generic and not directly identifying. Thus the highest severity is Level 4 (generic document text). Multiple readable regions slightly raise risk due to legibility and technical specificity, but overall exposure is low.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center area of the page with handwritten file paths and configuration notes",
+        "Anonymized_element": "blank paper, blurred scribbles, generic placeholder text",
+        "privacy_element": "legible system paths like /cfg/local and configuration terms indicating technical workflow",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "upper-right cluster of handwritten notes mentioning watchdog timer, snmpd conf, curl",
+        "Anonymized_element": "erased text area, nonspecific doodles, blurred text block",
+        "privacy_element": "readable software/service names showing technical tasks",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bottom-right boxed note with text about small light image binaries",
+        "Anonymized_element": "empty box, generic placeholder words, blurred text",
+        "privacy_element": "legible technical phrase about binaries/builds",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11707079/r1_crops/2017_11707079_0.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a person outdoors with a clearly visible, front-facing face and uncovered torso. The identifiable face is a Level 1 biometric clue. Additionally, the person is topless with arms covering the chest, which constitutes nudity/intimate content (Level 2). A distinctive floral tattoo on the shoulder adds an identifiable personal attribute (Level 3). The combination of a clear face with intimate exposure raises the overall privacy risk to severe. The clues are central, sharp, and unoccluded, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face with clear eyes and full facial features",
+        "Anonymized_element": "blurred or pixelated face, occluding bar, turned-away head, mask",
+        "privacy_element": "identifiable face, unobstructed eyes, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bare upper torso with arms covering chest",
+        "Anonymized_element": "plain shirt or top covering torso, neutral clothing",
+        "privacy_element": "visible bare chest/torso indicating partial nudity",
+        "target_concept": "torso (nudity)",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinct floral tattoo on left shoulder",
+        "Anonymized_element": "blank skin, generic sleeve covering area, blurred tattoo pattern",
+        "privacy_element": "unique tattoo pattern that can aid identification",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15723710.jpg"
+}

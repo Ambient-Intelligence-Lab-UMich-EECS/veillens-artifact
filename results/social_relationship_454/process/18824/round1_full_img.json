@@ -1,0 +1,43 @@
+{
+  "img_id": "18824",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 6,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "4 5": 4
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3",
+    "3 4",
+    "3 5"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 53,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are on a soccer field during team warm\u2011ups; they\u2019re near each other but not interacting. P1 wears a player kit while P2 has an \u201cArsenal\u201d staff shirt in a stadium setting. => professional\n\n[P1-P4]: Both are in similar player uniforms doing warm\u2011up drills on the pitch, standing close without personal contact. The shared team attire and training context suggest teammates. => professional\n\n[P1-P5]: On the field pregame; P1 is in player shorts while P5 wears training gear/sweats. No physical interaction, just nearby during practice. => professional\n\n[P2-P4]: P2 appears to be staff/coach apparel and P4 a player; they\u2019re on the same field during warm\u2011ups and not physically interacting. => professional\n\n[P2-P5]: Both look like team personnel (staff/player) in training attire on the pitch, with neutral body language and no contact. => professional\n\n[P4-P5]: They share the same team environment and sports attire during warm\u2011ups, standing near each other without intimacy. => professional",
+  "timestamp": 1776888075.5331943
+}

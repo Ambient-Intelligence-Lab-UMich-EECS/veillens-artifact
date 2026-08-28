@@ -1,0 +1,79 @@
+{
+  "reasoning": "The crop shows a parade scene with several spectators\u2019 faces clearly visible in the front row, which constitutes biometric identifiers (Level 1). The shirtless performer reveals physical attributes, and the act of flag-twirling indicates a specific public activity (Level 3). These cues combine to enable potential identification and inference about participation in an event. No legible names, documents, or explicit location markers are visible. Overall risk is driven by multiple identifiable faces with supporting contextual details.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row spectator\u2019s face near center-left, looking toward the parade",
+        "Anonymized_element": "blurred face, pixelated features, generic oval without details",
+        "privacy_element": "full face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-row spectator\u2019s face near image right, dark hair, sunglasses on head",
+        "Anonymized_element": "blurred facial region, remove distinguishing features",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-row spectator\u2019s face with red cap slightly right of center",
+        "Anonymized_element": "pixelated face region, generic color blob",
+        "privacy_element": "exposed facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "shirtless torso of the flag performer at center-right",
+        "Anonymized_element": "add plain T-shirt or tank top covering torso",
+        "privacy_element": "visible body build and gender-presenting features",
+        "target_concept": "exposed torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large purple flag being twirled by performer",
+        "Anonymized_element": "neutral prop or blurred motion without recognizable event cues",
+        "privacy_element": "specific activity of flag-twirling in a parade context",
+        "target_concept": "flag/performer action",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of additional spectators behind barricade, small faces partially visible",
+        "Anonymized_element": "reduce detail of background people, silhouettes without facial detail",
+        "privacy_element": "presence of multiple bystanders, partial facial features",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10114078/r1_crops/2017_10114078_1.png"
+}

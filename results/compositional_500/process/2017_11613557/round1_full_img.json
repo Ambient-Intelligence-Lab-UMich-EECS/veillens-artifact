@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows a large group of runners posing outdoors with many unobstructed, identifiable faces. Faces constitute Level 1 biometric data and are centrally framed and clear, creating high privacy risk on their own. Some participants wear race bibs with visible numbers, adding Level 2 non-unique identifiers and reinforcing activity disclosure (running event). There are no visible government IDs, financial or medical details. The combination of multiple clear faces and event bib numbers justifies a high but not extreme score. Confidence is high because the cues are direct and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row woman kneeling at far right wearing a red headband; full face visible",
+        "Anonymized_element": "blurred face, generic skin-tone patch, turned head away",
+        "privacy_element": "full facial features, eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "middle-row person near center in bright blue shirt; full face visible without sunglasses",
+        "Anonymized_element": "blurred face, generic featureless oval, head turned away",
+        "privacy_element": "full facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-row person in black top and cap squatting left of center; lower face and eyes visible",
+        "Anonymized_element": "blurred face, dark visor covering face, head turned away",
+        "privacy_element": "recognizable facial structure and eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-right runner wearing red outfit with a race bib showing large numbers",
+        "Anonymized_element": "blank bib with no numbers, solid color patch",
+        "privacy_element": "race bib number format and digits",
+        "target_concept": "race bib",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11613557.jpg"
+}

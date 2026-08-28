@@ -1,0 +1,78 @@
+{
+  "reasoning": "The region shows a conference panel with multiple clearly visible faces and readable desk nameplates. Identifiable faces constitute Level 1 biometric exposure. The nameplates contain full names/titles (Level 2 non-unique identifiers) that directly link to those individuals, reinforcing identifiability when paired with faces. Small national flags on the table suggest country affiliation, adding Level 3 location context. Combined, these cues create a high privacy risk. Lighting is slightly dim but facial features and text are still discernible, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the man seated near the center with glasses looking downward",
+        "Anonymized_element": "blurred face, turned away head, occluded with object, cartoonized features",
+        "privacy_element": "recognizable facial features, eyes/nose/mouth fully visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of the woman with short white hair seated right of center",
+        "Anonymized_element": "blurred face, turned away head, occluded with object, cartoonized features",
+        "privacy_element": "recognizable facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of the man seated at the far right holding papers",
+        "Anonymized_element": "blurred face, turned away head, occluded with object, cartoonized features",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "desk nameplate in front of the center man",
+        "Anonymized_element": "blank nameplate, generic label with no text or logo",
+        "privacy_element": "readable full name and title text",
+        "target_concept": "ID/nameplate",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "desk nameplate in front of the right-of-center woman",
+        "Anonymized_element": "blank nameplate, generic label with no text or logo",
+        "privacy_element": "readable full name and role text",
+        "target_concept": "ID/nameplate",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of small national flags placed on the table near the center",
+        "Anonymized_element": "plain colored flags without national symbols, neutral decorative shapes",
+        "privacy_element": "country flags indicating national affiliation or event context",
+        "target_concept": "national flags",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15379793/r1_crops/2017_15379793_1.png"
+}

@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows an open booklet with technical drawings and readable institutional text/logo \u201cProvincia autonoma di Trento,\u201d plus a person\u2019s shoes at the bottom. There are no faces, IDs, or financial/medical details. The strongest cue is location-related branding identifying a specific regional authority, which poses moderate risk; this is supported by generic document content and minor personal-attribute cues from footwear. Combined, these suggest a low-to-moderate privacy risk. Confidence is high due to clear legibility of the logo/text.",
+  "personal_info_privacy_score": {
+    "score": 0.26,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bottom-right area of the right booklet page with crest/logo and text reading 'Provincia autonoma di Trento'",
+        "Anonymized_element": "remove crest, replace with generic icon, replace text with neutral placeholder or blank area",
+        "privacy_element": "readable institutional name, official crest/logo indicating a specific region",
+        "target_concept": "organization logo and text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "left page of the booklet showing a large title area with Italian text",
+        "Anonymized_element": "blank title bar, blurred/unreadable text, generic pattern",
+        "privacy_element": "readable document title/text indicating subject matter",
+        "target_concept": "document text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "pair of dark shoes with yellow laces visible at the bottom edge",
+        "Anonymized_element": "crop out feet, replace with plain floor, neutral footwear silhouette",
+        "privacy_element": "footwear style and condition revealing minor physical/personal traits",
+        "target_concept": "feet/shoes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14028890/r1_crops/2017_14028890_1.png"
+}

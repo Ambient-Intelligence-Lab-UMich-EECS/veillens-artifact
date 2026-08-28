@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows two people in a clinical-like setting with faces obscured. A person wears a blood-pressure cuff connected by a cable to a small device on the table while the other person holds their wrist, indicating an examination. These are clear medical-context clues (Level 2). No readable names, government IDs, or identifiable faces are visible, reducing direct identifiability. The medical nature remains sensitive even without identity, so the overall risk is moderate. Confidence is high because the medical devices and interaction are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "inflatable blood-pressure cuff on the seated person’s upper arm",
+        "Anonymized_element": "plain short sleeve with no cuff or tubing, bare arm without device",
+        "privacy_element": "medical device on body, indicates blood-pressure measurement/health check",
+        "target_concept": "blood pressure cuff",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "small wired medical unit on the table connected to the cuff",
+        "Anonymized_element": "blank unbranded box without wires, generic office object",
+        "privacy_element": "diagnostic equipment, cable linking to patient’s arm",
+        "target_concept": "medical device",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "examiner’s hand holding the patient’s wrist during the procedure",
+        "Anonymized_element": "hands resting separately, no contact suggesting examination",
+        "privacy_element": "clinical interaction implying medical assessment",
+        "target_concept": "clinical touch/examination gesture",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15433942/final/2017_15433942_final.png"
+}

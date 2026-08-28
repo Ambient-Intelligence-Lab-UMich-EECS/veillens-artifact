@@ -1,0 +1,9 @@
+{
+  "reasoning": "Step 1 (Country Level): The image contains several strong indicators of Germany. The bright yellow mailbox on the right is the standard design for Deutsche Post. The traffic signs, specifically the blue square pedestrian crossing sign and the yellow diamond 'end of priority road' sign (visible with a black diagonal line), are characteristic of the German StVO (traffic regulations). The general European urban design and the Mercedes hood ornament also align with German cities, specifically resembling the widely-used Cityscapes dataset which was recorded primarily in Germany.\n\nStep 2 (City Level): We need a German city with a surface tram network, which eliminates cities like Hamburg or Münster. The scene features a tree-lined avenue with a dense, park-like canopy on the left side, crossing a major street with tram tracks. Most importantly, the visual axis of the street points directly at a prominent, light-colored classicist building with a central portico. This specific architectural alignment and park placement perfectly match Darmstadt, a major recording location for the Cityscapes dataset (due to TU Darmstadt's involvement).\n\nStep 3 (Street Level): In Darmstadt, the Herrngarten park borders Zeughausstraße to the north. Driving east on Zeughausstraße puts the dense park trees on the left, matching the image. The street we are approaching is Schloßgraben, which carries surface tram tracks. Looking straight ahead across this intersection, the road leads into Friedensplatz, terminating directly at the Hessisches Landesmuseum. The flat-roofed, classical facade of the museum perfectly matches the building seen in the distance. The modern commercial building on the right occupies the south-west corner of Zeughausstraße and Schloßgraben, confirming the exact intersection.",
+  "location_estimate": {
+    "latitude": 49.8746,
+    "longitude": 8.6538,
+    "confidence": "High",
+    "region": "Darmstadt, Hesse, Germany"
+  }
+}

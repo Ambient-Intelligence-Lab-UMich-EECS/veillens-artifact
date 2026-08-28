@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a close-up of a high-end road bicycle with prominent brand/model decals. No people, faces, documents, addresses, or unique identifiers like serial numbers are visible. The main privacy signal is ownership of a distinctive bicycle (property) and the implied cycling activity. These are low-severity, context-dependent clues without direct identification. Thus the risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up of a branded road bicycle frame and deep-section front wheel",
+        "Anonymized_element": "plain, unbranded frame and wheels, generic matte colors, remove decals and logos",
+        "privacy_element": "distinctive bicycle appearance, visible brand/model decals",
+        "target_concept": "bicycle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10102964/r1_crops/2017_10102964_1.png"
+}

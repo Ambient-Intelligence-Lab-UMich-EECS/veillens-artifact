@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a dark scene with a large blank/grey sheet held up and a single human hand visible at the lower left. No faces, text, IDs, or numbers are legible. The only personal signal is the visible hand, which gives minimal cues about physical appearance. The blank sheet is a generic document-like object without readable content. With no Level 1 or Level 2 identifiers and only weak Level 3–4 clues, the overall privacy risk is low. Confidence is high due to clear lack of identifiable or sensitive details.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left hand holding the edge of the sheet near the bottom-left corner",
+        "Anonymized_element": "gloved hand, cropped edge without hand, sleeve only without skin",
+        "privacy_element": "visible skin and hand shape revealing limited physical appearance",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "large blank sheet/poster occupying the center of the image",
+        "Anonymized_element": "plain neutral texture, abstract pattern, blurred surface",
+        "privacy_element": "document-like surface that could contain information though none readable",
+        "target_concept": "document/poster",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10308373/final/2017_10308373_final.png"
+}

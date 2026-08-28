@@ -1,0 +1,25 @@
+{
+  "img_id": "23056",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: This is a ski outing; P1 stands on skis while P2 sits with gear nearby. Their relaxed proximity and matching winter-sport attire on the same slope suggest they came together. => friends\n\n[P1-P3]: Both are standing on skis close to each other, facing the camera on the mountain. No affection, just shared activity and coordinated ski gear, implying companions. => friends\n\n[P2-P3]: They\u2019re in the same ski setting with similar equipment; though a bit farther apart and not interacting physically, the context points to being part of the same group. => friends",
+  "timestamp": 1776889460.7317524
+}

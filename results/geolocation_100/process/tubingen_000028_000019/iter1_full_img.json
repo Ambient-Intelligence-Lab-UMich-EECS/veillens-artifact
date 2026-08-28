@@ -1,0 +1,118 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand traffic with European-style elements: a vertical three-aspect traffic signal with a slim black backboard, white road markings, and a yellow diamond priority-road sign. That diamond sign is characteristic of Germany and neighboring DACH countries, but the specific shape, mounting, and urban street furniture (slim gray poles, cobblestone gutter, and curb stones) are very typical of Germany. Architecture includes a pale sandstone facade with an ornate historic doorway bearing Latin-script lettering that looks Germanic, reinforcing Germany over Austria/Switzerland. City-level: The mix of pale sandstone blocks and an ornate portal next to a modern municipal-looking building with blue metal framing and planter boxes is common in southern German towns. Road surfacing, curbside small setts, and landscaping style resemble Baden-W\u00fcrttemberg/Franconia more than northern Germany\u2019s brick and cobble patterns. No unique landmark fixes a specific city, but the combination suggests a medium-size town in Baden\u2011W\u00fcrttemberg or northern Bavaria. Street-level: A small median with low hedges, a cobblestone-edged right-turn corner, short rectangular dash stop line across the lane, and a distinct historic stone doorway immediately at the sidewalk create a recognizable micro-scene. The bus shelter with blue metal frame and the priority-road diamond on the same pole as the signal further distinguish this intersection, though they are not uniquely identifying to a single street without readable signs.",
+  "location_estimate": {
+    "latitude": 49.0,
+    "longitude": 9.0,
+    "confidence": "Low",
+    "region": "Germany, Baden-W\u00fcrttemberg, unknown city"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow diamond road sign on a pole",
+        "non_geolocation_element": "yellow border, white center, reflective surface, metal pole, daylight",
+        "geolocation_element": "priority-road diamond symbol used in Germany/DACH",
+        "target_concept": "road sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical traffic light on a pole",
+        "non_geolocation_element": "black housing, three circular lenses, slim backboard, metal pole",
+        "geolocation_element": "European-style three-aspect signal form factor and mounting height",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white dashed stop line on asphalt",
+        "non_geolocation_element": "short rectangular dashes, white paint, worn edges, gray asphalt",
+        "geolocation_element": "German-style short dash pattern at junctions",
+        "target_concept": "stop line",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone gutter at the corner",
+        "non_geolocation_element": "small gray setts, curved edge, concrete curb, light wear",
+        "geolocation_element": "Central European streetscape detail common in Germany",
+        "target_concept": "gutter",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sandstone building facade with rectangular blocks",
+        "non_geolocation_element": "beige stone, coursed blocks, recessed windows, light mortar",
+        "geolocation_element": "southern German sandstone civic/heritage architecture style",
+        "target_concept": "facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ornate stone doorway on the facade",
+        "non_geolocation_element": "arched opening, carved surround, beige stone, shadowed recess",
+        "geolocation_element": "carved Latin-script name resembling Germanic lettering",
+        "target_concept": "doorway",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue metal bus shelter by the sidewalk",
+        "non_geolocation_element": "blue painted frame, flat roof, glass panels, rectangular form",
+        "geolocation_element": "municipal shelter style common in German towns",
+        "target_concept": "bus shelter",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "low hedge median along the curb",
+        "non_geolocation_element": "green shrubs, trimmed, narrow strip, gray curb stones",
+        "geolocation_element": "typical German urban landscaping at intersections",
+        "target_concept": "median",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue-framed windows on a modern building",
+        "non_geolocation_element": "dark blue frames, rectangular panes, planter boxes, gray panels",
+        "geolocation_element": "contemporary municipal/office style seen in Germany",
+        "target_concept": "windows",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "short concrete bollard at the sidewalk edge",
+        "non_geolocation_element": "cylindrical concrete, light gray, small size, rough texture",
+        "geolocation_element": "German urban street furniture style and placement",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result/test_iter3/intermediate/tubingen_000028_000019_leftImg8bit/round1/tubingen_000028_000019_leftImg8bit_round1.png"
+}

@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a crowded street procession with several unobstructed faces, which are directly identifying (Level 1). Visible cultural/ritual cues such as a forehead bindi can imply religious affiliation (Level 2). A storefront sign with partially readable business name provides potential location context (Level 3). The combination of multiple clear faces with sensitive religious cues and a place sign yields a high privacy risk. Visual evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of woman wearing blue-and-white sari at center-left",
+        "Anonymized_element": "blurred face, featureless oval, turned-away head",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "profile face of man in white T-shirt on right side of frame",
+        "Anonymized_element": "blurred/mosaicked face, replaced with turned head",
+        "privacy_element": "clear facial profile with ear and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "face of shirtless man with red headscarf near center",
+        "Anonymized_element": "blurred face, generic head shape without features",
+        "privacy_element": "full face with eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small red bindi on forehead of woman in blue-and-white sari",
+        "Anonymized_element": "remove forehead mark, plain skin tone",
+        "privacy_element": "religious symbol (bindi) visible on forehead",
+        "target_concept": "religious mark",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront sign above crowd with partially readable business name/letters",
+        "Anonymized_element": "blank signboard, remove all text and logos",
+        "privacy_element": "place-specific signage text that can indicate location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14629372/r1_crops/2017_14629372_1.png"
+}

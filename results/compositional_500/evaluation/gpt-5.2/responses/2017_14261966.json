@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image shows a crowded parade float decorated with rainbow-colored streamers, with multiple people raising hands; most faces are obscured or turned away. No government IDs, names, or financial/medical data are visible. The strongest privacy cue is participation in a potentially sensitive event inferred from the prominent pride-themed rainbow decorations (sensitive inference). Additional moderate cues include visible event wristbands (attendance/behavior), partial shirtless torsos revealing personal attributes, and street/parking signs that could hint at location though not clearly legible. Together these produce a moderate privacy risk without direct biometric identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "multicolor rainbow streamers and ribbons draped across the float railing",
+        "Anonymized_element": "solid-color streamers in neutral tones, remove rainbow pattern, generic party decorations",
+        "privacy_element": "rainbow pride color scheme implying participation in LGBTQ-themed event",
+        "target_concept": "event decorations",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "fabric wristband on raised attendee’s right wrist in the foreground",
+        "Anonymized_element": "no wristband, neutral bracelet with no event association",
+        "privacy_element": "event wristband indicating attendance at a specific public gathering",
+        "target_concept": "wristband",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "parking regulation signs on a pole in the background right",
+        "Anonymized_element": "blank sign, remove text/symbols",
+        "privacy_element": "location-specific municipal signage hinting at city/street area",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "shirtless upper torso of person standing on the float (head obscured)",
+        "Anonymized_element": "add plain shirt or tank top",
+        "privacy_element": "visible body features revealing physical appearance",
+        "target_concept": "exposed torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14261966/final/2017_14261966_final.png"
+}

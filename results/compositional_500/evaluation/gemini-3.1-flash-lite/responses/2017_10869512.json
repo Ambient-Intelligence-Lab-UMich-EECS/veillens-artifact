@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image displays a vintage concert ticket for an event at the Frank Erwin Center in 1982. While the document contains specific event details, it is a historical artifact from over 40 years ago and does not contain contemporary personal information, biometric data, government identifiers, or sensitive private data of a living individual. The risk is extremely low due to the historical nature and lack of current personal identification.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Vintage paper concert ticket for a Jimmy Buffett concert in 1982",
+        "Anonymized_element": "Blank generic ticket, no text, no date, no venue name",
+        "privacy_element": "Venue name, event details, date",
+        "target_concept": "generic documents or digital artifacts",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10869512/final/2017_10869512_final.png"
+}

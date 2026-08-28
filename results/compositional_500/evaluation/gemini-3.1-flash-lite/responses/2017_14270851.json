@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image captures a group of cyclists in an outdoor setting. Several individuals have been partially anonymized or are captured in a way that minimizes facial detail, though multiple people are clearly identifiable. The presence of social, political, or organizational identifiers (in the form of signs attached to the bicycles) adds a level of contextual risk. Due to the high number of people and the visibility of their appearances in a specific geographic location, the privacy risk is moderate. The score reflects the identifiability of multiple subjects and potential sensitive inferences based on their association with displayed signs.",
+  "personal_info_privacy_score": {
+    "score": 0.45,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Group of individuals standing with their bicycles in an outdoor, rural-appearing area.",
+        "Anonymized_element": "Generic group of cyclists, anonymized faces, neutral clothing",
+        "privacy_element": "Visible faces and physical appearances of multiple individuals",
+        "target_concept": "people",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "Yellow signs attached to the handlebars of the bicycles with visible text.",
+        "Anonymized_element": "Blank yellow signs, no text",
+        "privacy_element": "Text on signs potentially indicating political or social affiliation",
+        "target_concept": "sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14270851/final/2017_14270851_final.png"
+}

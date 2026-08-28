@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows a crowd with multiple visible faces of adults and children. Although slightly out of focus, several faces are still recognizable enough to enable biometric identification. No government IDs, financial or medical documents are visible. Background signage is not clearly legible, so location cues are weak. The highest-severity evidence is Level 1 (biometric data), repeated across multiple individuals, which drives a moderately high risk score despite some blur and occlusion.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male face on the left side of the crowd, looking forward",
+        "Anonymized_element": "pixelated/blurred face, generic oval mask, lowered resolution",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth), unique facial hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child\u2019s face with glasses near center foreground",
+        "Anonymized_element": "pixelated/blurred face, generic oval mask, remove distinctive glasses detail",
+        "privacy_element": "recognizable facial features, distinctive eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult female face center-right with shoulder strap visible",
+        "Anonymized_element": "pixelated/blurred face, generic oval mask",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "police officer\u2019s face partially visible behind crowd (cap and uniform)",
+        "Anonymized_element": "pixelated/blurred face, generic oval mask, neutral cap without insignia",
+        "privacy_element": "recognizable facial features despite partial view, uniform association",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10085019/r1_crops/2017_10085019_0.png"
+}

@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows a crowded meeting room with numerous clearly visible and unobstructed faces, many in close-up. These constitute biometric identifiers that can directly reveal identity. Other documents or nameplates appear but are not legible, so they add little additional risk. The presence of multiple identifiable faces (Level 1) dominates the assessment, with some incidental personal-attribute cues (age/appearance). Given the number and clarity of faces, the overall privacy risk is high. Confidence is high because the visual evidence is clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center woman with dark hair speaking while holding a pen",
+        "Anonymized_element": "blurred face, generic skin tone, no distinct facial details",
+        "privacy_element": "clear full face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young man in gray suit at lower left-center facing right",
+        "Anonymized_element": "blurred facial area, neutral silhouette",
+        "privacy_element": "clear full face with recognizable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "older woman with short gray hair and glasses near left, looking down at papers",
+        "Anonymized_element": "face blurred, glasses simplified without facial detail",
+        "privacy_element": "clear facial structure and features visible even with glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bearded man with red tie in left background seated",
+        "Anonymized_element": "blurred facial features, neutralized beard detail",
+        "privacy_element": "recognizable face with distinctive beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman at far right seated at table, facing camera",
+        "Anonymized_element": "face blurred to remove identifiable details",
+        "privacy_element": "unobstructed full face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in glasses and suit standing in back row near center-left",
+        "Anonymized_element": "blurred face, reduced eye and nose detail",
+        "privacy_element": "clear facial features with glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14524534.jpg"
+}

@@ -1,0 +1,21 @@
+{
+  "img_id": "1867",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are walking closely side-by-side in the same direction, indicating they are companions spending time together. => friends\n[P1-P3]: P1 and P3 are walking in opposite directions and passing each other without any interaction or acknowledgment. => no-relationship\n[P1-P4]: P1 is in the foreground while P4 is walking away in the background, showing no sign of connection. => no-relationship\n[P2-P3]: P2 and P3 are just crossing paths in a public space with no eye contact or interaction. => no-relationship\n[P2-P4]: P2 and P4 are spatially distant and moving independently, with no interaction. => no-relationship\n[P3-P4]: P3 and P4 are pedestrians walking in different parts of the street with no interaction. => no-relationship",
+  "timestamp": 1779942557.9424956
+}

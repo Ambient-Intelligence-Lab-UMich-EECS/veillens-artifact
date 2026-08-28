@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows the exterior of a residential house with a garden. No people, faces, documents, numbers, license plates, or readable text are visible. There are no explicit identifiers or sensitive items; the only potential privacy signal is the depiction of a private home\u2019s facade and landscaping, which is a low-risk Level 4 clue. With no compositional reinforcement from higher-severity elements, the overall privacy risk remains low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front facade of a private house with garden and walkway",
+        "Anonymized_element": "crop to plants only, generic stucco wall without unique trim, blur architectural details",
+        "privacy_element": "distinct home exterior, recognizable facade and landscaping layout",
+        "target_concept": "home exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13479904.jpg"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows wheelchair tennis players on court with several visible faces, including a clear side-profile of the main player and another person standing at right. Visible faces constitute biometric identifiers (Level 1). The foreground player\u2019s wheelchair and leg braces reveal a potential disability, a sensitive inference (Level 2). The tennis racquet indicates a specific activity (Level 3). No names, documents, or exact location markers are legible. Given the presence of multiple Level 1 clues reinforced by a Level 2 sensitive health-related inference, the overall privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Front-right side profile of the foreground player\u2019s face",
+        "Anonymized_element": "blurred face, turned-away head, visor or mask obscuring features",
+        "privacy_element": "recognizable facial features and profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Sports wheelchair with visible leg braces/straps on the foreground player",
+        "Anonymized_element": "generic sports chair without medical braces or straps, neutral seating hardware",
+        "privacy_element": "wheelchair mobility aid and leg braces suggesting mobility impairment",
+        "target_concept": "mobility aid",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Tennis racquet held mid-swing by the foreground player",
+        "Anonymized_element": "generic stick-like object, blurred racquet, empty hand",
+        "privacy_element": "sport-specific equipment indicating tennis activity",
+        "target_concept": "sports equipment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Standing man at the right edge with a visible face",
+        "Anonymized_element": "blurred face, head turned away",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10142451.jpg"
+}

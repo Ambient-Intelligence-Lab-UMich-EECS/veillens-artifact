@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a vintage printed document: a hotel advertisement naming \u201cHotel Claremont\u201d in Berkeley, California, plus a nearby map/index listing many street names. There are no faces, IDs, financial or medical items. The privacy risk comes primarily from explicit location information and contextual document text, with minor metadata like a handwritten note and a red catalog-like number. These are Level 3 (location) and Level 4 (document/metadata) clues; combined they indicate low but real privacy risk without any personally identifying data.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed hotel advertisement text reading HOTEL CLAREMONT with city named BERKELEY, CALIFORNIA",
+        "Anonymized_element": "generic hotel text, remove hotel name and city, placeholder lines with no identifiable location",
+        "privacy_element": "hotel name, explicit city/location reference",
+        "target_concept": "document text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "street index/map segment listing multiple street names in a grid",
+        "Anonymized_element": "abstract map graphic without street names, blurred or replaced with generic lines",
+        "privacy_element": "specific street names and map grid indicating precise locality",
+        "target_concept": "map segment",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handwritten note at bottom margin mentioning Alameda with a red stamped number 39703X",
+        "Anonymized_element": "blank margin or neutral scribble without words or numbers",
+        "privacy_element": "place name reference, catalog-like number",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11578145/r1_crops/2017_11578145_1.png"
+}

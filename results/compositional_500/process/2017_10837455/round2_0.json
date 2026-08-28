@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows multiple identifiable faces at a public demonstration. Two faces (one middle-right older woman and one far-right person) are clear and unobstructed, constituting Level 1 biometric data. A large readable protest sign on the left states a message about sexual assault, creating sensitive inference about political/advocacy stance and participation (Level 2) and revealing behavior (attending a protest). Together, direct facial identification plus sensitive contextual messaging elevates risk to high. Score reflects clear visibility and reinforcing context; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of curly-haired person on the far right, looking left, well-lit",
+        "Anonymized_element": "blurred face, pixelated features, generic oval with no eyes/nose/mouth",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of middle-right older woman with short light hair, looking down",
+        "Anonymized_element": "blurred face, masked area, generic silhouette head with no details",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld protest sign on the left reading 'Only 6% of rapes lead to conviction'",
+        "Anonymized_element": "blank poster board, abstract shapes with no legible text, generic pattern",
+        "privacy_element": "readable sensitive text about sexual assault and justice, political/advocacy message",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10837455/r1_crops/2017_10837455_0.png"
+}

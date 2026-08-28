@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows the back of a person from shoulders to knees with no face visible and no readable text or identifiers. The most privacy-relevant cues are general physical attributes (body shape, skin, hairstyle) and a highly distinctive, colorful skirt that could make the person recognizable in combination with other data, but alone is weak. No biometric face data, government, financial, or medical details are present. Overall risk is low, driven by personal-attribute visibility only.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a person\u2019s upper body with hair in short pigtails and exposed shoulders",
+        "Anonymized_element": "remove person, replace with generic silhouette, blur torso and hair, long-sleeve plain shirt",
+        "privacy_element": "body shape, hairstyle, visible skin on shoulders and back",
+        "target_concept": "person back/torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bright multicolor geometric-pattern skirt",
+        "Anonymized_element": "solid-color skirt, muted tones, generic texture",
+        "privacy_element": "distinctive clothing pattern that could aid recognition",
+        "target_concept": "clothing item",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14726150/r1_crops/2017_14726150_0.png"
+}

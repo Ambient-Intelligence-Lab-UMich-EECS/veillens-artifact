@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a laid-flat T\u2011shirt with a large graphic and readable text (\u201cEUROPE\u201d) on the front. There are no humans present in the scene, no faces of the owner, and no government, financial, or medical identifiers. The only privacy-relevant cue is the readable band-related text/graphic, which can hint at the wearer\u2019s music interests (an activity/behavior). This is a single Level 3 clue with limited identifying power, so the overall risk is low. Confidence is high due to the clear visibility and simplicity of the scene.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable band name text and group graphic printed on the front of a black T\u2011shirt",
+        "Anonymized_element": "plain graphic without text, abstract pattern, blurred or removed logo",
+        "privacy_element": "readable band name text, recognizable album/merch design indicating music preference",
+        "target_concept": "clothing graphic/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12303910/r1_crops/2017_12303910_0.png"
+}

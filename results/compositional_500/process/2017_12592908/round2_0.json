@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person on stage holding a microphone. The face is visible but soft, low-light, and somewhat blurred, reducing identifiability yet still a biometric cue (highest severity present). No readable text, IDs, or financial/medical items are visible. The microphone and stage context indicate a performance activity but do not reveal a specific location or identity. Combined, this yields a moderate privacy risk mainly from the partially identifiable face, with additional minor risk from activity disclosure.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially lit, blurred face of a person near a microphone",
+        "Anonymized_element": "pixelated or masked face, turned-away head, generic silhouette",
+        "privacy_element": "visible facial structure and features despite blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld microphone close to the person\u2019s mouth",
+        "Anonymized_element": "empty hand, neutral prop, crop out microphone",
+        "privacy_element": "implies singing/performing activity on stage",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12592908/r1_crops/2017_12592908_0.png"
+}

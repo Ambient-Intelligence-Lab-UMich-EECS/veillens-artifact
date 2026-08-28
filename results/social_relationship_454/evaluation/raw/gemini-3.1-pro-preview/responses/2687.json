@@ -1,0 +1,27 @@
+{
+  "img_id": "2687",
+  "predictions": {
+    "1 2": 1,
+    "1 4": 1,
+    "1 5": 6,
+    "1 6": 1,
+    "2 4": 1,
+    "2 5": 6,
+    "2 6": 1,
+    "3 6": 1,
+    "4 6": 1
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "1 2": 1,
+    "1 6": 6,
+    "1 4": 1,
+    "1 5": 6,
+    "2 5": 6,
+    "2 4": 1,
+    "2 6": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: Both men are gathered closely together, watching the same pool game, which indicates a shared social and recreational activity. => friends\n[P1-P4]: P1 is attentively watching P4 take a shot at the pool table, showing they are part of the same leisure group. => friends\n[P1-P5]: P1 is focused on the front pool table, while P5 is engaged in a completely separate game at a different table in the background with no interaction. => no-relationship\n[P1-P6]: Both individuals are part of the group gathered around the front pool table, suggesting shared camaraderie. => friends\n[P2-P4]: P2 is seated and casually watching P4 play, participating in the same recreational gathering. => friends\n[P2-P5]: P2 is engaged in watching the game at the front table, whereas P5 is focused on a separate table in the background. => no-relationship\n[P2-P6]: Both are relaxing and focused on the game at the front table, indicating they are part of the same social group. => friends\n[P3-P6]: P3 and P6 are gathered near each other, both holding or near pool cues and engaged in watching the main game. => friends\n[P4-P6]: P4 is actively taking a shot while P6, holding a cue in the background, appears to be waiting for his turn or watching his friend play. => friends",
+  "timestamp": 1779942789.2201753
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a person lying on a bed in a private bedroom. The face is obscured, so no direct biometric identifier is exposed. No readable documents, IDs, or financial/medical items are visible. Remaining privacy signals come from visible physical features (body, hairstyle, clothing) and the depiction of a private home setting and activity (resting on a bed). These are Level 3–4 clues and do not strongly identify the person by themselves. Thus the overall risk is low but nonzero due to personal attributes and context of a private activity. Confidence is high because the key elements are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person’s body reclining on the bed with face area visibly covered",
+        "Anonymized_element": "crop to remove person, add blanket covering body, neutral clothing without distinctive patterns",
+        "privacy_element": "visible physical features (body shape, skin, hairstyle), distinctive clothing pattern",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "bed and pillows in a small bedroom indicating a private resting area",
+        "Anonymized_element": "generic furniture, plain surface without bedding context, crop to neutral wall",
+        "privacy_element": "private home interior signaling resting/sleeping activity",
+        "target_concept": "bedroom interior",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "plastic storage drawers with assorted personal toiletry bottles on top",
+        "Anonymized_element": "blank cabinet with no items on top, unlabeled generic containers",
+        "privacy_element": "personal-care items implying home environment and routines (no readable labels)",
+        "target_concept": "storage drawers with toiletries",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10272356/final/2017_10272356_final.png"
+}

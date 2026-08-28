@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image depicts a professional or conference setting with multiple individuals. While several faces are partially obscured or anonymized, there are still clearly identifiable faces present (e.g., the man on the far left and the man on the right). These identifiable faces constitute biometric data, placing the image in a higher risk category. Additionally, the presence of individuals in a work-related context with laptops provides moderate contextual information about their professional activities. The primary privacy concern is the exposure of identifiable individuals in what appears to be a public or semi-public setting. The confidence is high because the facial features are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Man sitting on the left side of the table, wearing glasses and a light shirt.",
+        "Anonymized_element": "blurred face, replaced with generic facial features",
+        "privacy_element": "clearly visible human face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Man sitting on the right side of the table, wearing a striped shirt and using a laptop.",
+        "Anonymized_element": "blurred face, replaced with generic facial features",
+        "privacy_element": "clearly visible human face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16354716/final/2017_16354716_final.png"
+}

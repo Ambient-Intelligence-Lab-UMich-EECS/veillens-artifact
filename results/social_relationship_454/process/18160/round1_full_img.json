@@ -1,0 +1,43 @@
+{
+  "img_id": "18160",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "3 4": 1,
+    "3 5": 1,
+    "4 5": 1
+  },
+  "missed_pairs": [
+    "1 2",
+    "2 3",
+    "2 4",
+    "2 5"
+  ],
+  "subjects_matched": [
+    1,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    2
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P3]: Outdoor recreational soccer; they are very close, jumping and making contact while contesting the ball, both in sports attire on the same court. => friends\n\n[P1-P4]: Same setting and attire (pinnies), moderate proximity with P4 watching the play, suggesting teammates in a friendly game. => friends\n\n[P1-P5]: Both on the court in athletic clothes; not interacting directly but participating in the same casual match. => friends\n\n[P3-P4]: On the same field in sports gear, close by with shared focus on the play, implying team camaraderie. => friends\n\n[P3-P5]: Same soccer game environment; P3 is in action while P5 observes nearby, both dressed for play. => friends\n\n[P4-P5]: Standing near each other on the court during the game, relaxed posture as teammates/opponents in a social sport activity. => friends",
+  "timestamp": 1776887359.612511
+}

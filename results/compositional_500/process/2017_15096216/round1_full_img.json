@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image shows multiple identifiable human faces at a public parade. The central person\u2019s face is clear enough for recognition despite sunglasses, which constitutes biometric data (Level 1). A large rainbow Pride flag is prominently held, which can imply sensitive inferences about sexual orientation or activism (Level 2). A readable street sign (\u201c5 AV\u201d) provides location context (Level 3). These clues reinforce each other: a recognizable face combined with sensitive affiliation and partial location information yields a high privacy risk. The evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central person\u2019s face with sunglasses and visible facial features",
+        "Anonymized_element": "blurred face, pixelated facial region, generic face silhouette, turned-away head",
+        "privacy_element": "recognizable facial structure, eyes/cheeks/mouth visibility enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right-side participant\u2019s face in white shirt wearing sunglasses",
+        "Anonymized_element": "blurred face, pixelated facial region, generic head shape",
+        "privacy_element": "partially visible but identifiable facial features and head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow Pride flag held aloft",
+        "Anonymized_element": "plain solid-color flag, abstract patterned flag without symbols",
+        "privacy_element": "rainbow LGBTQ Pride design signaling sexual orientation/activism affiliation",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on pole showing '5 AV'",
+        "Anonymized_element": "blank sign, generic color with no text or numbers",
+        "privacy_element": "readable street name indicating specific location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15096216.jpg"
+}

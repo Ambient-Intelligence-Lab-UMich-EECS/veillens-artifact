@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows an anonymized person with the facial area removed, so no biometric identifiers are visible. Background elements are blurred and non-specific. The only potentially privacy-relevant item is a small white rectangular card or paper being held, but no text or identifiers are legible. With no readable data and no faces, the residual risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small white rectangular card held near the lower-left of the frame",
+        "Anonymized_element": "remove card, replace with generic solid-color rectangle with no markings",
+        "privacy_element": "document-like card form factor that could contain names or IDs (no text readable)",
+        "target_concept": "generic card/document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14931698/r1_crops/2017_14931698_1.png"
+}

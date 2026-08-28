@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a nighttime exterior of a large building with illuminated windows. No readable text, numbers, documents, or clear faces are visible. People appear only as tiny, distant silhouettes (both in the foreground and inside windows), making them unidentifiable. The highest-severity evidence present is Level 4 (distant, unidentifiable individuals). With no Level 1–3 identifiers, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blurred person silhouette near the bottom center edge of the frame",
+        "Anonymized_element": "remove subject, replace with background railing/floor, increase blur or crop lower edge",
+        "privacy_element": "presence of a person, albeit unidentifiable silhouette",
+        "target_concept": "person silhouette",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "small figures visible as silhouettes through lit office windows on the right building facade",
+        "Anonymized_element": "darken windows, draw curtains, replace with empty lit rooms",
+        "privacy_element": "presence of people, distant and unidentifiable",
+        "target_concept": "people in windows",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13502429/final/2017_13502429_final.png"
+}

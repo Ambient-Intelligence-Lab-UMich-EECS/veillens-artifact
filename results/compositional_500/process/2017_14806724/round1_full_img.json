@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a professional soccer match. The clearest privacy-relevant cue is a player\u2019s back where the surname on the jersey is legible alongside the number, which is a non-unique identifier and can link to an individual in this context. Multiple other people are present but their faces are distant and not individually identifiable, contributing only low additional risk. With a visible name (Level 2) plus minor crowd visibility, the overall risk is moderate. Confidence is medium due to partial sharpness of the printed name.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a red soccer jersey with a readable surname above a large number",
+        "Anonymized_element": "plain jersey without text, number only with no name, blur or block text region",
+        "privacy_element": "readable surname text, jersey number",
+        "target_concept": "name on jersey",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "crowd of spectators in the stands with many small, indistinct faces",
+        "Anonymized_element": "blurred crowd, abstract silhouettes, lowered detail",
+        "privacy_element": "multiple small human faces",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14806724.jpg"
+}

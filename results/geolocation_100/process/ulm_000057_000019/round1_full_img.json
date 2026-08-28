@@ -1,0 +1,88 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand driving and EU-style road furniture. The yellow rectangular directional sign with German text (\u201cDonauhalle \u2026\u201d), the circular red-bordered \u201c30\u201d speed-limit sign, blue mandatory-direction sign, and the white EU license plates with a blue band strongly indicate Germany. The plate visible on the dark car starts with \u201cUL\u201d, consistent with the Ulm vehicle registration code in Germany. Architecture and traffic lights also match German standards. City-level: The word \u201cDonauhalle\u201d (Danube Hall) is a well-known venue in Neu-Ulm, directly across the Danube from Ulm. Coupled with the local \u201cUL\u201d plate and what appear to be tram/trolley wires overhead (Ulm/Neu-Ulm has a tram network), the location narrows to the Ulm\u2013Neu-Ulm area. Other German cities have venues named after the Danube, but \u201cDonauhalle\u201d signage as a local destination is characteristic for Neu-Ulm. Street-level: The sign points right toward Donauhalle, at a multi-lane intersection with a right-turn slip lane, central refuge with a blue keep-right bollard, a bus stop shelter on the near-right corner, and overhead wires along a straight corridor. These features match arterial streets feeding toward the Donauhalle area in Neu-Ulm. Exact street identification is uncertain from this single view, but the configuration suggests a junction on an approach road east of the Danube directing traffic toward Donauhalle.",
+  "location_estimate": {
+    "latitude": 48.392,
+    "longitude": 10.006,
+    "confidence": "Medium",
+    "region": "Germany, Bavaria/Baden-W\u00fcrttemberg border area, Neu-Ulm / Ulm"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow directional sign on a pole",
+        "non_geolocation_element": "yellow panel, rectangular shape, black border, mounted on gray metal pole, daylight",
+        "geolocation_element": "German language text 'Donauhalle', local destination style on yellow background per German signage",
+        "target_concept": "directional sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a black car",
+        "non_geolocation_element": "white rectangle, black characters, reflective surface, mounted at front bumper",
+        "geolocation_element": "EU blue band with country code, German-style font and format, prefix 'UL' for Ulm district",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round speed limit sign on a post",
+        "non_geolocation_element": "round shape, white face, red border, black numerals, mounted on gray post",
+        "geolocation_element": "number '30' and German/European sign design indicating 30 km/h",
+        "target_concept": "speed limit sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue mandatory direction sign on a pole",
+        "non_geolocation_element": "blue circle, white arrows pointing straight and right, reflective finish",
+        "geolocation_element": "German/European regulatory sign design and arrow configuration",
+        "target_concept": "direction sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-white chevron marker at the curb",
+        "non_geolocation_element": "rectangular panel, diagonal red stripes on white, mounted on a short post",
+        "geolocation_element": "German style hazard marker used at traffic islands",
+        "target_concept": "chevron marker",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead tram wires above the street",
+        "non_geolocation_element": "thin suspended cables crossing roadway, metallic supports",
+        "geolocation_element": "presence of tram/trolley infrastructure consistent with Ulm/Neu-Ulm network",
+        "target_concept": "tram wires",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "glass bus shelter at the right corner",
+        "non_geolocation_element": "glass panels, flat roof, advertisement posters, gray frame",
+        "geolocation_element": "typical German urban bus shelter style; placement matches an intersection near Donauhalle approach",
+        "target_concept": "bus shelter",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/ulm/ulm_000057_000019_leftImg8bit.png"
+}

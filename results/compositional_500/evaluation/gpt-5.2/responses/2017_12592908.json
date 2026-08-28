@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a dark concert-like scene with a silhouetted person at a microphone and brass instruments visible. No identifiable face, text, documents, or government/financial identifiers are legible. The main privacy signal is behavioral: the person appears to be performing or speaking on stage, which reveals an activity but not identity. With no high-severity clues and only moderate activity context, the overall risk is low-to-moderate. Confidence is medium due to the low light and partial visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "microphone on a stand positioned in front of a silhouetted person",
+        "Anonymized_element": "empty stand, no microphone head, generic pole",
+        "privacy_element": "implies on-stage speaking/singing activity by a person",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "brass trombone on the right side reflecting stage light",
+        "Anonymized_element": "generic cylindrical object, no recognizable instrument features",
+        "privacy_element": "reveals participation in musical performance/activity",
+        "target_concept": "musical instrument (trombone)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12592908/final/2017_12592908_final.png"
+}

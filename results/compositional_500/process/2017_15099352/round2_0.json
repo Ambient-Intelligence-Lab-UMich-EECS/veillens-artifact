@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows several people in a public park; most faces are masked or blurred, reducing identifiability. The strongest privacy element is a partially visible face profile of a woman on the left, but it is blurred and not clearly identifiable. Additional moderate signals include visible body postures suggesting exercise/dance activity and a recognizable park stone wall/greenery that gives vague location context without specific identifiers. With no readable text, IDs, or sensitive documents, the risk is moderate-low, driven mainly by weak biometric and activity cues. Confidence is medium due to partial obfuscation and lack of clear identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially blurred face profile of woman in floral shirt at left",
+        "Anonymized_element": "fully obscured oval mask over face, turned-away head, heavier blur",
+        "privacy_element": "facial outline and features partially visible despite blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "central person in black outfit with hands raised in mid-step posture",
+        "Anonymized_element": "neutral standing pose, hands by sides",
+        "privacy_element": "distinctive body posture indicating exercise/dance",
+        "target_concept": "body posture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "low stone wall with surrounding park trees in background",
+        "Anonymized_element": "generic blurred background, plain wall with less detail",
+        "privacy_element": "park-like environment suggesting public outdoor location",
+        "target_concept": "background landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15099352/r1_crops/2017_15099352_0.png"
+}

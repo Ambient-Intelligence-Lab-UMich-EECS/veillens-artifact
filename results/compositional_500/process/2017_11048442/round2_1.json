@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a person in a public street wearing a prominent leather body harness with attached straps/reins, which can imply intimate or kink-related context. The person\u2019s face is obscured, while several background people are visible but distant and blurry. Partially readable storefront signs provide weak location context. The highest severity cue is Level 2 due to intimate/kink implications; this is modestly reinforced by minor location hints and a crowd with unidentifiable faces. Overall risk is moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black leather body harness with metal rings and long straps/reins on the torso of the foreground person",
+        "Anonymized_element": "plain backpack-style straps, no rings, no reins, matte fabric",
+        "privacy_element": "kink/BDSM-style harness cues, reins, bondage-like hardware suggesting intimate sexual context",
+        "target_concept": "body harness",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of background people with small, out-of-focus faces on a street",
+        "Anonymized_element": "blurred silhouettes, turned-away heads, lower resolution crowd",
+        "privacy_element": "multiple partial faces of bystanders (not clearly identifiable)",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partially readable storefront signs above shops in the background",
+        "Anonymized_element": "blank signage, generic patterns without text or logos",
+        "privacy_element": "business names/text that can hint at specific place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11048442/r1_crops/2017_11048442_1.png"
+}

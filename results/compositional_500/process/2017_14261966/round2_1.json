@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows people on a parade float and a crowd with raised hands. Faces appear obscured or turned away, so there is no clear biometric identifier. However, several Level 3 cues are visible: a bus stop/no-parking street sign that can hint at location, event wristbands on attendees indicating participation in a specific event, and shirtless torsos with distinctive accessories revealing personal attributes and behaviors at a public gathering. No government IDs, financial/medical data, or nudity are present. Combined Level 3 signals yield a moderate but limited privacy risk. Confidence is medium due to partial occlusions and lack of legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bus stop and no-parking signs mounted on a pole in the background",
+        "Anonymized_element": "blank generic sign shapes, remove all text and logos, neutral colors",
+        "privacy_element": "recognizable transit iconography and regulatory signage that can hint at specific location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "shirtless upper body with camera strap and necklace on float",
+        "Anonymized_element": "plain t-shirt, remove accessories, neutral colors",
+        "privacy_element": "visible body type and distinctive accessories indicating participation context",
+        "target_concept": "shirtless torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "event-style wristbands on raised arms in the crowd",
+        "Anonymized_element": "no wristbands or plain solid-color bands without text",
+        "privacy_element": "admission-style wristbands implying attendance at a specific event/time",
+        "target_concept": "wristband",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14261966/r1_crops/2017_14261966_1.png"
+}

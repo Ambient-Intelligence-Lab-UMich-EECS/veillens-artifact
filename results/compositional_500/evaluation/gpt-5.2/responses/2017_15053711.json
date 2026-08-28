@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a person with the face and much of the torso obscured, so no identifiable biometrics or IDs are visible. The clearest privacy-relevant cues are a lit cigarette with rising smoke indicating a smoking habit, and the person’s exposed shoulders/body silhouette and minimal clothing that reveal physical appearance. There are no names, documents, addresses, or other strong identifiers present. With only level-3 clues (activities/behaviors and personal attributes) and no level-1 or level-2 evidence, the overall privacy risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lit cigarette held between fingers with visible smoke plume",
+        "Anonymized_element": "empty fingers, unlit cigarette, pen-like neutral object, no smoke",
+        "privacy_element": "cigarette, active smoking behavior, smoke trail",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "bare shoulders and upper torso with minimal clothing and body silhouette visible",
+        "Anonymized_element": "plain T-shirt or tank top covering shoulders and torso, smoother fabric, less form-fitting",
+        "privacy_element": "exposed shoulders and body contours revealing physical appearance",
+        "target_concept": "exposed torso/shoulders",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15053711/final/2017_15053711_final.png"
+}

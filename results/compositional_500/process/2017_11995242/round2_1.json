@@ -1,0 +1,37 @@
+{
+  "reasoning": "The crop shows a person on stage with their face obscured, eliminating direct biometric identification. However, readable event branding (\u201cTechCrunch Disrupt\u201d) in the background and a visible lavalier microphone/beltpack indicate participation in a specific public event and speaking activity. These Level 3 clues (location context and behavior) moderately increase privacy risk even without a visible face. No government IDs, financial/medical data, or intimate content are present.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large backdrop with readable 'TechCrunch' and 'DISRUPT' logos behind the person",
+        "Anonymized_element": "abstract patterned backdrop, blurred text, generic shapes/colors without logos",
+        "privacy_element": "readable event name/logo enabling inference of venue/event and time context",
+        "target_concept": "event banner/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "lavalier microphone clipped to shirt with cable running to a belt-mounted transmitter pack",
+        "Anonymized_element": "no microphone or cable, remove beltpack, plain shirt surface",
+        "privacy_element": "presentation equipment indicating on-stage speaking role/activity at a specific event",
+        "target_concept": "microphone/beltpack",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11995242/r1_crops/2017_11995242_1.png"
+}

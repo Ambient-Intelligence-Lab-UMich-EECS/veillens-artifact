@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a public street parade with multiple participants whose faces are obscured, so no identifiable biometrics are visible. The most privacy-relevant cues are readable storefront signs that can indicate a specific location and a prominent shirt with the word \u201cZumba,\u201d revealing participation in a particular activity. Crowds contribute minimal risk. With no Level 1\u20132 identifiers present, the risk stems from Level 3 location and activity clues, yielding a low-to-moderate score. Confidence is high because the relevant signs and clothing text are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular storefront sign on building reading 'TACO LOCO'",
+        "Anonymized_element": "blank storefront sign, no text or logo, neutral colors",
+        "privacy_element": "readable business name that can pinpoint location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "storefront awning and sign reading 'ANGELA'S' on the same street",
+        "Anonymized_element": "blank awning, no text or branding, generic pattern",
+        "privacy_element": "readable business name aiding location triangulation",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "purple tank top on lead dancer with large 'ZUMBA' text",
+        "Anonymized_element": "plain tank top, no text or logo, solid color",
+        "privacy_element": "explicit activity/brand reference revealing participation in a fitness dance event",
+        "target_concept": "clothing text/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "group of parade participants in the background with faces obscured or distant",
+        "Anonymized_element": "reduce detail of background figures, apply motion blur silhouettes",
+        "privacy_element": "presence of multiple people, but faces not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12567568/r1_crops/2017_12567568_2.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows two people shaking hands in front of U.S. military flags. Faces are obscured, so no biometric identifiers are exposed. However, readable organizational text and insignia on the white flag and the soldier\u2019s uniform clearly indicate U.S. Army affiliation and a formal ceremony, revealing location/affiliation context and activity. These are Level 3 clues that compose to a moderate privacy risk despite the lack of Level 1\u20132 identifiers. Score reflects multiple reinforcing Level 3 signals with clear visibility. Confidence is medium due to absence of direct personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white flag with blue emblem and visible text along the hoist",
+        "Anonymized_element": "plain white banner, abstract pattern, no readable text or logos",
+        "privacy_element": "organizational insignia, readable text indicating U.S. Army",
+        "target_concept": "organizational flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "camouflage military uniform chest area with visible 'U.S. ARMY' tape (name unreadable)",
+        "Anonymized_element": "plain patterned jacket without text or branch tape, generic outerwear",
+        "privacy_element": "branch identification text indicating military affiliation",
+        "target_concept": "uniform text/insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handshake between two individuals centered in front of red flag backdrop",
+        "Anonymized_element": "neutral pose without handshake, individuals standing apart",
+        "privacy_element": "ceremonial/official interaction suggesting event participation",
+        "target_concept": "handshake/ceremony gesture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15624433/r1_crops/2017_15624433_0.png"
+}

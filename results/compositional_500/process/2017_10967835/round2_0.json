@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows multiple printed New York Yankees event tickets with visible barcodes, event codes, section/row/seat numbers, ticket price, and explicit venue/date details. No names or faces are present. The highest-risk elements are unique barcodes and serial/event codes that can be abused if still valid, supported by detailed event/venue/date info that reveals location and activity. These clues are clear and legible, but lack direct identifiers like names or financial/account numbers, yielding a moderate overall risk.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical barcode and serial number on the right edge of a ticket",
+        "Anonymized_element": "blurred barcode area, generic placeholder stripes, blank white strip",
+        "privacy_element": "machine-readable barcode, unique serial/ticket number",
+        "target_concept": "paper ticket barcode",
+        "severity_level": 3,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed event details text showing 'New York Yankees' vs opponent with date and 'Yankee Stadium'",
+        "Anonymized_element": "generic event title, no venue name, no date, neutral placeholder text",
+        "privacy_element": "venue name, event date/time, team names",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed seat information region showing section, row, and seat numbers (e.g., Section 307, Row 1, Seat 11)",
+        "Anonymized_element": "generic placeholders for section/row/seat, obscured numbers",
+        "privacy_element": "exact section/row/seat identifiers",
+        "target_concept": "seat assignment text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed ticket price field showing a dollar amount",
+        "Anonymized_element": "blank price field, rounded range or placeholder value",
+        "privacy_element": "exact ticket price",
+        "target_concept": "ticket price text",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/r1_crops/2017_10967835_0.png"
+}

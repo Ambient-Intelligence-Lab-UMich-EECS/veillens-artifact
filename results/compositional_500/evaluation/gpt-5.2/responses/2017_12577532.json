@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a hand holding a Nokia smartphone with a fitness-tracking app screen visible. The UI displays running splits by kilometer and total times for 3K/5K/7K/10K. No faces, names, financial or government identifiers are visible. The main privacy signal is activity and performance data that can reveal exercise habits and fitness level. This is a Level 3 clue and is moderately identifying only in context; there are no reinforcing Level 1–2 clues. Hence the overall risk is low-to-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smartphone screen showing a fitness app with running splits, distances, and times",
+        "Anonymized_element": "generic placeholder UI, blurred/obscured text and numbers, abstracted chart bars without labels",
+        "privacy_element": "exercise distances and split times, performance statistics indicating fitness habits",
+        "target_concept": "fitness app screen",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12577532/final/2017_12577532_final.png"
+}

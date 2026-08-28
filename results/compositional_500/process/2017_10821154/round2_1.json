@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows people walking outdoors with primary faces masked, so no clear biometric identifiers are visible. Privacy risk comes mainly from contextual cues: a person holding a red drink cup indicating consumption behavior, a readable event/banner on a lamppost that can hint at location, and distinctive clothing graphics that reveal personal appearance. There are also a few small, distant bystanders. With no legible names or government/financial/medical data and faces obscured, the highest severity present is Level 3. These multiple moderate cues combine to a low-to-moderate overall risk. Confidence is medium due to partial legibility of the banner text and indirect nature of the behavioral cue.",
+  "personal_info_privacy_score": {
+    "score": 0.29,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red plastic cup held by the person on the right",
+        "Anonymized_element": "empty hand, generic opaque reusable bottle, cup removed",
+        "privacy_element": "visible beverage container implying drinking behavior",
+        "target_concept": "beverage cup",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow circular street banner on lamppost with readable text/logo",
+        "Anonymized_element": "blank banner, abstract pattern with no text or logos",
+        "privacy_element": "readable event/name/logo that can indicate place or event",
+        "target_concept": "street banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bright blue t-shirt with large distinctive graphic on the chest of central person",
+        "Anonymized_element": "solid-color shirt with no graphics or logos",
+        "privacy_element": "unique clothing graphic revealing personal appearance/style",
+        "target_concept": "clothing graphic",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small, partially visible faces of distant bystanders in the background",
+        "Anonymized_element": "further blurred faces, silhouettes",
+        "privacy_element": "partially visible faces of bystanders",
+        "target_concept": "distant faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10821154/r1_crops/2017_10821154_1.png"
+}

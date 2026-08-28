@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a large outdoor group photo with many unobscured, identifiable faces. Several individuals’ facial features are clearly visible and centrally framed, which constitutes Level 1 biometric data exposure. There are no readable names, IDs, or explicit location markers, so the risk is driven primarily by multiple clear faces. The presence of many distinct faces reinforces identifiability, yielding a high but not extreme risk score. Confidence is high because the faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row center woman kneeling, black sleeveless top and sunglasses, full face visible",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic oval patch",
+        "privacy_element": "identifiable facial features, facial outline, mouth and nose visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "back-row center man wearing dark jacket and cap, unobstructed face",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "left side woman standing in white hoodie and cap, smiling face visible",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "identifiable facial features, smile, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "right side woman in red cap and dress, face clearly visible",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "identifiable facial features, facial outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "middle row woman in light yellow jacket with glasses, face visible",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "identifiable facial features, glasses shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11613557/final/2017_11613557_final.png"
+}

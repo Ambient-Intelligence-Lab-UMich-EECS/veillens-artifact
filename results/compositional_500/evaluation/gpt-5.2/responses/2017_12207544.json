@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a single printed paper setlist with song titles and a large number at the top. No people, faces, addresses, financial or government IDs are visible. The only potential privacy signal is readable text that could indicate music preferences if associated with a specific person, but by itself it is a generic document. Thus the highest severity present is Level 4 and overall risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "worn paper setlist with clearly readable song titles and a large printed number at the top",
+        "Anonymized_element": "blank paper, blurred or redacted text, generic decorative graphic without words",
+        "privacy_element": "readable song titles, readable large number that could be used as a code or reference, evidence of music preference or event attendance",
+        "target_concept": "printed paper with text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12207544/final/2017_12207544_final.png"
+}

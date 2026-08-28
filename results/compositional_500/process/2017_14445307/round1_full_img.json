@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a painted brick exterior wall with a single window and shadows from tree branches. There are no people, faces, text, numbers, documents, or unique identifiers visible. The only potentially privacy-relevant element is the presence of a residential-style window that implies a private property, but it does not reveal an address or other identifying details. Therefore, risk is low with no strong compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single rectangular window with closed blinds on a brick wall",
+        "Anonymized_element": "plain brick wall segment without a window, frosted/obscured window with no interior detail",
+        "privacy_element": "residential window indicating private property/home",
+        "target_concept": "window",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14445307.jpg"
+}

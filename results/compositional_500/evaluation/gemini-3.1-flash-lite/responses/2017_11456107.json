@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image captures a theatrical or posed scene featuring three individuals, though their faces have been digitally obscured, mitigating the highest severity risk (biometric data). The composition reveals personal attributes including gender and general physical appearance, as well as an intimate pose between two of the individuals, which constitutes a moderate privacy concern. The risk is considered moderate rather than severe due to the deliberate anonymization of the faces.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "obfuscated face region of the central male individual",
+        "Anonymized_element": "generic head shape without defining facial features",
+        "privacy_element": "redacted face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "obfuscated face region of the person on the left",
+        "Anonymized_element": "generic head shape without defining facial features",
+        "privacy_element": "redacted face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "close physical interaction between the central individual and the seated individual",
+        "Anonymized_element": "two individuals sitting side-by-side without intimate physical contact",
+        "privacy_element": "intimate pose, physical proximity",
+        "target_concept": "personal interaction",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "visible physical features of the individuals including clothing and posture",
+        "Anonymized_element": "generic silhouette and neutral clothing styles",
+        "privacy_element": "gender cues, clothing style, body type",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11456107/final/2017_11456107_final.png"
+}

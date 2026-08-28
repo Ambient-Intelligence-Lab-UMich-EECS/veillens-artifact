@@ -1,0 +1,81 @@
+{
+  "reasoning": "The image shows two individuals in a parking area: a detainee in handcuffs and a uniformed officer. Both individuals\u2019 faces are visible in profile, which constitutes identifiable biometric data (highest severity). Additional reinforcing clues include a readable vehicle license plate, a visible police shoulder patch that can indicate jurisdiction (location), a distinctive forearm tattoo, and the clear presence of handcuffs indicating a specific activity. These multiple cues combine to increase identifiability and context risk. Overall risk is high with clear, central evidence; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side-profile face of the detained person looking left",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with generic smooth skin patch",
+        "privacy_element": "identifiable facial features, ear shape, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "side-profile face of the uniformed police officer wearing sunglasses",
+        "Anonymized_element": "blurred face, pixelated facial region, generic sunglasses without facial details",
+        "privacy_element": "identifiable facial structure, visible ear and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "metal handcuffs on the detainee\u2019s wrists behind the back",
+        "Anonymized_element": "remove cuffs, replace with empty hands or blurred wrist area",
+        "privacy_element": "handcuffs signaling detention-related activity",
+        "target_concept": "handcuffs",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinct tattoo on the detainee\u2019s left forearm",
+        "Anonymized_element": "cover with long sleeve, neutral skin without tattoo, blurred tattoo area",
+        "privacy_element": "unique tattoo pattern that can identify a person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rear license plate on the silver car at right",
+        "Anonymized_element": "blank plate, randomized characters, blurred plate area",
+        "privacy_element": "readable alphanumeric plate number and state design",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "police shoulder patch/logo on the officer\u2019s upper sleeve",
+        "Anonymized_element": "plain uniform patch with no text or emblem",
+        "privacy_element": "agency logo/text potentially indicating city or jurisdiction",
+        "target_concept": "uniform patch",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15684937.jpg"
+}

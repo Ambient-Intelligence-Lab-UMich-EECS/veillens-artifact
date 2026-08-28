@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a university student registration confirmation form with clearly legible printed text. It includes the student\u2019s full name, an explicit student number, mailing address with ZIP code and campus location, university name, and a detailed class schedule with days/times/rooms. The strongest clues are Level 2 non-unique identifiers (name and student ID). These are reinforced by Level 3 location details and activity patterns from the schedule, elevating overall risk despite no biometric data. Text is central and highly readable, so confidence is high. Score reflects multiple high-quality PII elements that can identify and track a person even without a face.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed full name in the top-left header line",
+        "Anonymized_element": "blank header line, generic placeholder text, obfuscated characters",
+        "privacy_element": "full personal name text",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Student number field with 9-digit number near the top center",
+        "Anonymized_element": "blank or masked number, randomized digits, generic placeholder",
+        "privacy_element": "institutional student ID number",
+        "target_concept": "student ID number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Recipient/address block at bottom-right with campus box number, city/state, ZIP",
+        "Anonymized_element": "generic address text, masked box number, fictional city/state and ZIP",
+        "privacy_element": "mailing address, city/state, ZIP code",
+        "target_concept": "postal address",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "University name text near the top-left ('Eastern Washington University')",
+        "Anonymized_element": "generic institution name, neutral text, removed logo/name",
+        "privacy_element": "institution name revealing campus affiliation/location",
+        "target_concept": "organization name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Class schedule table listing course titles, days, start/end times, room numbers",
+        "Anonymized_element": "blank table cells, randomized course names and times, generic room codes",
+        "privacy_element": "detailed activity schedule, room locations, daily timing",
+        "target_concept": "class schedule",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10435547.jpg"
+}

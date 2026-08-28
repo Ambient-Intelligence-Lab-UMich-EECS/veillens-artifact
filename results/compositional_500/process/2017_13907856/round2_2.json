@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a close-up of a handwritten notebook page with several clearly legible lines such as \u201cThe Curators Code,\u201d \u201cTEDx,\u201d \u201cVenice,\u201d and a note about \u201cMoebius.\u201d There are no faces or government/financial data. The primary risk comes from readable handwritten content revealing interests and potential activities (Level 3), presented on a generic document (Level 4). Multiple readable items reinforce behavioral profiling, so the overall risk is low-to-moderate. Clues are clear and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Handwritten line reading 'The Curators Code' on lined notebook page",
+        "Anonymized_element": "convert to generic scribbles, blur text to illegible, replace with abstract lines",
+        "privacy_element": "readable handwritten text revealing interests/topic",
+        "target_concept": "handwritten text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "Handwritten word 'TEDx' on the page",
+        "Anonymized_element": "generic scribbles, obfuscated characters, neutral shapes",
+        "privacy_element": "explicit reference to an event/organization indicating interests or plans",
+        "target_concept": "handwritten text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "Handwritten word 'Venice' listed as item 5",
+        "Anonymized_element": "replace with nonsensical scribbles, blur to unreadable",
+        "privacy_element": "readable place/topic hinting at interests or potential travel plans",
+        "target_concept": "handwritten text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "Handwritten sentence starting with 'Moebius. Gifted...' on line 2",
+        "Anonymized_element": "convert to generic scribbles, remove legible words",
+        "privacy_element": "readable notes revealing cultural preferences/opinions",
+        "target_concept": "handwritten text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "The lined notebook page containing multiple legible handwritten entries",
+        "Anonymized_element": "blank notebook page, faint non-text lines, no legible writing",
+        "privacy_element": "document medium enabling capture of personal notes",
+        "target_concept": "notebook page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13907856/r1_crops/2017_13907856_2.png"
+}

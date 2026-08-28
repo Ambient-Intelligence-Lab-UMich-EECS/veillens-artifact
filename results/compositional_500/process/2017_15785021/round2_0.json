@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person wearing a revealing turquoise dance costume on a stage-like setting. The face is obscured, so no identifiable biometrics are visible. Privacy risk comes mainly from visible body features revealing gender/physical appearance and from the implied activity of performing/dancing. No names, documents, or location identifiers are present. Given the lack of Level 1\u20132 clues and presence of Level 3 attributes, the risk is moderate-low. Confidence is medium due to partial context and absence of legible identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "turquoise embellished dance top with decorative fringes on the person\u2019s torso",
+        "Anonymized_element": "plain non-descriptive top, neutral solid color, add light cover-up",
+        "privacy_element": "revealing costume indicating performance/dance activity",
+        "target_concept": "clothing/costume",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bare arms and midriff of the person",
+        "Anonymized_element": "add opaque coverage, longer sleeves, higher-waist garment",
+        "privacy_element": "visible skin and body shape conveying gender/physical appearance",
+        "target_concept": "exposed skin/body features",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15785021/r1_crops/2017_15785021_0.png"
+}

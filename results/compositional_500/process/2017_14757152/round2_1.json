@@ -1,0 +1,34 @@
+{
+  "reasoning": "The regional crop shows two people whose faces are fully obscured, eliminating direct biometric identification. No readable names, numbers, or logos are visible. The only potentially sensitive items are a certificate-like paper held by one person and a blank/illegible poster on an easel; however, their text is not legible, so they pose only low contextual risk as generic documents. With no Level 1\u20132 evidence visible, the privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular certificate or award paper held at chest level with faint, unreadable text",
+        "Anonymized_element": "plain blank paper, abstract pattern, heavy blur over text area",
+        "privacy_element": "text block that could contain personal names or titles (not legible)",
+        "target_concept": "certificate/document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "poster board on tripod easel with content not readable",
+        "Anonymized_element": "blank white board, abstract shapes, blurred content",
+        "privacy_element": "potential text/images that could include names or event details (not legible)",
+        "target_concept": "poster/notice board",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14757152/r1_crops/2017_14757152_1.png"
+}

@@ -1,0 +1,46 @@
+{
+  "reasoning": "The person in the center is fully masked, so no biometric details or identifiers are visible. The remaining scene shows a lakeside area with a dock, a sidewalk along the shore, and the corner of a house exterior. These provide only weak contextual/location cues without addresses, text, or unique signage. The highest severity present is Level 3 from potential location hints (distinct waterfront dock), but overall risk remains low due to lack of direct identifiers. Score reflects minor composition of location and property context. Confidence is medium since distinctiveness of the dock is uncertain.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "wooden dock extending into the lake from the shoreline",
+        "Anonymized_element": "remove dock, replace with open water and indistinct shoreline, generic rocks",
+        "privacy_element": "recognizable waterfront pier shape and placement that may act as a local landmark",
+        "target_concept": "dock",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "corner of a house with beige horizontal siding and stone foundation",
+        "Anonymized_element": "plain neutral wall, blurred texture, no distinctive siding pattern",
+        "privacy_element": "distinct house exterior materials and style indicating a specific property",
+        "target_concept": "home exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "curving concrete sidewalk along the lake edge",
+        "Anonymized_element": "grass or soil edge without a defined path, generic ground",
+        "privacy_element": "distinct walkway layout that may be recognizable locally",
+        "target_concept": "walkway",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14999657/r1_crops/2017_14999657_0.png"
+}

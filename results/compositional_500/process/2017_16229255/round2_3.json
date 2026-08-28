@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a storefront sign with readable business name text and a distinctive marquee arrow. No people, faces, IDs, or sensitive documents are present. The primary privacy signal is potential location disclosure via a clearly readable venue name/unique signage (Level 3). With no compounding identifiers, risk remains low-to-moderate. Score reflects that the sign could help pinpoint a place but lacks address or personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "retro storefront sign reading a coffee shop name with an arrow marquee",
+        "Anonymized_element": "blank sign face, generic unreadable text or pattern, remove brand-specific typography and logo",
+        "privacy_element": "readable business name, distinctive sign design that can identify a venue/location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16229255/r1_crops/2017_16229255_3.png"
+}

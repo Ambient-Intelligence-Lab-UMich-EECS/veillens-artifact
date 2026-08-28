@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a close-up of a Spanish lottery ticket with clearly readable ticket number, serial/series codes, barcode, and draw date. There are no faces, personal names, addresses, or account details. The visible clues are generic document identifiers that could allow verification or misuse of the specific ticket number but do not directly identify a person. The highest severity is Level 4 due to generic document/data elements, so overall privacy risk is low. Confidence is high because the text is legible and no other sensitive cues appear.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Large printed lottery ticket number \u201c31416\u201d at the center of the ticket",
+        "Anonymized_element": "replace with random placeholder digits, blurred digits, decorative pattern",
+        "privacy_element": "readable unique ticket number",
+        "target_concept": "ticket number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Black barcode at the bottom edge of the ticket",
+        "Anonymized_element": "blank area, non-functional stripe pattern, blurred barcode",
+        "privacy_element": "scannable barcode encoding ticket/serial data",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Serial/series code text blocks such as \u201c102/07\u201d and upper numeric string near the edge",
+        "Anonymized_element": "nonsensical alphanumeric placeholders, blurred text",
+        "privacy_element": "legible serial/series identifiers",
+        "target_concept": "serial number text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed draw information and date \u201c22 de diciembre de 2007\u201d",
+        "Anonymized_element": "generic date text, blurred date line",
+        "privacy_element": "specific event/date details tied to the ticket",
+        "target_concept": "date text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13549936.jpg"
+}

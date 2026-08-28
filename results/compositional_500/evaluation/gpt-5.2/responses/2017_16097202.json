@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image shows a tennis player mid-swing on an outdoor court. No identifiable face or government/financial/medical information is visible. The most privacy-relevant cues are Level 3: a readable venue banner with the location text suggesting “Visit Orlando,” plus clear activity indicators (tennis racket, athletic outfit and motion) that reveal behavior and some physical attributes. There are small, distant spectators whose faces are not identifiable (Level 4). With no Level 1–2 identifiers, overall risk is moderate and driven by location and activity context.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large sideline banner with readable text starting with 'Visit Orl…'",
+        "Anonymized_element": "plain banner with abstract pattern, remove or scramble text, generic color block",
+        "privacy_element": "readable city/visitor slogan text indicating a likely city name",
+        "target_concept": "advertising banner text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "tennis racket held in the player’s right hand during a swing",
+        "Anonymized_element": "neutral sports prop, blurred or removed racket, generic object without sport cues",
+        "privacy_element": "sport-specific equipment revealing activity (tennis)",
+        "target_concept": "sports equipment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "athlete in turquoise sports dress and sneakers executing a tennis stroke",
+        "Anonymized_element": "loose generic activewear, neutral stance, crop to reduce body-specific cues",
+        "privacy_element": "athletic attire and motion revealing participation in tennis; visible body shape/appearance",
+        "target_concept": "person body (no face)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "two small distant spectators on bleachers with indistinct faces",
+        "Anonymized_element": "empty seats, silhouettes without facial detail, further blur",
+        "privacy_element": "presence of people in background though not identifiable",
+        "target_concept": "distant spectators",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16097202/final/2017_16097202_final.png"
+}

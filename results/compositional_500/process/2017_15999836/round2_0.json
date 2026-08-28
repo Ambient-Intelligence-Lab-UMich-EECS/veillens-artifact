@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows three printed event tickets with clearly readable text. No people or biometric data are present. The main privacy signals are location-identifying details: the venue name (National Opera of Ukraine) and a full street address with phone numbers. Additional lower-risk clues include unique ticket serial numbers and stamped event dates/times, which reveal document metadata but not a specific person. With Level 3 location info combined with several Level 4 document/metadata cues, the risk is moderate. Confidence is high due to legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed street address and phone numbers line at the bottom-left of each ticket",
+        "Anonymized_element": "replace with lorem ipsum text, remove numbers, generic placeholder line",
+        "privacy_element": "readable street address, telephone numbers",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "venue/organization name text near the top-left of each ticket",
+        "Anonymized_element": "generic venue label like 'City Theater', no specific names or logos",
+        "privacy_element": "readable venue name identifying a specific institution",
+        "target_concept": "venue name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical red ticket serial numbers along the right edge of each ticket",
+        "Anonymized_element": "blank margin, randomized non-meaningful digits, or decorative line",
+        "privacy_element": "unique ticket serial numbers",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue stamped event dates and times near the top of each ticket",
+        "Anonymized_element": "remove stamps, replace with generic non-specific date like 'XX/XX/XXXX'",
+        "privacy_element": "specific event date/time stamps",
+        "target_concept": "event date stamp",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15999836/r1_crops/2017_15999836_0.png"
+}

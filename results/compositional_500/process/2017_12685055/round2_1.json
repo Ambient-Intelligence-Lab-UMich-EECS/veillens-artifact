@@ -1,0 +1,76 @@
+{
+  "reasoning": "The crop shows a public demonstration with multiple clearly identifiable faces at close range and rainbow pride flags and placards indicating participation in a protest related to LGBTQ rights. The highest-severity evidence is biometric facial data, and it is reinforced by contextual clues that can reveal sensitive inferences (sexual orientation/politics) and activities/behaviors. The faces are unobstructed and central, elevating risk. Combined, these cues justify a high privacy risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-foreground man\u2019s clear side-profile face near a pole",
+        "Anonymized_element": "blurred face, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features, ear and profile outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-left young man\u2019s frontal face in black jacket",
+        "Anonymized_element": "blurred face, masked facial area, generic silhouette",
+        "privacy_element": "full frontal face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "mid-ground woman\u2019s clear face holding or near a rainbow flag",
+        "Anonymized_element": "blurred face, generic silhouette, head turned away",
+        "privacy_element": "full face visible with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large rainbow pride flag in the center being waved",
+        "Anonymized_element": "solid-color generic flag, abstract pattern without symbolism",
+        "privacy_element": "distinct LGBTQ rainbow pattern implying identity or views",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "protest placard held above the crowd with partially readable text",
+        "Anonymized_element": "blank sign, abstract shapes, illegible scribbles",
+        "privacy_element": "political/advocacy signage indicating protest participation",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12685055/r1_crops/2017_12685055_1.png"
+}

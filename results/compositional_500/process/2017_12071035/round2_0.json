@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a single person posing with oversized novelty glasses; despite the prop, the person\u2019s face and eyes are clearly visible and identifiable. No names, documents, financial/medical data, or explicit location cues are present. The highest-severity element is biometric facial data, which dominates the privacy risk. With no reinforcing identifiers, the risk is moderate-to-high based on the identifiable face alone.",
+  "personal_info_privacy_score": {
+    "score": 0.5,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult person\u2019s face wearing oversized orange novelty glasses, partially covering the eyes but leaving facial features visible",
+        "Anonymized_element": "blurred or pixelated face, opaque generic sunglasses, replace with plain oval or emoji, remove eye detail",
+        "privacy_element": "identifiable facial features, visible eyes, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12071035/r1_crops/2017_12071035_0.png"
+}

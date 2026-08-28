@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image captures an individual playing tennis. While the face is partially turned away and partially obscured, the context of the location is revealed by the visible sign 'Visit Orlando'. This constitutes a moderate privacy risk due to the combination of identifiable physical activity in a specific geographic location. The overall risk is classified as moderate given the public nature of the setting.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Sign with text 'Visit Orlando' on a blue banner",
+        "Anonymized_element": "Generic blue banner, no text, plain surface",
+        "privacy_element": "Text 'Visit Orlando'",
+        "target_concept": "location information",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "Female tennis player in motion",
+        "Anonymized_element": "Person in sportswear, generic athletic pose, face obscured or neutral",
+        "privacy_element": "Visible physical appearance and athletic activity",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16097202/final/2017_16097202_final.png"
+}

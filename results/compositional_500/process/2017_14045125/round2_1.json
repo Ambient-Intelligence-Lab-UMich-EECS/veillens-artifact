@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a small group at a graduation ceremony. Faces are obscured, so identifiable biometrics are not visible. The main privacy signal is the graduation attire, which reveals an activity/achievement that can indicate educational status and approximate life stage. Background people are present but unidentifiable. With no names, documents, or location text, the risk is moderate and driven primarily by activity/context rather than identity.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "mortarboard cap and black graduation gown with teal-trimmed stole on the person holding a bouquet at the right",
+        "Anonymized_element": "generic dark jacket or sweater, no cap, no academic stole",
+        "privacy_element": "graduation attire indicating participation in a specific life event/education milestone",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of unidentifiable people standing on steps in the mid-background",
+        "Anonymized_element": "fewer background figures, blurred silhouettes",
+        "privacy_element": "presence of multiple individuals suggesting social context without identity",
+        "target_concept": "crowd in background",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14045125/r1_crops/2017_14045125_1.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows teal fleece garments inside a bag. No faces, people, documents, or identifiers are visible. The only potentially privacy-relevant elements are a readable brand label and a size tag, which weakly indicate consumption preferences and approximate body size. These are low-to-moderate level clues and do not strongly identify a person. Thus the overall risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clothing neck area with a readable brand label on a teal fleece jacket",
+        "Anonymized_element": "blank fabric tag, no text or logo, generic stitched tab",
+        "privacy_element": "brand name/logo, product line markings",
+        "target_concept": "clothing brand label",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small black size tag inside the fleece garment",
+        "Anonymized_element": "blank size tag, no characters or symbols",
+        "privacy_element": "readable clothing size characters",
+        "target_concept": "size tag",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13354276/r1_crops/2017_13354276_1.png"
+}

@@ -1,0 +1,23 @@
+{
+  "img_id": "13328",
+  "predictions": {
+    "1 2": 3,
+    "1 4": 1,
+    "1 5": 2,
+    "2 4": 1,
+    "2 5": 2,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "ground_truth": {
+    "1 2": 3,
+    "1 4": 6,
+    "1 5": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P2 is wearing a wedding dress and P1 is wearing a suit while holding hands, indicating they are in the middle of a wedding ceremony. => couple\n\n[P1-P4]: P1 and P4 are both dressed in formal attire during a wedding ceremony, suggesting they are attending the same event as participants. => friends\n\n[P1-P5]: P5 is wearing a formal dress and standing behind the bride, suggesting she is a bridesmaid or close family member participating in the wedding. => family-members\n\n[P2-P4]: Both are participants in the same wedding ceremony, with P2 as the bride and P4 likely a guest or member of the wedding party. => friends\n\n[P2-P5]: P5 is standing directly behind P2, who is the bride, indicating they are close, likely family members or bridal party members. => family-members\n\n[P3-P4]: P3 is performing the wedding ceremony and P4 is observing; their interaction is defined by the professional context of the religious or civil service. => professional\n\n[P3-P5]: P3 is an officiant performing a wedding ceremony while P5 is an attendee, placing them in the same context as participants of a formal event. => professional",
+  "timestamp": 1779942203.77329
+}

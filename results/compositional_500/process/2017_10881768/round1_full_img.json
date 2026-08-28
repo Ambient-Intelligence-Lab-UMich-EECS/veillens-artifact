@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a conference-style presentation with multiple people whose faces are clearly visible, especially two presenters at the front and several audience members in profile. Identifiable faces constitute biometric data, which is the highest-severity category. Lanyards and a projected slide are present but do not reveal readable personal identifiers. With several unobstructed faces and no additional highly sensitive documents, the overall risk is driven by biometric exposure alone, yielding a high-moderate score. Confidence is high due to clear visibility of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right presenter facing audience with full visible face",
+        "Anonymized_element": "blurred face, generic head silhouette, turned-away head",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-left presenter with visible face speaking and gesturing",
+        "Anonymized_element": "blurred face, generic head silhouette, turned-away head",
+        "privacy_element": "full facial features visible and recognizable",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "audience member near center-right in profile with face visible",
+        "Anonymized_element": "blurred profile, generic side silhouette, head turned further away",
+        "privacy_element": "side profile with nose, mouth, and eye region visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "audience member near center-left looking toward screen with partial face visible",
+        "Anonymized_element": "blurred facial area, generic silhouette, head turned away",
+        "privacy_element": "partially visible facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10881768.jpg"
+}

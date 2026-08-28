@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a small airplane inside a hangar with a clearly readable aircraft registration painted on the fuselage. No people, IDs, or documents are visible. The highest-severity cue is a property identifier (aircraft tail number), which can link the aircraft to ownership records but does not directly expose a person. With limited contextual location details and no biometrics, overall risk is low-to-moderate, driven mainly by the legible registration.",
+  "personal_info_privacy_score": {
+    "score": 0.19,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black aircraft registration letters 'G-BHF\u2026' painted on the right rear fuselage",
+        "Anonymized_element": "blank fuselage area, randomized non-unique markings, generic stripes without letters",
+        "privacy_element": "readable aircraft registration/tail number characters",
+        "target_concept": "aircraft tail number",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11200064/r1_crops/2017_11200064_0.png"
+}

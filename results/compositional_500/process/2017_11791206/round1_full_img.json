@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a close-up group of four individuals in a medical setting with clearly visible, unobstructed faces. These constitute biometric identifiers that can directly reveal identity (highest severity). No readable names, IDs, or government/financial/medical documents are visible. The patient/body is covered and not identifiable. The risk is driven primarily by multiple identifiable faces in a professional context, leading to a high but not extreme score. Confidence is high because faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost person\u2019s unobstructed face in profile wearing dark-rimmed glasses",
+        "Anonymized_element": "blurred face, pixelated face, solid-color occluding shape over face, surgical mask and cap",
+        "privacy_element": "clear facial features, eyes and nose contour, distinctive eyewear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second person from left with bald head and gray beard, face angled downward",
+        "Anonymized_element": "blurred face, pixelated face, solid-color occluding shape over face, surgical mask and cap",
+        "privacy_element": "clear facial features, beard shape, forehead and nose visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "middle-back person in white coat with partially turned but visible face",
+        "Anonymized_element": "blurred face, pixelated face, solid-color occluding shape over face, surgical mask and cap",
+        "privacy_element": "recognizable facial outline, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost person leaning forward with glasses, full side-profile face",
+        "Anonymized_element": "blurred face, pixelated face, solid-color occluding shape over face, surgical mask and cap",
+        "privacy_element": "clear facial profile, nose and jawline, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11791206.jpg"
+}

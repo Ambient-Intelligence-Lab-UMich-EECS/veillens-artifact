@@ -1,0 +1,47 @@
+{
+  "reasoning": "The regional crop shows an indoor scene with a silhouetted person whose face and body details are obscured. No government or financial identifiers are visible. The only privacy-relevant cue is the visible lower-body silhouette with high-heeled shoes, which can hint at personal attributes. Background elements like a distinctive wooden wardrobe and patterned hardwood floor provide minimal contextual information about a private interior. Overall risk is low, with the highest severity being Level 3 due to potential inference of personal attributes, supported by low-risk Level 4 environmental details.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lower legs and feet silhouette wearing high-heeled shoes",
+        "Anonymized_element": "neutral footwear shape, generic flat shoes or sneakers, softened contours",
+        "privacy_element": "footwear style implying personal attributes such as fashion preferences or gender cues",
+        "target_concept": "footwear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large wooden wardrobe with distinctive paneling and wood grain",
+        "Anonymized_element": "plain cabinet surface, blurred/solid wood texture, generic furniture style without detailing",
+        "privacy_element": "unique furniture style and grain that could be matched to a specific home interior",
+        "target_concept": "furniture",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "patterned hardwood floor with varied plank tones",
+        "Anonymized_element": "uniform floor texture or lightly blurred, generic single-tone surface",
+        "privacy_element": "distinct interior flooring pattern indicating a private residence",
+        "target_concept": "flooring",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10336434/r1_crops/2017_10336434_1.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a group at an outdoor event. One man at left has a visible, identifiable face (Level 1 biometric data). Other nearby people have faces obscured. Additional weaker clues include a person holding a smartphone and a plastic cup indicating casual activity, but no readable text, names, or location markers. Because a clear face is present and centrally visible, the privacy risk is elevated despite limited supporting identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man\u2019s face in black jacket at left-center, looking forward",
+        "Anonymized_element": "blurred face, pixelated facial region, masked oval over face",
+        "privacy_element": "full face with clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "smartphone held in right hand of person in blue jacket near foreground",
+        "Anonymized_element": "generic blank rectangle, screen off, no visible logos",
+        "privacy_element": "personal device that may display personal content if readable (screen currently not readable)",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "transparent plastic cup held by person in blue jacket",
+        "Anonymized_element": "empty neutral cup or removed object",
+        "privacy_element": "indicates beverage consumption in social setting",
+        "target_concept": "drink cup",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of background people with faces turned away or obscured",
+        "Anonymized_element": "further blur/silhouette of individuals",
+        "privacy_element": "presence of multiple individuals, faces not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13416788/r1_crops/2017_13416788_0.png"
+}

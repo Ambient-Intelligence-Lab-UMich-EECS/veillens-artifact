@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a public event poster with no people or biometric data. The most privacy-relevant element is venue/location text (\u201cOxfam, Western Rd, Brighton\u201d), which reveals a specific address but is not tied to a private individual. Additional minor cues include a website URL and a specific event date/time. These are low to moderate contextual signals and do not expose personal identifiers or sensitive traits. Overall risk is low, driven mainly by location information on a public poster. Confidence is high given the clear legible text and absence of personal data.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten text line reading \"Oxfam, Western Rd, Brighton\" in the middle of the poster",
+        "Anonymized_element": "generic venue name, city removed, replace with \"local venue\", blank lines",
+        "privacy_element": "specific venue and street name revealing a precise location",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed URL \"www.woodlandrecordings.com\" at the bottom of the poster",
+        "Anonymized_element": "placeholder URL like example.com, or blank text line",
+        "privacy_element": "specific website/domain name",
+        "target_concept": "website URL",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten event date and time \"Friday 23rd February 7pm\" near the center",
+        "Anonymized_element": "month and year only, no specific day or time, or blank line",
+        "privacy_element": "specific date and time of event",
+        "target_concept": "date/time text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14306254.jpg"
+}

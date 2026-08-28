@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows the edge of a sheet of paper with the main content obscured; no legible text, names, numbers, faces, or other identifiers are visible. The only privacy-relevant cue is the presence of a generic document surface, which by itself carries minimal risk since it reveals no personal information. Highest severity is Level 4 and non-reinforcing, so the score is very low. Confidence is high due to clear visibility of the lack of details.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white sheet of paper with torn right edge; central area obscured",
+        "Anonymized_element": "plain neutral background, blank paper texture without document context",
+        "privacy_element": "presence of a document page (no readable content)",
+        "target_concept": "paper document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11135444/r1_crops/2017_11135444_1.png"
+}

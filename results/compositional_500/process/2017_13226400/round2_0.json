@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a coastal scene with white cliffs, a pier, and a tower on a headland. A paraglider is visible mid\u2011air, and a few tiny people are on the beach. No faces or readable identifiers are present. The highest-severity elements are Level 3: potential location cues from distinctive landmarks and an activity (paragliding). Distant unidentifiable individuals add minor Level 4 risk. Combined, these yield a low but nonzero privacy risk. Confidence is medium due to indirect and small details.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "paraglider canopy with a small person silhouette suspended below in the sky",
+        "Anonymized_element": "blank sky, remove paraglider and pilot, generic distant bird",
+        "privacy_element": "visible aerial sport participant under a paraglider canopy indicating a specific recreational activity",
+        "target_concept": "paraglider",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white chalk cliffs with a long pier and a tall antenna/tower on the headland",
+        "Anonymized_element": "generic coastline without distinctive cliffs, remove pier and tower structures",
+        "privacy_element": "recognizable cliff formation, pier structure, and prominent tower that could identify the locale",
+        "target_concept": "landmark cliffs and pier",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "tiny human figures on the beach near the shoreline",
+        "Anonymized_element": "empty shoreline without people",
+        "privacy_element": "distant unidentifiable individuals present in the scene",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13226400/r1_crops/2017_13226400_0.png"
+}

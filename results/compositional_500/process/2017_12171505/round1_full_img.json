@@ -1,0 +1,75 @@
+{
+  "reasoning": "The image shows a crowded outdoor parade with many unobstructed, clearly identifiable human faces, including the central performer and several bystanders (some are children). Visible biometric facial details constitute Level 1 risk. Additional contextual cues (costumed performance and spectators using phones) indicate activities but do not add unique identifiers. With multiple high-clarity faces centrally framed and well lit, the composition yields a high privacy risk. Confidence is high because faces are large and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central performer\u2019s full face looking to the right",
+        "Anonymized_element": "face blurred or pixelated, low-detail generic skin shading, remove distinctive makeup details",
+        "privacy_element": "unobstructed facial features (eyes, nose, mouth), distinctive makeup enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face on the far left near a woman in a patterned dress",
+        "Anonymized_element": "blurred or pixelated child face, low-detail generic shading",
+        "privacy_element": "clear identifiable child facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face at bottom right in turquoise shirt",
+        "Anonymized_element": "blurred or pixelated child face, low-detail generic shading",
+        "privacy_element": "clear identifiable child facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman spectator\u2019s face in yellow shirt holding a phone on the right side",
+        "Anonymized_element": "blurred or pixelated face, low-detail generic shading",
+        "privacy_element": "unobstructed facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "older man\u2019s face on the far left in a gray shirt, clapping",
+        "Anonymized_element": "blurred or pixelated face, low-detail generic shading",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12171505.jpg"
+}

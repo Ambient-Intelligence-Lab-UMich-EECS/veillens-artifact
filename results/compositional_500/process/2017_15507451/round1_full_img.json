@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image shows a formal banquet with two foreground attendees whose faces are visible (one clear side profile, one slightly motion\u2011blurred but still recognizable) and numerous smaller, less identifiable faces in the background. Visible alcohol (wine glass) indicates a consumption behavior. The highest-severity clue is biometric facial data (Level 1), which dominates the risk; this is reinforced by multiple faces and a contextual behavior cue. No government IDs, financial or medical documents, or explicit location identifiers are present. Overall, this yields a high but not extreme privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bald man in suit, right foreground, clear side-profile face",
+        "Anonymized_element": "face blurred, replaced with generic head silhouette, turned-away head, heavy shadowing",
+        "privacy_element": "recognizable facial features, skin texture, profile biometrics",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man with glasses in suit, left foreground, motion-blurred but recognizable face",
+        "Anonymized_element": "face blurred further, generic head silhouette, occluded by object",
+        "privacy_element": "recognizable facial structure, mustache/beard, glasses as distinguishing feature",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of attendees in mid-to-background with small, partially visible faces",
+        "Anonymized_element": "faces smoothed into indistinct blobs, back-of-head views, seating area defocused",
+        "privacy_element": "multiple human faces, but small and not individually clear",
+        "target_concept": "crowd region",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "filled wine glass on table in foreground",
+        "Anonymized_element": "empty glass, opaque cup, generic water glass without contents shown",
+        "privacy_element": "alcoholic beverage consumption visible",
+        "target_concept": "wine glass",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15507451.jpg"
+}

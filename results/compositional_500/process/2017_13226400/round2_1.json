@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a coastal landscape with distinctive white cliffs, a hilltop communications mast, a pier/jetty, and distant beachfront buildings; no faces or readable text are visible. The highest-severity clues relate to potential geo-identification via recognizable landmarks (Level 3). A small, distant paraglider indicates an activity but the person is unidentifiable. These moderate clues compose a low-to-moderate privacy risk without any Level 1\u20132 elements.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "tall communications mast on hilltop",
+        "Anonymized_element": "remove mast, replace with generic low structure or plain hilltop",
+        "privacy_element": "recognizable landmark enabling geolocation",
+        "target_concept": "radio tower",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bright white coastal cliffs on headland",
+        "Anonymized_element": "less distinctive rocky slope, muted colors, generic coastline",
+        "privacy_element": "distinctive natural landmark pattern enabling geolocation",
+        "target_concept": "cliffs",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant paraglider with blue canopy over the hill",
+        "Anonymized_element": "remove paraglider, replace with bird or empty sky",
+        "privacy_element": "visible recreational activity (paragliding) though person is unidentifiable",
+        "target_concept": "paraglider",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "long pier or jetty extending from shore",
+        "Anonymized_element": "short, nondescript shoreline, breakwater with no unique shape",
+        "privacy_element": "recognizable coastal structure aiding geolocation",
+        "target_concept": "pier/jetty",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13226400/r1_crops/2017_13226400_1.png"
+}

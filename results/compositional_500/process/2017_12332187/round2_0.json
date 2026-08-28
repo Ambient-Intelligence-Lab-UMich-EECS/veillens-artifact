@@ -1,0 +1,73 @@
+{
+  "reasoning": "The crop shows a parade scene with multiple identifiable human faces in the foreground (a woman in white shirt wearing sunglasses, a man with long hair playing guitar, and a woman with an orange headband). Several small printed portrait photos are also visible on yellow flags. A building sign reading \u201cLETTING AGENT\u201d provides mild location context. The highest-severity elements are the clear, unobscured faces (Level 1 biometric data), reinforced by activity cues and minor location text. Given multiple strong facial cues, the privacy risk is high with clear visibility, though not extreme due to absence of names or government/financial data.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face with sunglasses in the foreground (white blouse)",
+        "Anonymized_element": "face blurred or replaced with neutral skin-tone oval, sunglasses kept, preserve hair shape without facial details",
+        "privacy_element": "identifiable facial features, hairstyle, partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man with long hair holding a guitar; face visible left side",
+        "Anonymized_element": "blur or replace facial area with neutral oval; keep hair and guitar without facial detail",
+        "privacy_element": "identifiable facial features, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman with orange headband; face visible near center-left",
+        "Anonymized_element": "blur/replace facial area with neutral oval; keep headband color/pattern",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small circular printed portrait photos on yellow parade flag",
+        "Anonymized_element": "replace circles with abstract icons or solid colors, no human likeness",
+        "privacy_element": "miniature identifiable faces",
+        "target_concept": "printed portraits on flag",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical building sign reading 'LETTING AGENT' on the right facade",
+        "Anonymized_element": "blank sign or generic texture without text",
+        "privacy_element": "readable business-type text suggesting locale",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12332187/r1_crops/2017_12332187_0.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows a live performance with two people visible. The central subject\u2019s face is clearly shown (three\u2011quarter view with glasses) under stage lighting, which constitutes identifiable biometric data. A second person\u2019s face is partially visible at the left edge. No names, documents, addresses, or financial/medical information are legible. The highest severity is Level 1 due to visible faces; other contextual elements do not add significant risk. Given one prominent identifiable face and a secondary partial face, the risk is moderately high. Confidence is medium because lighting and angles slightly reduce clarity.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "three-quarter view of a person\u2019s face with glasses under red stage light at right-center",
+        "Anonymized_element": "blurred or pixelated face, mask overlay, face turned away, crop above neck",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "partially visible face of another person at left edge holding a violin",
+        "Anonymized_element": "blurred face region, crop to exclude head, mask over face",
+        "privacy_element": "partial facial features (eyes, nose, mouth outline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14291995.jpg"
+}

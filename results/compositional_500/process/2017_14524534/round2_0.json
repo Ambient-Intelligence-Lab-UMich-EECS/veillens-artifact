@@ -1,0 +1,90 @@
+{
+  "reasoning": "The crop shows a meeting room with several people whose faces are clearly visible and unobstructed. These identifiable faces constitute biometric data, which is a Level 1 risk. Additional contextual cues such as attire and setting provide personal attributes and behavior (attending a meeting), but no readable names, IDs, or documents are visible. The presence of multiple clear faces raises risk to high; hence a higher score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man in suit with glasses facing left, mid-left row",
+        "Anonymized_element": "blurred face, pixelated features, neutralized skin tone, generic head silhouette",
+        "privacy_element": "clear full face, eyes, nose, mouth, distinctive glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bearded man with blond hair in red shirt, left-center row",
+        "Anonymized_element": "blurred face, pixelated features, generic hair color, silhouette",
+        "privacy_element": "full face with beard, hairline, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman in profile holding a pen at table, right-center",
+        "Anonymized_element": "blurred facial area, removed pen detail, neutral silhouette",
+        "privacy_element": "clear side-profile face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "balding man seated behind the woman with pen, right-center",
+        "Anonymized_element": "pixelated face, blurred features, silhouette",
+        "privacy_element": "clear frontal/three-quarter face, hairline and facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young woman with long dark hair looking forward, right-center row",
+        "Anonymized_element": "blurred facial region, pixelation, silhouette",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman on far right looking down near beverage bottle",
+        "Anonymized_element": "blurred/pixelated face, neutral silhouette",
+        "privacy_element": "partial but identifiable facial features in profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14524534/r1_crops/2017_14524534_0.png"
+}

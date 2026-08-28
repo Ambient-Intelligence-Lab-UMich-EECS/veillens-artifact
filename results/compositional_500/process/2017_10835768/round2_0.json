@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a dense crowd with several clearly visible, front-facing individuals whose facial features are identifiable. This constitutes Level 1 biometric exposure. Additionally, a rainbow pride flag is prominent, enabling sensitive inferences about participation in an LGBTQ+ pride event (activities and potential sexual-orientation inference). The combination of multiple identifiable faces with an event-specific symbol elevates the overall risk. No government IDs or financial/medical details are visible. Given the clarity and number of faces plus the sensitive context, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear frontal face of an adult with short dark hair near center-right of the crowd",
+        "Anonymized_element": "blurred or pixelated face, generic skin tone, turned-away head",
+        "privacy_element": "full face with visible eyes, nose, mouth, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "clear frontal face of a person with light/blond hair in the right foreground",
+        "Anonymized_element": "face blurred, simplified facial features, neutral color patch",
+        "privacy_element": "distinct facial features visible at high resolution",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "clear face of a person wearing a colorful square-patterned headband on the mid-right",
+        "Anonymized_element": "obscured face, plain headband without pattern, desaturated colors",
+        "privacy_element": "recognizable facial features; distinctive accessory increasing identifiability",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a person in a yellow hat on the left-middle area",
+        "Anonymized_element": "pixelated face, plain hat without distinguishing marks",
+        "privacy_element": "clear facial features combined with a distinctive hat",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow pride flag held at the top-left of the frame",
+        "Anonymized_element": "solid-color generic flag, abstract pattern without identity/political meaning",
+        "privacy_element": "LGBTQ+ pride symbolism indicating event participation and potential orientation or beliefs",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10835768/r1_crops/2017_10835768_0.png"
+}

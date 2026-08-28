@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a foggy residential street with house exteriors, streetlights, and a faint stop-sign silhouette. No people, faces, text, or identifiable numbers are visible. The strongest privacy signals are low-level: a visible home facade (property) and a generic street sign that weakly hints at location without readable text. These clues do not uniquely identify a person or address and provide only minimal contextual location cues, so overall risk remains low. Confidence is high given the clear absence of higher-severity elements.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side house facade with lit garage and window",
+        "Anonymized_element": "generic house silhouette, lights off, blurred facade with no distinguishing details",
+        "privacy_element": "residential home exterior indicating private property",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "faint stop-sign silhouette on a pole near center-right",
+        "Anonymized_element": "blank pole, non-descript marker without sign face",
+        "privacy_element": "street sign shape that hints at road location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "multiple bright streetlights along roadway",
+        "Anonymized_element": "dim diffuse light sources, softer bokeh lighting",
+        "privacy_element": "public lighting indicating generic street environment",
+        "target_concept": "streetlight",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13539187/r1_crops/2017_13539187_1.png"
+}

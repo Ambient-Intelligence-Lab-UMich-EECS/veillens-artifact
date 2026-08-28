@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a passport visa page with multiple readable identifiers. The most sensitive elements are government identifiers: a full MRZ code, a visible passport number, and a barcode on the visa, all clearly legible and centrally framed. Additional non-unique identifiers include the person\u2019s full name, along with travel stamps that reveal dates and locations, exposing travel history. Because Level 1 government identifiers are present and reinforced by other identifiers and location/activity details, the overall privacy risk is severe. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.96,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "two-line machine-readable zone (MRZ) at the bottom of the page with alphanumeric characters",
+        "Anonymized_element": "blank security pattern strip, scrambled characters, solid band without text",
+        "privacy_element": "full MRZ text encoding passport and personal identifiers",
+        "target_concept": "passport MRZ",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed field labeled 'PASSPORT NUMBER' showing a numeric value on the visa",
+        "Anonymized_element": "obscured/blurred number, placeholder digits (XXXXXXX)",
+        "privacy_element": "readable passport number",
+        "target_concept": "passport number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed field labeled 'NAME' with the holder\u2019s full name on the visa",
+        "Anonymized_element": "blurred text, generic placeholder name (e.g., JOHN DOE)",
+        "privacy_element": "readable full personal name",
+        "target_concept": "name field",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "1D/2D barcode printed on the right side of the visa",
+        "Anonymized_element": "blank rectangle, noisy pattern not encoding data",
+        "privacy_element": "machine-readable barcode likely encoding identifiers",
+        "target_concept": "barcode on visa",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "entry/exit immigration stamps with dates and place names on the upper page",
+        "Anonymized_element": "generic stamp shapes without text or dates",
+        "privacy_element": "travel dates and locations revealing movement history",
+        "target_concept": "immigration stamps",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11795270.jpg"
+}

@@ -1,0 +1,49 @@
+{
+  "reasoning": "The foreground subject\u2019s face is clearly visible and in focus, providing identifiable biometric data (highest severity). Additionally, the person wears a bit gag and harness-like costume accessories that imply intimate/BDSM-themed content, enabling sensitive inference about sexual interests and activities. Several background people are present but their faces are small and less identifiable, contributing minor risk. Combining a Level 1 identifiable face with Level 2 intimate indicators justifies a high overall privacy risk score. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person\u2019s unobstructed face turned toward the camera",
+        "Anonymized_element": "blurred or pixelated face, solid opaque mask, turned-away head",
+        "privacy_element": "full facial features visible (eyes, nose, mouth), distinctive facial characteristics",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bit gag strapped in the foreground person\u2019s mouth with head harness",
+        "Anonymized_element": "remove gag and straps, replace with neutral scarf or plain accessory",
+        "privacy_element": "gag in mouth, BDSM-style gear suggesting intimate sexual interests",
+        "target_concept": "intimate accessory (gag)",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distant background crowd with partially visible small faces",
+        "Anonymized_element": "background blur, silhouettes without facial detail",
+        "privacy_element": "multiple bystanders with partial facial visibility",
+        "target_concept": "background crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11048442.jpg"
+}

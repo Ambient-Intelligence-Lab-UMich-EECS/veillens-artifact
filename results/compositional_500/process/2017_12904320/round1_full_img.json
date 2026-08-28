@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows three people in an office with clearly visible, front-facing faces, which are strong biometric identifiers. Additionally, the standing person wears a visible employee ID badge that includes a headshot and text fields that could contain a name or organization, reinforcing identifiability. No readable addresses or financial/medical details are apparent. The combination of multiple clear faces (Level 1) and a workplace ID badge (Level 2) creates a high privacy risk. The clues are central and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left foreground person\u2019s full face, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated facial area, turned-away head",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center standing person\u2019s full face, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated facial area, turned-away head",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right seated person\u2019s full face, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated facial area, turned-away head",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "employee ID badge on lanyard around center person\u2019s neck showing a small headshot and text fields",
+        "Anonymized_element": "blank badge without photo or text, generic solid color card",
+        "privacy_element": "employee photo, potential name text, possible organization logo",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12904320.jpg"
+}

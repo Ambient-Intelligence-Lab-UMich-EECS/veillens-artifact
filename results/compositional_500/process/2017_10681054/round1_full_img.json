@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a small group on a baseball field, including umpires and coaches/players. At least two faces are clearly visible and reasonably identifiable, which is Level 1 biometric data. Additional clues include a large jersey number \u201c22\u201d on a participant\u2019s back (a non-unique identifier linking to team context) and visible team/league logos that reveal sports affiliation and activity. These elements reinforce context but do not include names, documents, or government IDs. Overall risk is driven by the identifiable faces with moderate reinforcement from the jersey number and team logos. Confidence is medium due to slight blur but still recognizable features.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central umpire\u2019s uncovered face looking forward",
+        "Anonymized_element": "blurred face, pixelated facial area, generic neutral skin patch",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "coach in white pinstripe uniform at right with visible profile face",
+        "Anonymized_element": "blurred profile, pixelated facial area, generic neutral patch",
+        "privacy_element": "recognizable facial features in profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large number 22 on the back of gray baseball jersey",
+        "Anonymized_element": "blank jersey back, altered number to generic pattern or removed digits",
+        "privacy_element": "distinctive jersey number that can link to roster identity",
+        "target_concept": "jersey number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "team/league logo patch on white pinstripe jersey chest",
+        "Anonymized_element": "plain patch with no logo or text, solid color badge",
+        "privacy_element": "team/league logo indicating organizational affiliation and activity",
+        "target_concept": "team logo patch",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10681054.jpg"
+}

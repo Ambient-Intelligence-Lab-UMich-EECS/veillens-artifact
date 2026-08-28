@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a beach with distant small human figures and a few vehicles on an upper road. No faces, text, or unique identifiers are legible. A cluster of white chairs/tables suggests a beach gathering but without identifying details. The highest severity is Level 3 for activity inference, with additional Level 4 clues from distant people and vehicles. Together these imply low overall privacy risk due to distance and lack of detail.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small human figures walking on the distant shoreline",
+        "Anonymized_element": "remove figures, replace with blank sand or tiny indistinct silhouettes",
+        "privacy_element": "presence of people, human outlines",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "parked cars partially visible along the upper roadway near trees",
+        "Anonymized_element": "generic unbranded vehicles, simplified shapes, no identifiable details",
+        "privacy_element": "vehicle presence and shapes indicating private property/assets",
+        "target_concept": "vehicles",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of white chairs and tables arranged on the beach",
+        "Anonymized_element": "generic beach items, scattered neutral objects, less structured arrangement",
+        "privacy_element": "specific event-like setup indicating a group gathering or activity",
+        "target_concept": "event setup (chairs/tables)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11533911/r1_crops/2017_11533911_0.png"
+}

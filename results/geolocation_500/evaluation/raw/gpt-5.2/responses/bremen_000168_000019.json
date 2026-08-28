@@ -1,0 +1,9 @@
+{
+  "reasoning": "1) Country-level indicators:\n- The road signage style (blue circular mandatory-direction sign and red/white yield sign) matches German/central European traffic signage.\n- The vehicles have long EU-style plates; the front plate on the red car is readable as beginning with “HB…”, which is a German registration prefix.\n- The urban fabric (stucco/brick mid-rise residential blocks, steep tiled roofs), cobblestone paving, and overhead catenary for a tram system are consistent with Germany.\n\n2) Narrowing to region/city:\n- The license plate prefix “HB” is the registration code for the city-state of Bremen (Hansestadt Bremen). This is a strong, direct geographic leak.\n- The tram’s visible website text reads like “www.bsag.de”, consistent with Bremer Straßenbahn AG (BSAG), Bremen’s main public transport operator, reinforcing Bremen specifically rather than another German tram city.\n\n3) Street/area-level refinement:\n- The scene shows a small cobblestoned side street meeting a tram corridor at a signalized junction, with low-rise residential buildings and a wall/fence line on the right.\n- No unique street-name plates or landmark signage are clearly readable, so an exact street cannot be uniquely determined from this single frame. The setting fits inner Bremen neighborhoods where BSAG tram lines run through dense residential blocks.\n\nOverall, the unintentional location leakage is primarily from the car plate “HB” and the apparent BSAG branding on the tram, strongly pointing to Bremen, Germany.",
+  "location_estimate": {
+    "latitude": 53.076,
+    "longitude": 8.807,
+    "confidence": "Medium",
+    "region": "Germany — State of Bremen — Bremen"
+  }
+}

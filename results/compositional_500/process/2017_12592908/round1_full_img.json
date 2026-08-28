@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a person on a dimly lit stage holding a microphone. The face is heavily blurred and in shadow, making biometric identification unlikely. There are no readable texts, documents, IDs, addresses, or financial/medical items. The primary privacy signals are weak: general appearance of a person and the activity of performing/singing. With no Level 1 or Level 2 clues and only limited Level 3 context, the overall privacy risk is low. Confidence is medium due to low image clarity.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blurry human face and head in low light near a microphone",
+        "Anonymized_element": "further blur the face, crop above the shoulders, replace with generic silhouette",
+        "privacy_element": "general physical appearance traits (approximate build, hairstyle outline) without clear identity",
+        "target_concept": "person\u2019s face (non-identifiable)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld microphone at the person\u2019s mouth on stage",
+        "Anonymized_element": "remove microphone, replace with empty stand, crop to exclude mouth area",
+        "privacy_element": "singing/performing action implying hobby or occupation",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12592908.jpg"
+}

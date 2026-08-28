@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a small outdoor gathering with multiple clearly visible human faces. Two central subjects are front-facing and well-lit, making them readily identifiable, while additional faces are present in the background, some partially visible. No names, documents, addresses, or financial/medical items are visible. The highest-severity clue is biometric facial data (Level 1), and the presence of multiple identifiable faces elevates overall risk despite the absence of other identifiers. Confidence is high due to clear visibility of facial features.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Front-facing face of the person in a blue hooded jacket at center-left",
+        "Anonymized_element": "blurred face, pixelated facial area, replaced with generic smooth skin tone or a simple mask",
+        "privacy_element": "full face, clear eyes, nose, mouth, distinct facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Front-facing face of the person in a black puffy jacket with neon gloves at center-right",
+        "Anonymized_element": "blurred face, pixelated facial area, generic placeholder face",
+        "privacy_element": "full face, clear smile, distinct facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Partially turned face of a person in a black coat on the left side of the frame",
+        "Anonymized_element": "blurred or obscured face, pixelation",
+        "privacy_element": "visible facial outline and features sufficient for identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Background face of a person wearing a dark cap behind the central subjects",
+        "Anonymized_element": "blurred face region, pixelation",
+        "privacy_element": "partially visible face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13416788.jpg"
+}

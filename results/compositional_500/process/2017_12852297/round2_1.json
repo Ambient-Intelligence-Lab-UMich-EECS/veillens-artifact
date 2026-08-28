@@ -1,0 +1,69 @@
+{
+  "reasoning": "This crop shows a public playground with several people. A couple of children\u2019s faces are partially visible (side/back angles, small and not sharply detailed), which constitutes biometric data but with low clarity. Additional low-risk context includes a person holding an open newspaper and multiple distant individuals. The highest severity is Level 1 (faces), yet the faces are small/oblique and not clearly identifiable, so the overall risk is moderate. Confidence is medium due to partial occlusion and distance.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child seated on the edge of a metal slide with side of face visible",
+        "Anonymized_element": "turn head fully away, blur face, replace with generic non-detailed oval",
+        "privacy_element": "partial face, visible facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child at lower left near seesaw with face angled toward camera",
+        "Anonymized_element": "face blurred, head turned away, generic non-detailed head shape",
+        "privacy_element": "partial facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "open newspaper held by person on bench in foreground",
+        "Anonymized_element": "blank pages, remove all text and headlines",
+        "privacy_element": "printed text that could contain readable details",
+        "target_concept": "newspaper",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of distant people near playground equipment in background",
+        "Anonymized_element": "reduce detail of people, silhouettes only",
+        "privacy_element": "distant individuals present",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child climbing on playground structure/net in mid-background",
+        "Anonymized_element": "replace with empty equipment or non-descript silhouette",
+        "privacy_element": "depicted leisure activity (child playing)",
+        "target_concept": "person performing activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12852297/r1_crops/2017_12852297_1.png"
+}

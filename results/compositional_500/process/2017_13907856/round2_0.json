@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a close-up of a handwritten notebook page with a titled list and legible items such as \u201cTEDx\u201d and \u201cVenice.\u201d No faces or government IDs appear. The primary risk is from readable personal notes revealing activities/interests and a potential location reference. These Level 3 clues are clear and central but not uniquely identifying on their own, leading to a low-to-moderate overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten heading reading '5 things on Friday #11' at top of notebook page",
+        "Anonymized_element": "generic scribbles, blurred text, neutral heading like 'notes'",
+        "privacy_element": "readable personal heading indicating routine/time-based list",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "list item text containing 'TEDx' on the lined page",
+        "Anonymized_element": "replace with generic term like 'event', blurred text",
+        "privacy_element": "readable reference to a specific event/affiliation",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "list item text containing the place name 'Venice' near bottom of page",
+        "Anonymized_element": "replace with generic word like 'city', blurred text",
+        "privacy_element": "readable location name implying travel or interest",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13907856/r1_crops/2017_13907856_0.png"
+}

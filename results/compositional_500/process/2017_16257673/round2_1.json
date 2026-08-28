@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows two seated individuals whose faces and nameplates are obscured, reducing biometric and name exposure. However, visible organizational branding (CTBTO logo and full organization name on the front panel) and branded lanyards imply affiliation and event context, which constitutes location/organizational information and weak non-unique identifiers. A projected slide with a technical diagram is visible but does not show readable personal data. Highest severity present is Level 3 (location/affiliation). Overall risk is low-to-moderate due to contextual identifiers without faces or names.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front panel banner with CTBTO logo and full organization name text",
+        "Anonymized_element": "plain banner, generic pattern, no text or logos",
+        "privacy_element": "organization logo, full organization name revealing event/affiliation context",
+        "target_concept": "organization banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue lanyard on the right person with repeating CTBTO logos attached to an ID badge (text not readable)",
+        "Anonymized_element": "plain lanyard, no text or logos, blank badge face-down",
+        "privacy_element": "workplace/organization branding implying affiliation",
+        "target_concept": "ID lanyard/badge",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "projected slide showing a technical map/diagram with small, unreadable labels",
+        "Anonymized_element": "abstract diagram, blurred or generic chart with no specific labels",
+        "privacy_element": "document content visible on screen (non-personal)",
+        "target_concept": "presentation slide",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16257673/r1_crops/2017_16257673_1.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a paper receipt. A line displays a masked payment card number with asterisks revealing the last few digits, and another line shows the city name \u201cLONDON.\u201d The financial data (even partially masked) is the highest-severity element (Level 2). The readable location detail compounds risk by linking a place to the transaction. While full identifiers are not shown, the clues are clear and legible, yielding a moderate-to-high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "receipt line with masked card number showing asterisks and last digits",
+        "Anonymized_element": "all asterisks, no visible digits, generic payment text",
+        "privacy_element": "masked PAN pattern, visible last four digits, payment card context",
+        "target_concept": "credit card number line",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed word 'LONDON' on the receipt",
+        "Anonymized_element": "generic city placeholder, blurred or replaced with 'CITY'",
+        "privacy_element": "readable city name revealing location",
+        "target_concept": "city name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15630250/r1_crops/2017_15630250_0.png"
+}

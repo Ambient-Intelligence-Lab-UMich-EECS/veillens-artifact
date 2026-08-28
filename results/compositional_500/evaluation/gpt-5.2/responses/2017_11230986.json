@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image shows Spanish lottery tickets with clearly readable ticket numbers, barcodes, series/fraction identifiers, dates, and prices. There is no person, face, name, or direct personal identifier linking the tickets to an individual. The highest-severity content is low-risk (Level 4) generic document details and barcoded identifiers that could enable misuse of the ticket info but are not inherently personal. Multiple readable document identifiers slightly elevate risk, but absence of biometric, government ID, or financial account details keeps overall risk low. Confidence is high due to clear legibility of the elements.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Black-and-white barcode with a visible numeric code on the lottery ticket",
+        "Anonymized_element": "blurred barcode, randomized bars, no digits",
+        "privacy_element": "machine-readable barcode pattern, full numeric code",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Large printed lottery ticket number “26906” at the center of the ticket",
+        "Anonymized_element": "randomized or masked digits, generic pattern shapes",
+        "privacy_element": "unique ticket number digits",
+        "target_concept": "ticket number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Ticket side panel showing series and fraction identifiers (e.g., “118ª serie”, “5ª fracción”)",
+        "Anonymized_element": "blank panel, generic labels without numbers",
+        "privacy_element": "specific series and fraction numbers",
+        "target_concept": "series/fraction panel",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Printed draw date and price text (e.g., “22 de diciembre de 2007”, “20 euros”)",
+        "Anonymized_element": "generic date placeholder, masked price text",
+        "privacy_element": "exact event date and price amount",
+        "target_concept": "date and price text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11230986/final/2017_11230986_final.png"
+}

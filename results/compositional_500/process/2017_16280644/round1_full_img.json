@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a public parade float with multiple identifiable faces, including a close-up person in the foreground and a person holding a flyer, which constitutes biometric data (Level 1). Text on banners includes names and organization references (e.g., business/person names and a website), adding non-unique identifiers (Level 2). Prominent Pride signage and rainbow motifs indicate participation in an LGBTQ+ pride event, enabling sensitive inference about attendees (Level 2). A street-side sign for a local college further exposes location information (Level 3). The combination of clear facial identification with sensitive-context signage and location cues yields a high privacy risk. Confidence is high because these elements are large, legible, and central.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up man in right foreground with sunglasses, mouth and facial features visible",
+        "Anonymized_element": "blurred face, generic skin-tone patch, sunglasses-only silhouette",
+        "privacy_element": "recognizable facial structure, mouth and jawline, partial eyes behind sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person on left holding a flyer with unobstructed face and short blond hair",
+        "Anonymized_element": "blurred face, generic head shape without features",
+        "privacy_element": "full face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parade float banner section with large text showing names and organizations near the bottom edge",
+        "Anonymized_element": "blank banner, abstract shapes, unreadable placeholder text",
+        "privacy_element": "readable personal and business names, organization branding",
+        "target_concept": "event banner with names",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "float signage with rainbow arch and the word 'PRIDE 2005' visible",
+        "Anonymized_element": "neutral color arch, generic festival text without sensitive terms",
+        "privacy_element": "Pride event labeling and rainbow iconography indicating LGBTQ+ context",
+        "target_concept": "pride signage",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street-side board reading 'Seattle Central Community College' in the background",
+        "Anonymized_element": "blank signboard, illegible generic text",
+        "privacy_element": "readable institution name implying city/location",
+        "target_concept": "street sign with institution name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16280644.jpg"
+}

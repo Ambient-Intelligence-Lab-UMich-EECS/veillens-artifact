@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows several seated individuals in an auditorium. No readable text, IDs, or location markers are visible. However, two partial faces are visible (one side-profile at the far right and another blurred face in the middle row), which are biometric cues even though they are out of focus and partially occluded. Additionally, lit smartphone and laptop screens are present but their contents are not legible, contributing minor contextual risk about activities. With Level 1 clues present but weak/blurred and limited supporting context, the risk is moderate-low. Confidence is medium due to blur and occlusions.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blurry side-profile face of a seated person at the far right holding a phone",
+        "Anonymized_element": "head turned away, heavier blur, replaced with generic hair/skin tones without facial features",
+        "privacy_element": "partial face outline, ear and facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partially visible blurred face of a person in the middle row above a seatback",
+        "Anonymized_element": "obscured silhouette, stronger blur, replace with seatback continuation",
+        "privacy_element": "visible facial area with nose/cheek contour",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "lit smartphone screen in right-hand person\u2019s hand",
+        "Anonymized_element": "screen off, solid dark display, generic device without UI",
+        "privacy_element": "active screen potentially displaying personal content",
+        "target_concept": "smartphone screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "open laptop screen tilted up in left-middle row",
+        "Anonymized_element": "blank desktop wallpaper, screen off, generic casing",
+        "privacy_element": "active screen potentially containing personal or work information (not legible)",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12379896/r1_crops/2017_12379896_1.png"
+}

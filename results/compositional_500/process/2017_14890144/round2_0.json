@@ -1,0 +1,70 @@
+{
+  "reasoning": "The crop shows a crowded parade boat with many unobscured, identifiable faces. Several participants are clearly visible at close range, constituting Level 1 biometric data. A readable handheld sign referencing a pride theme implies participation/support for an LGBTQ+ event, which is a sensitive inference. Event banners with numbers/logos also signal participation in a specific public event. The combination of numerous visible faces with a sensitive-event sign yields a high privacy risk. Confidence is high because the cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.79,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right participant\u2019s unobscured face in orange outfit near the bow railing",
+        "Anonymized_element": "face blurred or replaced with neutral silhouette, retain skin tones and lighting",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "participant\u2019s unobscured face mid-boat holding drink, facing left",
+        "Anonymized_element": "blurred face or generic non-descript face, preserve pose",
+        "privacy_element": "distinct facial features with frontal/three-quarter view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "crowd member\u2019s unobscured face on left side of boat above railing",
+        "Anonymized_element": "apply mosaic/blur, replace with neutral silhouette",
+        "privacy_element": "recognizable facial geometry and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld sign reading \u201cORANGE IS THE NEW PINK\u201d near front-left of boat",
+        "Anonymized_element": "blank sign or abstract pattern without readable text or slogans",
+        "privacy_element": "pride-related slogan indicating participation/support for LGBTQ+ event",
+        "target_concept": "protest/event sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "event banner on boat side with number \u201878\u2019 and logos/text",
+        "Anonymized_element": "plain banner with solid color and no numbers or logos",
+        "privacy_element": "event identifier/branding linking individuals to a specific public event",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14890144/r1_crops/2017_14890144_0.png"
+}

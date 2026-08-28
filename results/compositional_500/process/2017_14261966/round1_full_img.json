@@ -1,0 +1,83 @@
+{
+  "reasoning": "The image shows a crowded outdoor parade float with several participants\u2019 faces clearly visible at mid-range. These recognizable faces constitute Level 1 biometric identifiers. In addition, prominent rainbow symbols (a large rainbow flag and multiple rainbow wristbands) indicate participation in or support for an LGBTQ-related event, enabling sensitive inferences about sexual orientation or activism (Level 2). A parking regulation sign in the background gives minor location context. The combination of multiple visible faces with sensitive-event cues raises overall risk. Score reflects strong but not extreme exposure (no names, IDs, or financial/medical data). Confidence is high because the cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of person in gray sleeveless shirt with bead necklaces on parade float",
+        "Anonymized_element": "blurred face, turned-away head, generic placeholder silhouette",
+        "privacy_element": "recognizable face, eyes and mouth visible, unique hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of person in yellow shirt with beads standing on float left side",
+        "Anonymized_element": "blurred facial region, neutral head shape without features",
+        "privacy_element": "recognizable facial features, eyes/nose/mouth alignment",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of shirtless person on right side of float with camera strap",
+        "Anonymized_element": "obscured/blurred face, add sunglasses and shadow to hide features",
+        "privacy_element": "distinct facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow flag waved in foreground",
+        "Anonymized_element": "solid-color generic flag, abstract multicolor without rainbow order",
+        "privacy_element": "rainbow pride colors and pattern suggesting LGBTQ affiliation",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rainbow wristbands on multiple raised arms in the crowd",
+        "Anonymized_element": "plain single-color wristbands, no rainbow pattern",
+        "privacy_element": "rainbow color scheme implying LGBTQ support/participation",
+        "target_concept": "wristband",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking regulation sign with symbols and time restrictions in background",
+        "Anonymized_element": "blank signboard without text or symbols",
+        "privacy_element": "municipal sign style and text that can hint at city/jurisdiction",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14261966.jpg"
+}

@@ -1,0 +1,50 @@
+{
+  "reasoning": "The crop shows a UK-style rail ticket with clearly readable transactional details, including the ticket\u2019s serial/reference number, the exact travel date and print time, route validity, price, and partially legible origin/destination station names. No face or government ID is present, but the combination of specific travel metadata and location cues reveals activity patterns and potential location at a particular time, which falls under Level 3 risk. Multiple reinforcing clues (ticket number + date/time + stations) elevate the risk above low. Confidence is high due to legibility of the printed details.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "ticket serial/reference number row showing a long numeric code on the rail ticket",
+        "Anonymized_element": "replace with random digits length-preserved but non-realistic, or blur to solid color strip",
+        "privacy_element": "readable unique ticket number",
+        "target_concept": "ticket number",
+        "severity_level": 3,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed date and time on bottom edge reading 27-SEP-15 and 16:10",
+        "Anonymized_element": "replace with placeholder date/time (XX-XXX-XX, XX:XX) or remove digits",
+        "privacy_element": "exact travel/print date and time",
+        "target_concept": "date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "origin and destination station text lines on the ticket (partially legible, e.g., '...GAN *' and '...INIAN PARK *')",
+        "Anonymized_element": "replace station names with generic placeholders (ORIGIN, DESTINATION) or obfuscate text",
+        "privacy_element": "readable location names indicating travel endpoints",
+        "target_concept": "station names",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13999089/r1_crops/2017_13999089_1.png"
+}

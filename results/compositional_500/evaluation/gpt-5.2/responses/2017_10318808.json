@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a concert ticket with legible printed text including the city (Barcelona), venue (Sala Razzmatazz), event name (Tool), date and times, price, and a serial number. No persons or biometric identifiers are present. The strongest privacy signal is Level 3: location and activity details that could imply attendance if linked to an individual, though the image alone does not tie it to a person. A secondary, low-risk element is the ticket serial number, which is a generic identifier without personal linkage. Overall risk is low to moderate and evidence is clear, so the score is kept low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed event details on the lower center-right of the ticket (city, venue, date, times, website)",
+        "Anonymized_element": "generic placeholder text, blurred/obscured lines, remove city/venue names, neutral shapes without readable words",
+        "privacy_element": "city name (Barcelona), venue (Sala Razzmatazz), event name (Tool), date and times, website URL",
+        "target_concept": "event/venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "ticket serial number area on the right side showing 'No 00721'",
+        "Anonymized_element": "blank strip, randomized unreadable digits, solid color patch",
+        "privacy_element": "unique ticket serial number",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10318808/final/2017_10318808_final.png"
+}

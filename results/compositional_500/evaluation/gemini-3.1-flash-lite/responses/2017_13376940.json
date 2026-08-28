@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image features individuals in a public outdoor setting at night. The primary privacy concern is the visible use of a wheelchair by one of the individuals, which constitutes sensitive information regarding physical health or disability. While the faces are partially obscured or silhouette-like, the depiction of the individual using a wheelchair is clearly visible. The overall risk is moderate as this represents a sensitive inference about physical condition, and the image context provides limited identifying details of the individuals themselves beyond their immediate physical appearance.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A person sitting in a wheelchair",
+        "Anonymized_element": "a person sitting on a bench or standing, no wheelchair",
+        "privacy_element": "wheelchair as a mobility aid",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13376940/final/2017_13376940_final.png"
+}

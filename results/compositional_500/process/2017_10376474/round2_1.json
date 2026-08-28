@@ -1,0 +1,73 @@
+{
+  "reasoning": "The crop shows a public religious procession with multiple clearly identifiable faces of adults and a child. The highest-severity clue is biometric data from several unobstructed faces. Religious vestments and an icon suggest a specific religious activity, enabling sensitive inference about participants. A readable storefront sign with the venue name provides potential location context. These reinforcing clues yield a high privacy risk. Confidence is high due to clear visibility and legibility of elements.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male participant in white robe holding a staff, face clearly visible",
+        "Anonymized_element": "face blurred or replaced with neutral oval, generic non-descript robe without symbols",
+        "privacy_element": "full face with eyes, nose, mouth; distinctive ceremonial robe",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "seated woman at outdoor caf\u00e9 table facing the street, face visible",
+        "Anonymized_element": "blurred face, neutral clothing colors",
+        "privacy_element": "full facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young child in stroller at lower left with face visible",
+        "Anonymized_element": "blurred face, generic stroller without unique details",
+        "privacy_element": "child\u2019s identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "gold-embroidered religious vestment worn by a procession participant",
+        "Anonymized_element": "plain white garment without symbols or religious cues",
+        "privacy_element": "religious attire implying participation in a religious ceremony",
+        "target_concept": "religious garment",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront window text reading 'HOTEL BELGA LUNCHROOM'",
+        "Anonymized_element": "blank or frosted window, unreadable or generic text decal",
+        "privacy_element": "business name and venue signage revealing specific place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10376474/r1_crops/2017_10376474_1.png"
+}

@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a public parade scene. Although the central performer\u2019s face is masked, multiple spectators\u2019 faces are clearly visible, which constitutes identifiable biometric data (highest severity). A readable storefront sign provides a potential geographic anchor, contributing location disclosure. The flamboyant costume foregrounds a specific public activity. Combined, these cues raise identifiable and contextual risks despite the absence of government or financial documents.",
+  "personal_info_privacy_score": {
+    "score": 0.54,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a spectator on the left wearing glasses, looking toward the parade",
+        "Anonymized_element": "face fully blurred or pixelated, replaced with generic skin patch without distinct features",
+        "privacy_element": "full frontal face, eyes and mouth visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of an older spectator near the center-left with light hair",
+        "Anonymized_element": "face blurred/pixelated, generic oval shape with uniform tone",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront sign in background reading 'Select' with fruit logo",
+        "Anonymized_element": "blank sign panel, solid color, no text or logo",
+        "privacy_element": "store name and logo that can reveal a specific place",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bright feathered costume and floral one-piece outfit worn by central performer",
+        "Anonymized_element": "plain, muted clothing without distinctive style or symbols",
+        "privacy_element": "distinctive costume indicating participation in a public parade/event",
+        "target_concept": "costume",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800795/r1_crops/2017_15800795_0.png"
+}

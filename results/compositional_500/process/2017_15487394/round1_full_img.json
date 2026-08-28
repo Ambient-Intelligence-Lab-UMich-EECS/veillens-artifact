@@ -1,0 +1,80 @@
+{
+  "reasoning": "The image shows a costumed performer in a street parade with a large crowd behind her. Multiple people\u2019s faces in the crowd are clear and directly identifiable, and the performer\u2019s face is partially visible. These constitute Level 1 biometric identifiers. There are no readable names, IDs, or financial/medical details. A festival lantern with legible characters hints at a cultural setting, adding minor location context. Given several identifiable faces as the dominant cue, overall risk is high. Confidence is high because the faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "performer\u2019s face partially visible near top-right, framed by white feathers",
+        "Anonymized_element": "blurred face, pixelated facial area, replace with neutral mask or turned-away head",
+        "privacy_element": "visible facial features enabling recognition (eyes, nose, mouth outline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in center background holding a camera, full face visible",
+        "Anonymized_element": "blurred face, pixelated facial area, generic shaded oval instead of facial details",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young man seated near bottom center, looking forward with unobstructed face",
+        "Anonymized_element": "pixelated facial region, blur, neutralized head without features",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man at bottom-left wearing a straw hat, side-facing but identifiable face",
+        "Anonymized_element": "face blur or pixelation, add sunglasses and stronger shadowing",
+        "privacy_element": "visible facial profile with recognizable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow festival lantern with printed characters hanging at top-left background",
+        "Anonymized_element": "plain lantern without text or symbols, generic color",
+        "privacy_element": "distinctive textual/visual marker suggesting event/cultural location",
+        "target_concept": "lantern with text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "several additional distant spectators with partially visible faces across background",
+        "Anonymized_element": "global background blur, bokeh effect to remove facial detail",
+        "privacy_element": "multiple recognizable faces contributing to reidentification risk",
+        "target_concept": "crowd faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15487394.jpg"
+}

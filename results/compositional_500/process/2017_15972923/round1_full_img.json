@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image is a vintage advertisement poster for a fireworks company. There are no identifiable people or biometric details. The only potentially sensitive elements are printed corporate contact details (business address and phone) which are not tied to an individual. These constitute low-risk location/document information without personal identifiers. Therefore the overall privacy risk is very low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bottom text block on the poster showing company address and phone number",
+        "Anonymized_element": "blank text area, placeholder lines without legible characters, remove numbers and addresses",
+        "privacy_element": "readable street address, city/region names, telephone numbers",
+        "target_concept": "printed address/phone text",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15972923.jpg"
+}

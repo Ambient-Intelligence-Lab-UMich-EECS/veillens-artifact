@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a close-up of a paper ticket or pass on a dark surface, with most of the content obscured. A small visible corner contains partial printed text, but no names, numbers, barcodes, faces, or other unique identifiers are clearly legible. The primary privacy signal is the presence of a generic document that might otherwise contain identifiers, but the visible portion does not expose them. Thus the highest severity is Level 4, resulting in a low overall risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lower-left corner of a paper ticket with partially visible printed text",
+        "Anonymized_element": "plain blank paper corner, muted pattern, no text or numbers",
+        "privacy_element": "partial document text that hints at a ticket and potential identifiers though not readable",
+        "target_concept": "ticket/document corner",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14207731/final/2017_14207731_final.png"
+}

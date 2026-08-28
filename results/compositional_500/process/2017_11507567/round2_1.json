@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a public street with a few people. One background person\u2019s side-profile face with sunglasses is visible enough for recognition, introducing a Level 1 biometric clue, though not front-facing. No names, documents, or IDs are legible. Other elements like a distinctive costume-style outfit and an urban street sign provide weaker Level 3 context about personal attributes/activities and general location. Given a single partial face and a couple of moderate contextual cues, the overall risk is moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "background woman\u2019s side-profile face wearing sunglasses, mid-right of frame",
+        "Anonymized_element": "blurred face, turned head away, generic oval without features",
+        "privacy_element": "visible facial structure, hair style, skin tone regions enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "foreground subject\u2019s distinctive costume-like dress with playing-card motifs",
+        "Anonymized_element": "plain patterned dress, solid colors, remove graphic motifs",
+        "privacy_element": "unique clothing style that may make the person more recognizable or linkable across photos",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant green street sign at intersection, text not legible",
+        "Anonymized_element": "blank sign, generic pole, remove color and text",
+        "privacy_element": "street sign indicating potential intersection/location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11507567/r1_crops/2017_11507567_1.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person\u2019s head fully covered by a metallic, wired headgear with an electronics board attached. No identifiable facial features, government IDs, or sensitive textual data are visible. Privacy-relevant cues are limited to a visible bare hand (minor physical attributes) and the specialized electronic headgear implying a hobby or activity. These are Level 3 contextual clues without strong linkage to identity, so overall risk is low. Confidence is high due to clear visibility and lack of high-severity elements.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare right hand holding the back of the masked head",
+        "Anonymized_element": "gloved hand, sleeve covering skin, hand cropped or blurred",
+        "privacy_element": "visible skin and hand shape indicating limited physical attributes",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wired electronic headgear with attached microcontroller board on the side of the head",
+        "Anonymized_element": "plain helmet or hood without electronics, remove identifiable components and wiring",
+        "privacy_element": "distinct electronics setup suggesting specific technical hobby or project",
+        "target_concept": "specialized equipment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14004861/r1_crops/2017_14004861_0.png"
+}

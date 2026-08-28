@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a busy street with two clearly visible faces in the foreground\u2014one of a seated person in a wheelchair and one of the person pushing it\u2014providing identifiable biometric data (Level 1). The wheelchair itself signals a potential mobility impairment, which enables sensitive inference about health/disability (Level 2). Many other people are present but largely facing away or distant, contributing low-risk background context (Level 4). The combination of two identifiable faces plus a disability inference yields a high but not extreme privacy risk. Clues are clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the person seated in a wheelchair near the foreground center-left",
+        "Anonymized_element": "blurred face, head turned away, low-detail generic skin tone, occluding shape over facial area",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth), frontal orientation",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of the standing person directly behind, pushing the wheelchair",
+        "Anonymized_element": "blurred face, head turned downward/away, low-detail facial region",
+        "privacy_element": "recognizable facial features, direct visibility",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "manual wheelchair with footrests occupied by a person in the foreground",
+        "Anonymized_element": "replace with generic seated posture on a plain chair, remove wheelchair frame spokes/handles",
+        "privacy_element": "mobility aid indicating possible disability or health condition",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "group of distant pedestrians in the background with backs turned",
+        "Anonymized_element": "increase background blur, fewer background figures",
+        "privacy_element": "presence of multiple bystanders, mostly unidentifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12430610.jpg"
+}

@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a professional soccer match with multiple people visible. Several faces are discernible at medium distance (e.g., the referee and some players), which constitutes biometric data, though not close-up. A jersey back with a clearly readable number (10) acts as a non-unique identifier that can reinforce recognition when paired with a visible face and team context. A large background crowd contains many tiny, unidentifiable faces that add minimal risk. Given the presence of Level 1 biometric cues but at moderate distance and partially turned, combined with a Level 2 jersey number, the overall privacy risk is moderate. Confidence is medium due to distance and limited facial detail.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "referee’s face at center of field, looking forward",
+        "Anonymized_element": "blurred/pixelated face, turned head away, generic skin-tone oval without features",
+        "privacy_element": "visible facial features including eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "player in red near left with back turned showing large white number 10 on jersey",
+        "Anonymized_element": "plain jersey without number or name, number replaced with generic shape or blank",
+        "privacy_element": "readable jersey number that can link to identity in team context",
+        "target_concept": "jersey number/name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "player near goal with side-profile face visible while jumping by the goalpost",
+        "Anonymized_element": "pixelated/blurred face region, head turned further away",
+        "privacy_element": "partially visible facial features allowing recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "stadium crowd in background with many tiny spectator heads",
+        "Anonymized_element": "defocused bokeh crowd, replaced with abstract color blocks, no distinct faces",
+        "privacy_element": "numerous small, distant faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14806724/final/2017_14806724_final.png"
+}

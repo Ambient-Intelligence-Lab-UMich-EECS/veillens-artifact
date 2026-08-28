@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image shows a colorful street parade. Most foreground people are masked, but at least one background participant’s face is partially visible, which constitutes biometric data (Level 1) though small and partly occluded. A vertical storefront sign with readable business text provides location context (Level 3). Visible participation with a guitar indicates a specific activity/behavior (Level 3). A broader crowd is present but distant and largely unidentifiable (Level 4). Combined, these yield a moderate privacy risk driven mainly by the small but present biometric cue, reinforced by location and activity context. Confidence is medium due to partial visibility and distance of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible face of a man wearing sunglasses on the left side of the parade",
+        "Anonymized_element": "blurred face, generic silhouette, remove facial details, sunglasses-only without facial features",
+        "privacy_element": "partial face with discernible features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "vertical storefront sign on right building reading letting-related text",
+        "Anonymized_element": "blank sign, abstract pattern, no text or branding",
+        "privacy_element": "readable business name text indicating location context",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "acoustic guitar carried by a parade participant on the left",
+        "Anonymized_element": "remove or replace with neutral prop, crop out instrument",
+        "privacy_element": "musical instrument implying participation in a public performance",
+        "target_concept": "musical instrument",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "group of distant parade participants in the background",
+        "Anonymized_element": "reduce detail, generic silhouettes, motion blur",
+        "privacy_element": "presence of multiple people though not individually identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12332187/final/2017_12332187_final.png"
+}

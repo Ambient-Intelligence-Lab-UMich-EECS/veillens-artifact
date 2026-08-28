@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a large cargo ship on open water with a distant coastline. No people, faces, or readable identifiers are visible. The main privacy-relevant element is the distinctive vessel itself (a property/asset) which could be recognizable, but hull text or registration is not legible. The background coastline offers only generic context without identifiable landmarks. Thus the highest severity is low (Level 4), with weak compositional risk and a low overall score.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side profile of a large cargo ship with red cargo hold and dark hull",
+        "Anonymized_element": "generic cargo ship silhouette, muted/solid colors, blurred/painted-over hull markings",
+        "privacy_element": "distinctive vessel appearance, potential hull markings (unreadable)",
+        "target_concept": "ship/vessel",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant coastline with hills in the background",
+        "Anonymized_element": "generic seascape background, softened/blurred shoreline details",
+        "privacy_element": "general coastal scenery that could loosely hint at region",
+        "target_concept": "background landscape",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15303118/r1_crops/2017_15303118_1.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows an architectural landmark with distinctive sandstone fort walls and an ornate pavilion. No people, text, documents, or identifiers are present. The only privacy-relevant element is potential location disclosure via a recognizable landmark. This is a Level 3 risk. With no compounding Level 1\u20132 clues, the overall risk remains low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "massive sandstone fort wall with cylindrical bastions on the right/upper side of the image",
+        "Anonymized_element": "generic stone wall without distinctive bastions, simplified texture, muted non-descript architecture",
+        "privacy_element": "recognizable fort architecture and bastions that can reveal a specific location",
+        "target_concept": "landmark structure",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "ornate weathered stone pavilion with multiple arches in the left/center foreground",
+        "Anonymized_element": "plain gazebo-like structure with generic columns and no regional motifs",
+        "privacy_element": "distinctive pavilion style that can be tied to a specific historic site",
+        "target_concept": "landmark structure",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15158916/r1_crops/2017_15158916_0.png"
+}

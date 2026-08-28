@@ -1,0 +1,45 @@
+{
+  "reasoning": "This regional crop shows no identifiable faces or government/financial/medical information. Foreground people are masked/occluded, and a background person is distant and turned away. Some generic artifacts are visible (a wall poster with unreadable text/graphics and a computer monitor with an illegible UI). These are low-risk context clues without legible identifiers. Overall risk is low with no Level 1\u20132 elements present.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "poster on wooden wall with decorative graphics and small, blurry text",
+        "Anonymized_element": "abstract art print, blank poster, blurred shapes no text",
+        "privacy_element": "printed text and graphics on poster (unreadable)",
+        "target_concept": "poster",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "desktop monitor on left showing a UI window with tiny, illegible text/icons",
+        "Anonymized_element": "blank screen, abstract screensaver, solid color rectangle",
+        "privacy_element": "screen content with UI/text (unreadable)",
+        "target_concept": "computer monitor screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant person in background facing away, not identifiable",
+        "Anonymized_element": "empty background area, plant or furniture, blurred silhouette",
+        "privacy_element": "human figure in background (no face visible)",
+        "target_concept": "person (distant)",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13306918/r1_crops/2017_13306918_0.png"
+}

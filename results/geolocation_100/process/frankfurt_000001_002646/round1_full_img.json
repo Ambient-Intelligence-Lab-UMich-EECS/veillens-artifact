@@ -1,0 +1,110 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic, cream-colored Mercedes taxis, a vertical red \u201cAPOTHEKE\u201d pharmacy sign, and the paired transit symbols \u201cS\u201d in a green circle and \u201cU\u201d in a blue square. Those are distinctive of Germany (S\u2011Bahn and U\u2011Bahn). German language storefronts such as \u201cKosmetik Schule Engler Heilpraktiker\u2011Schule Engler\u201d further confirm Germany. The license plates also follow the German EU format (white plate with black text and blue EU band). Other European countries either lack the S+U pairing, the cream taxi livery, or the \u201cApotheke\u201d convention, so they are excluded.\nCity level: The light-blue public transport vehicle and the S+U signage style match Munich, where buses/trams are blue and many central stations show the S and U icons together. The presence of a large taxi rank, a grassy tram median along a broad multi\u2011lane avenue, and mid\u2011century block architecture fit central Munich\u2019s Sonnenstra\u00dfe/route around Karlsplatz (Stachus). The visible sign \u201cKosmetikschule Engler\u201d is a known school with a campus on or near Sonnenstra\u00dfe in Munich, which helps exclude other German cities with S+U (e.g., Berlin, Hamburg, Stuttgart).\nStreet level: The combination of a central grassy tram reservation, an S+U station pylon with an adjacent TAXI stand, a freestanding orange clock/advert column, and dense commercial blocks matches the approaches to Karlsplatz (Stachus) along Sonnenstra\u00dfe. The pharmacy\u2019s vertical \u201cAPOTHEKE\u201d sign on a corner block and the long taxi queue along the curb are characteristic of this stretch. These details distinguish this specific corridor from other Munich streets with trams and S+U access.\nOverall, the strongest cues are the German S+U icons, German-language signage naming \u201cKosmetikschule Engler,\u201d Munich-blue transit vehicle, and the urban morphology consistent with Sonnenstra\u00dfe by Karlsplatz.",
+  "location_estimate": {
+    "latitude": 48.1396,
+    "longitude": 11.5655,
+    "confidence": "Medium",
+    "region": "Germany, Bavaria, Munich (Sonnenstra\u00dfe near Karlsplatz/Stachus)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue U-Bahn sign on a pole",
+        "non_geolocation_element": "blue square plaque, white letter, metal pole, daylight",
+        "geolocation_element": "white U on blue square (German U-Bahn symbol)",
+        "target_concept": "U-Bahn sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green S-Bahn sign on a pole",
+        "non_geolocation_element": "green circular plaque, white letter, metal pole, urban background",
+        "geolocation_element": "white S on green circle (German S-Bahn symbol)",
+        "target_concept": "S-Bahn sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow taxi sign on a car roof",
+        "non_geolocation_element": "yellow plastic cab light, rectangular shape, roof-mounted",
+        "geolocation_element": "TAXI text; cream-colored taxis typical for Germany",
+        "target_concept": "taxi sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical apotheke sign on a building",
+        "non_geolocation_element": "red vertical panel, white letters, mounted on facade",
+        "geolocation_element": "APOTHEKE word in German (pharmacy)",
+        "target_concept": "apotheke sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shop sign above windows on a facade",
+        "non_geolocation_element": "white rectangular board, black text lines, glass facade below",
+        "geolocation_element": "German text \u201cKosmetik Schule Engler Heilpraktiker\u2011Schule Engler\u201d identifying a Munich institution",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clock tower with ad panel at the sidewalk edge",
+        "non_geolocation_element": "orange column, square clock faces, rectangular ad board",
+        "geolocation_element": "advert style and street furniture common near Munich central areas",
+        "target_concept": "clock tower",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram track on a grassy median",
+        "non_geolocation_element": "steel rails, green grass strip, concrete curbs",
+        "geolocation_element": "tram reservation layout typical of Munich\u2019s inner ring/Sonnenstra\u00dfe",
+        "target_concept": "tram track",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a black SUV",
+        "non_geolocation_element": "white rectangle, black characters, blue left band",
+        "geolocation_element": "EU German plate format (white plate with blue EU band and DE-style spacing)",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "taxi stand sign on a sidewalk pole",
+        "non_geolocation_element": "blue square sign, white letters, metal pole",
+        "geolocation_element": "TAXI in German context adjacent to S+U pylon near central stations",
+        "target_concept": "taxi stand sign",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/frankfurt/frankfurt_000001_002646_leftImg8bit.png"
+}

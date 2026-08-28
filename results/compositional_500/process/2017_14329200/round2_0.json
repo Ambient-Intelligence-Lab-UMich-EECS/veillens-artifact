@@ -1,0 +1,82 @@
+{
+  "reasoning": "The crop shows a person speaking at a podium facing a large crowd. Multiple attendees\u2019 faces are clearly visible and front-facing, providing strong biometric identifiers (Level 1). A partial profile of the speaker\u2019s face is also visible. Several attendees wear campaign-style buttons and hold a campaign sign, indicating a political event, which enables sensitive political inference (Level 2). No readable names or government/financial/medical details are visible. The combination of multiple identifiable faces with political-context artifacts yields a high privacy risk. Confidence is high given clarity and proximity of faces and visible campaign items.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of attendee wearing a red sweater holding a compact camera on the right side",
+        "Anonymized_element": "blurred face, pixelated features, neutral oval mask",
+        "privacy_element": "clear facial features (eyes, nose, mouth), direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of attendee with short gray hair next to the person in red",
+        "Anonymized_element": "blurred face, pixelated features, neutral oval mask",
+        "privacy_element": "clear facial features, identifiable expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of attendee with long dark hair in the mid-right crowd",
+        "Anonymized_element": "blurred face, pixelated features, neutral oval mask",
+        "privacy_element": "distinct facial structure, visible eyes and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partial profile of the speaker\u2019s face at the podium (left-center)",
+        "Anonymized_element": "turned-away head, blurred profile, neutral mask",
+        "privacy_element": "recognizable facial profile (nose, mouth, ear)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue campaign-style sign with large white lettering held by a person in the back-left crowd",
+        "Anonymized_element": "blank blue sign, abstract shapes, no text or logo",
+        "privacy_element": "political campaign-style sign with recognizable lettering layout",
+        "target_concept": "campaign sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "round campaign button pinned on an attendee\u2019s clothing near mid-right",
+        "Anonymized_element": "plain solid-color button, no emblem or text",
+        "privacy_element": "campaign emblem/button indicating political support",
+        "target_concept": "campaign button",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14329200/r1_crops/2017_14329200_0.png"
+}

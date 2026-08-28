@@ -1,0 +1,38 @@
+{
+  "reasoning": "The crop shows a close-up of an older Sony Ericsson phone with a mostly blanked screen. No faces, names, phone numbers, or other direct identifiers are visible. Minor privacy cues include visible device branding and UI text (\u201cSvara\u201d, \u201cMer\u201d) indicating a language preference and phone-use context. These are low-severity, contextual clues only, without strong linkage to a specific person.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Sony Ericsson branding on the phone\u2019s top bezel",
+        "Anonymized_element": "remove logo text, plain bezel without brand",
+        "privacy_element": "device make/model branding that can link to owned device type",
+        "target_concept": "device branding",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "On-screen softkey labels reading \u201cSvara\u201d and \u201cMer\u201d",
+        "Anonymized_element": "blank buttons, generic icons without text",
+        "privacy_element": "UI language revealing regional/language preference and phone-use context",
+        "target_concept": "on-screen UI text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11738906/r1_crops/2017_11738906_1.png"
+}

@@ -1,0 +1,65 @@
+{
+  "reasoning": "Country level: The most decisive clue is the white rectangular traffic sign that reads \u201cUmwelt ZONE\u201d with a red ring and a small plate \u201cfrei\u201d underneath. This is the German low-emission zone sign used specifically in Germany. Additional German-language text appears on a blue information sign at the left and on an orange directory totem at the right, reinforcing Germany. Road markings (zebra crosswalk), curb style, and no-stopping sign (blue circle with red X) are broadly European and consistent with Germany. City level: No unique skyline or landmark is visible. The orange wayfinding totem and landscaped frontage suggest a hospital or clinic campus entrance, but the text is too small to identify a named institution or city district. Multiple German cities have Umweltzonen and similar hospital signage, so I cannot reliably distinguish between cities. Street level: The scene shows a crosswalk at a corner with paired signs on one pole (Umweltzone + \u201cfrei\u201d) directly adjacent to a no-stopping sign, a small pedestrian signal head, and an orange directory totem set back by a hedge. Benches made of dark slats on stone bases line a low wall beside a brick institutional building. This combination suggests a specific entrance intersection to a medical complex, but it is insufficient to pinpoint the exact street without legible place names.",
+  "location_estimate": {
+    "latitude": 51.0,
+    "longitude": 9.0,
+    "confidence": "Medium",
+    "region": "Germany"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "traffic sign with red-ring on a pole",
+        "non_geolocation_element": "white rectangle, red circle, gray pole, midday lighting",
+        "geolocation_element": "German \u201cUmwelt ZONE\u201d text, low-emission zone symbol unique to Germany, subsidiary plate \u201cfrei\u201d in German",
+        "target_concept": "traffic sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "information sign in blue on a pole",
+        "non_geolocation_element": "blue rectangle, white text blocks, metal pole",
+        "geolocation_element": "German-language informational text layout typical of municipal signs",
+        "target_concept": "information sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "totem sign in orange at the sidewalk edge",
+        "non_geolocation_element": "tall rectangular panel, orange and white colors, vertical layout",
+        "geolocation_element": "German text lines on directory/wayfinding totem suggesting a clinic or hospital entrance",
+        "target_concept": "totem sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "road marking with white zebra stripes",
+        "non_geolocation_element": "thick white parallel stripes, worn paint, asphalt surface",
+        "geolocation_element": "European-style pedestrian crossing pattern (non-country specific)",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "prohibition sign with blue face and red X on a pole",
+        "non_geolocation_element": "round sign, blue background, red border and cross, metal pole",
+        "geolocation_element": "European no-stopping symbol common in Germany and neighboring countries",
+        "target_concept": "prohibition sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/tubingen/tubingen_000112_000019_leftImg8bit.png"
+}

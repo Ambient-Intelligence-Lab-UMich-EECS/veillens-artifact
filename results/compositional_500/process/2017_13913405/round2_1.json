@@ -1,0 +1,85 @@
+{
+  "reasoning": "This crop shows a public parade scene with multiple clearly visible faces among spectators, which are strong biometric identifiers. Several background adults and a child are directly recognizable, providing personal attributes. Additional contextual cues include a readable Bank of America storefront sign and a handicap parking sign that hint at location. U.S. flags indicate participation in a public event. The presence of multiple Level 1 facial cues, reinforced by Level 3 location/activity context, yields a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.59,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male in white striped T\u2011shirt seated near curb at right-middle, face clearly visible",
+        "Anonymized_element": "blurred face, generic skin-tone oval without features",
+        "privacy_element": "full face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young child seated beside the man near curb, looking toward camera with unobstructed face",
+        "Anonymized_element": "blurred or pixelated face, generic oval placeholder",
+        "privacy_element": "child\u2019s identifiable face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "row of seated spectators on folding chairs at right side with multiple discernible faces",
+        "Anonymized_element": "apply uniform face blurs or replace with low-detail ovals",
+        "privacy_element": "multiple identifiable faces in a crowd",
+        "target_concept": "faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red Bank of America storefront sign on building at left background",
+        "Anonymized_element": "plain red rectangle, no text or logo",
+        "privacy_element": "bank brand name and logo suggesting specific venue/location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue handicap parking sign on pole at far right background",
+        "Anonymized_element": "generic blank parking sign without symbol or text",
+        "privacy_element": "distinctive accessible parking symbol indicating specific public facility location context",
+        "target_concept": "parking sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small U.S. flags held by spectators on the right",
+        "Anonymized_element": "plain colored pennants or blank sticks",
+        "privacy_element": "participation in a public parade/event",
+        "target_concept": "handheld flags",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13913405/r1_crops/2017_13913405_1.png"
+}

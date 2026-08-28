@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a crowded street parade with multiple unobscured faces and readable street signage. Identifiable faces constitute Level 1 biometric data. The street sign clearly reveals the exact intersection, adding precise location information (Level 3). A readable organization banner on the float provides contextual/behavioral and documentary cues. Together, these clues create a high privacy risk due to direct identifiability combined with specific location context. The final score reflects strong, central, and legible evidence. Confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a person in a blue sleeveless shirt near the right foreground",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic silhouette",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of a person standing on the parade float at center",
+        "Anonymized_element": "blurred face, sunglasses with occlusion, head turned away",
+        "privacy_element": "full face with distinguishable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "street sign showing 'Christopher St' and 'Bleecker St' at the intersection",
+        "Anonymized_element": "blank street sign, text removed, generic pole",
+        "privacy_element": "readable street names providing precise location",
+        "target_concept": "street sign with location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "banner on the float reading 'Callen-Lorde Community Health Center'",
+        "Anonymized_element": "plain banner with no text or logo",
+        "privacy_element": "readable organization name on event banner",
+        "target_concept": "event banner",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15146106/final/2017_15146106_final.png"
+}

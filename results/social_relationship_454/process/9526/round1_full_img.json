@@ -1,0 +1,32 @@
+{
+  "img_id": "9526",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are standing near each other in a living room, casually dressed and holding game controllers, focused on the same Wii game with relaxed body language and no physical intimacy. This looks like a casual social hangout. => friends\n\n[P1-P3]: Both face the same direction toward the screen in a home setting, casually dressed and engaged in the same game without any intimate contact or transactional cues. => friends\n\n[P1-P4]: Side-by-side participation in a home video-game session, casual attire, comfortable proximity, and shared focus indicate a social gathering rather than work or commerce. => friends\n\n[P2-P3]: They are part of the same at-home gaming activity, casually dressed, standing close and watching the game, with no signs of a professional or commercial exchange or family-specific cues. => friends\n\n[P2-P4]: Both are engaged in the same Wii game in a relaxed home environment, standing comfortably near each other without affectionate behavior or work-related indicators. => friends\n\n[P3-P4]: They stand closest on the right, watching/playing together in casual clothes in a living room; their posture shows comfortable camaraderie but no romantic or transactional interaction. => friends",
+  "timestamp": 1776888851.1473813
+}

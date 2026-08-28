@@ -1,0 +1,59 @@
+{
+  "reasoning": "This regional crop shows several people at a public event with faces obscured, so no identifiable biometrics are visible. The main privacy signals are moderate: distinctive clothing and colorful bead necklaces indicate participation in a specific event (activity/behavior) and reveal some personal attributes (body type, gender presentation). A yellow school bus and street-side setup give weak, non-specific location context. Presence of multiple unidentifiable individuals adds low-level contextual risk. With no legible names, documents, or IDs, the highest severity is Level 3, yielding a moderate but limited privacy risk. Confidence is high due to clear visibility of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "cluster of colorful bead necklaces worn by person in red top at center-left torso",
+        "Anonymized_element": "remove beads, replace with plain necklace or bare neckline, neutral colors",
+        "privacy_element": "distinctive event beads indicating participation in a specific celebration",
+        "target_concept": "event beads",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "yellow school bus partially visible in background right",
+        "Anonymized_element": "generic blurred vehicle silhouette, neutral color bus without identifiable form",
+        "privacy_element": "recognizable school bus suggesting public street or school-adjacent parade route",
+        "target_concept": "school bus",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "group of several people standing on sidewalk with faces obscured",
+        "Anonymized_element": "reduce number of bystanders, further blur silhouettes",
+        "privacy_element": "presence of multiple individuals in a public crowd",
+        "target_concept": "crowd of people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "person in foreground wearing black-and-white athletic outfit striking a pose",
+        "Anonymized_element": "plain, neutral-colored clothing, relaxed neutral stance",
+        "privacy_element": "distinctive clothing style and body build revealing appearance traits",
+        "target_concept": "distinctive clothing on person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15294296/r1_crops/2017_15294296_2.png"
+}

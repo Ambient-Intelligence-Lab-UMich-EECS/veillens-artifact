@@ -1,0 +1,21 @@
+{
+  "img_id": "1930",
+  "predictions": {
+    "3 4": 2,
+    "3 5": 2,
+    "3 6": 6,
+    "4 5": 2,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: P3 and P4 are walking together in close proximity, appearing to be a child and an adult moving as a unit in a public setting. This shared movement and proximity suggest they are part of the same family. => family-members\n\n[P3-P5]: P3 and P5 are both moving together in the same direction, with P3 clearly following or walking alongside P5. Their synchronized activity and proximity indicate a familial bond. => family-members\n\n[P3-P6]: P6 is walking independently in the background, showing no interaction or physical proximity to P3. They appear to be unrelated individuals moving through the same space. => no-relationship\n\n[P4-P5]: P4 and P5 are walking in tight formation, sharing the same space and activity. Given their age difference and proximity, they are likely family members. => family-members\n\n[P4-P6]: P4 and P6 are separated by distance and moving independently through the scene without any acknowledgment. There is no evidence of a social connection between them. => no-relationship\n\n[P5-P6]: P5 and P6 are walking in different parts of the frame without any visible interaction. They are likely just bystanders passing by each other. => no-relationship",
+  "timestamp": 1779945380.691354
+}

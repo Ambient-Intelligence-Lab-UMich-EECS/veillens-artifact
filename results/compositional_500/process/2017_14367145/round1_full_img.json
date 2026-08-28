@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image shows a scanned handwritten letter containing clearly legible personal names, a city/state address line, a dated location header, and references to monetary drafts. The strongest clues are Level 2: names and address (non-unique identifiers) and explicit financial information. These are reinforced by Level 3 location cues (Ann Arbor, Hartford, Conn) and a visible postmark. No biometric data or government IDs are present. Given multiple readable Level 2 clues that mutually reinforce identity and context, the overall privacy risk is moderate-to-high. Confidence is medium due to partial handwriting ambiguity but key elements are readable.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten sender signature at right side near closing line",
+        "Anonymized_element": "blank signature line, scribble without letters, generic flourish",
+        "privacy_element": "readable personal name in signature",
+        "target_concept": "signature/name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten recipient line at lower left: name with city and state",
+        "Anonymized_element": "generic placeholder text, initials only, city/state removed",
+        "privacy_element": "recipient full name and location (city, state)",
+        "target_concept": "addressed name line",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "header line at upper right reading a city and date (e.g., Ann Arbor May 11, 1850)",
+        "Anonymized_element": "generic date without city, or blank header line",
+        "privacy_element": "specific city and exact date of correspondence",
+        "target_concept": "dated location header",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "body text line referencing enclosed drafts with dollar amounts",
+        "Anonymized_element": "replace amounts with placeholders or neutral phrasing without monetary values",
+        "privacy_element": "financial transaction details and dollar amounts",
+        "target_concept": "financial content in letter body",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14367145.jpg"
+}

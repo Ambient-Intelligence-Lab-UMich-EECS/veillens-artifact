@@ -1,0 +1,88 @@
+{
+  "reasoning": "Country level: The image shows multiple German-language cues: a blue street sign reading \u201cKandelstra\u00dfe\u201d with the German \u00df character, a yellow shop branding \u201cLOTTO\u201d common in Germany, and a yellow vehicle with large \u201cADAC\u201d lettering (the German automobile club). Road furniture (red\u2013white striped work-zone bollard, blue one\u2011way sign style, and zebra-stop line with bicycle stencil) and European license plate formats also align with Germany. These collectively point strongly to Germany while excluding neighboring countries where \u00df and ADAC would not appear. \nCity level: The wall-mounted street sign on the right appears to read \u201cGerauer Stra\u00dfe,\u201d a street name documented in Frankfurt am Main (notably in the Niederrad district). Pairing this with \u201cKandelstra\u00dfe\u201d suggests a specific intersection pattern consistent with Frankfurt\u2019s blue/white street-name signage and dense prewar/1950s residential blocks. Other large German cities may have a Kandelstra\u00dfe, but the co-occurrence with \u201cGerauer Stra\u00dfe\u201d is distinctive to Frankfurt, making Frankfurt the most plausible city. \nStreet level: The unique combination of the two visible orthogonal street-name signs\u2014\u201cKandelstra\u00dfe\u201d (on a corner pole at the left) intersecting with \u201cGerauer Stra\u00dfe\u201d (wall-mounted on the right building)\u2014plus the nearby Lotto storefront and the presence of an ADAC service car turning at the junction identify a specific intersection. The narrow carriageway with a mid-lane work-zone bollard and the bicycle symbol at the stop line further narrow to this particular corner configuration rather than another spot along either street.",
+  "location_estimate": {
+    "latitude": 50.085,
+    "longitude": 8.628,
+    "confidence": "Medium",
+    "region": "Germany, Hesse, Frankfurt am Main (likely Niederrad), Kandelstra\u00dfe at Gerauer Stra\u00dfe"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "street sign on a pole with blue plate at the corner",
+        "non_geolocation_element": "blue rectangle, white text, metal pole, corner mounting, daylight",
+        "geolocation_element": "readable text \u201cKandelstra\u00dfe\u201d, use of \u00df character, German street-sign typography",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on a wall with blue plate on the right building",
+        "non_geolocation_element": "blue rectangle, white text, wall-mounted, small size",
+        "geolocation_element": "readable text \u201cGerauer Stra\u00dfe\u201d, German language and \u00df, specific street name",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shop sign on a window with yellow background on the right",
+        "non_geolocation_element": "yellow background, red text, glass window, rectangular stickers",
+        "geolocation_element": "brand text \u201cLOTTO\u201d typical of German lottery storefronts",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "car with yellow body at the right side of the junction",
+        "non_geolocation_element": "yellow paint, station wagon shape, roof light, black lettering, daylight reflections",
+        "geolocation_element": "large lettering \u201cADAC\u201d identifying German automobile club",
+        "target_concept": "car",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "traffic sign with blue square and white right arrow on a pole",
+        "non_geolocation_element": "blue square, white arrow, reflective metal, mounted above eye level",
+        "geolocation_element": "German-style Einbahnstra\u00dfe/turn indication sign format",
+        "target_concept": "traffic sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "work-zone bollard with red and white diagonal stripes behind a parked car",
+        "non_geolocation_element": "rectangular panel, red-white stripes, mounted on a black base, reflective",
+        "geolocation_element": "German/central-European style temporary traffic device",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bicycle road marking in white paint near the stop line",
+        "non_geolocation_element": "white paint, bicycle icon, on asphalt, near dashed stop line",
+        "geolocation_element": "European/German road marking style for bike route",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/frankfurt/frankfurt_000000_000294_leftImg8bit.png"
+}

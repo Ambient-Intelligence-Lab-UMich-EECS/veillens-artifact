@@ -1,0 +1,62 @@
+{
+  "reasoning": "The crop shows a public protest with several unobstructed, identifiable faces and a readable protest sign with explicit political messaging. Identifiable faces constitute Level 1 biometric data. The political sign and the association of these individuals with a protest enable sensitive inferences about political views and activities, compounding risk. No government IDs or financial/medical details are visible. Given multiple clear faces and explicit political context, the privacy risk is high with strong visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of a man wearing sunglasses and a red-white cap near center-left holding a sign",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with neutral oval mask",
+        "privacy_element": "full face with eyes/nose/mouth visible, identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult man\u2019s face under a blue hood holding a multicolored umbrella at center",
+        "Anonymized_element": "blurred/pixelated face, occluded with generic mask",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child\u2019s face visible under the same multicolored umbrella near center",
+        "Anonymized_element": "blurred or pixelated face, neutral oval mask",
+        "privacy_element": "recognizable child facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "protest sign held at center-left reading political message",
+        "Anonymized_element": "blank poster with abstract shapes, nonspecific text or solid colors",
+        "privacy_element": "explicit political slogan indicating viewpoint/affiliation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10492159/r1_crops/2017_10492159_0.png"
+}

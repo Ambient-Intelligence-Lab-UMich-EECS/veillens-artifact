@@ -1,0 +1,25 @@
+{
+  "img_id": "21683",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: This is a baseball play at home plate; P2 is the catcher in full gear while P1 stands right behind as the umpire. Their close proximity and roles indicate an officiating\u2013player interaction. => professional\n\n[P1-P3]: P3 is the batter at the plate, and P1 is the umpire positioned behind the catcher overseeing the pitch. Their closeness is purely for the game. => professional\n\n[P2-P3]: P2 crouches as the catcher facing P3 the batter, both in sport-specific uniforms and gear. They are competitors interacting within the game. => professional",
+  "timestamp": 1776888497.2428746
+}

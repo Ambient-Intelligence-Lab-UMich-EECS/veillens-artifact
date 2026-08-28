@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows a waterfall with several people present, but all human figures are distant and heavily motion\u2011blurred, making faces or biometric identifiers not discernible. There are no readable texts, IDs, or location markers. The main privacy signal is the depiction of people engaging in a recreational activity (swimming) which reveals behavior but not identities. Given the absence of Level 1\u20132 clues and only moderate contextual cues of activity with unidentifiable individuals, the overall risk is low to moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "motion-blurred person under the waterfall at bottom center wearing dark swimwear",
+        "Anonymized_element": "replace with water splash or empty water surface, abstract silhouette without human form",
+        "privacy_element": "presence of a person, swimwear, recreational swimming behavior",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "group of two to three motion-blurred people at left edge near rock face",
+        "Anonymized_element": "remove group and replace with rock texture or mist, indistinct silhouettes without human detail",
+        "privacy_element": "presence of multiple people, swimwear, leisure activity at natural site",
+        "target_concept": "people",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14375717.jpg"
+}

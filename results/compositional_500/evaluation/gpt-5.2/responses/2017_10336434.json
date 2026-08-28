@@ -1,0 +1,34 @@
+{
+  "reasoning": "The person is entirely masked with no visible facial features or other identifiers. There are no readable texts, documents, IDs, or financial/medical items. The only visible elements are generic home interiors (a wooden wardrobe and hardwood floor), which provide minimal contextual or property cues but do not reveal identity or sensitive information. With no Level 1–3 clues and only minor Level 4 background/property hints, the privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large wooden wardrobe with distinctive panels",
+        "Anonymized_element": "generic plain closet, simplified texture, low-detail surface",
+        "privacy_element": "unique home furniture style and wood grain that may be recognizable to acquaintances",
+        "target_concept": "wardrobe",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "hardwood floor with distinct patterning",
+        "Anonymized_element": "uniform neutral flooring, blurred pattern, generic surface",
+        "privacy_element": "unique floor pattern that hints at a specific home interior",
+        "target_concept": "flooring",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10336434/final/2017_10336434_final.png"
+}

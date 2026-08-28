@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows two people whose faces and identifying details are obscured; no readable text, name badges, or government/financial documents are visible. The only potentially sensitive item is a certificate or paper being held, but its contents are not legible. With no biometric visibility and no readable identifiers or location clues, the privacy risk is low. Overall, minimal compositional risk is present.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "paper certificate held by a person; text is not legible",
+        "Anonymized_element": "plain blank paper, abstract pattern, blurred generic design",
+        "privacy_element": "potential names, signatures, dates or titles if readable",
+        "target_concept": "certificate/document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14757152/final/2017_14757152_final.png"
+}

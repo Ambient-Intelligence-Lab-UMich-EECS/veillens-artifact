@@ -1,0 +1,15 @@
+{
+  "img_id": "9728",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "raw_response": "[P1-P2]: P1 is standing and leaning over P2, appearing to assist or instruct her at the computer in a shared workspace. This dynamic indicates a professional interaction, such as a colleague or instructor providing help. => professional\n[P1-P3]: P1 is focused on assisting P2 and has no interaction with P3, who is working independently in the foreground. They are merely present in the same shared environment. => no-relationship\n[P2-P3]: P2 and P3 are sitting near each other but are focused on their separate tasks without any interaction. They appear to be independent users of a shared workspace like a library or lab. => no-relationship",
+  "timestamp": 1779942534.5440943
+}

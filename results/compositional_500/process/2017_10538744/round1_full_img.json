@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image prominently shows a UK passport booklet on a table next to currency notes. A passport is a government identifier and inherently sensitive even if the personal data page is not visible. No names, numbers, or faces of private individuals are shown, and the banknotes do not contain personal financial information. The highest severity present is Level 1 due to the passport, leading to a high privacy risk score, though not maximal because unique personal details are not readable.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "maroon United Kingdom passport cover with gold coat of arms and the word 'PASSPORT' visible",
+        "Anonymized_element": "plain maroon notebook, generic travel booklet without crest or 'passport' text, neutral cover",
+        "privacy_element": "passport booklet, country name, official crest, e-passport symbol",
+        "target_concept": "passport",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10538744.jpg"
+}

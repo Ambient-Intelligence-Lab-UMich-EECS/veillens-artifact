@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a person seated in a wheelchair in the foreground, with faces mostly obscured and a background sign that appears to include location text. The wheelchair strongly implies a disability or health-related inference (Level 2). No readable names, IDs, or clear faces are visible. The sign may reveal location context (Level 3), and there are distant bystanders with obscured faces (Level 4). With one prominent Level 2 clue and supporting Level 3–4 context, the overall risk is moderate. Confidence is medium due to partial legibility of the sign and obscured faces.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground wheelchair with a seated person silhouette",
+        "Anonymized_element": "generic seated silhouette on a plain bench, no wheels or mobility device details",
+        "privacy_element": "mobility aid implying disability or health condition, activity of using wheelchair",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "background directional signboard with partial location text",
+        "Anonymized_element": "blank signboard, no text or logos, neutral surface",
+        "privacy_element": "place names or directional text revealing location",
+        "target_concept": "sign with location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "group of distant bystanders with partially obscured or blurred faces",
+        "Anonymized_element": "fully blurred heads, back-of-head views, simplified silhouettes",
+        "privacy_element": "presence of people with partial facial features",
+        "target_concept": "distant bystanders",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11845054/final/2017_11845054_final.png"
+}

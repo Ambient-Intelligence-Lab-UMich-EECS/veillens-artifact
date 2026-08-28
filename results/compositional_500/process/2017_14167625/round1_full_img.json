@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows a medical treatment scene with a patient on a gurney and several clinicians. The highest-severity clues are identifiable faces: the patient\u2019s face (partially covered by an oxygen mask but still recognizable) and one clinician\u2019s unobscured face. These Level 1 biometric cues are compounded by clear Level 2 medical information, including an IV drip bag/line and the patient\u2019s exposed chest during an active procedure. The combination of identifiable individuals with explicit medical context elevates the privacy risk to high. The evidence is central and clear, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "patient\u2019s face partially visible under a transparent oxygen mask at center of gurney",
+        "Anonymized_element": "blurred face, generic skin-toned patch, blanket covering head area, remove facial features",
+        "privacy_element": "recognizable facial structure, eyes/forehead visible, association with medical treatment",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clinician on left with bald head wearing goggles and gown, face unobscured by mask",
+        "Anonymized_element": "blurred face, generic head silhouette, mask covering lower face",
+        "privacy_element": "clear facial features visible (eyes, nose, mouth), direct identifiability",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clear IV drip bag hanging above patient with tubing leading downward",
+        "Anonymized_element": "blank translucent bag without tubing, replace with generic wall fixture",
+        "privacy_element": "intravenous therapy device indicating medical treatment",
+        "target_concept": "IV bag and tubing",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "patient\u2019s bare chest exposed on gurney during procedure",
+        "Anonymized_element": "blanket fully covering torso, generic clothed torso",
+        "privacy_element": "exposed torso in clinical care context indicating active medical condition/treatment",
+        "target_concept": "exposed torso",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14167625.jpg"
+}

@@ -1,0 +1,78 @@
+{
+  "reasoning": "The crop shows a parade with many spectators whose faces are clearly visible, including adults and children. These constitute Level 1 biometric identifiers and are the dominant risk. Additional contextual cues like a readable \u201cBAKERY\u201d storefront sign and a distinctive character balloon provide location hints that can reinforce re-identification when combined with faces. Given multiple unobstructed faces and supportive location context, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated man at left in blue-gray striped t\u2011shirt with fully visible face",
+        "Anonymized_element": "face blurred or replaced, head turned away, generic clothing colors",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child on adult\u2019s shoulders near center-right, face unobstructed",
+        "Anonymized_element": "face blurred, head turned, mask added",
+        "privacy_element": "clear facial features of a child",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "seated woman near front row wearing red headband with bow, face visible",
+        "Anonymized_element": "face blurred, head turned away, neutral headband",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "standing woman in patterned dress at right-center with visible face and sunglasses",
+        "Anonymized_element": "face blurred, sunglasses only visible, head turned",
+        "privacy_element": "recognizable facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront window sign reading 'BAKERY' in background",
+        "Anonymized_element": "blank or abstract storefront sign, generic textless window",
+        "privacy_element": "readable venue-type sign hinting at location",
+        "target_concept": "house/shop sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "character-shaped helium balloon above crowd",
+        "Anonymized_element": "plain metallic balloon without character shape",
+        "privacy_element": "distinctive themed balloon indicating specific venue",
+        "target_concept": "balloon",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15155943/r1_crops/2017_15155943_1.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a handwritten checklist/lesson-plan style paper on a desk with legible activity names (e.g., MinecraftEDU, 3D Printing, Circuits & LEDs), checkmarks, and a circled numeric score \u201c26.\u201d No faces, names, government IDs, financial or medical data are visible. The main privacy exposure is behavioral: readable tasks and apparent scoring that reveal interests/activities or classroom workflow. This is moderate at most (Level 3) and not directly identifying. Overall risk is low-to-moderate with high confidence due to clear but non-identifying content.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten checklist on white sheet with legible activity titles and checkmarks",
+        "Anonymized_element": "blank paper, blurred/obfuscated text, generic checklist with unreadable items",
+        "privacy_element": "readable activity names and progress marks indicating tasks and preferences",
+        "target_concept": "handwritten list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "circled number \u201c26\u201d written near lower-right of the page",
+        "Anonymized_element": "blank area, removed circle and number, generic scribble",
+        "privacy_element": "visible numeric score or tally suggesting performance/progress",
+        "target_concept": "written score",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10301631/r1_crops/2017_10301631_0.png"
+}

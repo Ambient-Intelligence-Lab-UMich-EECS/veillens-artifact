@@ -1,0 +1,48 @@
+{
+  "reasoning": "The people in the image are entirely masked, so no biometric or identifying facial data is visible. There are no readable documents, names, numbers, or medical/financial items. The remaining visible elements are household furnishings (armchairs, lamp, chair/railing) that provide only weak contextual clues about property or an indoor setting. Thus the highest severity is Level 4 and the overall privacy risk is low, with no strong compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green leather armchair on the left side",
+        "Anonymized_element": "plain fabric armchair, neutral color, simplified shape",
+        "privacy_element": "distinctive furniture style and color potentially linking to a specific home",
+        "target_concept": "armchair",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tall floor lamp with slim poles near the left edge",
+        "Anonymized_element": "generic lamp silhouette, simplified design, neutral color",
+        "privacy_element": "unique lamp design that may hint at a particular residence",
+        "target_concept": "floor lamp",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red chair or railing with metal frame on the right side",
+        "Anonymized_element": "neutral-colored generic chair/railing with simplified form",
+        "privacy_element": "distinct color and form of interior furnishing",
+        "target_concept": "chair/railing",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14474882/r1_crops/2017_14474882_1.png"
+}

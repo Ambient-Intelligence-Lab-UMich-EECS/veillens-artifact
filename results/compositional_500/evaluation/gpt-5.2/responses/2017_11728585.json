@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a person with their face and much of the torso deliberately obscured, eliminating identifiable biometric features. No names, documents, addresses, or financial/medical items are visible. Remaining clues include visible long hair and a bare forearm/hand that reveal some physical characteristics. These are Level 3 personal-attribute cues and do not strongly identify the person on their own. With no Level 1–2 identifiers present and minimal contextual details, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible long wavy hair around the head and shoulders",
+        "Anonymized_element": "add neutral hat or hood, shorten/blur hair silhouette, uniform color block",
+        "privacy_element": "distinctive hairstyle, hair length and color revealing physical appearance",
+        "target_concept": "hair",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "bare right forearm and hand at the side",
+        "Anonymized_element": "add long sleeve, glove, or crop to remove exposed skin",
+        "privacy_element": "skin tone and arm shape revealing physical appearance",
+        "target_concept": "arm/hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11728585/final/2017_11728585_final.png"
+}

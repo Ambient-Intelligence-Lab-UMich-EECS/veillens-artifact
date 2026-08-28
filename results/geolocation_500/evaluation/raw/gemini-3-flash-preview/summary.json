@@ -1,0 +1,42 @@
+{
+  "condition": "raw",
+  "condition_note": "the unprotected Cityscapes frame — the attack baseline, and the perceptual reference",
+  "evaluator_label": "gemini-3-flash-preview",
+  "model_id_recorded_in_artifacts": "gemini-3-flash-preview",
+  "attribution": "recorded in the source results.json under metadata.model",
+  "role": "independent scorer; none of these four models is inside a protection loop",
+  "scored_image": "readydata/dataset_random_500/raw/<image_id>_leftImg8bit.png",
+  "images_in_set": 500,
+  "responses": 500,
+  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
+  "error_km": {
+    "n": 500,
+    "mean_km": 46.391,
+    "median_km": 0.784,
+    "min_km": 0.018,
+    "max_km": 825.694,
+    "within_0.5km_pct": 40.6,
+    "within_1km_pct": 55.4,
+    "within_5km_pct": 67.6,
+    "within_10km_pct": 68.6,
+    "within_25km_pct": 72.6,
+    "within_100km_pct": 85.0
+  },
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 500 responses, to 0.0 km at R = 6371.0",
+  "source_runs": [
+    {
+      "dataset": "dataset_random_100",
+      "run": "gpt_image_100_resume_b_20260813_152619",
+      "manifest": "dataset.json",
+      "images": 100,
+      "declared_failures": 0
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_b_20260820_000954",
+      "manifest": "dataset_new400.json",
+      "images": 400,
+      "declared_failures": 0
+    }
+  ]
+}

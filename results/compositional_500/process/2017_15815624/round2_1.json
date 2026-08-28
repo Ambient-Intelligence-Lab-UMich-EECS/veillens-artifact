@@ -1,0 +1,38 @@
+{
+  "reasoning": "The crop shows a large outdoor sign for a community health center with clearly readable organization names, city/state references, and a phone number. No people or biometric data are visible. The strongest privacy signals are location-identifying details and contact information on the sign, which are moderate risk alone but can help pinpoint a precise place. Given the clarity and legibility of the text, the risk is moderate. Confidence is high due to direct visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large outdoor billboard with readable text naming a community health center and organizations (e.g., UPMC Hamot) plus city/state lines like Pittsburgh, PA and DuBois, PA",
+        "Anonymized_element": "blank sign, blurred/unreadable text, generic logo-free poster, neutral building image",
+        "privacy_element": "readable organization names, facility name, city/state location text",
+        "target_concept": "billboard/sign text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed phone number on the lower right of the sign (digits clearly legible)",
+        "Anonymized_element": "digits removed or replaced with placeholders, blurred number area",
+        "privacy_element": "readable phone number digits",
+        "target_concept": "phone number on sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15815624/r1_crops/2017_15815624_1.png"
+}

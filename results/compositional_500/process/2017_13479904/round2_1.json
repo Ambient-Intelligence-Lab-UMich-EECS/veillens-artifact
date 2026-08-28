@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows the exterior of a private residence with a garden, steps, a gate, and a front window. No faces, IDs, house numbers, or readable signs are visible. The primary privacy signal is ownership of a specific-looking home facade that could be matched via context, which is a low-level (Level 4) clue. With no higher-severity identifiers present, the overall risk remains low.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front facade of a private house with stucco wall, window, gate, and garden",
+        "Anonymized_element": "simplified generic facade, blur or remove distinctive architectural details, neutral wall texture, generic plants",
+        "privacy_element": "private residence exterior that could be matched to a specific property by unique architectural features",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13479904/r1_crops/2017_13479904_1.png"
+}

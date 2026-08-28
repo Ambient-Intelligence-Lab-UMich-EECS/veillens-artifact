@@ -1,0 +1,79 @@
+{
+  "reasoning": "The image shows a conference panel with several people whose faces are visible, including a speaker at a podium and multiple seated panelists. Faces constitute biometric identifiers (Level 1). In front of several panelists are name placards with readable personal names (Level 2), which combine with the faces to heighten identifiability. A podium plaque appears to show the venue/hotel name, giving potential location context (Level 3). Because multiple Level 1 faces are present and reinforced by names and location, the overall personal-information privacy risk is high despite moderate distance/lighting. Confidence is medium due to partial darkness and small text legibility limits.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "speaker\u2019s face at the podium, front-left side of image",
+        "Anonymized_element": "blurred face, generic silhouette, cropped above shoulders",
+        "privacy_element": "full face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "central panelist\u2019s face above floral arrangement",
+        "Anonymized_element": "blurred facial area, neutralized silhouette, remove facial details",
+        "privacy_element": "frontal face with clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right-side panelist\u2019s face near the end of the table",
+        "Anonymized_element": "blurred facial region, generic head shape, reduce detail",
+        "privacy_element": "visible facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "name placard in front of a panelist with readable personal name text",
+        "Anonymized_element": "blank placard, placeholder text (e.g., Panelist A), low-contrast text",
+        "privacy_element": "personal name printed and legible",
+        "target_concept": "name placard",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "another name placard toward right side with readable personal name text",
+        "Anonymized_element": "blank card, generic role title only, low-resolution text",
+        "privacy_element": "personal name displayed",
+        "target_concept": "name placard",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "podium plaque with venue/hotel name and logo",
+        "Anonymized_element": "plain wooden panel without logo or text",
+        "privacy_element": "venue or hotel name/logo that indicates location",
+        "target_concept": "venue signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15379793.jpg"
+}

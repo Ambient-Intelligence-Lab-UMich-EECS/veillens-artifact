@@ -1,0 +1,45 @@
+{
+  "reasoning": "The cropped image shows a shirtless person seated cross\u2011legged on a mat with the face fully obscured. No government IDs, readable text, or identifiable facial biometrics are present. The primary privacy signals are Level 3: exposed upper body revealing personal physical attributes and a clear yoga/exercise posture reinforced by the visible mat, which disclose activities and some body characteristics. With no Level 1\u20132 elements, the overall risk is moderate and compositionally driven by multiple Level 3 clues. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "exposed shirtless upper torso and arms of the person",
+        "Anonymized_element": "add plain athletic T\u2011shirt or tank top, modest coverage, smooth skin texture",
+        "privacy_element": "visible chest and torso details, body hair pattern, skin features",
+        "target_concept": "upper torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cross\u2011legged seated posture with hands holding feet",
+        "Anonymized_element": "neutral seated posture with legs extended or arms resting at sides",
+        "privacy_element": "specific yoga/exercise pose indicating workout/meditation habit",
+        "target_concept": "yoga pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rectangular exercise/yoga mat on the floor beneath the person",
+        "Anonymized_element": "plain floor surface, generic rug without sport connotation",
+        "privacy_element": "exercise equipment implying workout activity",
+        "target_concept": "yoga mat",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/r1_crops/2017_14958433_1.png"
+}

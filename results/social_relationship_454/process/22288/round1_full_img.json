@@ -1,0 +1,25 @@
+{
+  "img_id": "22288",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Both are casually dressed and standing close in a home setting, each holding a game controller and focused in the same direction; no physical contact but shared leisure activity suggests camaraderie. => friends\n\n[P1-P3]: P3\u2019s visible hand holds another controller in the same casual, indoor gaming scene with P1; they\u2019re near each other and engaged in the same activity without formal or transactional cues. => friends\n\n[P2-P3]: P2 stands next to P3\u2019s hand holding a controller, both oriented toward the game in a relaxed home environment with no physical contact or professional context. => friends",
+  "timestamp": 1776888511.693541
+}

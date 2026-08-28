@@ -1,0 +1,60 @@
+{
+  "condition": "raw",
+  "condition_note": "the unprotected Cityscapes frame — the attack baseline, and the perceptual reference",
+  "evaluator_label": "gemini-3.1-pro-preview",
+  "model_id_recorded_in_artifacts": "gemini-3.1-pro-preview",
+  "attribution": "recorded in the source results.json under metadata.model",
+  "role": "independent scorer; none of these four models is inside a protection loop",
+  "scored_image": "readydata/dataset_random_500/raw/<image_id>_leftImg8bit.png",
+  "images_in_set": 500,
+  "responses": 100,
+  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
+  "error_km": {
+    "n": 100,
+    "mean_km": 43.467,
+    "median_km": 0.613,
+    "min_km": 0.015,
+    "max_km": 466.833,
+    "within_0.5km_pct": 49.0,
+    "within_1km_pct": 57.0,
+    "within_5km_pct": 66.0,
+    "within_10km_pct": 67.0,
+    "within_25km_pct": 72.0,
+    "within_100km_pct": 82.0
+  },
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 100 responses, to 0.0 km at R = 6371.0",
+  "source_runs": [
+    {
+      "dataset": "dataset_random_100",
+      "run": "gpt_image_100_resume_b_20260813_152619",
+      "manifest": "dataset.json",
+      "images": 100,
+      "declared_failures": 0
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_c_20260820_000954",
+      "manifest": "dataset_new400.json",
+      "images": 400,
+      "declared_failures": 400
+    }
+  ],
+  "unscored": {
+    "count": 400,
+    "why": "gemini-3.1-pro-preview hits a 250-requests-per-model-per-day cap; every unscored call returned HTTP 429 and was recorded with a null error and a null location_estimate. No reasoning was produced, so no file is emitted.",
+    "image_ids": [
+      "aachen_000001_000019",
+      "aachen_000009_000019",
+      "aachen_000017_000019",
+      "aachen_000025_000019",
+      "aachen_000033_000019",
+      "aachen_000042_000019",
+      "aachen_000050_000019",
+      "aachen_000058_000019",
+      "aachen_000066_000019",
+      "aachen_000075_000019",
+      "..."
+    ],
+    "coverage_pct": 20.0
+  }
+}

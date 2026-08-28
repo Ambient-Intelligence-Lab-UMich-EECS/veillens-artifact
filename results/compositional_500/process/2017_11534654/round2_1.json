@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a football stadium field with prominent team branding (a Seahawks logo in the end zone) and an NFL shield near the sideline. A few people are visible on the field but are very small and unidentifiable. No faces, IDs, or documents are legible. The most privacy-relevant element is location inference from the specific team logo, a Level 3 clue. Distant individuals add minimal Level 4 risk. Overall risk is low-to-moderate due to location identifiability without direct personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large Seahawks team logo painted near the end zone",
+        "Anonymized_element": "generic geometric marking, plain colors without text or logo",
+        "privacy_element": "distinct team logo and branding enabling location inference",
+        "target_concept": "team logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "NFL shield logo painted on the field near the sideline",
+        "Anonymized_element": "plain field marking, generic shape without league emblem",
+        "privacy_element": "league emblem that narrows venue context",
+        "target_concept": "league logo",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "three small, distant people standing on the field",
+        "Anonymized_element": "empty field area, remove figures or replace with equipment",
+        "privacy_element": "presence of individuals, though not identifiable",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11534654/r1_crops/2017_11534654_1.png"
+}

@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a person on a tennis court using a wheelchair, with no readable text, faces, or government/financial identifiers. The wheelchair clearly reveals a disability-related inference (a Level 2 sensitive category). A tennis racket indicates a specific activity/behavior (Level 3). There are no strong location markers or names. Given one clear Level 2 clue and a reinforcing Level 3 clue but no direct identifiers, the overall risk is moderate. Confidence is high because the wheelchair is unambiguous and central while identity is not directly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person seated in a sports wheelchair at mid-court",
+        "Anonymized_element": "empty court, generic standing athlete without mobility aid, crop to remove the person",
+        "privacy_element": "visible wheelchair implying mobility impairment/disability",
+        "target_concept": "wheelchair user",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "tennis racket lying/held near the person on the blue court",
+        "Anonymized_element": "remove racket, replace with neutral sports equipment, crop area",
+        "privacy_element": "specific sports equipment indicating tennis participation",
+        "target_concept": "tennis racket",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10895938/final/2017_10895938_final.png"
+}

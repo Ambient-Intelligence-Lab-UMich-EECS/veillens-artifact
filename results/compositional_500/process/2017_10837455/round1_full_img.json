@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a small public demonstration with multiple clearly visible faces and readable protest materials. Several individuals\u2019 faces are unobstructed and front-lit, constituting identifiable biometric data (highest severity). In addition, a large banner with the words \u201cSocialist Party\u201d and other placards are readable, revealing political affiliation/advocacy and participation in a protest, which are sensitive inferences and activities. The combination of multiple identifiable faces with explicit political messaging elevates the overall privacy risk. No names, addresses, or government IDs are visible. Score is high due to the number and clarity of faces plus political context. Confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central young woman\u2019s unobstructed face holding a candle",
+        "Anonymized_element": "blurred face, generic oval with no facial details, downward gaze, low-contrast lighting",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), full frontal view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman\u2019s face slightly right of center, looking forward",
+        "Anonymized_element": "blurred facial region, generic head shape, muted features",
+        "privacy_element": "identifiable facial features, direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man\u2019s face on right side wearing glasses",
+        "Anonymized_element": "blurred facial region, remove eye detail, generic glasses shape with no facial features",
+        "privacy_element": "identifiable facial features, characteristic eyewear outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large white banner reading \u201cSOCIALIST PARTY\u201d with red star logo",
+        "Anonymized_element": "plain blank banner, neutral colors, no text or logos",
+        "privacy_element": "political party name and symbol indicating affiliation/advocacy",
+        "target_concept": "protest banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left-side placard with readable statistic about rape convictions",
+        "Anonymized_element": "blank poster, abstract shapes without legible text",
+        "privacy_element": "issue-based advocacy text revealing protest topic/stance",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10837455.jpg"
+}

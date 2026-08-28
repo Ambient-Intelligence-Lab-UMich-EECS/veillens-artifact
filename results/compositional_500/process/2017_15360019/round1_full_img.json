@@ -1,0 +1,71 @@
+{
+  "reasoning": "The image shows numerous adults and children in a crowded indoor shelter with several faces clearly visible and unobstructed, which is Level 1 biometric risk. Additionally, a cardboard box displays the readable text \u201cWorld Vision Lanka,\u201d hinting at geographic location. The combination of multiple identifiable faces with a contextual location cue increases overall privacy exposure. No government IDs, financial, or medical records are visible. Given the number and clarity of faces and supporting location text, the risk is high with strong visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child\u2019s face lying on a mat near the center-left foreground",
+        "Anonymized_element": "face pixelated, turned away from camera, generic blur over facial area",
+        "privacy_element": "clear, unobstructed facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman\u2019s face seated in the left foreground with hair clip",
+        "Anonymized_element": "face blurred, side profile turned away, neutral skin patch",
+        "privacy_element": "recognizable facial features and profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "standing child near image center facing camera",
+        "Anonymized_element": "face pixelated, head turned downward, neutralized oval mask",
+        "privacy_element": "frontal facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man\u2019s face on right midground seated and looking toward others",
+        "Anonymized_element": "face blurred, head turned away, soft occlusion over facial area",
+        "privacy_element": "distinct facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cardboard box in center with readable text 'World Vision Lanka'",
+        "Anonymized_element": "plain cardboard box with no logos or text",
+        "privacy_element": "organization and country reference indicating geographic context",
+        "target_concept": "printed box text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15360019.jpg"
+}

@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a public parade scene with several clearly visible, unoccluded spectator faces that are identifiable, which constitutes Level 1 biometric risk. Additional cues include a partial storefront sign that can help triangulate location (Level 3) and a distinctive performer costume indicating participation in a public event (activities/attributes), which together raise contextual risk. The dominant risk stems from multiple recognizable faces, so the overall risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row spectator wearing a maroon cap, smiling, full face visible near left-center",
+        "Anonymized_element": "blurred face region, stylized faceless oval, turned head away",
+        "privacy_element": "full unobstructed face, eyes, nose, mouth, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "middle-aged woman in a white jacket at the barricade, face toward camera",
+        "Anonymized_element": "face blur, faceless placeholder, crop to torso only",
+        "privacy_element": "recognizable facial structure, eyes and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man with short hair and glasses on right side of frame, face in profile/three-quarter view",
+        "Anonymized_element": "apply mosaic blur, replace with generic silhouette, turn head away",
+        "privacy_element": "distinct facial features with glasses aiding recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront sign in background with the word 'Select' and a fruit logo",
+        "Anonymized_element": "blank generic sign, remove text/logo, neutral color panel",
+        "privacy_element": "business name/logo that can help pinpoint location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "parade performer in floral one-piece costume with pink feathered wings and striped knee-high socks",
+        "Anonymized_element": "generic non-distinct outfit, muted colors, remove specific patterns and wings",
+        "privacy_element": "distinctive costume indicating participation in a public parade/event",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800795/r1_crops/2017_15800795_1.png"
+}

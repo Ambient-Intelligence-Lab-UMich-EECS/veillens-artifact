@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a crowded outdoor scene with multiple identifiable faces, including a clear side-profile with distinct facial features. This constitutes Level 1 biometric data. Additional contextual cues include an elevated shirtless person in black leather shorts (revealing personal attributes and participation in a public event) and a readable \u201cOne Way\u201d street sign that provides location context. These Level 3 elements reinforce the identifiability and context, yielding a high but not extreme privacy risk. Confidence is high because the faces and street sign are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side-profile face of a bearded person wearing sunglasses at left-middle of the crowd",
+        "Anonymized_element": "face blurred or pixelated, replace with generic oval skin-toned patch, opaque sunglasses, reduce detail",
+        "privacy_element": "recognizable facial structure, beard style, skin details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "partially visible face in the right-foreground with short dark hair",
+        "Anonymized_element": "blur/pixelate facial area, generic skin-toned patch, reduce contrast",
+        "privacy_element": "distinct facial outline, forehead/eye region, hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "elevated shirtless person wearing black leather shorts near center-top",
+        "Anonymized_element": "replace with plain dark athletic shorts and a tank top, de-emphasize musculature",
+        "privacy_element": "semi-nude torso, distinctive attire indicating participation in a specific public event",
+        "target_concept": "person attire",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "street sign reading 'ONE WAY' mounted on a pole at right-upper area",
+        "Anonymized_element": "blank rectangular sign with no text or arrows, generic color",
+        "privacy_element": "readable street-direction sign that can narrow down location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14093152/r1_crops/2017_14093152_2.png"
+}

@@ -1,0 +1,39 @@
+{
+  "img_id": "22281",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 1,
+    "1 6": 1,
+    "2 3": 4,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 4,
+    "4 6": 4,
+    "5 6": 1
+  },
+  "ground_truth": {
+    "4 6": 4,
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 6": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "5 6": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "2 6": 4,
+    "3 4": 4,
+    "3 5": 4,
+    "3 6": 4
+  },
+  "raw_response": "[P1-P2]: P1 is batting while P2 acts as the umpire, indicating a formalized sports officiating interaction. => professional\n[P1-P3]: P1 is batting and P3 is the catcher behind him, engaging in direct athletic competition. => professional\n[P1-P4]: P1 is batting while P4, likely the coach, watches from the dugout, showing a player-coach dynamic. => professional\n[P1-P5]: P1 and P5 wear matching team uniforms, indicating they are teammates. => friends\n[P1-P6]: P1 and P6 share identical team uniforms, showing they are on the same team. => friends\n[P2-P3]: P2 is the umpire closely positioned behind catcher P3 to officiate the pitch. => professional\n[P2-P4]: P2 is the umpire and P4 is a coach in the background; they have no direct interaction in this moment. => no-relationship\n[P2-P5]: P2 is the umpire and P5 is a player waiting in the dugout, with no interaction between them. => no-relationship\n[P2-P6]: P2 is the umpire and P6 is a player in the background, showing no direct social connection. => no-relationship\n[P3-P4]: P3 is the catcher and P4 is a coach for the opposing team, with no interaction occurring. => no-relationship\n[P3-P5]: P3 is the catcher and P5 is an opposing player behind the fence, showing no interaction. => no-relationship\n[P3-P6]: P3 is the catcher and P6 is an opposing player behind the fence, with no interaction. => no-relationship\n[P4-P5]: P4 is likely the coach overseeing P5, a player on his team in the dugout area. => professional\n[P4-P6]: P4 acts as the coach overseeing team member P6 in the dugout area. => professional\n[P5-P6]: P5 and P6 are teammates waiting together behind the fence in matching uniforms. => friends",
+  "timestamp": 1779942578.6591902
+}

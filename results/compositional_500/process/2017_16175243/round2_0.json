@@ -1,0 +1,59 @@
+{
+  "reasoning": "This crop shows a small group outdoors. Several faces are visible but partially obscured, reducing identifiability; however, facial structure and hair remain. One person is holding a placard-like board (text not visible), which hints at participation in a public gathering. The highest severity present is Level 1 due to visible facial regions, though mitigation and lack of readable text keep the overall risk moderate-low. Multiple partially visible faces and the activity cue combine to justify a modest score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person in green beanie with partially obscured face",
+        "Anonymized_element": "fully blurred face, neutral-colored mask overlay, simplified generic hairstyle",
+        "privacy_element": "partial face outline, nose/mouth region shape, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bearded person in navy beanie in profile with partially obscured face",
+        "Anonymized_element": "full blur or solid mask over face, remove beard details",
+        "privacy_element": "profile facial structure, beard shape and texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person at left edge with partially visible face under hood",
+        "Anonymized_element": "fully blurred face, uniform skin-toned patch",
+        "privacy_element": "visible eye/cheek area, facial contour",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "individual in foreground holding a blank placard-like board",
+        "Anonymized_element": "remove board or replace with neutral object without text or symbols",
+        "privacy_element": "sign-holding gesture indicating participation in a public gathering",
+        "target_concept": "sign/placard",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16175243/r1_crops/2017_16175243_0.png"
+}

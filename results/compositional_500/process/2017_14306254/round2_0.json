@@ -1,0 +1,36 @@
+{
+  "reasoning": "The region shows a public event poster with readable text including a venue and street/city information (\u201cOxfam, Western Rd, Brighton\u201d) and a scheduled date/time. There are no people or direct identifiers. The highest severity is Level 3 due to explicit location details; additional generic document and timing info add minor contextual risk. Overall this yields a low-to-moderate privacy score with high confidence as the text is clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lower section of poster with handwritten venue and address line",
+        "Anonymized_element": "blanked address line, replace with generic placeholder text, blur specific street/city/venue",
+        "privacy_element": "readable venue name, street name, city",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "event poster sheet pinned on a surface with readable schedule details",
+        "Anonymized_element": "poster with abstract shapes, remove or blur date and time text, minimal decorative text only",
+        "privacy_element": "readable event date and time, event titles",
+        "target_concept": "poster document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14306254/r1_crops/2017_14306254_0.png"
+}

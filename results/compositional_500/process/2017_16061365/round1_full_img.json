@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a large outdoor concert with a colorful stage and a dense crowd. Individual faces are small, partially turned away, and not clearly identifiable. No legible personal identifiers (names, IDs), financial, medical, or government documents are visible. The main privacy-relevant element is the presence of many distant people that could imply event attendance, but with low identifiability. Therefore the highest severity present is low (Level 4), yielding an overall low privacy risk. Confidence is high because clues are clear and non-identifying.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distant crowd of attendees with small, partially obscured faces",
+        "Anonymized_element": "further face blur, rear-view silhouettes, reduced detail on heads",
+        "privacy_element": "multiple human faces, partial profiles, presence at a public event",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16061365.jpg"
+}

@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a monochrome scan of an old handwritten manuscript page with multiple lines of cursive text and a small page number in the corner. No people, biometric data, IDs, financial or medical records are clearly identifiable. While some words might be partially legible, they function as generic document text without clear personal identifiers. Thus the highest severity present is Level 4 (generic document/metadata). The overall privacy risk is low with high confidence due to the absence of strong identifying or sensitive elements.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "body of handwritten cursive text filling the page",
+        "Anonymized_element": "nonsensical placeholder text, blurred text rendering, solid lines without characters",
+        "privacy_element": "potentially readable handwritten words and phrases",
+        "target_concept": "handwritten document text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small handwritten or printed page number near the top-right margin",
+        "Anonymized_element": "blank margin, obscured number, generic smudge",
+        "privacy_element": "document pagination indicating source document structure",
+        "target_concept": "page number",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15579819/r1_crops/2017_15579819_1.png"
+}

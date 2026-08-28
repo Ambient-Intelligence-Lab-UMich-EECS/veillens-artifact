@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a museum catalog card with handwritten text. There are no people, faces, IDs, financial or medical items. Privacy-relevant clues come from readable text: specific site/location names (England, Wiltshire, Winterbourne Stoke, Barrow 15) and an associated surname in parentheses, plus an identifiable museum/institution name and collection reference. The highest-severity element is the personal surname (Level 2). Combined with multiple precise location references (Level 3), the overall risk is low but nontrivial. Confidence is high because the text is clear and directly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten text block at top-left listing: England, Wiltshire, Winterbourne Stoke, Barrow 15",
+        "Anonymized_element": "replace with generic placeholder text like 'Region, County, Site, Mound #', or blur/remove place names",
+        "privacy_element": "specific place names and site number revealing precise location",
+        "target_concept": "place names text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "parenthetical surname '(Hoare)' adjacent to 'Barrow 15' in the top-left text",
+        "Anonymized_element": "remove parenthetical name, replace with '(editor)' or blank",
+        "privacy_element": "personal surname readable in document",
+        "target_concept": "surname text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "handwritten institution reference at top-right reading 'Devizes Museum, Stourhead Coll: 80'",
+        "Anonymized_element": "replace with 'Local Museum, Collection ##', or blur branding and numbers",
+        "privacy_element": "institution/museum name and specific collection identifier",
+        "target_concept": "institution name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12124882/final/2017_12124882_final.png"
+}

@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows multiple identifiable bystander faces in the crowd while the main speaker\u2019s face is obscured. These visible faces constitute biometric data (Level 1). Several attendees wear visible political campaign pins and shirts with campaign text/logos, enabling sensitive inferences about political affiliation (Level 2). The act of photographing is also visible but contributes minimally. The combination of clear biometric cues with political-affiliation indicators yields a high privacy risk. Confidence is high due to clear, central visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "elderly woman\u2019s face in the lower-left foreground looking toward the stage",
+        "Anonymized_element": "blurred face, neutral oval mask, reduced detail skin-toned patch",
+        "privacy_element": "full frontal face, eyes and facial contours, identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young person\u2019s face centered in the background, slightly out of focus",
+        "Anonymized_element": "blurred face, neutral oval mask, reduced detail skin-toned patch",
+        "privacy_element": "full face with distinct hair and features despite slight blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman\u2019s face on the right side background near the speaker\u2019s shoulder",
+        "Anonymized_element": "blurred face, neutral oval mask, reduced detail skin-toned patch",
+        "privacy_element": "full face, visible eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "round political campaign button on a white shirt in the mid-left background",
+        "Anonymized_element": "plain round pin, no text or logo, solid color",
+        "privacy_element": "political logo and campaign text indicating affiliation",
+        "target_concept": "political button",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white T-shirt with large campaign text/logo partially readable behind the speaker",
+        "Anonymized_element": "plain shirt, no text or graphics, neutral color",
+        "privacy_element": "campaign name/text revealing political support",
+        "target_concept": "clothing with political text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person at left holding a small digital camera/phone up to take a photo",
+        "Anonymized_element": "empty hand pose, generic object without identifiable device features",
+        "privacy_element": "visible device capturing activity suggesting event participation",
+        "target_concept": "camera/phone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10831237/r1_crops/2017_10831237_0.png"
+}

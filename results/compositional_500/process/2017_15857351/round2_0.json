@@ -1,0 +1,70 @@
+{
+  "reasoning": "The crop shows a crowded outdoor event with multiple visible faces, some partially obscured by sunglasses but still potentially identifiable. This constitutes Level 1 biometric exposure. A readable sign with the text \u201cTHE FIRM\u201d introduces a non-unique organizational identifier (Level 2) that could connect participants to a group. Additional distant attendees contribute low-risk contextual signals. The combination of several identifiable faces with a readable group name yields a high overall privacy risk. Confidence is high because the faces and text are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right person with blonde hair and sunglasses facing camera",
+        "Anonymized_element": "blurred or pixelated face, featureless mask, head turned away",
+        "privacy_element": "facial geometry, identifiable features around nose and mouth despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "central person with long hair wearing colorful sunglasses",
+        "Anonymized_element": "blurred face, opaque visor, head turned away",
+        "privacy_element": "exposed facial structure around cheeks, jawline, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "foreground-left person in profile with sunglasses, partially blurred",
+        "Anonymized_element": "heavier blur on face, generic silhouette",
+        "privacy_element": "partial facial profile and hair style",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "sparkly poster board with readable text 'THE FIRM' held overhead",
+        "Anonymized_element": "blank poster, geometric pattern only, text removed",
+        "privacy_element": "readable organization/group name",
+        "target_concept": "sign with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of distant attendees in background, faces small and not clear",
+        "Anonymized_element": "further blur on background people",
+        "privacy_element": "presence of crowd members",
+        "target_concept": "distant crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15857351/r1_crops/2017_15857351_0.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows two concert tickets with readable event details and partial serial/barcode data, plus an envelope corner with a legible city/state and ZIP. No faces or government IDs are present. The strongest privacy signals are Level 3: location information (Chicago event location; envelope shows Austin, TX 78768) and activity/behavior (attendance at Lollapalooza on a specific date). Barcodes/serials on the ticket are Level 4 generic document identifiers. Combined, these yield a moderate privacy risk. Confidence is medium because some text is partially obscured but still legible enough to infer location and activity.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Main body of the top event ticket showing 'Lollapalooza', 'Sunday 8/9', and 'Grant Park, Chicago, IL' text",
+        "Anonymized_element": "plain generic ticket design, replace with abstract pattern and no readable event/location/date text",
+        "privacy_element": "readable event name, specific date, venue and city/state",
+        "target_concept": "event ticket text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Right-side ticket stub with vertical barcode and numeric serials",
+        "Anonymized_element": "blank stub area, remove barcode and numbers, generic pattern with no codes",
+        "privacy_element": "barcode, numeric serial/ticket ID",
+        "target_concept": "barcode/serial on ticket stub",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Upper-left corner of a white envelope showing printed address line with 'Austin, TX 78768'",
+        "Anonymized_element": "blank envelope corner, smear or crop out city/state and ZIP",
+        "privacy_element": "readable city, state, and ZIP code",
+        "target_concept": "mailing address fragment",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13489113.jpg"
+}

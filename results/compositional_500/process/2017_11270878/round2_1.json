@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows a graduation ceremony. Two seated individuals on the right have clearly visible, identifiable faces. A standing graduate on the left has a partial side profile that could still aid identification. The academic regalia reveals the activity (graduation) and some personal attributes. The presence of multiple Level 1 biometric faces, reinforced by contextual activity cues, yields a high privacy risk. The faces are central, unobstructed (two of them), and well lit, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated man with white beard facing camera, smiling",
+        "Anonymized_element": "blurred face, low-detail skin-tone oval, generic placeholder head",
+        "privacy_element": "full face with clear eyes, nose, mouth; distinctive beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "seated older man with glasses on the far right, looking toward stage",
+        "Anonymized_element": "blurred face, low-detail skin-tone oval, generic eyewear without facial detail",
+        "privacy_element": "full face with clear features; eyeglasses emphasizing eye region",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "standing graduate on left in cap and gown with partial side profile",
+        "Anonymized_element": "occluded/blurred side of head, cap without facial detail",
+        "privacy_element": "side-profile facial features (nose, cheek, jawline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "graduation cap and black gown with green trim worn by standing person",
+        "Anonymized_element": "plain dark clothing without academic symbols, neutral hat without tassel",
+        "privacy_element": "academic regalia indicating graduation ceremony",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11270878/r1_crops/2017_11270878_1.png"
+}

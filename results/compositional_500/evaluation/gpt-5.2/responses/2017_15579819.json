@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a single page of an old handwritten manuscript with paragraph numbers. No people, faces, IDs, payment cards, addresses, or clearly readable names are visible. The primary privacy signal is merely the presence of handwritten text which might contain names or dates, but the content appears largely illegible at this resolution. Thus only low-level risk from a generic document is present, without higher-severity identifiers. Score is low with high confidence due to lack of direct personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single page of a handwritten manuscript with multiple paragraphs and marginal numbers",
+        "Anonymized_element": "replace with blank or blurred page texture, nonsensical placeholder scribbles, or low-detail lines without readable words or numbers",
+        "privacy_element": "handwritten text that could include names or dates, numbered list formatting",
+        "target_concept": "handwritten document page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15579819/final/2017_15579819_final.png"
+}

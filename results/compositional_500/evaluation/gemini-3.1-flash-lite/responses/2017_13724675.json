@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image captures a business conference or event with multiple attendees. Several individuals have identifiable faces, which constitutes Level 1 biometric data. Additionally, some attendees are wearing lanyards with ID badges, which are Level 2 non-unique identifiers that may reveal professional affiliation or names. The combination of identifiable faces and professional context represents a moderate to high privacy risk, primarily due to the potential for identifying individuals in a professional setting. The presence of numerous individuals (crowds) further contextualizes their presence at this specific event.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "multiple identifiable faces of conference attendees",
+        "Anonymized_element": "blurred faces, obscured facial features, neutral expressions",
+        "privacy_element": "identifiable facial features, individual appearances",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "lanyards with ID badges worn by attendees",
+        "Anonymized_element": "blank white lanyard, generic card without text or logo",
+        "privacy_element": "visible ID badge, potentially readable text or company branding",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "group of people seated in a conference hall",
+        "Anonymized_element": "generic crowd, blurred background, non-specific indoor setting",
+        "privacy_element": "crowd in professional setting",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13724675/final/2017_13724675_final.png"
+}

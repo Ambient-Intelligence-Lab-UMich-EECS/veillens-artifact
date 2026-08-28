@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows the back of a person wearing a sports jersey with the readable word \u201cCOMMITMENT\u201d and the number 33, along with visible flag-football belts on a marked outdoor field. No identifiable face or government/financial/medical information is present. The strongest cues relate to activities/behaviors and minor identifiers from jersey text/number that could hint at team participation. These Level 3 clues, plus low-risk background location context, yield a moderate but limited privacy risk. Confidence is high because the elements are clear and centered.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a navy sports jersey with the word 'COMMITMENT' and number '33' in white",
+        "Anonymized_element": "plain athletic shirt, no text or numbers, generic color block",
+        "privacy_element": "readable jersey number, readable slogan/text indicating team affiliation",
+        "target_concept": "jersey text/number",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "yellow flag belts attached at the person\u2019s waist",
+        "Anonymized_element": "remove belts, replace with plain waistband or untied fabric strips",
+        "privacy_element": "specific sport equipment indicating flag football participation",
+        "target_concept": "sport accessory (flag belt)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "outdoor sports field with yard lines and nearby track in background",
+        "Anonymized_element": "blurred generic grass background without distinct markings",
+        "privacy_element": "field markings and track suggesting school/league venue context",
+        "target_concept": "venue background",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/r1_crops/2017_12338201_3.png"
+}

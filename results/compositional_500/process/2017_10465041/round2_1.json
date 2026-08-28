@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a small group of youths outdoors. Two children\u2019s faces (one at far left, one bending second from left) are clearly visible and unobstructed, providing biometric identifiers. No readable names or location markers are seen. The activity context (a bucket suggesting an outdoor game) adds minor behavioral information but does not include specific identifiers. The highest-severity cue is Level 1 due to identifiable faces, leading to a moderately high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost child's face, frontal and unobstructed",
+        "Anonymized_element": "blurred or pixelated face, neutral oval without features",
+        "privacy_element": "visible eyes, nose, mouth, full facial geometry",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "second-from-left child's face in profile while bending forward",
+        "Anonymized_element": "blurred or pixelated profile, neutral oval without features",
+        "privacy_element": "side facial features, recognizable profile geometry",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "gray plastic bucket on the ground near the group",
+        "Anonymized_element": "generic container, blurred label-free bucket or neutral object",
+        "privacy_element": "implies specific outdoor activity context",
+        "target_concept": "bucket",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10465041/r1_crops/2017_10465041_1.png"
+}

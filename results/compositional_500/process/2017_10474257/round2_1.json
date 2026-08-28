@@ -1,0 +1,69 @@
+{
+  "reasoning": "The crop shows a classic car at an outdoor event with a large \u201cFOR SALE/PROTOTYPE\u201d windshield banner, a paper sheet on the side window, an event tent with readable organization text, and some distant people in the background. No license plates or identifiable faces are visible, and the window sheet\u2019s details are not legible. The highest relevant cues are moderate-level contextual/location hints and activity disclosure (car for sale). Overall this implies low-to-moderate privacy risk without direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green classic sedan prominently in foreground",
+        "Anonymized_element": "generic car without brand decals or unique styling cues, neutral color, crop tighter to remove distinctive features",
+        "privacy_element": "distinct model-specific styling that could link to a specific asset",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "windshield banner reading 'FOR SALE' and model/prototype text",
+        "Anonymized_element": "blank windshield, remove banner text, plain sun strip with no wording",
+        "privacy_element": "sale status text indicating ownership/activity, model designation",
+        "target_concept": "signage/text on windshield",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "paper information sheet taped to rear side window",
+        "Anonymized_element": "blank white sheet with no text, or remove sheet entirely",
+        "privacy_element": "posting that may contain seller contact or vehicle-specific info (not legible here)",
+        "target_concept": "window paper notice",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "event tent in background with readable organization/URL text",
+        "Anonymized_element": "plain tent canopy without logos or text, generic color",
+        "privacy_element": "organization name/URL that hints at venue or event location",
+        "target_concept": "banner/logo on tent",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small group of distant people on stands and walkway",
+        "Anonymized_element": "remove or blur figures to silhouettes",
+        "privacy_element": "presence of unidentifiable individuals in public setting",
+        "target_concept": "distant crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10474257/r1_crops/2017_10474257_1.png"
+}

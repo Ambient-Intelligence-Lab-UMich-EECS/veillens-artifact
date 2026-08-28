@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a tennis player mid-swing with no identifiable face. The strongest privacy cue is a visible kinesiology/athletic tape on the knee, which can imply a health/injury condition (a Level 2 sensitive inference). Additional cues include a readable venue banner saying \u201cVisit Orla\u2026,\u201d revealing probable city/location (Level 3), and a clear depiction of the person engaging in tennis (Level 3 activity). With one Level 2 clue supported by multiple Level 3 contextual clues and no direct biometric identifiers, the overall risk is moderate. Confidence is medium due to the interpretive nature of the health inference from the knee tape.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "beige kinesiology/athletic tape on the player\u2019s right knee",
+        "Anonymized_element": "plain skin tone without tape, neutral compression sleeve without visible medical implication",
+        "privacy_element": "visible therapeutic tape implying injury or health condition",
+        "target_concept": "knee tape",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "courtside advertising banner with readable text beginning 'Visit Orla\u2026'",
+        "Anonymized_element": "blank banner, generic pattern or color field, unreadable blurred text",
+        "privacy_element": "readable place-name text indicating likely city/location",
+        "target_concept": "location banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tennis racket held in the player\u2019s right hand during a swing",
+        "Anonymized_element": "neutral sports prop without brand emphasis, cropped or blurred equipment",
+        "privacy_element": "clear indication of participation in a specific sport/activity",
+        "target_concept": "sports equipment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16097202/r1_crops/2017_16097202_1.png"
+}

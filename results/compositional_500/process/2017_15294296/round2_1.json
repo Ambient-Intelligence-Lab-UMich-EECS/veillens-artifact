@@ -1,0 +1,48 @@
+{
+  "reasoning": "In this crop, several people\u2019s faces are clearly visible and unobscured (e.g., the woman in the center background and the man at left in a black cap). These constitute biometric identifiers that can uniquely identify individuals. Other faces are masked, and there are no readable names, documents, or addresses. The public-parade context adds minimal behavioral context but does not substantially increase risk beyond the faces. The highest severity is Level 1 due to identifiable faces, leading to a high overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a woman with reddish hair at the center background",
+        "Anonymized_element": "blurred face, pixelated face, neutral oval mask",
+        "privacy_element": "full facial features visible (eyes, nose, mouth) enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "unobscured face of a person wearing a black cap on the left side",
+        "Anonymized_element": "blurred face, pixelated face, neutral oval mask",
+        "privacy_element": "recognizable facial features in close view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small, unobscured face of a man with sunglasses in the background near the yellow bus",
+        "Anonymized_element": "blurred face, pixelated face, neutral oval mask",
+        "privacy_element": "distinct facial outline despite sunglasses enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15294296/r1_crops/2017_15294296_1.png"
+}

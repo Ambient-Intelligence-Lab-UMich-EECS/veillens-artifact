@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a foggy residential street at night with streetlights and a few house facades. No people, faces, license plates, documents, or readable text are visible. There are no house numbers or distinctive landmarks to pinpoint location. The only minor privacy element is the exterior of private homes, which reveals property presence but not specific identity or address. Therefore, risk is low with Level 4 features only and minimal compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side house facade with illuminated garage and porch",
+        "Anonymized_element": "generic building front, softened architectural details, dimmed lights, no distinctive features",
+        "privacy_element": "exterior of a private home without address numbers",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13539187/final/2017_13539187_final.png"
+}

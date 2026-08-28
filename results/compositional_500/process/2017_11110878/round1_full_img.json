@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows a shirtless individual with hands cuffed behind the back surrounded by police officers at night. No identifiable faces are visible, so no direct biometric data is exposed. The highest-risk clues are Level 3: the handcuffs clearly depict an arrest/detention (sensitive activity) and the subject\u2019s bare torso reveals physical attributes. Additional weaker clues include police uniform patches that could hint at city/agency and a vehicle\u2019s partially visible license plate. Together these provide moderate privacy risk without uniquely identifying a person.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal handcuffs on the central person\u2019s wrists behind their back",
+        "Anonymized_element": "empty wrists, hands at sides, no restraints",
+        "privacy_element": "visible restraints indicating arrest/detention",
+        "target_concept": "handcuffs",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bare upper back and torso of the central person",
+        "Anonymized_element": "plain short-sleeve T-shirt covering torso",
+        "privacy_element": "exposed body revealing build, skin features",
+        "target_concept": "bare torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "police officer shoulder patch with emblem on uniform",
+        "Anonymized_element": "blank generic patch, no logo or text",
+        "privacy_element": "agency insignia that can reveal jurisdiction/city",
+        "target_concept": "police patch",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rear of a red car with a partially visible license plate",
+        "Anonymized_element": "blanked or smudged plate, generic bumper",
+        "privacy_element": "license plate characters and specific vehicle details",
+        "target_concept": "license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11110878.jpg"
+}

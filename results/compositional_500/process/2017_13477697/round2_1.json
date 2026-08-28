@@ -1,0 +1,48 @@
+{
+  "reasoning": "This crop shows a religious ceremony with two clearly identifiable faces of adult men wearing clerical vestments. The visible faces constitute Level 1 biometric data. The vestments with religious symbols enable a Level 2 sensitive inference about religion and participation in a religious rite (activity). Together these cues raise the privacy risk despite the absence of names or documents. The faces are central and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of a man in cream-colored vestments near the upper center, looking downward",
+        "Anonymized_element": "blurred or pixelated face, face masked, head turned away",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "side-profile face of a bald man in cream vestments at center-right",
+        "Anonymized_element": "blurred or pixelated face, apply oval mask, turn head away",
+        "privacy_element": "recognizable facial profile with visible features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "gold-and-white clerical chasuble and stole with red patterned panels on person at center",
+        "Anonymized_element": "plain neutral robe without symbols or patterns, generic formal garment",
+        "privacy_element": "religious vestments and cross-like patterns indicating religious role/affiliation",
+        "target_concept": "clerical vestments",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13477697/r1_crops/2017_13477697_1.png"
+}

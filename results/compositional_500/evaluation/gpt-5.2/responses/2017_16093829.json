@@ -1,0 +1,76 @@
+{
+  "reasoning": "The image shows a public event with multiple people whose faces are obscured or turned away, reducing biometric risk. However, several readable objects disclose organizational and geographic context: a large “u district” banner, shirts with the same logo, a podium placard reading a specific university/city, and national/provincial flags. These elements together indicate a fairly specific location and event affiliation, but no names, IDs, or financial/medical data are visible. Thus risk stems mainly from location and activity context rather than identity. Final risk is moderate-low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "teal standing banner with readable text 'u district' and slogan",
+        "Anonymized_element": "plain teal banner, no text or logo, abstract pattern only",
+        "privacy_element": "readable organization name and slogan",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "podium placard with readable university and city text",
+        "Anonymized_element": "blank wooden podium, placard removed or blurred text",
+        "privacy_element": "specific institution name and city visible",
+        "target_concept": "podium sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Canadian national flag behind podium",
+        "Anonymized_element": "generic solid-color flag, abstract emblem",
+        "privacy_element": "national flag indicating country",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "provincial/regional flag with distinct crest behind podium",
+        "Anonymized_element": "generic patterned flag without recognizable symbols",
+        "privacy_element": "regional flag indicating province/region",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "speaker’s teal T-shirt with readable 'u district' logo",
+        "Anonymized_element": "plain T-shirt, no text or logo",
+        "privacy_element": "organization branding indicating affiliation/location context",
+        "target_concept": "logo on clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "out-of-focus audience seen from behind",
+        "Anonymized_element": "maintain blur or replace with generic silhouettes",
+        "privacy_element": "presence at a specific public event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16093829/final/2017_16093829_final.png"
+}

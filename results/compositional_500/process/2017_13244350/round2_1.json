@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a public gathering with several visible, identifiable faces and handheld placards suggesting participation in a protest or rally. The clearest face is a person wearing a blue patterned hat in the lower-right; another profile face is visible mid-frame. These constitute Level 1 biometric data. The presence of protest signs introduces potential sensitive inference about political activity even though the text is not readable. Combined, these cues yield a high privacy risk. Confidence is high because the faces and protest context are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of a person wearing a blue patterned hat in the lower-right foreground",
+        "Anonymized_element": "apply strong blur or pixelation over face, replace with generic head silhouette, turn head away",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "profile face of a person in the center-right of the crowd (side view)",
+        "Anonymized_element": "blur or pixelate face, replace with featureless profile, occlude with object",
+        "privacy_element": "identifiable facial features (profile)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large placard held aloft by the foreground person (text not readable)",
+        "Anonymized_element": "plain blank sign without slogans or symbols, neutral color board",
+        "privacy_element": "visible protest sign implying participation in a demonstration",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13244350/r1_crops/2017_13244350_1.png"
+}

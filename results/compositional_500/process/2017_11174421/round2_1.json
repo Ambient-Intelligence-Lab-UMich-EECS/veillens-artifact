@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a transparent plastic card sleeve or laminated card on a wooden surface with its contents fully blank/obscured. No text, numbers, logos, faces, or other identifiers are legible. The only privacy-relevant cue is the presence of a generic card-like document, which is a low-risk indicator on its own. Therefore the risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "transparent plastic card sleeve with a blank/obscured insert on a desk",
+        "Anonymized_element": "empty sleeve, no insert, plain plastic; or fully blank card with no markings",
+        "privacy_element": "card-like document form factor resembling an ID/badge",
+        "target_concept": "generic card/sleeve",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11174421/r1_crops/2017_11174421_1.png"
+}

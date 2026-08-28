@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows physical currency notes (a 20 euro bill and a 20 pound note) on a surface. There are no identifiable human faces, names, account numbers, or government IDs. The only privacy-relevant clue is the display of cash, which indicates possession of a small amount of money but does not identify a person. This is a low-level property/asset signal without compositional reinforcement. Hence the overall privacy risk is low, with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible 20 euro banknote on the left side",
+        "Anonymized_element": "generic patterned paper, blurred denomination and currency, abstract note-like graphic",
+        "privacy_element": "cash denomination and currency type indicating possession of money",
+        "target_concept": "banknote",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "partially visible 20-pound banknote beneath the euro note",
+        "Anonymized_element": "generic patterned paper, blurred denomination and text, abstract note-like graphic",
+        "privacy_element": "cash denomination and currency type indicating possession of money",
+        "target_concept": "banknote",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10538744/final/2017_10538744_final.png"
+}

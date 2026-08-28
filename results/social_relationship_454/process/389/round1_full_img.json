@@ -1,0 +1,27 @@
+{
+  "img_id": "389",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "predictions": {
+    "1 2": 2
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: The woman is closely cradling the infant in her arms, with protective, affectionate body language in a casual indoor setting; their intimate physical contact suggests a parent-child bond rather than a professional or commercial interaction. => family-members",
+  "timestamp": 1776888413.3251128
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows two people indoors with their faces clearly visible and centrally framed. No government IDs, text, or location markers are present. The primary privacy risk comes from identifiable biometric data (two unobstructed faces), which can enable recognition and linkage to other information. With no additional identifiers, the risk is driven mainly by Level 1 facial biometrics, reinforced by visible personal appearance traits. Thus, the overall risk is high-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Woman\u2019s front-facing face near the left-center of the image",
+        "Anonymized_element": "blurred face, pixelated face, occluded eyes, turned-away head, generic silhouette",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Man\u2019s expressive face near the right-center of the image",
+        "Anonymized_element": "blurred face, pixelated face, occluded eyes, turned-away head, generic silhouette",
+        "privacy_element": "full face with distinct features and open mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10769632.jpg"
+}

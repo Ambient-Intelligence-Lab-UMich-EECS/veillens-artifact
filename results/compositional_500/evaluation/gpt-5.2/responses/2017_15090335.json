@@ -1,0 +1,32 @@
+{
+  "reasoning": "The central subject’s face is fully obscured, eliminating direct biometric identification. The scene shows a crowded market-like environment with several distant or side-turned individuals whose faces are small and not clearly identifiable. No readable names, addresses, financial or medical details are visible. The main privacy signals are weak: background unidentifiable people and a clearly depicted activity (carrying a large basin on the head) that hints at occupation or context. These constitute low to moderate, context-only risk without strong identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distant background individuals with side or partially occluded faces",
+        "Anonymized_element": "reduce facial detail further, apply slight blur, crop to torso-only silhouettes",
+        "privacy_element": "unidentifiable human faces and bodies in a crowd",
+        "target_concept": "crowd of people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "large plastic basin balanced on the foreground person’s head",
+        "Anonymized_element": "neutral object with ambiguous use, crop above shoulders, replace with generic background",
+        "privacy_element": "specific activity of carrying a heavy basin on the head indicating work/behavior",
+        "target_concept": "activity object (basin)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15090335/final/2017_15090335_final.png"
+}

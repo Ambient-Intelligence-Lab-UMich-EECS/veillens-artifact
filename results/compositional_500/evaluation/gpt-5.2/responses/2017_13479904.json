@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows the exterior of a residential house with stucco walls, a front window, a wrought-iron gate, and distinctive landscaping. No people, faces, addresses, license plates, documents, or readable text are visible. The primary privacy signal is the recognizable home exterior and garden that could be linked to a specific property by someone familiar with it. This corresponds to low-risk Level 4 clues only, without reinforcing identifiers. Therefore the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stucco house facade with a green-trimmed front window",
+        "Anonymized_element": "neutral plain wall texture, generic window trim, partial crop to remove distinctive facade",
+        "privacy_element": "recognizable home exterior details that could be matched by acquaintances",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "front yard garden with distinctive palms, tree, and potted flowers",
+        "Anonymized_element": "generic low-detail greenery, simplified plants without unique arrangement",
+        "privacy_element": "unique landscaping pattern that may help recognize a residence",
+        "target_concept": "landscaping",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13479904/final/2017_13479904_final.png"
+}

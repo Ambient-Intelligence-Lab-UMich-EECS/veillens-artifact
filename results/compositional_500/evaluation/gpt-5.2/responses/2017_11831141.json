@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image depicts the interior of a church with a congregation seated facing an altar. Most individuals are seen from behind or at a distance, so no identifiable faces are visible, avoiding Level 1 risks. However, clear religious symbols (altar, cross, stained glass) and the presence of congregants and an officiant indicate participation in a religious service, which supports a sensitive inference about religion (Level 2). The distinctive interior may also hint at a specific location (Level 3). Combining these cues yields a moderate privacy risk. Confidence is medium due to distance/partial views of people but strong contextual religious cues.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central altar with cross, candles, and religious adornments at the front of the church",
+        "Anonymized_element": "neutral stage backdrop, abstract decor, no cross or religious icons",
+        "privacy_element": "religious symbols that reveal a church setting",
+        "target_concept": "altar with religious symbols",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "rows of congregants seated in pews, mostly backs of heads facing forward",
+        "Anonymized_element": "empty pews, generic silhouettes without human detail",
+        "privacy_element": "visible attendance at a religious service",
+        "target_concept": "congregation seating area",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "robed officiant standing near the altar area",
+        "Anonymized_element": "no person present, replace with neutral podium",
+        "privacy_element": "leadership role in a religious ceremony",
+        "target_concept": "officiant at altar",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "large stained-glass window above the altar with distinctive patterns",
+        "Anonymized_element": "plain frosted glass window, abstract geometric pattern",
+        "privacy_element": "distinctive architectural feature that can indicate a specific church location",
+        "target_concept": "stained-glass window",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11831141/final/2017_11831141_final.png"
+}

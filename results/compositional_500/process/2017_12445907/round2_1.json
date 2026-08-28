@@ -1,0 +1,83 @@
+{
+  "reasoning": "The crop shows a street parade with several clearly identifiable faces (participants near and inside the front car), which constitutes Level 1 biometric exposure. A rainbow-themed accessory on a participant suggests potential sensitive inference about sexual orientation or related affiliation (Level 2). A readable front license plate on the lead car adds location/property linkage (Level 3). Background spectators are small but include many faces (Level 4). With multiple direct faces plus a sensitive-symbol cue, the overall privacy risk is high; evidence is clear and centered, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "driver\u2019s face visible through the windshield of the black convertible",
+        "Anonymized_element": "blurred face, opaque sun glare, tinted windshield, generic head silhouette",
+        "privacy_element": "identifiable facial features, unobstructed eyes/nose/mouth shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front passenger\u2019s face visible above dashboard in the convertible",
+        "Anonymized_element": "blurred face, tinted glass, generic head silhouette",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "walking participant to left of car with face visible, arm raised holding white cap",
+        "Anonymized_element": "blurred face, neutralized head silhouette, cap lowered",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rainbow-colored accessory on participant at far right edge of the street",
+        "Anonymized_element": "solid neutral color accessory, no rainbow pattern or symbols",
+        "privacy_element": "rainbow pride symbolism implying sexual orientation or affiliation",
+        "target_concept": "pride-themed accessory",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front license plate on the black convertible with legible characters and state text",
+        "Anonymized_element": "blank plate, blurred characters, generic non-descript plate",
+        "privacy_element": "readable license number format, state identifier",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of spectators on sidewalk with many small, partially visible faces",
+        "Anonymized_element": "blurred crowd region, reduced facial detail",
+        "privacy_element": "multiple unblurred but distant faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12445907/r1_crops/2017_12445907_1.png"
+}

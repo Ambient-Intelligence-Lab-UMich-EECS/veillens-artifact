@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a riverside cityscape with a distinctive hilltop brick tower and bridge, plus a single distant person fishing on the embankment. No readable text, faces, or IDs are visible. The highest severity stems from Level 3 location information due to recognizable landmarks that can pinpoint a specific city area. The fishing activity adds an activities/behaviors clue, but the person is distant and unidentifiable, reducing risk. Combined, these cues yield a moderate but non-severe privacy risk. Confidence is high because the landmarks and activity are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red-brick tower on top of a grassy hill with a flag",
+        "Anonymized_element": "remove tower, replace with generic trees or gazebo-like structure, neutral hilltop without distinctive architecture",
+        "privacy_element": "recognizable historic tower on hilltop that can pinpoint location",
+        "target_concept": "landmark tower",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "arched modern bridge spanning the river at left",
+        "Anonymized_element": "replace with generic straight pedestrian bridge or remove bridge details",
+        "privacy_element": "distinctive bridge design along specific riverside",
+        "target_concept": "bridge",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "single distant person holding a fishing rod on the riverbank",
+        "Anonymized_element": "remove person, blur figure, replace with empty walkway or generic pedestrian silhouette",
+        "privacy_element": "fishing activity on a specific riverside spot; human presence (unidentifiable)",
+        "target_concept": "person fishing",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12866523/r1_crops/2017_12866523_1.png"
+}

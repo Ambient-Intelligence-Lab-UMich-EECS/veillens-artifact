@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows paper currency: a 20 euro note overlapping a 20-pound note. There are no visible people, faces, names, addresses, account numbers, or government IDs. Cash implies ownership of money but does not uniquely identify a person. Thus the highest severity present is low (property/assets). Multiple banknotes slightly increase contextual risk but remain limited. Overall risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single 20-euro banknote with visible denomination and security strip",
+        "Anonymized_element": "generic patterned paper slip, muted abstract design, no currency symbols or denomination",
+        "privacy_element": "currency type, denomination, security features indicating cash possession",
+        "target_concept": "banknote",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "single 20-pound banknote partially visible with portrait and denomination",
+        "Anonymized_element": "plain voucher-like paper, abstract shapes, no denomination or national symbols",
+        "privacy_element": "currency type, denomination, portrait and design indicating cash possession",
+        "target_concept": "banknote",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10538744/r1_crops/2017_10538744_0.png"
+}

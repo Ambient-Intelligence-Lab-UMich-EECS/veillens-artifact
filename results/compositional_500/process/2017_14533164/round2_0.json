@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a public gathering with several clearly visible faces in profile and front view, which are strong biometric identifiers. A participant on the right and others in the mid-ground are identifiable. There is also a visible protest sign, indicating participation in a public demonstration (an activity that can imply views), though the specific text is not fully legible. No government IDs, names, or precise location data are visible. Due to multiple Level 1 biometric clues reinforced by activity context, the overall privacy risk is high. Confidence is high because faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing adult man's face on the right side wearing glasses",
+        "Anonymized_element": "blurred face, pixelated facial region, generic head silhouette",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "profile view of a woman\u2019s face in the left foreground with light brown hair",
+        "Anonymized_element": "blurred side-profile, pixelated facial area, generic skin-tone patch",
+        "privacy_element": "identifiable facial profile, nose and mouth outline, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "mid-ground person\u2019s face visible between crowd members near center-left",
+        "Anonymized_element": "blurred facial region, pixelation, generic oval shape",
+        "privacy_element": "recognizable facial structure, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "pink protest sign held above the crowd with partially readable print",
+        "Anonymized_element": "blank sign, solid color with no text or symbols",
+        "privacy_element": "protest signage indicating participation in public demonstration",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14533164/r1_crops/2017_14533164_0.png"
+}

@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows two panelists at a conference table with clearly visible, front-facing faces, which are strong biometric identifiers (Level 1). In front of each person, desk placards display readable full names, job titles, and an organizational logo, adding non-unique identifiers that reinforce identity linkage (Level 2). One person also wears a conference lanyard badge with logo and likely name text, further corroborating identity. These multiple, central, and legible cues compound the risk. Hence the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left panelist\u2019s unobstructed face, looking sideways",
+        "Anonymized_element": "blurred face, pixelated facial area, generic silhouette",
+        "privacy_element": "full face with clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right panelist\u2019s unobstructed face, looking forward-left",
+        "Anonymized_element": "blurred face, pixelated facial area, generic silhouette",
+        "privacy_element": "full face with clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "desk placard in front of left panelist with readable name and job title plus organization logo",
+        "Anonymized_element": "blank placard, no text, no logo, generic color",
+        "privacy_element": "readable personal name, job title, organizational branding",
+        "target_concept": "name placard",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "desk placard in front of right panelist with readable name and job title plus organization logo",
+        "Anonymized_element": "blank placard, no text, no logo, generic color",
+        "privacy_element": "readable personal name, job title, organizational branding",
+        "target_concept": "name placard",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "lanyard badge worn by right panelist with visible logo and partial text",
+        "Anonymized_element": "plain lanyard, blank badge without text or logo",
+        "privacy_element": "badge potentially showing name, affiliation logo",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16257673.jpg"
+}

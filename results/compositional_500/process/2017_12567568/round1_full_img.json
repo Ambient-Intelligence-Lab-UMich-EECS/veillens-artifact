@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a street parade/fitness event with multiple clearly visible, front-facing individuals. Two foreground participants\u2019 faces are unobstructed, providing strong biometric identifiers (Level 1). A real-estate \u201cAvailable\u201d sign in the background shows a readable agent name and phone number, adding non-unique identifiers (Level 2). Storefront signs provide identifiable location cues, and branded apparel indicates participation in a specific activity (Level 3). The combination of several clear faces with a readable personal contact sign elevates the overall risk. Score reflects multiple high-severity clues with good legibility. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person with bright pink wig, front-facing face",
+        "Anonymized_element": "replace face with synthetic, non-identifiable face; add sunglasses; blur facial features",
+        "privacy_element": "full face, clear eyes/nose/mouth, high-resolution skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground dancer in purple top, front-facing face",
+        "Anonymized_element": "replace with generic non-identifiable face; add cap/sunglasses; blur facial features",
+        "privacy_element": "full face, clear eyes/nose/mouth, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white real-estate sign reading AVAILABLE with agent name and phone number on building facade (upper-left background)",
+        "Anonymized_element": "blank sign, remove/blur text and numbers, generic for-rent graphic",
+        "privacy_element": "readable personal name, readable phone number",
+        "target_concept": "advertising sign with contact info",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront signage with readable business names (e.g., Taco Loco, Angela\u2019s) along the street",
+        "Anonymized_element": "blank awnings, generic storefront textures, remove/blur text and logos",
+        "privacy_element": "readable business names functioning as local landmarks",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "participant\u2019s tank top with large Zumba branding indicating activity",
+        "Anonymized_element": "plain tank top without logos or text, generic color",
+        "privacy_element": "readable activity/brand name revealing participation in a specific class/event",
+        "target_concept": "branded apparel",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12567568.jpg"
+}

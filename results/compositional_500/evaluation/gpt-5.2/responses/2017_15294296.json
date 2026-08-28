@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a public parade scene with several people whose faces and a sign are intentionally obscured. No readable names, documents, or government/financial identifiers are visible. The main residual risks are moderate contextual clues: participation in a public event (colorful bead necklaces and festive attire) revealing activity/behavior, and a recognizable streetscape with residential facades that could hint at location if cross-referenced. The presence of a crowd with obscured faces adds minimal risk from clothing/body attributes. With no Level 1 or Level 2 clues visible, overall risk is low-to-moderate based on Level 3/4 context only. Confidence is medium due to clear visibility of the scene but absence of direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "multiple colorful bead necklaces worn by people in the foreground",
+        "Anonymized_element": "plain necklaces or no accessories, muted colors, generic clothing without event-specific items",
+        "privacy_element": "festival-style accessories indicating participation in a public event or parade",
+        "target_concept": "event accessories (bead necklaces)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "group of people standing on sidewalk with faces obscured",
+        "Anonymized_element": "generic silhouettes, further blur of body shapes and clothing patterns",
+        "privacy_element": "presence of identifiable body build and distinctive clothing despite obscured faces",
+        "target_concept": "crowd of individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "residential-style building facade with balconies in background",
+        "Anonymized_element": "blurred or simplified building facade, remove distinctive architectural details",
+        "privacy_element": "recognizable streetscape/architecture that could narrow down location context",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15294296/final/2017_15294296_final.png"
+}

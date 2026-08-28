@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a shirtless person seated on a yoga mat in a butterfly stretch. The face is fully obscured, so no identifiable biometrics are visible. The primary privacy cues are the exposed upper body revealing physical attributes and the clear depiction of a fitness/yoga activity. These are Level 3 elements (personal attributes and activities) without any Level 1\u20132 identifiers present. Consequently, the risk is moderate-low, supported by clear visual evidence but limited in sensitivity and identifiability.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shirtless upper torso and arms of a seated person",
+        "Anonymized_element": "add plain t\u2011shirt or tank top, reduce skin visibility, neutral clothing",
+        "privacy_element": "bare chest, visible body shape and body hair indicating physical appearance",
+        "target_concept": "bare torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "yoga mat with person in butterfly stretch posture",
+        "Anonymized_element": "neutral sitting posture on chair or standing, remove mat or replace with plain floor",
+        "privacy_element": "exercise/yoga activity context, flexibility routine indicated by pose and mat",
+        "target_concept": "yoga pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/r1_crops/2017_14958433_2.png"
+}

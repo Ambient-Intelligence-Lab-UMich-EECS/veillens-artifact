@@ -1,0 +1,49 @@
+{
+  "reasoning": "The image shows two individuals at an event, both with clear, frontal, well-lit faces that are easily identifiable (Level 1 biometric data). One holds a glass award plaque with legible engraved text revealing a full personal name and event/date details, which are non-unique identifiers and activity context (Level 2). The combination of multiple identifiable faces with a readable name on the award reinforces linkage to a specific person and occasion, raising the privacy risk. Given the clarity and centrality of these clues, the overall risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s frontal face with clear facial features",
+        "Anonymized_element": "blurred face, low-detail silhouette, turned head away",
+        "privacy_element": "full face, eyes visible, distinctive facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s frontal face with clear facial features",
+        "Anonymized_element": "blurred face, low-detail silhouette, turned head away",
+        "privacy_element": "full face, eyes visible, distinctive facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "glass award plaque held at center with readable engraving",
+        "Anonymized_element": "blank plaque, no text or logos, generic reflective surface",
+        "privacy_element": "readable personal name 'Scott Pelley', event title, and date 'May 20, 2013'",
+        "target_concept": "award plaque with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15418699.jpg"
+}

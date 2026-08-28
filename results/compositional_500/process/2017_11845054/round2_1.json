@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a man in the foreground with a clearly visible side-profile face and glasses, which is identifiable biometric data (Level 1). He is seated in a recognizable wheelchair, revealing a potential disability inference (Level 2). His right hand appears to hold a cigarette, indicating a specific behavior (Level 3). A second person\u2019s face in the mid\u2011background is also partially identifiable. The combination of an identifiable face with sensitive health inference and behavioral detail elevates the privacy risk to high. Clues are clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground man\u2019s left-facing profile with glasses",
+        "Anonymized_element": "blurred face, head turned away, generic featureless face",
+        "privacy_element": "recognizable facial features, side-profile biometrics",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "manual wheelchair frame and rear wheel next to the seated man",
+        "Anonymized_element": "regular chair armrest, generic bench edge, remove wheelchair details",
+        "privacy_element": "mobility aid indicating possible disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "right hand of the seated man holding a cigarette near lap",
+        "Anonymized_element": "empty hand, hand holding neutral object (pen), remove cigarette",
+        "privacy_element": "smoking behavior/consumption pattern",
+        "target_concept": "cigarette in hand",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "mid-background seated person\u2019s face looking forward with hands near cheeks",
+        "Anonymized_element": "blurred face, masked/turned-away face",
+        "privacy_element": "partially recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11845054/r1_crops/2017_11845054_1.png"
+}

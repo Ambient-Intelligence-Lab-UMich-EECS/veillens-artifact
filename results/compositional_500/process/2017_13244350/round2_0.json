@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a public demonstration scene with multiple clearly visible faces and raised protest signs. The most privacy-critical clues are identifiable faces (Level 1 biometric data). The protest context and placards imply participation in a political activity (Level 2 sensitive inference) which compounds risk when linked to faces. No government or financial IDs are visible. Given multiple unobscured faces and the political-activity context, the privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a man in a gray shirt on the right side, profile view",
+        "Anonymized_element": "face blurred, replaced with back-of-head, generic non-identifiable silhouette",
+        "privacy_element": "identifiable facial features, hairstyle, profile outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "front-facing face of a woman in a light gray hoodie near the left foreground",
+        "Anonymized_element": "face blurred, generic featureless mask, back-of-head substitution",
+        "privacy_element": "identifiable facial features, hair style, eyewear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large protest sign held overhead by a person in the center foreground",
+        "Anonymized_element": "blank neutral placard, generic poster with abstract pattern, remove slogans or logos",
+        "privacy_element": "political demonstration context, potential readable slogans linking beliefs to individuals nearby",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13244350/r1_crops/2017_13244350_0.png"
+}

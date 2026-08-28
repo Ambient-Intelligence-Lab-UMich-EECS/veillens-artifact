@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a large public demonstration with many people and Turkish flags. Multiple human faces are visible but mostly small and partially occluded, providing some biometric risk. Protest placards with partially legible Turkish slogans and the prominent national flag indicate participation in a political rally, creating sensitive-inference risk about political views and activities. The flags also imply country-level location. Together, these clues raise privacy risk beyond simple crowd context, though the limited legibility and distance reduce severity. Score reflects combined Level 1 (faces) and Level 2 (political inference) signals with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clusters of human faces in the crowd at mid-frame",
+        "Anonymized_element": "blurred faces, obfuscated facial features, low-detail silhouettes",
+        "privacy_element": "recognizable facial features, eyes and nose contours enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld protest placard with partially readable Turkish text near upper-left crowd",
+        "Anonymized_element": "blank placard, abstract shapes, non-text graphic",
+        "privacy_element": "political slogan text indicating stance or cause",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "very large Turkish national flag being carried across the foreground",
+        "Anonymized_element": "plain red fabric with no emblem, generic patterned cloth",
+        "privacy_element": "national symbol implying political/national affiliation and event context",
+        "target_concept": "national flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dense crowd of people filling the square",
+        "Anonymized_element": "reduced crowd density, generic silhouettes without detail",
+        "privacy_element": "presence at a public rally implying participation in a specific event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13279528.jpg"
+}

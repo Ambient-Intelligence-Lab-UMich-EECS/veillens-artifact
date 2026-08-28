@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a certified copy of a marriage entry from the UK General Register Office. Multiple high-risk identifiers are clearly readable, including a unique application number and a certificate/serial number. Personal names of the individuals and their fathers are legible, and the document displays place information (registration district and county) and parish references. Because government-issued unique numbers are present (Level 1) and are reinforced by names (Level 2) and location details (Level 3), the compositional risk is severe. The text is centrally framed and highly legible, leading to a high-confidence assessment and a high privacy score.",
+  "personal_info_privacy_score": {
+    "score": 0.82,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Top-right printed line with 'Application Number' followed by digits",
+        "Anonymized_element": "blank header text, masked digits (e.g., 0000000/0), light texture fill",
+        "privacy_element": "unique government application number, document processing reference",
+        "target_concept": "application number text",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Bottom-left printed certificate serial 'MXG 315984'",
+        "Anonymized_element": "generic alphanumeric placeholder (e.g., XXX 000000), blank area, subtle watermark only",
+        "privacy_element": "certificate serial/registration number uniquely identifying the record",
+        "target_concept": "certificate serial number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Table cells labeled 'Name and Surname' with handwritten names of the spouses and fathers",
+        "Anonymized_element": "blanked names, generic placeholders (e.g., Given Name Surname), light scribble without meaning",
+        "privacy_element": "full personal names of multiple individuals, handwritten signatures of names",
+        "target_concept": "names text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed and handwritten location fields indicating parish/church, Registration District 'St Thomas', County 'Devon'",
+        "Anonymized_element": "generic location placeholders (e.g., District X, County Y), removed parish name",
+        "privacy_element": "specific geographic identifiers of the event location and jurisdiction",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14720865.jpg"
+}

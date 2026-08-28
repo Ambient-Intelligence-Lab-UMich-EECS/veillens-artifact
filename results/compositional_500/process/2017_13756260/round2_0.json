@@ -1,0 +1,70 @@
+{
+  "reasoning": "The crop shows a parade scene with several unmasked spectator faces in the background, which are directly identifying biometric data. Additional contextual clues include a sash with printed title text on a participant, ornate pageant crowns, and a street \u201cDo Not Enter\u201d sign indicating general street context. These Level 3\u20134 clues add activity and coarse location context but do not reveal names or precise addresses. Because identifiable faces (Level 1) are present though somewhat small and in the background, the overall risk is moderate. Confidence is high given clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "background spectator\u2019s face holding a camera near the right side of the frame",
+        "Anonymized_element": "blurred face region, generic silhouette, obfuscated facial features",
+        "privacy_element": "visible face with distinct facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background spectator\u2019s face with sunglasses on left-center behind barricade",
+        "Anonymized_element": "blurred face region, generic head shape, remove facial detail",
+        "privacy_element": "visible facial structure even with partial sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white pageant sash with printed title across participant\u2019s torso",
+        "Anonymized_element": "plain sash with no text or logos, solid color fabric",
+        "privacy_element": "printed title text that could reveal role or organization",
+        "target_concept": "sash with text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "decorative crown/tiara worn by parade participant",
+        "Anonymized_element": "plain headband, generic hat without symbols",
+        "privacy_element": "distinctive ceremonial crown signaling role/status at event",
+        "target_concept": "crown/tiara",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "red and white \u201cDo Not Enter\u201d street sign on a pole in the background",
+        "Anonymized_element": "blank circular sign, neutral colored shape with no text",
+        "privacy_element": "recognizable traffic sign indicating street context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13756260/r1_crops/2017_13756260_0.png"
+}

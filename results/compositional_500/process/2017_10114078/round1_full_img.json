@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows a street parade with multiple clearly visible human faces, including foreground participants and nearby spectators. Identifiable faces constitute Level 1 biometric data. A storefront sign (\u201cST. JOHN\u201d) provides mild location context but is less identifying on its own. The combination of several unobscured faces in close view elevates risk to high. No government IDs, financial/medical info, or explicit sensitive content are present. Overall score reflects multiple Level 1 clues with clear visibility. Confidence is high due to direct visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground shirtless flag bearer on right with unobstructed face",
+        "Anonymized_element": "smooth skin-tone oval in place of face, no facial details, low-contrast shading",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "central female flag bearer in white outfit with visible face",
+        "Anonymized_element": "face blurred or replaced by blank oval, no eyes/nose/mouth detail",
+        "privacy_element": "recognizable facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "male spectator in blue shirt behind barricade at right-center with clear face",
+        "Anonymized_element": "de-identified face with uniform blur, no distinct features",
+        "privacy_element": "distinct facial features, eye and nose contours visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign reading 'ST. JOHN' on left-side building facade",
+        "Anonymized_element": "blank facade, generic unbranded signage, low-detail texture",
+        "privacy_element": "business name signage that can indicate place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10114078.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a small aircraft inside a hangar with a clearly readable registration number printed on the fuselage. No people or biometric data are visible. The most privacy-relevant clue is the aircraft\u2019s unique identifier (tail number), which can link to ownership records, but it concerns property rather than a person directly. No names, addresses, or financial/medical details are present. Thus risk is low but nonzero due to the unique vehicle identifier. Confidence is high given the clarity of the registration text.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black registration text 'G-BHFI' on the aircraft fuselage side",
+        "Anonymized_element": "blank fuselage area, blurred/removed registration, generic stripe with no text",
+        "privacy_element": "readable unique aircraft tail number/registration",
+        "target_concept": "aircraft registration",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11200064/r1_crops/2017_11200064_1.png"
+}

@@ -1,0 +1,49 @@
+{
+  "reasoning": "A person is shown close-up with a clearly identifiable face, which is strong biometric information (Level 1). A conference name badge is visible and legible, revealing the person\u2019s name and affiliation, adding non-unique identifiers and potential location context (Level 2). An event logo and text overlay indicate the specific event and year, which further contextualizes activity and time (Level 3). The combination of a clear face with a readable name badge notably increases re-identification risk, justifying a high privacy score. Confidence is high because these elements are centrally framed and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Frontal view of a person\u2019s face with clear eyes and smile",
+        "Anonymized_element": "blurred or pixelated face, masked eyes, cropped framing to exclude face",
+        "privacy_element": "full face, distinctive facial features, visible eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Conference name badge on chest with readable text showing name and affiliation",
+        "Anonymized_element": "blank badge, blurred text, generic card without logo or name",
+        "privacy_element": "person\u2019s name, organizational/region label, conference logo",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Event logo and text overlay at bottom reading the conference name and year",
+        "Anonymized_element": "remove overlay, replace with generic icon without text or year",
+        "privacy_element": "event name, organization branding, year indicating time and context",
+        "target_concept": "event banner/text overlay",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14931698.jpg"
+}

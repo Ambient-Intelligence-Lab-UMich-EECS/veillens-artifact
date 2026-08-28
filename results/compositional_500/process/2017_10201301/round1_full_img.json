@@ -1,0 +1,47 @@
+{
+  "reasoning": "A presentation slide shows a clearly readable email address while a presenter stands at the lower left with a visible face. The face constitutes Level 1 biometric data, though it is somewhat small. The legible email is a Level 2 non-unique identifier that can link to a specific person or organization. Visible distinctive forearm tattoos add a Level 3 personal attribute that can aid identification. Combined, these cues yield a moderate-to-high privacy risk. Confidence is high because the email text is legible and the facial features are discernible.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "projected slide region with readable email address 'ag@studies-observations.com'",
+        "Anonymized_element": "replace with 'contact@example.com', blurred text, generic placeholder",
+        "privacy_element": "readable personal email address, unique handle, domain name",
+        "target_concept": "email address",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "presenter's face at bottom-left, side view with beard and glasses",
+        "Anonymized_element": "blurred face, pixelated facial region, silhouette without details",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, beard, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinct tattoos on the presenter\u2019s forearm",
+        "Anonymized_element": "cover with sleeve, remove tattoo patterns, plain skin",
+        "privacy_element": "distinctive tattoo designs that can uniquely identify a person",
+        "target_concept": "tattoos",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10201301.jpg"
+}

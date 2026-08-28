@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a vintage poster with readable printed text including a full business address in London, a company location in Kent, and a phone/cable contact line. No real people or biometric features are visible. The highest-severity clues are location details (street address and city), which can reveal a precise place tied to the company. Together with other contact text, these constitute low-to-moderate privacy risk, mainly as location information on a generic document. Score is kept low due to the content being corporate and non-personal, with high visual clarity.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lower-left printed line reading the London office address block",
+        "Anonymized_element": "blank or abstracted text line, generic filler text without numbers or place names",
+        "privacy_element": "readable street address with number, city and region",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bottom-center banner text showing company name with place: \"Astra Fireworks Ltd.\" and \"Richborough, Kent\"",
+        "Anonymized_element": "company name replaced with generic brand, location removed or replaced with non-specific region",
+        "privacy_element": "readable company name tied to a specific town/region",
+        "target_concept": "company/location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bottom-right line showing phone and cable contact information",
+        "Anonymized_element": "numbers and codes removed or replaced with placeholders (0000), generic wording only",
+        "privacy_element": "readable phone number and cable address/code",
+        "target_concept": "contact number text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15972923/r1_crops/2017_15972923_1.png"
+}

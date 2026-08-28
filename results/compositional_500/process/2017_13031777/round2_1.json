@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows the side of a person\u2019s head with the facial area largely obscured, leaving visible hair, an ear, and part of the neck/shoulder. No readable text, IDs, or explicit intimate content appear. The strongest privacy signals are personal physical attributes (hair style/color and ear/neck appearance), which are Level 3 and only mildly identifying without a face. Therefore the risk is low-to-moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible ear on the side of the head",
+        "Anonymized_element": "covered by hair, subtle blur, simplified ear contour without distinctive details",
+        "privacy_element": "distinct ear shape, skin texture",
+        "target_concept": "ear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "long dark hair along the side and back of the head",
+        "Anonymized_element": "generic short hair silhouette, neutral solid fill, slight blur to remove texture",
+        "privacy_element": "hair length, color, and texture indicating appearance",
+        "target_concept": "hair",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/r1_crops/2017_13031777_1.png"
+}

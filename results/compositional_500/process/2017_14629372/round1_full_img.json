@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a crowded street procession with multiple clearly visible faces, which are directly identifying (highest severity). Several participants\u2019 faces are unobstructed and near the camera. The ceremonial objects and attire strongly imply participation in a specific religious festival, enabling sensitive inference about religion. A storefront sign with a readable business name provides location context. Together, identifiable faces (Level 1) combined with sensitive religious context (Level 2) and a partial location cue (Level 3) yield a high but not extreme privacy risk. Evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man in a white shirt walking at the right-center foreground",
+        "Anonymized_element": "blurred face, neutral skin-tone patch, removed facial details",
+        "privacy_element": "distinct facial features, eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile face of a woman in a pink sari at center-right of the crowd",
+        "Anonymized_element": "profile blurred, generic color block over head",
+        "privacy_element": "side facial features including nose, mouth, and hairstyle visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of a man carrying a decorated frame at left-center",
+        "Anonymized_element": "blurred facial region, simplified oval with no features",
+        "privacy_element": "clear frontal facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large decorated ceremonial frames and offerings held above participants",
+        "Anonymized_element": "generic colorful abstract decorations without cultural or religious symbols",
+        "privacy_element": "religious/ritual objects implying specific faith and observance",
+        "target_concept": "religious procession objects",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign with readable business name on the building in the background",
+        "Anonymized_element": "blank awning/signboard with no text or logo",
+        "privacy_element": "business name and signage that can narrow geographic location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14629372.jpg"
+}

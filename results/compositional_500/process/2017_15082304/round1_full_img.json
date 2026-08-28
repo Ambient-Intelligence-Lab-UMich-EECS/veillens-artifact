@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows two clearly identifiable faces (an adult and a child) in a private bedroom. These constitute Level 1 biometric data. Additional contextual cues\u2014such as a small cake with a lit candle suggesting a personal celebration and visible children\u2019s bedding and toys indicating a private living space\u2014add moderate contextual risk but no government IDs, names, or addresses are visible. Overall risk is driven by the two faces, with contextual reinforcement from activities and private setting. Confidence is high due to clear, unobstructed visuals.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult man's face in left profile, clearly visible",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), distinctive hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child's face on bed looking toward adult, unobstructed",
+        "Anonymized_element": "blurred face, emoji overlay, head turned away",
+        "privacy_element": "identifiable facial features of a minor (eyes, nose, mouth), distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small cake with a lit candle held by the adult",
+        "Anonymized_element": "plain plate with generic pastry, no candle",
+        "privacy_element": "birthday/celebration cue indicating personal event and potential date proximity",
+        "target_concept": "cake with candle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bed with floral bedding and stuffed toys in a child\u2019s bedroom",
+        "Anonymized_element": "neutral plain bedding, remove distinctive toys and decor",
+        "privacy_element": "personal belongings and private home interior context",
+        "target_concept": "bed and toys",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15082304.jpg"
+}

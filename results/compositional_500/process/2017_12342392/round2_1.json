@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a piece of paper with informal handwritten phrases in red and blue ink. No faces, names, contact details, financial or medical information, or location cues are visible. The only privacy-relevant elements are generic handwritten text fragments, which are low-risk on their own. Thus the highest severity is Level 4 and the overall risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red handwritten phrase at top right reading roughly 'MAKING THE TEA!'",
+        "Anonymized_element": "nonsensical scribbles, generic shapes, blurred text, solid color brushstrokes",
+        "privacy_element": "handwritten text content and unique handwriting style",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue handwritten sentence fragment at left side of page",
+        "Anonymized_element": "blank area, blurred strokes, abstract doodles",
+        "privacy_element": "handwritten text content and unique handwriting style",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue handwritten phrase near lower right reading roughly 'Always giving selflessly'",
+        "Anonymized_element": "blurred or redacted text, abstract lines",
+        "privacy_element": "handwritten text content and unique handwriting style",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12342392/r1_crops/2017_12342392_1.png"
+}

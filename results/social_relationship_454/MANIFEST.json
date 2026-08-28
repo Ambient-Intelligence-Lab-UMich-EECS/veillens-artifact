@@ -1,0 +1,285 @@
+{
+  "schema_version": 1,
+  "experiment": {
+    "name": "social_relationship_454",
+    "privacy_setting": "social relationship inference",
+    "dataset": "PISC (People in Social Context), the 454-image subset pinned in pipeline2/data_sc/dataset_large.json",
+    "metric": "pair-level relationship-classification accuracy (higher = more successful attack)",
+    "images": 454,
+    "ground_truth_pairs": 1518,
+    "labels": {
+      "six_way": {
+        "1": "friends",
+        "2": "family-members",
+        "3": "couple",
+        "4": "professional",
+        "5": "commercial",
+        "6": "no-relationship"
+      },
+      "three_way": {
+        "intimate": [
+          1,
+          2,
+          3
+        ],
+        "non-intimate": [
+          4,
+          5
+        ],
+        "no-relation": [
+          6
+        ]
+      }
+    },
+    "contents": "VLM reasoning responses only. No images are included."
+  },
+  "source_run": {
+    "root": "pipeline2/data_sc",
+    "process_reasoning": "pipeline2/data_sc/pred_output/gpt-5_20260422_154635/responses/<image_id>.json",
+    "raw_attack": {
+      "gemini-3.1-flash-lite": "pipeline2/data_sc/attack_output/gemini_gemini-3.1-flash-lite_20260528_002253",
+      "gemini-3.1-pro-preview": "pipeline2/data_sc/attack_output/gemini_gemini-3.1-pro-preview_20260528_002436"
+    },
+    "defended_attack": {
+      "gemini-3.1-flash-lite": "pipeline2/data_sc/def_eval/gemini_gemini-3.1-flash-lite_20260528_011603",
+      "gpt-5.2": "pipeline2/data_sc/def_eval/openai_gpt-5.2_20260528_031757"
+    },
+    "scripts": {
+      "annotation": "pipeline2/data_sc/annotation.py",
+      "prediction": "pipeline2/data_sc/predict_from_detection.py",
+      "defense": "pipeline2/data_sc/defense.py",
+      "attack": "pipeline2/data_sc/attack.py"
+    },
+    "note": "Response bodies are copied byte-for-byte and filenames are unchanged (<image_id>.json in every source run).",
+    "duplicate": "veillens-runs/data_sc/pred_output/gpt-5_20260422_154635 is a byte-identical copy of the prediction run."
+  },
+  "parts": {
+    "process": {
+      "path": "process/<image_id>/round1_full_img.json",
+      "images": 454,
+      "files": 454,
+      "bytes": 397389,
+      "what": "gpt-5 reading the unprotected image and predicting a label for every detected pair. This is both the raw gpt-5 baseline and the input defense.py consumes to decide which subjects to withhold.",
+      "model": "gpt-5",
+      "model_id_recorded_in_artifacts": null,
+      "attribution": "the source run directory is named gpt-5_20260422_154635 and predict_from_detection.py sets MODEL='gpt-5'; no response file carries a model field",
+      "read_image": "the original PISC image; this stage runs its OWN person detector rather than using ground-truth boxes",
+      "coverage_caveat": "detection misses subjects, so only 1109 of the 1518 ground-truth pairs received an answer (73.1%). Accuracy over all 1518 pairs is 0.5323; over the 1109 answered pairs it is 0.7286. The two attack.py runs use ground-truth boxes and answer ~100% of pairs, so gpt-5's number is NOT directly comparable to theirs.",
+      "empty_raw_response": 52
+    },
+    "evaluation": {
+      "path": "evaluation/<condition>/<model>/responses/<image_id>.json",
+      "layout_note": "This experiment has two attack conditions, so evaluation/ carries an extra level (raw|defended) that results/compositional_500 and results/geolocation_100 do not have.",
+      "raw": {
+        "what": "attack.py on annotated/<image_id>.jpg \u2014 every subject boxed and numbered",
+        "runs": [
+          {
+            "model": "gemini-3.1-flash-lite",
+            "responses": 200,
+            "bytes": 169345,
+            "gt_pairs": 646,
+            "six_way": 0.6827,
+            "three_way": 0.726
+          },
+          {
+            "model": "gemini-3.1-pro-preview",
+            "responses": 161,
+            "bytes": 119688,
+            "gt_pairs": 528,
+            "six_way": 0.7311,
+            "three_way": 0.7784
+          }
+        ]
+      },
+      "defended": {
+        "what": "attack.py on def_img/<image_id>.jpg \u2014 only the subjects NOT predicted to be in a relationship are boxed",
+        "runs": [
+          {
+            "model": "gemini-3.1-flash-lite",
+            "responses": 41,
+            "bytes": 29358,
+            "correct_six_way": 50,
+            "correct_three_way": 53
+          },
+          {
+            "model": "gpt-5.2",
+            "responses": 41,
+            "bytes": 33012,
+            "correct_six_way": 65,
+            "correct_three_way": 69
+          }
+        ]
+      },
+      "coverage_matrix": {
+        "gemini-3.1-flash-lite": [
+          "raw",
+          "defended"
+        ],
+        "gemini-3.1-pro-preview": [
+          "raw"
+        ],
+        "gpt-5": [
+          "process only (detection pipeline)"
+        ],
+        "gpt-5.2": [
+          "defended"
+        ],
+        "note": "four distinct models appear, but no single condition was run with all four and only gemini-3.1-flash-lite has both conditions."
+      }
+    }
+  },
+  "response_schema": {
+    "img_id": "image id",
+    "predictions": "{\"<i> <j>\": label} the attacker's answer per pair",
+    "ground_truth": "{\"<i> <j>\": label}; in defended responses this is the FILTERED def_img ground truth (empty for 9 of the 41 images), so the summaries rescore against dataset_large.json instead",
+    "raw_response": "the model's free-text reasoning, one '[Pi-Pj]: ... => label' line per pair",
+    "timestamp": "unix time",
+    "process_only": [
+      "missed_pairs",
+      "subjects_matched",
+      "subjects_unmatched",
+      "num_preds_detected",
+      "num_preds_matched",
+      "num_gt_subjects"
+    ]
+  },
+  "defense_abstention": "see defense_abstention.json",
+  "headline_numbers": {
+    "raw": {
+      "gemini-3.1-flash-lite": {
+        "six_way": 0.6827,
+        "three_way": 0.726,
+        "pairs": 646
+      },
+      "gemini-3.1-pro-preview": {
+        "six_way": 0.7311,
+        "three_way": 0.7784,
+        "pairs": 528
+      },
+      "gpt-5_answered_pairs_only": {
+        "six_way": 0.7286,
+        "three_way": 0.7827,
+        "pairs": 1109
+      },
+      "gpt-5_all_pairs": {
+        "six_way": 0.5323,
+        "three_way": 0.5718,
+        "pairs": 1518
+      }
+    },
+    "defended": {
+      "gemini-3.1-flash-lite": {
+        "A_over_1518": {
+          "six_way": 0.0329,
+          "three_way": 0.0349
+        },
+        "B_over_1373": {
+          "six_way": 0.0364,
+          "three_way": 0.0386
+        }
+      },
+      "gpt-5.2": {
+        "A_over_1518": {
+          "six_way": 0.0428,
+          "three_way": 0.0455
+        },
+        "B_over_1373": {
+          "six_way": 0.0473,
+          "three_way": 0.0503
+        }
+      }
+    },
+    "relative_reduction": {
+      "only_model_with_both_conditions": "gemini-3.1-flash-lite",
+      "note": "gemini-3.1-pro-preview has no defended run and gpt-5.2 has no raw run, so no other model yields a before/after pair.",
+      "paired_same_images": {
+        "images": 17,
+        "gt_pairs": 180,
+        "raw": {
+          "six_way": 0.6667,
+          "three_way": 0.6778
+        },
+        "defended": {
+          "six_way": 0.1444,
+          "three_way": 0.15
+        },
+        "relative_reduction": {
+          "six_way": 0.7833,
+          "three_way": 0.7787
+        },
+        "note": "the only genuine before/after: same model, same images, same ground-truth pairs in both conditions. This is the defensible reduction figure."
+      },
+      "cross_set_A": {
+        "raw_six_way": 0.6827,
+        "defended_six_way": 0.0329,
+        "relative_reduction_six_way": 0.9518,
+        "raw_three_way": 0.726,
+        "defended_three_way": 0.0349,
+        "relative_reduction_three_way": 0.9519,
+        "note": "raw is measured over this model's 200-image run; defended over all 454 images. Different image sets, so this is not a paired comparison and it flatters the defense."
+      },
+      "cross_set_B": {
+        "raw_six_way": 0.6827,
+        "defended_six_way": 0.0364,
+        "relative_reduction_six_way": 0.9467,
+        "raw_three_way": 0.726,
+        "defended_three_way": 0.0386,
+        "relative_reduction_three_way": 0.9468,
+        "note": "same caveat as A, with the 71 never-anonymized images excluded from the defended denominator."
+      }
+    }
+  },
+  "verification": {
+    "checked_on": "2026-08-27",
+    "md5_of_every_copied_file_equals_source": "897/897",
+    "unparseable_response_files": 0,
+    "process_image_ids_match_dataset_large": true,
+    "process_images": 454,
+    "defense_replay_reproduces_def_img_dataset_json": "41/41 images, surviving-pair labels identical",
+    "defended_gemini-3.1-flash-lite_ids_equal_protected_set": true,
+    "defended_gpt-5.2_ids_equal_protected_set": true,
+    "recomputed_accuracy_equals_source_metrics_json": {
+      "evaluation/raw/gemini-3.1-flash-lite": {
+        "recomputed_pairs": 646,
+        "recomputed_correct": 441,
+        "recomputed_accuracy": 0.6827,
+        "metrics_json_accuracy": 0.6827,
+        "metrics_json_total_pairs": 646,
+        "match": true
+      },
+      "evaluation/raw/gemini-3.1-pro-preview": {
+        "recomputed_pairs": 528,
+        "recomputed_correct": 386,
+        "recomputed_accuracy": 0.7311,
+        "metrics_json_accuracy": 0.7311,
+        "metrics_json_total_pairs": 528,
+        "match": true
+      },
+      "evaluation/defended/gemini-3.1-flash-lite": {
+        "recomputed_pairs": 80,
+        "recomputed_correct": 50,
+        "recomputed_accuracy": 0.625,
+        "metrics_json_accuracy": 0.625,
+        "metrics_json_total_pairs": 80,
+        "match": true
+      },
+      "evaluation/defended/gpt-5.2": {
+        "recomputed_pairs": 80,
+        "recomputed_correct": 65,
+        "recomputed_accuracy": 0.8125,
+        "metrics_json_accuracy": 0.8125,
+        "metrics_json_total_pairs": 80,
+        "match": true
+      }
+    },
+    "process_recomputed_vs_pred_metrics": {
+      "recomputed_pairs": 1518,
+      "recomputed_correct": 808,
+      "recomputed_accuracy": 0.5323,
+      "metrics_json_accuracy": 0.5323,
+      "metrics_json_total_pairs": 1518,
+      "match": true
+    },
+    "gt_pairs_partition_sums_to_total": true
+  }
+}

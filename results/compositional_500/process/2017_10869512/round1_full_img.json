@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows a paper concert ticket with clearly readable text including the venue (University of Texas at Austin, Frank Erwin Center), artist, event date/time, and seating details. There are no names, faces, government or financial identifiers. The primary privacy risk comes from location and activity disclosure (attendance at a specific concert at a specific time) and minor personal attribute inference from the \u201cADULT\u201d designation. These are Level 3 and Level 4 clues, so overall risk is moderate-low. Clues are legible and central, supporting medium-high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed venue text reading 'UNIV. OF TEXAS AT AUSTIN FRANK ERWIN CENTER' on the ticket center",
+        "Anonymized_element": "blank rectangle, generic venue text removed, neutral patterned area",
+        "privacy_element": "readable venue name, city reference",
+        "target_concept": "venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "event details text block showing artist name and date/time 'JIMMY BUFFETT ... SUN MAR 7, 1982 - 8PM'",
+        "Anonymized_element": "blank text area, generic event label with no date/time, blurred characters",
+        "privacy_element": "readable event subject, exact date and time",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left-side seating details with section, row, and seat numbers",
+        "Anonymized_element": "randomized or masked numbers, dashes in place of section/row/seat",
+        "privacy_element": "specific section, row, and seat identifiers",
+        "target_concept": "seat information text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "top-right label 'ADULT' with price on the ticket",
+        "Anonymized_element": "neutral ticket type label removed, blank price area",
+        "privacy_element": "age category 'ADULT' and ticket price",
+        "target_concept": "ticket category label",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10869512.jpg"
+}

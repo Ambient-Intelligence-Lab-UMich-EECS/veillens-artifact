@@ -1,0 +1,45 @@
+{
+  "reasoning": "The cropped region shows a person from the side with the face obscured. No government IDs, financial or medical data are visible. The primary privacy-relevant elements are a small, distinctive neck tattoo and recognizable clothing/accessories, which reveal personal attributes and could help identify the person when combined with other context. With no visible face or direct identifiers, risk is moderate-low. Confidence is medium due to partial ambiguity of how distinctive the features are.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small blue tattoo on the left side of the neck below the ear",
+        "Anonymized_element": "clear skin without markings, blur or recolor to natural skin tone",
+        "privacy_element": "distinctive tattoo shape/color and location that can uniquely identify a person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red plaid flannel shirt with rolled sleeve",
+        "Anonymized_element": "plain solid-color shirt, no pattern or logos",
+        "privacy_element": "distinctive clothing color/pattern that can be recognized",
+        "target_concept": "clothing pattern",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "thin black bracelet on the right wrist",
+        "Anonymized_element": "remove bracelet or replace with generic unadorned band",
+        "privacy_element": "distinctive accessory style that can aid recognition",
+        "target_concept": "bracelet",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14693043/r1_crops/2017_14693043_1.png"
+}

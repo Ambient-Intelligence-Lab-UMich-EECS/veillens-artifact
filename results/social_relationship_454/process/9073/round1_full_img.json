@@ -1,0 +1,32 @@
+{
+  "img_id": "9073",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are in a baseball game; P1 (in white) is pitching on the mound while P2 (in maroon) is crouched on base, facing play. Different uniforms, no physical contact, competitive body language on a ballfield => professional\n\n[P1-P3]: P1 pitches on the field while P3 (in maroon) watches from the dugout fence; different team uniforms and no direct interaction, but part of the same organized game => professional\n\n[P1-P4]: P1 is the pitcher on the field and P4 (in maroon) is another dugout teammate observing; different uniforms and roles within the same sporting event => professional\n\n[P2-P3]: Both wear maroon uniforms (teammates), with P2 on base and P3 in the dugout watching; coordinated attire and shared team context on a baseball field => professional\n\n[P2-P4]: P2 and P4 both in maroon, one on the field and one in the dugout, indicating teammates in the same game; no physical contact but clear team affiliation => professional\n\n[P3-P4]: Both stand side-by-side in the dugout wearing identical maroon uniforms, observing the game together; their proximity and matching attire indicate teammates => professional",
+  "timestamp": 1776887643.1530676
+}

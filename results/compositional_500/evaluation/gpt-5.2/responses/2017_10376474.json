@@ -1,0 +1,77 @@
+{
+  "reasoning": "The image shows a public street scene with several individuals whose faces are clearly visible and unobstructed, enabling biometric identification. This constitutes the highest-severity clue (Level 1). Additional contextual cues like a cafe’s chalkboard signage introduce mild location information, but no government IDs, financial, or medical data are present. Because multiple identifiable faces are central and clear, overall privacy risk is high. Confidence is high given the visibility and clarity of these facial details.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman with long light-brown hair in a white blouse walking at the lower-left foreground, face fully visible",
+        "Anonymized_element": "blurred or pixelated face, generic smooth skin patch, neutralized hairstyle",
+        "privacy_element": "full face with eyes, nose, mouth; distinct hairstyle and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "man with glasses seated near a bicycle by the storefront, looking toward the street",
+        "Anonymized_element": "blurred/pixelated face, remove glasses detail, neutral skin-tone patch",
+        "privacy_element": "full frontal face, glasses, distinct facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "woman in white shirt seated at cafe table mid-right, side-profile face visible",
+        "Anonymized_element": "blurred side-profile, generic skin patch, simplified hair",
+        "privacy_element": "recognizable side-profile with nose, mouth, cheekline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "elderly woman with short white hair standing at far right, face visible",
+        "Anonymized_element": "pixelated/blurred face, neutralized hair and skin patch",
+        "privacy_element": "full facial features with distinct age-related traits",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "second elderly woman beside her wearing patterned dress, face visible",
+        "Anonymized_element": "blurred/pixelated face, generic smooth patch",
+        "privacy_element": "full facial features, distinct hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "black chalkboard menu sign on sidewalk outside cafe",
+        "Anonymized_element": "blank blackboard, remove legible text/logo, generic pattern",
+        "privacy_element": "potential business name/menu text indicating specific venue or location",
+        "target_concept": "business signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10376474/final/2017_10376474_final.png"
+}

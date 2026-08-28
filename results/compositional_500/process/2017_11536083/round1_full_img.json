@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows an ornate historical building facade with statues and a richly carved arch. No people, faces, documents, or identifiers are visible. The only potential privacy-relevant element is the recognizable landmark-style architecture that could reveal a specific location. With a single Level 3 clue and no compositional reinforcement, overall risk is low. Confidence is medium because landmark recognizability is plausible but not certain from the image alone.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central ornate archway and facade with distinctive statues and carvings",
+        "Anonymized_element": "generic stone facade, simplified textures, remove distinctive carvings and statues, neutral architectural details",
+        "privacy_element": "recognizable landmark-style architecture, unique statues and reliefs that can indicate a specific site",
+        "target_concept": "building facade / landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11536083.jpg"
+}

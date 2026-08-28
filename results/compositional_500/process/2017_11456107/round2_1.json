@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows multiple people in theatrical clothing with faces obscured and no readable text or identifiers. There are no biometric details, government/financial/medical documents, or explicit nudity. The main privacy-relevant element is an intimate/close-contact pose that reveals behavioral context but not identity. With only Level 3 contextual clues and no reinforcing identifiers, the privacy risk is low to moderate. Confidence is medium due to interpretive ambiguity about how intimate the scene is.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "region where two people\u2019s bodies are in close contact with one person leaning across the other\u2019s lap",
+        "Anonymized_element": "neutral spacing between bodies, non-contact seated posture, adjusted pose to reduce intimacy",
+        "privacy_element": "intimate body contact/embrace implying personal interaction",
+        "target_concept": "intimate pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11456107/r1_crops/2017_11456107_1.png"
+}

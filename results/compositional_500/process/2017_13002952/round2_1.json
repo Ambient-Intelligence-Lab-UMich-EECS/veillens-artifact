@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person in a patterned bikini inside a hot tub; the face is obscured so no biometric identification is visible. The most sensitive element is intimate attire with significant body exposure, which is Level 2. Additional clues include a distinctive navel piercing that conveys personal physical attributes and the leisure activity of being in a hot tub. These combine to a moderate privacy risk without direct identifiers. Score reflects Level 2 content but reduced by lack of face or textual identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red-and-white patterned bikini exposing torso and hips",
+        "Anonymized_element": "one-piece swimsuit, towel or cover-up, less revealing swimwear with neutral color",
+        "privacy_element": "exposed torso and cleavage, bikini bottom/hip exposure",
+        "target_concept": "bikini",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "silver navel piercing jewelry at the belly button",
+        "Anonymized_element": "no piercing, skin-toned patch, subtle retouch to remove jewelry",
+        "privacy_element": "distinctive body jewelry that can uniquely identify a person",
+        "target_concept": "body piercing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "circular tiled hot tub with bubbling water around the person",
+        "Anonymized_element": "still water pool, generic bathroom setting, crop to remove hot tub context",
+        "privacy_element": "leisure activity in hot tub indicating lifestyle/behavior",
+        "target_concept": "hot tub",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13002952/r1_crops/2017_13002952_1.png"
+}

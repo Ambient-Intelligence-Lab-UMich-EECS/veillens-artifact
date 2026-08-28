@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a person in graduation attire with the face fully obscured. There are no readable names, logos, or documents. The key privacy signal is the ceremonial graduation gown and tassel, which can reveal an activity (graduation/education status) and some personal attributes (formalwear, approximate life stage) despite lacking biometric identification. With no Level 1\u20132 identifiers present, the highest severity is Level 3. Overall risk is moderate-low based on activity disclosure without direct identity exposure.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue-and-gold graduation hood and dark green gown on upper torso",
+        "Anonymized_element": "plain jacket or sweater, neutral solid colors without academic styling",
+        "privacy_element": "graduation gown and hood indicating participation in an academic ceremony or completion status",
+        "target_concept": "graduation gown/hood",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "gold tassel hanging from mortarboard near the shoulder",
+        "Anonymized_element": "no tassel, plain hat without ceremonial features",
+        "privacy_element": "graduation tassel signaling academic milestone or event participation",
+        "target_concept": "graduation tassel",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12660141/r1_crops/2017_12660141_1.png"
+}

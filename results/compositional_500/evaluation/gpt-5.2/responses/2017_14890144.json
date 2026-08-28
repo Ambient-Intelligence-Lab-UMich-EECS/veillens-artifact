@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a crowded canal parade with numerous clearly visible, front-facing people; several faces are sharp enough to enable identification, which is a Level 1 biometric risk. Additionally, rainbow-pride elements and handheld placards suggest participation in a Pride-themed event, enabling sensitive inferences about beliefs or sexual orientation (Level 2). These clues co-occur prominently and centrally, reinforcing overall risk even though exact names or addresses are not visible. The combination of multiple identifiable faces with sensitive-context symbols yields a high privacy risk. Confidence is high because the cues are clear and unobstructed.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-row person’s full face in orange outfit on the left side of the boat, looking toward the camera",
+        "Anonymized_element": "blurred face, generic skin-tone patch, removed eye and mouth details",
+        "privacy_element": "full unobstructed face with eyes, nose, and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "person’s face in the crowd on the canal edge near center-right, facing forward",
+        "Anonymized_element": "face pixelation, neutral oval with no facial features",
+        "privacy_element": "clear frontal facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "small rainbow pride flag held by a person on the small boat at the right",
+        "Anonymized_element": "solid-color pennant with no symbolic colors or patterns",
+        "privacy_element": "rainbow flag associated with LGBTQ identity/advocacy",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "handheld placard with visible slogan carried by a participant on the boat’s left side",
+        "Anonymized_element": "blank cardboard sign, neutral color with no text or logos",
+        "privacy_element": "political/advocacy message indicating beliefs or affiliations",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14890144/final/2017_14890144_final.png"
+}

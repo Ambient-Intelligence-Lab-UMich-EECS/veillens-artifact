@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a roadside demonstration with individuals mostly viewed from behind; no identifiable faces are visible. However, protest signage and printed flyers with partially readable text indicate participation in a potentially political event, creating sensitive-inference and activity-based risks. Vehicles are present but license plates are not legible. The highest severity present is Level 2 due to political-expression clues on signs/flyers, though text is only partly readable, so overall risk is moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue protest sign at far left with partially readable black text",
+        "Anonymized_element": "plain blue poster with no text or symbols, blurred text area, solid color board",
+        "privacy_element": "protest slogan text, political messaging cues",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person seen from behind holding a raised blanked-out sign above head",
+        "Anonymized_element": "sign replaced with plain board, arms lowered or sign removed",
+        "privacy_element": "visible participation in public demonstration",
+        "target_concept": "person holding sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "stack of printed flyers/posters with bold partial lettering held at person\u2019s side",
+        "Anonymized_element": "blank flyers with no text, generic color blocks",
+        "privacy_element": "partially readable campaign-style text suggesting political material",
+        "target_concept": "flyers/posters",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "row of cars parked/driving along the road with plates too small to read",
+        "Anonymized_element": "generic cars with plates blurred or removed",
+        "privacy_element": "presence of specific vehicles without legible identifiers",
+        "target_concept": "vehicles",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15309593/r1_crops/2017_15309593_1.png"
+}

@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a wheelchair basketball game with players\u2019 faces anonymized. No identifiable faces or government IDs are visible. However, visible wheelchairs imply disability status (a sensitive attribute), and readable jersey text/number can identify a specific player through team affiliation. An event banner with organization name and year provides contextual location/event details. Distant crowd adds minimal risk. With multiple Level 2 clues reinforced by event signage, the overall risk is moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "sports wheelchair used by the player in a white jersey at the left foreground",
+        "Anonymized_element": "generic sports chair or neutral seating, de-emphasized wheels, no medical cues",
+        "privacy_element": "use of wheelchair indicating mobility impairment/disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white basketball jersey on leaning player with readable team name 'MAX' and number '1'",
+        "Anonymized_element": "plain jersey, no team name or numbers, generic color",
+        "privacy_element": "team name/logo and jersey number enabling player identification",
+        "target_concept": "jersey with text/number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow courtside banner with visible 'JWBF' and 'Championship 2013' text",
+        "Anonymized_element": "blank banner, solid color, no logos or text",
+        "privacy_element": "organization acronym and event title/year revealing specific event/league context",
+        "target_concept": "event banner/signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "crowd of spectators in the background stands",
+        "Anonymized_element": "blurred abstract crowd texture, reduced detail",
+        "privacy_element": "distant unidentifiable individuals present",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12820811/r1_crops/2017_12820811_1.png"
+}

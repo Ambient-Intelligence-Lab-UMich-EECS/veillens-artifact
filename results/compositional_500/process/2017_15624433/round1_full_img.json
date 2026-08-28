@@ -1,0 +1,75 @@
+{
+  "reasoning": "Two individuals are prominently visible, with clear, identifiable faces, which constitutes biometric data (Level 1). The person on the right wears a military uniform with a readable \u201cU.S. ARMY\u201d tape and unit insignia, and multiple military flags are displayed behind them, revealing organizational affiliation and contextual location/activity (ceremony). These Level 3 contextual clues reinforce the identity exposure from the faces. No government IDs, financial, or medical documents are visible. Overall risk is high primarily due to the two identifiable faces, supported by organizational context.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Left person\u2019s face in profile, well-lit and unobstructed",
+        "Anonymized_element": "blurred face, pixelated features, silhouette without facial detail",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Right person\u2019s face, frontal/three-quarter view, unobstructed",
+        "Anonymized_element": "blurred face, pixelated features, silhouette without facial detail",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Military uniform chest area with visible 'U.S. ARMY' tape and patches",
+        "Anonymized_element": "plain camouflage area with no text or insignia, generic patch shapes without logos",
+        "privacy_element": "organizational name text, unit/branch insignia",
+        "target_concept": "uniform insignia/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Red military flag with castle emblem behind subjects",
+        "Anonymized_element": "plain red banner with no emblem or text",
+        "privacy_element": "distinct organizational logo/emblem indicating affiliation/location context",
+        "target_concept": "flag with organization logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "White flag with blue military emblem to the left",
+        "Anonymized_element": "plain white banner with no emblem or text",
+        "privacy_element": "distinct organizational emblem indicating institutional context",
+        "target_concept": "flag with organization logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15624433.jpg"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows attendees seated in a venue. The most prominent clue is a clear side-profile of one person in the foreground, which constitutes identifiable biometric data (Level 1). A laptop screen is visible with UI/text elements, though not clearly readable, posing a minor risk as a generic digital artifact and hinting at activity (Levels 3\u20134). Additional attendees are present in the background but are out of focus and not individually identifiable, contributing low-level risk as a small crowd. Given the strong Level 1 facial visibility reinforced by contextual activity, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground attendee\u2019s side-profile face with visible eyes, nose, and mouth",
+        "Anonymized_element": "face blurred or pixelated, head turned away, replaced with generic silhouette",
+        "privacy_element": "identifiable facial features, skin texture, recognizable profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "open laptop screen beside the foreground attendee showing interface elements and text",
+        "Anonymized_element": "blank screen, generic placeholder UI blocks, solid color",
+        "privacy_element": "onscreen text and UI that may reveal accounts, messages, or work context",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background attendees\u2019 faces partially visible but out of focus in seating area",
+        "Anonymized_element": "faces blurred further, replaced with generic head shapes",
+        "privacy_element": "presence of people, partial facial regions",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12379896.jpg"
+}

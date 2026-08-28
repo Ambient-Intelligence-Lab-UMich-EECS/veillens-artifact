@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a large handheld placard and several distant, partially visible heads/hands in a street setting. No readable text, faces, or unique identifiers are discernible. The highest relevant risk stems from visible participation in a public demonstration (activity cue), which can imply viewpoints but is weak here since messages and identities are obscured. Additional low-level risk comes from an indistinct crowd with unidentifiable individuals. Together, these support a low privacy risk assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large blank placard on a wooden stick held above the crowd",
+        "Anonymized_element": "generic plain sign, neutral color, reduced prominence",
+        "privacy_element": "public protest sign indicating participation in a demonstration",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant partially visible heads and raised hand at bottom edge",
+        "Anonymized_element": "remove or blur crowd silhouettes further, generic background shapes",
+        "privacy_element": "presence of unidentifiable individuals in a crowd",
+        "target_concept": "distant crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13014315/r1_crops/2017_13014315_1.png"
+}

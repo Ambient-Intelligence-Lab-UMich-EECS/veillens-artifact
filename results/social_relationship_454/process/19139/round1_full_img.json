@@ -1,0 +1,37 @@
+{
+  "img_id": "19139",
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 3,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "predictions": {
+    "1 2": 6
+  },
+  "missed_pairs": [
+    "1 5",
+    "2 3",
+    "2 4",
+    "2 5",
+    "3 5",
+    "4 5"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3,
+    4,
+    5
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: This looks like a reception/party with a tiered cake and champagne; P1 is on one side of the dessert table while P2 (the person at left with another guest) is occupied elsewhere. They are separated by the table, not looking at or touching each other, and show no interaction beyond being at the same event. => no-relationship",
+  "timestamp": 1776887609.2486868
+}

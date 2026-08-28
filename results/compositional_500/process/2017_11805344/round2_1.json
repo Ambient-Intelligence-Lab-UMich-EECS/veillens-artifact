@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a scenic lake and mountains with an information sign clearly reading a place name, plus a few tiny, unidentifiable people on the shoreline. The readable sign and distinctive landmark create location disclosure (Level 3), while the distant individuals add minor contextual risk (Level 4). No faces or direct identifiers are visible. Combined, these cues yield a moderate privacy risk primarily from location information. Confidence is high due to legible text and clear landscape features.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "brown wooden information sign at lower-right with readable text \"Cold Water Lakes\"",
+        "Anonymized_element": "blank sign panel, remove/blur text and logos, generic dark rectangle",
+        "privacy_element": "readable place name text",
+        "target_concept": "sign with place name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small distant people standing/sitting on rocky shoreline near right-center",
+        "Anonymized_element": "empty shoreline, remove people, indistinct silhouettes",
+        "privacy_element": "presence of people indicating recreational activity",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive gray stratified mountain massif and lake panorama across mid-frame",
+        "Anonymized_element": "generic hills and lake, softened/blurred non-distinctive background",
+        "privacy_element": "unique natural landmark profile enabling geolocation",
+        "target_concept": "identifiable landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11805344/r1_crops/2017_11805344_1.png"
+}

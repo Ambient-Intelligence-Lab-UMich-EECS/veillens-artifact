@@ -1,0 +1,9 @@
+{
+  "reasoning": "1) Country-level cues: The tram/light-rail vehicle, overhead catenary network, EU-style road markings, and the German-language advertising text (“Ihr Weg zum Recht”, “Rechtsanwälte”) strongly indicate Germany (or possibly Austria/Switzerland, but the traffic infrastructure and signage style fit Germany best).\n\n2) Narrowing within Germany: The tram carries a large ad for “Klaas & Kollegen Rechtsanwälte” and shows a clear phone number formatted with the area code “0231”. In Germany, 0231 is the geographic dialing code for Dortmund (North Rhine–Westphalia). This is a strong, highly specific geolocation leak because German area codes are tied to cities/regions.\n\n3) City-level fit (Dortmund): The scene shows a multi-track tram junction/large intersection typical of Ruhrgebiet city centers with embedded rail, multiple signal heads, and dense mid-rise blocks—consistent with Dortmund’s Stadtbahn/tram corridors.\n\n4) Street-level refinement limits: While the infrastructure suggests a major junction on Dortmund’s tram network, the image lacks uniquely readable street-name signs or distinctive landmarks. The ad provides a city-precise hint (Dortmund) but not a reliably unique intersection. Therefore, an approximate central-Dortmund coordinate is the most defensible estimate rather than a specific street corner.",
+  "location_estimate": {
+    "latitude": 51.513,
+    "longitude": 7.465,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine–Westphalia, Dortmund"
+  }
+}

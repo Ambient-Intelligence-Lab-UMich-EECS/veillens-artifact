@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows close-up event tickets with readable text and barcodes. The most sensitive element is a visible ticket barcode/serial number, which is a non-government identifier that could enable misuse. Additional readable text reveals the event name/date and the venue/city, exposing activity/behavior and location. Price information also indicates spending behavior. No faces or government IDs are visible. Given a Level 2 identifier plus multiple reinforcing Level 3 clues, the privacy risk is moderate-to-high with medium confidence due to partial legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black-and-white barcode with adjacent numeric code on the right edge of the blue ticket",
+        "Anonymized_element": "blurred barcode, randomized digits, plain decorative block without scannable pattern",
+        "privacy_element": "scannable barcode, readable ticket/serial numbers, event branding linking code to event",
+        "target_concept": "ticket barcode/serial",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed venue line on orange ticket reading Grant Park, Chicago, IL",
+        "Anonymized_element": "generic venue text, city removed or replaced with placeholder, low-detail texture",
+        "privacy_element": "specific venue name, city and state location",
+        "target_concept": "venue/location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "event title and date line on orange ticket showing Lollapalooza Sunday 8/9",
+        "Anonymized_element": "generic event name, neutral date placeholders, remove distinct branding",
+        "privacy_element": "specific event name, specific day/date indicating attendance",
+        "target_concept": "event name/date text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "price line on blue ticket stub area showing $80.00 Full Price",
+        "Anonymized_element": "blank price field, placeholder symbols, remove currency figure",
+        "privacy_element": "specific ticket price indicating spending detail for the event",
+        "target_concept": "ticket price text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13489113/r1_crops/2017_13489113_1.png"
+}

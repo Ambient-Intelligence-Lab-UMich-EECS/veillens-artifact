@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a graduation ceremony. A readable podium logo reveals the specific university, providing strong location context. One seated attendee\u2019s face on the right is clear and front-facing, constituting identifiable biometric data. The graduate in the center has their back turned (not identifiable), but the academic regalia indicates activity (graduation) and role. The presence of a Level 1 biometric face combined with explicit institutional location raises overall risk to moderate-high despite limited identifiers beyond that.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of a seated attendee on the right side of the frame",
+        "Anonymized_element": "blurred face, replaced with generic silhouette, low-detail skin tones",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wooden podium panel with readable 'University of the Fraser Valley' logo/text",
+        "Anonymized_element": "blank wood panel, no logo or text, generic emblemless podium",
+        "privacy_element": "institution name and logo revealing exact place",
+        "target_concept": "university logo/text on podium",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "central person wearing black graduation gown with green hood and white cap, back facing camera",
+        "Anonymized_element": "plain dark clothing without academic regalia",
+        "privacy_element": "academic regalia indicating participation in a graduation ceremony",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11270878/r1_crops/2017_11270878_0.png"
+}

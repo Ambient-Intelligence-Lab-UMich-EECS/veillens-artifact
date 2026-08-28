@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows a green security-patterned government-style certificate with the heading “REGISTER OFFICE.” A clearly readable certificate/reference number is visible near the top-right, and an official circular seal area appears at the bottom-right. While most personal fields are redacted, the legible unique government-issued document number constitutes a Level 1 identifier. The official header and seal corroborate that this is an authentic civil-registration document, reinforcing risk. Given one strong Level 1 clue with supporting contextual cues, overall privacy risk is high despite redactions.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable reference/serial number printed near the top-right of the green certificate",
+        "Anonymized_element": "blank area, obfuscated digits, randomized number string, blurred text",
+        "privacy_element": "readable unique certificate/reference number on an official document",
+        "target_concept": "certificate number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "green certificate header text reading “REGISTER OFFICE” on guilloche security paper",
+        "Anonymized_element": "generic heading text, neutral patterned paper, plain background",
+        "privacy_element": "government office name indicating an official civil-registration document",
+        "target_concept": "government certificate header",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "circular seal/stamp area at the bottom-right of the certificate",
+        "Anonymized_element": "blank circle, generic watermark, removed seal details",
+        "privacy_element": "official seal implying authenticity and government origin",
+        "target_concept": "seal or stamp",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14720865/final/2017_14720865_final.png"
+}

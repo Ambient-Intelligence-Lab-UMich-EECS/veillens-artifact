@@ -1,0 +1,21 @@
+{
+  "img_id": "10645",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 4,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: This appears to be a staged talk/presentation with audience members in the foreground; P3 is an attendee at the side while P4 is seated at the front facing the crowd, with no direct interaction or proximity. Different roles (audience vs on-stage) suggest no personal connection. => no-relationship\n\n[P3-P5]: P5 is an audience member holding up a phone/camera toward the stage while P3 is off to the side, not engaging with P5 and separated by distance. The body language is incidental, consistent with strangers at an event. => no-relationship\n\n[P3-P6]: Both are in the audience area/foreground, but they aren\u2019t facing each other or interacting and are only loosely near each other due to crowding. No cues of familiarity beyond being co-attendees. => no-relationship\n\n[P4-P5]: P4 is part of the on-stage group being recorded/photographed by P5 from the audience, indicating a speaker-performer vs attendee relationship rather than personal intimacy. The interaction is one-directional (P5 filming) in a public setting. => professional\n\n[P4-P6]: P4 is on stage while P6 is in the audience/foreground; they are spatially separated with no direct engagement visible. The shared context is simply being at the same event. => no-relationship\n\n[P5-P6]: P5 and P6 are adjacent audience members in the foreground, with P5 actively filming while P6 is just part of the crowd; no mutual body language or interaction suggests they\u2019re not together. They look like unrelated attendees. => no-relationship",
+  "timestamp": 1779952690.3233173
+}

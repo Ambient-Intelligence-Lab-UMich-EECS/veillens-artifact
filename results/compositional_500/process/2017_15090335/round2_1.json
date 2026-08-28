@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a central person with their face fully obscured while holding a large container above their head in a crowded marketplace. No readable text, IDs, or legible faces are present. The only privacy-relevant elements are a visible behavior (carrying goods/working) and a few distant, partially visible profiles of bystanders. With no identifiable biometric details or sensitive identifiers, the highest severity is moderate (activity/behavior), slightly reinforced by the presence of unidentifiable individuals. Overall risk is low to moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large container balanced on top of the central person\u2019s head with arms raised",
+        "Anonymized_element": "arms lowered at sides, no container present, neutral background above head",
+        "privacy_element": "depicts specific work-related activity (carrying load)",
+        "target_concept": "work activity (carrying load)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small, distant side profile of a person on the left side of the frame",
+        "Anonymized_element": "back-of-head only, face direction turned fully away, light blur over face area",
+        "privacy_element": "partial facial features in profile though small and blurry",
+        "target_concept": "face (distant)",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15090335/r1_crops/2017_15090335_1.png"
+}

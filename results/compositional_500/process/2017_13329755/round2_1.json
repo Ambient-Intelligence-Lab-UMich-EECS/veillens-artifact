@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a close-up of a vehicle\u2019s front grille with a readable brand emblem. There are no people, faces, license plates, addresses, or other unique identifiers. The only privacy-relevant element is the vehicle make text, which is a low-risk property cue. Highest severity is Level 4, leading to a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up badge on vehicle grille with readable brand text",
+        "Anonymized_element": "blank emblem, no text or logo, generic grille texture",
+        "privacy_element": "readable vehicle make/brand text",
+        "target_concept": "vehicle emblem",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13329755/r1_crops/2017_13329755_1.png"
+}

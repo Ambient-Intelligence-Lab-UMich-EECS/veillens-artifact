@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows an outdoor market/fair scene. One man near the center has a clearly visible, unobstructed face that can enable biometric identification (Level 1). Other nearby people are largely masked or turned away, contributing minimal additional risk. No names, IDs, financial/medical items, or readable location text are visible. With a single strong biometric clue and weak contextual clues, the overall risk is high-moderate. Confidence is high because the visible face is clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed male-presenting face of a person in the center-left, looking left in sunlight",
+        "Anonymized_element": "blurred or pixelated face, replace with neutral silhouette, add occluding sunglasses/hat, turn head away",
+        "privacy_element": "full face with distinct facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "group of people in midground with faces obscured or turned away near the booth",
+        "Anonymized_element": "retain silhouettes only, increase blur, reduce detail of bodies",
+        "privacy_element": "presence of multiple individuals indicating personal presence in a public setting",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11885175/final/2017_11885175_final.png"
+}

@@ -1,0 +1,38 @@
+{
+  "reasoning": "This crop shows a medical-room scene with at least two identifiable individuals\u2019 faces visible at close range. The clearest is a man in a white coat looking forward; another man on the far left has a mostly unobscured face with glasses. These constitute Level 1 biometric identifiers. The setting suggests a medical/procedural activity, adding contextual personal-attribute and activity clues, but no names, badges, or patient identifiers are readable. Given multiple clear faces in a sensitive-looking environment, the privacy risk is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of man in white coat at center-left",
+        "Anonymized_element": "blurred or pixelated face, solid-color oval placeholder, cropped above shoulders",
+        "privacy_element": "full facial features (eyes, nose, mouth), distinctive hairline and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "near-profile face of balding man with glasses on far left",
+        "Anonymized_element": "pixelated face region, generic silhouette, remove eyewear details",
+        "privacy_element": "recognizable facial structure and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11791206/r1_crops/2017_11791206_1.png"
+}

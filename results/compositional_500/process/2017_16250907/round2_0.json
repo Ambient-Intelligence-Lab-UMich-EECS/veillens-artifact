@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a golfer mid-swing with the face visibly obscured, so no identifiable biometric detail is exposed. The primary privacy signals are moderate: the person\u2019s body, clothing, and athletic action reveal personal attributes and activity (golf). Event signage with readable branding and text provides contextual metadata that could hint at affiliation or event participation but not a specific identity. There are no government IDs, financial or medical data. Given the absence of identifiable face or names and only moderate contextual clues, the risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "full-body view of a golfer in red shirt and navy skirt performing a golf swing",
+        "Anonymized_element": "adjust pose slightly, generic athletic outfit without distinctive style or logos",
+        "privacy_element": "body build and physique, gender cues from clothing, athletic behavior (golf swing)",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white event signboard with LG branding and Korean text near the tee box",
+        "Anonymized_element": "blank signboard, generic shapes or colors, no text or logos",
+        "privacy_element": "event name text, corporate logos, contextual event information",
+        "target_concept": "event signage",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white cap on the golfer with visible red circular logo",
+        "Anonymized_element": "plain cap, no logo or text, neutral color",
+        "privacy_element": "sponsor/team logo indicating potential affiliation",
+        "target_concept": "apparel logo",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16250907/r1_crops/2017_16250907_0.png"
+}

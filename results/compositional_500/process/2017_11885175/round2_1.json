@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows several people in a public outdoor setting with multiple visible faces: a man on the right with cap and sunglasses, a woman in a headband pointing at center, a woman in a large hat and glasses, and a child on the left in profile. These constitute biometric identifiers (highest severity level) and reveal some personal attributes like apparent age and gender. No readable names, documents, or location-specific text are visible. Due to multiple identifiable faces, the privacy risk is high though a few faces are partially obscured by sunglasses/hat, leading to a high but not extreme score.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man on the right wearing a cap and sunglasses with visible lower face",
+        "Anonymized_element": "blurred face, removed facial features, generic shaded oval, turned-away head",
+        "privacy_element": "visible facial structure and mouth, partial biometric identifiers despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman in center-left with headband pointing, side-profile face visible",
+        "Anonymized_element": "profile blurred or replaced with generic silhouette, no facial details",
+        "privacy_element": "clear side-profile facial features (nose, mouth, jawline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman near center-right wearing a large sunhat and glasses, face partially visible",
+        "Anonymized_element": "blanked facial area under hat, generic shading, no features",
+        "privacy_element": "partial facial features visible beneath hat and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child on far left in profile with visible face",
+        "Anonymized_element": "blurred child face, generic silhouette, removed facial details",
+        "privacy_element": "child\u2019s facial features in profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11885175/r1_crops/2017_11885175_1.png"
+}

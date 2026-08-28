@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a vintage printed map and advertisement with readable text such as “Hotel Claremont, Berkeley, California,” a list of street names on a map, a red stamped number, and a small handwritten note mentioning Alameda. There are no people, faces, IDs, or financial/medical items. The highest-severity evidence pertains to location information (identifiable landmarks and street names), which is moderate risk on its own but not tied to any individual. Other elements are generic document artifacts. These combined cues yield a low overall personal-information risk. Confidence is high given the clear, non-personal nature of the content.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed advertisement text reading 'HOTEL CLAREMONT ... BERKELEY, CALIFORNIA'",
+        "Anonymized_element": "generic hotel text without place names, blurred or replaced with lorem ipsum",
+        "privacy_element": "readable business name and city identifying a specific landmark/location",
+        "target_concept": "advertisement text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "map section with legible list of street names and neighborhood grid",
+        "Anonymized_element": "abstracted map shapes with no readable street names, simplified lines",
+        "privacy_element": "readable street names and area references enabling precise geolocation",
+        "target_concept": "map with street names",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "red stamped number '39703X' on the paper margin",
+        "Anonymized_element": "blank margin, generic stamp with random symbols blurred out",
+        "privacy_element": "document control/catalog number",
+        "target_concept": "document stamp number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "small handwritten note near the bottom mentioning 'Alameda'",
+        "Anonymized_element": "blank margin or nonspecific scribble with no place names",
+        "privacy_element": "readable place name revealing additional location context",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11578145/final/2017_11578145_final.png"
+}

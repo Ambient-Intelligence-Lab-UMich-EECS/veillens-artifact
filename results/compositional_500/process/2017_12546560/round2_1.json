@@ -1,0 +1,83 @@
+{
+  "reasoning": "The crop shows two identifiable athlete faces (left profile with sunglasses and right profile), which are Level 1 biometric data. Additional Level 2 clues include a wheelchair under an athlete implying disability and team/national identifiers: the word \u201cAUSTRALIA\u201d on a jacket and a national flag patch on another athlete\u2019s shirt, which convey affiliation and location context. A medal with event ribbon further indicates athletic participation (Level 3). Together, direct biometric identifiers plus sensitive inference and affiliation details yield a high-moderate privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rightmost athlete\u2019s face in profile, unobstructed",
+        "Anonymized_element": "blurred face, neutralized skin tone, generic head silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "left athlete\u2019s face in profile wearing sunglasses",
+        "Anonymized_element": "blurred face and glasses, generic head silhouette",
+        "privacy_element": "identifiable facial structure despite glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "wheelchair under the rightmost athlete (seat, wheels, footrests visible)",
+        "Anonymized_element": "regular chair or stool without medical connotation",
+        "privacy_element": "mobility aid indicating possible disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow jacket sleeve with the word 'AUSTRALIA' in green letters",
+        "Anonymized_element": "plain sleeve with no text or logos",
+        "privacy_element": "country/team name indicating affiliation",
+        "target_concept": "team/country text on clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small national flag patch on the chest of the athlete in a white shirt",
+        "Anonymized_element": "plain patch with no flag or a solid color",
+        "privacy_element": "national flag identifying country affiliation",
+        "target_concept": "flag patch",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "medal with purple ribbon worn around the rightmost athlete\u2019s neck",
+        "Anonymized_element": "plain ribbon without logos or medal replaced with generic disc",
+        "privacy_element": "event branding indicating competition participation",
+        "target_concept": "medal and ribbon",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12546560/r1_crops/2017_12546560_1.png"
+}

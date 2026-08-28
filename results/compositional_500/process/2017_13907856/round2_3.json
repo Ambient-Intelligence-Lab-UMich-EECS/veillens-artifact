@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a close-up of a handwritten notebook page with clearly readable words and list items. No faces or government IDs are present. The legible text includes specific topics and event references (e.g., \u201cTEDx\u201d) and a place name (\u201cVenice\u201d), which reveal interests/activities and hint at location. These Level 3 clues raise moderate risk, supported by the presence of a generic document (Level 4). Overall risk is moderate but not high since no names, financial, or medical details appear.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up region of a lined notebook page with legible handwritten list items",
+        "Anonymized_element": "blank notebook page, blurred/unreadable scribbles, neutral doodles without text",
+        "privacy_element": "readable handwritten notes, specific topics and references",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "single handwritten word 'Venice' on one line of the page",
+        "Anonymized_element": "generic place-neutral word, blurred or redacted text",
+        "privacy_element": "readable city/place name indicating potential location",
+        "target_concept": "location word",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "handwritten line with the term 'TEDx' on the page",
+        "Anonymized_element": "generic event-neutral term, blurred or redacted text",
+        "privacy_element": "readable event/affiliation name revealing interests or attendance",
+        "target_concept": "event reference",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13907856/r1_crops/2017_13907856_3.png"
+}

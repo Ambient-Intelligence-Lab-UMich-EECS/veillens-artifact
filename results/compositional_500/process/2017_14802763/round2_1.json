@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a nighttime protest with many identifiable faces in the foreground and midground, including a clearly visible child on someone\u2019s shoulders. Several placards display readable political messages, and a building sign (\u201cHumphrey School of Public Affairs\u201d) is legible, revealing a specific location. The highest-severity evidence is Level 1 biometric data from clear faces. Combined with Level 2 political speech on signs and Level 3 location signage, the composition presents a high privacy risk. Evidence is direct and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.71,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "cluster of identifiable faces in the foreground near the center-left",
+        "Anonymized_element": "blurred or pixelated faces, heads turned away, generic silhouettes",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child seated on an adult\u2019s shoulders at the right with a visible face in profile",
+        "Anonymized_element": "face blurred, replaced with indistinct profile, head turned away",
+        "privacy_element": "child\u2019s identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "readable building facade sign that says 'Humphrey School of Public Affairs' in the background",
+        "Anonymized_element": "plain building facade, signage removed or blurred",
+        "privacy_element": "institution name revealing a specific location",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "protest placard in left midground with readable political slogan",
+        "Anonymized_element": "blank sign, abstract pattern, non-readable shapes",
+        "privacy_element": "explicit political message indicating viewpoint",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "dense background crowd of distant individuals with partially visible faces",
+        "Anonymized_element": "silhouetted crowd, faces indistinct or de-emphasized",
+        "privacy_element": "presence at a public protest; partial facial cues",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14802763/r1_crops/2017_14802763_1.png"
+}

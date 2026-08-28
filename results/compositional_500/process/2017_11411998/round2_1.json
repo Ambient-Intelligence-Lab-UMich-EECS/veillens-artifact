@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows the side of a street with a building and windows. At the right, two people are faintly visible through the glass, mostly from the back/side and at a small scale; faces are not clearly legible. No readable text, IDs, addresses, or financial/medical items are visible. The only privacy-relevant cue is the presence of distant, largely unidentifiable individuals, which is a low-level risk. With no strong identifying elements, the overall risk is low and confidence is medium due to partial visibility through glass.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "two small figures seen through the right-side window, mostly backs/partial profiles",
+        "Anonymized_element": "frosted or opaque window, blurred silhouettes, empty window",
+        "privacy_element": "human figures with partial head/shoulder outlines; tiny, unidentifiable faces",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11411998/r1_crops/2017_11411998_1.png"
+}

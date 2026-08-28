@@ -1,0 +1,47 @@
+{
+  "reasoning": "This crop shows an indoor bedroom scene with people anonymized, so no biometric identifiers are visible. The main privacy cues come from contextual details: a lit birthday candle on a tray indicating a celebratory/home routine, child-oriented bedding and stuffed toys suggesting age-related attributes, and distinctive interior decor revealing a private home location. These are Level 3 clues that modestly increase risk when combined, but no Level 1\u20132 identifiers are present. Score reflects moderate contextual risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white tray on bedside table with a cupcake and a lit candle",
+        "Anonymized_element": "plain tray with generic cup and plate, no candle or celebratory items",
+        "privacy_element": "lit candle and dessert indicating a birthday or celebration, home routine context",
+        "target_concept": "food tray with candle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "stuffed animals and plush toys on the bed near pillows",
+        "Anonymized_element": "neutral throw pillows or folded blanket, no toys",
+        "privacy_element": "child-oriented toys implying presence of a child and age-related preferences",
+        "target_concept": "toys on bed",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "interior bedroom decor with pink striped walls, framed floral prints, and metal bedframe",
+        "Anonymized_element": "generic plain wall, abstract art without distinctive style, simplified bedframe",
+        "privacy_element": "private home interior details that reveal a domestic location",
+        "target_concept": "bedroom interior decor",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15082304/r1_crops/2017_15082304_0.png"
+}

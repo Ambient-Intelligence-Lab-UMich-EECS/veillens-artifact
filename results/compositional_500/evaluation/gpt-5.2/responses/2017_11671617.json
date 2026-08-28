@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a single person sitting in a muddy area with the face obscured. No names, documents, or location markers are visible. The most privacy-relevant element is the person’s largely uncovered torso and intimate, suggestive pose, which constitutes sensitive nudity/intimate content (Level 2). The mud-covered body indicates participation in a specific activity, which adds minor contextual risk (Level 3). Absence of a visible face or identifiers reduces severe risk. Overall this yields a moderate privacy risk, primarily due to the intimate content, with medium confidence given partial occlusion/censoring.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person’s upper torso and abdomen largely uncovered while seated, with mud on skin",
+        "Anonymized_element": "add opaque swimwear coverage, plain top, more mud or cloth overlay, crop to non-intimate regions",
+        "privacy_element": "partial nudity, exposed skin, suggestive pose",
+        "target_concept": "nudity/skin exposure",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "mud covering the person’s body and surrounding wet muddy surface",
+        "Anonymized_element": "dry neutral ground, clean clothing, remove mud splashes",
+        "privacy_element": "mud-covered body indicating participation in a specific messy activity",
+        "target_concept": "activity indicator",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11671617/final/2017_11671617_final.png"
+}

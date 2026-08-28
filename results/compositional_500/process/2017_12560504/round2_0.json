@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows a clear restaurant receipt with legible text. It exposes the restaurant\u2019s exact street address with number, postal code, and city, plus the restaurant name/logo, the visit\u2019s date and time, table number, and a detailed list of purchased food/drink items. These are mainly Location information and Activities/behaviors clues. No person\u2019s name, payment details, or biometric data are visible. The highest severity is Level 3, strengthened by multiple reinforcing Level 3/4 metadata cues, leading to a moderate risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed address block reading 'C/ CALIFORNIA, 13, 43892 MIAMI PLATJA' near the top-middle of the receipt",
+        "Anonymized_element": "replace with generic placeholder like 'Street, City', remove numbers and postal code, blurred text",
+        "privacy_element": "street name, building number, postal code, city name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "restaurant name and logo 'La Gondola' at the header of the receipt",
+        "Anonymized_element": "generic restaurant name or blank header without logo",
+        "privacy_element": "unique business name/logo identifying the venue",
+        "target_concept": "business name/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "timestamp line showing '22/06/2015 16:33' under the address",
+        "Anonymized_element": "remove or obfuscate date and time; show only year or placeholder '\u2014'",
+        "privacy_element": "exact date and time of visit",
+        "target_concept": "date/time stamp",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "itemized purchase list (e.g., 'MENU DEL DIA', 'ALITAS', 'PATATAS BRAVAS', 'CANA GRANDE' with quantities and prices)",
+        "Anonymized_element": "replace items with generic placeholders like 'Item A/B', remove quantities",
+        "privacy_element": "specific food and drink items and quantities indicating consumption patterns",
+        "target_concept": "itemized order list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12560504/r1_crops/2017_12560504_0.png"
+}

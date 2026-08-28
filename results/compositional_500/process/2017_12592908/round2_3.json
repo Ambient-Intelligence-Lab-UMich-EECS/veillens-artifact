@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person on stage holding a microphone, with a blurred/unidentifiable face and a brass trombone nearby. No text, names, documents, or location markers are visible. The strongest privacy indicators are personal attributes from the partial face and the activity of performing music. Because the face is not clearly identifiable and there are no Level 1\u20132 identifiers, risk remains low-to-moderate. Score reflects multiple Level 3 clues (personal attributes and activities) without reinforcement by higher-severity elements. Confidence is medium due to low image clarity.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blurred face and upper body of a performer near a microphone",
+        "Anonymized_element": "crop below the neck, add stronger blur to face, turn head away, dim lighting on face",
+        "privacy_element": "partial facial features, skin tone, inferred age/gender cues",
+        "target_concept": "face",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "hand gripping a microphone while singing",
+        "Anonymized_element": "empty hand, remove microphone, replace with neutral object",
+        "privacy_element": "performing/singing behavior cue",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "brass trombone on a stand at the right side",
+        "Anonymized_element": "generic stand without instrument, replace with indistinct pole",
+        "privacy_element": "specific musical instrument indicating hobby/profession",
+        "target_concept": "musical instrument",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12592908/r1_crops/2017_12592908_3.png"
+}

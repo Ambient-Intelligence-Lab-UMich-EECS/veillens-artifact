@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows a street procession with at least one clearly visible identifiable face and several participants whose bodies are visible. The most sensitive element is biometric (a woman\u2019s face in profile), which is Level 1. The scene also contains strong cues of a religious/cultural ritual (participants in coordinated attire carrying offerings), creating Level 2 sensitive-inference risk. Background shop signage provides potential location context. These elements together yield a moderate-to-high privacy risk; visibility is good but not all faces are clear, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.54,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-center woman\u2019s face in profile with hair adorned with flowers",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic hair without distinctive adornments",
+        "privacy_element": "identifiable facial features in profile, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "participant holding leafy ritual offerings overhead while wearing coordinated ceremonial clothing",
+        "Anonymized_element": "neutral props without religious markings, generic bundle, plain clothing without ceremonial styling",
+        "privacy_element": "religious ritual objects, ceremonial attire implying participation in a specific faith practice",
+        "target_concept": "religious offering/ritual object",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background storefront banner with partially readable business name/branding",
+        "Anonymized_element": "blank banner, abstract shapes, no text or logos",
+        "privacy_element": "business name text and local branding that can hint at geographic area",
+        "target_concept": "shop sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of procession participants with bodies and some distant, partially occluded faces",
+        "Anonymized_element": "fewer people or blurred group, generic silhouettes",
+        "privacy_element": "presence of multiple individuals in a public crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14629372/r1_crops/2017_14629372_0.png"
+}

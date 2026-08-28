@@ -1,0 +1,70 @@
+{
+  "reasoning": "The regional crop shows several unobscured faces in a public crowd, which are directly identifying biometric data (Level 1). Additional weaker cues include partial building signage that can hint at location and visible flowers suggesting participation in a public gathering. The presence of multiple clear faces dominates the risk, with contextual elements providing minor reinforcement. Overall this indicates a high privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man\u2019s face in the center background looking forward",
+        "Anonymized_element": "blurred face, generic smooth skin tones, removed distinguishing marks",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man\u2019s face slightly right of center with short dark hair",
+        "Anonymized_element": "face pixelation, neutralized features, generic skin texture",
+        "privacy_element": "recognizable facial structure and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman\u2019s face in left background in profile view",
+        "Anonymized_element": "profile blurred, simplified outline, no distinct features",
+        "privacy_element": "identifiable facial profile and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partial building signage with readable-style lettering in far background",
+        "Anonymized_element": "blank facade, removed/blurred text, generic shapes",
+        "privacy_element": "text signage that can hint at venue or city",
+        "target_concept": "signage/text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of red roses on the right side of the frame",
+        "Anonymized_element": "generic foliage or non-descript flowers, muted colors",
+        "privacy_element": "flowers indicating participation in a public memorial or event",
+        "target_concept": "flowers",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12230212/r1_crops/2017_12230212_1.png"
+}

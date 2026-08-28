@@ -1,0 +1,28 @@
+{
+  "img_id": "22702",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "subjects_unmatched": [
+    4
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are in a shared kitchen setting prepping food, standing a few feet apart and smiling toward the camera; casual clothes/aprons suggest a team or volunteers rather than family or romance. => professional\n\n[P1-P3]: Both are side-by-side at the food-prep area, casually dressed with aprons/straps, appearing to work on the same task in the industrial kitchen; friendly smiles but no intimate contact. => professional\n\n[P2-P3]: They face the same counter with vegetables and utensils in a commercial-style kitchen, casually dressed and focused on food preparation; their body language shows cooperative work, not intimacy. => professional",
+  "timestamp": 1776888553.2839303
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a shirtless person seated in a yoga pose with the face clearly obscured, so no Level 1 biometric identifiers are visible. However, the bare upper body reveals physical build and skin details (personal attributes), and the specific seated yoga posture indicates an exercise habit (activity). With only Level 3 clues and no textual identifiers or sensitive documents, the privacy risk is moderate. Confidence is high because these cues are clear and central in the frame.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shirtless upper torso and arms; face area blurred",
+        "Anonymized_element": "add plain T-shirt or tank top, crop to shoulders, smooth/neutral skin texture",
+        "privacy_element": "bare torso revealing body build, body hair, skin markings",
+        "target_concept": "upper body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "cross-legged seated pose with hands holding feet on an exercise mat",
+        "Anonymized_element": "neutral sitting pose with legs extended, hands resting on knees",
+        "privacy_element": "distinct yoga/exercise posture indicating fitness activity",
+        "target_concept": "body pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/r1_crops/2017_14958433_3.png"
+}

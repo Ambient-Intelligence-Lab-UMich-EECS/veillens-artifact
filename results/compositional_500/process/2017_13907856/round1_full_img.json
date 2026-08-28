@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows an open notebook page with legible handwritten notes listing topics such as TEDx, Venice, and reading items. There are no faces, IDs, contact details, financial or medical data. The main privacy signal is disclosure of personal interests and potential plans, which falls under activities/behaviors, along with the presence of a generic personal document. These are low to moderate risk cues without strong identifying information, so the overall risk is low but nonzero. Confidence is high because the content is clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "open notebook page with legible handwritten list titled '5 things on Friday #11' and items (e.g., TEDx, Venice, reading list)",
+        "Anonymized_element": "blank notebook page, blurred/unreadable text, generic scribbles without specific topics",
+        "privacy_element": "readable handwritten personal list revealing interests/activities (events, travel idea, reading items)",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13907856.jpg"
+}

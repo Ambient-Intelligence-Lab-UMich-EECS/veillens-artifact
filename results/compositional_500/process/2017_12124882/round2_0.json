@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a museum catalog card with handwritten and typed entries. No people or biometric identifiers are present. The main privacy-relevant element is specific location information for an archaeological site (\u201cWiltshire, Winterbourne Stoke, Barrow 15 (Hoare)\u201d), which can reveal a precise place. Additional lower-risk metadata includes the collection/institution name with a collection number and references to publications and catalog IDs. These clues are non-personal but provide identifiable site metadata, yielding a low overall risk. Confidence is high due to clear legibility of the text.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Handwritten site entry reading \u201cWiltshire, Winterbourne Stoke, Barrow 15 (Hoare)\u201d on the left column near the top",
+        "Anonymized_element": "blank field, generic placeholder text, lightly blurred text lines",
+        "privacy_element": "readable location names, specific site identifier/number",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Collection field at top right reading \u201cDevizes Museum Stourhead Coll: 80\u201d with a red seal",
+        "Anonymized_element": "generic collection label without institution name or number, remove/neutral seal",
+        "privacy_element": "institution name, collection number",
+        "target_concept": "collection label",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "\u201cReferences to Publications\u201d section listing titles and catalog identifiers in the center",
+        "Anonymized_element": "blank references field or generic placeholder citations",
+        "privacy_element": "specific publication titles, catalog/ID numbers",
+        "target_concept": "publication references",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12124882/r1_crops/2017_12124882_0.png"
+}

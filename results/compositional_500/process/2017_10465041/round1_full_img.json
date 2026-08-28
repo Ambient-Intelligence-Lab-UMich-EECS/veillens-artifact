@@ -1,0 +1,95 @@
+{
+  "reasoning": "The image shows a small group of children outdoors with several clearly visible faces. These identifiable faces constitute Level 1 biometric data, which on its own is a high privacy risk. There are no readable names, addresses, or official documents, and location is generic woodland. A bucket used in the center suggests an outdoor group activity (Level 3) and the subjects\u2019 approximate ages are inferable from appearance. The combination yields a high but not extreme risk due to the absence of additional identifiers and some faces being slightly small/soft. Confidence is high because the faces are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child\u2019s face at far right wearing a blue shirt, front-facing",
+        "Anonymized_element": "blurred/pixelated face, neutral oval mask, face turned away",
+        "privacy_element": "clear facial features (eyes, nose, mouth), distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face second from right, blue shirt, slight profile view",
+        "Anonymized_element": "pixelated face, neutral mask, head turned further away",
+        "privacy_element": "recognizable facial structure and profile, eyes and nose visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face center-right with hand on head, blue shirt",
+        "Anonymized_element": "blurred face, generic featureless oval, head turned down",
+        "privacy_element": "visible face with eyes, nose, mouth under daylight",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face center-left bending forward, short hair",
+        "Anonymized_element": "pixelated face, neutral oval mask, face occluded by added object",
+        "privacy_element": "recognizable facial features despite partial downward angle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child\u2019s face second from left with hand near head, blue shirt",
+        "Anonymized_element": "blurred/pixelated face, featureless oval mask",
+        "privacy_element": "clear facial features and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "youth face far left in blue shirt, standing slightly apart",
+        "Anonymized_element": "pixelated face, head turned away, generic silhouette",
+        "privacy_element": "recognizable facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "gray bucket on ground in the middle of the group",
+        "Anonymized_element": "generic plain bucket with less prominence or removed",
+        "privacy_element": "implies group outdoor activity context",
+        "target_concept": "bucket",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10465041.jpg"
+}

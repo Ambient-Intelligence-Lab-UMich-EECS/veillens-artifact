@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image shows a coastal beach with prominent white cliffs, a pier, and a tall tower that could function as an identifiable landmark. There are a few tiny, distant people and a small paraglider in the sky, but no readable text, faces, or direct identifiers. The highest-severity category present is Level 3 (location information), with minor contribution from visible activity (paragliding). With no Level 1–2 clues, overall risk is low but nonzero due to the recognizable landscape.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "prominent white sea cliffs with adjacent pier and tall communication-looking tower on the headland",
+        "Anonymized_element": "generic rocky coastline, remove/simplify tower, non-distinct cliff texture, no pier",
+        "privacy_element": "recognizable coastal landmark, unique cliff formation, pier structure, tower silhouette",
+        "target_concept": "landmark cliffs and pier",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "small paraglider canopy and pilot silhouette in the sky above the headland",
+        "Anonymized_element": "empty sky, bird silhouette, generic cloud",
+        "privacy_element": "specific recreational activity (paragliding) visible",
+        "target_concept": "paraglider",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "tiny distant people scattered along the beach shoreline",
+        "Anonymized_element": "empty beach, remove figures",
+        "privacy_element": "presence of unidentifiable individuals",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13226400/final/2017_13226400_final.png"
+}

@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a person coated in mud, wearing minimal swimwear with visible bikini strings; the face is obscured. This constitutes intimate/seminudity content (Level 2). A distinctive upper-arm tattoo is visible, which is a unique physical attribute (Level 3). The muddy inflatable/pool-like surface indicates participation in a specific messy activity (Level 3). With no readable identifiers or visible face, the highest level present is 2, but multiple Level 3 clues add contextual risk. Overall, this yields a moderate-to-high privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "mud-covered lower torso and hip with visible bikini side strings",
+        "Anonymized_element": "opaque solid-color athletic shorts or swimsuit, increased coverage, remove strings",
+        "privacy_element": "exposed skin, minimal swimwear/bikini strings implying semi-nudity",
+        "target_concept": "semi-nude body",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive tattoo on the upper right arm/shoulder",
+        "Anonymized_element": "plain skin texture, blur or replace tattoo with neutral skin",
+        "privacy_element": "unique tattoo artwork that can identify a person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "muddy inflatable/pool-like ground surface around the subject",
+        "Anonymized_element": "neutral, clean ground or generic backdrop without mud/activity cues",
+        "privacy_element": "context revealing participation in a mud bath/event",
+        "target_concept": "event surface",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11671617/r1_crops/2017_11671617_1.png"
+}

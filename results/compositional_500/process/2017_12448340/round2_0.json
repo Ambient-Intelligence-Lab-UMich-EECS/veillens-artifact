@@ -1,0 +1,68 @@
+{
+  "reasoning": "The crop shows a clear restaurant receipt with legible text: the business\u2019s name, full street address and phone number, the server\u2019s first name, the exact date/time, and specific ordered items. No biometric or government IDs appear. The highest-severity element is a non-unique identifier (the server\u2019s name). Combined with precise location details and timestamped consumption records, this creates a moderate privacy risk. The text is central and fully readable, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed street address and city/ZIP near the receipt header",
+        "Anonymized_element": "blank header, generic venue name without address, placeholder street like '123 Main St' with city removed",
+        "privacy_element": "full street address, city, state, ZIP that pinpoints a location",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed phone number below the venue name",
+        "Anonymized_element": "removed digits, generic '(***) ***-****' placeholder",
+        "privacy_element": "complete telephone number tied to a specific venue",
+        "target_concept": "phone number text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "server line showing 'JULIE' next to an employee/terminal number",
+        "Anonymized_element": "blank server field, generic role label like 'Server' without a name",
+        "privacy_element": "staff first name identifying a worker on a specific shift",
+        "target_concept": "employee name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "receipt timestamp line with date and exact time",
+        "Anonymized_element": "removed timestamp, coarse date only (e.g., month/year), or '\u2014'",
+        "privacy_element": "exact visit date and time indicating presence at a place",
+        "target_concept": "timestamp text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "itemized order list (water, coffee, grits, biscuits, pancakes, bacon) with quantities and prices",
+        "Anonymized_element": "generic items without specifics, or summarized total only",
+        "privacy_element": "detailed consumption choices revealing dining habits",
+        "target_concept": "order items text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12448340/r1_crops/2017_12448340_0.png"
+}

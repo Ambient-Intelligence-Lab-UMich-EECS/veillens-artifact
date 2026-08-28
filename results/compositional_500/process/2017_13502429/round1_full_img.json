@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a nighttime exterior of a large modern building with lit windows. No readable text, numbers, documents, or faces are visible. Human figures appear only as tiny silhouettes indoors and one blurred person in the foreground, making them unidentifiable. The main privacy signals are low-level: distant people and a potentially recognizable building facade that could hint at location. With no Level 1\u20132 clues and only weak Level 4/possible location context, overall risk is low. Confidence is high due to clear lack of legible identifiers or faces.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "tiny silhouetted people visible through upper-floor windows",
+        "Anonymized_element": "frosted or opaque windows, empty rooms, darker glass reflections",
+        "privacy_element": "presence of human silhouettes indicating occupants",
+        "target_concept": "distant people in windows",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small blurred person with back turned at bottom center of frame",
+        "Anonymized_element": "remove figure, replace with empty walkway or generic shadow",
+        "privacy_element": "human presence, partial body outline without facial details",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinctive modern building exterior with glass-and-steel arches and skybridge",
+        "Anonymized_element": "more generic skyline facade, simplified architecture without unique features",
+        "privacy_element": "recognizable architectural features that may hint at specific location",
+        "target_concept": "building exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13502429.jpg"
+}

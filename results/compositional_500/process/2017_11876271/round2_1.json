@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a natural mountain lake landscape without readable text, documents, vehicles, or buildings. No faces or biometric details are visible. The only privacy-relevant element is a few tiny, faraway human figures on the shoreline, which are unidentifiable and provide minimal context about activity. The highest severity present is Level 4 (distant unidentifiable individuals), leading to a low overall risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small, distant human figures walking along the right shoreline of the lake",
+        "Anonymized_element": "remove figures, replace with rocks/grass, render as empty shoreline",
+        "privacy_element": "human silhouettes indicating presence of people",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11876271/r1_crops/2017_11876271_1.png"
+}

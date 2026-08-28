@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows several people in a public park with faces obscured, so no biometric identifiers are exposed. The main privacy signal is behavioral: individuals appear to be dancing or exercising, and one pair seems to hold hands. These activities can reveal habits or participation in group recreation. There are no names, documents, or identifiable landmarks. Overall risk is low-to-moderate due to visible activities and minor personal-attribute cues, with no Level 1\u20132 elements present.",
+  "personal_info_privacy_score": {
+    "score": 0.17,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person in black athletic outfit mid-step with arms raised",
+        "Anonymized_element": "neutral standing pose, generic loose clothing, motion blur to obscure posture",
+        "privacy_element": "distinct dance/exercise posture indicating recreational activity",
+        "target_concept": "activity pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "pair of individuals at left appearing to hold hands while moving",
+        "Anonymized_element": "hands not touching, neutral spacing between figures, generic posture",
+        "privacy_element": "hand-holding and coordinated movement implying participation in a dance or partnered activity",
+        "target_concept": "hand-holding gesture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15099352/r1_crops/2017_15099352_1.png"
+}

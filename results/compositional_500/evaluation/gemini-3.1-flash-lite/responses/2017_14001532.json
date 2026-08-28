@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows an ONCE lottery ticket from Castellar del Vallès, Spain. While the ticket is a collectible or financial document, it does not contain sensitive personal identifiers like a person's name, ID number, address, or financial account details. The location mentioned is a general administrative municipality, which does not constitute direct location leakage for an individual. The privacy risk is low, primarily related to the document being a specific financial asset. The overall confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A lottery ticket issued by the ONCE organization representing the town of Castellar del Vallès.",
+        "Anonymized_element": "Generic lottery ticket, abstract graphic, blank municipal information area.",
+        "privacy_element": "Text identifying 'Ayuntamiento de Castellar del Vallès', 'Provincia: Barcelona', and specific lottery ticket numbers.",
+        "target_concept": "lottery ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14001532/final/2017_14001532_final.png"
+}

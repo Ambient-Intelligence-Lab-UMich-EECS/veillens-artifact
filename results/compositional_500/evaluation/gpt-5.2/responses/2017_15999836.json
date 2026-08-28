@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows four old theater tickets with readable printed text. No people or biometric data are visible. The main privacy cues are readable location details (theater name and street address), event dates and titles that reveal attendance preferences or past activities, and visible ticket serial numbers. These are Level 3–4 clues; none are direct personal identifiers but together they can hint at someone’s whereabouts and habits at specific times. Given multiple clear, legible cues yet no Level 1–2 data, the overall risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed address line at the bottom of each ticket (street and number)",
+        "Anonymized_element": "blanked line, generic placeholder text, partial obfuscation of numbers",
+        "privacy_element": "readable street address and building number of the venue",
+        "target_concept": "address line",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "blue handwritten/printed event date near the top of each ticket",
+        "Anonymized_element": "removed date, generic month/year, blurred digits",
+        "privacy_element": "specific event date and time indicating when attendance occurred",
+        "target_concept": "event date stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "event title text printed on each ticket",
+        "Anonymized_element": "generic title like 'Event', replaced with non-descriptive text",
+        "privacy_element": "specific performance names revealing cultural preferences/attendance",
+        "target_concept": "event title text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "vertical red ticket serial number on the right margin of each ticket",
+        "Anonymized_element": "blank margin, randomized unreadable pattern, removed digits",
+        "privacy_element": "unique ticket serial/series numbers",
+        "target_concept": "ticket serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15999836/final/2017_15999836_final.png"
+}

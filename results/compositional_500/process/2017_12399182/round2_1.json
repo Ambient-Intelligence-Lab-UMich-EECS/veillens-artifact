@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows two people with unobstructed, front-facing faces, which are directly identifying (Level 1). Additionally, the person in the center wears a polo with a readable organization-style logo/text on the chest, a non-unique identifier that can reveal affiliation (Level 2). These clues are clear, central, and mutually reinforcing, yielding a high privacy risk. Confidence is high due to visibility and legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.69,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person's full face with clear facial features",
+        "Anonymized_element": "blurred face, pixelated face, generic silhouette",
+        "privacy_element": "full face, eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center person's full face, front-facing",
+        "Anonymized_element": "blurred face, pixelated face, generic silhouette",
+        "privacy_element": "full face, eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "embroidered logo/text on the chest of the gray polo shirt",
+        "Anonymized_element": "plain polo shirt, no logo, no text, solid color fabric",
+        "privacy_element": "readable organization acronym/logo, printed text",
+        "target_concept": "clothing logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12399182/r1_crops/2017_12399182_1.png"
+}

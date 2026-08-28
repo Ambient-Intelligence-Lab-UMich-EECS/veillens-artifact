@@ -1,0 +1,74 @@
+{
+  "reasoning": "The image shows open passport pages with multiple visas and stamps. A clear face photograph is present along with machine-readable zone text and readable visa stickers displaying full name, passport number, date of birth, nationality, issue place and dates. These are government identifiers and biometric data (Level 1). Additional immigration stamps reveal travel locations and dates (Level 3). The combination of multiple Level 1 identifiers and a visible face yields a severe privacy risk. Confidence is high due to clarity and legibility of the details.",
+  "personal_info_privacy_score": {
+    "score": 0.97,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "portrait photo on the left visa/document page",
+        "Anonymized_element": "blurred oval face region, generic silhouette, pixelated portrait",
+        "privacy_element": "full frontal face, biometric features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Myanmar visa sticker with legible personal details on left page",
+        "Anonymized_element": "blank visa template, removed text and numbers, generic pattern without emblems",
+        "privacy_element": "passport number, full name, date of birth, nationality, visa number, validity dates, place of issue",
+        "target_concept": "visa sticker",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "machine-readable zone (MRZ) text block along the left edge",
+        "Anonymized_element": "solid-colored strip, scrambled characters without structure",
+        "privacy_element": "MRZ lines encoding passport number, name, nationality, date of birth",
+        "target_concept": "MRZ",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Cambodia visa sticker on the right page with handwritten/printed details",
+        "Anonymized_element": "generic visa background without text or numbers, obscured emblem and stamps",
+        "privacy_element": "passport number, full name, visa number, issue/expiry dates, issuing post",
+        "target_concept": "visa sticker",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "immigration entry/exit ink stamps overlapping the visas",
+        "Anonymized_element": "abstract stamp shapes without dates or place names, faded/blank ink",
+        "privacy_element": "travel locations and dates indicating movement history",
+        "target_concept": "immigration stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11551870.jpg"
+}

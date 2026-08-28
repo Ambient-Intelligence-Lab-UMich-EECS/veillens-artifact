@@ -1,0 +1,28 @@
+{
+  "img_id": "5164",
+  "ground_truth": {
+    "1 2": 4,
+    "2 3": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4
+  },
+  "missed_pairs": [
+    "2 3",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Scene appears to be an emergency/service call at a residence; P2 is a firefighter in uniform standing close and speaking with casually dressed P1, suggesting information exchange rather than familiarity. => professional",
+  "timestamp": 1776888353.6156344
+}

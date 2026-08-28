@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person\u2019s torso and long hair with the face fully obscured. No biometric identifiers like a visible face or fingerprints, and no IDs, financial, or medical items appear. The remaining privacy signals relate to personal attributes: body shape/size, hairstyle, and distinctive clothing details (lace neckline, jeans waist). These Level 3 clues provide limited identifiability and context without strong reinforcement, resulting in a low-to-moderate risk assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "long light-brown hair falling to the shoulders",
+        "Anonymized_element": "hair tucked into a cap or hood, shorter generic hairstyle, blurred hair texture",
+        "privacy_element": "distinct hairstyle, hair color and length indicating physical appearance",
+        "target_concept": "hair",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "outlined torso and waist silhouette of a person in a fitted top",
+        "Anonymized_element": "loose jacket or outerwear obscuring body shape, looser-fit clothing",
+        "privacy_element": "body shape and size revealing physical appearance",
+        "target_concept": "body silhouette",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "jeans waistband with visible button and belt loops",
+        "Anonymized_element": "plain waistband partially covered by a shirt, less distinctive clothing details",
+        "privacy_element": "distinct clothing style/details that may aid recognition of appearance",
+        "target_concept": "clothing detail",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15723710/r1_crops/2017_15723710_1.png"
+}

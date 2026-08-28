@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a public parade with multiple visible faces. A child\u2019s face at right-center is unobstructed and clear, providing biometric identifiers and revealing age-related attributes. Several adult faces are also visible, though some are partially obscured by sunglasses or distance. These Level 1 biometric clues dominate the risk; additional distant crowd faces add low-level context but do not include names or IDs. Overall, the presence of identifiable faces\u2014especially the clear child face\u2014drives a moderate-to-high privacy risk. Confidence is high because the faces are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.54,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed child\u2019s face near right-center of the frame, looking toward camera",
+        "Anonymized_element": "blurred face region, pixelated facial features, replaced with generic smooth skin patch",
+        "privacy_element": "clear facial features including eyes, nose, mouth enabling identification; apparent youth indicating age",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult woman\u2019s face on left side wearing sunglasses and beads",
+        "Anonymized_element": "blurred facial region, remove distinguishing features, neutral eyewear without facial detail",
+        "privacy_element": "recognizable facial structure and hair despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background group of spectators with many small, distant faces along the street",
+        "Anonymized_element": "apply depth-of-field blur to faces, reduce detail to silhouettes",
+        "privacy_element": "multiple human faces present but tiny and low-detail",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16280644/r1_crops/2017_16280644_1.png"
+}

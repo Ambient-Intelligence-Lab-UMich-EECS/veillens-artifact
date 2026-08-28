@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows part of a white brick exterior wall with tree shadows, a partial window with blinds at left, several horizontal utility cables, and a small exterior fixture. There are no faces, text, numbers, or uniquely identifying landmarks. The clues relate mainly to property features of a building and generic background details, which are low-risk on their own and do not combine to reveal identity or an exact location. Hence the overall privacy risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partial exterior window with venetian blinds on a white brick wall",
+        "Anonymized_element": "plain frosted glass, generic window without distinctive frame, or blank wall segment",
+        "privacy_element": "distinct window frame style and blinds pattern",
+        "target_concept": "window",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small exterior wall-mounted fixture near the top center of the wall",
+        "Anonymized_element": "remove fixture, replace with blank wall surface",
+        "privacy_element": "presence of a specific fixture model/placement on the facade",
+        "target_concept": "exterior fixture",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "horizontal utility cables/conduits running across the lower part of the brick wall",
+        "Anonymized_element": "smooth wall with no visible cables or generic thin lines without hardware detail",
+        "privacy_element": "specific arrangement of exterior cables and clamps",
+        "target_concept": "utility cables",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14445307/r1_crops/2017_14445307_1.png"
+}

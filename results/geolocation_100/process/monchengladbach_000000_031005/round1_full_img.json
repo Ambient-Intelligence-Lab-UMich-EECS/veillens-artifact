@@ -1,0 +1,95 @@
+{
+  "reasoning": "Country level: The ambulance bears large German words \u201cNOTARZT,\u201d \u201cFEUERWEHR,\u201d and \u201cRETTUNGSWAGEN,\u201d plus the EU emergency number 112. A blue-silver \u201cPOLIZEI\u201d car is also visible. German-language posters/signs appear on the right. The red\u2011white diagonal roadside bollard and German-style traffic lights further support Germany. Alternative Central European countries are ruled out by the explicit German words and the \u201cPOLIZEI\u201d marking.  City level: Urban density with mixed mid-rise postwar blocks, broad multi-lane junction, and NRW-style orange/white ambulance livery are consistent with large cities in North Rhine\u2011Westphalia (e.g., Cologne, D\u00fcsseldorf, Essen). However, no unique landmark or legible city name is visible, so distinguishing among these is uncertain. I tentatively lean NRW due to the bollard style and typical municipal ambulance branding, but cannot conclusively choose a city.  Street level: The scene shows a wide signalized intersection with a STOP sign on the near-side signal pole, a painted advance stop line and bicycle-friendly curb geometry, red\u2011white hazard bollard at the corner, and a grass verge with a large plane tree on the right. An orange ambulance is crossing from left to right in front of a pedestrian crossing. These elements describe the specific junction but don\u2019t provide a unique street identity without readable street names. Overall, Germany is clear; city and street are not uniquely identifiable from the visible clues.",
+  "location_estimate": {
+    "latitude": 51.0,
+    "longitude": 7.0,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, city not identifiable"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "orange ambulance van in the intersection",
+        "non_geolocation_element": "orange and white paint, boxy van body, emergency light bar, daytime lighting",
+        "geolocation_element": "German words \u201cNOTARZT,\u201d \u201cFEUERWEHR,\u201d \u201cRETTUNGSWAGEN,\u201d emergency number \u201c112\u201d",
+        "target_concept": "ambulance",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue police car at the right curb",
+        "non_geolocation_element": "blue-silver paint, station-wagon shape, roof light bar",
+        "geolocation_element": "word \u201cPOLIZEI\u201d on doors",
+        "target_concept": "police car",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-white striped bollard at the right corner",
+        "non_geolocation_element": "plastic bollard, diagonal red stripes, reflective surface",
+        "geolocation_element": "German-style red-white hazard marker design",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "octagonal stop sign on a pole",
+        "non_geolocation_element": "red color, white border, octagonal shape",
+        "geolocation_element": "text \u201cSTOP\u201d; European placement with German signal head on same pole",
+        "target_concept": "stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular poster board near the far-right sidewalk",
+        "non_geolocation_element": "white background, portrait photo, rectangular board",
+        "geolocation_element": "German-language text on the poster",
+        "target_concept": "poster",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on the grey car ahead",
+        "non_geolocation_element": "white plate, black characters, EU blue band, sedan rear",
+        "geolocation_element": "German-style font/format with EU band",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "traffic light on the right pole",
+        "non_geolocation_element": "vertical three-aspect head, black housing, pedestrian signal nearby",
+        "geolocation_element": "German signal design and mounting conventions",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "painted straight arrow on the center lane",
+        "non_geolocation_element": "white paint, large straight arrow, worn texture",
+        "geolocation_element": "German/European road marking style and lane layout",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/monchengladbach/monchengladbach_000000_031005_leftImg8bit.png"
+}

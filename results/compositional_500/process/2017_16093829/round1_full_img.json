@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a public event with two clearly visible faces (a speaker at a podium and a seated man). These are direct biometric identifiers (Level 1). Readable signage on a banner and podium reveals the organization name and likely venue, reinforced by Canadian and provincial flags, which together provide location context (Level 3). The combination of identifiable faces with specific organizational/location cues yields a high privacy risk. The faces are central and clear, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman speaking at a podium with her full face clearly visible",
+        "Anonymized_element": "blurred face, generic non-identifiable facial texture, turned head away",
+        "privacy_element": "full face, eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "seated man on the right wearing a teal t-shirt with his full face visible",
+        "Anonymized_element": "blurred face, generic non-identifiable facial texture, turned head away",
+        "privacy_element": "full face, eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "teal event banner on the left with readable text 'u district' and slogan",
+        "Anonymized_element": "plain banner, no text or logos, solid color graphic",
+        "privacy_element": "organization name and slogan text",
+        "target_concept": "event banner with text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "podium front placard with readable 'University of the Fraser Valley' and location reference",
+        "Anonymized_element": "blank placard, generic emblem without text",
+        "privacy_element": "institution name and campus/location text",
+        "target_concept": "podium sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "set of national and provincial flags behind the podium",
+        "Anonymized_element": "generic solid-color flags without identifiable patterns",
+        "privacy_element": "recognizable national/provincial flag patterns indicating country/region",
+        "target_concept": "flags",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16093829.jpg"
+}

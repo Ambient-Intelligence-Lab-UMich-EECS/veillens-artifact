@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows Spanish lottery tickets with prominent printed ticket numbers, serial numbers, date text, and barcodes. No faces, names, or direct personal identifiers are present. The highest-severity content is Level 4: generic document identifiers (barcodes, serial/ticket numbers, date). Multiple readable codes raise risk slightly through potential traceability but remain low since they are not tied to an individual. Thus the score is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black barcode with numeric string beneath on the white strip of the ticket",
+        "Anonymized_element": "remove barcode, replace with blank strip or decorative pattern",
+        "privacy_element": "machine-readable barcode, readable numeric code",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large printed lottery number sequence \"26906\" centered on the ticket",
+        "Anonymized_element": "replace with random placeholder digits or decorative emblem",
+        "privacy_element": "distinct ticket number sequence",
+        "target_concept": "ticket number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "smaller serial number \"6302\" printed at bottom-right of the ticket",
+        "Anonymized_element": "blank area or randomized non-meaningful digits",
+        "privacy_element": "readable serial/series indicator",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed date line \"22 de diciembre de 2007\" on the ticket",
+        "Anonymized_element": "remove or replace with generic text without a date",
+        "privacy_element": "specific event/date text",
+        "target_concept": "date text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11230986/r1_crops/2017_11230986_0.png"
+}

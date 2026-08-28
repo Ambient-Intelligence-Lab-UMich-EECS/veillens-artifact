@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows a formal certificate with clearly legible text. It exposes multiple non-unique identifiers including a full personal name and several official signatories\u2019 names (Level 2). It also contains location information (city/post number and state) and contextual activity details describing military service and death (Level 3), plus a specific date (Level 4). These elements are central, readable, and mutually reinforcing to identify an individual and context, leading to a moderate privacy risk. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Centered line with the printed name 'Cpl. Henry N. Hammendinger'",
+        "Anonymized_element": "replace with generic placeholder text like 'Cpl. [Name]', blur text, or use initials only",
+        "privacy_element": "full personal name, military rank",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Body paragraph stating membership in the armed forces and that the individual died",
+        "Anonymized_element": "replace with generic commendation text without service or death details, or redact the sentence",
+        "privacy_element": "explicit mention of armed forces membership and death circumstances",
+        "target_concept": "descriptive paragraph",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Top-right printed date 'August 24, 1944'",
+        "Anonymized_element": "replace with generic or partial date, or remove date text",
+        "privacy_element": "specific issuance date",
+        "target_concept": "date text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Bottom-left line with location details: 'Orange Post Number 190, Department of New Jersey'",
+        "Anonymized_element": "generic post and state labels without specific names or numbers, or blank line",
+        "privacy_element": "city name, state, and post number identifying issuing location",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Lower-right signature block with readable name of national commander",
+        "Anonymized_element": "generic undecipherable signature or blank signature line without printed name",
+        "privacy_element": "full personal name and signature",
+        "target_concept": "signature/name block",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12063264.jpg"
+}

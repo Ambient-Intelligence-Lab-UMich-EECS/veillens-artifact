@@ -1,0 +1,78 @@
+{
+  "reasoning": "The image shows a public street procession with multiple clearly visible, identifiable faces in mid-ground and background. These constitute Level 1 biometric data. Additional contextual clues include a readable storefront sign that can reveal location and the observable participation in a public parade, adding Level 3 behavioral and location information. Because several faces are unobscured and central, the privacy risk is elevated beyond simple context. Overall risk is high primarily due to multiple biometric identifiers, reinforced by location signage and activity context. Confidence is high as these elements are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in white-and-pink sari, side profile face visible near center-right",
+        "Anonymized_element": "blurred face, pixelated facial area, generic head shape without features",
+        "privacy_element": "identifiable facial features, hairstyle, accessories",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "man in white t-shirt, right-side profile face near far right",
+        "Anonymized_element": "blurred/pixelated face, neutral head silhouette",
+        "privacy_element": "identifiable facial features, beard/hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "young person with flower in hair wearing pink outfit, face in three-quarter view center-right",
+        "Anonymized_element": "blurred face, remove distinct hair accessories, neutral head shape",
+        "privacy_element": "identifiable facial features, distinctive hair accessory",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "man in patterned orange lower garment, partial face visible profile at far right edge",
+        "Anonymized_element": "pixelated face, neutral head shape without details",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "storefront sign with readable brand/text above the crowd",
+        "Anonymized_element": "blank fascia, generic shapes/colors without text or logos",
+        "privacy_element": "business name/logo text indicating specific place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "group of participants marching in a public street procession",
+        "Anonymized_element": "fewer distinct individuals, de-identified silhouettes",
+        "privacy_element": "observable participation in a specific public event/behavior",
+        "target_concept": "public activity context",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14629372/final/2017_14629372_final.png"
+}

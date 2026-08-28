@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows two displayed documents with readable text. The left handwritten page includes an author\u2019s personal name and a date range, and within the body text several other individual names are listed. Both pages contain specific school and city names (e.g., public schools and town references) that indicate location and institutional affiliation. No identifiable faces or government/financial data are visible. The highest-severity clues are Level 2 (readable personal names), reinforced by multiple names and location/institution details (Level 3). Given legibility and composition, the privacy risk is moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten page titled 'Memories' with an author\u2019s name and date range at the bottom",
+        "Anonymized_element": "generic handwritten note, no names, no dates, filler text",
+        "privacy_element": "readable personal name of author, visible date range",
+        "target_concept": "name on document",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "body text on the left page listing several teacher or individual names",
+        "Anonymized_element": "replace with generic roles or initials, no full names",
+        "privacy_element": "multiple readable personal names within sentences",
+        "target_concept": "names in text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "segments of the left page text mentioning specific school and town names",
+        "Anonymized_element": "generic school/town placeholders, remove unique place names",
+        "privacy_element": "specific school and locality names revealing location context",
+        "target_concept": "place names in text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "typed page on the right referencing a specific city public school system and years in a personal narrative",
+        "Anonymized_element": "generic institution and city terms, remove or generalize years tied to a person",
+        "privacy_element": "city and institution names linked to an individual\u2019s work history and dates",
+        "target_concept": "institution/location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12840195.jpg"
+}

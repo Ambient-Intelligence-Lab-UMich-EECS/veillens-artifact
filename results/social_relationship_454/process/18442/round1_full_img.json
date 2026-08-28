@@ -1,0 +1,35 @@
+{
+  "img_id": "18442",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 4": 4,
+    "2 4": 4
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 6,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: In a study/workroom with laptops and stacks of books; they\u2019re in the same space but at different tables and not directly interacting, likely part of the same work session. => professional\n\n[P1-P4]: They sit at the same table in a workspace and P1 is reaching toward P4 while P4 looks back, suggesting collaboration around the laptops/books rather than intimacy. => professional\n\n[P2-P4]: Both are in the shared study/office setting with laptops; they\u2019re a bit apart and not touching, but appear to be engaged in the same group work environment. => professional",
+  "timestamp": 1776888605.0654256
+}

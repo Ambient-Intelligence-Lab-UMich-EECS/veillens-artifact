@@ -1,0 +1,46 @@
+{
+  "reasoning": "The faces in this crop are fully obscured, so no biometric identifiers are visible. The main privacy-relevant cues are personal attributes conveyed by clothing and accessories (a strappy polka-dot top and large hoop earrings), which can hint at gender presentation and appearance. The background shows a home interior with a couch, offering minimal contextual location/property info without identifiable details. With no Level 1 or Level 2 elements, the risk comes from Level 3 personal attributes and minor Level 4 background context, yielding a low-to-moderate score.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "upper torso wearing a strappy polka-dot top with exposed shoulders",
+        "Anonymized_element": "solid-color top, wider straps, higher neckline, less form-fitting",
+        "privacy_element": "body shape outline, gender-coded clothing style, exposed shoulders/upper chest",
+        "target_concept": "clothing on upper torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large hoop earring visible on the ear",
+        "Anonymized_element": "small stud earring or no earring",
+        "privacy_element": "distinctive jewelry style that signals personal appearance",
+        "target_concept": "earring",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "sofa in a living room background",
+        "Anonymized_element": "neutral blurred background, plain wall",
+        "privacy_element": "home interior context, furniture style indicating private residence",
+        "target_concept": "couch",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10769632/r1_crops/2017_10769632_0.png"
+}

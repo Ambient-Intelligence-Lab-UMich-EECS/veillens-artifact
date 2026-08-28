@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a waterfall with a few motion‑blurred people in swimwear. No faces are identifiable, and there are no readable documents, numbers, or logos. The primary privacy signals are limited to the depiction of individuals engaging in a recreational activity and very general body outlines. These are Level 3 (activities/personal attributes) and Level 4 (distant crowd) clues without any strong identifiers, yielding a low overall risk. Confidence is high because the absence of identifiable faces or text is clear.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "motion-blurred person in dark swimwear at the bottom center beneath the waterfall",
+        "Anonymized_element": "empty water surface, remove person, replace with water splash or rocks",
+        "privacy_element": "depiction of an individual engaging in recreational swimming, partial body outline/physique",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "two motion-blurred figures at the left edge under falling water",
+        "Anonymized_element": "remove people and inpaint rocks/water, convert to generic water spray with no human forms",
+        "privacy_element": "presence of multiple individuals indicating group recreational activity at a natural site",
+        "target_concept": "people group",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14375717/final/2017_14375717_final.png"
+}

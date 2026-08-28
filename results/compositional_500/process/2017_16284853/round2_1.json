@@ -1,0 +1,59 @@
+{
+  "reasoning": "This crop shows a public rally with several identifiable faces in clear view, which is Level 1 biometric data. A readable hand-held sign stating \u201cRhode Island\u201d and a distinctive brick building facade add location cues (Level 3) and reinforce context of participation in a public demonstration (activities/behaviors). The combination of multiple clear faces with explicit location signage drives a high privacy risk. Evidence is direct and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a bearded man on the right side of the frame, facing left",
+        "Anonymized_element": "blurred face, pixelated features, generic skin-toned oval without details",
+        "privacy_element": "recognizable facial features, eyes, nose, mouth, beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a person in the center-left wearing glasses, looking upward",
+        "Anonymized_element": "blurred facial region, remove eye details, generic oval with no features",
+        "privacy_element": "recognizable facial structure, eyes, nose, mouth, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handheld white sign with black text reading 'Rhode Island' near the top center-right",
+        "Anonymized_element": "blank sign, solid color with no text or symbols",
+        "privacy_element": "readable geographic name indicating location",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large red brick building with repeating window pattern in the background",
+        "Anonymized_element": "generic blurred building facade without distinctive patterns or signage",
+        "privacy_element": "distinctive architecture that can be used to identify location",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16284853/r1_crops/2017_16284853_1.png"
+}

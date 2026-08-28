@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows a lottery payment form with clearly readable recipient text \u201cBeau Giles\u201d and the SA Lotteries branding. The full name is a direct non-unique identifier (Level 2). The document itself also reveals a specific financial-activity context (lottery payout form), which contributes moderate risk through activities/behavioral inference. No biometric data, government IDs, or account numbers are visible. Overall risk is driven by the legible name plus the financial-activity document context, leading to a moderate score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed recipient name \"Beau Giles\" on the lottery payment form",
+        "Anonymized_element": "blurred text, placeholder name like 'First Last', obfuscated characters",
+        "privacy_element": "full legal name clearly legible",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "SA Lotteries payment/check form with brand logo and payout fields",
+        "Anonymized_element": "plain generic form with no brand/logo, minimal unlabeled boxes",
+        "privacy_element": "lottery document context indicating participation and payout, recognizable brand",
+        "target_concept": "lottery check/form",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11374375.jpg"
+}

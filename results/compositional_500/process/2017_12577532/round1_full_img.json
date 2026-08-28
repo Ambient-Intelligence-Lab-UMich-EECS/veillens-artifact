@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a hand holding a smartphone with a fitness app screen clearly displaying running activity details such as distances, split times, and total times. No identifiable faces, names, government IDs, financial data, or exact location are visible. The highest severity present is Level 3 because the readable workout metrics can reveal personal activities and training habits. As this is a single, clear Level 3 clue without reinforcing identifiers, the overall risk is moderate-low. Confidence is high due to the clarity of the screen content.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smartphone screen showing a fitness app with readable running splits, distances (1K\u201310K), and times",
+        "Anonymized_element": "generic UI placeholders, blurred or redacted metrics, non-specific demo data",
+        "privacy_element": "workout distances, split times, total times indicating training performance and routine",
+        "target_concept": "fitness app screen",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12577532.jpg"
+}

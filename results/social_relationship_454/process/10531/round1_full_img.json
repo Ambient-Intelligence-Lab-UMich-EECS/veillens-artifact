@@ -1,0 +1,28 @@
+{
+  "img_id": "10531",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "2 3": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "2 3": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Outdoor plaza scene with elderly women sitting on benches; P1 and P2 are close, relaxed, possibly chatting, dressed similarly in casual jackets and scarves, with no signs of work or transaction and no physical contact. => friends\n\n[P1-P3]: Public setting where P3 is on the steps behind P1, facing away; they are distant with no interaction or shared activity, and attire doesn\u2019t link them. => no-relationship\n\n[P2-P3]: P2 sits on the bench while P3 is in the background on the steps; clear separation, no eye contact or engagement, casual unrelated clothing in a public area. => no-relationship\n\n[P3-P4]: P4 sits with crutches on a bench while P3 is behind on the steps; they are far apart, not interacting, and nothing in attire or context suggests a connection. => no-relationship",
+  "timestamp": 1776889486.8528872
+}

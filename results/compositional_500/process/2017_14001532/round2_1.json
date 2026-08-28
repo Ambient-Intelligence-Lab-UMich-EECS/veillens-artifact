@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a lottery or municipal ticket with readable serial number 21439 and \u2018SERIE 041\u2019, a machine-readable barcode, and explicit location text and map for Castellar del Vall\u00e8s (Barcelona). No persons or personal identifiers are present, but the document contains traceable identifiers and clear location references. The highest severity present is Level 3 due to location information; other elements are Level 4 generic document metadata. Combined, these indicate low-to-moderate privacy risk without linking to a specific individual. Score reflects limited but real contextual identifiers. Confidence is high because the elements are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "machine-readable barcode at the top-left edge of the ticket",
+        "Anonymized_element": "solid black bar, blurred area, generic non-decodable pattern",
+        "privacy_element": "barcode encoding ticket or serial data",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed serial and ticket number block showing 'SERIE 041' and digits '21439' near top center",
+        "Anonymized_element": "digits replaced with Xs or randomized numbers, blank strip",
+        "privacy_element": "readable series identifier and ticket number",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "text and small map stating 'Ayuntamiento de Castellar del Vall\u00e8s' with 'Provincia: Barcelona' and highlighted region",
+        "Anonymized_element": "generic city name placeholder, blurred text, blank or abstract map",
+        "privacy_element": "explicit municipality name, province, and map highlight indicating location",
+        "target_concept": "place name and map",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14001532/r1_crops/2017_14001532_1.png"
+}

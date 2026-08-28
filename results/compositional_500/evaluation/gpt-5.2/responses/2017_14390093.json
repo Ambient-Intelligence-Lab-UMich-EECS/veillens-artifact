@@ -1,0 +1,34 @@
+{
+  "reasoning": "Most people in the scene are fully obscured silhouettes with no readable badges or text. The only biometric signal is a small, partial face at the lower-left edge, which is cropped and not clearly identifiable. The background appears to be a hospital corridor with visible medical equipment, which suggests a healthcare setting but does not reveal specific medical records or identifiers. With no names, documents, or full faces, risk stems mainly from the partial biometric cue combined with the medical-context inference, yielding a low overall score.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible face (ear and cheek) at the lower-left edge of the image",
+        "Anonymized_element": "replace with shoulder-only crop, uniform blur over skin area, or inpaint with generic scrubs fabric",
+        "privacy_element": "partial facial features, ear shape, skin texture",
+        "target_concept": "partial face",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "hospital corridor background with medical equipment cart/bed and monitors",
+        "Anonymized_element": "generic office-like hallway, neutral furniture, remove or blur medical equipment cues",
+        "privacy_element": "recognizable hospital interior, medical equipment implying healthcare context",
+        "target_concept": "medical environment",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14390093/final/2017_14390093_final.png"
+}

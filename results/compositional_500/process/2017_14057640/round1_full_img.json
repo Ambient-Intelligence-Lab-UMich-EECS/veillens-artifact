@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a concert stage with a large screen displaying a drummer. The drummer\u2019s face is visible and reasonably clear on the jumbotron, creating a Level 1 biometric privacy clue. Additional low-risk elements include a few tiny, distant audience members at the bottom and an event banner with generic URL/campaign text, which provide contextual but not personal identifiers. With one central but contextually public face and otherwise weak supporting clues, the overall risk is moderate. Confidence is medium due to distance/quality of the facial view on the screen.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "drummer\u2019s uncovered face displayed on the central jumbotron screen",
+        "Anonymized_element": "blurred face, silhouette of performer, back-of-head view, generic abstract performer graphic",
+        "privacy_element": "full facial features visible (eyes, nose, mouth) enabling identity recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small group of audience heads at the bottom edge of the frame",
+        "Anonymized_element": "blurred crowd, back-of-head silhouettes, denser abstract crowd pattern",
+        "privacy_element": "distant human heads with partial facial regions",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "event banner with Live Earth logo and readable URL/text call-to-action",
+        "Anonymized_element": "plain banner with abstract logo, no readable URL or text",
+        "privacy_element": "organization name and campaign URL/short code (non-personal contextual text)",
+        "target_concept": "banner text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14057640.jpg"
+}

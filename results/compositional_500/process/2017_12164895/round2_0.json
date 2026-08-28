@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows an eye-exam station with a person\u2019s face obscured while seated at an autorefractor and another obscured person operating it. No readable names, IDs, or faces are visible. The main privacy signal is the clear depiction of a health-related activity (undergoing an eye examination), which can reveal personal behavior/health context even without identity. Some small papers on the tray show partial text but no legible PII. With no Level 1 or Level 2 identifiers present, overall risk is moderate-low, driven by Level 3 activity context. Confidence is medium due to partial ambiguity of the papers.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "autorefractor machine with a seated person positioned for an eye test",
+        "Anonymized_element": "generic lab equipment, neutral device without clear medical context, remove patient/operator presence",
+        "privacy_element": "health-related activity visible (eye examination in progress)",
+        "target_concept": "medical examination setup",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small stack of papers/pamphlets on the device table with partial printed text",
+        "Anonymized_element": "blank sheets, blurred text, generic brochure without logos or readable content",
+        "privacy_element": "printed text fragments and potential clinic branding on documents",
+        "target_concept": "paper documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12164895/r1_crops/2017_12164895_0.png"
+}

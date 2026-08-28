@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows the back of a vintage baseball trading card with legible printed text. No faces or biometric data are visible. However, the card plainly displays a person\u2019s full name and date of birth alongside birth/home locations, which are Level 2 and Level 3 privacy elements. These clues are clear and centralized, making the overall risk moderate though not severe since they are printed on a collectible rather than a government or financial document. Score reflects multiple non-unique identifiers combined with location info. Confidence is medium due to slight blur but text remains readable.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical text block at left showing the person\u2019s full name in capitals",
+        "Anonymized_element": "blank strip, generic placeholder text, obscured or blurred characters",
+        "privacy_element": "full personal name",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bio line listing birth details (e.g., Born: Aug. 9, \u201930, Mississippi City, Miss.)",
+        "Anonymized_element": "remove date, replace with generic year range, substitute with placeholder text",
+        "privacy_element": "date of birth, birthplace city/state",
+        "target_concept": "date of birth text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bio line with home location (e.g., Home: Mobile, Alabama)",
+        "Anonymized_element": "replace with generic region name, blurred text, remove city/state",
+        "privacy_element": "home city and state",
+        "target_concept": "home location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "circular emblem with card number and brand (TOPPS 280)",
+        "Anonymized_element": "plain circle, no number or brand, neutral graphic",
+        "privacy_element": "document brand and serial/card number",
+        "target_concept": "card number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16098487.jpg"
+}

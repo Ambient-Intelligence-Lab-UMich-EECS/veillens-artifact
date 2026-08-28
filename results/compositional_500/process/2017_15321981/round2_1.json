@@ -1,0 +1,45 @@
+{
+  "reasoning": "The regional crop shows a person with their face anonymized, removing direct biometric identification. Visible elements include a bare hand holding a small orange fruit and eyeglasses frames on the masked face. These provide only low-level personal attributes and a light activity/consumption cue, without any names, documents, addresses, or readable text. With no Level 1\u20132 identifiers present and only Level 3 contextual clues, the privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right hand with visible skin and fingernails holding an object near the face",
+        "Anonymized_element": "add thin gloves, smooth skin blur, crop to wrist only",
+        "privacy_element": "distinctive hand shape and skin texture that can hint at personal appearance",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "eyeglasses frame on the person\u2019s face (face area masked)",
+        "Anonymized_element": "remove glasses, replace with blank area, generic non-descript frame",
+        "privacy_element": "distinctive eyewear style that can hint at personal appearance",
+        "target_concept": "eyeglasses",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small orange fruit with leaf held between fingers",
+        "Anonymized_element": "replace with neutral object (plain sphere), remove item, blur object",
+        "privacy_element": "food item suggesting mild consumption preference/activity",
+        "target_concept": "handheld object (fruit)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15321981/r1_crops/2017_15321981_1.png"
+}

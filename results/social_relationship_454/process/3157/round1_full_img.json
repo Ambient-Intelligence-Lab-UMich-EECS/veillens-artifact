@@ -1,0 +1,43 @@
+{
+  "img_id": "3157",
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 1,
+    "3 5": 6
+  },
+  "predictions": {
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4",
+    "1 5"
+  ],
+  "subjects_matched": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    1
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 5,
+  "raw_response": "[P2-P3]: Scene appears to be a busy street market; they stand a short distance apart, facing different directions with no eye contact or touch. Both wear casual clothing like other shoppers and show no coordinated activity. => no-relationship\n\n[P2-P4]: Outdoor market setting; P2 is walking away with a suitcase while P4 stands by a stall looking elsewhere, with no interaction. Their casual attire suggests separate shoppers. => no-relationship\n\n[P2-P5]: They are far apart in the frame; P5 faces the camera near a stall while P2 is in the background moving away. No physical or visual engagement. => no-relationship\n\n[P3-P4]: Both are adults near a shop but oriented away from each other and not interacting. Casual streetwear in a market context suggests independent shoppers. => no-relationship\n\n[P3-P5]: P5 is a child in the foreground looking forward, while P3 is farther back looking elsewhere; no proximity or contact. Market setting with casual clothes suggests they are unrelated bystanders. => no-relationship\n\n[P4-P5]: Though near the same stall, P4 is turned away and focused inside while P5 is looking forward; no touch or shared activity. Clothing and posture fit separate shoppers in a market. => no-relationship",
+  "timestamp": 1776888636.7222164
+}

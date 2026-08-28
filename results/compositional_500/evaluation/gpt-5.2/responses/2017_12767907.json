@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a wide city walkway with flowering trees, tall buildings, and a few tiny pedestrians in the far distance. No readable faces, IDs, or sensitive documents are visible. A green highway/road sign with partially legible text hints at a specific city location, creating moderate location risk. Additional low-risk elements include distant unidentifiable people and parked cars without readable plates. Overall, risk stems mainly from potential location disclosure, with no high-severity identifiers present.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green highway/road sign on the left side with small white text",
+        "Anonymized_element": "blank green rectangle, text removed, generic color panel without lettering",
+        "privacy_element": "partially legible road sign text and format indicating specific route/location",
+        "target_concept": "street/highway sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "two small pedestrian figures far down the walkway",
+        "Anonymized_element": "remove figures, replace with empty walkway or abstract silhouettes",
+        "privacy_element": "presence of individuals (unidentifiable) indicating activity in a public place",
+        "target_concept": "distant pedestrians",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "row of parked cars along the right side of the street",
+        "Anonymized_element": "generic car shapes with no plates or branding details",
+        "privacy_element": "vehicles associated with potential asset ownership without readable identifiers",
+        "target_concept": "parked vehicles",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12767907/final/2017_12767907_final.png"
+}

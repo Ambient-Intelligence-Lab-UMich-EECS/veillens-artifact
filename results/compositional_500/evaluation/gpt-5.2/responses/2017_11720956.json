@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a dog on a patterned couch in a home-like interior. No people, faces, IDs, or readable text are visible. The only potential privacy cues are low-risk contextual elements: a stack of papers with illegible content and identifiable household furniture that implies a private residence. These are Level 4 clues and do not reveal identity or sensitive data. Therefore the overall risk is low, with high confidence due to clear visibility of the limited clues.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small stack of papers on the lower-left table corner with blurred, unreadable text",
+        "Anonymized_element": "blank sheets, closed folder, generic magazine without text",
+        "privacy_element": "printed document edges, faint text lines (not legible)",
+        "target_concept": "papers/documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "patterned fabric couch within a domestic interior",
+        "Anonymized_element": "plain solid-color couch, neutral background, tighter crop on pet",
+        "privacy_element": "distinctive furniture pattern indicating private residence",
+        "target_concept": "household furniture",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11720956/final/2017_11720956_final.png"
+}

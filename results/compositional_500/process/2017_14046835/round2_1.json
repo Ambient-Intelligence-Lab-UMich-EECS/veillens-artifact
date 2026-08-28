@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows a small crowd at an outdoor event with several clearly identifiable faces in close proximity. Multiple front-facing faces are unobstructed and well-lit, which are Level 1 biometric identifiers. Team-branded jerseys, scarves, and hats indicate sports fandom and may hint at regional location, adding Level 3 contextual risk. There are no names, government IDs, or financial/medical items. The presence of several strong facial identifiers elevates risk to moderately high. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing man's face under a beige umbrella near image center-left",
+        "Anonymized_element": "blurred face, pixelated facial area, add sunglasses and shadow, turn head away",
+        "privacy_element": "full facial features visible including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young man's face in navy jersey looking down at a phone near center-right",
+        "Anonymized_element": "blurred face, pixelated facial region, crop above neck, add cap obscuring face",
+        "privacy_element": "recognizable facial profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman's smiling face wearing a knit hat with team logo at right side",
+        "Anonymized_element": "blurred face, pixelated facial area, replace with generic hat covering face",
+        "privacy_element": "clear facial features with direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "team-branded jerseys, scarves, and hats with logo and large numbers",
+        "Anonymized_element": "plain apparel, no logos or numbers, neutral colors",
+        "privacy_element": "sports team logo, jersey number suggesting fandom and region",
+        "target_concept": "sports team logo on clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14046835/r1_crops/2017_14046835_1.png"
+}

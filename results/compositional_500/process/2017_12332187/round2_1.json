@@ -1,0 +1,94 @@
+{
+  "reasoning": "The crop shows a street parade with several clearly visible faces, including a central woman and two nearby adults; a child\u2019s face is also partly visible. Printed headshots appear on yellow banners. A storefront sign with partial text provides a weak location hint. Holding parade poles implies participation in a specific public event. The highest-severity elements are multiple identifiable faces (Level 1), reinforced by event-participation context (Level 3) and minor location text (Level 3). Overall risk is high with clear, central biometric cues.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central woman in white blouse with sunglasses, full face visible",
+        "Anonymized_element": "blurred face, generic head shape, opaque sunglasses, neutral clothing colors",
+        "privacy_element": "identifiable facial features and contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman in red dress at left, uncovered face",
+        "Anonymized_element": "blurred face, generic head shape, neutral-toned dress",
+        "privacy_element": "identifiable face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man with long hair and patterned pants at far left, face visible in profile",
+        "Anonymized_element": "blurred face, generic hair shape, plain clothing",
+        "privacy_element": "identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child in green shirt near center-right, partial face visible",
+        "Anonymized_element": "blurred face, generic child silhouette",
+        "privacy_element": "identifiable child facial features (partial)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow parade banner with small printed headshots",
+        "Anonymized_element": "abstract shapes or icons, no faces or distinct portraits",
+        "privacy_element": "printed human faces (portraits)",
+        "target_concept": "printed portrait",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront sign in background with partial text",
+        "Anonymized_element": "blank fascia, generic sign with no readable text",
+        "privacy_element": "readable partial place/business text",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "parade pole/flag held by central participant",
+        "Anonymized_element": "neutral pole without banner, hands not gripping pole",
+        "privacy_element": "visible active participation in a public parade/event",
+        "target_concept": "parade pole/flag",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12332187/r1_crops/2017_12332187_1.png"
+}

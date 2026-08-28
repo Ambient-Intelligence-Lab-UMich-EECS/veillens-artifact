@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image depicts a wheelchair basketball game featuring several identifiable athletes. While most faces and specific identifiers are partially obscured or integrated into a public sporting event, the presence of jersey numbers and team branding alongside visible athletes still allows for moderate identification. The primary privacy risk stems from the athletes' visible physical appearance and participation in a specific, identifiable sporting event. Because these individuals are in a public sports setting, the risk is assessed as moderate rather than severe.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A wheelchair athlete on the right side of the frame with a visible jersey number 4 and team logo",
+        "Anonymized_element": "blank jersey, no logo, neutral athletic wear",
+        "privacy_element": "visible face, identifiable team uniform, jersey number 4",
+        "target_concept": "athlete",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "An athlete in the center background with jersey number 22",
+        "Anonymized_element": "blank jersey, no number",
+        "privacy_element": "team uniform, jersey number 22",
+        "target_concept": "athlete",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "A group of spectators in the background seating area",
+        "Anonymized_element": "blurred background audience, indistinguishable shapes",
+        "privacy_element": "identifiable crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12820811/final/2017_12820811_final.png"
+}

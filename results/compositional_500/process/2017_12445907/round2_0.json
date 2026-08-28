@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows a street parade with several clearly visible, front-facing individuals whose facial features are identifiable, representing Level 1 biometric data. A vehicle\u2019s front license plate is also legible enough to expose a unique identifier linked to location/ownership, adding Level 3 risk. These clues are central and unoccluded, compounding the risk beyond casual context. No government IDs, financial, or medical details are visible. The combination of multiple identifiable faces plus a readable license plate yields a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of a man walking on the left in a white t-shirt and black shorts, looking forward",
+        "Anonymized_element": "face blurred or pixelated, generic skin tone, remove distinctive facial features",
+        "privacy_element": "identifiable facial features, gaze toward camera",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of a person behind the convertible car raising both arms, center of frame",
+        "Anonymized_element": "blurred face, neutral skin tone, no identifiable features",
+        "privacy_element": "clear frontal face, visible hairline and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of a man with short hair standing just right of center behind the car, smiling",
+        "Anonymized_element": "pixelated face, neutralized features",
+        "privacy_element": "distinct facial features, direct visibility",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "front license plate on the black convertible",
+        "Anonymized_element": "blank plate, no numbers or state text, solid color",
+        "privacy_element": "alphanumeric plate number, state text/branding",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12445907/r1_crops/2017_12445907_0.png"
+}

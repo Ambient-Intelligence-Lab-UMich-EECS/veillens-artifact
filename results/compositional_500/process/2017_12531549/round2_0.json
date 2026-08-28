@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a close-up of an open mouth being examined with a tool held by a purple medical glove. This clearly indicates a medical or dental procedure, which is sensitive on its own as medical imagery. No readable identifiers or full face are visible, though partial facial features are present. The highest severity is Level 2 (medical data), with a supporting Level 3 cue (personal attributes from partial face). Together these suggest moderate-to-high privacy risk. Confidence is high because the medical context is visually explicit.",
+  "personal_info_privacy_score": {
+    "score": 0.5,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "open mouth with inner oral cavity contacted by a swab/tongue depressor held by a gloved hand",
+        "Anonymized_element": "closed mouth, remove tool and glove, neutral lower-face without intraoral view",
+        "privacy_element": "intraoral medical imagery, clear medical/dental examination context",
+        "target_concept": "medical oral exam",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lower half of a person\u2019s face showing lips and surrounding skin",
+        "Anonymized_element": "crop to exclude human skin and lips, replace with generic non-human surface",
+        "privacy_element": "partial facial features revealing physical appearance",
+        "target_concept": "partial face",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12531549/r1_crops/2017_12531549_0.png"
+}

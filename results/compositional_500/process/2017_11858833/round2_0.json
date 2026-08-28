@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a group in elaborate festival costumes with the foreground faces already obscured. However, there are a couple of small, partially visible background faces that could still enable recognition. The distinctive, culturally specific costumes and event props also hint at activity and potentially the locale. The highest severity present is Level 1 (biometric data) but these faces are distant/partially occluded, so overall risk is moderated. Combined with contextual activity cues, this yields a moderate but not high privacy risk. Confidence is medium due to the small size and occlusion of the facial regions.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small, partially visible face of a person in a white T\u2011shirt standing behind the performers near a camera tripod",
+        "Anonymized_element": "strong blur over face region, replace with neutral bokeh background, crop above shoulders",
+        "privacy_element": "exposed facial features, eyes/nose outline enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partially occluded face of a person in a beige shirt at the upper-left background",
+        "Anonymized_element": "apply pixelation/blur on face, replace with generic head silhouette, crop to remove head area",
+        "privacy_element": "visible facial structure despite occlusion",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "ornate, highly distinctive beaded festival costume on front-center performer",
+        "Anonymized_element": "simpler garment with generic solid colors and no unique symbols or patterns",
+        "privacy_element": "unique cultural patterning that can signal specific event/location affiliation",
+        "target_concept": "costume/garment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11858833/r1_crops/2017_11858833_0.png"
+}

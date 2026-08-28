@@ -1,0 +1,25 @@
+{
+  "reasoning": "The crop shows a small group of people outdoors near a building, but all faces are clearly obscured and no names, documents, IDs, or readable signage are visible. There are no government or financial identifiers and no explicit location indicators like addresses. The only privacy-relevant element is the presence of unidentifiable individuals which offers minimal contextual information about social interaction. The highest severity present is Level 4, resulting in a low overall risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "group of people with faces fully obscured by overlays",
+        "Anonymized_element": "keep faces obscured, further blur clothing logos, neutral color clothing",
+        "privacy_element": "human presence, body shapes and clothing implying a social gathering",
+        "target_concept": "unidentifiable individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13555609/r1_crops/2017_13555609_1.png"
+}

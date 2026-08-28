@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows an open printed booklet on a chair and a person’s shoes. No faces, IDs, or names are visible. The most privacy-relevant element is a readable regional government logo/text (“Provincia autonoma di Trento”) that can hint at geographic location. The rest is generic document text (Italian title about a musical instrument kit) that only weakly implies interests/activities. With one weak Level 3 location cue and otherwise Level 4 generic document clues, the overall risk is low to mildly contextual.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Lower-right corner of the right page with a crest logo and readable text 'Provincia autonoma di Trento'",
+        "Anonymized_element": "blank corner, abstract generic logo without text, blurred/unreadable text",
+        "privacy_element": "readable regional government name and crest indicating geographic area",
+        "target_concept": "organization logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Left page title text in Italian: 'Il kit di montaggio dello strumento musicale'",
+        "Anonymized_element": "solid-color page, generic shapes, title removed or replaced with nonspecific placeholder text",
+        "privacy_element": "readable document title indicating topic/interest",
+        "target_concept": "document title text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14028890/final/2017_14028890_final.png"
+}

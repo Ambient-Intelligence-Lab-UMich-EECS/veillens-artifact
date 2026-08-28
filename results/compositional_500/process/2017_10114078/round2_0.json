@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a public parade with several clearly visible, identifiable faces among both performers and spectators, which constitutes Level 1 biometric data. A storefront sign (\u201cST. JOHN\u201d) is readable, giving potential location cues (Level 3). Clothing and context indicate participation in a parade, revealing activity/behavior (Level 3). No government IDs, financial, or medical data are visible. Due to multiple unobstructed faces and reinforcing location/behavior context, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of man in white tank top holding a purple flag on the left foreground",
+        "Anonymized_element": "blurred face, pixelated facial region, turned-away head, generic skin-tone oval",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of woman in white shirt standing behind crowd barrier near center-left",
+        "Anonymized_element": "blurred face, pixelated facial region, generic oval replacement",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of man in plaid shirt behind the barrier near center",
+        "Anonymized_element": "blurred face, pixelated facial region, generic oval replacement",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront wall plaque reading 'ST. JOHN' at upper left background",
+        "Anonymized_element": "blank plaque, removed text, generic facade",
+        "privacy_element": "readable store name indicating potential location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "shirtless parade participant wearing beads and white wrap on right foreground (face partially out of frame/covered)",
+        "Anonymized_element": "add neutral shirt, remove distinctive accessories, generic attire",
+        "privacy_element": "distinctive outfit and participation in public parade",
+        "target_concept": "parade participant",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10114078/r1_crops/2017_10114078_0.png"
+}

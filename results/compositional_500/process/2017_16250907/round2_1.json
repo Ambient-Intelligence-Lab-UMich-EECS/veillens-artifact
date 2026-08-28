@@ -1,0 +1,49 @@
+{
+  "reasoning": "The region shows a golfer mid-swing with the face obscured, reducing biometric risk. Privacy-relevant elements include readable event signage with brand and Korean text that can indicate event/location context, the clear depiction of the golf activity, and branded logos on clothing that provide affiliation cues. No government IDs, finance, or medical data are visible. The highest severity present is Level 3 (activity and potential location context). Multiple Level 3/4 cues combine to a moderate but not high risk. Score reflects absence of identifiable face yet presence of contextual identifiers. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical black banner with LG logo and Korean event text",
+        "Anonymized_element": "plain dark banner, abstract shapes, no text or logos",
+        "privacy_element": "readable LG brand, readable Korean event text",
+        "target_concept": "event banner/sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person\u2019s body in golf attire performing a golf swing (face obscured)",
+        "Anonymized_element": "crop body further, generic athletic stance with neutral clothing colors",
+        "privacy_element": "distinct activity pose indicating golfing, visible physical build and clothing style",
+        "target_concept": "person performing activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "logos/patches on the hat and shirt",
+        "Anonymized_element": "plain hat and shirt without any logos or patches",
+        "privacy_element": "brand/sponsor logos indicating affiliations",
+        "target_concept": "clothing logos",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16250907/r1_crops/2017_16250907_1.png"
+}

@@ -1,0 +1,34 @@
+{
+  "img_id": "13978",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1
+  },
+  "missed_pairs": [
+    "1 3",
+    "1 4",
+    "2 3",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3,
+    4
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They appear to be hanging out with a group at a lakeside picnic table; P1 and P2 sit very close on the same bench, angled toward each other as if chatting, with no intimate touch. Their casual/leisure setting and attire suggest peers socializing rather than a professional or transactional context. => friends",
+  "timestamp": 1776887888.1446922
+}

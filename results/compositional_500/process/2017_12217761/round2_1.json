@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a decorative doll in a dress placed near shelves containing miscellaneous items. No human faces or government/financial/medical identifiers are visible. The only potentially relevant elements are generic papers/envelopes and a product container with printed labeling, but no legible personal text, names, or addresses can be read. Thus, privacy risk remains low and driven only by generic artifacts in the background.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stack of envelopes and papers standing vertically on the left side",
+        "Anonymized_element": "plain blank envelopes, blurred paper edges, no text or logos",
+        "privacy_element": "printed surfaces that could contain personal mailing details (not legible)",
+        "target_concept": "envelopes/papers",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "orange cylindrical container with a product label and paragraph text on the upper right shelf",
+        "Anonymized_element": "plain unlabeled container, label turned away, solid color wrap",
+        "privacy_element": "printed label text that could reveal product preferences (not personal or legible)",
+        "target_concept": "product label",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12217761/r1_crops/2017_12217761_1.png"
+}

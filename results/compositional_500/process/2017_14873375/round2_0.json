@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a person\u2019s hand holding a rectangular card whose entire surface is obscured, so no text, numbers, logos, or photos are visible. There are no faces or government identifiers. The only privacy-relevant cue is the visible hand revealing minor physical traits (skin, nails). With no reinforcing identifiers or sensitive content, the risk remains low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up of a person\u2019s hand and fingers holding a blank/obscured card",
+        "Anonymized_element": "gloved hand, cropped hand edge only, generic illustrated hand",
+        "privacy_element": "visible skin and fingernails showing minor physical traits",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14873375/r1_crops/2017_14873375_0.png"
+}

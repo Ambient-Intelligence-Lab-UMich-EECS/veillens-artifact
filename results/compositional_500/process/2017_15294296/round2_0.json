@@ -1,0 +1,48 @@
+{
+  "reasoning": "This crop shows a small crowd at a parade-like event. Faces and a handheld sign have been obscured, removing direct biometric or textual identifiers. Remaining cues include distinctive clothing and bead necklaces indicating participation in a public celebration and a visible school bus and residential building that give weak, non-specific location context. With no readable names, IDs, or financial/medical data, the highest present severity is Level 3 (activities/attributes), supported only by weak Level 4 crowd/background context. Overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in a red dress wearing multiple colorful bead necklaces",
+        "Anonymized_element": "less distinctive solid-color clothing, plain single necklace or none",
+        "privacy_element": "distinctive clothing and accessories revealing participation in a specific public event",
+        "target_concept": "clothing and accessories",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of people standing together at a public gathering (faces obscured)",
+        "Anonymized_element": "reduce crowd density, generic silhouettes",
+        "privacy_element": "presence in a specific public crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow school bus in the background",
+        "Anonymized_element": "generic vehicle or blurred vehicle, neutral color",
+        "privacy_element": "contextual location cue of being near a school or parade route",
+        "target_concept": "vehicle (school bus)",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15294296/r1_crops/2017_15294296_0.png"
+}

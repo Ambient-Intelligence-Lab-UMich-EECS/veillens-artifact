@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows the top of an old paper document with a small handwritten note in the upper-right that appears to include a year (e.g., \u201c1856\u201d). No faces, IDs, names, addresses, or financial/medical details are visible. The only privacy-relevant element is a generic document margin with a partial date, which provides weak contextual metadata but not personally identifying information. Thus, risk is low and evidence is clear but limited.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small handwritten note with year on the upper-right margin of a paper",
+        "Anonymized_element": "blank paper margin, smudged scribble without numbers, solid texture",
+        "privacy_element": "handwritten date (e.g., 1856), brief text/initials",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14367145/r1_crops/2017_14367145_0.png"
+}

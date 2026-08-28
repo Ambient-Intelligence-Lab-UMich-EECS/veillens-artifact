@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows the dim interior of a large building with several people present. Faces are mostly turned away, small, or poorly lit, making them unidentifiable. No readable text, documents, badges, or other identifiers are visible. The only privacy-relevant element is the presence of a small crowd with partially visible but unrecognizable faces, which is a low-risk cue. Therefore the risk is low and confidence is high due to clear lack of identifiable details.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small group of visitors on the right side, some partially visible faces in low light",
+        "Anonymized_element": "silhouetted people, heavier face blur, lowered detail on heads and facial areas",
+        "privacy_element": "presence of people, partial facial features though unidentifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13104631/r1_crops/2017_13104631_1.png"
+}

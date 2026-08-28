@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public gathering with multiple clearly identifiable faces in the mid-right and background. These visible faces are Level 1 biometric data. Additional contextual clues include a readable sign mentioning \u201cRhode Island\u201d and a distinctive multi-arched brick building that can aid location identification, which together raise risk through composition. No government IDs, financial, or medical data are visible. The combination of several clear faces and location cues yields a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man\u2019s face with glasses in right-middle, turned left, unobstructed",
+        "Anonymized_element": "blurred face, pixelated features, replaced with generic head silhouette",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bearded man\u2019s face in green shirt near right-center, partial profile",
+        "Anonymized_element": "blurred/pixelated face, generic non-descript head",
+        "privacy_element": "distinct facial features and beard pattern",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman\u2019s face with short hair and sunglasses at far right, side profile",
+        "Anonymized_element": "pixelated/blurred face, generic head silhouette",
+        "privacy_element": "recognizable facial outline and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld sign on right side with readable text including 'Rhode Island'",
+        "Anonymized_element": "blank poster, abstract shapes with no text",
+        "privacy_element": "location-revealing place name on sign",
+        "target_concept": "event sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large brick building with distinctive repeating arched windows in background",
+        "Anonymized_element": "generic non-descript facade, simplified windows with altered pattern",
+        "privacy_element": "recognizable architectural landmark aiding geolocation",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16284853/r1_crops/2017_16284853_0.png"
+}

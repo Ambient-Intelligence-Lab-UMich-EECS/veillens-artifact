@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a speaker at a podium with a clearly identifiable face (frontal, well-lit). A visible watermark in the lower-left includes a company name and full phone number, which is a non-unique identifier. The podium panel displays an event/organization name (\u201cCHCC Latina Hall of Fame\u201d), revealing activity/affiliation context. The highest severity is Level 1 due to biometric facial data; this is reinforced by Level 2 identifier text and Level 3 contextual text, yielding a high overall risk with clear, legible cues. Confidence is high because elements are central and readable.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal, well-lit face of the woman speaking at the podium",
+        "Anonymized_element": "blur or pixelate face, turn head away, replace with neutral silhouette",
+        "privacy_element": "clear facial features (eyes, nose, mouth) enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white watermark text at bottom-left with company name and phone number",
+        "Anonymized_element": "remove watermark, blank margin, generic \u00a9 symbol without text or numbers",
+        "privacy_element": "company name text, full phone number",
+        "target_concept": "watermark text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "podium front panel showing \u2018CHCC Latina Hall of Fame\u2019 logo/text",
+        "Anonymized_element": "blank podium panel, abstract pattern without text or logos",
+        "privacy_element": "organization/event name text",
+        "target_concept": "event logo text on podium",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16117004/r1_crops/2017_16117004_0.png"
+}

@@ -1,0 +1,64 @@
+{
+  "reasoning": "The main foreground person is anonymized, but several background attendees have unobscured faces that are reasonably clear, creating Level 1 biometric risk. Additional contextual clues include readable storefront signage that can narrow location and a visible street-event crowd indicating participation in a public gathering. The combination of multiple visible faces with location cues yields a moderate-to-high privacy risk. Some faces are mid-distance and partially angled, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.46,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man in white shirt with backpack at mid-right, side-profile face visible",
+        "Anonymized_element": "blurred face, pixelated facial area, turned-away head",
+        "privacy_element": "recognizable facial features, eyes-nose-mouth profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "older person in white outfit standing behind center-right, face turned toward camera",
+        "Anonymized_element": "blurred face, pixelated facial area, generic head silhouette",
+        "privacy_element": "full facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "person in black shirt at far left wearing a red-and-black mask with part of face uncovered",
+        "Anonymized_element": "full-face mask covering skin, blur any exposed facial area",
+        "privacy_element": "exposed facial area around eyes and cheeks",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "storefront sign above the shop in the upper right background with readable branding/text",
+        "Anonymized_element": "blank sign, generic colors, no text or logo",
+        "privacy_element": "business name/logo text that can geolocate the scene",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "group of people gathered in the street area on the right background, some standing and chatting with event accessories",
+        "Anonymized_element": "sparser generic crowd with indistinct silhouettes, remove distinctive accessories",
+        "privacy_element": "visible participation in a public street event",
+        "target_concept": "crowd region",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11048442/final/2017_11048442_final.png"
+}

@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a clear sky, a painted rock, and the left edge of a person\u2019s bare upper arm/shoulder with a strap plus a colorful patterned bag. No face, names, documents, or numbers are visible. The strongest cue is minor personal attributes from exposed skin and clothing style (Level 3). A distinctive bag may weakly indicate property or taste (Level 4). With no Level 1\u20132 identifiers or sensitive content, overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partial view of a person\u2019s bare upper arm and shoulder with a black strap at the far left edge",
+        "Anonymized_element": "long-sleeve shirt covering the shoulder, neutral solid color fabric",
+        "privacy_element": "exposed skin and body shape suggesting personal appearance traits",
+        "target_concept": "shoulder/upper arm",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bright multicolor geometric-patterned bag at the left edge",
+        "Anonymized_element": "plain solid-color bag without distinctive patterns",
+        "privacy_element": "distinctive pattern and style implying personal ownership or taste",
+        "target_concept": "bag",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14726150/r1_crops/2017_14726150_1.png"
+}

@@ -1,0 +1,82 @@
+{
+  "reasoning": "The image shows a public demonstration with multiple clearly visible, front-facing or profile faces in the foreground, which are biometric identifiers (Level 1). Readable protest signage (e.g., a \u201cRhode Island\u201d sign) and raised placards reveal participation in a political/activist event, supporting sensitive inference about political views (Level 2). The distinctive large brick building and signage suggest potential location cues (Level 3). Because several identifiable faces are central, sharp, and compositional with activity and location hints, the overall privacy risk is high. Confidence is high due to clarity and proximity of these clues.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in white short-sleeve shirt at right foreground, side profile with visible facial features",
+        "Anonymized_element": "blurred face, generic skin-tone patch, turned-away head",
+        "privacy_element": "recognizable facial features, eyes/nose/mouth contour",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in black T-shirt at left foreground, side profile face raised upward",
+        "Anonymized_element": "face blurred, head cropped, generic silhouette",
+        "privacy_element": "recognizable facial features and profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman with glasses near center-right, facing left with arm raised and clear face",
+        "Anonymized_element": "blur glasses and face, replace with neutral head orientation",
+        "privacy_element": "full frontal facial features, eyewear detail",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld sign reading 'Rhode Island' near upper right",
+        "Anonymized_element": "blank sign, illegible scribbles, generic symbol",
+        "privacy_element": "readable geographic text indicating affiliation/location",
+        "target_concept": "protest sign with text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white protest placard/flag on a pole held above the crowd near center",
+        "Anonymized_element": "neutral plain color shape without slogans, smaller or lowered sign",
+        "privacy_element": "protest placard indicating participation in a demonstration",
+        "target_concept": "protest placard",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large red-brick building with distinctive arched windows in the background",
+        "Anonymized_element": "generic blurred facade, simplified non-descript building",
+        "privacy_element": "recognizable architectural features that can aid geolocation",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16284853.jpg"
+}

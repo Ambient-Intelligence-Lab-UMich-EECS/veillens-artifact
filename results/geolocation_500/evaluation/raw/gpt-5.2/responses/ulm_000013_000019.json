@@ -1,0 +1,9 @@
+{
+  "reasoning": "1) Country-level indicators:\n- The car has a long white EU-style plate with a blue band on the left, consistent with European Union plates.\n- The plate’s registration prefix appears to read “UL”, a German Landkreis/municipality code format (1–3 letters + seal + random letters/numbers), strongly indicating Germany.\n- Streetscape details (paved pedestrian/shared-space surface, European road/parking signage style, mid-rise stucco buildings with steep tiled roofs) fit southern Germany.\n\n2) Narrowing within Germany:\n- “UL” is the registration code for Ulm (Baden-Württemberg) and is also commonly seen in the Ulm/Neu-Ulm area. This is a very strong geographic leak because German registration prefixes map directly to specific cities/districts.\n- Architecture and urban form (compact center, mixed residential/retail, bicycle usage) is consistent with a medium/large southern German city center like Ulm.\n\n3) City- and neighborhood-level refinement:\n- The scene looks like a central pedestrian/shared street with retail frontage and awnings (small shops, signage like “beck”), typical of inner-city Ulm rather than suburban arterials.\n- No unique landmark is clearly visible, so the best inference is “Ulm city center / inner core” rather than a specific named street.\n\n4) Street-level cues (limited):\n- The combination of a narrow paved lane, storefront glazing on the corner building, and the clustered planters/awnings suggests a small shopping street or courtyard-like junction in the Innenstadt (old town/central district). Exact street identification is not reliably possible from this single frame without additional readable street signs.\n\nOverall, the strongest unintentional geographic leak is the German license plate prefix “UL”, pointing to Ulm.",
+  "location_estimate": {
+    "latitude": 48.4,
+    "longitude": 9.99,
+    "confidence": "Medium",
+    "region": "Germany, Baden-Württemberg, Ulm (Innenstadt/city center)"
+  }
+}

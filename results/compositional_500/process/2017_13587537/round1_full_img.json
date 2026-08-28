@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a festive street scene with multiple clearly visible human faces, including a central laughing woman and several bystanders; at least one appears to be a minor. These are direct biometric identifiers (Level 1). There are no readable names, documents, or location markers, so risk is driven primarily by identifiable faces. Multiple clear faces, central framing, and good lighting elevate the risk beyond minimal. Confidence is high because the faces are unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center laughing woman\u2019s uncovered face wearing glasses and a knit hat",
+        "Anonymized_element": "pixelated/blurred face, face masked, turned-away head, generic oval without facial details",
+        "privacy_element": "full face with eyes, nose, mouth, and expression clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right side profile of a young girl with ponytail and visible facial features",
+        "Anonymized_element": "profile blurred, face masked, head turned away, generic silhouette",
+        "privacy_element": "recognizable side profile with eye, nose, mouth outline; appears to be a minor\u2019s face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background region with several bystanders\u2019 faces visible above winter clothing",
+        "Anonymized_element": "crowd faces blurred, motion blur applied, heads replaced with generic silhouettes",
+        "privacy_element": "multiple identifiable faces in the crowd",
+        "target_concept": "faces (crowd region)",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13587537.jpg"
+}

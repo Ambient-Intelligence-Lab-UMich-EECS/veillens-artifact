@@ -1,0 +1,78 @@
+{
+  "reasoning": "Country-level: The scene shows a right-hand traffic environment with EU-style road signs and vehicles. The white, long, rectangular license plate with a blue EU band and black DIN-style characters points strongly to Germany rather than the Netherlands (yellow plates) or Belgium (red characters on front plates). The inverted triangular yield sign and blue round pedestrian/bicycle sign match German StVO designs. The cobblestone paving, black metal bollards, and red-brick rowhouses fit northern/western German residential neighborhoods. City-level: The brick architecture, dense trees, and cobbled residential street are common in North Rhine\u2013Westphalia cities such as Aachen, Cologne suburbs, or D\u00fcsseldorf suburbs. The modest-scale brick townhouses and older cobbles align particularly with Aachen\u2019s residential districts and some quarters of Cologne, but the overall quieter street and housing style lean more toward Aachen\u2019s older neighborhoods near parks and schools. Street-level: The specific street shows a broad cobblestone carriageway with a row of black bollards along a grassy verge on the right, a yield sign controlling entry to a cross street ahead, and a fenced playground or court at right. The combination of cobbles, bollard line, and yield placement narrows to a small residential side street rather than an arterial. Exact street cannot be uniquely determined from this single frame, but features are consistent with a leafy residential street in Aachen, NRW, Germany.",
+  "location_estimate": {
+    "latitude": 50.7766,
+    "longitude": 6.0834,
+    "confidence": "Low",
+    "region": "Germany, North Rhine\u2013Westphalia, Aachen"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a white car",
+        "non_geolocation_element": "white color, glossy surface, rectangular shape, reflective finish, daylight",
+        "geolocation_element": "EU blue band on the left, black DIN-style German characters, long European plate format",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "triangular yield sign on a gray pole",
+        "non_geolocation_element": "red border, white interior, reflective material, metal pole",
+        "geolocation_element": "German/European yield sign design and mounting height typical of StVO",
+        "target_concept": "yield sign",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round pedestrian-bicycle sign on a pole",
+        "non_geolocation_element": "blue circle, white pictograms, metal pole, reflective finish",
+        "geolocation_element": "German StVO combined pedestrian/bicycle regulatory sign style",
+        "target_concept": "sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone road at the center of the street",
+        "non_geolocation_element": "dark gray stones, rectangular blocks, uneven texture, leaf litter",
+        "geolocation_element": "traditional German/North European cobblestone paving common in older residential streets",
+        "target_concept": "road",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "brick house facade across the intersection",
+        "non_geolocation_element": "red-brown brick, rectangular windows, gabled roof, white frames",
+        "geolocation_element": "Northern German/Benelux brick townhouse style",
+        "target_concept": "house facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black bollard along the right verge",
+        "non_geolocation_element": "cylindrical metal post, matte black, evenly spaced line",
+        "geolocation_element": "German-style street bollards used to separate sidewalks/green strips from roadway",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/bremen/bremen_000126_000019_leftImg8bit.png"
+}

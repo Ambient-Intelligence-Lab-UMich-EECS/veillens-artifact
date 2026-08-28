@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image features a medical professional attending to a patient, revealing sensitive medical context. The patient is wearing a military uniform, which combined with the hospital setting, implies potential service-related medical data or institutional affiliation. While the faces are partially obscured, the presence of specific medical protocols on the wall and the patient's attire constitutes a moderate privacy risk level. The score reflects the combination of identifiable professional/institutional context and the medical environment.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Medical practitioner's profile face",
+        "Anonymized_element": "Generic silhouette, blurred face",
+        "privacy_element": "Full identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Patient wearing a digital camouflage military uniform",
+        "Anonymized_element": "Plain civilian clothing, solid color shirt",
+        "privacy_element": "Military branch uniform pattern",
+        "target_concept": "clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "Medical protocol document posted on the wall",
+        "Anonymized_element": "Blank paper, generic white sheet",
+        "privacy_element": "Specific hospital medical treatment guidelines",
+        "target_concept": "document",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14595859/final/2017_14595859_final.png"
+}

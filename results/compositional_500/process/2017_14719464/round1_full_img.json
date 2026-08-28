@@ -1,0 +1,49 @@
+{
+  "reasoning": "The image shows a hand holding an iPod with a readable notification screen. No faces or government IDs are visible. The screen reveals a specific organization name (Darien Library Patron Notification System) and a legible URL containing darienlibrary.org, which can indicate a geographic location and workplace context. A precise date and time are also readable. These are Level 3\u20134 clues; combined they pose a modest privacy risk by exposing potential location/affiliation and activity context rather than direct identity.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Readable URL link on the phone screen",
+        "Anonymized_element": "replace with generic placeholder URL (e.g., example.com/link), partial blur, truncated domain",
+        "privacy_element": "domain darienlibrary.org, unique path with query parameter",
+        "target_concept": "URL on screen",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Header text reading \u201cDarien Library Patron Notification System\u201d",
+        "Anonymized_element": "generic app name with no organization, neutral text banner",
+        "privacy_element": "organization name that implies workplace/affiliation and locality",
+        "target_concept": "on-screen header text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Timestamp text on the message body (\u201cOctober 22, 2010, 9:47 am\u201d) and status bar time",
+        "Anonymized_element": "remove or generalize to month/year only, replace with nonspecific time",
+        "privacy_element": "exact date and time of activity",
+        "target_concept": "timestamp text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14719464.jpg"
+}

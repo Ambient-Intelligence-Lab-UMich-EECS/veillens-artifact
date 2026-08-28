@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a handwritten notebook page with clearly readable text. While there is no name, face, or government/financial data, the legible notes reveal personal interests/activities (e.g., TEDx, video game/Star Wars, \u201cThe Creators Code\u201d) and include the place word \u201cVenice,\u201d which hints at location. These Level 3 clues combine with the presence of a personal document (Level 4) to create a low-to-moderate privacy risk. No severe identifiers are present. Score reflects readable but non-critical information. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Open notebook page with handwritten list and lines visible across the page",
+        "Anonymized_element": "blank page texture, illegible scribbles, low-contrast smudges",
+        "privacy_element": "personal handwritten content is legible, dated context like numbered list",
+        "target_concept": "handwritten notebook page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Handwritten lines mentioning topics like TEDx, Star Wars/video game, and The Creators Code",
+        "Anonymized_element": "replace with generic doodles, blur text, substitute with random shapes",
+        "privacy_element": "readable interests and activities revealing habits and preferences",
+        "target_concept": "readable handwritten text (interests)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Single handwritten word \"Venice\" near the bottom of the page",
+        "Anonymized_element": "replace with generic placeholder word, blur or scribble",
+        "privacy_element": "specific location name visible",
+        "target_concept": "location name in text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13907856/r1_crops/2017_13907856_1.png"
+}

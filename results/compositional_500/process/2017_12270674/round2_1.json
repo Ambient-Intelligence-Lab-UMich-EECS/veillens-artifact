@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a single person from behind walking with a hiking pole in a grassy, wooded area. No face or readable text is visible. The main privacy signals are moderate: observable activity (hiking) and some general personal attributes like body build and clothing style. There are no government IDs, names, or financial/medical data. Thus the highest severity is Level 3, and overall risk remains low to moderate with high confidence given the clear but non-identifying view.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person seen from behind wearing dark outdoor clothing and carrying a hiking pole",
+        "Anonymized_element": "generic silhouette figure, solid-color non-descript clothing, remove distinctive gear details",
+        "privacy_element": "body build outline, clothing style, visible hiking activity with pole",
+        "target_concept": "person (back view)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12270674/r1_crops/2017_12270674_1.png"
+}

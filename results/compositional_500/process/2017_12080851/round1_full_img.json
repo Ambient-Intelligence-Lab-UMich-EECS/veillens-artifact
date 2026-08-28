@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows a close-up of two people playing brass instruments in a public setting. The primary subject\u2019s face is clearly visible in profile with distinct features, and a second person\u2019s face is partially visible; both constitute biometric identifiers (Level 1). A blurred sign in the background may hint at a venue or store name (Location, Level 3). The activity of playing an instrument provides behavioral context (Level 3) but is not sensitive alone. With multiple identifiable faces as the strongest cues, the overall privacy risk is high. Confidence is high because the faces are prominent and well lit, while the location text is less legible.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "primary subject\u2019s face in left profile, unobstructed, near the center-left",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic silhouette",
+        "privacy_element": "clear facial features, identifiable profile, skin and hair details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "secondary person\u2019s face on the right edge with glasses, partially visible but identifiable",
+        "Anonymized_element": "blurred face, pixelated face, cropped frame to exclude face",
+        "privacy_element": "recognizable facial structure, ear and hairline, glasses outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead/behind signboard with partially readable lettering in the background",
+        "Anonymized_element": "blank signboard, abstract pattern, solid color panel",
+        "privacy_element": "venue/store signage that may reveal place name",
+        "target_concept": "sign with text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "brass instrument (French horn) being actively played by the primary subject",
+        "Anonymized_element": "instrument replaced with generic object, instrument lowered/not in use",
+        "privacy_element": "visible performance activity indicating musical behavior",
+        "target_concept": "musical instrument in use",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12080851.jpg"
+}

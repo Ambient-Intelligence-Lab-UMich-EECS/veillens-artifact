@@ -1,0 +1,107 @@
+{
+  "reasoning": "This crop shows a group photo on a home porch with multiple unobscured, identifiable faces, which is Level 1 biometric data. A readable house-number plaque near the door adds Level 3 location information. The combination of several clear faces plus a partial location cue elevates the risk. No government IDs, financial, or medical items are visible. Given the central, clear faces and reinforcing location hint, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of person wearing white top and jeans near right front",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic placeholder head",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person with blue headband in back row left-center",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic placeholder headband",
+        "privacy_element": "full face with clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person in red plaid shirt in back row center-right",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "full face with clear features, glasses-free distinctive hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person wearing glasses in back row right-center",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "full face with glasses and clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person in mint-green top at far right",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "full face with clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person with blonde hair and patterned orange dress left-center",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "full face with clear features and distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of person with shaggy hair in brown graphic t-shirt at center",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "full face with clear features and distinctive hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "house-number plaque with a single digit mounted near the right doorframe",
+        "Anonymized_element": "blank plaque, abstract symbol, blurred number",
+        "privacy_element": "readable house number indicating specific address component",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11838935/r1_crops/2017_11838935_0.png"
+}

@@ -1,0 +1,86 @@
+{
+  "reasoning": "The crop shows a small group outdoors with several unobscured faces, which are strong biometric identifiers (Level 1). One person wears a military camouflage uniform and another a high-visibility work vest, providing occupational context that reinforces personal attributes/activities. A residential house exterior is visible but without street numbers, offering weak location cues. Given multiple clear faces and some contextual details, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "middle-right man wearing glasses and a hard hat; his full face is visible in profile",
+        "Anonymized_element": "blurred or pixelated face, add generic mask or turned-away head",
+        "privacy_element": "full facial features, eyes, nose, mouth, distinctive glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "left-center man in neon safety vest and cap with unobscured smiling face",
+        "Anonymized_element": "blurred or pixelated face, generic cap without branding",
+        "privacy_element": "full facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-left woman in dark jacket with unobscured smiling face",
+        "Anonymized_element": "blurred or pixelated face, neutral head position",
+        "privacy_element": "full facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center person in camouflage military uniform with visible face under cap",
+        "Anonymized_element": "blurred face, replace uniform with plain jacket, no insignia",
+        "privacy_element": "full facial features; recognizable military camouflage pattern and patches",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "camouflage military uniform with rank/patch shapes (text not readable)",
+        "Anonymized_element": "plain jacket or sweater, remove patches and camo pattern",
+        "privacy_element": "distinctive military camouflage, insignia/patch shapes indicating affiliation",
+        "target_concept": "military uniform",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "residential house exterior with distinctive window arrangement and large tree",
+        "Anonymized_element": "blurred background facade, generic siding, reduce unique window details",
+        "privacy_element": "recognizable house facade and layout that may hint at location",
+        "target_concept": "house exterior",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15937105/r1_crops/2017_15937105_1.png"
+}

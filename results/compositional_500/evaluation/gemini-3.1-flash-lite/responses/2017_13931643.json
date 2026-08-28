@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image depicts two individuals performing on stage with their facial areas obscured (anonymized). While the faces are hidden, the subjects' physical attributes, clothing, and activity remain visible. Since the primary identifying biometric information (faces) has been removed, the residual privacy risk is moderate, primarily related to personal attributes and public performance behavior in a specific context. The score reflects that while identification is significantly hindered by the redaction, the individuals are still recognizable by their stature, clothing, and the context of the performance.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "grayed-out facial region of the main guitarist",
+        "Anonymized_element": "redacted face, smooth gray mask, no features",
+        "privacy_element": "biometric face data, facial structure, identity",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "grayed-out facial region of the secondary performer",
+        "Anonymized_element": "redacted face, smooth gray mask, no features",
+        "privacy_element": "biometric face data, facial structure, identity",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "physical stature, body shape, and clothing of the performers",
+        "Anonymized_element": "generic clothing style, neutral body silhouette",
+        "privacy_element": "physical appearance, body shape",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "musical performance environment with instruments and microphones",
+        "Anonymized_element": "generic concert background, blurred or abstract setting",
+        "privacy_element": "professional activity, performance context",
+        "target_concept": "activity",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13931643/final/2017_13931643_final.png"
+}

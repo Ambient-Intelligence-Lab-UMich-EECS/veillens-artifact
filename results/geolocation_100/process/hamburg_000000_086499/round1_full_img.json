@@ -1,0 +1,96 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand traffic, EU-style white license plates with a blue band, metric signage, and Vienna-Convention road symbols. A key cue is the round height-restriction sign reading \u201c4,5 m\u201d with a comma decimal\u2014typical for German-language signage. The cylindrical advertising column (Litfa\u00dfs\u00e4ule), grey metal bollards, and the design of the traffic lights and pedestrian signals also match Germany. Alternative nearby countries (Austria, Switzerland) use similar signs, but the street furniture (tall grey Litfa\u00dfs\u00e4ule with rounded cap), the road marking style at the junction, and the specific traffic light housings are more characteristic of German cities.  City-level: Within Germany, the tree-lined urban street with a wide intersection, grey Litfa\u00dfs\u00e4ule, and brick/stucco building with simple rectangular windows suggest a northern German cityscape. The prevalence of bicycles and the mix of older brick and plaster facades fit Hamburg well. While Berlin also has Litfa\u00dfs\u00e4ulen, the street furniture color scheme and the lush, boulevard-like residential/commercial mix are common in Hamburg\u2019s inner districts. No uniquely identifying landmark appears, so the city inference remains tentative.  Street-level: The specific corner has a tall grey advertising column just behind a height-restriction sign on the near-right corner, an orange/stucco low-rise building with three evenly spaced rectangular windows and graffiti on the wall behind a metal fence, and a pedestrian crossing with staggered dashed lead-in markings. A blue-and-white van with a roof rack is parked along the right-hand curb near the corner. Together, these elements define a distinctive but not uniquely identifiable junction within the city.",
+  "location_estimate": {
+    "latitude": 53.5511,
+    "longitude": 9.9937,
+    "confidence": "Low",
+    "region": "Germany, Hamburg"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "round height-restriction sign on a pole",
+        "non_geolocation_element": "round shape, white face, red border, metal pole, overcast lighting",
+        "geolocation_element": "text '4,5 m' using comma decimal, supplementary time/limit plate in German style",
+        "target_concept": "sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cylindrical advertising column by the sidewalk",
+        "non_geolocation_element": "tall cylinder, grey metal cap, poster wraps, vertical format",
+        "geolocation_element": "Litfa\u00dfs\u00e4ule design common in Germany, German-language posters/layout",
+        "target_concept": "advertising column",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular pedestrian signal on a pole",
+        "non_geolocation_element": "dark housing, vertical stack, visor hoods, mounted on grey pole",
+        "geolocation_element": "German-style pedestrian signal form factor and mounting",
+        "target_concept": "pedestrian signal",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a blue van",
+        "non_geolocation_element": "white plate, black text, blue vehicle body, rear view",
+        "geolocation_element": "EU-style plate with blue band indicating an EU country",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dashed approach markings on the roadway",
+        "non_geolocation_element": "white paint, short rectangular dashes, asphalt surface",
+        "geolocation_element": "German junction marking pattern leading to a crosswalk/intersection",
+        "target_concept": "road markings",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange facade building behind a metal fence",
+        "non_geolocation_element": "orange plaster wall, three rectangular windows, low-rise massing",
+        "geolocation_element": "northern German urban architecture style (brick/plaster mix)",
+        "target_concept": "building",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "grey bollard at the curb edge",
+        "non_geolocation_element": "slim cylinder, grey paint, reflective band, beside curb",
+        "geolocation_element": "German-style street bollard design and placement",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue van with roof rack at the corner",
+        "non_geolocation_element": "boxy van shape, blue and white colors, metal roof rack with items",
+        "geolocation_element": "vehicle style common in German urban streets but not uniquely identifying",
+        "target_concept": "van",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/hamburg/hamburg_000000_086499_leftImg8bit.png"
+}

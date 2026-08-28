@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a parking lot with several vehicles, including a highly distinctive custom off-road buggy in the foreground. No people or faces are visible. Some background cars have license plates, but the characters are too small/blurred to read, limiting direct identification. The primary privacy signals are property/asset exposure of a unique vehicle and weak location cues from partially visible plates. With no Level 1 or Level 2 elements, overall risk is low to moderate based on Level 3\u20134 clues only.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "custom off-road buggy with exposed frame and large off-road tires parked in a lot",
+        "Anonymized_element": "generic unmodified vehicle, muted color, remove distinctive accessories and decals",
+        "privacy_element": "distinctive custom build details, unique accessories and modifications that can identify ownership",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small, partially visible rear license plate on green sedan in background",
+        "Anonymized_element": "blank plate, plate area smoothed, generic bumper",
+        "privacy_element": "license plate design and potential characters hinting at jurisdiction",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small, partially visible rear license plate on dark sedan at left background",
+        "Anonymized_element": "blank plate, plate area smoothed, generic bumper",
+        "privacy_element": "license plate design and potential characters hinting at jurisdiction",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14786614/r1_crops/2017_14786614_0.png"
+}

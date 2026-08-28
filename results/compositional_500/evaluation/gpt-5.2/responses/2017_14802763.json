@@ -1,0 +1,65 @@
+{
+  "reasoning": "The image shows a large nighttime protest with many clearly visible faces in the crowd, which are biometric identifiers (Level 1). Several handheld signs with legible political slogans indicate political views (Level 2). A building sign in the background appears readable, suggesting a specific institution/location (Level 3). Together, identifiable faces combined with sensitive political expression and location cues raise the privacy risk to high. Given the clarity and centrality of these elements, confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "well-lit face of an individual near the left foreground looking toward the camera",
+        "Anonymized_element": "blurred face, pixelated features, generic head silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "profile face of a person elevated on the right side, visible above the crowd",
+        "Anonymized_element": "face masked or blurred, generic silhouette without details",
+        "privacy_element": "clear facial profile with recognizable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "handheld protest sign with legible political slogan near center-left",
+        "Anonymized_element": "blank sign, abstract shapes, non-political generic text",
+        "privacy_element": "explicit political message on sign",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "building facade sign in the background with institutional name readable",
+        "Anonymized_element": "blank facade, blurred text, generic building exterior",
+        "privacy_element": "readable institution name indicating location",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "person at front-center wearing a high-visibility safety vest facing the crowd",
+        "Anonymized_element": "neutral dark jacket without reflective stripes",
+        "privacy_element": "distinctive role-indicating apparel suggesting event participation",
+        "target_concept": "clothing (safety vest)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14802763/final/2017_14802763_final.png"
+}

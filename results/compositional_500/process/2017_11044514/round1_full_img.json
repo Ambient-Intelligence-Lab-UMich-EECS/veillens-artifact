@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a person at a desk with a clear side-profile face wearing a headset. The visible facial profile constitutes biometric data (Level 1). A secondary cue is the headset implying computer use or calling/gaming behavior (Level 3). No readable text, IDs, financial/medical data, or precise location markers are visible. Risk is driven mainly by the identifiable face, with minor contribution from behavioral context, leading to a moderate-high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side facial profile of a person wearing on-ear headphones",
+        "Anonymized_element": "blurred face, turned-away head, faceless placeholder, generic mask or silhouette",
+        "privacy_element": "visible facial features in profile, ear and hairstyle enabling biometric recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "over-ear headset with microphone worn by the person",
+        "Anonymized_element": "remove headset, replace with plain headband or hair-only, or generic non-descript audio gear placed on desk",
+        "privacy_element": "headset suggests voice call, gaming, or audio activity indicating behavior",
+        "target_concept": "headset",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11044514.jpg"
+}

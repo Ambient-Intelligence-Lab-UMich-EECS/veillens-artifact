@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person viewed from behind with no visible face or readable text. The main clues are physical appearance (body shape, hairstyle) and distinctive clothing patterns, which reveal personal attributes but not direct identifiers. A partial graffiti-painted surface may weakly hint at a specific place but lacks any address or landmark details. With no biometric face data or IDs, the highest severity present is Level 3, yielding a low overall risk. Confidence is high due to clear visibility and absence of stronger signals.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a person from shoulders to knees, face not visible",
+        "Anonymized_element": "crop to exclude person, replace with generic silhouette, blur body contours",
+        "privacy_element": "body shape, hairstyle, clothing style",
+        "target_concept": "person (rear view)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "bright multicolored patterned skirt",
+        "Anonymized_element": "solid-color generic skirt, muted tones, no unique pattern",
+        "privacy_element": "distinctive clothing pattern/style",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "graffiti-painted concrete slab in background",
+        "Anonymized_element": "plain concrete surface, remove artwork, neutral texture",
+        "privacy_element": "unique mural artwork potentially tied to a specific site",
+        "target_concept": "mural/graffiti",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14726150/r1_crops/2017_14726150_2.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a person from behind with visible metal handcuffs and a police vehicle nearby. Faces are obscured, so no direct biometric identification, but the handcuffs strongly imply law-enforcement detention, a sensitive inference. A distinctive forearm tattoo is visible and could help identify the person. The marked police car reinforces the context. With a clear Level 2 clue plus supporting Level 3\u20134 cues and no readable IDs or faces, the risk is moderate-to-high.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal handcuffs on the person\u2019s wrists behind their back",
+        "Anonymized_element": "no restraints, hands at sides, plain wrists",
+        "privacy_element": "handcuffs indicating arrest/detention by law enforcement",
+        "target_concept": "handcuffs",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "distinct tattoo on the person\u2019s left forearm",
+        "Anonymized_element": "long sleeve covering arm, blurred skin area, plain skin without markings",
+        "privacy_element": "unique tattoo pattern that can aid individual identification",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "marked police vehicle with roof light bar at the left edge",
+        "Anonymized_element": "unmarked generic sedan without light bar, neutral paint",
+        "privacy_element": "police markings and emergency light bar signaling law-enforcement presence",
+        "target_concept": "police car",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15684937/r1_crops/2017_15684937_2.png"
+}

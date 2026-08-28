@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a concert ticket with readable printed text but no person, face, or unique personal identifier. The clearest privacy-relevant clues are the venue/location (Sala Mozart, Zaragoza), the specific event date/time, and detailed seating info. These are Level 3 signals about location and potential activities, but they are not tied to a specific named individual. No Level 1 or Level 2 identifiers are present. Thus the overall risk is low-to-moderate, primarily contextual, with high confidence due to legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Readable venue and city text on the ticket top-center ('SALA MOZART', 'Jazz Zaragoza')",
+        "Anonymized_element": "blank header area, generic event title, blurred/unreadable venue text",
+        "privacy_element": "venue name, city identifier, event branding",
+        "target_concept": "event venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Readable event date and time text in the middle section",
+        "Anonymized_element": "obscured or placeholder date/time, fuzzy text",
+        "privacy_element": "specific date and time of the event",
+        "target_concept": "event date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Readable seating details at the bottom right ('PUERTA 9', 'FILA 08', 'BUTACA 04')",
+        "Anonymized_element": "generic placeholders or dashes, blurred seat/row numbers",
+        "privacy_element": "specific gate, row, and seat numbers",
+        "target_concept": "seat/row numbers",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11869388.jpg"
+}

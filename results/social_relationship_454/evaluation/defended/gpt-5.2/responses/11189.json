@@ -1,0 +1,29 @@
+{
+  "img_id": "11189",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 6,
+    "1 6": 1,
+    "1 7": 1,
+    "2 5": 6,
+    "2 6": 6,
+    "2 7": 6,
+    "5 6": 6,
+    "5 7": 1,
+    "6 7": 1
+  },
+  "ground_truth": {
+    "5 6": 1,
+    "5 7": 1,
+    "1 6": 1,
+    "1 7": 1,
+    "1 5": 1,
+    "1 2": 6,
+    "6 7": 1,
+    "2 5": 6,
+    "2 7": 6,
+    "2 6": 6
+  },
+  "raw_response": "[P1-P2]: Large banquet/meeting setting with many attendees; they\u2019re at different tables far apart with no shared body orientation or interaction. => no-relationship\n\n[P1-P5]: Both are seated at the same round table area but separated by other people; no direct facing, gestures, or contact suggesting they\u2019re interacting. => no-relationship\n\n[P1-P6]: Same event and same table cluster; P6 is turned toward the table while P1 is seated nearby, suggesting they may be part of the same conversation group though no touch is visible. => friends\n\n[P1-P7]: Same banquet table and close proximity across the table; body orientation suggests they\u2019re within the same discussion group, with no physical intimacy. => friends\n\n[P2-P5]: They are in the same room but clearly at different tables and far apart; no eye contact or interaction. => no-relationship\n\n[P2-P6]: Different tables across the room with no shared activity beyond attending the event; no proximity or interaction. => no-relationship\n\n[P2-P7]: Seated in different areas of the banquet hall with no engagement or contact. => no-relationship\n\n[P5-P6]: Both are at/near the same table area but not directly engaging (P5 has back turned away, P6 oriented elsewhere); looks like co-attendees rather than a focused interaction. => no-relationship\n\n[P5-P7]: Same table cluster with moderate proximity; both appear to be part of the same seated group at a social/professional dinner, but no physical interaction. => friends\n\n[P6-P7]: Both at the same table and relatively close; their posture suggests participation in the same conversation at a group event, without romantic cues. => friends",
+  "timestamp": 1779952694.591237
+}

@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image captures a public pride parade, which is a public social event. The primary privacy concerns arise from the depiction of numerous identifiable individuals and symbolic objects that could support sensitive inferences regarding personal beliefs, sexual orientation, or community affiliation. While many faces are visible, the context of a public parade generally lowers the severity; however, the aggregation of multiple individuals and their clear presence in a specific, identifiable community context warrants a moderate risk score. No government identifiers or specific medical/financial data are present.",
+  "personal_info_privacy_score": {
+    "score": 0.45,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Group of individuals participating in a pride parade",
+        "Anonymized_element": "blurred faces, neutral clothing, generic background, anonymized crowd",
+        "privacy_element": "identifiable faces, clothing choices, parade participants",
+        "target_concept": "faces",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "Rainbow flags held by participants",
+        "Anonymized_element": "solid colored flag, neutral pattern, non-symbolic flag",
+        "privacy_element": "pride flag symbolism",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14316005/final/2017_14316005_final.png"
+}

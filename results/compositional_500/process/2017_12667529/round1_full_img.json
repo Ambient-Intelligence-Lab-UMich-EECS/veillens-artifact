@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a busy outdoor market with multiple clearly visible, front-facing human faces. These constitute biometric identifiers (highest severity). Several faces are close, unobstructed, and potentially identifiable, elevating risk. Additional background crowd contributes minor risk but is less identifiable. No government IDs, financial/medical data, or explicit location addresses are legible. Overall risk is driven primarily by multiple clear faces, leading to a high but not extreme score. Confidence is high due to clarity of the faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bald man in blue and orange shirt at right-center, front-facing face with sunglasses",
+        "Anonymized_element": "blurred face region, pixelated features, turned head away, generic shading over eyes",
+        "privacy_element": "facial structure, nose and mouth contours, partial eye region",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young woman in red shirt near center-left, front-facing face with visible eyes and mouth",
+        "Anonymized_element": "blurred face, pixelation, add obstruction like hat or mask, turn head away",
+        "privacy_element": "full face with visible eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman with curly hair and sunglasses at left, side-facing face partially visible",
+        "Anonymized_element": "heavier blur, stronger pixelation, crop or turn head away",
+        "privacy_element": "facial outline, mouth and jawline, partial eye region",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young woman with short red hair behind the person in red shirt, front-facing face",
+        "Anonymized_element": "blur or pixelate face, add obstruction, turn head away",
+        "privacy_element": "visible eyes, nose, mouth, facial contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background crowd region with multiple distant people and small faces",
+        "Anonymized_element": "increase depth-of-field blur, reduce facial detail, composite generic silhouettes",
+        "privacy_element": "small but numerous facial regions and body outlines",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12667529.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a public sign with a hotline phone number and organization name (DCPS). There are no people, faces, IDs, or personal items. The only readable elements are generic and public-facing, which may hint at a general location (Washington, DC) but do not link to an individual. Thus the highest severity present is low (Level 4) from a generic sign with text, leading to a low overall privacy risk score. Confidence is high because the content is clear and limited to public information.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular street sign with black text reading a hotline number and DCPS Residency",
+        "Anonymized_element": "blank sign, generic wording without phone number or organization name, blurred text",
+        "privacy_element": "readable phone number, organization name implying city/agency",
+        "target_concept": "street sign",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15577385/final/2017_15577385_final.png"
+}

@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a public religious ceremony with multiple people present. At least two individuals have unobscured, identifiable faces (biometric data), which is a Level 1 risk. The ceremonial vestments clearly indicate religious participation, enabling a sensitive inference about religion (Level 2). Additional background attendees are present but mostly distant or partially obscured, adding minor risk. The combination of identifiable faces with clear religious context yields a high overall privacy risk. The faces are central and clear enough for recognition, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a seated man with glasses on the left side of the stage",
+        "Anonymized_element": "blurred face, generic skin-tone oval, turned-away head",
+        "privacy_element": "full face with eyes, nose, mouth, and eyeglasses enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "side-profile face of a man in white vestments on the right, looking toward a book",
+        "Anonymized_element": "blurred profile, blank oval in place of face, head turned away",
+        "privacy_element": "recognizable facial profile with nose, mouth, and hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "ornate liturgical vestments/stole worn by several participants near center-right",
+        "Anonymized_element": "plain robe without symbols or colors, generic formal clothing",
+        "privacy_element": "religious garment strongly indicating participation in a religious ceremony",
+        "target_concept": "religious vestment",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "group of distant attendees/musicians in the background behind the stage",
+        "Anonymized_element": "blurred background figures, indistinct silhouettes",
+        "privacy_element": "multiple people with partial or small faces in a public crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13477697/final/2017_13477697_final.png"
+}

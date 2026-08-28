@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a small group of people socializing outdoors. Several individuals\u2019 faces are clearly visible at close range, providing biometric identifiers. No government IDs, financial, or medical documents are visible, and there are no readable names or addresses. The highest-severity clues are multiple identifiable faces (Level 1). Their clarity and centrality elevate risk, though absence of other identifiers keeps risk below severe. Overall, the composition yields a high privacy risk primarily from biometric exposure. Confidence is high because the faces are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man in white shirt and tie at center-left, face in profile while shaking hands",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral oval mask",
+        "privacy_element": "clear facial features, eyes/nose/mouth visible, identifiable profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in dark jacket at center-right, facing the handshake with full face visible",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral oval mask",
+        "privacy_element": "full face with distinct features and eyes visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in orange jacket at left-center, turned toward group with face visible",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral oval mask",
+        "privacy_element": "recognizable facial features, eyes and beard visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman in white blouse near tent in background, face visible as she looks forward",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral oval mask",
+        "privacy_element": "visible facial features allowing identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in black suit at far right, partial profile with identifiable features",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral oval mask",
+        "privacy_element": "profile facial features recognizable",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13555609.jpg"
+}

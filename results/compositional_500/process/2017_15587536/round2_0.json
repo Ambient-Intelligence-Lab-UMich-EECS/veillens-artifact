@@ -1,0 +1,67 @@
+{
+  "reasoning": "The crop shows an empty hospital room with two beds, bedside supplies, wall signage, and posted notices. No people or legible names are visible. The highest-severity cues relate to sensitive health inference: the presence of hospital beds and medication/supply bottles strongly imply medical context. Secondary cues include a visible room number that can help pinpoint an internal location, and posted documents that might contain facility details though text is not readable. With multiple Level 2 sensitive-inference clues but no identifiable individuals or explicit records, the risk is moderate. Confidence is high because the medical setting is unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal hospital bed with side rails near the center-right",
+        "Anonymized_element": "generic cot or plain bench, remove medical styling, neutral furniture",
+        "privacy_element": "hospital bed design indicating medical setting and patient care",
+        "target_concept": "hospital bed",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bedside table with assorted small bottles and cups on the left side",
+        "Anonymized_element": "plain containers without labels, generic empty cups, or remove items",
+        "privacy_element": "medication/toiletry containers and dosage cup implying treatment or care",
+        "target_concept": "medication bottles on table",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "orange wall placard showing the room number '02'",
+        "Anonymized_element": "blank placard with no numbers or generic symbol",
+        "privacy_element": "specific room number that can help locate a person within a facility",
+        "target_concept": "room number sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "two printed notices posted on the wall near the right bench",
+        "Anonymized_element": "blank sheets or posters without text or logos",
+        "privacy_element": "potential facility names, instructions, or logos (text not readable but indicative)",
+        "target_concept": "posted notices",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wall-mounted medical outlets and connectors above the beds",
+        "Anonymized_element": "blank wall plates or generic electrical outlets",
+        "privacy_element": "clinical gas/medical outlet hardware confirming hospital environment",
+        "target_concept": "medical wall outlets",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15587536/r1_crops/2017_15587536_0.png"
+}

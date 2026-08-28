@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a handwritten note on a printed card with a brand logo. There are no faces, names, dates, addresses, or unique identifiers. The only privacy-relevant element is the presence of a generic document with handwriting that could weakly reflect personal style and a visible brand logo. Highest severity is Level 4, and there is no compositional reinforcement. Overall risk is very low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten message on a printed card with a small brand logo at the bottom",
+        "Anonymized_element": "replace with typed generic text, remove or blur any logos, use blank card",
+        "privacy_element": "distinct handwriting style, visible brand/logo text",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15560413/r1_crops/2017_15560413_2.png"
+}

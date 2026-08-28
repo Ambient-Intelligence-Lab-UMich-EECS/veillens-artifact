@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows an examination room with medical tables, equipment, and an anatomical chart on the wall. While the setting is clearly medical, there is no identifiable personal information such as faces, names, specific patient records, or documents present. The risk score is low as the room is generic and contains no individual-level identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "anatomical chart on the wall",
+        "Anonymized_element": "blank wall art, generic decorative print",
+        "privacy_element": "medical anatomical diagram",
+        "target_concept": "anatomical chart",
+        "severity_level": 4,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "medical exam tables",
+        "Anonymized_element": "standard furniture, generic surfaces",
+        "privacy_element": "medical facility setting",
+        "target_concept": "exam table",
+        "severity_level": 4,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10258057/final/2017_10258057_final.png"
+}

@@ -1,0 +1,82 @@
+{
+  "reasoning": "The crop shows a street procession with several clearly identifiable faces, including a robed participant and a child in a stroller, which are Level 1 biometric data. Religious garments, a processional staff/cross, and an ornate icon imply religious affiliation (Level 2). A storefront window sign with the venue name increases location traceability (Level 3). The combination of multiple clear faces with sensitive religious context and partial location cues yields a high privacy risk. Confidence is high because the elements are centrally visible and unobstructed.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male face of a procession participant wearing a white robe near left-center",
+        "Anonymized_element": "face pixelation or smooth oval replacement, reduce detail of eyes/nose/mouth, plain non-descript clothing",
+        "privacy_element": "full identifiable face with clear eyes/nose/mouth; context of clerical-style white robe",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child\u2019s face seated in a stroller at bottom-left",
+        "Anonymized_element": "face pixelation or oval mask, lower-resolution blur, generic stroller without distinctive patterns",
+        "privacy_element": "clear identifiable child\u2019s facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "seated cafe patron\u2019s face at right-center in front of the window",
+        "Anonymized_element": "blur or pixelate facial region, neutralize distinctive hair and glasses if any",
+        "privacy_element": "identifiable adult face with visible features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "ornate religious icon/book held by robed participant at bottom-right",
+        "Anonymized_element": "plain closed hardcover book with neutral cover, remove decorative religious symbols",
+        "privacy_element": "religious iconography suggestive of specific faith practice",
+        "target_concept": "religious icon",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "processional staff topped with a cross-like ornament near center",
+        "Anonymized_element": "plain wooden pole without emblem, neutral decorative finial",
+        "privacy_element": "cross-shaped emblem indicating religious ceremony",
+        "target_concept": "religious symbol",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront window signage reading hotel/lunchroom at right side",
+        "Anonymized_element": "blank window glass with no lettering or generic non-identifying text",
+        "privacy_element": "business name/type visible, enabling place identification",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10376474/r1_crops/2017_10376474_0.png"
+}

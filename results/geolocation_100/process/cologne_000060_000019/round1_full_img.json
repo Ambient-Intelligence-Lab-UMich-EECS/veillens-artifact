@@ -1,0 +1,76 @@
+{
+  "reasoning": "Country level: The ambulance shows multiple German words such as \u201cKrankentransport\u201d and the organization name \u201cASB\u201d (Arbeiter-Samariter-Bund). The vehicle has an EU-style license plate with the German format and blue EU band. Directional road signs ahead use the German DIN typeface and white-on-white bordered design typical in Germany. These cues collectively indicate Germany and rule out neighboring countries with different plate formats and sign conventions. City level: The license plate on the ambulance begins with \u201cK,\u201d the vehicle-registration code for K\u00f6ln (Cologne). The ambulance also bears \u201cASB K\u00f6ln,\u201d explicitly referencing the city\u2019s branch of the service. German tram-style overhead wires and a grassed median match Cologne\u2019s Stra\u00dfenbahn corridors common on major arterials. This combination points strongly to Cologne rather than other German cities. Street level: The road is a multi-lane urban arterial with a narrow grass median and tram infrastructure along the left side, plus dense mid-rise housing ahead. While these elements are consistent with several Cologne corridors (e.g., Aachener Stra\u00dfe, Luxemburger Stra\u00dfe, Subbelrather Stra\u00dfe), the signs are too small to read specific destinations, preventing precise street identification. Thus, we can localize confidently to Cologne but not to an exact street segment.",
+  "location_estimate": {
+    "latitude": 50.9375,
+    "longitude": 6.9603,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, Cologne (K\u00f6ln)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a van",
+        "non_geolocation_element": "white background, black text, rectangular metal plate, reflective surface",
+        "geolocation_element": "EU band with stars, German plate format, city code 'K' indicating K\u00f6ln",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange-and-white window sticker on a van",
+        "non_geolocation_element": "orange stripe, white text, glossy window reflection",
+        "geolocation_element": "German words 'Krankentransport', phone number '19212', organization name 'ASB K\u00f6ln'",
+        "target_concept": "window sticker",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white direction sign on a pole",
+        "non_geolocation_element": "white rectangular panels, black border, mounted on gray pole",
+        "geolocation_element": "German DIN-style typeface and layout typical of German road signage",
+        "target_concept": "direction sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead tram wire on a tall pole",
+        "non_geolocation_element": "black cable, metal pole, tension hardware",
+        "geolocation_element": "presence of tram catenary typical of German tram networks including Cologne",
+        "target_concept": "tram wire",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "grassed median strip along the roadway",
+        "non_geolocation_element": "green grass, narrow elongated strip, low curb",
+        "geolocation_element": "median style commonly seen on Cologne arterials with tram corridors",
+        "target_concept": "median strip",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ambulance van on the right lane",
+        "non_geolocation_element": "white body, orange stripe, blue light on roof, Volkswagen shape",
+        "geolocation_element": "branding 'ASB' and local reference to K\u00f6ln on vehicle livery",
+        "target_concept": "ambulance van",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/cologne/cologne_000060_000019_leftImg8bit.png"
+}

@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image captures a group setting at a conference or workshop. While the face of the central individual has been anonymized, a name badge is clearly visible on her clothing, which constitutes a Level 2 risk clue as a non-unique identifier. The combination of the badge and the professional context provides sufficient evidence for a moderate privacy risk assessment. Although other individuals are present, their faces are either partially obstructed, viewed from behind, or obscured, reducing the biometric risk score. The overall privacy risk is moderate due to the presence of identifiable organizational credentials.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A rectangular name badge clipped to the woman's black and white patterned top",
+        "Anonymized_element": "Blank rectangular badge, no text, neutral colored plastic",
+        "privacy_element": "Visible text on name badge representing a workplace ID or name",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "Partial view of the back of a person's head and hair in the foreground",
+        "Anonymized_element": "Generic hairstyle, generic hair color, no identifying markings",
+        "privacy_element": "Physical appearance",
+        "target_concept": "Person",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "A group of people seated around a table in a professional environment",
+        "Anonymized_element": "Blurry background, generic office furniture, unidentifiable persons",
+        "privacy_element": "Context of professional activity",
+        "target_concept": "Group of individuals",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13536165/final/2017_13536165_final.png"
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows an office desk with computer equipment and cables. The person is fully anonymized (no visible face or fingerprints). No legible text, IDs, financial or medical data are visible. The main privacy signal is a behavioral cue that someone is working at a computer (keyboard and mouse in active use). Other objects like monitors and a small device on the desk are generic and do not reveal unique identifiers. Therefore the risk is low, driven mainly by weak activity inference, with no Level 1\u20132 clues present.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white keyboard and mouse positioned under the person\u2019s hand at the desk",
+        "Anonymized_element": "keyboard and mouse placed idle with no hand present, generic peripherals with cables minimized",
+        "privacy_element": "implies active computer use and work behavior",
+        "target_concept": "keyboard and mouse",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two computer monitors on the desk with dark/blank screens",
+        "Anonymized_element": "monitors showing blank placeholder screens, matte reflections only",
+        "privacy_element": "potential to display on-screen information even though not legible here",
+        "target_concept": "computer monitors",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small digital device (camera/USB gadget) on the desk near cables",
+        "Anonymized_element": "generic unbranded accessory or removed item",
+        "privacy_element": "personal gadget indicating ownership or assets (non-unique)",
+        "target_concept": "personal electronic device",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11044514/r1_crops/2017_11044514_1.png"
+}

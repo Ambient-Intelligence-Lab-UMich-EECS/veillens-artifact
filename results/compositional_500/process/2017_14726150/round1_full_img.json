@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a single person from behind outdoors; the face is not visible and there are no readable texts, documents, or identifiers. No government IDs, financial or medical items, or explicit location markers appear. The main privacy-relevant cues are limited to general personal attributes such as distinctive hairstyle and colorful clothing that could make the person recognizable to acquaintances. With no Level 1\u20132 clues and only weak Level 3 attributes, the overall privacy risk is low. Confidence is high due to clear visibility of the limited cues and absence of sensitive elements.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of the person\u2019s head and shoulders with dark hair in pigtails and visible shoulder straps",
+        "Anonymized_element": "crop above shoulders, add neutral hat, blur hair details, plain top with no distinctive straps",
+        "privacy_element": "distinctive hairstyle, hair color, body shape of shoulders/upper back",
+        "target_concept": "person\u2019s back (head and shoulders)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bright multicolored patterned skirt worn by the person",
+        "Anonymized_element": "solid-color skirt, muted tones, generic patternless fabric",
+        "privacy_element": "distinctive clothing pattern and style that could aid recognition",
+        "target_concept": "clothing (skirt)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14726150.jpg"
+}

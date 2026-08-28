@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a printed concert ticket with clearly legible venue (University of Texas at Austin, Frank Erwin Center), event name, date/time, section/row/seat numbers, and price. No personal name or biometric data is visible. The main privacy exposure comes from location information and activities/behaviors indicating attendance at a specific event and time, reinforced by ticket details. This is moderate risk from Level 3 clues plus low-risk generic document elements. Score reflects identifiable location and activity but absence of direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed venue text reading University of Texas at Austin Frank Erwin Center",
+        "Anonymized_element": "generic venue text, placeholder words, blurred text block",
+        "privacy_element": "readable venue name, city/university identifier",
+        "target_concept": "venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "event and performer text block (e.g., 'Jimmy Buffett in concert')",
+        "Anonymized_element": "generic event label, neutral performer placeholder, blurred text",
+        "privacy_element": "readable performer/event name",
+        "target_concept": "event text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "date and time text 'SUN MAR 7, 1982 - 8PM'",
+        "Anonymized_element": "approximate or removed date/time, blurred numerals",
+        "privacy_element": "specific event date and time",
+        "target_concept": "date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "section/row/seat numbers along ticket top (e.g., 20 / 23 / 11)",
+        "Anonymized_element": "blank boxes, randomized non-meaningful numbers, blurred digits",
+        "privacy_element": "specific seat, row, and section identifiers",
+        "target_concept": "seat information",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10869512/r1_crops/2017_10869512_1.png"
+}

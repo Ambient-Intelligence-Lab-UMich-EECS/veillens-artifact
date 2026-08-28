@@ -1,0 +1,124 @@
+{
+  "reasoning": "The crop shows a public march with numerous clearly identifiable faces alongside rainbow pride flags and protest placards. The highest-severity clues are multiple unobstructed faces (biometric identifiers). These faces co-occur with LGBTQ+ symbolism and protest signage, enabling sensitive inferences about political views or sexual orientation and revealing participation in a specific activity/event. Visible storefront branding offers mild location context. Together these strong Level 1 biometric cues plus Level 2 sensitive-inference context justify a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "young man in black coat at center facing the camera",
+        "Anonymized_element": "blurred/pixelated face, turned-away head, neutral color clothing",
+        "privacy_element": "full frontal face with clear eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman with scarf near center-right smiling beside rainbow flag",
+        "Anonymized_element": "blurred face, generic scarf without distinctive patterns, turned-away pose",
+        "privacy_element": "clear facial features, expression visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person in red costume with white beard (parade outfit) near center",
+        "Anonymized_element": "costume without face details, mask covering features, blurred face",
+        "privacy_element": "recognizable face within distinctive costume context",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man on right foreground in profile holding a pole or instrument",
+        "Anonymized_element": "profile face blurred, hands cropped, neutral pole without context",
+        "privacy_element": "side-profile facial features, ear and jawline clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young man with hat near center-right below rainbow flag",
+        "Anonymized_element": "hat retained but face blurred, head turned away",
+        "privacy_element": "unobstructed facial features under hat",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large rainbow pride flag held aloft at right side",
+        "Anonymized_element": "solid-color generic flag, muted pattern without symbolic meaning",
+        "privacy_element": "distinct rainbow pride pattern signaling LGBTQ+ affiliation or support",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wide banner with rainbow stripe carried by marchers at front",
+        "Anonymized_element": "plain white banner without rainbow or text",
+        "privacy_element": "rainbow symbolism and partial text indicating cause/slogan",
+        "target_concept": "protest banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of handheld placards with printed slogans in background",
+        "Anonymized_element": "blank placards or abstract patterns without legible text",
+        "privacy_element": "political/advocacy text indicating participation in a cause",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront sign reading 'Orange' on building at top-left",
+        "Anonymized_element": "generic shop sign without brand name or logo",
+        "privacy_element": "recognizable retail branding suggesting geographic context",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12685055/r1_crops/2017_12685055_0.png"
+}

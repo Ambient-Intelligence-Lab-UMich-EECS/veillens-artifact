@@ -1,0 +1,58 @@
+{
+  "reasoning": "This crop shows a parade scene with multiple people whose faces are obscured, reducing biometric risk. The clearest privacy-relevant element is a readable event number placard on the vehicle, a non-unique identifier that can link to participant lists. Additional moderate/low-risk clues include a pageant-style sash with printed text (not legible) indicating participation in a specific event, a visible crowd of distant spectators, and a distinctive convertible vehicle. With one Level 2 clue supported by Level 3\u20134 context, the privacy risk is moderate. Confidence is medium due to partial legibility of some text and lack of clear facial features.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white event placard with large black number \"139\" on the car\u2019s windshield/dash",
+        "Anonymized_element": "blank placard, no digits or logos, generic paper slip",
+        "privacy_element": "readable event number, event-specific labeling",
+        "target_concept": "event number placard",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white pageant-style sash with printed text across the seated participant\u2019s torso",
+        "Anonymized_element": "plain sash with no text or logos, solid neutral color",
+        "privacy_element": "printed title/name/logo on clothing",
+        "target_concept": "sash with text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "row of distant spectators behind barricade along the street",
+        "Anonymized_element": "blurred crowd silhouettes, reduced facial detail",
+        "privacy_element": "multiple small faces and bodies of bystanders",
+        "target_concept": "crowd of spectators",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black convertible car carrying participants",
+        "Anonymized_element": "generic vehicle rendering without distinctive model cues or decals",
+        "privacy_element": "distinctive vehicle appearance/features",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13756260/r1_crops/2017_13756260_1.png"
+}

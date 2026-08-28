@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image features members of the Rejimen Askar Melayu Diraja (Royal Malay Regiment) in ceremonial uniform, which constitutes a group of identifiable individuals. The specific regimental insignia, uniform style, and musical instruments provide context regarding their organizational affiliation and professional behavior. While no faces are clearly visible, the group setting and specialized uniform allow for potential identification. The risk is considered moderate due to the presence of professional markers and group affiliation in a public setting.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Regimental insignia and text on instrument cases and uniforms",
+        "Anonymized_element": "generic badge, empty label, non-distinctive military pattern",
+        "privacy_element": "Rejimen Askar Melayu Diraja text, specific regimental crest",
+        "target_concept": "regimental identity",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Group of individuals in specialized military band uniforms",
+        "Anonymized_element": "generic parade band uniform, plain colored clothing",
+        "privacy_element": "distinctive military ceremonial uniform design",
+        "target_concept": "uniformed individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15101563/final/2017_15101563_final.png"
+}

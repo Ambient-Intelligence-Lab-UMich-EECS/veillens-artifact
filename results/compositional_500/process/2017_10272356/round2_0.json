@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a person reclining on a bed in a private indoor setting. The face is obscured, so no direct biometric identification is possible. Visible body, clothing, and posture disclose personal attributes and a private activity (resting in a bedroom). Surrounding objects like pillows, mattress, and a small drawer with toiletries provide contextual lifestyle clues but no unique identifiers. With Level 3 clues (personal attributes and behaviors) and no Level 1\u20132 identifiers, the privacy risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "reclining body from neck to feet on a bed, face obscured",
+        "Anonymized_element": "crop to torso-only, add blanket covering legs and torso, replace with generic silhouette",
+        "privacy_element": "body shape and visible skin, hairstyle and clothing style indicating personal attributes, relaxed posture indicating private activity",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bed and pillows in a residential-looking room",
+        "Anonymized_element": "neutral background wall, abstract texture, remove distinctive bedding",
+        "privacy_element": "private home interior context indicating bedroom use",
+        "target_concept": "bedroom furniture",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10272356/r1_crops/2017_10272356_0.png"
+}

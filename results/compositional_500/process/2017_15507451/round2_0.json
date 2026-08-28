@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a banquet setting with two foreground people masked out. In the background there are several small, partially visible faces that are too distant/blurred to identify. No government or financial identifiers are legible. The strongest privacy signal is the depiction of alcohol consumption (wine bottle and glasses), which reflects activities/behaviors (Level 3). Additional weak signals include distant, unidentifiable individuals (Level 4) and a table number placard that offers only generic event metadata (Level 4). These cues together yield a low-to-moderate privacy risk without direct identifiability.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green wine bottle with partial label on dining table",
+        "Anonymized_element": "generic unlabeled bottle, remove brand text, replace with carafe",
+        "privacy_element": "alcohol consumption context, potential brand label",
+        "target_concept": "wine bottle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small, distant face of a guest seated at a rear table (center-left background)",
+        "Anonymized_element": "blurred head silhouette, turned-away head, generic crowd shape",
+        "privacy_element": "partial facial features at low resolution",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white table number placard reading 56 on a stand",
+        "Anonymized_element": "blank placard, abstract symbol, remove number",
+        "privacy_element": "table number text providing event metadata",
+        "target_concept": "table number sign",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15507451/r1_crops/2017_15507451_0.png"
+}

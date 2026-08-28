@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a vintage storefront sign with partially readable business text (e.g., \u201cTHE\u201d and parts of \u201cCoffee Shop\u201d). No people or personal identifiers are visible. The main privacy signal is location linkage via a potentially identifiable business name or unique sign style. With only one moderate clue and no Level 1\u20132 elements, the overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "retro storefront sign with partial readable text",
+        "Anonymized_element": "blank sign panel, abstract shapes or patterns, blurred or scrambled lettering",
+        "privacy_element": "business name text, distinctive sign design that could pinpoint a venue",
+        "target_concept": "storefront sign text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16229255/r1_crops/2017_16229255_0.png"
+}

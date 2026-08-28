@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image is a sepia-toned close-up portrait of a person with a clearly visible face and identifiable facial features. This constitutes Level 1 biometric data. The shoulders and upper chest appear bare, implying partial/intimate exposure, which is a Level 2 risk. There are no names, documents, or location cues. The strong, central, unobstructed face drives a high privacy risk, slightly increased by the intimate presentation. Confidence is high because the clues are direct and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear side-angled face showing eyes, nose, mouth, and contours",
+        "Anonymized_element": "blurred face, mosaic over facial region, crop above nose, silhouette profile without details",
+        "privacy_element": "identifiable facial features enabling recognition (eyes, nose, mouth, skin texture)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bare shoulders and upper chest area without visible clothing",
+        "Anonymized_element": "add neutral shirt or strap, crop above shoulders, drape with towel or fabric",
+        "privacy_element": "intimate bare skin suggesting toplessness/partial nudity",
+        "target_concept": "bare shoulders/upper chest",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13031777.jpg"
+}

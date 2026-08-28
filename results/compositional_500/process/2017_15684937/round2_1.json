@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows two people with faces obscured, reducing biometric risk. However, a rear vehicle license plate is clearly readable, which can identify an owner and location. A distinctive forearm tattoo on the detained individual is visible and can aid re-identification. Handcuffs behind the person\u2019s back reveal stigmatizing activity/behavior. With no Level 1 elements present, the dominant risks are Level 3 from the license plate, tattoo, and behavior, which together raise the overall risk to moderate-high. Confidence is high because these cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rear license plate on the gray sedan at right",
+        "Anonymized_element": "blank plate, randomized alphanumeric characters, no state or jurisdiction text, neutral solid color",
+        "privacy_element": "readable plate number characters, state/jurisdiction styling",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinct tattoo on the left forearm of the handcuffed person",
+        "Anonymized_element": "bare skin without tattoo, blurred pattern, long-sleeve shirt",
+        "privacy_element": "unique tattoo design and placement",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "metal handcuffs securing the person\u2019s wrists behind their back",
+        "Anonymized_element": "no restraints, hands at sides, neutral wrist position",
+        "privacy_element": "visible restraints indicating detention/arrest context",
+        "target_concept": "handcuffs",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15684937/r1_crops/2017_15684937_1.png"
+}

@@ -1,0 +1,50 @@
+{
+  "reasoning": "The image shows a public ceremony with many people. A foreground participant\u2019s face is large, clear, and directly identifiable, and numerous background attendees\u2019 faces are also visible, making the highest-severity cue Level 1 (biometric data). Visible ceremonial garlands, attire, offerings, and a banner with spiritual iconography indicate participation in a religious/cultural ritual, adding Level 2 sensitive-inference risk linked to those individuals. Together these cues yield a high overall privacy risk. Confidence is high because the faces and ritual cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground male-presenting participant\u2019s unobstructed face with garlands around neck",
+        "Anonymized_element": "blurred or pixelated face, head turned away, remove garlands or replace with plain scarf",
+        "privacy_element": "full facial features (eyes, nose, mouth), distinctive marks, ceremonial garlands implying religious participation",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dense crowd in background with many visible individual faces",
+        "Anonymized_element": "apply face blur to all crowd members, reduce facial detail, simulate greater distance/depth of field",
+        "privacy_element": "multiple identifiable faces with visible facial features",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow banner with sun-like sacred icon near the foreground participant",
+        "Anonymized_element": "plain flag with abstract geometric shape, no religious iconography",
+        "privacy_element": "religious iconography that signals participation in a faith-based ritual",
+        "target_concept": "religious banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10583797.jpg"
+}

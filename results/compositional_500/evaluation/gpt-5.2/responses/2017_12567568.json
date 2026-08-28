@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a street parade with multiple people. Several unobscured faces are visible (e.g., a child at the left front and an adult woman with sunglasses on the right), constituting biometric identifiers (Level 1). Readable storefront signage (e.g., Taco Loco, Angela’s) provides location cues (Level 3). Distinctive outfits and active dancing indicate behaviors and personal attributes (Level 3). The combination of multiple Level 1 faces with supporting location and activity context yields a high privacy risk. Confidence is high because these elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child’s unobscured face at the left foreground wearing a dark ruffled skirt",
+        "Anonymized_element": "blurred face, pixelated facial region, replace with neutral oval mask",
+        "privacy_element": "clear facial features (eyes, nose, mouth) enabling recognition, apparent young age",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "adult woman’s face in right-mid area wearing sunglasses and looking sideways",
+        "Anonymized_element": "blurred/pixelated face, replace with neutral oval mask without identifiable features",
+        "privacy_element": "recognizable facial structure and partial features despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "storefront sign reading 'Taco Loco' on building at left background",
+        "Anonymized_element": "blank signboard, generic colors, no text or branding",
+        "privacy_element": "readable business name that can pinpoint a geographic location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "storefront sign reading 'ANGELA’S' on left-side building facade",
+        "Anonymized_element": "blank signboard, generic colors, no text or branding",
+        "privacy_element": "readable business name that can help determine the exact place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "foreground participant in neon outfit (pink top, green cover, striped pants) mid-dance",
+        "Anonymized_element": "less distinctive, muted-color clothing, remove unique patterns and accessories",
+        "privacy_element": "distinctive apparel and active participation in a public event revealing behavior and style",
+        "target_concept": "person with distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12567568/final/2017_12567568_final.png"
+}

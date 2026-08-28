@@ -1,0 +1,68 @@
+{
+  "reasoning": "The image shows a public event with multiple audience members whose faces are visible and identifiable, while the speaker’s face is not shown. Several clear, front-facing faces are present in the crowd, which constitutes biometric data (a Level 1 risk). Other elements like cameras and a lectern do not expose personal identifiers. Because there are multiple clear faces in close proximity, the cumulative risk is high despite some faces being obscured, leading to a moderate-to-high privacy score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "audience member’s clear face near the right side, smiling and looking toward the stage",
+        "Anonymized_element": "blurred face, pixelated face, generic silhouette without facial detail",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth; direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "man’s face at far right edge with glasses visible in the crowd",
+        "Anonymized_element": "blurred/pixelated face, generic head shape without features",
+        "privacy_element": "recognizable facial structure, glasses, visible eyes and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "audience member’s front-facing face in the upper center background",
+        "Anonymized_element": "pixelated face, masked oval, generic non-descript head",
+        "privacy_element": "full facial features visible despite distance",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "audience member’s face left-center behind the barrier, partially turned but identifiable",
+        "Anonymized_element": "blurred profile, silhouette with no facial detail",
+        "privacy_element": "visible nose, mouth, and partial eye region enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "audience member’s face mid-right holding a small camera, features visible while photographing",
+        "Anonymized_element": "pixelated/blurred face, anonymized generic head",
+        "privacy_element": "recognizable eyes, nose, mouth alongside activity context",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14329200/final/2017_14329200_final.png"
+}

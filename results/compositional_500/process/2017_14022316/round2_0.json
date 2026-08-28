@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a public march with at least one clearly visible, identifiable face at the left. Multiple shirts include readable text such as \u201cHIV STIGMA,\u201d which can imply participation in a cause related to sensitive health topics. A blue street sign with a readable street name provides location context. These clues combine a Level 1 biometric identifier with Level 2 sensitive-inference text and Level 3 location/activity context, yielding a high overall privacy risk. The cues are central, legible, and unoccluded, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man on the far left with full, clear face and glasses",
+        "Anonymized_element": "face blurred, low-detail neutral skin-tone patch, remove distinctive eyewear",
+        "privacy_element": "identifiable face with distinct facial features and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "red T-shirt at center-right with readable slogan including the words 'HIV STIGMA'",
+        "Anonymized_element": "plain red shirt, no text or logos",
+        "privacy_element": "readable cause-related slogan referencing HIV",
+        "target_concept": "clothing text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue street sign at top-right corner reading '6th St'",
+        "Anonymized_element": "blank blue sign, illegible text, generic shape",
+        "privacy_element": "readable street name providing precise location cue",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "colorful flower-shaped parade prop held above the crowd",
+        "Anonymized_element": "generic geometric prop with muted colors, no recognizable event symbolism",
+        "privacy_element": "visible participation in a public march/event",
+        "target_concept": "event prop",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14022316/r1_crops/2017_14022316_0.png"
+}

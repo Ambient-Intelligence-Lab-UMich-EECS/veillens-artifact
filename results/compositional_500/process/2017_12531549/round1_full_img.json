@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a close-up of a person\u2019s open mouth during a dental procedure with a syringe held by gloved hands. The face is not identifiable, but the medical context and visible oral condition (teeth/dental work) reveal sensitive health-related information. The highest severity is Level 2 (medical data). No names, documents, or location markers are present, and no full facial biometrics are visible. Given the direct depiction of a medical treatment and oral health details, the overall risk is moderate to high. Confidence is high due to clear, central evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.46,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal syringe with needle inserted into an open mouth",
+        "Anonymized_element": "non-invasive dental tool, blank generic instrument, crop to exclude syringe",
+        "privacy_element": "medical procedure context, injection implying dental treatment",
+        "target_concept": "syringe in mouth",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "open mouth with visible teeth and dental work",
+        "Anonymized_element": "closed mouth, generic interior with no detailed dental features, light blur",
+        "privacy_element": "visible oral health condition, possible fillings or dental issues",
+        "target_concept": "open mouth/teeth",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12531549.jpg"
+}

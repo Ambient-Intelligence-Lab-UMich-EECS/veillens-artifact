@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image features an individual in a private setting (swimming pool) wearing swimwear, which constitutes a level 2 privacy risk regarding intimate content. Although the face has been redacted, the subject's physical appearance and the specific location context (outdoor pool, likely residential) provide sufficient information to warrant a moderate-to-high privacy risk score. The combination of intimate attire and personal physical attributes contributes to the overall risk assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Person in a swimming pool wearing swimwear",
+        "Anonymized_element": "person wearing modest clothing, generic casual outfit",
+        "privacy_element": "intimate clothing, exposed skin, partial body view",
+        "target_concept": "person in swimwear",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Swimming pool setting with mountain landscape in background",
+        "Anonymized_element": "generic background, neutral environment",
+        "privacy_element": "identifiable landscape, pool setting indicating a likely personal residence",
+        "target_concept": "location context",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13002952/final/2017_13002952_final.png"
+}

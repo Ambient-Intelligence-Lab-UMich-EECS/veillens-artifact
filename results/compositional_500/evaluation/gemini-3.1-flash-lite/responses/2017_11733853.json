@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image features individuals in a public parade setting, which reduces the expectation of privacy. While one person is partially visible, their face is not clearly identifiable, and no specific personal identifiers or sensitive information are present. The location landmark is generic and does not expose specific address details. The risk is assessed as very low because the individuals appear to be participating in a public event, and there is no capture of critical biometric or identity-linked data.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A person in a parade costume with feathers, viewed from the side and partially obscured",
+        "Anonymized_element": "Generic silhouette, no facial features, generic clothing",
+        "privacy_element": "Personal attributes (gender, physical appearance, festive behavior)",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Vertical business sign labeled 'HERS USA'",
+        "Anonymized_element": "Blank sign, generic rectangular building signage",
+        "privacy_element": "Business branding in background",
+        "target_concept": "building sign",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11733853/final/2017_11733853_final.png"
+}

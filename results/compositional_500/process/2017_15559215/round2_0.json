@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a cartoon-style birthday poster in French with large text stating \u201c60 ANS\u201d and additional phrases implying drinking and celebration. There are no real people, faces, or unique identifiers. The primary privacy-relevant clues are the explicit age (a personal attribute) and text suggesting alcohol consumption (an activity/behavior). These are moderate-level cues but not linked to an identifiable person, so overall risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Large printed text reading '60 ANS' at the center-top",
+        "Anonymized_element": "generic celebratory text without numbers, 'Joyeux anniversaire' text, abstract decorative shapes",
+        "privacy_element": "explicit age disclosure '60 years'",
+        "target_concept": "age text",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Printed phrase 'Avec lui, on boit' on the right-center",
+        "Anonymized_element": "neutral celebratory phrase without reference to drinking, generic slogan",
+        "privacy_element": "statement indicating alcohol consumption behavior",
+        "target_concept": "printed text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15559215/r1_crops/2017_15559215_0.png"
+}

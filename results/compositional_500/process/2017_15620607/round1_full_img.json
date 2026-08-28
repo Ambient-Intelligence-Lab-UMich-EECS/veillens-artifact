@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows the back of a postcard with clearly legible handwritten text. It includes a recipient\u2019s first name in the salutation and a sender\u2019s sign-off with initials, which are non-unique identifiers (Level 2). The header states a specific institution and country with a date, revealing location and time (Level 3). No biometric data or government IDs are present. The Level 2 name clues combined with location/time context create a moderate privacy risk. The handwriting is readable, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten salutation containing the recipient name 'Norah' near the top-right text block",
+        "Anonymized_element": "generic greeting text without names, e.g., 'Dear friend', or blurred/blank line",
+        "privacy_element": "recipient personal name",
+        "target_concept": "handwritten name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "header line reading 'No 8 General Hospital, France, 26.8.18' at the top-right",
+        "Anonymized_element": "generic header with no place names or dates, e.g., 'Location' placeholder, blank line",
+        "privacy_element": "institution name, country, specific date",
+        "target_concept": "location/date header text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten sign-off at the bottom of the message with sender initials/marks",
+        "Anonymized_element": "generic closing phrase without initials, or blurred signature area",
+        "privacy_element": "sender initials/signature marks",
+        "target_concept": "signature/initials",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15620607.jpg"
+}

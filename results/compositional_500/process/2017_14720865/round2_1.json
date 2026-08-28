@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a government-issued marriage certificate from the General Register Office with clear text. The most sensitive element is a readable application number, which is a government identifier. Additional visible details include the registration district name (location) and a specific event date, which add identifiable context even though names are redacted. These clues together create a high privacy risk despite the central content being masked. Confidence is high due to clear legibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed application number \"5836199/1\" at the upper-right area",
+        "Anonymized_element": "blurred digits, replaced with 0000000/0, blank area",
+        "privacy_element": "unique government application number, structured numeric identifier",
+        "target_concept": "application number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "text line stating \"ENTRY OF MARRIAGE\" with General Register Office header and crest",
+        "Anonymized_element": "generic document header without organization name or crest, plain text banner",
+        "privacy_element": "government document type and issuing authority branding",
+        "target_concept": "document header",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed location text \"Registration District of St Thomas\" near the middle-lower area",
+        "Anonymized_element": "location text removed or replaced with generic placeholder like \"District\"",
+        "privacy_element": "specific district name revealing geographic location",
+        "target_concept": "registration district text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed date \"1st day of August 2014\" in the lower middle",
+        "Anonymized_element": "date removed or replaced with placeholder like \"DD Month YYYY\"",
+        "privacy_element": "specific personal event date",
+        "target_concept": "event date text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14720865/r1_crops/2017_14720865_1.png"
+}

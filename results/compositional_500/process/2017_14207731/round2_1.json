@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows a printed cinema ticket with legible text including an order number, venue name (BioCity \u00c5rhus), movie title, and exact date/time. The highest-severity clue is the readable transaction/order number (a non-unique identifier), which can be tied to a specific event and time. Combined with location and activity details, these elements enable behavioral and partial identity linkage. The content is clear and centered, so the risk is elevated beyond contextual-only signals.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed line at bottom showing 'order nr. 4388088' with additional numeric codes",
+        "Anonymized_element": "blank strip, randomized digits, blurred serial text, generic pattern",
+        "privacy_element": "readable order/transaction number, serial codes",
+        "target_concept": "order number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "top-left ticket text showing the cinema name 'BioCity \u00c5rhus'",
+        "Anonymized_element": "generic venue text, neutral brand name, placeholder city name",
+        "privacy_element": "specific venue name, city identifier",
+        "target_concept": "venue name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "ticket text line showing the movie title 'Black Swan'",
+        "Anonymized_element": "generic movie title placeholder, nonspecific label",
+        "privacy_element": "specific media title indicating event attended",
+        "target_concept": "movie title",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "ticket fields showing date and time: 'Dato 06.02', 'Kl. 13:30' and bottom timestamp '06.02.2011 13:09:22'",
+        "Anonymized_element": "obscured or randomized date/time, generic placeholders like 00.00 and 00:00",
+        "privacy_element": "exact date and time of attendance and purchase timestamp",
+        "target_concept": "date and time",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14207731/r1_crops/2017_14207731_1.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a medical procedure with multiple staff in PPE. Several staff faces are clearly visible in profile or partial front view, which are strong biometric identifiers (Level 1). Additionally, an IV bag and tubing indicate an active medical treatment scene, which constitutes medical imagery (Level 2). These clues combine to create high privacy risk even without visible patient identity or readable text. Score reflects multiple Level 1 faces reinforced by sensitive medical context. Confidence is high because the faces and IV setup are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bald male staff member\u2019s face in left-center wearing safety glasses, side profile",
+        "Anonymized_element": "blurred face, generic mannequin head silhouette, pixelated facial region",
+        "privacy_element": "recognizable facial features, head shape, ear and nose profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "leftmost staff member\u2019s face in profile with glasses",
+        "Anonymized_element": "blurred/pixelated facial region, opaque face shield",
+        "privacy_element": "distinct facial outline, nose and mouth area, eyewear shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "foreground right staff member\u2019s side face with mask strap visible",
+        "Anonymized_element": "blurred/pixelated facial region, opaque mask overlay",
+        "privacy_element": "facial contour and ear visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "hanging IV fluid bag with tubing over patient area (patient obscured)",
+        "Anonymized_element": "plain unmarked fluid bag, remove tubing connection, generic lab container",
+        "privacy_element": "depiction of active medical treatment via IV setup",
+        "target_concept": "IV bag",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14167625/r1_crops/2017_14167625_0.png"
+}

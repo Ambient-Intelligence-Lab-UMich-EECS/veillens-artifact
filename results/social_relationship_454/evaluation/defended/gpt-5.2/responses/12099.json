@@ -1,0 +1,19 @@
+{
+  "img_id": "12099",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 8": 6,
+    "4 8": 6,
+    "5 8": 6
+  },
+  "ground_truth": {
+    "5 8": 6,
+    "4 8": 6,
+    "3 8": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P3-P4]: This is a soccer match with spectators in stadium seating; P3 sits just behind P4 in adjacent rows, both watching the field with neutral body language and no interaction. Their casual clothing and the crowd setting suggest they\u2019re simply nearby attendees. => no-relationship\n\n[P3-P5]: In the stadium audience during a soccer game, P3 is seated a row behind and slightly to the left of P5, with no eye contact or coordinated posture. No physical interaction is visible and both appear to be independent spectators. => no-relationship\n\n[P3-P8]: P3 is in the mid-stands while P8 is farther up/right in separate seats; both are passive viewers with no engagement toward each other. The distance and lack of interaction in a public sports venue imply they are unrelated bystanders. => no-relationship\n\n[P4-P8]: P4 sits lower in the stands while P8 is higher/right; they are not close, not oriented toward each other, and show no interaction. Casual spectator attire in a stadium environment points to no apparent connection. => no-relationship\n\n[P5-P8]: P5 and P8 are seated in different sections/rows with clear separation, both watching the match without shared gestures or contact. Given the public crowd context and no visible coordination, they appear to be strangers. => no-relationship",
+  "timestamp": 1779952698.6987083
+}

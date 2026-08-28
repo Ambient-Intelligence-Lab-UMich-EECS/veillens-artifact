@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a soccer match near the goal. Several players\u2019 jersey backs display readable surnames and numbers, which are non-unique identifiers tied to individuals. Faces are small or turned away, so no identifiable biometric data is clear. A distant audience is visible but unrecognizable. The highest severity is Level 2 due to legible surnames/numbers, with additional low-risk crowd context. This yields a moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red jersey back with readable surname 'CARRICK' and number '16'",
+        "Anonymized_element": "plain jersey, no name, no number, generic color block",
+        "privacy_element": "readable surname, readable squad number",
+        "target_concept": "jersey name and number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black-and-amber striped jersey back with readable surname 'ALUKO' and a two-digit number",
+        "Anonymized_element": "plain striped jersey, no text, no number",
+        "privacy_element": "readable surname, partially readable squad number",
+        "target_concept": "jersey name and number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "spectators in the background stands, small and indistinct",
+        "Anonymized_element": "blurred crowd, generic color blobs, reduced detail",
+        "privacy_element": "multiple people present though faces not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14806724/r1_crops/2017_14806724_1.png"
+}

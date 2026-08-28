@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a close-up of a handheld device screen displaying a readable library notification. No faces or IDs appear. The clearest privacy elements are textual: the organization name \u201cDarien Library,\u201d a specific URL with the library domain and query parameter, and a precise timestamp, which together reveal location/affiliation and aspects of activity timing. These are Level 3\u20134 clues; no Level 1\u20132 identifiers are visible. The combination of legible location plus activity details yields a moderate but limited privacy risk. Confidence is high because the text is clearly readable.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "notification header on phone screen showing \u201cDarien Library Patron Notification System\u201d",
+        "Anonymized_element": "generic app header text, replace with neutral service name, no organization or place names",
+        "privacy_element": "readable organization name, service name implying workplace/affiliation and location",
+        "target_concept": "app notification header",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "hyperlink text in the message body with domain dobby.darienlibrary.org and query parameter",
+        "Anonymized_element": "generic placeholder URL (e.g., example.com/link), remove domain and parameters",
+        "privacy_element": "readable domain indicating organization/location, unique URL path and query parameter",
+        "target_concept": "URL text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "timestamp text in message body and status bar time (October 22, 2010, 9:47 am; 9:50 AM)",
+        "Anonymized_element": "approximate or removed time/date, generic placeholder timestamps",
+        "privacy_element": "precise date and time of activity/notification",
+        "target_concept": "timestamp",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14719464/r1_crops/2017_14719464_0.png"
+}

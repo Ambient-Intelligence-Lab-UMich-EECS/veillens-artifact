@@ -1,0 +1,32 @@
+{
+  "img_id": "19189",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 7,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: A casual group meal/party in a caf\u00e9; P1 stands by the table while P2 sits right next to her, both oriented to the same conversation, no intimate contact, casual attire. => friends\n\n[P1-P3]: Same social gathering; P3 sits facing toward P1 across the table, relaxed posture and conversation cues, no physical intimacy, casual clothes. => friends\n\n[P1-P4]: In the same party setting with a gift visible; P4 is near P1 at the table, interacting within the group but not romantically or professionally. => friends\n\n[P2-P3]: Both are part of the same table of diners; they look toward the group conversation across the table, casual dress, no physical contact. => friends\n\n[P2-P4]: Seated/standing closely on the right side during the same celebration; casual posture, no signs of romantic or transactional interaction. => friends\n\n[P3-P4]: Both are attendees at the same casual gathering with food and a present; they share the table environment without intimate or commercial behavior. => friends",
+  "timestamp": 1776888822.0917547
+}

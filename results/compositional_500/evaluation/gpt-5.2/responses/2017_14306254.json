@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image is a public event poster with readable text including a venue and city, a specific date/time, and a website URL. There are no people, faces, IDs, or personal names shown. The most privacy-relevant clue is the explicit location text, which can reveal a precise place but not tied to an individual. Other clues are generic event details and a URL, which are low-risk. Overall, risk is low with the highest severity being Level 3 (location).",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten venue line reading 'Oxfam, Western Rd, Brighton' near the center-lower area of the poster",
+        "Anonymized_element": "replace with generic placeholder text like 'Venue, Street, City', blur or remove address details",
+        "privacy_element": "readable venue name, street, and city indicating a specific location",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "handwritten event date and time 'Friday 23rd February 7pm' in the middle of the poster",
+        "Anonymized_element": "replace with generic 'Date, Time', blur numerals and day",
+        "privacy_element": "specific date and time of an event",
+        "target_concept": "date/time text",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "printed website URL 'www.woodlandrecordings.com' at the bottom-left of the poster",
+        "Anonymized_element": "generic placeholder like 'www.example.com', blur domain",
+        "privacy_element": "readable website domain",
+        "target_concept": "website URL",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14306254/final/2017_14306254_final.png"
+}

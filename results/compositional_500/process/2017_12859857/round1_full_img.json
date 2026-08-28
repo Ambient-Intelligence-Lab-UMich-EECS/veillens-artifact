@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a public protest with several clearly identifiable people in the foreground. Multiple unobstructed faces (one man with glasses, one woman holding a sign, and another man at right) are central and well-lit, constituting Level 1 biometric identifiers. A handheld protest sign with readable German text indicates participation in a demonstration, enabling political-inference risk (Level 2) and activity disclosure. These clues reinforce each other (faces + protest context), yielding a high overall privacy risk. No government IDs, financial, or medical items are visible. Score reflects multiple Level 1 faces plus contextual Level 2 content. Confidence is high due to clarity and proximity of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left man\u2019s unobstructed face with glasses",
+        "Anonymized_element": "face blurred or pixelated, add opaque sunglasses, turn head away",
+        "privacy_element": "full face, eyes visible, distinctive eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman in center holding sign, unobstructed face",
+        "Anonymized_element": "face blurred or pixelated, add opaque sunglasses, turn head away",
+        "privacy_element": "full face, eyes and facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right-side man\u2019s unobstructed face in profile",
+        "Anonymized_element": "face blurred or pixelated, add opaque sunglasses, turn head further away",
+        "privacy_element": "full face profile with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld protest sign with readable German text",
+        "Anonymized_element": "blank sign, abstract shapes, illegible scribbles",
+        "privacy_element": "readable political/protest slogan revealing participation viewpoint",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background group of protesters with partially visible faces",
+        "Anonymized_element": "blur crowd faces, reduce detail, silhouettes",
+        "privacy_element": "multiple identifiable or semi-identifiable faces",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12859857.jpg"
+}

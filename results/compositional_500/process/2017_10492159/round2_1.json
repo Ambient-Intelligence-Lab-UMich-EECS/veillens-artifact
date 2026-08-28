@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a street protest with multiple clearly identifiable faces and political placards. The most sensitive elements are unobstructed, front-facing faces (Level 1 biometric data). Additionally, handheld protest signs and a portrait placard signal political participation and viewpoints (Level 2 sensitive inference) and reveal activity patterns (Level 3). These clues are central and legible, reinforcing each other to raise risk. Final score is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of a person under a multicolored umbrella at center-left",
+        "Anonymized_element": "face blurred or replaced, head turned away, added mask/occlusion",
+        "privacy_element": "full face with eyes, nose, and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-facing face of a person in a blue jacket near the right side, holding a sign",
+        "Anonymized_element": "face blurred or replaced, head turned away, added mask/occlusion",
+        "privacy_element": "full face with identifiable features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-facing face of a person on the far right holding a placard",
+        "Anonymized_element": "face blurred or replaced, head turned away, added mask/occlusion",
+        "privacy_element": "full face with identifiable features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red protest placard on the left with partially readable bold text (e.g., 'STOP')",
+        "Anonymized_element": "blank sign, abstract pattern, generic colors without text or symbols",
+        "privacy_element": "political protest messaging implying political stance and participation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "portrait placard held by the person on the far right with text and a photographed speaker",
+        "Anonymized_element": "blank poster, abstract art, generic shapes without portrait or text",
+        "privacy_element": "political imagery and slogans indicating support/opposition",
+        "target_concept": "placard/poster",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10492159/r1_crops/2017_10492159_1.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image captures a group of people in an outdoor sports setting. While faces and silhouettes are largely obscured or neutralized by manual masking, some individuals in the background appear in uniform, which provides minor context about their occupation. The overall privacy risk is low because no specific personally identifiable information, such as faces, names, or government identifiers, is clearly visible. The focus is primarily on public activity in a common area.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Individuals in the background wearing military-style camouflage uniforms.",
+        "Anonymized_element": "individuals in casual athletic wear, generic outdoor clothing",
+        "privacy_element": "military-style camouflage uniforms",
+        "target_concept": "uniform",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Silhouettes of people playing flag football.",
+        "Anonymized_element": "neutral silhouettes, removed human forms",
+        "privacy_element": "human silhouettes",
+        "target_concept": "human figures",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/final/2017_12338201_final.png"
+}

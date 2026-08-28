@@ -1,0 +1,43 @@
+{
+  "reasoning": "The person’s face is obscured, so no direct biometric identification is visible. The main privacy signals are Level 3: the distinctive belly-dance costume and performance-like stage background reveal an activity/hobby and the uncovered midriff and arms expose personal physical attributes. There are no readable names, documents, or explicit location markers. Combined, these moderate cues justify a low-to-moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "turquoise sequined belly-dance costume on upper body and skirt with fringe",
+        "Anonymized_element": "plain solid-color dancewear, minimal decoration, generic top and skirt",
+        "privacy_element": "specialized dance attire indicating specific hobby/profession, distinctive style",
+        "target_concept": "dance costume",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "uncovered arms and midriff of the person",
+        "Anonymized_element": "covered torso and arms with neutral clothing",
+        "privacy_element": "visible body shape and skin tone revealing physical appearance cues",
+        "target_concept": "exposed torso/arms",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "stage-like background with support structures and lighting",
+        "Anonymized_element": "plain neutral backdrop without event context",
+        "privacy_element": "performance setting suggesting participation in a public event/activity",
+        "target_concept": "performance stage background",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15785021/final/2017_15785021_final.png"
+}

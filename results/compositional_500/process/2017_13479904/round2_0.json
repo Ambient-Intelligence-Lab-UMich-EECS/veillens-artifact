@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows the exterior of a private residence: a stucco wall, a green-trimmed window, front-yard plants, and a small gate area. No faces, names, addresses, or readable identifiers appear. The primary privacy signal is property exposure that could help recognize a specific home if cross-referenced, but there are no direct identifiers. Thus the highest severity is Level 4, yielding a low overall risk. Confidence is high due to clear visibility and absence of stronger clues.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stucco house facade with a green-trimmed window",
+        "Anonymized_element": "generic exterior wall texture, neutral window frame color, blurred window details",
+        "privacy_element": "distinctive residential facade and window style of a private home",
+        "target_concept": "house exterior/window",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of palm trees and landscaped front yard next to driveway",
+        "Anonymized_element": "generic foliage shapes, simplified plants without distinctive arrangement",
+        "privacy_element": "unique landscaping details associated with a specific residence",
+        "target_concept": "front yard landscaping",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13479904/r1_crops/2017_13479904_0.png"
+}

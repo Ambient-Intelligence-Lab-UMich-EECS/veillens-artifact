@@ -1,0 +1,70 @@
+{
+  "reasoning": "The crop shows multiple identifiable faces in a public street scene, including a prominently centered child whose face is clear and frontal, plus several adults in the background with visible facial features. Readable storefront signage (e.g., \u201cLIBRARIE PAPETERIE\u201d, \u201cmusic store\u201d) provides coarse location cues. The highest-severity elements are the clear faces (Level 1), with additional Level 3 location context from shop signs. Combined, these cues create a high privacy risk, especially due to a recognizable child. Confidence is high because the faces and text are sharp and unobstructed.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a child in a green shirt at center",
+        "Anonymized_element": "blurred face, pixelated or masked facial region, generic head shape without details",
+        "privacy_element": "full face, clear eyes/nose/mouth, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult woman\u2019s face on left background, looking toward camera",
+        "Anonymized_element": "blur/pixelate face, replace with neutral oval without features",
+        "privacy_element": "recognizable facial features, eye region visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult man\u2019s face in middle background near shopfront",
+        "Anonymized_element": "blurred facial area, neutralized skin-tone patch",
+        "privacy_element": "recognizable face with clear contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront sign reading 'LIBRARIE PAPETERIE' on right building facade",
+        "Anonymized_element": "blank awning/sign, nonsensical or blurred text",
+        "privacy_element": "readable business name indicating locale/type of store",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "hanging sign reading 'music store' above sidewalk",
+        "Anonymized_element": "generic blank sign, blurred or altered text",
+        "privacy_element": "readable shop name providing location context",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11730503/r1_crops/2017_11730503_0.png"
+}

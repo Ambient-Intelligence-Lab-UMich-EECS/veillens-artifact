@@ -1,0 +1,37 @@
+{
+  "reasoning": "The image shows four paper event tickets for a New York Yankees game with clearly legible text including venue (Yankee Stadium), opponent, date/time, and section/row/seat numbers, plus visible barcodes and serial numbers on each ticket. No people or government/financial IDs appear. Highest severity arises from Level 3 clues (specific location and activity details tied to seats and event time). Level 4 risk comes from the scannable barcodes/unique codes on a generic document. Combined, these reveal attendance plans/history and could enable misuse of the tickets if valid. Overall risk is moderate with high confidence due to clarity and legibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "scannable barcode and numeric code on the right edge of the front-most ticket",
+        "Anonymized_element": "blurred barcode, randomized digits, solid-color strip",
+        "privacy_element": "unique barcode pattern, serial number",
+        "target_concept": "ticket barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed event details on the front-most ticket showing venue, teams, date/time, and section/row/seat",
+        "Anonymized_element": "generic placeholder text, remove venue and date, replace seat details with dashes",
+        "privacy_element": "venue name (Yankee Stadium), event (Yankees vs Red Sox), date and time, section/row/seat numbers",
+        "target_concept": "printed event details",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10967835.jpg"
+}

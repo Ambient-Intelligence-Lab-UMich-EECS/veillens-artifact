@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image captures a public or semi-public gathering in a suburban residential setting. Several individuals are present, and while many are obscured by silhouettes, one person is clearly wearing a U.S. Army camouflage uniform with visible service identification, which constitutes a Level 2 risk due to workplace identification. The surrounding residential environment poses a Level 3 location risk, but no precise street address is clearly legible. The combination of professional identification in a recognizable residential context creates a moderate privacy risk. The confidence is medium because while the uniform is identifiable, no specific personal name or rank badge is fully legible.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "U.S. Army camouflage service uniform worn by a man",
+        "Anonymized_element": "plain olive green jacket, no military patches, no service markings",
+        "privacy_element": "military service branch insignia, camouflage pattern, rank insignia placement",
+        "target_concept": "military uniform",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "Suburban residential houses with exterior siding and autumn leaves on the ground",
+        "Anonymized_element": "generic blurred building, blurred background, indistinct vegetation",
+        "privacy_element": "specific residential building architecture, neighborhood landscape",
+        "target_concept": "residential property",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15937105/final/2017_15937105_final.png"
+}

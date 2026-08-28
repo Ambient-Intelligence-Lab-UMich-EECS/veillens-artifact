@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows the back of an American football player wearing a helmet and jersey. No identifiable face or government/financial/medical data is visible. The clearest personal-information signals are a readable team name \u201cRAVENS\u201d and a large jersey number \u201c22,\u201d which can imply team membership and activity but not a unique identity alone. A small helmet brand label is visible but is generic product info. Overall risk is moderate-low due to activity disclosure and weak, non-unique identifiers without facial biometrics.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a football jersey with large number 22 and the word RAVENS across the shoulders",
+        "Anonymized_element": "plain jersey, generic pattern, remove or blur number, replace team text with blank or neutral word",
+        "privacy_element": "readable jersey number, readable team name",
+        "target_concept": "jersey number",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "helmet rear with small manufacturer label on the neck area",
+        "Anonymized_element": "blank helmet surface, remove brand text/logo",
+        "privacy_element": "manufacturer brand text/logo",
+        "target_concept": "brand logo",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10523599/r1_crops/2017_10523599_0.png"
+}

@@ -1,0 +1,25 @@
+{
+  "reasoning": "The image centers on a handheld protest sign with clearly readable political text urging rejection of a policy. No faces, names, government IDs, or other unique identifiers of the holder are visible; only a partial hand appears without biometric detail. The main privacy signal is the explicit political viewpoint on the sign, which is a sensitive inference but not directly linked to an identifiable person. With no compositional reinforcement (e.g., face, name badge, location markers), overall risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten protest sign with readable political message",
+        "Anonymized_element": "blank sign, generic non-political text or abstract shapes, blurred or removed lettering",
+        "privacy_element": "explicit political stance conveyed by legible slogan",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10308373.jpg"
+}

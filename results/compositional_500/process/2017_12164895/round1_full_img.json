@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows two people during an eye exam. Both individuals\u2019 faces are clearly visible (identifiable biometric data), which is the highest-severity clue. Additionally, the patient\u2019s head is positioned in an autorefractor, revealing an ongoing medical examination, a sensitive medical context. There are small paper slips on the table, but no legible personal text is visible. The combination of identifiable faces with explicit medical activity yields a high privacy risk. Confidence is high because the cues are central and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "patient\u2019s face in left profile positioned on the chinrest of the eye-exam machine",
+        "Anonymized_element": "face blurred or masked, head turned away, replaced with neutral silhouette",
+        "privacy_element": "identifiable facial features, full profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clinician\u2019s face in right profile leaning toward the device",
+        "Anonymized_element": "face blurred or masked, head turned away, replaced with neutral silhouette",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "autorefractor with the patient\u2019s head positioned for testing",
+        "Anonymized_element": "generic non-medical-looking device, no patient interaction shown",
+        "privacy_element": "visible medical test in progress indicating eye examination",
+        "target_concept": "medical device in use",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small paper slips/cards with printed text on the instrument table",
+        "Anonymized_element": "blank cards with no text or logos",
+        "privacy_element": "potential textual details on documents (not legible)",
+        "target_concept": "paper documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12164895.jpg"
+}

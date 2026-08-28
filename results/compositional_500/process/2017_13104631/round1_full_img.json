@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows the dim interior of a large cathedral with arches and a small number of visitors. People are distant, partially obscured, and faces are not clearly identifiable; no readable text, badges, documents, or numbers are visible. The highest severity present is low-risk Level 4 due to crowds/distant individuals. With no Level 1\u20133 identifiers, medical/financial data, or explicit location markers, overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small group of distant visitors along the right aisle, faces tiny and dimly lit",
+        "Anonymized_element": "replace with empty aisle, blur people into generic silhouettes, remove facial detail",
+        "privacy_element": "presence of people with partial faces and bodies, albeit unidentifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13104631.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a commercial airplane on a runway with no people or personal identifiers visible. The only potentially identifying element is the aircraft’s registration code on the rear fuselage and the airline branding, which relate to an asset rather than a person. No faces, government IDs, financial/medical data, or explicit location/address details are present. Thus, the highest severity is low (Level 4), yielding an overall low privacy risk. Confidence is high because the scene is clear and lacks personal-information cues.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "aircraft registration code printed on the rear fuselage near the tail",
+        "Anonymized_element": "blank fuselage area, removed/blurred alphanumeric code, generic livery without specific airline text or logo",
+        "privacy_element": "aircraft tail/registration number, airline branding text",
+        "target_concept": "aircraft registration code",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11162269/final/2017_11162269_final.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows a close-up of a cinema ticket with clearly legible text. No faces or personal names are visible. The strongest privacy cues are location and activity details: the venue name \u201cBioCity \u00c5rhus\u201d identifies the city and cinema, and the date/time plus the movie title reveal a precise activity and preference. Additional low-risk details include seat/ticket/order numbers typical of a generic ticket. These Level 3 clues (location and activity) are specific and readable, raising moderate risk, while Level 4 document identifiers add slight reinforcement. Overall risk is moderate with high confidence due to legibility and specificity.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed venue name 'BioCity \u00c5rhus' at the top-left of the ticket",
+        "Anonymized_element": "blank header, generic venue label, blurred or replaced with 'Cinema'",
+        "privacy_element": "readable venue and city name revealing location",
+        "target_concept": "venue name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed date and time on the right side of the ticket ('Dato 06.02', 'Kl. 13:30')",
+        "Anonymized_element": "blanked date/time, randomized or partially obscured timestamp",
+        "privacy_element": "specific date and time indicating when the activity occurred",
+        "target_concept": "date and time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Movie title text 'Black Swan' beneath the venue name",
+        "Anonymized_element": "generic title text like 'Feature Film', blurred title",
+        "privacy_element": "readable movie title indicating viewing preference/activity",
+        "target_concept": "movie title text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Lower area ticket metadata including seat/row and ticket/order numbers",
+        "Anonymized_element": "blank numbers, generic placeholders like '####', obscured codes",
+        "privacy_element": "legible seat number, row, ticket number, order number",
+        "target_concept": "ticket numbers and seat info",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14207731.jpg"
+}

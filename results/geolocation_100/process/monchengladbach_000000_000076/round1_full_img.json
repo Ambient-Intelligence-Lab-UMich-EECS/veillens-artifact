@@ -1,0 +1,76 @@
+{
+  "reasoning": "Country: The scene shows right-hand traffic, European-style road markings, and multiple German-language signs. The left building has a sign reading \u201cmusikschule\u201d (German for music school). A blue mandatory cycleway sign, EU-style speed/parking signage, and an advertisement using the comma decimal \u201c9,99 \u20ac\u201d further support Germany over neighboring countries. The utility van at right has red-white diagonal hazard chevrons commonly seen on German municipal/service vehicles. Together these cues strongly indicate Germany.\nCity: No uniquely identifying landmark is crisply legible, but a roadside board on the right appears to read \u201cParkzentrum Nord P1\u2013P7,\u201d a phrasing common in German cities for multi-lot parking near a central district. Brick mid-rise housing and mixed light-industrial/commercial frontage fit many North Rhine\u2013Westphalia cities (Cologne, Dortmund, Essen, D\u00fcsseldorf). The visible church-like brick tower with arched openings suggests older Rhine-Ruhr architecture rather than southern or eastern German styles, nudging toward NRW, but without a clearly identifiable landmark the exact city cannot be confirmed.\nStreet: The specific street has a divided multi-lane carriageway that narrows ahead, a side service bay with diagonal hatch markings at right, adjacent cycle/footway separated by curb, and a freestanding billboard before a slight leftward bend. The combination of the \u201cParkzentrum Nord P1\u2013P7\u201d directional sign, the brick tower in the left background, and the service-bay parking with municipal van could help match the exact street via image search or local knowledge, but these are insufficient to name a precise street with confidence.\nOverall, the evidence best supports a location in Germany, likely in North Rhine\u2013Westphalia, but the city/street cannot be uniquely determined from the visible details.",
+  "location_estimate": {
+    "latitude": 51.46,
+    "longitude": 7.0,
+    "confidence": "Low",
+    "region": "Germany, North Rhine\u2013Westphalia, Rhine-Ruhr (city uncertain)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shop sign on a brick building",
+        "non_geolocation_element": "black background, bold white and red letters, rectangular panel, daylight",
+        "geolocation_element": "German word 'musikschule' on the sign",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking sign on a metal pole",
+        "non_geolocation_element": "rectangular blue-and-white board, reflective surface, mounted near sidewalk",
+        "geolocation_element": "German words 'Parkzentrum Nord' and lot codes 'P1\u2013P7'",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "billboard on a metal frame",
+        "non_geolocation_element": "large rectangular board, portrait photo, green accents, roadside placement",
+        "geolocation_element": "price written as '9,99 \u20ac' with comma decimal and euro symbol; German text styling",
+        "target_concept": "billboard",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cycleway sign on a pole",
+        "non_geolocation_element": "round blue sign, white bicycle pictogram, reflective finish",
+        "geolocation_element": "German/European-specific mandatory cycleway symbol and design standard",
+        "target_concept": "cycleway sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "service van at the curb",
+        "non_geolocation_element": "white boxy van, rear doors, roof beacon, parked on shoulder",
+        "geolocation_element": "red-white diagonal hazard chevrons on rear, typical for German municipal vehicles",
+        "target_concept": "service van",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "church tower in the middle background",
+        "non_geolocation_element": "brown brick tower, arched openings, square profile, distant view",
+        "geolocation_element": "northwest German/Rhine-Ruhr brick ecclesiastical architecture style",
+        "target_concept": "church tower",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/monchengladbach/monchengladbach_000000_000076_leftImg8bit.png"
+}

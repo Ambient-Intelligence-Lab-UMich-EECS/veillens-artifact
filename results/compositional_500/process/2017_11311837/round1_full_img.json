@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a printed shuttle ticket without any people. Readable text includes an event name, a specific school location, the transit brand, the year, and a ticket serial number. No biometric or government identifiers appear. The highest-severity clue is location information (school name) that can tie the ticket to a specific place and event. Other details are generic document metadata. Combined, these yield a low overall privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red serial number \"04053\" at the top of the ticket",
+        "Anonymized_element": "remove digits, replace with XXXX or random non-unique pattern, plain header",
+        "privacy_element": "unique serial number digits",
+        "target_concept": "ticket serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "text line \"PIONEER HIGH SCHOOL\" near the bottom of the ticket",
+        "Anonymized_element": "generic venue text like \"LOCAL VENUE\" or blank area",
+        "privacy_element": "specific school name indicating a real-world place",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "event branding area with \"ArtFairRide / ART FAIRS\" and \"TheRide 2015\"",
+        "Anonymized_element": "generic event title like \"CITY EVENT RIDE\", remove year and brand",
+        "privacy_element": "event name, transit brand, year",
+        "target_concept": "event/year text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11311837.jpg"
+}

@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a public outdoor crowd with most faces obscured. No government IDs, names, or financial/medical info are visible. The most privacy-relevant element is a central shirtless person whose physical appearance and attire reveal personal attributes and participation in a public event (Level 3). Additional weak clues include a crowd indicating attendance/behavior, a “ONE WAY” street sign and distinctive facade providing loose location context, and a smartphone being used. With faces masked, biometric risk is minimized, so overall risk is moderate-low, driven mainly by personal attributes and activity context rather than direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Shirtless upper torso of a person standing above the crowd wearing black leather shorts",
+        "Anonymized_element": "plain T-shirt, longer neutral shorts, minimal skin exposure",
+        "privacy_element": "bare torso revealing physique and body details, distinctive minimal clothing",
+        "target_concept": "torso/clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Dense crowd of attendees with partially visible heads and bodies; many faces already obscured",
+        "Anonymized_element": "silhouetted crowd shapes, stronger blur on individuals",
+        "privacy_element": "presence at a specific public event, partial head/hairstyle features",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Street sign reading 'ONE WAY' mounted near a distinctive industrial-style building facade",
+        "Anonymized_element": "blank directional sign, simplified non-descript facade",
+        "privacy_element": "'ONE WAY' text and recognizable facade patterns providing urban context",
+        "target_concept": "street sign",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "Smartphone held up by a foreground person capturing the scene",
+        "Anonymized_element": "generic black rectangle with blank screen",
+        "privacy_element": "device capturing images of people and location context",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14093152/final/2017_14093152_final.png"
+}

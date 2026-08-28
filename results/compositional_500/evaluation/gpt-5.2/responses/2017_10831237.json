@@ -1,0 +1,53 @@
+{
+  "reasoning": "The faces of all individuals are fully obscured, removing direct biometric identifiers. However, the scene clearly depicts a public event with political context: a large backdrop with campaign-style lettering and attendees wearing round campaign buttons. These cues enable sensitive inference about political views or participation, though they are not tied to identifiable faces. Additional moderate signals show activities/behaviors (public speaking with a microphone and an attendee recording with a camera). With no government IDs, financial, or medical data visible, the highest severity is Level 2 (sensitive political inference), combined with several Level 3 activity cues. Overall risk is moderate due to sensitive context without identifiable individuals.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "round campaign-style button on attendee’s right chest (front-right of image, black shirt)",
+        "Anonymized_element": "plain circular pin with no text or symbols, solid color",
+        "privacy_element": "political logo/symbol suggesting political affiliation",
+        "target_concept": "political button",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "large event backdrop with partial campaign-style lettering behind the speaker",
+        "Anonymized_element": "plain colored backdrop, abstract pattern without text or logos",
+        "privacy_element": "political branding/slogan elements indicating a political event",
+        "target_concept": "event backdrop signage",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "handheld microphone in speaker’s hand at center foreground",
+        "Anonymized_element": "generic microphone without logos, or remove microphone and replace with neutral hand position",
+        "privacy_element": "public-speaking context revealing participation in an event",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "compact camera/phone held up by attendee at back-left aiming toward stage",
+        "Anonymized_element": "neutral hand position without device, or generic non-recording object",
+        "privacy_element": "recording behavior at an event",
+        "target_concept": "camera/phone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10831237/final/2017_10831237_final.png"
+}

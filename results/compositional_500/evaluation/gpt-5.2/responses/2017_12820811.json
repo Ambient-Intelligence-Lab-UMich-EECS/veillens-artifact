@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a wheelchair basketball game in an indoor arena. A player on the right has a clearly visible, unobstructed face (Level 1 biometric data). Multiple sports wheelchairs on court strongly suggest disability context for specific individuals (Level 2 sensitive inference). A large yellow banner with readable organization/event text and year can reveal event and approximate location/time (Level 3). There is also a distant audience with many tiny, unidentifiable faces (Level 4). The identifiable face plus disability inference and event signage together raise privacy risk beyond moderate. The evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rightmost on-court player's face in profile with glasses, unobstructed",
+        "Anonymized_element": "blurred or pixelated face, generic skin-toned oval without facial features",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, unique profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "foreground athlete's sports wheelchair on the court",
+        "Anonymized_element": "generic chair silhouette, remove specialized wheelchair features, neutralized wheels",
+        "privacy_element": "specialized sports wheelchair implying mobility impairment/disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "large yellow courtside banner with readable event/organization text and year",
+        "Anonymized_element": "plain banner with no text or logos, solid color",
+        "privacy_element": "organization acronym/logo, event title, year indicating time/place context",
+        "target_concept": "event banner/sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "distant audience section with many small, unidentifiable faces",
+        "Anonymized_element": "blurred crowd, abstract silhouettes without facial detail",
+        "privacy_element": "presence of many people with tiny faces",
+        "target_concept": "crowd of spectators",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12820811/final/2017_12820811_final.png"
+}

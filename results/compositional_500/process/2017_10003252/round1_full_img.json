@@ -1,0 +1,60 @@
+{
+  "reasoning": "A young girl is clearly identifiable with a full, unobstructed face while holding a sign that displays a readable personal name. An adult nearby also has a visible face, and a lanyard badge is present though its text is not legible. The highest severity is Level 1 due to identifiable faces, compounded by a Level 2 non-unique identifier (name on sign) that links a name to a specific child in a public setting, increasing risk. These direct, central, and legible cues justify a high privacy score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the young girl in the foreground center-right",
+        "Anonymized_element": "blurred face, pixelated features, turned head profile, face mask",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white sign held by the girl with readable green text showing a personal name",
+        "Anonymized_element": "blank sign, generic shapes or colors, placeholder text with no names",
+        "privacy_element": "readable personal name text",
+        "target_concept": "name on sign",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "adult woman\u2019s face on the left-middle of the frame, looking toward the camera",
+        "Anonymized_element": "blurred face, pixelated features, turned away",
+        "privacy_element": "clear identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "lanyard badge worn by the adult woman near her chest, partially visible",
+        "Anonymized_element": "blank badge, removed text/logo, solid color card",
+        "privacy_element": "ID badge form factor that may contain name/logo (text not legible)",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10003252.jpg"
+}

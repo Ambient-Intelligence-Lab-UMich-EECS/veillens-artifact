@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a baseball field with several people; one player at center-right has a clearly visible profile face while wearing a cap and uniform. This constitutes Level 1 biometric data. Additional Level 3 clues include prominent team logos on the cap and jersey text that may indicate affiliation/location, plus a visible handshake indicating activity. Together, the identifiable face combined with team branding raises the privacy risk beyond minimal. The scene lacks government IDs, financial, or medical data. Score reflects a clear Level 1 clue with reinforcing contextual elements. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "profile face of a baseball player wearing a cap at center-right",
+        "Anonymized_element": "face blurred or replaced with neutral smooth surface, head turned away, generic cap shadowing facial features",
+        "privacy_element": "identifiable facial features in profile (eyes, nose, mouth), unique facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "team logo patch on the player\u2019s cap",
+        "Anonymized_element": "plain dark cap with no logo or text",
+        "privacy_element": "distinct team/organization logo on headwear",
+        "target_concept": "cap logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front of jersey with partial team name/text and striping",
+        "Anonymized_element": "plain pinstriped jersey with no text or emblem",
+        "privacy_element": "team name/logo text indicating organizational affiliation",
+        "target_concept": "jersey text/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "close-up of two hands clasped in a handshake near center-left",
+        "Anonymized_element": "hands separated or replaced with neutral overlapping gesture, crop to remove handshake",
+        "privacy_element": "explicit handshake indicating participation in a specific event or interaction",
+        "target_concept": "handshake",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10681054/r1_crops/2017_10681054_1.png"
+}

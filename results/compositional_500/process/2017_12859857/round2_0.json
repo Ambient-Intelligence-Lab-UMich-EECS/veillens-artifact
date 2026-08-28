@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a public protest. While the two foreground faces are obfuscated, multiple background participants have unobscured, identifiable faces, which constitute Level 1 biometric data. Additionally, readable protest signs reveal political messaging and participation, creating sensitive inferences and activity context. These clues combine to a moderately high privacy risk; faces are clear enough though somewhat smaller, so risk is slightly reduced compared to a close-up. Confidence is high due to visible faces and legible protest text.",
+  "personal_info_privacy_score": {
+    "score": 0.57,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a red-haired woman at left-center background",
+        "Anonymized_element": "blurred/pixelated face, neutral oval mask, lower facial detail",
+        "privacy_element": "full face with eyes, nose, mouth visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "unobscured face of a man in the right-mid background (light shirt, glasses)",
+        "Anonymized_element": "blurred/pixelated face, neutral oval mask, reduced facial detail",
+        "privacy_element": "recognizable facial features despite partial eyewear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld protest sign in mid-background with partially readable German political text",
+        "Anonymized_element": "blank sign, abstract pattern, non-readable scribbles",
+        "privacy_element": "political message text indicating views and participation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12859857/r1_crops/2017_12859857_0.png"
+}

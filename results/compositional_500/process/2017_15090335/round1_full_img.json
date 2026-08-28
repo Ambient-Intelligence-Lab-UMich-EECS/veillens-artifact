@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a central person carrying a large basin with a clearly visible face, which constitutes biometric data and is the highest-severity clue. No names, documents, or location markers are legible. Several other people appear in the background but are distant/blurred and not individually identifiable. The identifiable central face drives a high privacy risk on its own, while the background crowd adds minor contextual risk. Overall risk is high with clear visual evidence, so the score is elevated with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing head and face of the central person beneath the basin",
+        "Anonymized_element": "face blurred or pixelated, face replaced with neutral mask, crop to exclude head region",
+        "privacy_element": "clear facial features including eyes, nose, mouth, and overall facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "multiple background individuals partially visible in the crowd",
+        "Anonymized_element": "increase blur on background people, replace with generic silhouettes",
+        "privacy_element": "partial faces and body outlines of bystanders",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15090335.jpg"
+}

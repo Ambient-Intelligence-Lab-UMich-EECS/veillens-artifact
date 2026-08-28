@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image displays four historical opera theater tickets from 2007. While these are historical documents and not contemporary identifiers, they contain specific location information (street address) and unique ticket serial numbers. The risk is assessed as moderate-to-low because the documents are dated 2007, significantly reducing the likelihood of current privacy impact, though they contain clear venue location data and unique numbering.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Four theater tickets for the National Opera of Ukraine, showing venue location and seat details.",
+        "Anonymized_element": "Generic theater ticket, no address, no serial numbers, no specific dates.",
+        "privacy_element": "Street address of the venue (vul. Volodymyrska, 50), unique serial numbers (000033, 000198, 000187, 000202), dates in 2007.",
+        "target_concept": "theater tickets",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15999836/final/2017_15999836_final.png"
+}

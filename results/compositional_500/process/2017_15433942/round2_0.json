@@ -1,0 +1,37 @@
+{
+  "reasoning": "The crop shows a medical check setting: a digital blood pressure monitor on a desk with its cuff attached to a person\u2019s arm while another person assists. Faces are obscured, so direct biometric identification is minimized. The strongest signal is Level 2 medical information implied by an in-progress vital-sign measurement, which also reveals a health-related activity. With no readable names or government/financial identifiers, overall risk is moderate from medical context alone. Confidence is high due to clear visibility of the device and cuff in use.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "digital blood pressure monitor on the desk with screen and tube connected",
+        "Anonymized_element": "generic small electronic box, screen off, no medical symbols, no attached tube",
+        "privacy_element": "recognizable medical device, vital-sign display area, tubing indicating measurement context",
+        "target_concept": "blood pressure monitor",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "inflatable blood pressure cuff wrapped around a person\u2019s forearm",
+        "Anonymized_element": "bare forearm without devices, long sleeve covering arm, plain wristband",
+        "privacy_element": "medical cuff on limb, active vital-sign measurement posture",
+        "target_concept": "blood pressure cuff",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15433942/r1_crops/2017_15433942_0.png"
+}

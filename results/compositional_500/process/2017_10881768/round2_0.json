@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a presentation screen and several people, but no readable names, IDs, or clear faces. Audience members are seen from behind, and the presenter\u2019s face is obscured, preventing biometric identification. The slide contains generic educational text and graphics without personal data. Thus, only low-risk cues are present (unidentifiable individuals and generic content) with no Level 1\u20132 elements. Overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "presenter at front of room with face partially obscured/blurred",
+        "Anonymized_element": "silhouetted figure, crop at shoulders, remove facial detail",
+        "privacy_element": "human figure with partial facial outline and body build",
+        "target_concept": "person (obscured face)",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "row of seated attendees shown from behind (backs of heads)",
+        "Anonymized_element": "empty chairs, generic silhouettes, blurred heads",
+        "privacy_element": "distinctive hairstyles and body shapes from behind",
+        "target_concept": "audience (backs of heads)",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "projector slide with presentation title and bullet points",
+        "Anonymized_element": "blank slide with generic shapes, no readable text or logos",
+        "privacy_element": "readable project/title text that could imply affiliation or context",
+        "target_concept": "projector screen content",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10881768/r1_crops/2017_10881768_0.png"
+}

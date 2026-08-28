@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows part of a paper currency note with denomination and a portrait, but no personal identifiers like names, faces of photographed individuals, account numbers, or government IDs tied to a person. Currency imagery alone does not reveal identity or sensitive personal information. Thus only a low contextual signal (display of assets) is present, with no compositional reinforcement. Overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partial paper currency note with visible denomination and portrait",
+        "Anonymized_element": "generic patterned paper, abstract shapes, blurred denomination, non-specific design",
+        "privacy_element": "recognizable currency design, visible denomination indicating cash possession",
+        "target_concept": "currency banknote",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10538744/r1_crops/2017_10538744_1.png"
+}

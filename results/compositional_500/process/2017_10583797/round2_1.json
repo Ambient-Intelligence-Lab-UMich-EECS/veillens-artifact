@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a dense outdoor crowd with many unobstructed, close and mid-distance faces that are potentially identifiable. Several individuals in the foreground are clearly visible, including a crouching older man, while a larger group of spectators behind him also have discernible facial features. This constitutes Level 1 biometric data. The scene also depicts participation in a public ceremony or event (people kneeling with baskets/offerings), which reveals activities/behaviors but is less sensitive than faces. Combined, these cues imply a high privacy risk primarily driven by biometric visibility. Confidence is high due to clarity and number of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "crouching older man in the foreground with unobstructed face looking toward the camera",
+        "Anonymized_element": "blurred face region, replaced with generic smooth skin tone, low-detail facial features",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "mid-ground crowd region with numerous spectators\u2019 faces visible",
+        "Anonymized_element": "crowd faces blurred or replaced with low-detail silhouettes",
+        "privacy_element": "multiple identifiable faces across the group",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "kneeling participants with baskets and items placed on the ground suggesting a ceremonial activity",
+        "Anonymized_element": "generic baskets and neutral objects without contextual cues to ceremony",
+        "privacy_element": "participation in a public ceremony/event revealing behavior context",
+        "target_concept": "ceremonial items/participants",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10583797/r1_crops/2017_10583797_1.png"
+}

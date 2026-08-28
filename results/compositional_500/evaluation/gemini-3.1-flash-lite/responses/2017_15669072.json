@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image captures a social gathering with several individuals present. While some faces have been obscured, the scene still contains visible personal attributes including gender, physical appearance, and clothing styles. Because the majority of individuals are presented in a public or semi-public social context and no unique identifiers, government IDs, or sensitive medical/financial data are visible, the privacy risk is low. The risk score is determined by the presence of identifiable physical attributes within a social setting.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Man in the middle of the frame with short dark hair wearing a light-colored button-up shirt.",
+        "Anonymized_element": "Generic male figure, neutral clothing, obscured facial features",
+        "privacy_element": "Clear, unmasked face",
+        "target_concept": "face",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Woman on the far right holding a glass, wearing a light-colored top.",
+        "Anonymized_element": "Generic female figure, plain clothing, obscured face",
+        "privacy_element": "Clear, unmasked face",
+        "target_concept": "face",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Group of individuals in a social setting.",
+        "Anonymized_element": "Blurred or obscured crowd",
+        "privacy_element": "Presence in a specific social event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15669072/final/2017_15669072_final.png"
+}

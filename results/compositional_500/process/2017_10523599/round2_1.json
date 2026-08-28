@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows the back of an American football player wearing a jersey with a readable team name and number. No faces or government/financial identifiers are visible. The main privacy signal is activity/affiliation with a specific sports team and jersey number, which can hint at participation but does not directly identify a person. Overall risk remains low with clear but non-sensitive cues, and no strong compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a football jersey with the word 'RAVENS' and large number '22'",
+        "Anonymized_element": "plain jersey, no text or numbers, generic solid color",
+        "privacy_element": "readable team name, jersey number",
+        "target_concept": "sports jersey",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10523599/r1_crops/2017_10523599_1.png"
+}

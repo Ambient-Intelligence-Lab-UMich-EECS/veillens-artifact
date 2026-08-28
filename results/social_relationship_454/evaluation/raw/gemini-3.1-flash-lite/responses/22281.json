@@ -1,0 +1,39 @@
+{
+  "img_id": "22281",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 1,
+    "1 6": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "2 6": 4,
+    "3 4": 4,
+    "3 5": 1,
+    "3 6": 4,
+    "4 5": 1,
+    "4 6": 1,
+    "5 6": 1
+  },
+  "ground_truth": {
+    "4 6": 4,
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 6": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "5 6": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "2 6": 4,
+    "3 4": 4,
+    "3 5": 4,
+    "3 6": 4
+  },
+  "raw_response": "[P1-P2]: Both are participating in the same baseball game, with P2 acting as an umpire and P1 as a batter. Their interaction is governed by the rules of the sport. => professional\n\n[P1-P3]: P1 is batting while P3 is the catcher for the same game, indicating a competitive but professional sports interaction. => professional\n\n[P1-P4]: P4 is observing the game, likely as a coach or staff member, while P1 is an active player. Their interaction is structured around the game. => professional\n\n[P1-P5]: Both are wearing similar team uniforms, suggesting they are teammates playing in the same match. => friends\n\n[P1-P6]: P6 appears to be a teammate or staff member observing P1 during the at-bat. Their shared team uniform indicates a professional association. => professional\n\n[P2-P3]: Both P2 (umpire) and P3 (catcher) are engaged in their respective roles within the baseball game. => professional\n\n[P2-P4]: Both are adults observing or officiating the game, likely sharing duties or professional coordination regarding the match. => professional\n\n[P2-P5]: P2 is an official while P5 is a player on the field; their relationship is defined by the game's rules. => professional\n\n[P2-P6]: P2 is officiating the game while P6 is positioned in the dugout area, both involved in the same professional event. => professional\n\n[P3-P4]: P3 is playing catcher and P4 is in the dugout; they are colleagues in the context of the baseball game. => professional\n\n[P3-P5]: Both are in team uniform or gear and participating in the same organized sports activity. => friends\n\n[P3-P6]: Both are affiliated with the same team environment, interacting within the context of the baseball game. => professional\n\n[P4-P5]: Both are in the dugout area, likely teammates or team staff sharing the same space during a game. => friends\n\n[P4-P6]: Both are in the dugout area, likely teammates or team staff sharing the same space during a game. => friends\n\n[P5-P6]: Both are wearing matching team jerseys and are seated together in the dugout area, indicating they are teammates. => friends",
+  "timestamp": 1779942215.1458926
+}

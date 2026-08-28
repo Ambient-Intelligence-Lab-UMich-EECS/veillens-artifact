@@ -1,0 +1,25 @@
+{
+  "reasoning": "The image shows a public street sign with clear text \u201cDCPS Residency Fraud Hotline 202-442-9179.\u201d There are no people, faces, documents tied to an individual, or other identifiers. The only privacy-relevant elements are a public hotline phone number and the organizational acronym DCPS, which weakly implies a location (Washington, DC). These are low-risk, generic and not tied to a specific person. Therefore, the risk is low, driven mainly by mild location context and public contact info on a sign.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular white-and-black street sign mounted on a pole with readable text including a hotline phone number",
+        "Anonymized_element": "blank sign, generic non-specific text, no phone number, no organization name or acronym",
+        "privacy_element": "readable hotline phone number '202-442-9179', organization acronym/name 'DCPS Residency Fraud Hotline'",
+        "target_concept": "hotline phone number on sign",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_15577385.jpg"
+}

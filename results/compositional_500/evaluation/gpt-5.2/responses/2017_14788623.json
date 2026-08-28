@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows terraced fields on a hillside with a single small wooden hut. There are no people, faces, documents, text, numbers, or other identifiers. The only potentially personal element is the presence of a dwelling/structure, which might imply property ownership but does not identify anyone or a specific location. Therefore the highest severity is Level 4 and overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small wooden hut on the hillside near terraced fields",
+        "Anonymized_element": "generic shed with simplified shape and texture, fewer distinctive boards, neutral color",
+        "privacy_element": "distinct dwelling structure implying property/residence",
+        "target_concept": "house/building",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14788623/final/2017_14788623_final.png"
+}

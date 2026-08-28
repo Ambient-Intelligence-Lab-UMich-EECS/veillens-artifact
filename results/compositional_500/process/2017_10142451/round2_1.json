@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a tennis court with most people and objects anonymized by gray overlays. No readable text, faces, IDs, or unique identifiers are visible. The only human presence is a distant, faceless silhouette, offering no biometric detail. The scene conveys a generic sports context without linking to identity or sensitive attributes. Overall risk is low due to minimal personal information and lack of reinforcing clues.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distant standing human silhouette at the right side with no facial details",
+        "Anonymized_element": "replace with generic background shape, remove human outline entirely",
+        "privacy_element": "presence of a person, body outline without identifiable features",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10142451/r1_crops/2017_10142451_1.png"
+}

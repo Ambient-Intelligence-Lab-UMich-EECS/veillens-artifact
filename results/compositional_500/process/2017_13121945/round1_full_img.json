@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a handwritten sketch on lined paper depicting a booth layout with legible annotations. No people, faces, IDs, financial or medical info are visible. The only potentially identifying element is a readable booth/name phrase (\u201coh ginger booth\u201d) which could act as a non-unique identifier. Aside from that, it\u2019s a generic planning document. Given one weak Level 2 clue (ambiguous name) and otherwise low-risk content, the overall privacy risk is low. Confidence is medium due to ambiguity about whether the phrase is a personal identifier or just a brand name.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten phrase near bottom reading a booth/name title",
+        "Anonymized_element": "blank line, generic label like 'booth title', blurred text",
+        "privacy_element": "legible handwritten name/brand text",
+        "target_concept": "handwritten name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "notebook page with detailed handwritten planning notes and labeled sketch",
+        "Anonymized_element": "blank notebook page, abstract unlabeled shapes, removed annotations",
+        "privacy_element": "legible handwritten notes describing items and layout",
+        "target_concept": "document with notes",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13121945.jpg"
+}

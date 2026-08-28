@@ -1,0 +1,25 @@
+{
+  "img_id": "23200",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: At a baseball game behind home plate, the catcher (P1) in protective gear stands inches from the home-plate umpire (P2) in officiating attire; they\u2019re engaged in game duties with no personal intimacy in the ballpark setting. => professional\n\n[P1-P3]: The catcher (P1) and the batter (P3) face each other at home plate during play, close but not touching; uniforms and equipment indicate opposing game roles on a baseball field. => professional\n\n[P2-P3]: The umpire (P2) appears to address or signal to the batter (P3) holding a bat, standing close at the plate; their outfits and the field setting show an official\u2013player interaction. => professional",
+  "timestamp": 1776889177.1454494
+}

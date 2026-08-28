@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows a baseball field scene with multiple visible human faces, including a player at right in profile and an umpire at left-center, which constitute biometric identifiers. Additional partial faces are present on the right edge. A clear handshake between two people indicates an observable social/behavioral action. No names, IDs, or sensitive text are readable. The highest severity is Level 1 due to identifiable faces, reinforced by multiple instances; the activity clue adds modest contextual risk. Overall this yields a moderately high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.49,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side baseball player in white pinstripe jersey, side-profile face visible",
+        "Anonymized_element": "blurred face, blank skin-tone patch, head turned away, generic cap without logo",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth), skin tone and profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "umpire at left-center wearing dark cap with letters, partial frontal face visible",
+        "Anonymized_element": "blurred facial area, neutral-colored patch, head turned away",
+        "privacy_element": "visible facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man on far right in dark cap, profile face partially visible",
+        "Anonymized_element": "blurred facial area, neutral patch, head turned further away",
+        "privacy_element": "partial but identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "two people at center-right clasping hands in a handshake",
+        "Anonymized_element": "hands separated, neutral overlap without contact",
+        "privacy_element": "handshake indicating social interaction/activity",
+        "target_concept": "handshake",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10681054/r1_crops/2017_10681054_0.png"
+}

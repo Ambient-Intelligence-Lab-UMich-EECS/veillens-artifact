@@ -1,0 +1,38 @@
+{
+  "reasoning": "The crop shows a computer screen with a software window and a web browser. No faces or biometric data appear. However, a readable browser tab contains a person\u2019s full name, and a video title in the page sidebar references a named individual. These are non-unique identifiers visible in a digital artifact. No financial, medical, or government IDs are present. The risk is therefore driven by Level 2 identifiers within a generally low-risk context, yielding an overall low-to-moderate score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable browser tab label showing the text 'Frida Wallin Nilsson' near the top-right of the window",
+        "Anonymized_element": "generic tab label, placeholder text, blurred or masked text",
+        "privacy_element": "readable personal name",
+        "target_concept": "browser tab text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "video title in the sidebar including the text 'Sir Ken Robinson' on the right side of the page",
+        "Anonymized_element": "generic video title, placeholder words, blurred or masked text",
+        "privacy_element": "readable personal name within content title",
+        "target_concept": "video title text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11053222/r1_crops/2017_11053222_0.png"
+}

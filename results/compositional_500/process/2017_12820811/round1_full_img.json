@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a wheelchair basketball game in an indoor arena. Several athletes\u2019 faces are clearly visible at close range, providing identifiable biometric data (highest severity). Jerseys display team branding and at least one readable number, which are non-unique identifiers that can help link a person to a team. The visible sports wheelchairs strongly imply a disability, a sensitive attribute. These clues reinforce each other (faces + team identifiers + disability inference), raising the privacy risk above moderate. Background spectators are distant and not individually identifiable. Overall risk is high with clear, central evidence; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Unobstructed face of player in white jersey reaching upward near the basket",
+        "Anonymized_element": "blurred face, pixelated facial region, turned head away, generic skin-tone patch",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Profile face of player in dark jersey holding the basketball mid-shot",
+        "Anonymized_element": "blurred profile, pixelated facial region, occluding shadow over face",
+        "privacy_element": "identifiable side-profile facial features, ear and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Side-profile face of bald player in navy jersey at right foreground",
+        "Anonymized_element": "blurred face, pixelated facial region, added visor/occluder",
+        "privacy_element": "clear side-profile facial features, distinctive head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Athlete\u2019s sports wheelchair visible under player in white jersey",
+        "Anonymized_element": "crop lower frame to exclude wheelchair, generic seat base without visible wheels",
+        "privacy_element": "mobility aid indicating possible disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Back of jersey with large number '15' and team branding",
+        "Anonymized_element": "plain jersey with no numbers, no team logo or text",
+        "privacy_element": "jersey number, team logo/text linking person to organization",
+        "target_concept": "team jersey identifier",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12820811.jpg"
+}

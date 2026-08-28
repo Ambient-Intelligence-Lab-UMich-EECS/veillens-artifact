@@ -1,0 +1,64 @@
+{
+  "reasoning": "The image shows a public parade with multiple people in the foreground whose faces are clearly visible, which constitutes biometric identifiers (Level 1). There are also prominent rainbow-themed accessories and balloons that strongly indicate participation in a Pride event, enabling sensitive inference about sexual orientation or affiliation (Level 2) and revealing a specific public activity (Level 3). A large background crowd contains many small, less-identifiable faces (lower risk). Combining identifiable faces with sensitive-inference cues raises overall risk, yielding a high but not maximum score. Confidence is high because the cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person on left with unobstructed face and hair, looking forward",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with neutral silhouette",
+        "privacy_element": "full facial features including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "foreground person on right holding balloon with unobstructed face in profile",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with neutral silhouette",
+        "privacy_element": "recognizable facial profile with clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "rainbow-colored lei around the neck of the person on the right",
+        "Anonymized_element": "solid-color lei without rainbow scheme, muted colors",
+        "privacy_element": "rainbow pride symbolism implying LGBTQ+ affiliation or support",
+        "target_concept": "rainbow lei",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "large rainbow-colored smiley balloons carried by marchers",
+        "Anonymized_element": "single-color balloons without pride color sequence or symbols",
+        "privacy_element": "distinct rainbow sequence associated with Pride event enabling sensitive inference and event participation",
+        "target_concept": "rainbow balloons",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "background spectators behind metal barricades with many small faces",
+        "Anonymized_element": "defocused crowd, bokeh or silhouettes without facial detail",
+        "privacy_element": "numerous distant faces with limited detail",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14987107/final/2017_14987107_final.png"
+}

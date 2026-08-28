@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows five people in graduation gowns posing closely for a photo. Their faces are large, frontal, and well lit, making them clearly identifiable, which constitutes Level 1 biometric exposure. Additional contextual cues (graduation regalia, bouquets, plush toys) indicate a specific life event and activity, but no readable names, IDs, or location markers are visible. The multiple unmistakable faces dominate the risk, raising the score to high despite the absence of government IDs or financial/medical data. Confidence is high due to clear visibility and central framing of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost person\u2019s full frontal face with glasses under graduation cap",
+        "Anonymized_element": "blurred face, featureless oval, generic shading, remove identifiable facial features",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second-from-left person\u2019s full frontal face wearing glasses",
+        "Anonymized_element": "blurred face, featureless oval, generic shading",
+        "privacy_element": "full face with distinct features and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center person\u2019s smiling face, unobstructed",
+        "Anonymized_element": "blurred face, featureless oval, generic shading",
+        "privacy_element": "full face with identifiable smile and eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second-from-right person\u2019s face with glasses, frontal",
+        "Anonymized_element": "blurred face, featureless oval, generic shading",
+        "privacy_element": "full facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost person\u2019s face with glasses, frontal",
+        "Anonymized_element": "blurred face, featureless oval, generic shading",
+        "privacy_element": "full facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center person\u2019s graduation cap and gown",
+        "Anonymized_element": "plain casual clothing, remove cap and academic trim",
+        "privacy_element": "academic regalia indicating graduation event",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14045125.jpg"
+}

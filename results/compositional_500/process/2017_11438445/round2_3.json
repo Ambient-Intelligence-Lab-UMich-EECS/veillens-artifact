@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows two people whose faces are largely visible (only eyes partially obscured), providing identifiable biometric features. A central person also wears a lanyard with an ID badge, though text is not legible. Faces are Level 1 signals and dominate the risk; the badge is an additional moderate cue. With multiple partially unobscured faces but no readable identifiers or explicit sensitive data, the overall risk is high-moderate. Confidence is medium due to partial occlusion of the eyes and unreadable badge text.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central person\u2019s face with eyes partially covered but nose, mouth, and jaw visible",
+        "Anonymized_element": "blurred face, pixelated features, generic skin-tone oval without distinct features",
+        "privacy_element": "distinct facial structure, nose and mouth visible, near-frontal view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "right person\u2019s face in three-quarter view with eyes partially covered but facial outline and mouth visible",
+        "Anonymized_element": "blurred or pixelated face, generic placeholder without defining features",
+        "privacy_element": "facial outline, mouth and chin visible, partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "yellow lanyard with a dark ID badge hanging on the central person\u2019s chest",
+        "Anonymized_element": "plain lanyard without badge, blank badge with no text or logo",
+        "privacy_element": "ID badge form factor with potential name/logo area (text not legible)",
+        "target_concept": "ID badge",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11438445/r1_crops/2017_11438445_3.png"
+}

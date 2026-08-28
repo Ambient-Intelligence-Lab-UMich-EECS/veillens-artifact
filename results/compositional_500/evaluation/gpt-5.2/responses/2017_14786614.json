@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a parking lot with a highly customized off-road vehicle and several other cars. No people or readable personal identifiers are visible. There are no faces, documents, or legible license plates. The primary privacy signal is property ownership/association via distinctive vehicles that could be recognizable to acquaintances. These are Level 4 clues only, with minimal compositional reinforcement and no high-severity elements. Thus the overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "heavily customized off-road buggy parked in a lot",
+        "Anonymized_element": "more generic stock vehicle, remove distinctive aftermarket parts and decals, neutral colors",
+        "privacy_element": "distinctive and unique vehicle appearance that could be recognizable to owner’s circle",
+        "target_concept": "vehicle (customized)",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "parked cars with small, unreadable license plates in the background",
+        "Anonymized_element": "blurred or covered plates, crop to exclude plates",
+        "privacy_element": "presence of license plates that may hint at jurisdiction if readable (characters not legible here)",
+        "target_concept": "vehicle license plate (unreadable)",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14786614/final/2017_14786614_final.png"
+}

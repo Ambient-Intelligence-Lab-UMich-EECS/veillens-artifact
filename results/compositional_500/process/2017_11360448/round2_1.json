@@ -1,0 +1,76 @@
+{
+  "reasoning": "The crop shows a crowded street festival with multiple clearly visible faces in the foreground and midground, which are directly identifying (Level 1). Event signage on a lamp post and food-stall banners provide contextual clues about the activity and may hint at location (Level 3). The combination of several identifiable faces with contextual event/location cues yields a high privacy risk. The faces are sharp and unobstructed, supporting high confidence in this assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man near center-right, mouth slightly open, well-lit and unobstructed",
+        "Anonymized_element": "blurred face, pixelated features, solid-color oval mask",
+        "privacy_element": "identifiable face with visible eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a man in green hoodie at lower-left, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated features, solid-color oval mask",
+        "privacy_element": "identifiable face with clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a man with glasses near center-left in the crowd",
+        "Anonymized_element": "blurred face, remove glasses detail, solid-color oval mask",
+        "privacy_element": "identifiable face with distinguishing glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "vertical event banner on lamp post at upper-right with partially readable text/graphics",
+        "Anonymized_element": "blank colored banner with abstract shapes, no text or logos",
+        "privacy_element": "event name/logo that can reveal place/time context",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "food stall sign reading 'SURTI INDIAN SAMOSA' with menu and prices along right side tents",
+        "Anonymized_element": "plain colored sign with generic shapes, no readable text or prices",
+        "privacy_element": "readable stall name and menu indicating specific event/activity",
+        "target_concept": "stall sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11360448/r1_crops/2017_11360448_1.png"
+}

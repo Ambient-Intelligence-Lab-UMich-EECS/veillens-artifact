@@ -1,0 +1,85 @@
+{
+  "reasoning": "The image shows a group of adults outdoors near residential houses. Multiple faces are clearly visible and front-facing, which constitutes biometric identifiers (highest severity). Several people wear U.S. military camouflage uniforms with visible flag/unit patches, revealing workplace affiliation and potentially sensitive context when combined with identifiable faces. The background includes a recognizable residential exterior that gives general location context, though no specific address is visible. These cues together yield a high, but not extreme, privacy risk driven mainly by multiple identifiable faces and reinforced by workplace/military affiliation and contextual location clues. Confidence is high because the cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Front-facing man in military camouflage with white hard hat near image center-left",
+        "Anonymized_element": "blurred face, generic non-descript clothing colors, remove patches/insignia",
+        "privacy_element": "clear facial features, military uniform with patches",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Man in white hard hat at center-right facing left",
+        "Anonymized_element": "blurred face, generic jacket without distinctive trim",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Woman on right side wearing gray scarf, facing camera",
+        "Anonymized_element": "blurred face, generic coat and scarf without patterns",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Man in neon safety vest and cap behind center",
+        "Anonymized_element": "blurred face, plain dark jacket without vest",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Camouflage military uniform sleeve with U.S. flag and unit patch on left arm of central person",
+        "Anonymized_element": "plain fabric sleeve with no insignia or logos",
+        "privacy_element": "military insignia, national flag patch indicating workplace/affiliation",
+        "target_concept": "uniform insignia",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Two-story house facade in background with distinctive windows and siding",
+        "Anonymized_element": "generic blurred residential facade without distinctive features",
+        "privacy_element": "recognizable residential exterior providing contextual location cues",
+        "target_concept": "house exterior",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15937105.jpg"
+}

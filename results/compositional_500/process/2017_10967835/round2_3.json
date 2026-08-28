@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows multiple printed baseball game tickets with clearly readable barcodes/serial numbers, event details (teams, venue name, date and time), and seat assignments. No names or faces are present. The highest severity cues are Level 3: explicit location (Yankee Stadium) and activity/time of attendance, reinforced by seat/section details. Barcodes and event codes add Level 4 risk as unique access identifiers that could enable misuse. Combined, these clues reveal when and where someone planned to be and their specific seat, yielding a moderate privacy risk. Confidence is high due to legible text and clear objects.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical barcode with numeric serial on the right edge of a ticket",
+        "Anonymized_element": "blank white strip, generic pattern without digits or bars",
+        "privacy_element": "machine-readable barcode, unique serial number digits",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "center-left text block reading teams, venue name, and date/time of the game",
+        "Anonymized_element": "generic placeholder text, remove venue and date/time, neutral event title",
+        "privacy_element": "venue name 'Yankee Stadium', teams, exact date and time",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "printed seat information area showing section, row, and seat numbers",
+        "Anonymized_element": "blanked seat fields, randomized non-sensical numbers",
+        "privacy_element": "specific section 307, row and seat numbers",
+        "target_concept": "seat assignment text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/r1_crops/2017_10967835_3.png"
+}

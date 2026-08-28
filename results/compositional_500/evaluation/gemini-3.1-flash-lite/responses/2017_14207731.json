@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image displays a physical ticket containing partial text. While some fields like 'billet nr' and 'sælger' are visible, the specific identifying information such as the unique ticket number and seller details are obscured or not fully legible in this crop. Since the document is a generic ticket rather than a high-risk personal ID or financial record, the privacy risk is low. The remaining visible text does not directly expose sensitive personal information, leading to a moderate-low score.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A physical ticket with printed text in Danish, partially visible on the left side.",
+        "Anonymized_element": "blank white paper, no text, neutral texture",
+        "privacy_element": "visible text 'Billetten', 'billet nr', 'sælger'",
+        "target_concept": "ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14207731/final/2017_14207731_final.png"
+}

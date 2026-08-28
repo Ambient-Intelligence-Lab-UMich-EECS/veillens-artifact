@@ -1,0 +1,33 @@
+{
+  "reasoning": "The scene shows a banquet with many attendees. Foreground faces are obscured, while several small, distant faces in the background remain partially visible, which introduces limited biometric risk due to low detail. Alcohol bottles and filled wine glasses imply drinking behavior but are not tied to identifiable individuals. No readable names, IDs, financial, medical, or address details are visible. Overall risk is low, driven mainly by the residual distant faces and weak behavioral context.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small, partially visible faces of attendees seated at distant tables",
+        "Anonymized_element": "blur or pixelate faces, replace with neutral silhouettes, reduce facial detail",
+        "privacy_element": "partially visible faces, hairlines and profiles",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "wine bottle and poured wine glasses on the table foreground",
+        "Anonymized_element": "unlabeled bottle, replace with water carafe, empty or opaque glasses",
+        "privacy_element": "alcoholic beverage implying drinking behavior",
+        "target_concept": "alcohol bottle/glasses",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15507451/final/2017_15507451_final.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image is a selfie of two people outdoors. One person\u2019s face is clearly visible and unobstructed, which constitutes identifiable biometric data (Level 1). The second person\u2019s face is partially visible in profile with sunglasses but still recognizable (Level 1). A distinctive cathedral-like landmark in the background can hint at location (Level 3). Their affectionate pose indicates a personal relationship/behavior (Level 3). The presence of strong Level 1 facial biometrics dominates the risk, reinforced by contextual location and behavior cues. Overall risk is high with clear, central, and unoccluded evidence. Confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the person wearing glasses and a hat, centered in the selfie",
+        "Anonymized_element": "blurred face, pixelated features, generic head silhouette, crop above nose",
+        "privacy_element": "full face with clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile/partial face of the person wearing dark sunglasses leaning in to kiss",
+        "Anonymized_element": "blurred facial region, replace with generic silhouette, crop to remove facial area",
+        "privacy_element": "distinct facial outline, lips and nose shape enabling partial recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large cathedral-like building with pointed roofs in the background",
+        "Anonymized_element": "generic blurred skyline, plain sky, non-descript buildings",
+        "privacy_element": "recognizable architectural landmark suggesting a specific city/location",
+        "target_concept": "landmark/building",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "puckered lips close to another person\u2019s cheek indicating a kiss",
+        "Anonymized_element": "neutral mouth position, adjust pose to non-affectionate, slight crop to remove interaction",
+        "privacy_element": "affectionate gesture revealing interpersonal relationship/behavior",
+        "target_concept": "affectionate gesture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12818001.jpg"
+}

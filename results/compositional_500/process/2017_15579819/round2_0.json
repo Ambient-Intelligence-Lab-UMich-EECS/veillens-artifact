@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a single page of an old handwritten manuscript with multiple lines of cursive text and section numbers. No faces, IDs, financial or medical data are visible. The only privacy-relevant element is generic document text that could contain names or dates, but none are clearly legible or attributable. Thus the highest severity is Level 4, with low overall risk and high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten manuscript page with multiple lines of cursive text and numbered sections",
+        "Anonymized_element": "blank or lightly textured page, blurred/obscured text, generic filler lines without legible content",
+        "privacy_element": "legible handwritten text that could include names, dates, or references",
+        "target_concept": "document text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15579819/r1_crops/2017_15579819_0.png"
+}

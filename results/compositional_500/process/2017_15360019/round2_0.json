@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows multiple clearly identifiable faces, including children, which are Level 1 biometric data. Several faces are unobscured and close to the camera, making re-identification feasible. Additionally, a cardboard box displays an organization and country name that can hint at regional location, adding Level 3 location risk. The combination of strong biometric cues with contextual location text yields a high privacy risk. Confidence is high because the faces and the box text are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of a small child standing at mid-left wearing a towel",
+        "Anonymized_element": "blurred face, neutral oval with no facial features, replace with turned head profile",
+        "privacy_element": "full frontal face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "infant\u2019s face lying on a mat in the foreground center-right",
+        "Anonymized_element": "face blurred, pacifier or blanket covering part of face, head turned away",
+        "privacy_element": "clear infant facial features visible at close range",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult male-presenting person\u2019s side face leaning over the infant in the foreground",
+        "Anonymized_element": "blurred profile, replace with head turned away or occluded by cloth",
+        "privacy_element": "recognizable facial profile including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cardboard box stack with visible organization/country text (e.g., World Vision Lanka) near right-center",
+        "Anonymized_element": "plain cardboard box with no text or logos, generic tape",
+        "privacy_element": "legible organization name and country reference revealing regional context",
+        "target_concept": "shipping box label",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15360019/r1_crops/2017_15360019_0.png"
+}

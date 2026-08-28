@@ -1,0 +1,82 @@
+{
+  "reasoning": "The image shows a street demonstration with several clearly identifiable faces at the front and many more in the background. The highest-severity clues are multiple unobstructed faces (biometric identifiers). Readable protest banners disclose political/social positions and an organization name, adding sensitive-inference and identifier context. These elements together create a high privacy risk despite lacking direct government IDs. Score reflects strong, central, mutually reinforcing clues. Confidence is high due to clarity and legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center woman\u2019s face holding the banner on the right",
+        "Anonymized_element": "blurred face, generic face silhouette, turned head away",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-left woman\u2019s face holding the banner",
+        "Anonymized_element": "blurred face, generic face silhouette, turned head away",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-middle woman\u2019s face behind sunglasses near the banner",
+        "Anonymized_element": "blurred face, generic face silhouette, turned head away",
+        "privacy_element": "recognizable face shape and features despite glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large white protest banner with readable slogan in red/black text",
+        "Anonymized_element": "blank banner, abstract shapes, unreadable scribbles",
+        "privacy_element": "readable political message indicating stance on equality/discrimination",
+        "target_concept": "protest sign/banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue organization banner held behind the front row with readable group name/logo",
+        "Anonymized_element": "plain blue cloth, logo removed, unreadable text",
+        "privacy_element": "readable organization name and emblem linking participants to a group",
+        "target_concept": "organization banner",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "crowd of distant participants further back in the street",
+        "Anonymized_element": "reduced detail silhouettes, motion blur",
+        "privacy_element": "presence of additional people though faces are small and less clear",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14588632.jpg"
+}

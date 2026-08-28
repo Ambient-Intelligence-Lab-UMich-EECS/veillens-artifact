@@ -1,0 +1,43 @@
+{
+  "reasoning": "The person’s face and most body details are intentionally obscured, leaving no identifiable biometric features, names, or documents. The remaining visible clues are a recognizable hairstyle and some clothing at the waist, which reveal limited physical appearance. The outdoor background is generic farmland without unique landmarks. The highest severity present is Level 3 (personal attributes) with weak Level 4 contextual cues, so overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shoulder-length light brown hairstyle around the head",
+        "Anonymized_element": "blur or crop hair, change hair color/style to generic, add hat/hood",
+        "privacy_element": "distinct hairstyle and color revealing physical appearance",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "jeans waistband with visible button at the lower frame",
+        "Anonymized_element": "plain fabric, remove button detail, crop below torso",
+        "privacy_element": "clothing style hinting at body shape and attire",
+        "target_concept": "clothing waistband",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "non-descript rural field and vegetation in the background",
+        "Anonymized_element": "neutral blurred background, generic gradient, indoor neutral wall",
+        "privacy_element": "general outdoor context without unique landmarks",
+        "target_concept": "background landscape",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15723710/final/2017_15723710_final.png"
+}

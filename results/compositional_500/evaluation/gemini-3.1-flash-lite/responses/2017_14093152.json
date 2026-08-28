@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image captures a public event featuring a partially dressed individual in a crowded urban setting. While the faces are obscured for privacy, the subject's semi-nude state and the presence of a distinct 'ONE WAY' street sign in the background allow for moderate inference regarding the setting and the individual's activity. The primary privacy concerns relate to the visibility of the person's physical appearance and their participation in a specific public gathering. Given that the individuals are in a public space and core identifying biometric data (faces) has been masked, the risk is elevated due to the context of the activity but remains moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.45,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "the semi-nude individual standing on a platform",
+        "Anonymized_element": "individual wearing a t-shirt and jeans",
+        "privacy_element": "semi-nude state, physical appearance, body build",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "ONE WAY street sign visible in the background",
+        "Anonymized_element": "a decorative lamp post or generic building detail",
+        "privacy_element": "street sign text indicating a specific location in a city",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "a crowd of people in the foreground and surrounding area",
+        "Anonymized_element": "a blurred, non-descript background texture",
+        "privacy_element": "participation in a specific public event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14093152/final/2017_14093152_final.png"
+}

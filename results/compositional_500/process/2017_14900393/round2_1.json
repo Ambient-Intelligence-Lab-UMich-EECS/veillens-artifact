@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows only portions of two people reclining on a sofa: bare lower legs/feet and one hand with painted nails. No faces, IDs, readable text, or unique landmarks are visible. The highest-severity elements are Level 3 personal attributes and activity context (lounging). Blurred background buildings offer weak, non-unique location cues (Level 4). Combined, these suggest low overall privacy risk without strong identifying information.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare lower leg and foot of person on left resting on sofa",
+        "Anonymized_element": "calf and foot covered by pants and socks, neutral fabric tones",
+        "privacy_element": "exposed skin of lower leg and foot indicating physical appearance and casual state",
+        "target_concept": "leg/foot",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bare lower leg and foot of person on right with denim shorts on sofa",
+        "Anonymized_element": "long pants and socks, muted colors",
+        "privacy_element": "exposed skin of lower leg and foot indicating physical appearance and relaxed behavior",
+        "target_concept": "leg/foot",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "hand with painted fingernails resting on sofa cushion",
+        "Anonymized_element": "hand cropped or fingers covered/gloves, neutral unpainted nails",
+        "privacy_element": "visible hand and nail styling revealing personal grooming details",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blurred apartment buildings and trees in distant background",
+        "Anonymized_element": "fully blurred background, generic sky gradient",
+        "privacy_element": "non-unique urban scenery weakly hinting at location",
+        "target_concept": "background buildings",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14900393/r1_crops/2017_14900393_1.png"
+}

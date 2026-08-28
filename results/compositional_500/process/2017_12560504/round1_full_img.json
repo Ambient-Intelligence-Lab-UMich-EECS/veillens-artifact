@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a clear restaurant receipt with legible text. No faces or personal IDs of a customer appear. However, it reveals the restaurant\u2019s full street address and city, an exact timestamp, and an itemized list of purchases, which together can indicate a person\u2019s location at a specific time and their consumption behavior. These are Level 3 clues that moderately impact personal privacy. Additional business details (name/tax code) are present but relate to the merchant, not the customer, and contribute only minimal risk. Overall risk is moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed street address and city near the top of the receipt (\"C/ CALIFORNIA, 13, 43892 MIAMI PLATJA\")",
+        "Anonymized_element": "generic city name, partial address, replace with \"Street, City\" placeholder, blurred digits",
+        "privacy_element": "full street address, postal code, city name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "timestamp line showing exact date and time (\"22/06/2015 16:33\")",
+        "Anonymized_element": "coarse date (month/year), remove time, placeholder like \"--/--/---- --:--\"",
+        "privacy_element": "exact visit date and time",
+        "target_concept": "timestamp on receipt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "itemized purchase list with quantities and prices (e.g., \"MENU DEL DIA\", \"ALITAS\", \"PATATAS BRAVAS\", \"CANA GRANDE\")",
+        "Anonymized_element": "generic item names (Item A/B/C), aggregated total only, remove specific dishes",
+        "privacy_element": "specific food and drink items purchased",
+        "target_concept": "itemized purchase list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12560504.jpg"
+}

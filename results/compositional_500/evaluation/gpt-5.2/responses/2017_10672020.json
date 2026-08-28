@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image shows a person lying on a medical examination table with the lower part of the face visible and strong clinical equipment nearby. No readable identifiers or full identifiable face are visible, but the scene clearly implies an ongoing medical procedure. The highest-severity clue is Level 2 due to medical context combined with the presence of the patient. Additional moderate risk comes from partial facial features and the activity of receiving treatment. Together these cues yield a moderate privacy risk. Confidence is medium because the face is largely obscured and no text identifiers are legible.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lower half of a person's face (mouth and chin) illuminated while lying on an exam table",
+        "Anonymized_element": "blur or mask the facial area, replace with neutral cloth or shadowing, crop to exclude patient",
+        "privacy_element": "visible lower face contours, skin tone, potential unique marks",
+        "target_concept": "face",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "clinical device with control panel and tubing on a cart beside the bed",
+        "Anonymized_element": "generic equipment box without medical indicators, remove tubing and labels",
+        "privacy_element": "medical equipment implying active medical treatment",
+        "target_concept": "medical equipment",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "person lying on a blue examination table",
+        "Anonymized_element": "empty table, generic furniture without a person",
+        "privacy_element": "presence of a person in treatment posture indicating a medical visit",
+        "target_concept": "examination table with patient",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10672020/final/2017_10672020_final.png"
+}

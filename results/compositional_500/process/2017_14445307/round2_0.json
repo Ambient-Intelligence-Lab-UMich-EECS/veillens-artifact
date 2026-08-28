@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows part of a building\u2019s exterior: a single window with closed blinds on a painted brick wall and some exterior utility cables, with tree-branch shadows. No faces, names, addresses, numbers, documents, or other strong identifiers are visible. The clues relate mainly to property imagery (a home window) and generic background elements, which are low-risk on their own and do not combine to reveal identity or precise location. Thus the privacy risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single residential-style window with closed blinds on a painted brick wall",
+        "Anonymized_element": "blank wall segment, frosted/opaque generic window, remove distinctive trim",
+        "privacy_element": "home window implying private residence",
+        "target_concept": "window",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bundle of exterior utility cables running horizontally along the wall",
+        "Anonymized_element": "plain wall without cables, subtle conduit with no distinct features",
+        "privacy_element": "house utility cabling indicating residential infrastructure",
+        "target_concept": "utility cables",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14445307/r1_crops/2017_14445307_0.png"
+}

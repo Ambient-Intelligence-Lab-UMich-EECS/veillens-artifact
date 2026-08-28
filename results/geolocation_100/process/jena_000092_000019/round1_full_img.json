@@ -1,0 +1,79 @@
+{
+  "reasoning": "Country level: The yellow rectangular sign with a bold black \u201cU\u201d and a right arrow is the German Umleitung (detour) symbol. The blue T-signs ahead are European dead\u2011end signs used in Germany. Cars have EU-style white plates consistent with Germany. Architecture includes Central European/ German half\u2011timbered details on the right-hand building. Together these cues point strongly to Germany and exclude neighboring countries whose detour signage differs. City level: The tall black shop sign on the left is readable as \u201cZEISS-PLANETARIUM JENA,\u201d explicitly naming Jena. The sponsor name \u201cBauerfeind\u201d is a Thuringian brand commonly seen locally, reinforcing Jena in the state of Thuringia. The hilly, wooded ridge at the end of the street also matches Jena\u2019s valley setting. Street level: The yellow Umleitung sign includes a small auxiliary plate pointing toward \u201cDornburger Stra\u00dfe,\u201d indicating proximity to that street. Being directly beside the Zeiss\u2011Planetarium sign places this scene on or next to the short street \u201cAm Planetarium,\u201d near where local streets connect toward Dornburger Stra\u00dfe. The combination of the planetarium entrance signage, adjacent fencing, and immediate residential facades uniquely identifies this block near the Zeiss\u2011Planetarium Jena.",
+  "location_estimate": {
+    "latitude": 50.9338,
+    "longitude": 11.5894,
+    "confidence": "High",
+    "region": "Germany, Thuringia, Jena"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black shop sign on a tall pole",
+        "non_geolocation_element": "black panel, rectangular shape, white lettering, metal pole, overcast lighting",
+        "geolocation_element": "text 'ZEISS\u2011PLANETARIUM JENA', brand name 'Bauerfeind' in Latin script",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow detour sign on a post",
+        "non_geolocation_element": "yellow rectangle, black border, right-pointing arrow, reflective surface",
+        "geolocation_element": "German Umleitung symbol 'U' and auxiliary plate with 'Dornburger Stra\u00dfe'",
+        "target_concept": "detour sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue dead-end sign on a pole",
+        "non_geolocation_element": "blue square, red top bar, white border, metal pole",
+        "geolocation_element": "European/German dead-end symbol (T\u2011junction closed)",
+        "target_concept": "dead-end sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver hatchback",
+        "non_geolocation_element": "white plate, black characters, EU-style proportions, rear of car",
+        "geolocation_element": "EU banded plate format consistent with Germany",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "half-timbered building facade at a corner",
+        "non_geolocation_element": "brown timbers, white infill, multi-pane windows, stucco and wood",
+        "geolocation_element": "Germanic half-timber architectural style",
+        "target_concept": "building facade",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white street sign above a doorway",
+        "non_geolocation_element": "white rectangle, black frame, mounted on stone wall",
+        "geolocation_element": "German-style street name plate format (Latin script)",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/jena/jena_000092_000019_leftImg8bit.png"
+}

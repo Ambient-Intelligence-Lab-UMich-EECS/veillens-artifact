@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows an individual in a yoga pose, which reveals personal physical attributes including gender, body structure, and general fitness level. While the face has been redacted, the torso and overall silhouette remain identifiable. No specific government identifiers, financial data, or location markers are visible. The primary privacy risk stems from the display of personal physical characteristics, which warrants a moderate privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "the visible upper body and legs of an individual",
+        "Anonymized_element": "generic mannequin silhouette, non-descript figure, neutralized physical build",
+        "privacy_element": "visible physical build, hair patterns, skin texture",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/final/2017_14958433_final.png"
+}

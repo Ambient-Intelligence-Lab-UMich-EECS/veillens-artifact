@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a person in a wheelchair at night on a street. The person\u2019s face is partially visible in profile, though dimly lit, which can provide biometric cues. The wheelchair itself is a medical mobility aid and may include a readable equipment label, supporting a sensitive inference about disability. Two other individuals appear far in the background as silhouettes and are not identifiable. There are no names, addresses, or financial/government documents. Given one potential biometric cue (partially identifiable face) combined with a sensitive medical inference (wheelchair), the overall risk is moderate. Low light and lack of legible text reduce identifiability, so the score is kept below high. Confidence is medium due to lighting and partial visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s face in right midground, side profile in low light",
+        "Anonymized_element": "strong gaussian blur on face, turn head away, silhouette without facial detail",
+        "privacy_element": "facial features outline (nose, mouth, ear), potential biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wheelchair with a small manufacturer/service label on the side frame",
+        "Anonymized_element": "plain wheelchair frame with label removed or blank sticker, generic styling",
+        "privacy_element": "medical mobility aid implying disability, possible readable label text",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "two distant people standing in background as dark silhouettes",
+        "Anonymized_element": "heavier blur on background figures, reduce definition of body outlines",
+        "privacy_element": "presence of unidentifiable individuals in the scene",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13376940.jpg"
+}

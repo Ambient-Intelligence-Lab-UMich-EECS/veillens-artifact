@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a parked silver hatchback at sunset near a visible retail sign. No people or readable text tied to an individual are present. The strongest privacy cue is the branded \u201cSTAPLES Business Depot\u201d sign that can hint at a rough location. A rear vehicle view with an unreadable license plate and the car itself count as property/asset context but do not directly identify a person. With no biometric or government-ID details visible, overall risk is low, driven mainly by light location context.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular illuminated store sign reading a recognizable office-supply brand",
+        "Anonymized_element": "blank billboard, generic textless sign, abstract color blocks",
+        "privacy_element": "store name and logo that indicate a specific chain/location",
+        "target_concept": "store signboard",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rear of a silver hatchback showing a license plate area that appears unreadable",
+        "Anonymized_element": "blank plate, solid-color plate without characters",
+        "privacy_element": "license plate characters (partially/indistinctly visible)",
+        "target_concept": "license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "silver hatchback car parked on a roadway at dusk",
+        "Anonymized_element": "generic blurred vehicle silhouette, different neutral-colored car",
+        "privacy_element": "distinct vehicle make/model silhouette and custom rims",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14095003.jpg"
+}

@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public parade with several clearly visible faces plus readable text indicating a specific place and team activity. The highest-severity elements are multiple identifiable faces (Level 1). These are reinforced by location-revealing and affiliation text like \u201cEast Grand Rapids Wrestling\u201d on a handheld sign and shirts (Level 3), which together increase re-identification risk by tying faces to a locale and group. No government IDs, financial, or medical data are visible. Overall this yields a high but not extreme privacy risk. Confidence is high because the faces and text are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.61,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult man\u2019s unobstructed face at left wearing a navy T-shirt",
+        "Anonymized_element": "blurred or pixelated face, face turned away, add sunglasses/hat obscuring eyes",
+        "privacy_element": "full identifiable face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "teen/young man\u2019s side-profile face wearing a cap on right side of frame",
+        "Anonymized_element": "blurred profile, cap brim lowered masking eyes, turned away head",
+        "privacy_element": "identifiable facial profile including nose, jawline, and eye region",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "boy\u2019s face behind the yellow sign, profile view",
+        "Anonymized_element": "blur or pixelate face, turn head downward, add obstruction",
+        "privacy_element": "visible facial profile enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow handheld sign with readable text \u2018EAST GRAND RAPIDS WRESTLING\u2019",
+        "Anonymized_element": "plain yellow placard with generic icon, no text or logos",
+        "privacy_element": "explicit location name and team/activity reference",
+        "target_concept": "sign with location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "gray T-shirt on participant with readable chest text \u2018EAST GRAND RAPIDS WRESTLING\u2019",
+        "Anonymized_element": "plain gray T-shirt without text or logo",
+        "privacy_element": "location/organization name and activity on clothing",
+        "target_concept": "clothing with location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12934115/r1_crops/2017_12934115_0.png"
+}

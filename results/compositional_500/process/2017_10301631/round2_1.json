@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a handwritten planning list on paper with legible educational topics and counts (e.g., unit ideas and notes). No faces, IDs, financial or medical data are present. The visible clue is a generic document that reveals activity/behavioral context (teaching or planning habits). This is a Level 4 risk and does not combine with higher-severity clues, so the overall risk remains low. Confidence is high due to clear visibility of the document text while lacking any direct personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten list of lesson/unit topics on a sheet of paper",
+        "Anonymized_element": "blank notebook page, blurred/unreadable scribbles, generic shapes without legible words",
+        "privacy_element": "legible activity list, planning details, educational topics, counts/notations",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10301631/r1_crops/2017_10301631_1.png"
+}

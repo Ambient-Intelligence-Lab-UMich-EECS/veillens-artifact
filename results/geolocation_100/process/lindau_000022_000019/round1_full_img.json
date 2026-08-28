@@ -1,0 +1,98 @@
+{
+  "reasoning": "Country-level: The scene shows a narrow, right-hand-traffic cobblestone street, EU-style road signs (red-blue no-stopping ring), and a tall yellow post box typical of Deutsche Post. A faint German word fragment beginning with \u201cFrauen\u2013\u201d is visible on the wall. The combination of German-language text, Deutsche Post mailbox shape/color, and EU signage strongly indicates Germany rather than neighboring Austria/Switzerland. Architecture with painted facade murals (L\u00fcftlmalerei style) suggests southern Germany in the Alpine foothills. \nCity-level: The ornate stucco with figure murals and window surrounds, plus a small plaza with a fountain/statue, match towns in Upper Bavaria/Allg\u00e4u renowned for muralled houses (e.g., Oberammergau, Mittenwald, Wangen im Allg\u00e4u). The density is a small historic core rather than a large city. The mural style and compact square lean toward Oberammergau/Mittenwald, where such facades are commonplace. The visible \u201cFrauen\u2013\u201d street/plaza name is also common in Bavarian towns. Without a unique landmark nameplate, I favor Oberammergau due to the prevalence of large mural panels on civic buildings along tight cobbled lanes near small fountains. \nStreet-level: The specific corner has a yellow Deutsche Post box and a row of cylindrical bins at the base of a muralled building, a curving cobblestone lane bending right toward a small fountain with a dark statue in the plaza, and a shop arcade on the left. These elements would help distinguish this exact spot within the town\u2019s center. \nOverall, evidence clearly supports Germany, likely Bavaria; the exact town is an educated guess based on facade style and setting, so confidence is limited.",
+  "location_estimate": {
+    "latitude": 47.5978,
+    "longitude": 11.0705,
+    "confidence": "Low",
+    "region": "Germany, Bavaria, Oberammergau (approximate)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow mailbox on a wall",
+        "non_geolocation_element": "rectangular box, bright yellow color, metal surface, vertical slot, daytime lighting",
+        "geolocation_element": "Deutsche Post style yellow mailbox commonly used in Germany",
+        "target_concept": "mailbox",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-blue no-stopping sign on a pole",
+        "non_geolocation_element": "circular sign, reflective surface, mounted on gray pole",
+        "geolocation_element": "EU-style red ring with blue field and red slash used in Germany",
+        "target_concept": "sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "muralled facade on a building",
+        "non_geolocation_element": "painted figures and ornaments, stucco surface, large rectangular windows",
+        "geolocation_element": "L\u00fcftlmalerei-style facade painting characteristic of southern Germany/Bavaria",
+        "target_concept": "facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone roadway at the curve",
+        "non_geolocation_element": "rounded gray stones, wet or polished look, curved alignment",
+        "geolocation_element": "traditional stone paving typical of historic German town centers",
+        "target_concept": "roadway",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "fountain statue in a small plaza",
+        "non_geolocation_element": "dark metal statue on a pedestal, circular basin, surrounding bollards",
+        "geolocation_element": "central-plaza fountain common in Bavarian market squares",
+        "target_concept": "statue",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street name plate on a wall",
+        "non_geolocation_element": "small rectangular plaque, light background, mounted near a corner",
+        "geolocation_element": "German-language street name starting with 'Frauen-' visible",
+        "target_concept": "plate",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of cylindrical bins at the base of a wall",
+        "non_geolocation_element": "tall narrow cylinders, light color, grouped side-by-side",
+        "geolocation_element": "municipal waste/recycling bin design seen in German towns",
+        "target_concept": "bins",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "box truck at the end of the lane",
+        "non_geolocation_element": "white box body, rear doors, side text graphics",
+        "geolocation_element": "Latin-script business text consistent with German signage on local delivery trucks",
+        "target_concept": "truck",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/lindau/lindau_000022_000019_leftImg8bit.png"
+}

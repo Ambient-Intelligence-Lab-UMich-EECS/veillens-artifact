@@ -1,0 +1,27 @@
+{
+  "img_id": "1634",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 6
+  },
+  "missed_pairs": [
+    "1 3",
+    "2 3"
+  ],
+  "subjects_matched": [
+    1,
+    2
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 2,
+  "num_preds_matched": 2,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Street scene on a sidewalk; P1 stands by the storefront while P2 walks past with another person. They are several feet apart, not looking at or interacting with each other; casual everyday attire in a public setting suggests strangers. => no-relationship",
+  "timestamp": 1776887548.62474
+}

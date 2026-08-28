@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a crowded street parade with several spectators’ faces visible and unobscured in the background. Identifiable facial features constitute biometric data (Level 1). There are no readable names, documents, addresses, or financial/medical items. The primary risk comes from multiple distinct faces that could enable identification; combined, these elevate the overall risk even without other identifiers. Given moderate clarity and crowd context, the risk is high but not extreme. Confidence is medium due to some partial occlusions and small face sizes.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured adult face of a spectator near center-right behind the barrier",
+        "Anonymized_element": "apply strong blur or pixelation over facial region, replace with neutral skin-toned oval without details",
+        "privacy_element": "full facial features visible including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "adult male-appearing face at the far right edge among the crowd",
+        "Anonymized_element": "blurred face, mosaic, or blank oval placeholder",
+        "privacy_element": "recognizable face with frontal view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "spectator face in white shirt near center of the frame, smiling toward camera",
+        "Anonymized_element": "pixelate or smooth over facial details, remove eyes/nose/mouth definition",
+        "privacy_element": "clear facial features, partial eye contact",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "adult face on mid-left side behind metal barrier among spectators",
+        "Anonymized_element": "apply face blur or replace with featureless oval",
+        "privacy_element": "visible facial structure enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14387314/final/2017_14387314_final.png"
+}

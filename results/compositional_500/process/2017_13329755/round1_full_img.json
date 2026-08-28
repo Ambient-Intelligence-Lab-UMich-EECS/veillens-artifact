@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image is a tight close-up of a vintage vehicle grille with a brand/emblem visible. There are no people, faces, addresses, documents, or identifiers tied to a person. The only privacy-relevant cue is ownership of a type of vehicle, which is a low-risk property/asset indicator. No composition of multiple clues suggests identity or sensitive information. Accordingly, the risk is very low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up of a vintage vehicle grille with a vertical badge/emblem showing brand text",
+        "Anonymized_element": "generic unbranded grille, logo removed, text blurred or blank",
+        "privacy_element": "vehicle make badge, readable brand text",
+        "target_concept": "vehicle badge/logo",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13329755.jpg"
+}

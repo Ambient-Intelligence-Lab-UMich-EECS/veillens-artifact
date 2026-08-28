@@ -1,0 +1,29 @@
+{
+  "img_id": "18824",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 6,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 4
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 6,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is a soccer player and P2 is a team staff member (wearing an \"ARSENAL\" shirt) sharing the pitch during a warm-up, indicating a work relationship. => professional\n[P1-P3]: P1 is a player on the field while P3 is a mascot in the stands with no direct interaction or connection between them. => no-relationship\n[P1-P4]: Both P1 and P4 are soccer players wearing matching training gear on the pitch, functioning as teammates. => professional\n[P1-P5]: P1 is an outfield player and P5 is a goalkeeper for the same team, working together on the pitch. => professional\n[P2-P3]: P2 is a staff member on the field and P3 is a mascot in the stands, with no interaction connecting them. => no-relationship\n[P2-P4]: P2 is a coach or staff member and P4 is a player on the same team sharing the training environment. => professional\n[P2-P5]: P2 is team staff and P5 is a goalkeeper, both present on the pitch for a team activity. => professional\n[P3-P4]: P3 is a mascot located in the stands and P4 is a player on the pitch, showing no social connection. => no-relationship\n[P3-P5]: P3 is a mascot in the seating area and P5 is a player on the grass, with no interaction between them. => no-relationship\n[P4-P5]: P4 and P5 are both soccer players in matching team gear participating in a warm-up on the pitch. => professional",
+  "timestamp": 1779942312.169728
+}

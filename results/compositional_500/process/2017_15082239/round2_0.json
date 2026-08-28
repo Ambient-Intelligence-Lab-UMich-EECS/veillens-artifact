@@ -1,0 +1,50 @@
+{
+  "reasoning": "The crop shows a street festival with one foreground woman wearing a red masquerade mask where her mouth, nose, jawline, and hair are clearly visible, making her partially identifiable. Multiple bystanders\u2019 faces in the background are also visible, though smaller. A shirtless man in the foreground exposes physical attributes but his face is obscured. The highest severity present is Level 1 due to visible faces, with additional Level 3 personal-attribute cues. Because key faces are somewhat obstructed (mask) or small, overall risk is moderate. Confidence is medium given partial occlusions and crowd distance.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground woman\u2019s face with red lace masquerade mask",
+        "Anonymized_element": "fully opaque mask covering entire face, blur face region, neutral solid-color accessory",
+        "privacy_element": "visible mouth, nose, jawline, hair; distinctive red mask that aids recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background crowd with several small but visible faces",
+        "Anonymized_element": "blur or pixelate all bystander faces, replace with silhouettes or turned-away heads",
+        "privacy_element": "visible facial features of multiple bystanders",
+        "target_concept": "crowd faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "shirtless upper body of man at front left (face obscured)",
+        "Anonymized_element": "add plain T-shirt, crop to remove exposed torso",
+        "privacy_element": "exposed physique and skin revealing body build and appearance",
+        "target_concept": "exposed torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15082239/r1_crops/2017_15082239_0.png"
+}

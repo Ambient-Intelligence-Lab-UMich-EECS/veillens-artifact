@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a printed event/menu sheet with several readable text regions and handwritten notes. No faces or IDs appear, but multiple non-unique identifiers (people\u2019s names) are present along with location cues (Brooklyn, NY; venue name) and personal activity/behavioral signals via handwritten ratings and comments. The highest-severity items are Level 2 non-unique identifiers (names). Combined with Level 3 location and behavior clues, the composition yields a moderate privacy risk. Some text is angled and partly blurry, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bottom-left printed line reading a person\u2019s name followed by \u201cfrom Schoolhouse Kitchen, Brooklyn, NY\u201d",
+        "Anonymized_element": "generic placeholder text, remove personal name, remove company name, omit city/borough",
+        "privacy_element": "real person\u2019s full name, employer/affiliation, city/borough location",
+        "target_concept": "printed name line",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "top-right header block with event title/date and venue reference to \u201cJimmy\u2019s No. 43\u201d",
+        "Anonymized_element": "generic event title with no date or venue, neutral placeholder text",
+        "privacy_element": "specific event date/time, identifiable venue name",
+        "target_concept": "event header text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "upper section text listing \u201cPresented by\u201d followed by a named individual and role (food writer)",
+        "Anonymized_element": "remove person\u2019s name and role, replace with generic host text",
+        "privacy_element": "real person\u2019s full name and professional role",
+        "target_concept": "host name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten margin notes and circled items with qualitative ratings/comments",
+        "Anonymized_element": "remove handwriting, replace with faint generic marks or blanks",
+        "privacy_element": "personal preferences/ratings indicating consumption and opinions",
+        "target_concept": "handwritten annotations",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13533264.jpg"
+}

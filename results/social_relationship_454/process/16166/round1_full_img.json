@@ -1,0 +1,41 @@
+{
+  "img_id": "16166",
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 2,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 13,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: Outdoor fair/picnic scene; P1 is a background attendee standing far behind while P2 sits on the grass with family, with no eye contact or interaction. => no-relationship\n\n[P1-P3]: At the same event, P1 is in the distant crowd and P3 is seated on the ground with children; no engagement or orientation toward each other. => no-relationship\n\n[P1-P4]: Both are background attendees but on opposite sides of the frame near different structures; no visible interaction. => no-relationship\n\n[P1-P5]: P1 is part of the distant crowd and P5 is another passerby standing behind the group; no proximity or contact. => no-relationship\n\n[P2-P3]: Picnic/fair setting; the older man sits closely with the young boy, arm positioned protectively and sharing food time on the grass, indicating a parent/child dynamic. => family-members\n\n[P2-P4]: The child sits on the grass while P4 stands in the background near equipment; they are distant and not interacting. => no-relationship\n\n[P2-P5]: P2 is seated eating; P5 is an unrelated adult standing behind with no attention toward the child; no contact. => no-relationship\n\n[P3-P4]: P3 is seated with kids, while P4 is a separate adult in the background near a stall/ride; no engagement between them. => no-relationship\n\n[P3-P5]: The older man is focused on the children on the ground; P5 stands apart and does not interact or face him. => no-relationship\n\n[P4-P5]: Two background adults near a fair structure but not looking at or engaging with each other; just bystanders. => no-relationship",
+  "timestamp": 1776887443.7135592
+}

@@ -1,0 +1,58 @@
+{
+  "reasoning": "The cropped image shows a suited individual at a meeting table with their face fully obscured, removing direct biometric risk. Privacy-relevant cues include a prominent lapel pin that may reveal organizational affiliation (a non-unique identifier) and several generic artifacts on the table (documents with text, a tablet, and a smartphone). These clues provide moderate, contextual risk through potential affiliation and work activity, but without readable names, faces, or sensitive data. Overall risk is moderate and primarily driven by the emblematic pin; supporting artifacts add minor compositional risk.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small gold lapel pin with a distinct emblem on the suit jacket",
+        "Anonymized_element": "plain lapel pin, no logo, solid color circle or square",
+        "privacy_element": "recognizable logo/emblem indicating organization or affiliation",
+        "target_concept": "lapel pin",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed paper documents with paragraphs on the table near the person",
+        "Anonymized_element": "blank paper, heavily blurred or redacted text blocks",
+        "privacy_element": "potential readable text on documents",
+        "target_concept": "paper document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "black tablet with cover positioned on the table",
+        "Anonymized_element": "generic tablet with screen off and no stickers or markings",
+        "privacy_element": "device screen or markings could display or imply personal/work data",
+        "target_concept": "tablet device",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "black smartphone placed on the table",
+        "Anonymized_element": "generic phone with case, screen off, no visible notifications",
+        "privacy_element": "device could reveal personal data if screen/labels are visible",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10471337/r1_crops/2017_10471337_0.png"
+}

@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows an aircraft at an airport, which is a public area. The visible clues include the airline logo and the aircraft registration number, which are public-facing assets. There are also ground staff members visible, but they are distant and unidentifiable. No specific personal information that could lead to the identification of an individual or their private activities is present. The score reflects a low-level risk associated with public activity and generic property, with high confidence in the assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Group of airport ground staff members standing near a tug vehicle.",
+        "Anonymized_element": "blurred figures, obscured silhouettes",
+        "privacy_element": "distant, unidentifiable human forms",
+        "target_concept": "crowds or distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "Large commercial airplane with ANA branding.",
+        "Anonymized_element": "generic passenger aircraft, generic livery",
+        "privacy_element": "airline logo, registration number",
+        "target_concept": "aircraft",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10678857/final/2017_10678857_final.png"
+}

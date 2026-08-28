@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image features an adult female posing in a photo booth setting. While the faces in the image have been intentionally obscured or removed, the person's physical stature, clothing, and overall appearance remain visible. These personal attributes fall under Level 3, representing a moderate privacy risk as they contribute to the individual's identifiability when combined with other contextual markers. There are no highly identifying government or financial identifiers present, leading to a moderate risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible body and physical appearance of the adult female",
+        "Anonymized_element": "generic mannequin or silhouette, neutralized clothing color and style",
+        "privacy_element": "physical build, visible hair style, skin tone, clothing style",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12071035/final/2017_12071035_final.png"
+}

@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows a riverside cityscape with a distinctive hilltop brick tower and an arched bridge that can act as identifiable landmarks, revealing location. A solitary person is visibly fishing on the riverbank, indicating a specific activity, though faces are not identifiable. Additional distant pedestrians are present but unrecognizable. No government IDs, financial or medical info, or readable text appear. The highest severity is Level 3 (location and activity cues), leading to a moderate but non-severe privacy risk. Confidence is high because the visual elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.29,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "brick tower on top of a grassy hill",
+        "Anonymized_element": "remove tower, replace with generic trees or nondescript pavilion, neutral skyline",
+        "privacy_element": "distinctive landmark architecture, unique silhouette on hill",
+        "target_concept": "landmark tower",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "curved pedestrian/road bridge over the river",
+        "Anonymized_element": "generic straight bridge design, simplified railings, muted colors",
+        "privacy_element": "recognizable bridge design that can pinpoint city",
+        "target_concept": "bridge",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person standing on riverbank holding a fishing rod",
+        "Anonymized_element": "remove person or replace with empty walkway or generic passerby without gear",
+        "privacy_element": "visible fishing gear and posture indicating recreational activity",
+        "target_concept": "person fishing",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small distant pedestrians along riverside paths",
+        "Anonymized_element": "remove figures or replace with empty path",
+        "privacy_element": "presence of unidentifiable individuals in public space",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12866523/r1_crops/2017_12866523_0.png"
+}

@@ -1,0 +1,86 @@
+{
+  "reasoning": "Country level: Multiple cues indicate Germany. The language on traffic and informational signs is German (e.g., \u201cLinks\u2026,\u201d \u201cGegenverkehr\u201d), the bus-stop disk with a green \u2018H\u2019 in a yellow circle is a standard German Haltestelle symbol, and vehicles have EU license plates with the \u201cD\u201d country band. Traffic-light housings and the blue circular \u201ckeep right\u201d sign match German road-sign designs. The website decal on the black car ends in \u201c.de,\u201d further supporting Germany.\nCity level: The bus shelter carries a vertical line panel reading \u201cLameystra\u00dfe,\u201d which is the name of a public transport stop in Mannheim. The shelter style (dark blue frame with RNV-style signage) matches Rhein-Neckar-Verkehr (rnv), the regional operator serving Mannheim/Ludwigshafen/Heidelberg. While many German cities have streets named after Lamey, a transit stop specifically named \u201cLameystra\u00dfe\u201d and using rnv branding strongly points to Mannheim. Alternative large cities (Munich, Berlin, Hamburg) use different stop branding and do not show rnv signage.\nStreet level: The scene shows the Lameystra\u00dfe stop adjacent to a multi-lane intersection with a small central island bearing a blue \u201ckeep right\u201d sign, a bus shelter immediately at the corner, and a long fence covered with posters along the far side. This configuration matches the Lameystra\u00dfe stop on Friedrich-Ebert-Stra\u00dfe in Mannheim\u2019s Neckarstadt area. The combination of the named shelter, the island sign position, and the fence of posters uniquely identify this junction rather than another location within Mannheim.\nTherefore, the most likely location is the intersection near the Lameystra\u00dfe stop on Friedrich-Ebert-Stra\u00dfe, Mannheim, Baden\u2011W\u00fcrttemberg, Germany.",
+  "location_estimate": {
+    "latitude": 49.4968,
+    "longitude": 8.4736,
+    "confidence": "High",
+    "region": "Germany, Baden-W\u00fcrttemberg, Mannheim"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bus stop sign on a pole",
+        "non_geolocation_element": "round disk, green border, yellow fill, white center, metal pole, daylight",
+        "geolocation_element": "German Haltestelle symbol (green H in yellow circle) indicating German public transport",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a black SUV",
+        "non_geolocation_element": "white plate, blue EU band, black text, rear-mounted",
+        "geolocation_element": "EU plate with country code D for Germany, German formatting",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shop decal on a car door",
+        "non_geolocation_element": "white rectangular text, sans-serif font, on black paint",
+        "geolocation_element": "website 'fahrschule-neudorfer.de' with .de domain, German word 'Fahrschule'",
+        "target_concept": "shop decal",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on a pole",
+        "non_geolocation_element": "small rectangular plate, white background, black border, mounted under traffic light",
+        "geolocation_element": "German text including words like 'Links\u2026' and 'Gegenverkehr'",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "transit shelter with blue frame",
+        "non_geolocation_element": "glass panels, blue metal frame, bench inside, rectangular roof",
+        "geolocation_element": "vertical route panel reading 'Lameystra\u00dfe', rnv-style signage associated with Mannheim region",
+        "target_concept": "transit shelter",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "keep-right sign on a traffic island",
+        "non_geolocation_element": "blue circular sign, white downward-right arrow, short post on a small median",
+        "geolocation_element": "German sign design and placement matching the intersection near Lameystra\u00dfe stop in Mannheim",
+        "target_concept": "keep-right sign",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "poster wall along a fence",
+        "non_geolocation_element": "repeating colorful posters, long chain-link fence, tree backdrop",
+        "geolocation_element": "distinctive continuous postered fence seen at this Mannheim intersection near Lameystra\u00dfe",
+        "target_concept": "poster wall",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/ulm/ulm_000038_000019_leftImg8bit.png"
+}

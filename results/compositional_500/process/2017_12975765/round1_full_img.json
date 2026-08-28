@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a close, clear view of a single person at a microphone with a presentation slide in the background. The person\u2019s full face is unobstructed and well-lit, constituting biometric data that can directly identify them, which is the highest-severity element. Secondary, lower-severity cues include an activity context (speaking/presenting) and a slide containing text that might reveal information if legible, though it appears mostly unreadable. Given the strong, central facial visibility and minor supporting context, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear, frontal face of a person wearing dark-framed glasses",
+        "Anonymized_element": "blurred face, pixelated facial region, generic head silhouette, remove distinctive eyewear details",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth geometry, glasses shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "projected presentation slide with multiple lines of text in the background",
+        "Anonymized_element": "blank slide, abstract shapes with no text, solid-color background",
+        "privacy_element": "potentially readable on-screen text",
+        "target_concept": "presentation slide",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left hand holding a pen near a tabletop microphone, wearing a ring",
+        "Anonymized_element": "hand without jewelry, pen removed, crop to exclude hand region",
+        "privacy_element": "activity context of speaking/presenting, presence of personal jewelry",
+        "target_concept": "hand with pen near microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12975765.jpg"
+}

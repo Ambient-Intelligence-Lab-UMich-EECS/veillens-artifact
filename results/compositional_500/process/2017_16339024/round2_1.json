@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a seated person with their facial area heavily obscured, reducing direct biometric identification. Remaining visible cues include the side of the head (ear and hairstyle) and general body appearance, which can support personal-attribute inferences. A tablet device is on the table but its screen content is not legible. No names, IDs, or explicit location/financial/medical data are visible. With no identifiable face or other Level 1\u20132 elements, residual risk comes mainly from personal attributes (Level 3) and a generic device (Level 4), leading to a low-to-moderate score.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side profile region with ear and short hairstyle; facial area masked",
+        "Anonymized_element": "crop further to torso only, add neutral background, extend blur to entire head",
+        "privacy_element": "partial facial structure, ear shape, hairstyle indicating physical appearance",
+        "target_concept": "partial face/ear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tablet device on tabletop with dark, unreadable screen",
+        "Anonymized_element": "closed blank notebook, plain placemat, powered-off device with no screen",
+        "privacy_element": "presence of personal digital device (no readable content)",
+        "target_concept": "tablet screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16339024/r1_crops/2017_16339024_1.png"
+}

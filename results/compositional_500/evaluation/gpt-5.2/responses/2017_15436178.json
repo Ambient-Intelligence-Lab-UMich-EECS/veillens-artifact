@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image is a vintage directory cover with printed text only. No people or biometric identifiers appear. The main privacy-relevant clues are readable location details, including a full street address and city names, which constitute location information, and generic business names/branding on a document. These are low-to-moderate risk elements not tied to a specific private individual. With no Level 1–2 clues, overall risk is low, driven mainly by the visible address line. Confidence is high due to clear legibility of the text and absence of people.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed line showing '27 GRAND PARADE, ST. LEONARDS' address near the bottom center",
+        "Anonymized_element": "replace with generic placeholder like 'XX GRAND PARADE', blur numerals, remove town name",
+        "privacy_element": "specific street number, street name, town name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Prominent company and directory titles (e.g., 'LEWIS HYLAND & CO.', 'PIKE'S', 'JOHN BRAY & SONS') across the cover",
+        "Anonymized_element": "generic brandless text, placeholder company names, or blank header",
+        "privacy_element": "business names and branding text",
+        "target_concept": "document text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15436178/final/2017_15436178_final.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a concert ticket with clearly legible text. The most sensitive element is a visible \u201cRUT\u201d number (a government ID format) printed on the ticket, which is a Level 1 government identifier. Additional details such as the specific venue name and exact event date/time reveal location and activity context. Other ticket metadata (event title, event code, prices) add minor contextual risk. Given the presence of a legible government identifier plus reinforcing contextual clues, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed RUT number '76145278-9' on the upper-left area of the ticket",
+        "Anonymized_element": "masked digits, placeholder like 'XXXXXXX-X', remove 'RUT' label",
+        "privacy_element": "legible government tax ID format labeled 'RUT' with full number",
+        "target_concept": "government ID number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Text line showing venue and schedule: 'Centro Cultural Teatro La C\u00fapula' and '25 mayo 2013 21:00 hrs' near the lower half of the ticket",
+        "Anonymized_element": "generic venue text, no specific name; vague date/time like 'Saturday 21:00' or blurred details",
+        "privacy_element": "specific venue name, event date and time",
+        "target_concept": "event venue and date text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Ticket body text with event title 'CAT POWER', event code 'LOT013', and prices",
+        "Anonymized_element": "generic event title placeholder, remove event code, generalized price values",
+        "privacy_element": "event title, unique event code, pricing details",
+        "target_concept": "ticket details text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11039899.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The regional crop shows a person outdoors, but the face and most of the body are obscured, removing identifiable biometric details. No names, documents, or explicit sensitive content are visible. The remaining cues are limited to hairstyle and a distinctive clothing neckline, which reveal only general personal-appearance attributes. The background is a generic field without identifiable landmarks. Therefore the risk stems mainly from Level 3 personal attributes, resulting in a low overall score.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shoulder-length light brown hair framing the head",
+        "Anonymized_element": "neutral cap or hood, blurred hair texture, different generic hair color",
+        "privacy_element": "hairstyle, hair color and length indicating personal appearance",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lace-patterned neckline of a top visible at the throat area",
+        "Anonymized_element": "plain solid-color neckline, generic non-descript fabric",
+        "privacy_element": "distinctive clothing style suggesting personal appearance",
+        "target_concept": "clothing detail",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15723710/r1_crops/2017_15723710_0.png"
+}

@@ -1,0 +1,103 @@
+{
+  "reasoning": "The image shows a filled golf scorecard with multiple readable personal names handwritten beside score rows and a printed full name of a sales manager. Several business addresses from Edmonton, Alberta with postal codes and phone numbers are also legible. The highest-severity elements are the personal names (Level 2 non-unique identifiers). These names are directly tied to detailed activity records (golf scores), and multiple business addresses provide regional location context, which together elevate risk beyond minimal. No faces or government IDs are visible. Overall risk is moderate due to multiple clear Level 2 and Level 3 clues that reinforce each other.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten player name 'BRYAN' in the first score row on the card",
+        "Anonymized_element": "blank line, generic initials, blurred text",
+        "privacy_element": "readable given name linked to a specific score row",
+        "target_concept": "handwritten name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten player name 'MIKE' in the second score row",
+        "Anonymized_element": "blank line, generic initials, blurred text",
+        "privacy_element": "readable given name linked to a specific score row",
+        "target_concept": "handwritten name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten player name 'VANESSA' in the third score row",
+        "Anonymized_element": "blank line, generic initials, blurred text",
+        "privacy_element": "readable given name linked to a specific score row",
+        "target_concept": "handwritten name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten player name 'JANET' in the fourth score row",
+        "Anonymized_element": "blank line, generic initials, blurred text",
+        "privacy_element": "readable given name linked to a specific score row",
+        "target_concept": "handwritten name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed name 'Paul Paradis, Sales Manager' at the lower left of the card",
+        "Anonymized_element": "remove personal name, replace with 'Sales Manager', generic placeholder text",
+        "privacy_element": "full personal name with job title",
+        "target_concept": "printed personal name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "score row labeled 'MIKE' with hole-by-hole golf scores",
+        "Anonymized_element": "remove or relabel name, keep unlabeled scores",
+        "privacy_element": "activity record tied to a named individual",
+        "target_concept": "activity record",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "company address and phone at top left: 14562 Yellowhead Trail, Edmonton, AB with postal code",
+        "Anonymized_element": "remove street number, replace with generic city/province text, blur phone",
+        "privacy_element": "full street address and contact number",
+        "target_concept": "printed address",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "company address and phone at top center: 11635-160th Street, Edmonton, Alberta with postal code",
+        "Anonymized_element": "remove street number, replace with generic city/province text, blur phone",
+        "privacy_element": "full street address and contact number",
+        "target_concept": "printed address",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12356862.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows an old sheet of paper with the main body heavily redacted. No people, faces, IDs, addresses, or account numbers are visible. The only legible element is a brief handwritten header with a year, which is a generic document artifact and not uniquely identifying on its own. With no Level 1–2 clues and only a minimal Level 4 cue, overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small handwritten header at the top of the page showing a year (e.g., 1836)",
+        "Anonymized_element": "blank header area, generic scribble without numbers, cropped top margin",
+        "privacy_element": "visible year/date text",
+        "target_concept": "handwritten date/header",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14367145/final/2017_14367145_final.png"
+}

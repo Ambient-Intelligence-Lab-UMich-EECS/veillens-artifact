@@ -1,0 +1,73 @@
+{
+  "reasoning": "The crop shows several identifiable adults in a clinical setting. Three unobstructed faces are visible (left profile with wearable device, center with glasses, background in white coat), which are Level 1 biometric identifiers and dominate the risk. A hospital-style ID badge with a small photo/text is present on the person in the white coat, adding Level 2 risk even if details are not fully legible. Medical gloves/scrubs indicate professional activity (Level 3) but are secondary. Combined, these cues yield a high privacy risk primarily from the multiple clear faces. Confidence is high due to clear, central visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s face in profile wearing dark smart glasses/headset",
+        "Anonymized_element": "blurred face, neutral silhouette shape, remove headset or replace with plain glasses without branding",
+        "privacy_element": "clear facial features in profile, ear and hairline, skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "center person\u2019s face with glasses and receding hairline",
+        "Anonymized_element": "blurred face, neutral silhouette, generic head shape without distinct features",
+        "privacy_element": "full facial features, eyes/nose/mouth visibility, distinctive hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background person\u2019s face in white lab coat looking downward",
+        "Anonymized_element": "blurred face, neutral silhouette, de-emphasized features",
+        "privacy_element": "recognizable facial features, distinctive hairstyle and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "hospital-style ID badge on white coat chest area with small photo/text partially visible",
+        "Anonymized_element": "blank badge, no text or logo, solid color card without photo",
+        "privacy_element": "ID photo, potential name and institutional logo/text",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue nitrile glove on participant\u2019s right hand near the sheeted subject",
+        "Anonymized_element": "neutral-colored generic glove, reduce medical context cues",
+        "privacy_element": "medical glove implying healthcare activity",
+        "target_concept": "glove",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11791206/r1_crops/2017_11791206_0.png"
+}

@@ -1,0 +1,32 @@
+{
+  "img_id": "22030",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 3,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Ski outing on a snowy slope; they stand shoulder-to-shoulder with P2 (adult in red) leaning in protectively toward the child P1. Winter ski gear and close, caring posture suggest a parent-child bond. => family-members\n\n[P1-P3]: Group ski setting; P3 (adult in purple) leans over the kids near P1, sharing the moment though not directly touching. Adult-to-child dynamic within a tight family cluster implies kin. => family-members\n\n[P1-P4]: Both are children in similar ski attire standing close together amid the same family group. Their proximity and shared activity suggest sibling-like relation. => family-members\n\n[P2-P3]: Two adults flanking the children on a ski trip, coordinating and focusing on the kids rather than each other; this reads as co-parents. => couple\n\n[P2-P4]: Adult P2 is close to child P4 within the same small ski group, showing a guiding/protective stance typical of a parent on an outing. => family-members\n\n[P3-P4]: P3 (adult in purple) is right next to P4 and appears to have an arm around/behind the child while smiling. Caretaking contact during a family ski outing suggests parent-child. => family-members",
+  "timestamp": 1776888963.4332485
+}

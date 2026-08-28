@@ -1,0 +1,73 @@
+{
+  "reasoning": "The photo shows a public carnival scene with several people. At least one person\u2019s unmasked face is clearly visible at close range, which constitutes biometric data (highest severity). Some others wear partial masks that still reveal identifiable lower-face features. Additional contextual text on a large banner (\u201cCARNAVAL \u2026\u201d) and a shirt reading \u201cBRASIL\u201d signal participation in a specific public event and hint at geographic context, adding moderate location and behavior cues. There are no government IDs, finances, or medical details. Overall risk is driven by visible faces, with event/location context compounding. Confidence is medium-high because the main face is clear, while other clues are moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left person\u2019s face with sunglasses, no mask, clearly visible lower face",
+        "Anonymized_element": "face blur or pixelation, full-coverage carnival mask, generic silhouette",
+        "privacy_element": "recognizable facial structure (nose, mouth, jawline), skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center person wearing decorative feathered mask with fully visible lower face",
+        "Anonymized_element": "full-face opaque mask, blur lower face, neutral plain mask without feathers",
+        "privacy_element": "partially identifiable facial features (nose, mouth, chin), distinctive mask design",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large hand-held banner with bright readable text beginning with \u201cCARNAVAL\u201d",
+        "Anonymized_element": "blank banner, abstract shapes, unreadable scribbles",
+        "privacy_element": "event name readable, implies participation in a specific public event and locale",
+        "target_concept": "event banner text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow T-shirt with bold text \u201cBRASIL\u201d",
+        "Anonymized_element": "plain yellow shirt, no text or logo",
+        "privacy_element": "country name suggests geographic context/affiliation",
+        "target_concept": "shirt text/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shirtless torso with bright body paint design",
+        "Anonymized_element": "add plain shirt, remove paint, neutral clothing",
+        "privacy_element": "physical build and distinguishing body paint pattern",
+        "target_concept": "painted torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12053382.jpg"
+}

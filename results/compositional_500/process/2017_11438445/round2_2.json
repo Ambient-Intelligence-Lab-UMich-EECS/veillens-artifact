@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows three people standing on a platform. Two faces are partially visible (eyes obscured but other facial features clear), which still provide biometric identifiers. One person wears a lanyard with a rectangular badge that could contain a name or affiliation, though the text is not readable. No government IDs, financial or medical data are visible. The highest severity present is Level 1 due to exposed facial features, reinforced by a potential name badge (Level 2). Because faces are partially obscured and the badge text is unreadable, the overall risk is moderate-to-high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.46,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left individual\u2019s side-profile face with beard and mouth visible; eyes are obscured",
+        "Anonymized_element": "fully blurred face oval, turned-away head, generic silhouette without facial detail",
+        "privacy_element": "distinct facial features (nose contour, beard, mouth, hairstyle)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "right individual\u2019s frontal face with eyes masked but nose, mouth, jawline visible",
+        "Anonymized_element": "blank/blurred face, replaced with neutral oval or turned head",
+        "privacy_element": "distinct facial structure (nose, mouth, jawline, hairstyle)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "yellow lanyard with rectangular ID badge hanging on the right person\u2019s chest",
+        "Anonymized_element": "plain lanyard without badge, blank badge with no text or logo",
+        "privacy_element": "badge that may display name, affiliation, or codes",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11438445/r1_crops/2017_11438445_2.png"
+}

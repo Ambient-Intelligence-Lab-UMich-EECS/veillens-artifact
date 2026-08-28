@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a dog lying on a patterned couch. No humans, faces, IDs, screens, addresses, or readable text are visible. The only potentially relevant element is a small stack of papers in the lower-left corner; however, the text is not legible, making any personal-information exposure minimal. With no Level 1\u20133 clues and only a weak Level 4 clue, overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small stack of papers with partially visible printed text in the lower-left corner",
+        "Anonymized_element": "blank sheets, fully blurred text, turned-over pages",
+        "privacy_element": "potential printed text or mail layout that could contain personal details if legible",
+        "target_concept": "documents/papers",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11720956.jpg"
+}

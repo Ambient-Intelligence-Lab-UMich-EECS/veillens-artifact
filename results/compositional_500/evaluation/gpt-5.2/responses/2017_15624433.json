@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a person with a clearly visible face shaking hands in front of multiple military flags, one of which includes readable “States Army” text and recognizable insignia. The identifiable face is a Level 1 biometric cue. The flags provide contextual affiliation/location clues that can link the person to a military-related setting, increasing compositional risk. No names, badges, or government IDs are visible. Overall risk is driven by the clear face plus reinforcing contextual symbols.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the person on the left, well-lit and unobstructed",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with a neutral oval mask",
+        "privacy_element": "full identifiable facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "red and white military flags in background with readable text and insignia (e.g., 'States Army')",
+        "Anonymized_element": "plain red/white flags, no text, no logos or insignia",
+        "privacy_element": "organizational insignia and partial readable text indicating military affiliation",
+        "target_concept": "flag with organization text/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15624433/final/2017_15624433_final.png"
+}

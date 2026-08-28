@@ -1,0 +1,35 @@
+{
+  "reasoning": "A single adult stands outdoors on rocks near water wearing a two\u2011piece swimsuit; her face is clearly visible and front-facing. The identifiable face constitutes Level 1 biometric data, which alone creates a high privacy risk. Additional exposure of body shape in swimwear reveals personal physical attributes (Level 3). There are no readable names, documents, or precise location markers. Based on the strong, central facial visibility and some supporting personal-attribute exposure, the overall risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing adult human face with clear facial features",
+        "Anonymized_element": "face blurred, pixelated, or replaced with generic silhouette; eyes obscured; head turned away",
+        "privacy_element": "full unobstructed face, eyes and facial structure enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "upper body and torso in a black two-piece swimsuit",
+        "Anonymized_element": "replace with non-descriptive t-shirt and shorts; crop to above shoulders; neutral solid colors",
+        "privacy_element": "exposed body shape and physical characteristics in swimwear",
+        "target_concept": "exposed body in swimwear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15554196.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image features three individuals seated in wheelchairs on a podium, wearing medals and holding floral bouquets, which identifies their participation in a sports event. While the faces and parts of the wheelchairs have been obfuscated, the context of the event and the physical condition implied by the wheelchairs constitutes moderate privacy risk. The scene context strongly implies a Paralympic-level competition, which relates to health and disability status. The score is moderate because direct identification via facial recognition is impossible due to the masks, but the activity is inherently identifying in the context of the specific event.",
+  "personal_info_privacy_score": {
+    "score": 0.45,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "three individuals sitting in wheelchairs on a sports podium",
+        "Anonymized_element": "three people sitting on benches, generic sportswear, no identifiable event markings",
+        "privacy_element": "wheelchairs, sports medals, competitive athletic clothing, podium setting",
+        "target_concept": "individuals in wheelchairs",
+        "severity_level": 3,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12546560/final/2017_12546560_final.png"
+}

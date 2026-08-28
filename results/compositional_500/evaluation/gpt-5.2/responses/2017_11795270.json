@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows the back of a payment card with a magnetic stripe/signature area and small “Valid Thru” text. This is financial data; even though card numbers and other details are not readable, the object itself is a credit/debit card, which is high-sensitivity content. With no faces or other identifiers present, the risk is driven mainly by the financial instrument’s presence, reduced because specific numbers are obscured.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back side of a plastic payment card with magnetic stripe and signature panel",
+        "Anonymized_element": "plain generic card, no numbers or text, neutral color rectangle without magnetic stripe",
+        "privacy_element": "payment card layout, magnetic stripe, signature panel, small 'Valid Thru' text hinting at card details",
+        "target_concept": "credit card",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11795270/final/2017_11795270_final.png"
+}

@@ -1,0 +1,54 @@
+{
+  "reasoning": "The image shows a group of cyclists outdoors. Several individuals’ faces are clearly visible (some with helmets/sunglasses but still identifiable), which constitutes biometric data and is the highest-severity element. Other cues like cycling gear indicate activity but do not reveal specific identity or location. With multiple visible faces and no strong reinforcing identifiers (e.g., names, addresses), the overall risk is high-moderate. Confidence is medium due to partial occlusion/sunglasses on some faces.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bearded person in white jacket and helmet at front-center, face visible with sunglasses",
+        "Anonymized_element": "blurred face, remove facial hair details, opaque visor covering eyes, neutralized skin tone",
+        "privacy_element": "recognizable facial structure, facial hair pattern, partial eye region despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "person in neon yellow cycling jacket and helmet, left of center, side-facing face visible",
+        "Anonymized_element": "blurred facial area, opaque visor, neutralized profile features",
+        "privacy_element": "recognizable facial profile, nose/mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "person in dark sweatshirt and helmet near center-right, face visible looking forward",
+        "Anonymized_element": "blurred face, shaded visor obscuring features",
+        "privacy_element": "recognizable facial features and head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "distinct cycling jersey with visible branding on chest of a rider near center",
+        "Anonymized_element": "plain jersey, no logos or text, solid color",
+        "privacy_element": "organization/event branding that may imply group affiliation or activity",
+        "target_concept": "clothing logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14270851/final/2017_14270851_final.png"
+}

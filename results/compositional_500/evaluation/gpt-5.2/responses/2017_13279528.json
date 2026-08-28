@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows a large public demonstration with many people holding placards and national flags. Individual faces are mostly small and partially obscured, reducing biometric identifiability, but the visible political protest context can reveal participants’ political activity or views. The highest-severity cue is the sensitive inference from political signage and rally setting (Level 2). Additional lower-severity cues include national flags indicating regional/location context and a crowd of distant individuals with partially visible faces. Composed together, these support a moderate privacy risk. Confidence is medium due to distance and partial occlusion of faces and text.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "cluster of handheld protest placards with readable-looking political text",
+        "Anonymized_element": "blank placards with no text, abstract symbols, solid-color boards",
+        "privacy_element": "political messages on signs, protest context implying political views or participation",
+        "target_concept": "protest placards",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "multiple red national flags with white crescent-and-star symbols held above the crowd",
+        "Anonymized_element": "plain red flags with no emblems, abstract patterns",
+        "privacy_element": "national symbol revealing country/region, potential political/national affiliation in a rally context",
+        "target_concept": "national flags",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "dense crowd of people with small, partially visible faces",
+        "Anonymized_element": "blurred faces, generic silhouettes, increased distance/occlusion",
+        "privacy_element": "presence of many individuals with partially viewable faces (not clearly identifiable)",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13279528/final/2017_13279528_final.png"
+}

@@ -1,0 +1,78 @@
+{
+  "reasoning": "The image shows a public street event with multiple clearly visible, front-facing attendees; several faces are unobstructed and identifiable, constituting Level 1 biometric data. Additionally, rainbow-colored paving consistent with pride-themed decor appears, which can imply sensitive inferences about sexual orientation or political/advocacy participation (Level 2). The combination of several identifiable faces with a context enabling sensitive inference raises overall risk. Thus, risk is high with strong, central visual evidence. Confidence is high because cues are large and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of attendee with bright pink wig on the left side near the front row",
+        "Anonymized_element": "blurred face, pixelated features, neutral-colored hair, no distinctive wig",
+        "privacy_element": "clear facial features (eyes, nose, mouth), distinctive hair color and style",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "face of bald bearded man in a white shirt near center-left of the crowd",
+        "Anonymized_element": "blurred face, smoothed skin texture, generic head silhouette",
+        "privacy_element": "full unobstructed face with beard detail",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "face of person with glasses in the central crowd area",
+        "Anonymized_element": "blurred face, removed eyewear reflections, generic head silhouette",
+        "privacy_element": "clear face with eyes visible through glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "face of child sitting on an adult’s shoulders at the right side",
+        "Anonymized_element": "blurred/pixelated child face, generic head shape",
+        "privacy_element": "clear facial features of a minor",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "face of woman in a red jacket near right-center of the frame",
+        "Anonymized_element": "blurred face, pixelated features, generic head silhouette",
+        "privacy_element": "unobstructed face with distinguishing features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "rainbow-colored cobblestone paving across the foreground",
+        "Anonymized_element": "neutral-colored paving stones, desaturated street surface",
+        "privacy_element": "rainbow color pattern associated with LGBTQ+ pride, event context suggesting participation or support",
+        "target_concept": "symbolic decor",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14348696/final/2017_14348696_final.png"
+}

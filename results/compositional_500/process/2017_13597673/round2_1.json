@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows two people working at laptops with clearly visible faces, which are strong biometric identifiers (Level 1). In addition, a laptop screen displays readable code/text, revealing work activity and document contents, though not tied to explicit personal identifiers (Levels 3\u20134). The presence of multiple identifiable faces elevates the risk, while no names, IDs, or financial/medical data are legible. Overall this supports a high but not extreme privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s face in left-profile view with clear eyes, nose, and mouth",
+        "Anonymized_element": "blurred face region, pixelated facial area, turned-away head silhouette",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center person\u2019s face partially frontal with visible nose, mouth, and eyes",
+        "Anonymized_element": "blurred facial area, pixelation, occluding sticker or mask",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "right-side laptop screen showing readable programming code/text",
+        "Anonymized_element": "blank screen, blurred text, generic abstract wallpaper",
+        "privacy_element": "readable screen contents, code lines, potential filenames/window chrome",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13597673/r1_crops/2017_13597673_1.png"
+}

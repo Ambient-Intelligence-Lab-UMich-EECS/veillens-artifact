@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows a public demonstration with many people whose faces are clearly visible and front-facing. These identifiable faces constitute Level 1 biometric data. Multiple flags with logos/text imply participation in a political rally, enabling sensitive political inference (Level 2) and revealing an activity/behavior. There are no visible government IDs, names, or financial data. The combination of several clear faces with political-context flags yields a high privacy risk. Confidence is high because the faces and flags are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in white sleeveless top pushing a red stroller, full face visible in profile-left",
+        "Anonymized_element": "blurred face, generic smooth skin texture, obscured eyes and mouth",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in blue polo shirt on right side, looking left with full face visible",
+        "Anonymized_element": "face blurred or replaced with neutral oval, no distinct features",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman with blue scarf and denim jacket on left foreground, facing camera with full face visible",
+        "Anonymized_element": "blurred or pixelated face, neutralized features",
+        "privacy_element": "front-facing identifiable face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman in patterned blue blouse near center, frontal face visible",
+        "Anonymized_element": "apply face blur, remove distinct eye/mouth details",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in red shirt with glasses near left-middle, face turned but identifiable",
+        "Anonymized_element": "blur face region, obscure glasses detail",
+        "privacy_element": "recognizable facial structure and eyes visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green and gold handheld flags with logos/text raised above the crowd",
+        "Anonymized_element": "plain solid-color flags without text or symbols",
+        "privacy_element": "political logos/symbols suggesting affiliation, rally context",
+        "target_concept": "political flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12030881.jpg"
+}

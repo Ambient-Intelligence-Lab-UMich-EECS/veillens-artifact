@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a person\u2019s body coated in mud with the face not visible. The most privacy-relevant element is partial nudity around the hip/upper thigh area, which is Level 2. Additional moderate-risk cues include bare legs/feet and the clear context of a muddy arena implying a specific leisure activity. With no readable identifiers or face, risk is reduced compared to the full image but remains moderate due to intimate exposure and activity context. Confidence is high because the cues are visually clear.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s exposed hip and upper thigh area covered in mud",
+        "Anonymized_element": "opaque shorts or swimsuit bottom, crop higher at waist, replace with neutral-colored clothing texture",
+        "privacy_element": "partial buttock/hip visibility, skin exposure in intimate region",
+        "target_concept": "exposed hip/thigh",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bare lower legs and feet coated in mud",
+        "Anonymized_element": "add leggings and shoes, reduce visible skin with neutral clothing",
+        "privacy_element": "bare legs and feet revealing bodily features",
+        "target_concept": "bare legs/feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "mud-covered inflatable/padded arena surface around the person",
+        "Anonymized_element": "clean neutral floor or mat surface without mud or event cues",
+        "privacy_element": "distinct mud-activity context suggesting a specific leisure event",
+        "target_concept": "mud pit surface",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11671617/r1_crops/2017_11671617_0.png"
+}

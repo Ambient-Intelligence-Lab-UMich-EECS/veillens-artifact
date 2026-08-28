@@ -1,0 +1,21 @@
+{
+  "img_id": "18274",
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 2,
+    "3 4": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P3]: Outdoor park/promenade scene; P1 is walking separately on the left while P3 stands elsewhere near a skateboarder, with no shared focus, proximity, or interaction. Clothing is casual for both, suggesting unrelated bystanders in the same public space. => no-relationship\n\n[P1-P4]: P1 is far from P4 (who is at the right by a stroller) with no eye contact or coordinated activity; both appear independently present at the park. No physical interaction and distinct separate groupings imply they don\u2019t know each other. => no-relationship\n\n[P1-P5]: P5 is a small child being held/close to P4 on the far right while P1 is walking alone on the left; they are distant with no engagement. The context looks like separate park visitors rather than a shared outing. => no-relationship\n\n[P3-P4]: P3 is near the center-left (beside skate activity) while P4 is on the right near a stroller, with clear separation and no mutual attention. Different activity zones and no interaction suggest they\u2019re unrelated bystanders. => no-relationship\n\n[P3-P5]: P5 is a child next to/with P4 on the right; P3 is elsewhere near skateboarders with no contact or shared activity. The distance and lack of engagement indicate no connection. => no-relationship\n\n[P4-P5]: P4 is holding/carrying P5 closely beside a stroller; their body language shows caretaking and physical contact typical of a parent/guardian with a child. Casual attire and family-park setting reinforce a family relationship. => family-members",
+  "timestamp": 1779952721.2673118
+}

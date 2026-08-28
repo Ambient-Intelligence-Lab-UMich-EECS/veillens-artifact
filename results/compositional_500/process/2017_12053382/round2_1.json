@@ -1,0 +1,75 @@
+{
+  "reasoning": "The crop shows several people in a street parade wearing eye masks; multiple faces are still identifiable with uncovered lower facial regions. These constitute Level 1 biometric data. Additional contextual text like a large \u201cCARNAVAL\u201d banner and a shirt reading \u201cBRASIL\u201d indicates event participation and broad geographic context (Level 3). The strong presence of identifiable faces drives a high privacy risk, reinforced by public-activity cues. Score reflects clear, central visibility of faces. Confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in foreground wearing a red-feathered eye mask; lower face and mouth visible",
+        "Anonymized_element": "full-face plain mask, blur face region, neutral headwear",
+        "privacy_element": "visible lower face and jawline, mouth and nose contours, skin details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman at center wearing a gold eye mask; cheeks, mouth, and chin exposed",
+        "Anonymized_element": "plain full-face mask, blur exposed facial area",
+        "privacy_element": "exposed lower facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young man on right wearing a colorful eye mask; side of face and mouth visible",
+        "Anonymized_element": "full-face neutral mask, blur side-face region",
+        "privacy_element": "partially visible facial features including profile and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow T-shirt with readable word 'BRASIL'",
+        "Anonymized_element": "plain shirt with no text or logos",
+        "privacy_element": "readable country name implying geographic context",
+        "target_concept": "clothing text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large hand-held banner with readable word 'CARNAVAL' in bright letters",
+        "Anonymized_element": "blank banner with abstract shapes, no legible text",
+        "privacy_element": "event name indicating participation in a public celebration",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12053382/r1_crops/2017_12053382_1.png"
+}

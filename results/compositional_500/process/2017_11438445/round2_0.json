@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows two individuals with most of their faces visible (only the eye regions are obscured), which constitutes identifiable biometric data. One person also wears a lanyard with a badge that could contain a name or organization, though text is not legible. Additional minor cues include a barefoot individual revealing personal attributes/behavior. The highest-severity clue is Level 1 (biometric faces), reinforced by a potential ID badge (Level 2). Due to partial obfuscation and unreadable text, risk is moderated but still high.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s face with eyes obscured but nose, mouth, jawline, and hairstyle visible",
+        "Anonymized_element": "fully blurred face, neutral silhouette, remove distinctive hairstyle",
+        "privacy_element": "visible facial structure, skin texture, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right person\u2019s face with eyes obscured but rest of facial features visible",
+        "Anonymized_element": "fully blurred face, neutral silhouette, remove distinctive hairstyle",
+        "privacy_element": "visible facial structure, mouth, jawline, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow lanyard with attached badge on the right person\u2019s chest (text not legible)",
+        "Anonymized_element": "plain lanyard, blank badge with no text or logo",
+        "privacy_element": "potential name or organization logo on badge (unreadable)",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bare feet of the center person on wooden floor",
+        "Anonymized_element": "add neutral shoes or crop at calves",
+        "privacy_element": "bare feet indicating personal appearance/behavior",
+        "target_concept": "feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11438445/r1_crops/2017_11438445_0.png"
+}

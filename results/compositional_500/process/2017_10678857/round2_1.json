@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows an ANA-branded commercial airplane on an airport apron with a few distant ground crew. No identifiable faces or personal identifiers are legible. The most concrete elements are the readable aircraft registration code and airline branding, which relate to assets/branding rather than a person. Distant workers are too small to identify. Highest severity is Level 4, yielding a low overall personal-information risk. Confidence is high due to clear visibility yet lack of person-specific details.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "alphanumeric aircraft registration painted near the rear fuselage/tail",
+        "Anonymized_element": "blank tail section, generic pattern with no letters or numbers",
+        "privacy_element": "readable unique aircraft registration code",
+        "target_concept": "vehicle identifier/registration",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "ANA airline logo and branding text on the aircraft body and tail",
+        "Anonymized_element": "plain livery with generic colors, no logos or text",
+        "privacy_element": "company name, recognizable corporate logo",
+        "target_concept": "brand logo/text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small group of ground crew standing near service vehicle on the apron",
+        "Anonymized_element": "empty tarmac area or generic silhouettes without human detail",
+        "privacy_element": "presence of unidentifiable individuals at a workplace",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10678857/r1_crops/2017_10678857_1.png"
+}

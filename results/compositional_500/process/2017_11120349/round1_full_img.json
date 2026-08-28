@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a mixed-media collage composed of torn paper scraps, including a fragment of a scan-form with partial URL text, a price sticker, and miscellaneous printed and handwritten words. There are no faces, IDs, financial or medical documents, addresses, or other unique identifiers that are clearly legible. The visible elements are generic documents and background text that do not directly identify a person. Thus, only low-level contextual privacy risk is present, leading to a low score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "torn fragment of a scan-form with bubbles and partial URL text",
+        "Anonymized_element": "plain patterned paper, remove URL fragments and codes, generic shapes",
+        "privacy_element": "partial website text, form layout cues",
+        "target_concept": "document fragment",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red price sticker with large numerals '0.84'",
+        "Anonymized_element": "blank colored sticker without numbers",
+        "privacy_element": "specific price numerals",
+        "target_concept": "price sticker",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11120349.jpg"
+}

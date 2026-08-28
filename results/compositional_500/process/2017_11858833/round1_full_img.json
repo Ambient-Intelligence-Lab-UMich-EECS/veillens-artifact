@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image shows a group at a public festival wearing ornate costumes. Several participants\u2019 faces are clearly visible from the front despite partial headpieces, exposing identifiable biometric data (highest severity Level 1). Additional distant bystanders appear in the background with small or partially obscured faces, adding minor contextual risk. No names, documents, addresses, or financial/medical info are visible. The presence of multiple identifiable faces centrally in frame yields a high privacy risk. Confidence is high due to clear visibility of several faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left adult participant\u2019s uncovered face beneath a purple fringe hood",
+        "Anonymized_element": "face blurred, opaque carnival mask, additional fringe fully covering the face",
+        "privacy_element": "frontal facial features visible (eyes, nose, mouth), identifiable beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center child participant\u2019s face under a light purple/silver headdress",
+        "Anonymized_element": "face blurred, mask added, fringe lengthened to cover face",
+        "privacy_element": "clear frontal facial features of a minor",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center-right adult participant\u2019s face beneath a gold fringe hood",
+        "Anonymized_element": "face blurred, opaque mask, thicker fringe covering face",
+        "privacy_element": "frontal facial features visible (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background group of small, partially visible bystander faces near the top-right",
+        "Anonymized_element": "blurred faces, turned-away heads, cropped framing",
+        "privacy_element": "tiny or partially obscured faces of bystanders",
+        "target_concept": "distant faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11858833.jpg"
+}

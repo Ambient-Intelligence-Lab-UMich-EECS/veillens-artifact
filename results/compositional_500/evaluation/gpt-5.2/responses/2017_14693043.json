@@ -1,0 +1,32 @@
+{
+  "reasoning": "The person’s face is fully obscured, removing the primary biometric identifier. No government IDs, names, financial or medical details are visible. The main remaining identifiable cues are weak: a distinctive red plaid shirt pattern and a simple wrist bracelet, which could help recognition only minimally. The background provides no readable address or unique landmark. With only low-to-moderate Level 3/4 cues and no strong identifiers, the privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distinctive red-and-black plaid shirt on the person’s torso and arms",
+        "Anonymized_element": "solid-color long-sleeve shirt, muted tone, no patterns or logos",
+        "privacy_element": "distinctive plaid pattern, bright color combination, clothing style",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "simple black wrist bracelet on the person’s right wrist",
+        "Anonymized_element": "bare wrist, plain wristband with no distinctive features",
+        "privacy_element": "distinctive personal accessory shape and color",
+        "target_concept": "bracelet",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14693043/final/2017_14693043_final.png"
+}

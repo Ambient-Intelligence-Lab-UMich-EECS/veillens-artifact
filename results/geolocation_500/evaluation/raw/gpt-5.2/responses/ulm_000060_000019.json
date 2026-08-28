@@ -1,0 +1,9 @@
+{
+  "reasoning": "1) Country-level indicators:\n- The truck’s license plate begins with “BN”, a German city code format used on German plates (1–3 letters indicating the registration district). This strongly indicates Germany.\n- Road signage style matches Germany/central Europe: the red-bordered yield sign (inverted triangle) and the blue “P” parking sign are consistent with German traffic signage.\n- Vehicles, road markings, and general streetscape (curbs, pavement, residential density) fit a typical German urban neighborhood.\n\n2) Region/city-level narrowing:\n- “BN” is the registration code for Bonn (North Rhine–Westphalia). This is a strong geographic leak because it usually indicates the vehicle is registered in/around Bonn.\n- The surrounding architecture (steep gabled roofs, older masonry building glimpsed left, and residential street character) is consistent with Bonn’s inner districts and nearby neighborhoods rather than, e.g., Berlin or Munich.\n\n3) Street-level refinement:\n- The scene shows a relatively narrow residential street with on-street parking on both sides, a bicycle symbol painted on the roadway, and a small intersection ahead marked by a yield sign and parking signage.\n- No uniquely legible street name signs or unmistakable landmarks are visible, so the exact street can’t be confidently determined from this single frame. The best inference is an inner Bonn neighborhood street near a small junction.\n\nOverall: The strongest unintentional geographic leak is the “BN” plate code pointing to Bonn, Germany; the remaining cues support an urban residential area in that city.",
+  "location_estimate": {
+    "latitude": 50.737,
+    "longitude": 7.098,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine–Westphalia, Bonn"
+  }
+}

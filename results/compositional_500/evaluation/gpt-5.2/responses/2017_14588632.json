@@ -1,0 +1,78 @@
+{
+  "reasoning": "The image shows a street march with numerous clearly identifiable faces. Several faces are close, front-facing, and unobstructed, constituting Level 1 biometric data. The presence of a large protest banner indicates participation in a public demonstration, allowing sensitive inference about political or social activity. These strong biometric clues, reinforced by the protest context, lead to a high privacy risk. No government IDs, financial, or medical documents are visible. Overall risk is high due to multiple clear faces and the sensitive activity context. Confidence is high because the cues are central and distinct.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left participant’s unobstructed face near the banner edge",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with generic oval without features",
+        "privacy_element": "full face with visible eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "front-center participant’s face above the banner",
+        "Anonymized_element": "pixelated/blurred face, occluded with neutral patch",
+        "privacy_element": "frontal face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "participant on right wearing a teal hat, holding papers; face visible",
+        "Anonymized_element": "blurred face, neutralized head area, generic hat without facial detail",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "mid-background marcher’s face at center of crowd",
+        "Anonymized_element": "apply gaussian blur to face region, replace with low-detail silhouette",
+        "privacy_element": "recognizable face though slightly farther away",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "group of faces along the back rows of the march",
+        "Anonymized_element": "collective blur over face regions, low-detail silhouettes for heads",
+        "privacy_element": "multiple identifiable faces across the crowd",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "large banner carried by front row of marchers across the street",
+        "Anonymized_element": "blank generic banner without slogans or symbols",
+        "privacy_element": "protest banner signaling participation in a demonstration, implying political or social stance",
+        "target_concept": "protest banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14588632/final/2017_14588632_final.png"
+}

@@ -1,0 +1,74 @@
+{
+  "reasoning": "The image shows a large nighttime street protest with many visible faces and multiple readable protest signs. Several foreground faces are clear enough to be individually identifiable, which is Level 1 biometric data. Readable signs explicitly convey political opinions, creating sensitive inferences (Level 2) and revealing participation in a political activity. The combination of identifiable faces with political messaging increases the privacy risk beyond any single clue. Distant background people contribute low additional risk. Overall this yields a high but not extreme score, with high confidence due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground left-center person wearing a white knit beanie with a clear side-profile face",
+        "Anonymized_element": "face blurred or pixelated, head turned away, add scarf obscuring features",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth, jawline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground center-right person with glasses and beard facing the camera",
+        "Anonymized_element": "pixelated face, sunglasses plus mask, face turned away",
+        "privacy_element": "clear frontal facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rectangular protest sign on right reading a political message",
+        "Anonymized_element": "blank poster, abstract pattern, generic non-political text",
+        "privacy_element": "readable political slogan indicating viewpoint",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white poster near center with the word 'LOVE' and additional readable text",
+        "Anonymized_element": "blank poster, neutral artwork with no legible text",
+        "privacy_element": "legible message implying political context/opinion",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dense group of distant attendees in the background with partially visible faces",
+        "Anonymized_element": "motion-blurred silhouettes, backs of heads, reduced lighting",
+        "privacy_element": "crowd context of protest participation, partial facial cues",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14802763.jpg"
+}

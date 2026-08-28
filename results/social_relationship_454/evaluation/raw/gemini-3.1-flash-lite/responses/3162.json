@@ -1,0 +1,37 @@
+{
+  "img_id": "3162",
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 1,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 1,
+    "5 6": 6,
+    "1 3": 6,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 4
+  },
+  "raw_response": "[P1-P3]: These individuals are separated by distance and appear to be moving independently in a public outdoor space. They show no indicators of social interaction. => no-relationship\n\n[P1-P4]: P1 is walking with a mobility aid while P4 is walking behind her in the background with no signs of interaction. They appear to be unrelated bystanders. => no-relationship\n\n[P1-P5]: P1 and P5 are walking in the same general direction but maintain distance and lack any engagement. They seem like separate pedestrians passing through the area. => no-relationship\n\n[P1-P6]: P1 and P6 are walking in the same general area, but there is no evidence of communication or social connection between them. => no-relationship\n\n[P2-P3]: P2 and P3 are walking in the same direction, but their distance and lack of interaction suggest they are simply sharing the path. => no-relationship\n\n[P2-P4]: P2 is walking ahead of P4, with no signs of awareness or social interaction between them. They appear to be independent pedestrians. => no-relationship\n\n[P2-P5]: P2 is walking ahead of P5, and they display no engagement or shared behavior. They are likely unrelated bystanders. => no-relationship\n\n[P2-P6]: P2 is walking in front of P6, but they do not appear to be interacting or coordinating their movement. They are classified as bystanders. => no-relationship\n\n[P3-P4]: P3 and P4 are both in the background moving independently, with no indication of a social link. => no-relationship\n\n[P3-P5]: P3 and P5 are both walking in the background area without any observable interaction or proximity suggesting a relationship. => no-relationship\n\n[P3-P6]: P3 and P6 are walking near each other in the background, but their body language and distance suggest they are strangers sharing the path. => no-relationship\n\n[P4-P5]: P4 and P5 are walking side-by-side or in very close proximity in the background, suggesting they are likely together. => friends\n\n[P4-P6]: P4 and P6 are walking in the same group area with others in the background, but no specific interaction suggests a close bond. => no-relationship\n\n[P5-P6]: P5 and P6 are in the background walking in the same area without showing distinct social engagement. => no-relationship",
+  "timestamp": 1779942255.9035153
+}

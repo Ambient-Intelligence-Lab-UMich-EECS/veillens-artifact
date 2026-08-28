@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a soccer match with multiple players and a crowd. The clearest privacy-relevant element is a readable surname printed on the back of a player\u2019s jersey, which is a non-unique identifier and can link to a person in the sports context. Faces in the background crowd are small and not individually identifiable. No government IDs, financial, or medical data are visible. The highest severity present is Level 2 (name). With limited supporting clues and distant faces, the overall risk is moderate. Confidence is medium due to partial legibility and distance.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a striped jersey with a readable surname across the shoulders (right side player)",
+        "Anonymized_element": "plain jersey back, remove/blur text, generic stripes without any name",
+        "privacy_element": "readable surname text on clothing",
+        "target_concept": "name on jersey",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background stands with many small, indistinct spectator faces",
+        "Anonymized_element": "strong background blur, reduce facial detail, crop out stands",
+        "privacy_element": "multiple small faces of unidentifiable individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14806724/r1_crops/2017_14806724_0.png"
+}

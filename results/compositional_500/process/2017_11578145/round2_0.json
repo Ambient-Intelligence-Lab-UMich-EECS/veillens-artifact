@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a vintage printed map and advertisement with clearly readable location details such as \u201cHOTEL CLAREMONT,\u201d Bay Area references, street name lists, and a handwritten \u201cAlameda.\u201d There are no people, faces, IDs, or sensitive financial/medical items. The highest severity is Level 3 due to explicit geographic identifiers that can reveal or imply location context. As generic document text, risk remains low-to-moderate without direct personal identifiers. Confidence is high given the legible place names.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "advertisement block reading 'HOTEL CLAREMONT' with location and amenities text",
+        "Anonymized_element": "replace with generic hotel name, remove place names, use lorem-ipsum text, neutral logo-free block",
+        "privacy_element": "specific hotel name, geographic descriptors like 'Bay Area' and property details",
+        "target_concept": "advertisement text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "map section with street name list and Bay Area shoreline labels",
+        "Anonymized_element": "blanked or scrambled street names, abstract map without legible labels",
+        "privacy_element": "readable street names and regional map labels indicating precise locale",
+        "target_concept": "map text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handwritten note at bottom margin including the word 'Alameda'",
+        "Anonymized_element": "erase or replace with generic non-location scribble",
+        "privacy_element": "readable place name 'Alameda' indicating geographic area",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11578145/r1_crops/2017_11578145_0.png"
+}

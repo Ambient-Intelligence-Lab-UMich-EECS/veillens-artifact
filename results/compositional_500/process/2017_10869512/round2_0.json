@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a vintage concert ticket with legible printed text, including the venue (Frank Erwin Center, Univ. of Texas at Austin), performer (Jimmy Buffett), and a specific date/time, plus section/row/seat codes. There is no attendee name or financial/government identifiers. The highest severity present is Level 3 due to explicit location information and a record of a specific activity/attendance. Multiple moderate cues (location + event details) slightly increase risk, but absence of uniquely identifying data keeps the score moderate-low. Confidence is high because the text is clear.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed venue text \"FRANK ERWIN CENTER\" and \"UNIV. OF TEXAS AT AUSTIN\" on the ticket",
+        "Anonymized_element": "generic venue text, blurred text, placeholder words",
+        "privacy_element": "venue name, city/university indicating geographic location",
+        "target_concept": "venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "printed event details \"JIMMY BUFFETT IN CONCERT\" with date \"SUN MAR 7, 1982\"",
+        "Anonymized_element": "generic event title, no artist name, obfuscated date",
+        "privacy_element": "performer name and exact event date/time revealing attendance at a specific event",
+        "target_concept": "event text and date",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "section/row/seat numbers block on the left side of the ticket",
+        "Anonymized_element": "blank area, randomized numbers, masked codes",
+        "privacy_element": "specific seat, row, and section codes tied to the ticketed event",
+        "target_concept": "seat and section numbers",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10869512/r1_crops/2017_10869512_0.png"
+}

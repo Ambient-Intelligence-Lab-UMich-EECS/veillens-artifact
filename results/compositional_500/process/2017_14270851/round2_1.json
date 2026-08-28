@@ -1,0 +1,90 @@
+{
+  "reasoning": "The crop shows a group of cyclists outdoors with several unobstructed, identifiable faces. These constitute Level 1 biometric data, the strongest driver of risk. Clothing and gear indicate a recreational cycling activity, revealing behaviors and some personal attributes (age/gender cues, facial hair). No names, financial, or government IDs are visible. Multiple clear faces reinforce identifiability, leading to a moderately high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing person wearing a white helmet and sunglasses on the far left",
+        "Anonymized_element": "blurred face area, opaque visor, turned-away head",
+        "privacy_element": "facial structure partially visible despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-left person with orange high-visibility jacket and prominent beard",
+        "Anonymized_element": "blurred face, neutral-colored jacket without distinct features",
+        "privacy_element": "full face with unique beard and facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person with bright yellow helmet near center-left",
+        "Anonymized_element": "blurred face, helmet with generic color",
+        "privacy_element": "visible facial features under helmet",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person wearing a cap and glasses near right-center",
+        "Anonymized_element": "blurred face, opaque glasses, head turned sideways",
+        "privacy_element": "recognizable face with glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person with blue jacket and camera around neck, right-center",
+        "Anonymized_element": "blurred face, remove camera strap details",
+        "privacy_element": "recognizable facial features and beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person in yellow reflective vest on far right",
+        "Anonymized_element": "blurred face, plain vest without reflectivity",
+        "privacy_element": "visible face with eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14270851/r1_crops/2017_14270851_1.png"
+}

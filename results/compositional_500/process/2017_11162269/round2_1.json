@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a British Airways airplane on a runway with no visible people or personal identifiers. The most identifying elements are corporate/asset identifiers: the airline name/logo and a partially readable aircraft registration near the tail. These are not personal to individuals but are asset identifiers and background branding. With no faces, IDs, or sensitive personal data, the privacy risk is low. Score reflects minor risk from readable vehicle registration and branding. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small alphanumeric aircraft registration near the rear fuselage (e.g., G-****)",
+        "Anonymized_element": "plain fuselage panel, remove/blur alphanumeric code, generic paint without text",
+        "privacy_element": "readable aircraft registration code",
+        "target_concept": "aircraft tail number",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large 'BRITISH AIRWAYS' text and logo on the fuselage",
+        "Anonymized_element": "generic livery without text, neutral colors, no logo",
+        "privacy_element": "readable company name and logo",
+        "target_concept": "company logo text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11162269/r1_crops/2017_11162269_1.png"
+}

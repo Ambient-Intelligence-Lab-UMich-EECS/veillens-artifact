@@ -1,0 +1,45 @@
+{
+  "reasoning": "The cropped image shows a person standing by a storefront window. The face is obscured and not identifiable, so no Level 1 biometric data is exposed. Privacy risk arises mainly from visible personal attributes (body shape, hairstyle, clothing, distinctive jewelry) and a potentially recognizable storefront display (heart-shaped sculpture) that could hint at location. These clues are moderate and not strongly identifying on their own, so overall risk is low-to-moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "upper body and attire of a person in a strapless patterned dress, with visible skin and hairstyle",
+        "Anonymized_element": "less distinctive, plain clothing; reduce skin exposure; generic hairstyle cap/hat",
+        "privacy_element": "body shape, exposed limbs/skin, distinctive patterned clothing, visible hairstyle",
+        "target_concept": "person's body/attire",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "chunky metallic chain necklace worn around the neck",
+        "Anonymized_element": "plain small necklace, no distinctive style, or remove jewelry",
+        "privacy_element": "distinctive jewelry style that can aid recognition",
+        "target_concept": "jewelry",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront interior with a heart-shaped sculpture on a white pedestal behind glass",
+        "Anonymized_element": "generic abstract object or empty pedestal, no recognizable display",
+        "privacy_element": "recognizable store display that could reveal location if matched",
+        "target_concept": "storefront display",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10688111/r1_crops/2017_10688111_0.png"
+}

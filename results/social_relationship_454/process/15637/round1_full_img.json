@@ -1,0 +1,28 @@
+{
+  "img_id": "15637",
+  "ground_truth": {
+    "2 3": 1,
+    "3 4": 1,
+    "2 4": 1
+  },
+  "predictions": {
+    "2 4": 2
+  },
+  "missed_pairs": [
+    "2 3",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    4
+  ],
+  "subjects_unmatched": [
+    3
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P2-P4]: This looks like a wedding reception; P2 (groom) dances with the bride while P4, an older man in a similar formal suit, dances right beside them on the central floor. The setting and age difference suggest a familial connection (e.g., father-in-law and groom) rather than strangers. => family-members",
+  "timestamp": 1776889294.8803132
+}

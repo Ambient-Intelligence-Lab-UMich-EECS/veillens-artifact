@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows an operating room with multiple medical staff performing surgery on a draped patient. No patient face or explicit identifiers are visible, but the surgical field and IV equipment clearly disclose ongoing medical treatment (Level 2). Several clinicians\u2019 faces are partially visible despite masks and caps, introducing limited biometric risk (Level 1) though identifiability is reduced. Together, the medical procedure context plus partially visible faces create a moderate privacy risk without direct personal identifiers. Score reflects sensitive medical context with occluded biometrics and no readable names or addresses.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "illuminated surgical field with surgeons\u2019 hands operating on a draped patient",
+        "Anonymized_element": "closed drape over torso, no incision visible, instruments hidden or replaced with covered area",
+        "privacy_element": "exposed surgical site indicating specific medical procedure being performed",
+        "target_concept": "surgical procedure area",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clear IV fluid bag with tubing routed toward the patient",
+        "Anonymized_element": "blank IV bag with label blurred, tubing removed or not connected",
+        "privacy_element": "intravenous infusion setup indicating active medical treatment",
+        "target_concept": "IV bag",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "partially visible faces of clinicians wearing masks and hair covers",
+        "Anonymized_element": "blurred faces, generic mask and cap without unique markings",
+        "privacy_element": "visible eye region and facial contours enabling partial biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13454459.jpg"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a single person indoors with a clearly visible, front-facing face that is sharp and central, which is direct biometric identifying information (highest-severity clue). Additional contextual details include a distinctive all\u2011black leather outfit revealing appearance and style preferences, and a recognizable home interior with wooden wardrobe and flooring that can hint at a private residence. While no names, documents, or addresses are visible, the unobscured face alone creates high privacy risk, modestly reinforced by personal-attribute and location-context clues. Score reflects a clear Level 1 biometric along with moderate contextual signals. Confidence is high due to clarity of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed, front-facing human face with eyes, nose, and mouth clearly visible",
+        "Anonymized_element": "blurred face region, pixelated facial features, crop above nose, turned-away head",
+        "privacy_element": "full facial features, clear eyes and mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "all-black leather outfit including long coat, fitted dress, and high-heeled boots",
+        "Anonymized_element": "generic non-descript clothing in muted colors, plain fabric textures",
+        "privacy_element": "distinctive fashion style and clothing combination indicating preferences/body shape",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "home interior background with large wooden wardrobe and patterned wooden floor",
+        "Anonymized_element": "blurred background, neutral wall, simplified generic furniture",
+        "privacy_element": "private indoor setting and specific furniture style hinting at residence",
+        "target_concept": "home interior background",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10336434.jpg"
+}

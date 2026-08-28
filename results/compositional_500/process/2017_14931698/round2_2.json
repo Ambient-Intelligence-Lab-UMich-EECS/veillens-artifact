@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person\u2019s torso with the face obscured. A lanyard ID badge is visible but its contents are fully blocked, so no names or logos are readable. An overlaid graphic clearly reads \u201ccreative commons global summit 2011,\u201d which reveals participation/association with a specific event and time. With no biometric face or government/financial details, the dominant risks come from activity/affiliation disclosure and a low-risk presence of an unreadable badge. These cues suggest a moderate but limited privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "colorful event logo with readable text \u201ccreative commons global summit 2011\u201d in the lower-left corner",
+        "Anonymized_element": "abstract shapes, no recognizable logo, remove text, generic graphic mark",
+        "privacy_element": "readable event name, affiliation implication, specific year",
+        "target_concept": "event logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "lanyard ID badge on the person\u2019s chest with contents obscured",
+        "Anonymized_element": "plain blank badge, no text or logo, generic plastic card",
+        "privacy_element": "ID badge presence (no legible text)",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14931698/r1_crops/2017_14931698_2.png"
+}

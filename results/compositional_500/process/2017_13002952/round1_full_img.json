@@ -1,0 +1,70 @@
+{
+  "reasoning": "A person stands in a hot tub wearing a bikini with a clear, front-facing, well-lit face\u2014this is strong biometric identification (Level 1). Additional cues include body appearance in revealing swimwear and a distinctive navel piercing, which expose personal attributes and leisure activity (Level 3). The background shows a residential roof and mountainous landscape that provide weak location context, plus a partially visible second person\u2019s arm. The Level 1 face dominates the risk, with Level 3\u20134 clues adding context. Overall risk is high due to the identifiable face; confidence is high because cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear, front-facing face of the person above the waterline",
+        "Anonymized_element": "blurred or pixelated face, cropped frame at the neck, turned-away head, added shading to obscure features",
+        "privacy_element": "full facial features visible including eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "upper torso in red polka-dot bikini",
+        "Anonymized_element": "less form-fitting top, solid neutral color, towel or robe coverage",
+        "privacy_element": "revealing swimwear showing body contours",
+        "target_concept": "swimwear/body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "navel piercing with small jewelry above the bikini bottom",
+        "Anonymized_element": "remove piercing, smooth skin texture",
+        "privacy_element": "distinctive body jewelry that can aid recognition",
+        "target_concept": "body jewelry (piercing)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "residential rooftop and mountainous landscape in background",
+        "Anonymized_element": "blurred generic background, sky gradient, remove distinct roofline",
+        "privacy_element": "recognizable roofline and terrain hinting at locale",
+        "target_concept": "background location cues",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "partial forearm of another person emerging from the water at right edge",
+        "Anonymized_element": "remove limb and replace with water surface",
+        "privacy_element": "presence of another unidentifiable individual",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13002952.jpg"
+}

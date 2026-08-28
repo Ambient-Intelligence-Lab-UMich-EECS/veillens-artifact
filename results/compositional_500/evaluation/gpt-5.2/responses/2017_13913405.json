@@ -1,0 +1,80 @@
+{
+  "reasoning": "The photo shows a public parade with many spectators and participants. Several individuals’ faces are clearly visible and unobstructed, which exposes biometric identifiers (highest severity). Foreground participants’ faces are partially anonymized, but multiple audience members and some walkers still show identifiable faces, including children. Additional contextual location cues such as a clearly readable Bank of America storefront sign and a blue accessible parking sign provide environmental anchoring that could help triangulate the place. No names, financial, or government IDs are visible. Overall risk is high due to multiple clear faces (Level 1) reinforced by location clues.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child in red shirt sitting on curb at right foreground with full face toward camera",
+        "Anonymized_element": "turned-away head, blurred face, generic skin-tone patch, sunglasses added",
+        "privacy_element": "clear frontal face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "seated woman in blue shirt wearing a straw hat holding a small U.S. flag at mid-right, face visible",
+        "Anonymized_element": "hat only, head turned away, blurred facial features",
+        "privacy_element": "recognizable facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "teen girl in black shirt and blue shorts walking at left side, smiling toward camera",
+        "Anonymized_element": "face blurred, head angled down, added sunglasses",
+        "privacy_element": "clear facial features and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "child in white shirt seated on curb near center-right, looking toward camera",
+        "Anonymized_element": "face blurred, head turned aside",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "red Bank of America storefront signs in background left",
+        "Anonymized_element": "generic blank red panels without text or logo",
+        "privacy_element": "readable bank brand text and logo indicating specific venue",
+        "target_concept": "storefront signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "blue accessible parking sign on pole at upper-right background",
+        "Anonymized_element": "plain blue rectangle with no symbol or text",
+        "privacy_element": "recognizable parking/accessible symbol indicating public venue context",
+        "target_concept": "parking sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13913405/final/2017_13913405_final.png"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a lottery cheque-like document with a clearly readable payee name and prominent SA Lotteries branding. The highest-severity clue is the explicit full name, a Level 2 non-unique identifier. The company/logo indicates lottery participation and region, adding Level 3 risk through activity and location context. Together, these clues present moderate-to-high privacy risk despite the absence of account numbers or amounts. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed 'PAY TO Beau Giles' text on a lottery cheque",
+        "Anonymized_element": "blur or replace with 'Recipient', generic placeholder name, remove distinctive typography",
+        "privacy_element": "readable full name 'Beau Giles' next to 'PAY TO'",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "SA Lotteries logo and brand text at top of the document",
+        "Anonymized_element": "generic abstract logo, no brand text, neutral colors",
+        "privacy_element": "organization name 'SA Lotteries' revealing lottery participation and regional affiliation",
+        "target_concept": "company logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cheque-style layout with 'PAY TO' label and signature/amount areas",
+        "Anonymized_element": "generic voucher or plain slip without financial terminology or fields",
+        "privacy_element": "document format indicating a financial payout instrument",
+        "target_concept": "financial document layout",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11374375/r1_crops/2017_11374375_0.png"
+}

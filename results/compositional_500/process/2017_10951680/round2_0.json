@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a river scene with tree branches in the foreground and a ferry/boat in the distance. No people or faces are visible. The only potentially identifying element is large readable letters on the vessel that could hint at a specific service or location, but this does not directly identify a person. There are no addresses, documents, or intimate/sensitive cues. Overall risk is low and driven by minor location/property hints.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distant ferry/boat on the water with large readable letters on the side",
+        "Anonymized_element": "generic boat without text, blurred or removed lettering, neutral hull markings",
+        "privacy_element": "readable vessel letters/name that may indicate a specific route or locale",
+        "target_concept": "boat lettering",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10951680/r1_crops/2017_10951680_0.png"
+}

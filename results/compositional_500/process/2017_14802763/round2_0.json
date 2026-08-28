@@ -1,0 +1,62 @@
+{
+  "reasoning": "The crop shows a dense protest crowd at night with multiple clearly visible faces and readable protest signs expressing political messages. Identifiable faces constitute Level 1 biometric data. The legible slogans reveal political views and participation in a demonstration (Level 2). A lit building sign reading an institution name in the background can pinpoint location (Level 3). These clues reinforce each other, linking identity to political activity at a specific place. Given the clarity and centrality of these elements, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a person in the left-center of the crowd, well-lit and unobstructed",
+        "Anonymized_element": "blurred face, low-detail head silhouette, turned-away pose",
+        "privacy_element": "clear facial features including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "profile face of a person near the center-right wearing a beanie, facing left",
+        "Anonymized_element": "face blurred, generic head shape, hood obscuring features",
+        "privacy_element": "distinct facial profile with visible nose, mouth, and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld protest sign near center with readable text 'LOVE trumps'",
+        "Anonymized_element": "blank sign, abstract shapes or patterns, unreadable scribbles",
+        "privacy_element": "readable political slogan indicating viewpoint and participation",
+        "target_concept": "protest sign with text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "building facade in background with illuminated sign 'Humphrey School of Public Affairs'",
+        "Anonymized_element": "plain facade without signage, generic building lights",
+        "privacy_element": "institution name signage acting as a recognizable landmark",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14802763/r1_crops/2017_14802763_0.png"
+}

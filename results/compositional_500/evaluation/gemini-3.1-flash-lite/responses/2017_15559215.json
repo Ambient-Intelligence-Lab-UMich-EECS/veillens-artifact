@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image is a cartoon-style birthday greeting card intended for a 60-year-old male. It contains no personally identifiable information such as names, faces, addresses, or government identifiers. The reference to '60 ANS' (60 years) is a personal attribute, but it is presented in a generic, non-identifying graphical context. The score reflects a low privacy risk as there is no link to a specific real-world individual.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Text explicitly stating '60 ANS' (60 years old)",
+        "Anonymized_element": "Generic celebratory text, placeholder age",
+        "privacy_element": "Specific age",
+        "target_concept": "age",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15559215/final/2017_15559215_final.png"
+}

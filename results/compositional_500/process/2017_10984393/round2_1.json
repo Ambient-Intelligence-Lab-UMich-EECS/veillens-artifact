@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop centers on a red convertible parked in a lot. No readable license plates, documents, or faces are visible. People in the background on a golf cart are small and unidentifiable. The main privacy signals are a distinctive vehicle (property/asset) and distant bystanders, which pose low, context-dependent risk. With no Level 1\u20132 clues present, overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red convertible car with shiny chrome wheels in the foreground",
+        "Anonymized_element": "generic sedan shape, muted color, blur/remove brand/model-specific lines, standard matte wheels",
+        "privacy_element": "distinctive vehicle appearance and modifications that could be recognizable to acquaintances",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small group of people riding a distant golf cart in the background",
+        "Anonymized_element": "empty golf cart, motion-blurred silhouettes, remove people",
+        "privacy_element": "presence of people, body shapes though faces not identifiable",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10984393/r1_crops/2017_10984393_1.png"
+}

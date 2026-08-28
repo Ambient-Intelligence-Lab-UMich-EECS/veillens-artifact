@@ -1,0 +1,51 @@
+{
+  "reasoning": "The crop shows a large billboard advertising a specific health center with readable text. No people or biometric data are present. The most privacy-relevant elements are explicit location cues: the facility name \u201cShinglehouse Community Health Center,\u201d a readable phone number, a website URL, and organization names with city/state. These are Level 3\u20134 signals that reveal precise location and contact details of an institution but not an individual. Combined, they raise moderate but not high risk. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "billboard text reading 'SHINGLEHOUSE COMMUNITY HEALTH CENTER' at the top center",
+        "Anonymized_element": "generic center name, replace with 'Community Center', no town name, neutral colors",
+        "privacy_element": "readable facility name tied to a specific town",
+        "target_concept": "place name on sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "phone number text '274-5520' in a dark oval on the right side of the sign",
+        "Anonymized_element": "blurred digits, placeholder like 'XXX-XXXX', decorative non-text shape",
+        "privacy_element": "readable local phone number",
+        "target_concept": "phone number on sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lower banner with organization names and URL 'colememorial.org' plus city/state lines (e.g., Pittsburgh, PA; DuBois, PA)",
+        "Anonymized_element": "remove URL, replace with generic organization text without locations",
+        "privacy_element": "readable website URL and city/state identifiers",
+        "target_concept": "website and location text on sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15815624/r1_crops/2017_15815624_0.png"
+}

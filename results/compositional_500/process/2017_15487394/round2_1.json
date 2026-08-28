@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a crowded public scene with several recognizable human faces. Although many are partially occluded or slightly out of focus, at least two faces are reasonably identifiable, which constitutes biometric data (Level 1). Additional contextual cues (people holding colorful handheld signs/fans) reveal participation in a public event, a moderate behavioral clue (Level 3). No legible names, documents, or explicit location identifiers are visible. Given identifiable faces in a crowd with partial occlusion, the privacy risk is moderately high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face with glasses on the left side of the frame, facing forward",
+        "Anonymized_element": "blurred or pixelated face, generic oval skin-tone patch, remove eyeglass detail",
+        "privacy_element": "recognizable facial features, eyes/nose/mouth contour, eyeglasses aiding identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man\u2019s face in profile on the right wearing a gray cap",
+        "Anonymized_element": "pixelated face area, generic skin-tone patch, soften profile features",
+        "privacy_element": "discernible facial profile, ear and nose outline enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handheld colorful sign/fan near right-middle held by a participant",
+        "Anonymized_element": "plain blank sign/fan with solid color, no symbols or text",
+        "privacy_element": "participation cue in a public event or gathering",
+        "target_concept": "event sign/fan",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15487394/r1_crops/2017_15487394_1.png"
+}

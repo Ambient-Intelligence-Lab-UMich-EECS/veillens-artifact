@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a CD case with a clear, front-facing portrait of a person on the cover, which exposes biometric facial data (Level 1). Additional stickers show the institution and city name of a public library, adding location context (Level 3). No government IDs, financial, medical, or explicit personal identifiers are present. The strong, central face drives the risk, modestly reinforced by location text. Overall risk is moderate-to-high with clear evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal portrait of a person seated at a piano on the CD cover",
+        "Anonymized_element": "abstract artwork in place of portrait, silhouette, blurred or pixelated face, back-of-head view, generic illustration",
+        "privacy_element": "full frontal face with distinctive facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white sticker on the CD case reading 'PUBLIC LIBRARY OF DES MOINES FINE ARTS DEPT.'",
+        "Anonymized_element": "blank sticker, generic inventory label without names or city, solid color tag",
+        "privacy_element": "institution name, city/location text",
+        "target_concept": "library label",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small label with 'PLDM Central' on the CD cover",
+        "Anonymized_element": "blank label, generic code sticker without institution reference",
+        "privacy_element": "institution abbreviation suggesting location/branch information",
+        "target_concept": "library label",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11582428.jpg"
+}

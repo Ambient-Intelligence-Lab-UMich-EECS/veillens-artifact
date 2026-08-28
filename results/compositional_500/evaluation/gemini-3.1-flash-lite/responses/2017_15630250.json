@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image contains partial text and document-like information, including a visible date (30/08) and partial alphanumeric characters. While these represent non-unique identifiers and generic document artifacts, the information is fragmented and lacks sufficient context to identify an individual or sensitive data definitively. Given the low legibility and lack of clear identity markers, the privacy risk is categorized as low.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "fragmented document text including date 30/08 and partial alphanumeric strings",
+        "Anonymized_element": "blank paper, generic texture, no text",
+        "privacy_element": "fragmented date, partial alphanumeric characters",
+        "target_concept": "document text",
+        "severity_level": 4,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15630250/final/2017_15630250_final.png"
+}

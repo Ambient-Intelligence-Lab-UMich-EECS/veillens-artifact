@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a restaurant scene with a server whose face is obscured and patrons in the background who are small and not identifiable. No readable text, IDs, financial documents, or faces are visible. The main privacy-relevant cues are contextual only: dining/consumption behavior and presence of other patrons. These are Level 3–4 clues and do not strongly identify anyone. With no Level 1–2 elements, the overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "cocktail glass with beverage and straw on the table",
+        "Anonymized_element": "plain water glass, empty glass, no garnish or straw",
+        "privacy_element": "visible alcoholic-style drink implying consumption behavior",
+        "target_concept": "drink on table",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "small, indistinct patrons seated in background",
+        "Anonymized_element": "blurred silhouettes, empty seats",
+        "privacy_element": "presence of people, though faces are not identifiable",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13265646/final/2017_13265646_final.png"
+}

@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows three printed event tickets with visible venue name and building image, a full street address with phone numbers, serial numbers, dates/times, and seat details. No personal names or faces appear. The highest-risk elements are location identifiers (venue name, recognizable building image, and street address) which are Level 3. Other elements are low-risk document metadata (serial numbers, dates, seats). Combined, these clues reveal an institution and event details but not an individual, yielding a low-to-moderate privacy risk. Confidence is high due to clear, legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.17,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed venue name and building illustration on each ticket face (upper-left area)",
+        "Anonymized_element": "generic theater name placeholder, abstract building icon, blurred or blank logo area",
+        "privacy_element": "readable institution name, recognizable venue illustration implying a specific place",
+        "target_concept": "venue name/logo area",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Street address and phone numbers printed along the bottom-left of the tickets",
+        "Anonymized_element": "blank text strip, generic address placeholder without numbers or phones",
+        "privacy_element": "readable street address with number and phone numbers of the venue",
+        "target_concept": "address line",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Vertical red serial number along the right edge of each ticket",
+        "Anonymized_element": "blank margin, randomized unreadable digits, decorative stripe",
+        "privacy_element": "legible unique ticket serial number",
+        "target_concept": "ticket serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Blue handwritten notes at the top sections of the tickets",
+        "Anonymized_element": "blank area, generic scribble without legible words",
+        "privacy_element": "legible handwritten text adding specific context (e.g., place or event note)",
+        "target_concept": "handwritten annotation",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Printed event date and start time text near the top/right of each ticket",
+        "Anonymized_element": "date/time removed or replaced with generic placeholders",
+        "privacy_element": "legible event date and time",
+        "target_concept": "date and time text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Row and seat numbers printed in the central text block",
+        "Anonymized_element": "generic seat label without specific numbers",
+        "privacy_element": "legible row and seat identifiers",
+        "target_concept": "seat information",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15999836/r1_crops/2017_15999836_1.png"
+}

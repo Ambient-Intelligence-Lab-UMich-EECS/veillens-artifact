@@ -1,0 +1,77 @@
+{
+  "reasoning": "Country level: The scene shows a European old-town bridge with cobblestones, ornate black cast-iron railings, and historic stone architecture. A small red flag with a white cross is visible on the left building, strongly suggesting Switzerland. Vehicles and road markings are minimal, but the architecture and street furniture match Swiss urban cores more than neighboring countries. \nCity level: The large pale-stone Romanesque church fa\u00e7ade at center with narrow arched windows matches the base of Zurich\u2019s Grossm\u00fcnster. To the right stands a white riverside building with arcades at ground level and green shutters above, consistent with Helmhaus Z\u00fcrich on the Limmat river. The combination of Grossm\u00fcnster and Helmhaus facing a short cobbled bridge is distinctive to central Zurich. \nStreet level: The viewpoint is on the cobbled bridge with ornate black railings and classic lamps, aligning with M\u00fcnsterbr\u00fccke, which connects Limmatquai to Grossm\u00fcnsterplatz. The alignment\u2014Helmhaus on the right immediately before the bridge and the side of Grossm\u00fcnster ahead\u2014fits standing on M\u00fcnsterbr\u00fccke looking east toward Grossm\u00fcnster. These fixed elements (church fa\u00e7ade details, Helmhaus arcades and shutters, and the specific railing design of M\u00fcnsterbr\u00fccke) distinguish this exact spot from other Zurich bridges.\n",
+  "location_estimate": {
+    "latitude": 47.3706,
+    "longitude": 8.5434,
+    "confidence": "High",
+    "region": "Switzerland, Canton of Z\u00fcrich, Z\u00fcrich (M\u00fcnsterbr\u00fccke by Grossm\u00fcnster)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "church facade of pale stone at the center",
+        "non_geolocation_element": "pale beige stone blocks, rectangular massing, soft daylight, shadowed recesses",
+        "geolocation_element": "Romanesque arched windows and buttresses matching Grossm\u00fcnster base",
+        "target_concept": "church facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "arcaded building with green shutters on the right",
+        "non_geolocation_element": "white plaster walls, rectangular windows, repetitive arches, even lighting",
+        "geolocation_element": "distinct ground-floor arcades and shutter pattern characteristic of Helmhaus Z\u00fcrich",
+        "target_concept": "arcaded building",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bridge railing of black wrought iron on the right",
+        "non_geolocation_element": "black metal, repeating scroll pattern, waist-height rail",
+        "geolocation_element": "ornate pattern matching M\u00fcnsterbr\u00fccke railings in central Z\u00fcrich",
+        "target_concept": "bridge railing",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street lamp on a tall black pole on the right sidewalk",
+        "non_geolocation_element": "black metal pole, lantern-style head, classic design",
+        "geolocation_element": "historic Z\u00fcrich old-town lamp style used along M\u00fcnsterbr\u00fccke and Limmatquai",
+        "target_concept": "street lamp",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone road on the bridge surface",
+        "non_geolocation_element": "dark gray stones, irregular rectangular setts, worn texture",
+        "geolocation_element": "European old-town bridge paving typical of Swiss city centers",
+        "target_concept": "cobblestone road",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "national flag on a pole on the left building",
+        "non_geolocation_element": "small fabric rectangle, bright red color, fluttering in wind",
+        "geolocation_element": "red flag with white cross identifying Switzerland",
+        "target_concept": "national flag",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/zurich/zurich_000072_000019_leftImg8bit.png"
+}

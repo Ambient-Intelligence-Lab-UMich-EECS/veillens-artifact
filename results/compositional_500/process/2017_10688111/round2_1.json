@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows a person from the neck down; no face or government IDs are visible. The most identifying cue is a clear ankle tattoo, which can help recognize the person when combined with body shape and distinctive clothing. These are Level 3 personal-attribute clues, with some additional low-risk context from a recognizable handbag. Without facial biometrics or sensitive documents, overall risk is moderate. Score reflects identifiable body features but absence of Level 1\u20132 signals.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black circular/floral tattoo on the outer left ankle",
+        "Anonymized_element": "plain skin with no tattoo, sock or ankle wrap, neutral cover-up",
+        "privacy_element": "distinct tattoo design, permanent body art unique to individual",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "exposed legs and lower torso in a short dress",
+        "Anonymized_element": "longer skirt or leggings, added fabric coverage",
+        "privacy_element": "visible body shape and skin that can aid recognition",
+        "target_concept": "exposed legs",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive multicolor patterned dress",
+        "Anonymized_element": "solid-color generic dress, simplified or plain pattern",
+        "privacy_element": "unique clothing pattern that could be recognized",
+        "target_concept": "clothing pattern",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large black leather handbag on the floor",
+        "Anonymized_element": "generic tote without distinctive hardware or branding",
+        "privacy_element": "recognizable bag style that may be linked to an individual",
+        "target_concept": "handbag",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10688111/r1_crops/2017_10688111_1.png"
+}

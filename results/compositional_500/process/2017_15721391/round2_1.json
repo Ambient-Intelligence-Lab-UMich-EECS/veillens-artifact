@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows the front entrance of a specific building with a readable name sign across the top and an engraved dedication plaque with a year on a pillar. These are location-identifying cues that could reveal the exact place when cross-referenced. No people or direct identifiers are visible. The highest severity is Level 3 (location information), supported by a Level 4 watermark artifact. Combined, these yield a moderate but contained privacy risk. Confidence is medium because some text is partially legible.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "building name sign above the entrance with partially readable text ending in 'BUILDING'",
+        "Anonymized_element": "blank fascia panel, no lettering, neutral material texture",
+        "privacy_element": "readable building name text that can uniquely identify a location",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "engraved stone plaque on right pillar with dedication text and year '1957'",
+        "Anonymized_element": "plain stone surface, no engraving or numbers",
+        "privacy_element": "engraved institution name and date that can be used to pinpoint a specific site",
+        "target_concept": "dedication plaque",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "visible 'Photomatix' watermarks across the image",
+        "Anonymized_element": "no watermark, neutral texture",
+        "privacy_element": "editing/software watermark that may reveal processing source or workflow",
+        "target_concept": "watermark",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15721391/r1_crops/2017_15721391_1.png"
+}

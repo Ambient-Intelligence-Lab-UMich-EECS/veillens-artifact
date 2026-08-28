@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a tennis court with several background spectators whose faces are visible, constituting biometric identifiers (Level 1). Additionally, a sports wheelchair is clearly visible near a player, enabling a sensitive inference about mobility/disability (Level 2). Faces are somewhat small and in the background, reducing certainty, but multiple identifiable faces plus the wheelchair increase compositional risk. Overall risk is moderate-to-high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult spectator face at left background, gray-haired man leaning over barrier",
+        "Anonymized_element": "blurred face, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child spectator face with red cap at left background",
+        "Anonymized_element": "blurred face, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "sports wheelchair frame and wheels beside/under the player on right side",
+        "Anonymized_element": "generic sports equipment, regular chair frame, obscure/replace wheelchair features",
+        "privacy_element": "wheelchair implying mobility impairment/disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10142451/r1_crops/2017_10142451_0.png"
+}

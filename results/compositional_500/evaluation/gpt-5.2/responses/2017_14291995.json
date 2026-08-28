@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a stage performance with two people, but their faces are fully obscured. No readable names, logos, documents, or government/financial identifiers are visible. The main privacy-relevant cues are contextual: musical instruments and stage equipment that reveal the activity of performing live music. Since there is no identifiable biometric data and only moderate activity information, the overall privacy risk is low. Score reflects minimal but present behavioral context. Confidence is high because the relevant clues are clear and faces are hidden.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "acoustic guitar held by the central performer on stage",
+        "Anonymized_element": "remove guitar, replace with generic unbranded prop or neutral silhouette",
+        "privacy_element": "indicates live musical performance, hobby/profession context",
+        "target_concept": "guitar",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "violin and bow being played by the person at left",
+        "Anonymized_element": "replace with generic unbranded prop, neutral object without performance cue",
+        "privacy_element": "reveals participation in a live musical performance",
+        "target_concept": "violin",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14291995/final/2017_14291995_final.png"
+}

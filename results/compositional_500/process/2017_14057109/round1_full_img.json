@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows two children prominently in the foreground with clear, unobstructed faces, which are strong biometric identifiers (highest severity). Additional contextual clues include a stroller implying young age and a saddled pony in a park-like setting that reveals activity but not a precise location. The combination raises privacy risk primarily due to identifiable child faces, with supporting moderate-risk context. Overall risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of standing child in blue jacket centered-right",
+        "Anonymized_element": "blurred face, pixelated features, occluded eyes, turned-away head",
+        "privacy_element": "clear full face with visible eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of younger child seated in stroller",
+        "Anonymized_element": "blurred face, pixelated features, occluded eyes, turned-away head",
+        "privacy_element": "clear full face with visible eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "stroller with a child seated in it, foreground left-center",
+        "Anonymized_element": "empty stroller without occupant, generic stroller shape, or crop to remove stroller",
+        "privacy_element": "presence of a stroller indicating the child\u2019s very young age",
+        "target_concept": "stroller",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "saddled pony with tack in background right",
+        "Anonymized_element": "no animal present, unsaddled generic animal shape, crop to trees/path only",
+        "privacy_element": "pony with saddle suggesting pony-ride activity in a park",
+        "target_concept": "saddled pony",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14057109.jpg"
+}

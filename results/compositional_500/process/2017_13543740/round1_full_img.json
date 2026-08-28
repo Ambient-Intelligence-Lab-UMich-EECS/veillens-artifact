@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a single nude person kneeling with arms raised, with the face visible and the body fully exposed. The highest-severity clue is biometric data from a clearly visible face (Level 1). This is compounded by explicit nudity of the chest and pelvic region (Level 2), which adds sensitive content and personal attributes. Together these cues strongly identify and expose the subject, yielding a high privacy risk. The scene lacks additional identifiers like names or documents, but the combination of an identifiable face and nudity justifies a high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "visible face of the kneeling person looking upward, centered in frame",
+        "Anonymized_element": "blurred face, pixelated facial features, cropped above shoulders, shadowed silhouette",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth, overall facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "exposed chest with visible breasts and nipples",
+        "Anonymized_element": "covered chest with opaque garment, smoothed torso without anatomical detail",
+        "privacy_element": "bare breasts and nipples",
+        "target_concept": "nude chest",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "exposed lower abdomen and pelvic area while kneeling",
+        "Anonymized_element": "opaque underwear or fabric covering pelvis, smoothed contours with no anatomical detail",
+        "privacy_element": "nudity of pelvic region",
+        "target_concept": "pelvic area",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13543740.jpg"
+}

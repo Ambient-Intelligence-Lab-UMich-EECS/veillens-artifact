@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows an empty medical room with equipment, a monitor displaying generic waveforms, small unreadable equipment stickers, and a wall clock. There are no people, faces, names, IDs, or legible records. Visible clues are limited to generic digital displays and minor labels that offer only background or metadata context without linking to an individual. Thus the highest severity is low (Level 4), yielding a low overall privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bedside patient monitor screen with generic waveform lines",
+        "Anonymized_element": "blank screen, screensaver pattern, powered-off display",
+        "privacy_element": "medical device display suggesting clinical context",
+        "target_concept": "medical monitor screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small white barcode/serial stickers on blue medical device housing",
+        "Anonymized_element": "blank label, solid color panel without stickers",
+        "privacy_element": "asset/serial labeling that could identify equipment ownership",
+        "target_concept": "equipment label",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "round wall clock displaying current time",
+        "Anonymized_element": "blank wall decor, clock without hands or numbers",
+        "privacy_element": "visible time providing contextual metadata",
+        "target_concept": "wall clock",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11061852/r1_crops/2017_11061852_1.png"
+}

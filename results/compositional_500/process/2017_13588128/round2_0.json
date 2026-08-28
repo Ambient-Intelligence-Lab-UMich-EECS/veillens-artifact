@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a stone house behind a fence and a distant parked vehicle. No people, faces, readable text, house numbers, or license plates are visible. The clues pertain mainly to property/assets without direct identifiers, so the highest severity present is Level 4. With minimal compositional reinforcement and no legible location or identity signals, the privacy risk is low. Confidence is high due to clear visibility of the limited elements.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stone house exterior with front porch behind a black metal fence",
+        "Anonymized_element": "generic building facade, simplified textures, no distinctive architectural details",
+        "privacy_element": "distinct residential property appearance",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "silver pickup truck parked on the left side of the scene",
+        "Anonymized_element": "generic blurred vehicle shape, no brand details, no plate area",
+        "privacy_element": "presence of a private vehicle (license plate not readable)",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13588128/r1_crops/2017_13588128_0.png"
+}

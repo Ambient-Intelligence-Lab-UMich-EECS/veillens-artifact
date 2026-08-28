@@ -1,0 +1,83 @@
+{
+  "reasoning": "The cropped image shows a street gathering with several clearly identifiable faces, which is Level 1 risk. Additional contextual cues reveal approximate location, including a cap reading \u201cSan Francisco,\u201d a distinctive building facade with banners, and an intersection traffic sign. These location hints combine with biometric faces to raise re-identification risk. Overall visibility is clear and central, justifying a high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bearded man in green cap at center-right with clear side profile face",
+        "Anonymized_element": "face blurred or pixelated, turned away head, generic non-identifiable silhouette",
+        "privacy_element": "identifiable facial features, skin texture, profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in gray hoodie holding a camera/phone with visible face",
+        "Anonymized_element": "blurred face, generic silhouette, device-only without person",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bald man with glasses near center background facing camera",
+        "Anonymized_element": "pixelated face, replace with back-of-head, generic crowd filler",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black baseball cap with red text reading \u2018San Francisco\u2019 on person in foreground right",
+        "Anonymized_element": "plain cap, no text or logo",
+        "privacy_element": "city name text revealing locale",
+        "target_concept": "apparel text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive white building facade with arched windows and purple street banners",
+        "Anonymized_element": "generic building facade, remove unique ornaments and banners",
+        "privacy_element": "recognizable architecture and banners indicating specific locale",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "intersection traffic light pole with \u2018no left turn\u2019 sign",
+        "Anonymized_element": "blank sign, generic pole without symbols",
+        "privacy_element": "intersection signage aiding location triangulation",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12904841/r1_crops/2017_12904841_1.png"
+}

@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a close-up of a smartphone running a fitness app with legible workout data: per\u2011kilometer splits and total times, plus a bar chart of performance. No names, faces, or IDs are visible. The highest severity is Level 3 because the data exposes the person\u2019s exercise behavior and routine. Multiple reinforcing activity cues (split list and chart) modestly raise risk, while absence of identifiers keeps it moderate. Confidence is high due to clear readability of the workout metrics.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smartphone screen section listing per\u2011kilometer splits with times (e.g., 1 Km 05:46, 2 Km 05:57)",
+        "Anonymized_element": "blank placeholders, blurred/obfuscated numbers, generic UI without metrics",
+        "privacy_element": "exercise distances and split times revealing running performance and routine",
+        "target_concept": "fitness app splits list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "red bar chart of workout performance at the top of the app screen",
+        "Anonymized_element": "abstract bars with no scale or labels, generic decorative graphic",
+        "privacy_element": "pattern of workout intensity and progress across segments",
+        "target_concept": "workout chart",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12577532/r1_crops/2017_12577532_3.png"
+}

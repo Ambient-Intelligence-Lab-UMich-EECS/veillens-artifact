@@ -1,0 +1,9 @@
+{
+  "reasoning": "1) Country-level cues:\n- The traffic signage is clearly German: a red/white circular restriction sign with the supplementary plate reading “Anlieger frei” (residents/authorized access only) is a standard German phrasing and sign style.\n- The parking sign includes “1 Std” (1 hour) in German, consistent with German parking regulation signage.\n- EU-style license plates are visible; the left vehicle appears to have a German plate format with a city code.\n- Architecture (stucco facades, multi-pane windows, and dense pre-war/old-town streetscape) is consistent with many German inner-city neighborhoods.\n\n2) Narrowing within Germany (region/city):\n- The left car’s plate begins with “EF”, which is the German registration code for Erfurt (capital of Thuringia). This is a strong localization clue.\n- The street environment matches a central-European, historic-core area: narrow roadway, on-street parking along both sides, older mixed-use buildings with flower boxes.\n- No contradictory clues (e.g., Swiss-style plates/signage, Austrian-specific sign variants) are present.\n\n3) Street-level refinement:\n- A small red street-name plaque is mounted high on the right-side building (typical in many German cities), but the text is not fully legible at this resolution.\n- The combination of old-town building stock, the “Anlieger frei” restriction, and short-term parking signage suggests a controlled-traffic area near an inner-city core in Erfurt rather than a suburban setting.\n\nOverall, the strongest unintentional geo-leak is the “EF” registration code pointing to Erfurt, Thuringia, Germany; the remaining visual context supports an inner-city street in that city.",
+  "location_estimate": {
+    "latitude": 50.98,
+    "longitude": 11.03,
+    "confidence": "Medium",
+    "region": "Germany, Thuringia, Erfurt"
+  }
+}

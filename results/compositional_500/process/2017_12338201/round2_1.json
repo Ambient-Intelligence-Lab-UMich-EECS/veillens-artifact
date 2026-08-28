@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows the back of a person wearing a dark sports jersey with a large number \u201c33\u201d and the word \u201cCOMMITMENT,\u201d along with a yellow flag-football belt. No faces or government/financial/medical identifiers are visible. The main privacy signals are moderate: the uniform text/number and sport-specific gear reveal activities/behaviors and some personal attributes but do not uniquely identify an individual. With only Level 3 clues and no compositional reinforcement from Level 1\u20132 elements, the privacy risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a person wearing a dark jersey with large white number 33 and the word 'COMMITMENT'",
+        "Anonymized_element": "plain jersey, no text or numbers, solid color",
+        "privacy_element": "jersey number, visible team-style text, distinctive clothing indicating team membership",
+        "target_concept": "sports jersey back",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow flag-football belt with hanging flags around the waist",
+        "Anonymized_element": "plain belt without flags, neutral waistband",
+        "privacy_element": "sport-specific flag belt indicating participation in flag football",
+        "target_concept": "sports belt/flags",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "back of a person\u2019s head and upper body (no face visible)",
+        "Anonymized_element": "generic hat or blurred head silhouette",
+        "privacy_element": "hairstyle and body build revealing general physical attributes",
+        "target_concept": "back of head/torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/r1_crops/2017_12338201_1.png"
+}

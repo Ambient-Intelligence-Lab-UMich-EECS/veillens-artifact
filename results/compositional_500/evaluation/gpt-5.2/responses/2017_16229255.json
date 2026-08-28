@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a vintage outdoor sign reading “The Coffee Shoppe” with partial “Diners.” No people, faces, IDs, financial or medical items are visible. The only privacy-relevant element is the readable business name, which could hint at a specific location if the sign is unique. Because it lacks direct personal identifiers and no additional reinforcing clues, the overall risk is low. Confidence is high due to clear visibility and straightforward content.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vintage storefront sign with readable text 'The Coffee Shoppe' and partial 'Diners'",
+        "Anonymized_element": "blank sign face, abstract shapes, blurred or removed text, generic logo-less design",
+        "privacy_element": "readable business name/logo that can indicate a physical place",
+        "target_concept": "business sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16229255/final/2017_16229255_final.png"
+}

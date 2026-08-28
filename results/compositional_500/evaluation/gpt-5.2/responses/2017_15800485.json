@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a person indoors with the face fully obscured but the upper body largely unclothed and only partially censored, indicating implied nudity/ intimate context. No government IDs, names, or readable text are visible. The hairstyle and exposed physique provide some personal-attribute cues, but without a face or identifiers. The highest-severity clue is Level 2 (nudity/intimate content), centrally framed and clear, which drives a moderate-to-high privacy risk despite the hidden face.",
+  "personal_info_privacy_score": {
+    "score": 0.5,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "exposed bare upper torso and shoulders of the person (with partial censoring)",
+        "Anonymized_element": "add plain clothing or towel, crop above shoulders, extend censoring to fully cover torso",
+        "privacy_element": "implied toplessness, exposed skin suggesting nudity/intimate context",
+        "target_concept": "nudity/torso",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ]
+      },
+      {
+        "object_description": "distinct medium-length wavy hair around the head",
+        "Anonymized_element": "alter hairstyle length/color, add hat or head covering, blur hair region",
+        "privacy_element": "unique hairstyle and hair color contributing to recognizable appearance",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800485/final/2017_15800485_final.png"
+}

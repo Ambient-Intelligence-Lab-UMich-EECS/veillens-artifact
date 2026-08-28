@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows a Spanish lottery/coupon ticket on a table. There are no people or personal identifiers tied to an individual. Visible elements include a barcode, serial and ticket numbers, a printed date, and location text/map for Castellar del Vall\u00e8s (Barcelona). These are generic document identifiers and location info unlinked to a person. The highest severity is Level 3 due to explicit location information, but without any biometric, government ID, names, or financial account data. Overall risk is low and contextual.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black-and-white barcode strip at the top edge of the ticket",
+        "Anonymized_element": "solid decorative stripe, no bars or code pattern",
+        "privacy_element": "machine-readable barcode that encodes ticket identifier",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large printed ticket number \u201c21439\u201d with adjacent \u201cSERIE 041\u201d",
+        "Anonymized_element": "randomized digits or blurred number block",
+        "privacy_element": "readable unique ticket/serial numbers",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "text block with crest and map naming \u201cCastellar del Vall\u00e8s, Provincia: Barcelona\u201d",
+        "Anonymized_element": "generic placeholder text and abstract map with no place names",
+        "privacy_element": "explicit municipality and province names, highlighted map region",
+        "target_concept": "place name text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bold date label \u201c3 ENE. 07\u201d at the bottom left of the ticket",
+        "Anonymized_element": "placeholder date like 01-01-XX or removed date label",
+        "privacy_element": "specific printed date",
+        "target_concept": "printed date",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14001532.jpg"
+}

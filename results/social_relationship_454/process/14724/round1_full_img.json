@@ -1,0 +1,30 @@
+{
+  "img_id": "14724",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 6,
+    "2 3": 6,
+    "2 4": 4,
+    "1 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 6,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Both wear the same military camouflage and berets, standing near each other on base during a media event; no intimacy, just colleagues present. => professional\n\n[P1-P3]: P1 is a soldier while P3 operates a TV camera at the same interview scene; some distance and no personal contact, indicating a formal media\u2013subject context. => professional\n\n[P1-P4]: Both are soldiers in matching uniforms on base; P4 is being interviewed while P1 stands nearby as another service member. => professional\n\n[P2-P3]: P2 (soldier) stands close to P3 (cameraman) during the interview, with no personal interaction\u2014typical of press covering military personnel. => professional\n\n[P2-P4]: Both are soldiers from the same unit on duty, with P4 being interviewed and P2 observing nearby; their attire and setting suggest colleagues. => professional",
+  "timestamp": 1776889434.9314759
+}

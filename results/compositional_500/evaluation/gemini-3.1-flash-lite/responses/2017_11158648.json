@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image features a graduation or awards ceremony, displaying a diploma held by an individual in a naval uniform. The document contains the recipient's full name, which acts as a non-unique but highly specific identifier. Combined with the military uniform and rank insignia, this allows for potential identification of the individual's career and workplace. The presence of a full name on a document constitutes a Level 2 risk, which is the primary driver of the assessment. Given the clarity of the text and the specific nature of the professional identity, the risk is rated as high-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Diploma held by the individual featuring printed text.",
+        "Anonymized_element": "blank document, no text, placeholder academic certificate",
+        "privacy_element": "full name of the individual, name of the institution, military program title",
+        "target_concept": "certificate",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Military uniform with rank stripes and service ribbons.",
+        "Anonymized_element": "plain suit jacket, no insignia, no specific ribbons or patches",
+        "privacy_element": "rank stripes, military service ribbons indicating specific career achievements",
+        "target_concept": "uniform",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11158648/final/2017_11158648_final.png"
+}

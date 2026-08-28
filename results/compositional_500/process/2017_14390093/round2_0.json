@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a clinical indoor setting with one person on the left whose side-profile face is partially visible while wearing a surgical cap and glasses; another central figure is masked out. The clearest privacy signal is the partially identifiable face (Level 1). The medical attire further indicates occupational activity (Level 3). No names, documents, or explicit health/financial data are visible. Given a single partially visible face plus contextual medical-work cues, the privacy risk is moderate-to-high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-side partial profile of a person wearing glasses and a blue surgical cap",
+        "Anonymized_element": "blurred or pixelated face, face covered with mask or turned fully away, generic head shape without facial details",
+        "privacy_element": "visible facial features (eye region, nose, ear outline), unique skin and facial contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue surgical cap and light blue scrub top on the left person",
+        "Anonymized_element": "casual neutral clothing, hair uncovered or generic beanie without medical styling",
+        "privacy_element": "medical attire indicating workplace role/activity",
+        "target_concept": "work uniform",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14390093/r1_crops/2017_14390093_0.png"
+}

@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public parade with a large rainbow pride flag and many clearly visible faces, including a prominent foreground person. Identifiable faces constitute Level 1 biometric data. The pride flag and demonstrative context enable sensitive inference about LGBTQ+ affiliation or support (Level 2) and observable participation in a public event (activities). A storefront sign provides mild location cues. Combined, these clues create a high privacy risk even without explicit names or IDs. The evidence is clear and centrally framed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person\u2019s full face on the left, unobstructed and in focus",
+        "Anonymized_element": "blurred or pixelated face, face turned away, add occluding object",
+        "privacy_element": "clear facial features including eyes, nose, mouth enabling biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of mid-ground participants/spectators with multiple visible faces across the frame",
+        "Anonymized_element": "blur or pixelate all faces in this crowd region, add motion blur",
+        "privacy_element": "recognizable facial features of several individuals",
+        "target_concept": "faces (group region)",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow pride flag stretched across the street",
+        "Anonymized_element": "solid-color banner without symbolic meaning, desaturated generic fabric",
+        "privacy_element": "distinct rainbow pride symbolism implying LGBTQ+ affiliation or support",
+        "target_concept": "pride flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign reading STELLA ARTOIS on the right-side building facade",
+        "Anonymized_element": "blank facade or generic unreadable signage",
+        "privacy_element": "recognizable business sign that can help geolocate the scene",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14348696.jpg"
+}

@@ -1,0 +1,62 @@
+{
+  "reasoning": "The image shows a person in a bikini standing in a hot tub with face obscured. No government IDs, faces, or readable text are present. However, several Level 3 cues are visible: a distinctive side/hip tattoo, detailed body features and physique in swimwear, the clear depiction of a leisure activity (hot tub bathing), and background residential rooflines with a recognizable mountainous landscape that could aid rough geolocation. These moderate-risk clues combine to create a nontrivial privacy risk even without direct identifiers. Confidence is medium-high due to clear visibility of these elements but absence of Level 1–2 data.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "distinct tattoo on the person’s left side near the hip/waist",
+        "Anonymized_element": "remove tattoo, plain skin texture, subtle shading only",
+        "privacy_element": "unique tattoo design and placement",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "swimwear-clad torso and abdomen prominently visible above the waterline",
+        "Anonymized_element": "add towel or cover-up, crop to non-body area, neutral one-piece without contours",
+        "privacy_element": "distinct body shape and physique details",
+        "target_concept": "exposed torso in swimwear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "person standing and soaking in a circular tiled hot tub",
+        "Anonymized_element": "empty hot tub, generic pool edge without person, reduce water detail",
+        "privacy_element": "leisure activity context (hot tub use)",
+        "target_concept": "hot tub activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "background house roofline with tiles and mountainous landscape",
+        "Anonymized_element": "blurred generic foliage and sky, remove distinct roof and terrain features",
+        "privacy_element": "environmental cues that can narrow down location (residential rooftop, specific terrain)",
+        "target_concept": "background landscape/roof",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "partial arm and shoulder of another person at right edge of hot tub",
+        "Anonymized_element": "remove arm, replace with water surface or tub edge",
+        "privacy_element": "presence of another unidentifiable individual",
+        "target_concept": "bystander limb",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13002952/final/2017_13002952_final.png"
+}

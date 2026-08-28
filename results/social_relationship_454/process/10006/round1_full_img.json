@@ -1,0 +1,32 @@
+{
+  "img_id": "10006",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 3,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 3
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They\u2019re sharing a casual meal at a pizza place, seated very close with comfortable, relaxed smiles and P2 leaning in front of P1. The proximity and paired pose suggest romantic closeness rather than just friendship. => couple\n\n[P1-P3]: Group dining setting; they\u2019re on opposite sides of the table, smiling toward the camera but not touching or posing intimately. This looks like friendly socializing. => friends\n\n[P1-P4]: Casual restaurant scene; they\u2019re separated across the table with no direct interaction, just smiling for a group photo. => friends\n\n[P2-P3]: They appear across the table at a pizza outing, leaning in only for the photo with no physical contact or intimate cues. => friends\n\n[P2-P4]: Same casual setting; they\u2019re on different sides of the table and not interacting closely beyond the group pose. => friends\n\n[P3-P4]: Sitting side by side with their heads very close and big smiles during a casual meal, showing a paired, intimate pose. => couple",
+  "timestamp": 1776887668.2333112
+}

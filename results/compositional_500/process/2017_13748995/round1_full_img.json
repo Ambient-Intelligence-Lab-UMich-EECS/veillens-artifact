@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image appears to be a virtual-world panel scene with avatars, not real human faces. The prominent privacy risk is a large presentation slide containing readable text that lists multiple real names and associated usernames/handles, as well as a moderator\u2019s name. These are Level 2 non-unique identifiers that can tie individuals to an event or community. There are no visible government IDs, financial or medical data, and no real biometric faces. Given the clear, legible identifiers but lack of stronger Level 1 data, the overall risk is moderate. Confidence is high because the text is clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large white presentation slide on the left with a readable list of presenter and moderator names plus usernames",
+        "Anonymized_element": "blank slide, blurred/unreadable text, placeholder lorem text without names, generic shapes or logo only",
+        "privacy_element": "readable full names, readable usernames/handles, role labels (presenter/moderator) linking names to an event",
+        "target_concept": "presentation slide text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13748995.jpg"
+}

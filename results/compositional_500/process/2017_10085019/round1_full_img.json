@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image depicts a street performance with many spectators. Several individuals\u2019 faces are clearly visible and central, including the performer (eyes covered by a band but the rest of the face is unobscured) and multiple audience members (adults and children) in the foreground. Visible, identifiable faces constitute Level 1 biometric data. No names, IDs, or explicit location details are readable. The presence of multiple identifiable faces elevates the overall privacy risk despite some background blur.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central performer\u2019s face with a black rectangular blindfold covering the eyes",
+        "Anonymized_element": "full face blur, pixelation, opaque mask covering entire face, silhouette",
+        "privacy_element": "recognizable facial structure, nose and mouth visible, distinctive hair and accessories",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young girl\u2019s face in the right-foreground wearing a jacket with light-colored panels",
+        "Anonymized_element": "strong blur over face, pixelation, replace with turned head or generic silhouette",
+        "privacy_element": "full frontal face with eyes, nose, and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "adult woman\u2019s face slightly right of center, dark jacket, looking toward camera",
+        "Anonymized_element": "face blur, pixelation, occluding bar over eyes, turned-away head",
+        "privacy_element": "clear facial features, direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "adult man\u2019s face at bottom-center of frame, short hair, looking forward",
+        "Anonymized_element": "face blur, pixelation, replace with non-descript profile",
+        "privacy_element": "frontal face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10085019.jpg"
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a projected computer screen with readable browser tab titles that include personal names, and a person standing near the screen whose face is obscured and not identifiable. The highest-severity clues are Level 2 non-unique identifiers from the names visible in the UI. The human figure contributes only low risk because facial biometrics are not discernible. Together these yield a moderate privacy risk. Confidence is medium since the names are readable but not clearly linked to the person shown.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "browser tab title near the top of the projection reading a full personal name '(3) Frida Wallin Nilsson'",
+        "Anonymized_element": "generic tab title text, placeholder words, no personal names",
+        "privacy_element": "readable personal name in UI",
+        "target_concept": "browser tab title",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adjacent browser tab title showing a personal name 'Ken Robinson \u2026'",
+        "Anonymized_element": "generic tab title text, placeholder words, no personal names",
+        "privacy_element": "readable personal name in UI",
+        "target_concept": "browser tab title",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person standing at a podium on the right with face blurred/obscured",
+        "Anonymized_element": "back-facing silhouette, no facial detail, generic attendee",
+        "privacy_element": "presence of a person without identifiable facial features",
+        "target_concept": "person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11053222/r1_crops/2017_11053222_1.png"
+}

@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a bright orange sports car on a racetrack with a helmeted driver visible through the side window. The driver\u2019s face is largely obscured by the helmet and glass, so no identifiable biometrics or government IDs are present. Privacy cues are limited to property depiction (distinct car/model branding) and an activity inference (track driving). A small window decal with text exists but is too small to read, so it does not expose names or IDs. Overall risk is low and contextual rather than directly identifying.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "helmeted driver visible through the car\u2019s side window",
+        "Anonymized_element": "tinted window, no visible occupant, motion blur over cabin",
+        "privacy_element": "motorsport driving activity visible via helmet and seating posture",
+        "target_concept": "driver with helmet",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "orange sports car exterior with prominent GT3 RS branding on the lower door",
+        "Anonymized_element": "generic sports car, neutral color, remove model branding and distinctive decals",
+        "privacy_element": "distinct vehicle model branding and unique appearance",
+        "target_concept": "vehicle exterior/branding",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small rectangular decal with alphanumeric text on the rear side window (unreadable)",
+        "Anonymized_element": "blank decal, solid color without text or logos",
+        "privacy_element": "text decal that could contain identifiers though illegible here",
+        "target_concept": "window decal",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12061680/r1_crops/2017_12061680_0.png"
+}

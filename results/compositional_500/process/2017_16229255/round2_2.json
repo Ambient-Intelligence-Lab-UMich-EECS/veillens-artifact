@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a vintage roadside sign with readable business text (\u201cTHE\u201d and partial \u201cCoffe Sh\u2026\u201d) and a distinctive arrow marquee. No people or identifiers are present. The main privacy implication is potential location inference from a business name and unique sign design, which is a Level 3 risk. With no faces or sensitive data, the overall risk remains low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vintage storefront sign with readable text and arrow marquee lights",
+        "Anonymized_element": "blank sign panel, blurred/obscured text, generic sign shape without logo",
+        "privacy_element": "readable business name text, distinctive sign design that could identify a specific venue",
+        "target_concept": "business sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16229255/r1_crops/2017_16229255_2.png"
+}

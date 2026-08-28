@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a public street scene with two foreground individuals whose faces are obscured, but a smaller background person\u2019s side face is visible and reasonably discernible. This constitutes biometric data exposure (Level 1), though the face is small and partly profile, reducing identifiability. No readable names, documents, financial or medical details, or precise addresses are visible. Overall risk stems mainly from the background face with limited compositional reinforcement, yielding a moderate score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small background person\u2019s side face with sunglasses near center-left of frame",
+        "Anonymized_element": "turn head away, apply strong blur, replace with generic bokeh crowd, obscure facial features",
+        "privacy_element": "visible facial structure in profile, hair style, partial facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10821154/r1_crops/2017_10821154_0.png"
+}

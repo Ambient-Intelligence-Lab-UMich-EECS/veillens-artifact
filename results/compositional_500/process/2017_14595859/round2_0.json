@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a patient in a hospital bed receiving a nasal swab from a caregiver. Both individuals\u2019 faces are clearly visible, providing strong biometric identifiers (Level 1). The patient\u2019s uniform displays a readable surname, adding a non-unique identifier (Level 2) that can link identity to workplace affiliation. The nasal swab is an explicit medical action revealing health-related information (Level 2). A hospital whiteboard with room-related text adds location/context (Level 3). These combined cues create a high privacy risk with clear, legible details.",
+  "personal_info_privacy_score": {
+    "score": 0.83,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "patient\u2019s frontal face on hospital bed",
+        "Anonymized_element": "blurred face, add neutral mask, head turned away",
+        "privacy_element": "full identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "caregiver\u2019s left-profile face beside the bed",
+        "Anonymized_element": "blurred profile, occluding bar over eyes, face turned away",
+        "privacy_element": "identifiable facial features in clear profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "readable name text patch on patient\u2019s camouflage uniform chest",
+        "Anonymized_element": "blank patch with no text or logo, generic fabric",
+        "privacy_element": "surname text, workplace/military uniform indicator",
+        "target_concept": "name tag/text on clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cotton swab inserted into patient\u2019s nostril during testing",
+        "Anonymized_element": "remove swab, hand positioned away, neutral interaction",
+        "privacy_element": "medical testing procedure implying health status",
+        "target_concept": "medical swab/procedure",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "hospital whiteboard in background with partial room-related text",
+        "Anonymized_element": "blank whiteboard, no text or markings",
+        "privacy_element": "room/department wording that indicates facility area",
+        "target_concept": "whiteboard with room info",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14595859/r1_crops/2017_14595859_0.png"
+}

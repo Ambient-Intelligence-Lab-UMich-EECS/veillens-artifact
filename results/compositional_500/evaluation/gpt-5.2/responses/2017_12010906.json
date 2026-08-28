@@ -1,0 +1,32 @@
+{
+  "reasoning": "The scene shows a residential building facade and a parked scooter on a public street; no people, faces, readable text, addresses, or unique identifiers are visible. There are no legible government, financial, or medical documents. The highest-severity elements present are low-risk property/asset indicators (a home exterior and a vehicle) without identifying numbers or branding. With no compositional reinforcement toward identity or location disclosure, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "residential building facade with steps, columns, and plants",
+        "Anonymized_element": "more generic facade texture, remove any signage or plaques, no house numbers or unique markers",
+        "privacy_element": "distinctive exterior details that could be matched if combined with other data",
+        "target_concept": "building exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "parked motor scooter near curb, partial rear side visible",
+        "Anonymized_element": "generic unbranded scooter, blur or remove any stickers or plate area",
+        "privacy_element": "vehicle make/model cues, unique stickers or markings",
+        "target_concept": "vehicle (scooter)",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12010906/final/2017_12010906_final.png"
+}

@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a parade with participants in a convertible wearing crowns and sashes; primary faces are obscured, and no license plate or address is visible. The main potential identifier is the pageant-style sash that contains printed text which could include a name or title if legible. Background spectators have small, distant faces. Overall, no Level 1 identifiers are clearly visible; risks stem from a possible non-unique identifier on the sash (Level 3) and low-level context from a crowd and a vehicle. These clues suggest a low to lower-moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white pageant sash with printed text across the torso of the lead participant",
+        "Anonymized_element": "plain blank sash, no text or logos, solid neutral color",
+        "privacy_element": "printed title/name text on sash, possible event or organization name",
+        "target_concept": "sash text",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "background spectators along the sidewalk with small visible faces",
+        "Anonymized_element": "faces heavily blurred, turned away, or replaced with silhouettes",
+        "privacy_element": "multiple human faces in a crowd, though distant and low detail",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "black convertible car carrying parade participants, no license plate visible",
+        "Anonymized_element": "generic car with minimized make/model cues",
+        "privacy_element": "distinctive vehicle appearance potentially recognizable to acquaintances",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13756260/final/2017_13756260_final.png"
+}

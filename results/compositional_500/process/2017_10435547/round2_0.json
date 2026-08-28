@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a storefront with a readable business sign and a public poster about voter registration. Several pedestrians are present but faces are small and not individually identifiable. There are no names of people, government IDs, credit cards, or close-up faces. The main privacy signal is potential location disclosure via the specific business signage; additional minor signals come from a readable public poster and distant bystanders. Overall risk is low-to-moderate with no Level 1\u20132 clues visible.",
+  "personal_info_privacy_score": {
+    "score": 0.19,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront sign with distinct business name on the awning/facade",
+        "Anonymized_element": "plain awning, generic textless sign, abstract logo shapes",
+        "privacy_element": "readable business name that can pinpoint a location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rectangular public poster/banner near the bottom of the window with voter-registration message",
+        "Anonymized_element": "blank poster, generic graphic without text, low-detail pattern",
+        "privacy_element": "readable civic/political message visible in public",
+        "target_concept": "poster/sign",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small group of pedestrians on sidewalk, faces tiny and not individually discernible",
+        "Anonymized_element": "silhouetted figures, motion-blurred pedestrians, face-blurred figures",
+        "privacy_element": "presence of people in public space (no identifiable biometrics)",
+        "target_concept": "distant pedestrians",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10435547/r1_crops/2017_10435547_0.png"
+}

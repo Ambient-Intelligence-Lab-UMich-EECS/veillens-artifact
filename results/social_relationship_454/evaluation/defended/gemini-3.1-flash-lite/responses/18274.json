@@ -1,0 +1,21 @@
+{
+  "img_id": "18274",
+  "predictions": {
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 2,
+    "3 4": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P3]: P1 and P3 are positioned at different areas of the scene with no direct interaction or physical proximity. They appear to be separate individuals moving through the public space independently. => no-relationship\n\n[P1-P4]: P1 and P4 are positioned far apart in the park setting with no observable interaction or shared engagement. They appear to be bystanders who are not connected to each other. => no-relationship\n\n[P1-P5]: P1 and P5 are at different ends of the frame with no visual evidence of contact, communication, or association. They are likely unrelated individuals in the same public area. => no-relationship\n\n[P3-P4]: P3 is focusing on a skateboard activity while P4 is occupied with a baby in a stroller; there is no interaction or spatial awareness between them. They are likely strangers sharing the same public path. => no-relationship\n\n[P3-P5]: P3 and P5 are spatially distant and are engaged in entirely different activities without any acknowledgement or interaction. There is no evidence of a social bond. => no-relationship\n\n[P4-P5]: P4 is carrying and attending to the child P5, indicating a clear, nurturing caregiver-infant relationship. Their physical contact and focused attention define them as immediate family. => family-members",
+  "timestamp": 1779945376.628219
+}

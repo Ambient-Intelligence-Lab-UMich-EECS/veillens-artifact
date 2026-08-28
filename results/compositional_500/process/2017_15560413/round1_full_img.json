@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows the back of a blank postcard with a casual handwritten challenge message and a small brand logo. There are no people, faces, names, addresses, account numbers, or government identifiers. The content does not reveal specific identity or sensitive traits. The only privacy-relevant element is a generic handwritten note on a document, which is low risk by itself. Therefore the overall risk is minimal with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten message on the back of a blank postcard",
+        "Anonymized_element": "blank postcard surface, abstract doodles, generic shapes with no readable text",
+        "privacy_element": "readable handwritten text on a document",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15560413.jpg"
+}

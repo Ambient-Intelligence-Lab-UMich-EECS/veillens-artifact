@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows multiple identifiable human faces, including a walker at left and several seated spectators in the background. These visible faces constitute Level 1 biometric data and also reveal personal appearance traits. Additionally, a readable \u201cBank of America\u201d storefront sign provides a recognizable landmark that can narrow the location. The combination of several clear faces with a geolocating sign yields a high privacy risk, though not maximal because there are no government IDs, financial or medical details. Confidence is high due to clear visibility of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-side walker\u2019s unobstructed face",
+        "Anonymized_element": "blurred face, generic smooth skin tone, no facial details",
+        "privacy_element": "full face, eyes-nose-mouth visible, distinctive features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "seated spectator\u2019s face in front row near red bag",
+        "Anonymized_element": "blurred or pixelated face region, neutral skin patch",
+        "privacy_element": "full face with clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "another seated spectator\u2019s face directly behind front row",
+        "Anonymized_element": "blurred face, generic oval placeholder",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "red \u201cBank of America\u201d storefront sign in background",
+        "Anonymized_element": "blank storefront sign, generic colors without text or logo",
+        "privacy_element": "readable bank name/logo indicating a specific business",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13913405/r1_crops/2017_13913405_0.png"
+}

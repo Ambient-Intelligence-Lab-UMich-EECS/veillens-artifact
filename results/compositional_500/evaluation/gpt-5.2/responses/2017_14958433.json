@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a shirtless person seated on a yoga mat in a butterfly-like pose. The face is deliberately obscured, so no biometric identification is possible. There are no names, documents, or explicit identifiers. The main privacy signals are Level 3: visible body/physique (personal attributes) and a clearly depicted activity (yoga/exercise). Background elements suggest an indoor home setting but lack any address or landmark, contributing only weak, context-level risk. With no Level 1–2 clues, the overall risk is moderate-low, driven by multiple Level 3 cues. Confidence is high because these elements are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare upper torso and chest of the person",
+        "Anonymized_element": "plain fitted t-shirt, neutral color fabric covering chest and shoulders",
+        "privacy_element": "visible physique, chest hair, body build",
+        "target_concept": "torso/chest",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "person seated on a yoga mat in a butterfly/stretch pose",
+        "Anonymized_element": "neutral seated posture, generic sitting on mat without exercise pose",
+        "privacy_element": "yoga/exercise activity, stretching posture, fitness context",
+        "target_concept": "yoga pose on mat",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "indoor room corner with baseboard heater and plain walls",
+        "Anonymized_element": "plain blurred background, generic wall texture without fixtures",
+        "privacy_element": "home interior fixture suggesting residential setting",
+        "target_concept": "home interior fixture",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/final/2017_14958433_final.png"
+}

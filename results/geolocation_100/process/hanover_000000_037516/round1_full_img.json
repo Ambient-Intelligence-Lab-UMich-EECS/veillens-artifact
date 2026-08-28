@@ -1,0 +1,78 @@
+{
+  "reasoning": "Country level: The image shows German-language text and symbols. The large gold-letter facade reads \u201cHANNOVERSCHE ALLGEMEINE ZEITUNG,\u201d and a red \u201cSparkasse\u201d bank sign is visible. Sparkasse and the specific spelling with umlauts firmly indicate Germany. Road markings (white dashed cycle lane, wheelchair bay symbol) and urban street furniture match German standards, ruling out neighboring countries. City level: \u201cHannoversche Allgemeine Zeitung\u201d (HAZ) is the major newspaper of Hannover. The dark clinker-brick expressionist facade with small white-paned windows matches the architecture of central Hannover near the historic Anzeiger district. The co-location of HAZ signage on a prominent brick facade and a central intersection with cycle infrastructure and tram-era poles aligns with the Goseriede/Steintor area in Hannover. Alternatives like Hamburg or Bremen have similar brick but would not feature HAZ signage. Street level: The exact gold-letter HAZ sign on the dark brick facade, the arrangement of windows and vertical brick pilasters, and the small plaza-like island with grass and sticker-covered black poles uniquely match the frontage of the Anzeiger/press buildings along Goseriede near Steintor. The Sparkasse branch across the narrow green median and the specific curb geometry of the crossing further anchor the spot to the intersection by Anzeiger-Hochhaus on Goseriede.",
+  "location_estimate": {
+    "latitude": 52.3791,
+    "longitude": 9.7316,
+    "confidence": "High",
+    "region": "Germany, Lower Saxony, Hannover (Goseriede / Steintor area)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "building sign with gold letters on a facade",
+        "non_geolocation_element": "gold color, serif letters, mounted on dark brick, mid-height placement, even lighting",
+        "geolocation_element": "text 'HANNOVERSCHE ALLGEMEINE ZEITUNG' in German",
+        "target_concept": "building sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shop sign with red S logo above windows",
+        "non_geolocation_element": "red square icon, white letterform, backlit panel, mounted on gray facade",
+        "geolocation_element": "text 'Sparkasse' and Sparkasse 'S' logo (German bank)",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "brick facade with small white-paned windows",
+        "non_geolocation_element": "dark clinker brick, repetitive small windows, vertical pilasters, historic style",
+        "geolocation_element": "regional North German brick expressionist architecture associated with Hannover Anzeiger area",
+        "target_concept": "facade",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "road marking with wheelchair symbol on asphalt",
+        "non_geolocation_element": "white paint, wheelchair pictogram, dashed edge lines, dark asphalt",
+        "geolocation_element": "German-style parking/marking conventions and iconography",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "traffic light on a gray pole at the corner",
+        "non_geolocation_element": "matte black heads, stacked lenses, gray galvanized pole, urban mounting",
+        "geolocation_element": "German traffic signal form factor and pole style",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bicycle lane marking with dashed guide arrows",
+        "non_geolocation_element": "white dashed lines, short chevrons, smooth asphalt, curb-separated",
+        "geolocation_element": "German urban cycle infrastructure style near intersections",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/hanover/hanover_000000_037516_leftImg8bit.png"
+}

@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows several people on a roadside demonstration. Two individuals have clearly visible faces (one frontal with sunglasses, one side profile), which are strong biometric identifiers (Level 1). Multiple readable protest signs state \u201cJustice for VA Employees\u201d with union branding, and a shirt displays large union letters, revealing workplace affiliation and political/union activity (Level 2) and behaviors. Distant people and vehicles add little risk. The combination of multiple Level 1 biometric cues with reinforcing Level 2 affiliation/activity details yields a high overall privacy risk. Confidence is high because the cues are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "middle person\u2019s frontal face wearing sunglasses, short hair",
+        "Anonymized_element": "face blurred or replaced with neutral silhouette, no identifiable facial features",
+        "privacy_element": "distinct facial features, identifiable face shape and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man on left with partial side profile face and glasses",
+        "Anonymized_element": "apply heavy blur to facial region, crop to remove face area",
+        "privacy_element": "recognizable facial profile, ear and nose outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue protest sign held by participants reading 'Justice for VA Employees' with union logo",
+        "Anonymized_element": "blank sign with solid color, remove all text and logos",
+        "privacy_element": "workplace affiliation text, political/union message, identifiable organizational logo",
+        "target_concept": "protest sign with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "navy shirt on middle person with large yellow union letters",
+        "Anonymized_element": "plain dark shirt with no lettering or logos",
+        "privacy_element": "union/organizational branding indicating affiliation and viewpoint",
+        "target_concept": "logo apparel",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of additional distant participants along sidewalk, faces small and indistinct",
+        "Anonymized_element": "increase background blur or crop to exclude distant people",
+        "privacy_element": "presence of other individuals, but faces not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15309593.jpg"
+}

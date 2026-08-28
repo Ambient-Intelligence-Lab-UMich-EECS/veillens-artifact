@@ -1,0 +1,25 @@
+{
+  "img_id": "23622",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a convention/gaming demo setting (dim hall, truss lights, badges), they stand side-by-side holding controllers but face forward with no eye contact or touch; casual attendee attire suggests they\u2019re just co-participants. => no-relationship\n\n[P1-P3]: Same event setting; P3 is farther left and not engaged with P1, with no interaction or shared focus despite similar casual attire. => no-relationship\n\n[P2-P3]: In the expo hall, P2 appears to be playing while P3 stands apart to the side; there\u2019s no physical or communicative interaction between them. => no-relationship",
+  "timestamp": 1776889380.029077
+}

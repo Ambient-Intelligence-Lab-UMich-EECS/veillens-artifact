@@ -1,0 +1,21 @@
+{
+  "img_id": "1930",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 1,
+    "4 6": 6,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: P3 is seated on the curb talking with another seated man, while P4 is a standing passerby in the background with no engagement; they are far apart with no interaction in this street-side setting. => no-relationship\n\n[P3-P5]: P3 is sitting in the foreground, whereas P5 is a background pedestrian standing/walking near P4; there\u2019s clear distance and no shared body language or contact. => no-relationship\n\n[P3-P6]: P3 appears to be resting/talking on the curb, and P6 is a separate background pedestrian; they are not oriented toward each other and have no physical interaction. => no-relationship\n\n[P4-P5]: P4 and P5 are standing very close together and appear to be moving together in the same direction, suggesting they\u2019re together (possibly conversing) in a casual street context. => friends\n\n[P4-P6]: P4 and P6 are separated in the background with no orientation toward one another or contact, consistent with unrelated pedestrians in the same area. => no-relationship\n\n[P5-P6]: P5 and P6 are both background pedestrians but not interacting; their spacing and lack of mutual attention suggests they\u2019re simply in the same public space. => no-relationship",
+  "timestamp": 1779952730.093102
+}

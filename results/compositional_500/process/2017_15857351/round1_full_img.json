@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a crowded outdoor festival with multiple clearly visible faces in the foreground, including a woman with short blonde hair and sunglasses, another woman with brown hair, and a man in a white cap. These constitute biometric identifiers that can enable recognition. Additional people are visible in the background, though less distinct. There are no government IDs, financial or medical documents, or explicit personal names. The highest severity is Level 1 due to multiple identifiable faces, reinforced by activity context (dancing/paint festival). Overall this yields a moderately high privacy risk. Confidence is high because the faces are central and unobstructed enough for recognition.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center woman with short blonde hair wearing white sunglasses, face visible",
+        "Anonymized_element": "face blurred or pixelated, generic sunglasses shape, neutral hair color and style without facial detail",
+        "privacy_element": "recognizable facial structure, hairstyle, lips and nose contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left-middle woman with brown hair and sunglasses, frontal face partly lit",
+        "Anonymized_element": "blurred facial area, remove distinctive hair highlights, generic low-detail face",
+        "privacy_element": "recognizable face outline, nose and mouth visibility, distinctive hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right-middle man wearing white cap and sleeveless shirt, frontal face visible",
+        "Anonymized_element": "pixelated/blurred face, neutral cap without detail, reduce facial definition",
+        "privacy_element": "recognizable facial features including jawline and nose",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background crowd with partially visible faces and bodies",
+        "Anonymized_element": "strong background blur, silhouettes without facial detail",
+        "privacy_element": "multiple partial faces and body profiles",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15857351.jpg"
+}

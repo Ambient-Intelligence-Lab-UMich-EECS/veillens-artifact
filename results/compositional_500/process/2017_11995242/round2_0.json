@@ -1,0 +1,46 @@
+{
+  "reasoning": "The person\u2019s face is obscured, removing direct biometric identification. However, the backdrop contains readable event branding that reveals the specific conference context, which can disclose location and occasion. The lavalier/headset microphone on the speaker indicates public speaking activity at that event. A distant bystander is partially visible but not identifiable. Together these clues create a moderate privacy risk driven mainly by location/event disclosure and activity context, not by direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green stage backdrop with repeated 'TechCrunch Disrupt' logos",
+        "Anonymized_element": "plain gradient backdrop, abstract shapes, no logos or text",
+        "privacy_element": "readable event name and brand, conference title",
+        "target_concept": "event signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "black lavalier microphone and headset wire on speaker\u2019s chest",
+        "Anonymized_element": "remove microphone and wire, replace with plain shirt surface",
+        "privacy_element": "presentation microphone indicating public speaking at a specific event",
+        "target_concept": "microphone headset",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partially visible audience head at bottom left",
+        "Anonymized_element": "empty seat area, blurred background",
+        "privacy_element": "presence of another person in the scene though unidentifiable",
+        "target_concept": "distant bystander",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11995242/r1_crops/2017_11995242_0.png"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a single person but the face is heavily obscured, removing identifiable biometric details. Remaining cues include hairstyle, ear shape, and eyeglasses, which reveal minor personal attributes but are not uniquely identifying. No names, documents, or location indicators are visible. Thus the highest severity present is Level 3 (personal attributes), with weak, non-reinforcing clues, resulting in a low privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left ear and dark hair visible around an otherwise obscured face",
+        "Anonymized_element": "crop tighter to remove ear, generic hair blur, darker background blend",
+        "privacy_element": "ear shape, hair style/color, jawline silhouette",
+        "target_concept": "face/ear region",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "thin eyeglasses frames on the obscured face",
+        "Anonymized_element": "remove glasses, plain facial blur without accessories",
+        "privacy_element": "distinctive eyeglasses style and fit",
+        "target_concept": "eyeglasses",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15321981/r1_crops/2017_15321981_0.png"
+}

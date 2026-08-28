@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a cinema ticket with legible printed text including the venue \u201cBioCity \u00c5rhus,\u201d the movie title, auditorium/row/seat, a visible date/time, and unique ticket/order numbers. No faces or names appear. The highest severity stems from Level 3 clues revealing location and activity (where and what was watched, and when). Level 4 document identifiers (ticket/order numbers) add traceability. Together these elements moderately expose personal behavior and visit details, warranting a moderate privacy score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Venue text near top-left of ticket reading 'BioCity \u00c5rhus'",
+        "Anonymized_element": "generic venue text, city name removed, placeholder dashes",
+        "privacy_element": "venue name, city location",
+        "target_concept": "venue text on ticket",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Movie title text 'Black Swan' printed prominently on ticket",
+        "Anonymized_element": "generic film title placeholder, neutral text",
+        "privacy_element": "specific media title indicating viewing choice",
+        "target_concept": "movie title text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Seat information text 'Bio 8, R\u00e6kke 8, S\u00e6de 9' on ticket",
+        "Anonymized_element": "generic seat/auditorium placeholders, dashes or blanks",
+        "privacy_element": "exact auditorium, row, and seat numbers",
+        "target_concept": "seat info text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Date and time line near bottom right of ticket (e.g., '06.02.2011' and time)",
+        "Anonymized_element": "date/time removed or replaced with generic placeholders",
+        "privacy_element": "specific visit date and time",
+        "target_concept": "date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Ticket identifiers at bottom such as 'billet nr' and 'order nr' with readable digits",
+        "Anonymized_element": "numbers masked, replaced with zeros or Xs",
+        "privacy_element": "unique ticket number, order number",
+        "target_concept": "ticket/order numbers",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14207731/r1_crops/2017_14207731_0.png"
+}

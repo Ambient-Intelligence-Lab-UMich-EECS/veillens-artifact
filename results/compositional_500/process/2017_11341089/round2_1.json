@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows a busy outdoor plaza with several clearly visible, unobstructed faces that are identifiable, which is Level 1 biometric data. Additionally, a tall building bears a readable corporate logo and the skyline includes a distinctive spired tower, both offering location cues (Level 3). The combination is dominated by multiple Level 1 facial biometrics, so the privacy risk is high even without names or IDs. Confidence is high due to clarity and centrality of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground young man\u2019s full face at left holding a drink",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic cup without branding",
+        "privacy_element": "identifiable facial features, eyes and mouth fully visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "foreground woman\u2019s full face near left-center wearing black top",
+        "Anonymized_element": "face blurred or pixelated, sunglasses added, head turned away",
+        "privacy_element": "identifiable facial features, eyes and nose clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in white long-sleeve at center with unobstructed face",
+        "Anonymized_element": "face blurred or pixelated, cap or sunglasses, head turned away",
+        "privacy_element": "identifiable facial features, full frontal face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-right young man in dark hoodie with visible face",
+        "Anonymized_element": "face blurred or pixelated, hood up obscuring face",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tall office building with readable M&T Bank logo on facade (upper left background)",
+        "Anonymized_element": "facade without text or logo, generic blank signage",
+        "privacy_element": "corporate name/logo indicating specific place",
+        "target_concept": "building logo/signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive skyscraper with green spire in background",
+        "Anonymized_element": "generic tower silhouette without distinctive spire, neutral facade",
+        "privacy_element": "recognizable landmark shape enabling city identification",
+        "target_concept": "landmark building",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11341089/r1_crops/2017_11341089_1.png"
+}

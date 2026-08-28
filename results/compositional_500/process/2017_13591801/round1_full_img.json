@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a stylized, vintage scene of a person posed as a mermaid, with a clear frontal view of the face that could enable biometric identification. No government IDs, names, or explicit sensitive documents are present. Other contextual clues (location, behaviors) are generic. The primary privacy risk comes from the visible, potentially identifiable face (Level 1). Given the artistic styling and moderate resolution, identifiability is possible but not maximal, leading to a moderate-to-high score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal human face of the mermaid-posed person near the center, looking into a handheld mirror",
+        "Anonymized_element": "face blurred, replaced with neutral smooth skin texture, head turned away or cropped above shoulders",
+        "privacy_element": "full facial features, eyes, nose, mouth contour enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13591801.jpg"
+}

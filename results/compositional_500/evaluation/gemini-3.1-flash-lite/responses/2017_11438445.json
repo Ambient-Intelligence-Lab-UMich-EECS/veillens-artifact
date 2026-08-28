@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image captures a group of people standing on a stage, though most faces and identifiable features have been digitally obscured. The remaining visible information consists of general personal attributes like clothing, physical presence, and the indoor setting. Because the faces are obscured, the most severe privacy risks (biometric data) have been neutralized. The remaining clues are moderate (personal attributes) to low (general appearance), resulting in a low overall privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Person on the left wearing a green shirt, vest, and tan pants",
+        "Anonymized_element": "Person in casual clothing, generic shirt, generic pants",
+        "privacy_element": "visible hair, specific clothing style, body build",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Person standing next to the first person wearing a white dress",
+        "Anonymized_element": "Person in a generic dress",
+        "privacy_element": "visible hair, specific clothing style, body build",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Group of individuals standing on a wooden stage",
+        "Anonymized_element": "empty wooden stage, no people",
+        "privacy_element": "group of unidentifiable individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11438445/final/2017_11438445_final.png"
+}

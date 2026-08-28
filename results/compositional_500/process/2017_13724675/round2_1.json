@@ -1,0 +1,70 @@
+{
+  "reasoning": "This crop shows a conference audience with several unobscured, identifiable faces in the mid-ground and background, plus additional faces reflected in the wall mirror. These are Level 1 biometric cues that can uniquely identify individuals. Secondary, lower-risk context includes a person writing in a notebook, indicating activity. With multiple clear faces and reinforcing reflections but no readable names or documents, the privacy risk is high. Confidence is high due to clear visibility of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a man in a patterned shirt, mid-left row, smiling toward camera",
+        "Anonymized_element": "blurred face, pixelated features, generic silhouette or back-of-head",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "unobscured face of a man in a light pink shirt and glasses, mid-left row",
+        "Anonymized_element": "blurred face, remove glasses detail, generic silhouette",
+        "privacy_element": "full face with distinct features and glasses framing the eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "region of multiple audience members\u2019 faces in background rows",
+        "Anonymized_element": "uniform blur over the region, replace with indistinct silhouettes",
+        "privacy_element": "several identifiable faces with visible facial features",
+        "target_concept": "faces region",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large wall mirror reflecting additional audience faces",
+        "Anonymized_element": "blurred mirror area, replace reflection with abstract glare",
+        "privacy_element": "reflected identifiable faces with visible facial features",
+        "target_concept": "mirror reflection of faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "notebook and pen held by front-row attendee",
+        "Anonymized_element": "closed blank notebook, remove pen detail",
+        "privacy_element": "note-taking indicating participation in an event",
+        "target_concept": "notebook and pen",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13724675/r1_crops/2017_13724675_1.png"
+}

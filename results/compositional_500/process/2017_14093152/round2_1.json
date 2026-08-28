@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a shirtless person in leather shorts standing above a crowd at an outdoor urban event. Faces appear obscured, so no identifiable biometrics are visible. The most privacy-relevant elements are personal attributes and activities/behaviors (distinctive clothing and participation in a public gathering). A readable \u201cONE WAY\u201d street sign provides weak location context but not a specific address. Together these Level 3 and Level 4 cues create a moderate privacy risk without severe identifiers, leading to a mid\u2013low score with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black and white ONE WAY street sign on a pole near the center-right",
+        "Anonymized_element": "blank directional sign, no text or arrow, generic shape",
+        "privacy_element": "readable street sign text and arrow indicating urban street context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "shirtless upper body of a person wearing black leather shorts standing elevated",
+        "Anonymized_element": "plain T-shirt and knee-length shorts in neutral fabric",
+        "privacy_element": "shirtless torso, distinctive leather shorts indicating event participation",
+        "target_concept": "clothing/body exposure",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of people in the foreground with faces obscured",
+        "Anonymized_element": "tighter crop excluding crowd, generic blurred silhouettes",
+        "privacy_element": "visible attendance in a public gathering",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14093152/r1_crops/2017_14093152_1.png"
+}

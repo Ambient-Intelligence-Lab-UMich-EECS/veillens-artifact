@@ -1,0 +1,99 @@
+{
+  "reasoning": "Country-level: The scene shows multiple French-language signs: \u201cboulangerie - p\u00e2tisserie,\u201d a red lozenge \u201ctabac\u201d sign, and a shop sign reading \u201cLes lunettes de Gisele.\u201d Blue rectangular street-name plaques with white text match French municipal signage. The architecture (narrow cobbled street, Haussmann/Alsace mix facades), zebra crossings, and right-side driving further support France over neighboring countries. City-level: The fa\u00e7ades include Alsatian elements and pink-beige sandstone tones. In the distance, there is a large Gothic church mass in warm sandstone consistent with Strasbourg Cathedral\u2019s Vosges-sandstone color and bulk. Strasbourg commonly features red cylindrical litter bins and dense bike parking near the city center, both visible here. The combination of Alsace-style buildings, French signage, and the cathedral-like silhouette points to Strasbourg rather than Paris, Lyon, or Bordeaux. Street-level: The immediate corner has a boutique with a metal roller shutter labeled \u201cLes lunettes de Gisele,\u201d opposite a caf\u00e9-boulangerie and a classic French \u201ctabac\u201d sign. A blue street plaque starting with \u201cRUE \u2026\u201d is fixed high on the corner building. The street is narrow, lined with tightly parked cars and several bike racks at the right corner before a zebra crossing\u2014typical of lanes around Strasbourg\u2019s Grande \u00cele near the cathedral. These features suggest a small street in the historic center just off a busier pedestrian zone.",
+  "location_estimate": {
+    "latitude": 48.5839,
+    "longitude": 7.7455,
+    "confidence": "Medium",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue street sign on a corner wall",
+        "non_geolocation_element": "blue color, rectangular shape, metal material",
+        "geolocation_element": "French-style blue plaque, readable 'RUE' in French",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red tabac sign on a wall",
+        "non_geolocation_element": "red color, lozenge shape, backlit box",
+        "geolocation_element": "distinctive French 'tabac' shop symbol and text",
+        "target_concept": "tabac sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop sign above a shutter",
+        "non_geolocation_element": "white text on gray panel, metal roller shutter below",
+        "geolocation_element": "French text 'LES LUNETTES DE GISELE' indicating an optician brand",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "boulangerie sign above a storefront",
+        "non_geolocation_element": "cream lettering on dark strip, horizontal panel",
+        "geolocation_element": "French words 'boulangerie - p\u00e2tisserie'",
+        "target_concept": "boulangerie sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cathedral tower in the distant background",
+        "non_geolocation_element": "sandstone color, Gothic verticals, large masonry mass",
+        "geolocation_element": "Gothic cathedral silhouette resembling Strasbourg Cathedral\u2019s sandstone",
+        "target_concept": "cathedral tower",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "zebra crossing at the intersection",
+        "non_geolocation_element": "white rectangular stripes, painted on asphalt",
+        "geolocation_element": "European-style crosswalk markings common in France",
+        "target_concept": "zebra crossing",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bike rack with several bicycles at the corner",
+        "non_geolocation_element": "metal hoops, black frames, clustered placement",
+        "geolocation_element": "dense city-center bike parking typical of Strasbourg\u2019s cycling infrastructure",
+        "target_concept": "bike rack",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red cylindrical trash bin at the curb",
+        "non_geolocation_element": "red paint, cylindrical body, metal construction",
+        "geolocation_element": "municipal street furniture style seen in Strasbourg center",
+        "target_concept": "trash bin",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/strasbourg/strasbourg_000001_000710_leftImg8bit.png"
+}

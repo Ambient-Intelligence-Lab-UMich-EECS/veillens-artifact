@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image displays a document containing personal identification details, specifically a student number and associated registration information. This falls under the category of non-unique identifiers and sensitive government-related records. The document is clearly legible, posing a high privacy risk as it contains specific identifiers that could be used to link to an individual's personal data or institutional records. The confidence is high because the text is clearly visible and directly identifies the purpose of the document.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A rectangular identification document with text labels for student information",
+        "Anonymized_element": "blank paper, neutral document, no text",
+        "privacy_element": "Student number, registration details, institution-related text",
+        "target_concept": "ID document",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10435547/final/2017_10435547_final.png"
+}

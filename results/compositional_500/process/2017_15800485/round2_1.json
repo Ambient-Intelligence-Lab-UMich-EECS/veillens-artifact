@@ -1,0 +1,35 @@
+{
+  "reasoning": "The regional crop shows a topless person with an exposed upper torso and a hand covering the chest; the face is obscured. The highest-severity element is Level 2 due to visible nudity/intimate content. Secondary, lower-severity cues include general physical appearance and hairstyle, which provide personal attributes but not direct identity. With explicit nudity but no readable identifiers or visible face, the privacy risk is high but not maximal. Confidence is high because the cues are clear and central in the image.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "exposed bare upper torso with one hand covering the chest",
+        "Anonymized_element": "add a plain shirt or towel covering the chest, adjust pose to hide chest contours",
+        "privacy_element": "visible bare breasts, nipple/areola outline, unclothed torso",
+        "target_concept": "nudity on torso",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinct shoulder and hairstyle surrounding the obscured face",
+        "Anonymized_element": "simpler generic hairstyle, reduce texture contrast, add headwear",
+        "privacy_element": "distinctive hair length, color highlights, texture and shape revealing appearance",
+        "target_concept": "hairstyle and shoulders",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15800485/r1_crops/2017_15800485_1.png"
+}

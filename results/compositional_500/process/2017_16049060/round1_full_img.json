@@ -1,0 +1,70 @@
+{
+  "reasoning": "The image shows two clergy members standing in front of a church altar. Both individuals\u2019 faces are clearly visible and unobstructed, providing identifiable biometric data (highest severity). Their clerical collars and liturgical vestments reveal religious affiliation, a sensitive attribute. The distinctive church altar and religious iconography can suggest a specific worship location. The combination of two identifiable faces with explicit religious context elevates the risk beyond simple context. Overall this supports a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s unobstructed face looking slightly downward",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic smooth skin-tone gradient",
+        "privacy_element": "full face with visible eyes, nose, and mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s unobstructed face turned toward the left",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic smooth skin-tone gradient",
+        "privacy_element": "full face with visible facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "clerical collar and red liturgical vestments worn by the right person",
+        "Anonymized_element": "plain red robe without collar or religious symbols",
+        "privacy_element": "clerical collar, religious symbols on vestment indicating clergy status and religion",
+        "target_concept": "religious clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bishop-style mitre and red vestments worn by the left person",
+        "Anonymized_element": "plain hat or no headwear, plain robe without religious symbols",
+        "privacy_element": "mitre and crosses on vestments indicating specific religious role and affiliation",
+        "target_concept": "religious clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "church altar with cross, statue, and mosaic backdrop behind the subjects",
+        "Anonymized_element": "generic interior wall, abstract artwork without religious symbols",
+        "privacy_element": "distinct religious iconography and architectural features that can hint at a specific worship location",
+        "target_concept": "altar and religious iconography",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16049060.jpg"
+}

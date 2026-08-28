@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a person in a mermaid-style costume with the face area obscured. There are no readable names, documents, or government/financial identifiers. With no identifiable face, Level 1 biometric risk is absent. The main privacy-relevant cues are moderate: the distinctive costume suggests an activity or hobby, and visible hair/physique provide general personal attributes, but these are not uniquely identifying on their own. Therefore risk is low and based on Level 3 clues only, with medium confidence due to clear visibility but limited sensitivity.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "mermaid tail costume covering the lower body while seated on a rock",
+        "Anonymized_element": "plain blanket or fabric drape, muted texture, non-descript pattern",
+        "privacy_element": "distinctive costume indicating a specific hobby or performance context",
+        "target_concept": "costume",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "long wavy hairstyle framing an obscured face",
+        "Anonymized_element": "generic simplified hair shape, shorter or tied-back hair, less distinctive styling",
+        "privacy_element": "hair length and style revealing aspects of physical appearance and gender expression",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13591801/final/2017_13591801_final.png"
+}

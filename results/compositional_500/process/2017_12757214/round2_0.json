@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows four people on a couch; two individuals on the left have fully visible, unobstructed faces while the two on the right are blurred. The clear faces constitute Level 1 biometric data and reveal personal attributes like approximate age and appearance. Additionally, one shirt has large readable \u201cSeinfeld\u201d text, a mild activity/interest cue. The strong, central, high-resolution faces dominate the risk, with a small additive effect from the readable clothing text. Hence the score is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost person\u2019s frontal face with glasses, fully visible",
+        "Anonymized_element": "blurred face, neutral oval mask, replace with generic skin-tone patch",
+        "privacy_element": "full face, visible eyes and mouth, hairstyle, eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "second person from the left, frontal face unobstructed",
+        "Anonymized_element": "blurred face, neutral oval mask, replace with generic skin-tone patch",
+        "privacy_element": "full face, visible eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "third person\u2019s T-shirt with large readable 'Seinfeld' text",
+        "Anonymized_element": "plain T-shirt, remove text/logo, solid color fabric",
+        "privacy_element": "readable entertainment brand text indicating preference",
+        "target_concept": "clothing text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12757214/r1_crops/2017_12757214_0.png"
+}

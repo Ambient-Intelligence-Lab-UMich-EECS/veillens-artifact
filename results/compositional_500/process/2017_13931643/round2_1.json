@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person on stage with their face fully obscured, holding an electric guitar and positioned at a microphone. No readable text, IDs, or venue information are visible. With biometrics hidden, the strongest cues relate to the person\u2019s activity (performing music) and some non-identifying appearance context. Thus the highest severity present is Level 3, with limited composition; overall privacy risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "electric guitar held by the person on stage",
+        "Anonymized_element": "generic instrument with muted colors, crop instrument partially, remove distinctive markings",
+        "privacy_element": "on-stage musical performance activity, association with being a guitarist",
+        "target_concept": "guitar",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "microphone on stand directly in front of the performer",
+        "Anonymized_element": "remove microphone, replace with blank stand, de-emphasize stage gear",
+        "privacy_element": "indicates live performance/speaking activity",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13931643/r1_crops/2017_13931643_1.png"
+}

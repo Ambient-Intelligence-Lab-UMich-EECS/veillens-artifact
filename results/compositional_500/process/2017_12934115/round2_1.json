@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public parade scene with several identifiable faces in the foreground and midground, which is Level 1 biometric data. Readable text on a bright yellow sign and on T\u2011shirts states \u201cEast Grand Rapids Wrestling,\u201d revealing location and group affiliation/activities. A branded caf\u00e9 storefront (\u201cStarbucks Coffee\u201d) further narrows location context. The combination of multiple visible faces with reinforcing location and activity cues yields a high privacy risk. Confidence is high due to clear, legible elements.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a young boy at the right side of the street corner",
+        "Anonymized_element": "blurred face, pixelated facial area, replaced with neutral oval",
+        "privacy_element": "identifiable face with clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult male face wearing a baseball cap at center-right, talking to a woman",
+        "Anonymized_element": "blurred face, pixelated facial area, neutral skin-toned patch",
+        "privacy_element": "identifiable face with distinct profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bright yellow sign held by marcher reading 'EAST GRAND RAPIDS WRESTLING' with wrestling icon",
+        "Anonymized_element": "plain yellow board, no text or logo, generic graphic",
+        "privacy_element": "readable organization/location name, activity depiction",
+        "target_concept": "event sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "gray T\u2011shirt chest area with readable text 'EAST GRAND RAPIDS WRESTLING'",
+        "Anonymized_element": "plain gray T\u2011shirt, no text or logo",
+        "privacy_element": "readable organization/location name indicating team affiliation",
+        "target_concept": "clothing text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront awnings reading 'STARBUCKS COFFEE' on a distinctive brick building",
+        "Anonymized_element": "generic green awnings, no brand text or logo",
+        "privacy_element": "readable business name and recognizable storefront",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12934115/r1_crops/2017_12934115_1.png"
+}

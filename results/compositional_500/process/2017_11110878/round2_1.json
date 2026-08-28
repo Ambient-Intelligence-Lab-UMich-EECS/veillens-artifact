@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a shirtless person with hands cuffed behind their back surrounded by police officers. No identifiable faces are visible. The strongest privacy cues are the arrest/detention context (activities/behaviors) and exposure of the subject\u2019s bare torso revealing body shape (personal attributes). Police uniform shoulder patches with emblems could indicate a specific locality, adding location risk, though legibility is limited. With no Level 1 or Level 2 identifiers present, this results in a moderate privacy risk driven by Level 3 clues. Confidence is medium due to partial ambiguity of the location details.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handcuffs securing a shirtless person\u2019s wrists behind their back",
+        "Anonymized_element": "hands at sides without restraints, add plain T-shirt, remove cuffs",
+        "privacy_element": "visible restraints indicating arrest/detention, exposed torso revealing body build/scars/moles",
+        "target_concept": "handcuffs on person",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "police officer\u2019s shoulder patch with emblem/text",
+        "Anonymized_element": "blank patch, generic solid color, no logo or text",
+        "privacy_element": "municipal police logo/name that can reveal city or department",
+        "target_concept": "uniform patch/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11110878/r1_crops/2017_11110878_1.png"
+}

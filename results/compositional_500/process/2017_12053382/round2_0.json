@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public parade scene with multiple people. At least one identifiable, unobstructed face (man at left) is clearly visible, which is Level 1 biometric data. Additional partially masked faces add lesser biometric risk. Contextual clues like a large \u201cCARNAV\u2026\u201d banner and a shirt reading \u201cBRASIL\u201d indicate event and regional location, and a shirtless participant with painted torso reveals personal attributes/behavior. These cues together create a high privacy risk primarily due to the identifiable face, reinforced by activity and location context. Confidence is high because the cues are central and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man on the left with uncovered face wearing sunglasses, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated facial area, generic head silhouette",
+        "privacy_element": "identifiable facial structure, skin texture, hairline despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman at center wearing a feathered eye mask with lower face visible",
+        "Anonymized_element": "fully blurred face region, opaque full-face mask",
+        "privacy_element": "visible mouth, nose, jawline enabling partial facial identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "shirtless male torso at left with bright yellow body paint on chest",
+        "Anonymized_element": "plain shirt covering torso, remove paint",
+        "privacy_element": "distinctive body paint pattern and exposed physique",
+        "target_concept": "painted torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large hand-held banner with the word fragment 'CARNAV...' in neon letters",
+        "Anonymized_element": "blank banner with abstract shapes, no event text",
+        "privacy_element": "event name indicating participation in a specific public festival",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow T-shirt on right with bold text 'BRASIL'",
+        "Anonymized_element": "plain shirt with no country text or logos",
+        "privacy_element": "country name suggesting regional/national location context",
+        "target_concept": "shirt text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12053382/r1_crops/2017_12053382_0.png"
+}

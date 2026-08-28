@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a single sheet of paper with handwritten technical notes (e.g., config paths and terms like proxy/DHCP). No faces, names, financial/medical/government identifiers, addresses, or other directly identifying data are visible. The text is mostly generic and partially illegible. Thus, only a low-risk clue is present: a generic document that might hint at work-related topics but lacks personal identifiers. Compositional risk remains low, leading to a low privacy score with medium confidence due to partial legibility of the handwriting.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single sheet of paper with handwritten technical notes and system paths",
+        "Anonymized_element": "blank page, abstract doodles with no text, blurred/obscured writing",
+        "privacy_element": "readable snippets of technical terms and file paths that could hint at work/project context",
+        "target_concept": "handwritten notes",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11707079.jpg"
+}

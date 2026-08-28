@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a paper record with handwritten notes and a technical sketch. No people, faces, IDs, or financial/medical data appear. The main privacy-relevant element is a handwritten location reference (\u201cbarrow 15 (Hove)\u201d), which provides specific location context but no personal identifiers. The rest is a generic document/diagram. Thus the highest severity is Level 3 (location info), with supporting low-risk generic-document context, yielding a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten line in the ASSOCIATIONS section mentioning \u201cbarrow 15 (Hove)\u201d",
+        "Anonymized_element": "replace with generic text like \u201carchaeological context noted,\u201d remove place names and numbers, or blur text",
+        "privacy_element": "specific place name \u201cHove,\u201d numbered site reference \u201cbarrow 15\u201d",
+        "target_concept": "handwritten note",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "green archival form page with technical sketch and measurement fields",
+        "Anonymized_element": "generic blank form, remove logos/headers, omit handwritten details",
+        "privacy_element": "structured document layout with fields that may encode context and metadata",
+        "target_concept": "document page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12124882/r1_crops/2017_12124882_1.png"
+}

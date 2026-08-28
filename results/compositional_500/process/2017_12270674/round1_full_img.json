@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows an outdoor landscape with one person seen from behind on a muddy path. The face is not visible and there are no readable texts, IDs, or distinctive landmarks. The main privacy signals are moderate: the person\u2019s body shape/clothing and hiking gear revealing activity. No Level 1\u20132 identifiers are present, and the clues do not strongly combine to identify a specific individual or precise location. Thus the risk is low but nonzero due to Level 3 attributes. Confidence is high because these observations are clear in the image.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "single person from behind wearing dark jacket and beanie on the right side of the frame",
+        "Anonymized_element": "remove person and fill with background, generic silhouette with no human detail, blurred figure with muted colors",
+        "privacy_element": "body shape, clothing style, walking posture",
+        "target_concept": "person (rear view)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red trekking pole held in the person\u2019s right hand",
+        "Anonymized_element": "no pole, neutral walking stick with indistinct shape, plain object partially hidden",
+        "privacy_element": "hiking equipment signaling outdoor activity",
+        "target_concept": "hiking pole",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12270674.jpg"
+}

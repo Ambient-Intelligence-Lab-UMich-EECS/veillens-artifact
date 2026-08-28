@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows a public parade scene. One participant’s face (blonde hair, feathered headpiece) is clearly visible in profile, which is biometric data and the highest-severity clue. A second smaller side-profile face appears at the lower right, adding further biometric exposure though it is less prominent. A vertical storefront/building sign with readable letters provides potential location cues. A parade banner with readable partial slogan indicates event participation, revealing behavior context. Combined, direct facial identification plus contextual location and activity cues yield a moderately high privacy risk. Confidence is high because the core elements are visibly clear.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman’s side-profile face with blonde hair and feathered headpiece near the center-left foreground",
+        "Anonymized_element": "blurred face, added opaque mask, turned-away head, generic headband without distinct features",
+        "privacy_element": "identifiable facial features, unique headwear tied to a specific event",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "small side-profile face of a person wearing a dark cap at lower right edge",
+        "Anonymized_element": "blurred facial region, opaque oval over face, cap without visible facial area",
+        "privacy_element": "partial facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "vertical storefront/building sign with large readable letters on the left background",
+        "Anonymized_element": "blank sign panel, abstract shapes, scrambled/unreadable text",
+        "privacy_element": "readable business/venue name that can pinpoint place",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "front parade banner with partially readable bold red letters",
+        "Anonymized_element": "plain blank banner, abstract patterns, unreadable scribbles",
+        "privacy_element": "event-related text revealing participation context",
+        "target_concept": "banner/sign text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11733853/final/2017_11733853_final.png"
+}

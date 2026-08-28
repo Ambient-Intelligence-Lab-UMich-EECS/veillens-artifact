@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows an upper body in lingerie with pronounced cleavage while the face is obscured, so no direct biometric identifier is present. The most sensitive cue is Level 2 intimate content from revealing lingerie. A lit cigarette with smoke indicates a specific habit (smoking), adding Level 3 behavioral information. Together these create moderate privacy risk despite the lack of an identifiable face.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "revealing lingerie/bra on torso with exposed cleavage",
+        "Anonymized_element": "high-neck plain top, non-revealing shirt, neutral fabric without lingerie styling",
+        "privacy_element": "lingerie-style bra, exposed cleavage, significant bare torso skin",
+        "target_concept": "lingerie/bra",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lit cigarette held between fingers with visible smoke plume",
+        "Anonymized_element": "empty hand, unlit plain object, removed smoke",
+        "privacy_element": "cigarette, smoke indicating active smoking",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15053711/r1_crops/2017_15053711_0.png"
+}

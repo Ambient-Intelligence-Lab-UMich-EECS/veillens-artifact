@@ -1,0 +1,25 @@
+{
+  "img_id": "22418",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "2 3": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 9,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Urban street scene; P1 is walking while P2 is skateboarding a few meters away with no eye contact or interaction. Casual attire and shared setting only. => no-relationship\n\n[P1-P3]: P1 walks on the right and P3 skates on the left; they\u2019re separated and not engaging or acknowledging each other. => no-relationship\n\n[P2-P3]: Both are skateboarding in close proximity down the same street with similar casual, sporty attire and backpacks, implying they\u2019re riding together even without direct contact. => friends",
+  "timestamp": 1776888309.4867482
+}

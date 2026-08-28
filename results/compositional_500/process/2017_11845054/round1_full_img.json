@@ -1,0 +1,46 @@
+{
+  "reasoning": "The central subject is a person using a manual wheelchair; while their face is not visible, the wheelchair strongly implies a disability, which is a sensitive inference (Level 2). In the mid\u2011background, one or more people\u2019s faces are partially visible and potentially recognizable (Level 1), though distance and partial occlusion reduce identifiability. No government IDs, names, or explicit location details are readable. Considering the sensitive health inference combined with weak but present facial biometrics in the background, the overall privacy risk is moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manual wheelchair with large rear wheels and footrests next to the central seated person",
+        "Anonymized_element": "regular chair without wheels, crop lower frame, generic seat hardware with no medical cues",
+        "privacy_element": "wheelchair form and medical hardware indicating mobility impairment/disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "mid-ground woman\u2019s face looking toward camera while seated on a low wall",
+        "Anonymized_element": "blurred face, turned head silhouette, add sunglasses/hat, reduce facial detail",
+        "privacy_element": "visible facial features (eyes, nose, mouth), hairstyle enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "another mid-ground person\u2019s face resting on hand, partially visible",
+        "Anonymized_element": "apply face blur, turn head away, add mask/hat to obscure features",
+        "privacy_element": "partially visible facial features that can enable recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11845054.jpg"
+}

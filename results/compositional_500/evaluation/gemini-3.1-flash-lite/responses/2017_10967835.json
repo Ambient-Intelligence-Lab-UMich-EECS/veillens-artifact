@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image displays a set of historical baseball tickets from 2009. While these are identifiable physical objects, they do not contain personally identifiable information such as names, credit card numbers, or biometric data. The codes and barcodes present are event-specific and retrospective in nature, posing no current personal risk to an individual. The information is generic documentation of a past public event, resulting in a very low privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A collection of 2009 New York Yankees baseball game tickets.",
+        "Anonymized_element": "blank white rectangular paper, generic sports ticket design, no text",
+        "privacy_element": "event date, stadium name, specific section and seat numbers",
+        "target_concept": "ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "Barcodes printed on the side of the tickets.",
+        "Anonymized_element": "generic graphic pattern, plain geometric shape",
+        "privacy_element": "serialized barcodes",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/final/2017_10967835_final.png"
+}

@@ -1,0 +1,25 @@
+{
+  "img_id": "9728",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a computer lab/library setting, P1 is standing and leaning over P2\u2019s workstation as if explaining something on the screen; their close proximity and instructive posture suggest guidance, not intimacy. Casual attire fits a class/workshop. => professional\n\n[P1-P3]: P1 stands between the users looking toward the monitors while P3 sits at his laptop, appearing to listen; this looks like an instructor assisting participants rather than a personal relationship. => professional\n\n[P2-P3]: Both are seated at adjacent computers in the same session, focused on their own screens with minimal direct interaction; they appear to be classmates/colleagues in training. => professional",
+  "timestamp": 1776889199.4927182
+}

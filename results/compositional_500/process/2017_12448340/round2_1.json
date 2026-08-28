@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a clear restaurant receipt with readable text. The most privacy-relevant element is a visible first name with an associated numeric ID at the top, which is a non-unique identifier for an employee. Additional contextual details include the exact purchase timestamp and the itemized order that reveals consumption habits. No biometric data, government IDs, or financial account numbers appear. The highest severity is Level 2 from the readable name; combined with Level 3 activity details, this yields a moderate privacy risk. Clues are legible and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "header line on the receipt showing an employee name alongside a numeric ID",
+        "Anonymized_element": "generic placeholder text, random numeric ID, no personal name",
+        "privacy_element": "readable employee first name, readable workplace/employee ID number",
+        "target_concept": "employee name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "timestamp line with exact date and time on the receipt",
+        "Anonymized_element": "month/year only, approximate date, time removed",
+        "privacy_element": "exact purchase date and time",
+        "target_concept": "timestamp",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "itemized food order lines under 'Dine In' listing beverages and meals",
+        "Anonymized_element": "redacted item names, generic 'food' and 'beverage' categories",
+        "privacy_element": "specific items purchased revealing consumption choices",
+        "target_concept": "itemized order text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12448340/r1_crops/2017_12448340_1.png"
+}

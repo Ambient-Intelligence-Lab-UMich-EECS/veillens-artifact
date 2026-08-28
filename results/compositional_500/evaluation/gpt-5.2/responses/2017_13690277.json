@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows multiple human faces, including a centrally framed person whose upper facial features and glasses are visible, plus a few background individuals with recognizable faces. Faces constitute biometric identifiers (Level 1). Other elements like clothing, bottles, or interior setting do not reveal names, documents, or precise location. The presence of one central, partly unobscured face reinforced by additional background faces yields a high but not extreme privacy risk. Some faces are small or partially masked, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center subject’s partially visible face with glasses (upper face visible)",
+        "Anonymized_element": "strong blur over face, full-face mask, turned-away head, remove glasses",
+        "privacy_element": "recognizable eyes and eyebrows, distinctive glasses, partial nose bridge and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "background woman’s unobstructed face near center-left, hand on chin",
+        "Anonymized_element": "blur face region, replace with generic blank oval, turn head away",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "small background face at far left near table",
+        "Anonymized_element": "apply heavy blur to face, replace with indistinct silhouette",
+        "privacy_element": "recognizable facial structure despite small size",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13690277/final/2017_13690277_final.png"
+}

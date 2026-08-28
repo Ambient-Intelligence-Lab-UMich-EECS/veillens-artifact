@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows the back of a player wearing a jersey with readable text and a large number, along with a visible flag-football belt. No clear, identifiable faces are visible; background people are small and indistinct. The strongest cue is a non-unique identifier (jersey text/number) which is Level 2. Activity-related elements and distant bystanders add moderate contextual risk. Overall risk is moderate due to readable jersey identifiers without accompanying biometrics.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a navy-blue sports jersey showing the word 'COMMITMENT' and the number 33",
+        "Anonymized_element": "plain jersey with no text or numbers, solid color with generic pattern",
+        "privacy_element": "readable jersey text, readable large number '33'",
+        "target_concept": "jersey text/number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "yellow flag-football belt around the player's waist with hanging flags",
+        "Anonymized_element": "plain waistband without flags, generic athletic shorts",
+        "privacy_element": "sports equipment indicating specific recreational activity",
+        "target_concept": "flag football belt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "two distant bystanders on the sidelines in blue camouflage uniforms, faces small and indistinct",
+        "Anonymized_element": "heavily blurred silhouettes, generic background figures",
+        "privacy_element": "presence of people in background (faces too small to identify)",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/r1_crops/2017_12338201_2.png"
+}

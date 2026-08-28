@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public parade scene with multiple clearly visible faces, including close-up participants in a convertible. These constitute Level 1 biometric identifiers. A large rainbow pride flag on the car introduces a Level 2 sensitive inference about sexual orientation or related activism. Background includes a crowd with smaller, less identifiable faces that add minor contextual risk. The combination of several identifiable faces with a sensitive-context flag yields a high but not extreme privacy risk. Confidence is high because these cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right car passenger waving from convertible, face visible with sunglasses",
+        "Anonymized_element": "blurred face, turned-away head, plain sunglasses with face masked, neutral clothing colors",
+        "privacy_element": "recognizable facial structure, hairstyle, skin features despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parade participant in yellow dress with sash and crown seated on car, frontal face visible",
+        "Anonymized_element": "blurred or pixelated face, replace crown and sash with plain hat/scarf, neutral dress without sash text",
+        "privacy_element": "full face, distinctive accessories (crown, sash) increasing recognizability",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow pride flag draped along side of car",
+        "Anonymized_element": "solid-color banner, abstract geometric pattern with no symbolic meaning",
+        "privacy_element": "rainbow pride symbolism implying LGBTQ affiliation or support",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background crowd along sidewalk with many small, partially visible faces",
+        "Anonymized_element": "motion blur over crowd, replace with silhouettes or backs of heads",
+        "privacy_element": "multiple people with partially identifiable faces in public crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_13756260.jpg"
+}

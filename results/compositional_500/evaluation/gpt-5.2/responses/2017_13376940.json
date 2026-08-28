@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image shows a person in the foreground with a partially lit, identifiable facial profile and using a manual wheelchair. The visible face constitutes Level 1 biometric exposure, and the wheelchair introduces a Level 2 sensitive inference (possible disability). Two distant bystanders are present but their faces are not legible, and a parked vehicle appears without readable plate. The combination of an identifiable face with a sensitive mobility aid yields a high overall privacy risk despite low-light partial occlusion, leading to a medium confidence score.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially lit right-profile face of the seated foreground person",
+        "Anonymized_element": "blur or pixelate face, replace with neutral silhouette, reduce facial detail",
+        "privacy_element": "identifiable facial features and profile (eyes, nose, mouth outline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "manual wheelchair with large rear wheel next to the seated person",
+        "Anonymized_element": "replace with generic chair or stool, remove wheelchair rims/handles, neutral seating object",
+        "privacy_element": "mobility aid implying possible disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "two distant standing bystanders in the background",
+        "Anonymized_element": "blur bystanders into indistinct shapes, remove figures",
+        "privacy_element": "presence of people though faces not legible",
+        "target_concept": "bystanders",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "parked minivan on the street",
+        "Anonymized_element": "generic de-branded vehicle shape, obscure details",
+        "privacy_element": "vehicle as property indicator (no plate readable)",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13376940/final/2017_13376940_final.png"
+}

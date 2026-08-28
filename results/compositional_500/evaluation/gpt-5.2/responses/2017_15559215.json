@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image is a generic birthday card graphic with large French text celebrating “60 ans” and cartoon illustrations. There are no real people, readable names, faces, IDs, financial or medical items. The only potentially personal element is the explicit age (“60 ans”), which is a personal attribute but not linked to any identifiable individual here. With no compositional reinforcement (no face or name), the overall privacy risk is low. Confidence is high because the elements are clear and generic.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large red text reading \"60 ANS\" at the top center",
+        "Anonymized_element": "replace with generic birthday text, remove number, use \"Joyeux Anniversaire\" only",
+        "privacy_element": "explicit age \"60 ans\"",
+        "target_concept": "age text",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15559215/final/2017_15559215_final.png"
+}

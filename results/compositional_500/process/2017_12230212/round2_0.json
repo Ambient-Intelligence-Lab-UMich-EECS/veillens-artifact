@@ -1,0 +1,80 @@
+{
+  "reasoning": "This crop shows several clearly identifiable human faces in a public crowd. Multiple faces are unobstructed and sufficiently detailed to enable recognition, which constitutes Level 1 biometric exposure. Additional contextual cues (a red rose held up and a tied bundle of green stalks) suggest participation in a public gathering, adding Level 3 activity context but without legible location or names. The presence of multiple strong biometric clues elevates the risk; compositional activity cues modestly increase it. Overall risk is high with clear visual evidence, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-center young person's face in profile with short light hair and visible features",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette replacement",
+        "privacy_element": "recognizable facial features, distinct hairstyle, skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small frontal face of a person directly behind the left-center subject",
+        "Anonymized_element": "blurred face, pixelated, generic oval with no details",
+        "privacy_element": "recognizable eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right-of-center man's face looking left, short dark hair, visible nose and mouth",
+        "Anonymized_element": "face blurred, pixelated, replaced with neutral shading",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background man\u2019s face near upper-right, partially angled but identifiable",
+        "Anonymized_element": "soft blur over facial region, pixelation",
+        "privacy_element": "distinct facial outline and features despite distance",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "single red rose held upright above the crowd near center-top",
+        "Anonymized_element": "neutral object or blurred stick-like shape, remove flower identity",
+        "privacy_element": "symbolic item suggesting participation in a memorial or public event",
+        "target_concept": "flower held by participant",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bundle of green stalks tied with bands held at lower-right",
+        "Anonymized_element": "plain blurred object, generic cylindrical shape without plant details",
+        "privacy_element": "offering-like item indicating event participation behavior",
+        "target_concept": "held bouquet/stalks",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12230212/r1_crops/2017_12230212_0.png"
+}

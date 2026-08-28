@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a live event with multiple clearly visible faces on stage and in the foreground audience. These constitute biometric identifiers (Level 1). Event branding on the backdrop indicates participation in a specific event, adding contextual activity/location cues (Level 3). No government IDs, financial, or medical documents are visible. Due to several unobstructed, central faces reinforced by event context, the overall privacy risk is high. Confidence is high because the facial features and branding are clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man\u2019s face on stage wearing a black t\u2011shirt, left side of stage",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic skin-tone patch",
+        "privacy_element": "clear facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man\u2019s face on stage wearing a black button-up shirt, speaking",
+        "Anonymized_element": "face blurred, head turned down, generic skin-tone patch",
+        "privacy_element": "recognizable facial features, open mouth while speaking",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man\u2019s face carrying a large product box at center-front of stage",
+        "Anonymized_element": "face blurred, glasses removed or simplified, head turned away",
+        "privacy_element": "full frontal facial features, glasses outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "camera operator\u2019s face partially visible behind large shoulder camera on left",
+        "Anonymized_element": "face blurred, head turned away, cap obscuring features",
+        "privacy_element": "partially visible facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "event logo and branding on large blue backdrop behind stage",
+        "Anonymized_element": "plain curtain backdrop, abstract non-descriptive pattern, no logos or text",
+        "privacy_element": "distinctive event logo/branding indicating specific event",
+        "target_concept": "event logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12808296.jpg"
+}

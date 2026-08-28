@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a concert stage with event banners and a large screen. People are present but faces are either turned away, tiny, or obscured, making identification unlikely. No names, IDs, financial, medical, or intimate content are visible. The main privacy signal is the presence of distant, unidentifiable individuals which carries low, contextual risk without reinforcing clues.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small audience heads at the bottom edge of the frame",
+        "Anonymized_element": "remove or blur heads, replace with empty seats or generic background",
+        "privacy_element": "presence of individuals, clothing colors",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "performer on stage screen with back turned toward camera",
+        "Anonymized_element": "replace with generic silhouette or instrument-only scene",
+        "privacy_element": "presence of an individual, hair style and build",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14057640/r1_crops/2017_14057640_1.png"
+}

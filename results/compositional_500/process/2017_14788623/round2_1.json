@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows terraced farmland on a hillside with a small wooden hut. No people, faces, documents, numbers, or readable text are present. The only privacy-relevant element is the presence of a residential structure, which implies property ownership but reveals no address or unique identifiers. Thus the highest severity is Level 4, with low overall risk and high confidence due to clear visibility and lack of compounding clues.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small wooden hut on the hillside near the top-right of the image",
+        "Anonymized_element": "generic shed with simplified, texture-blurred walls and roof, no distinctive details",
+        "privacy_element": "residential structure indicating private property/asset",
+        "target_concept": "house",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14788623/r1_crops/2017_14788623_1.png"
+}

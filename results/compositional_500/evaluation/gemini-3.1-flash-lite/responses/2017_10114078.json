@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image captures a public event with a crowd of people. While the individual participants are in a public space, the high density and clear depiction of multiple individuals, including their physical appearance and participation in a specific public demonstration, constitutes a moderate level of privacy concern regarding their activities and presence at a specific location. The visibility of store branding and the crowd context provide location and behavioral data, warranting a moderate risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "crowd of people standing behind metal barriers during a public parade",
+        "Anonymized_element": "blurred group, indistinct individuals, silhouettes",
+        "privacy_element": "identifiable faces, physical appearance, presence at specific event",
+        "target_concept": "crowd",
+        "severity_level": 3,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "store storefront with signage reading ST. JOHN",
+        "Anonymized_element": "generic storefront, blank windows",
+        "privacy_element": "identifiable brand, specific location context",
+        "target_concept": "building",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "individual performing with a purple flag",
+        "Anonymized_element": "generic performer, blank athletic clothing",
+        "privacy_element": "clear facial view, physical appearance, specific activity/behavior",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10114078/final/2017_10114078_final.png"
+}

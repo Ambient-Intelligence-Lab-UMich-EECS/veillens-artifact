@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows two individuals in a clinical-like setting with both faces clearly visible and one person wearing a blood-pressure cuff connected to a monitor. Identifiable faces constitute Level 1 biometric data. The medical device and ongoing measurement indicate medical information (Level 2). These cues together elevate risk beyond simple context, even though no names or documents are visible. The faces are clear and central; the medical activity is unambiguous, leading to a high but not maximal score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side person\u2019s face in profile view, well-lit and unobstructed",
+        "Anonymized_element": "blurred face, pixelated facial region, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left-side person\u2019s face, front/three-quarter view, unobstructed",
+        "Anonymized_element": "blurred face, pixelated facial region, turned-away head, generic silhouette",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blood pressure cuff on the right person\u2019s upper arm connected to an electronic monitor on the table",
+        "Anonymized_element": "plain sleeve without cuff, remove tubing, generic non-medical armband, crop out device",
+        "privacy_element": "medical device indicating vital sign measurement, cuff and tubing, potential display of readings",
+        "target_concept": "blood pressure cuff/monitor",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15433942.jpg"
+}

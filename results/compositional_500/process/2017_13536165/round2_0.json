@@ -1,0 +1,34 @@
+{
+  "reasoning": "The region shows a meeting scene with faces deliberately obscured, so no clear biometric identifiers are visible. The most privacy-relevant element is a visible chest-worn name badge that likely contains printed identifying text, which constitutes a Level 2 non-unique identifier. There are also papers on the table with small printed text that could contain information, though legibility appears low, making them a minor Level 4 risk. With no readable government IDs, financial data, or explicit location markers, the overall risk is low-to-moderate. Confidence is medium due to limited text legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white rectangular name badge clipped to the woman\u2019s chest with visible lines of text",
+        "Anonymized_element": "plain blank badge, no text or logos, generic white rectangle",
+        "privacy_element": "name badge with printed text that may include a person\u2019s name or affiliation",
+        "target_concept": "name badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "stack of papers/notepad on the table with small printed text",
+        "Anonymized_element": "blank pages, text blurred or removed",
+        "privacy_element": "printed text on documents that could contain names or details",
+        "target_concept": "paper document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13536165/r1_crops/2017_13536165_0.png"
+}

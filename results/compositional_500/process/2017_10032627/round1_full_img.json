@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a marked patrol vehicle with a clearly readable rear license plate and a yellow door decal containing Japanese text that appears to include a ward/district name. No faces or biometrics are visible; a person in the far background is too small to identify. The strongest risks are the unique vehicle identifier (license plate) and explicit locality text, which together can link a specific asset to a location. These Level 3 clues compose a moderate privacy risk; absence of Level 1\u20132 elements keeps the score below high.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rear license plate on the patrol car with readable numbers and region text",
+        "Anonymized_element": "blank plate, randomized digits, generic placeholder plate with no region text",
+        "privacy_element": "readable license number, regional/prefecture text",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow decal on the car door with Japanese text including a ward/district name",
+        "Anonymized_element": "solid-color decal with generic symbol, no text or logos",
+        "privacy_element": "specific locality/ward name, organizational labeling",
+        "target_concept": "vehicle decal with location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distant pedestrian at far left of frame walking near entrance",
+        "Anonymized_element": "remove person or replace with empty walkway silhouette",
+        "privacy_element": "presence of an unidentifiable individual",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10032627.jpg"
+}

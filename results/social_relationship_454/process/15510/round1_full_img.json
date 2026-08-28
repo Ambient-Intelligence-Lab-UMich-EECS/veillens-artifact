@@ -1,0 +1,34 @@
+{
+  "img_id": "15510",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 3": 4,
+    "1 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [
+    "1 2",
+    "2 3",
+    "2 4"
+  ],
+  "subjects_matched": [
+    1,
+    3,
+    4
+  ],
+  "subjects_unmatched": [
+    2
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P3]: The scene looks like a radio/podcast recording; P1 is on a chair with a mic while P3 sits at a desk with audio gear and a mic, not engaging directly but part of the same production in a studio setting with casual attire. => professional\n\n[P1-P4]: They are seated close, facing each other and leaning in while holding microphones, suggesting an interview/conversation in a studio environment with equipment and laptops; no physical contact, task-focused posture. => professional\n\n[P3-P4]: Both are within the recording setup\u2014P4 speaks into a mic on a lounge chair while P3 operates at a desk with audio equipment\u2014little direct interaction but clearly engaged in the same media task in a studio. => professional",
+  "timestamp": 1776888120.1682713
+}

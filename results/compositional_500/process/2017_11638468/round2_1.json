@@ -1,0 +1,56 @@
+{
+  "reasoning": "The regional crop shows a person\u2019s upper body with the face fully obscured, reducing direct biometric risk. Visible cues include distinctive clothing (a white crocheted top), hair style, and body features (skin tone/sunburn) that expose general personal attributes. The background contains a recognizable garden/yard scene with a wooden frame structure near water, and a partial vehicle roof, which can weakly hint at location or assets but not uniquely identify. With no readable text, IDs, or faces, the highest level is moderate (Level 3) from personal attributes and weak location context. Overall risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s upper torso and shoulders with visible skin and hair, face obscured",
+        "Anonymized_element": "crop tighter below neck, add neutral t-shirt covering shoulders and chest, reduce skin visibility",
+        "privacy_element": "distinctive hairstyle, visible skin tone and sunburn pattern, body build",
+        "target_concept": "upper body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white crocheted sleeveless top with unique knit pattern",
+        "Anonymized_element": "plain solid-color top with no texture or patterns",
+        "privacy_element": "distinctive clothing pattern and style",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background landscape with garden foliage, wooden frame structure, and water in distance",
+        "Anonymized_element": "generic blurred greenery background, no distinctive structures or landmarks",
+        "privacy_element": "recognizable outdoor setting and structure hinting at locale",
+        "target_concept": "background landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partial car roof visible behind foliage",
+        "Anonymized_element": "remove vehicle, replace with generic vegetation",
+        "privacy_element": "presence of a vehicle indicating asset ownership or access",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11638468/r1_crops/2017_11638468_1.png"
+}

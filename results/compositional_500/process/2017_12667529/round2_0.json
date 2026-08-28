@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a public market scene with multiple identifiable faces visible, including a clear frontal face of a woman with red hair and glasses and other nearby faces. Faces constitute Level 1 biometric identifiers. Additional background people contribute low-level context but do not add unique identifiers. No government IDs, financial/medical data, or explicit location/address are visible. The presence of several unobscured faces drives a high privacy risk; background crowds add minor reinforcement. Confidence is high due to clarity and centrality of the visible faces.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a woman with red hair and glasses near center-right",
+        "Anonymized_element": "face blurred or pixelated, face turned away, generic silhouette without facial detail",
+        "privacy_element": "full face with clear eyes, nose, mouth, and eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man in blue-and-white plaid shirt with visible face behind raised legs",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic silhouette",
+        "privacy_element": "recognizable facial features including eyes and nose",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partially visible face of man in orange-and-blue shirt at right edge",
+        "Anonymized_element": "face cropped out or blurred, turned-away head",
+        "privacy_element": "partial but identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of people in background with small or occluded faces",
+        "Anonymized_element": "background persons replaced with generic silhouettes or increased depth-of-field blur",
+        "privacy_element": "multiple distant individuals with partially visible faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12667529/r1_crops/2017_12667529_0.png"
+}

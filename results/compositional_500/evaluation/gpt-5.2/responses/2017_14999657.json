@@ -1,0 +1,44 @@
+{
+  "reasoning": "The person’s face and identifiable details are fully masked, so no biometric data is visible. Remaining privacy-relevant cues are contextual: the full-body silhouette indicates a person walking/standing, and the waterfront path with a small pier/lighthouse-like structure may hint at a general location but is not uniquely identifiable. A house exterior is present without numbers or signage. With only moderate, non-unique contextual clues and no readable identifiers, overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "full-body silhouette of a person on a sidewalk near the water",
+        "Anonymized_element": "remove figure entirely, replace with generic back-facing stick figure shape, lower-contrast blurred shape",
+        "privacy_element": "body outline and clothing contours implying physical build, walking/standing posture indicating activity",
+        "target_concept": "person body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "small white lighthouse-like structure at the end of a narrow pier",
+        "Anonymized_element": "replace with generic post/bollard, simplify to non-descript shape, remove distinctive design",
+        "privacy_element": "distinctive waterfront structure and pier that can hint at local geography",
+        "target_concept": "landmark structure",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "exterior wall of a building with vinyl siding at image edge",
+        "Anonymized_element": "plain, textureless wall, crop out building edge",
+        "privacy_element": "indicates type of property without address or signage",
+        "target_concept": "building exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14999657/final/2017_14999657_final.png"
+}

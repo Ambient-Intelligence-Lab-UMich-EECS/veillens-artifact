@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows four people posing closely and holding phones toward the camera. Their faces are large, central, and clearly visible with distinguishable features, which constitutes biometric identifiers. No government IDs, names, or financial/medical details are visible. The primary risk comes from multiple identifiable faces (Level 1). The presence of several faces increases identifiability, while the phone screens do not show readable personal data. Hence the score is high mainly due to strong biometric exposure with clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing head and shoulders of the person at far left",
+        "Anonymized_element": "face blurred or pixelated, eyes and mouth obscured, use of emoji overlay",
+        "privacy_element": "full face with visible eyes, nose, mouth, and unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing head and shoulders of the person second from left (rear center)",
+        "Anonymized_element": "face blurred or pixelated, apply soft mask over facial region, reduce detail",
+        "privacy_element": "full face with visible eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing head and shoulders of the person second from right",
+        "Anonymized_element": "obscure facial region with blur or mosaic, cover eyes and mouth",
+        "privacy_element": "full face with visible eyes, nose, mouth, smile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing head and shoulders of the person at far right",
+        "Anonymized_element": "apply heavy blur/pixelation to face, add opaque shape over facial features",
+        "privacy_element": "full face with visible eyes, nose, mouth, facial hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12838786.jpg"
+}

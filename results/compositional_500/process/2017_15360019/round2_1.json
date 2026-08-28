@@ -1,0 +1,71 @@
+{
+  "reasoning": "This regional crop shows several clearly identifiable human faces, including a seated man looking toward the camera and a side-profile of another man; a child\u2019s face is also visible. These constitute Level 1 biometric data. Additionally, a cardboard box with readable \u201cWorld Vision Lanka\u201d text reveals potential regional location context, and a paper sheet in a person\u2019s hands is a generic document but not legible. The combination is dominated by multiple Level 1 faces, elevating risk to high; location and document cues add minor reinforcement. Confidence is high because the faces and the NGO text are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated man on the right with a clear frontal face",
+        "Anonymized_element": "blurred face, pixelated features, masked/occluded face, head turned away",
+        "privacy_element": "full face with visible eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in green shirt sitting on the floor with a visible side-profile face",
+        "Anonymized_element": "blurred profile, pixelated features, occluded face, head turned down further",
+        "privacy_element": "identifiable facial profile including nose, mouth, and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "child lying on the floor with part of the face visible",
+        "Anonymized_element": "blurred facial area, pixelated features, occluded with blanket or object",
+        "privacy_element": "partial but identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "paper sheet/notebook held by the seated man in green shirt",
+        "Anonymized_element": "blank paper, no text visible, generic notepad with pages folded",
+        "privacy_element": "potential handwritten or printed information (not legible)",
+        "target_concept": "paper document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cardboard box with readable text 'World Vision Lanka'",
+        "Anonymized_element": "plain cardboard box without logos or text",
+        "privacy_element": "readable NGO name with country reference indicating region",
+        "target_concept": "box label/text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15360019/r1_crops/2017_15360019_1.png"
+}

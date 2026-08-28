@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows a concert stage with event banners and a large screen. No identifiable faces or government/financial/medical information are visible; the performer is shown from behind and the audience appears as small, indistinct heads. The readable banner text (URL and SMS shortcode) is public event information, not tied to a person. Thus only low-level contextual clues exist (crowd presence and activity at a concert, generic text). These Level 4 features yield a low privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "row of audience heads at the bottom of the frame, small and not clearly visible",
+        "Anonymized_element": "abstract crowd silhouettes, lower contrast, remove individual details",
+        "privacy_element": "presence of real people in a public crowd, minor activity context (concert attendance)",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "event banner with printed URL and SMS number on the stage front",
+        "Anonymized_element": "plain banner with generic shapes, blurred or removed text and numbers",
+        "privacy_element": "readable website address and SMS shortcode; event branding",
+        "target_concept": "banner text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "large screen showing a performer from behind, no face visible",
+        "Anonymized_element": "abstract graphic or generic silhouette without human details",
+        "privacy_element": "human figure indicating participation in a public event",
+        "target_concept": "person (back view)",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14057640/final/2017_14057640_final.png"
+}

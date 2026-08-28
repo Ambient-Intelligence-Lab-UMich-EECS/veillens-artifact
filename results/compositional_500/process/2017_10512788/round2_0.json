@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a red two\u2011door car parked outdoors. No people, faces, documents, or readable identifiers are visible. The rear license plate area is present but its characters are not legible. The remaining cues (vehicle appearance and model badge) only reveal ownership of a generic asset and provide minimal location context. Highest detected severity is Level 4, so the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red two-door coupe parked in a lot",
+        "Anonymized_element": "generic vehicle silhouette, neutral color, minimal details",
+        "privacy_element": "distinct vehicle appearance linking to ownership",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rear license plate area with dark frame; characters not readable",
+        "Anonymized_element": "blank plate, fully obscured plate",
+        "privacy_element": "presence of a license plate that could reveal a number if legible",
+        "target_concept": "license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "\u201c2.8i\u201d model badge on rear quarter panel",
+        "Anonymized_element": "blank panel, generic badge with no text",
+        "privacy_element": "specific model designation identifying the vehicle variant",
+        "target_concept": "vehicle badge",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10512788/r1_crops/2017_10512788_0.png"
+}

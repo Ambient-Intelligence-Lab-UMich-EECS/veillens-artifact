@@ -1,0 +1,17 @@
+{
+  "label": "VeilLens (the method itself)",
+  "kind": "method under test",
+  "status": "not run on this image set",
+  "why": "Protection has only been run on the 100-image subset (pipeline2/result/test_iter3), whose reasoning is archived at results/geolocation_100/. No protected image exists for these 500, so there is nothing for these four evaluators to score.",
+  "note": "On the 100-image subset the protected image was read once more by the loop's own oracle, whose model id is not recorded in any artifact of that run. That is a within-loop number, not a transfer number: the same model drove the edits. None of the four evaluators here has ever scored a VeilLens output on any Cityscapes set.",
+  "condition": "veillens",
+  "expected_path": "evaluation/veillens/<evaluator>/responses/<image_id>.json",
+  "expected_evaluators": [
+    "gpt-5.2",
+    "gemini-3-flash-preview",
+    "gemini-3.1-pro-preview",
+    "gemini-2.5-flash"
+  ],
+  "expected_responses": 2000,
+  "present": 0
+}

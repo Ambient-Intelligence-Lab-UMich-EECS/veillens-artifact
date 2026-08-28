@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows two plates with burgers and fries on a restaurant table. No faces, names, documents, or readable text are visible. The only privacy-relevant cues relate to dining activity and food preferences, which are Level 3 contextual signals. There are no Level 1 or 2 identifiers. Thus the overall risk is low, driven by minor activity/behavior clues, with high confidence due to clear visibility and lack of sensitive details.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large burger and fries on a white plate in the foreground",
+        "Anonymized_element": "generic blurred food shapes, non-descript plate of food, remove distinctive burger form",
+        "privacy_element": "specific meal choice (burger, fries) indicating dining preferences or habits",
+        "target_concept": "meal/food plate",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "restaurant table setting with glass of water, cutlery, and napkins",
+        "Anonymized_element": "plain tabletop without place settings, generic empty table",
+        "privacy_element": "restaurant dining context suggesting eating-out behavior",
+        "target_concept": "table setting",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14531593.jpg"
+}

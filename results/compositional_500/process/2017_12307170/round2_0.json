@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person riding a recumbent tricycle on a roadway. The face is obscured and not identifiable, so no Level 1 biometric risk is present. Visible clues mainly indicate an activity (cycling on a recumbent trike) and some physical appearance through clothing and body shape, which are Level 3 risks. The distinctive bicycle also counts as property but is lower risk on its own. With no readable text, IDs, or sensitive content, the overall risk is moderate-low, driven by activity and personal-attribute cues.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "red recumbent tricycle being ridden, visible frame and drivetrain",
+        "Anonymized_element": "generic bicycle silhouette, neutral color frame, simplified components without branding",
+        "privacy_element": "specific activity (cycling), distinctive vehicle type/model cues",
+        "target_concept": "bicycle/tricycle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rider\u2019s athletic outfit and body shape (long-sleeve top, leggings, helmet), face obscured",
+        "Anonymized_element": "loose generic clothing, neutral colors, minimized body contour detail",
+        "privacy_element": "body shape and clothing style revealing physical appearance cues",
+        "target_concept": "clothing/body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12307170/r1_crops/2017_12307170_0.png"
+}

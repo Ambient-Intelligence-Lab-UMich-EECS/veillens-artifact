@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a single person near a vehicle/trailer in a parking area. The person\u2019s face is clearly visible and front-facing, which constitutes identifiable biometric data and reveals personal appearance attributes. No government IDs, text, addresses, or license plates are readable. Aside from the face, only general clothing/style is visible, which contributes minor personal-attribute context. The highest severity is Level 1 due to the unobstructed face, so the overall risk is elevated but not extreme since no additional identifiers are present. Confidence is high because the face is clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the person looking toward the camera",
+        "Anonymized_element": "blurred face, turned-away head, generic placeholder face with no distinct features",
+        "privacy_element": "full facial features, eyes, identifiable biometric details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distinct outfit consisting of a short skirt and high heels",
+        "Anonymized_element": "generic solid-color knee-length skirt or pants, neutral shoes, simplified textures",
+        "privacy_element": "distinctive clothing style and body shape cues",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10263842.jpg"
+}

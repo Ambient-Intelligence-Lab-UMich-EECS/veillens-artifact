@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows the top margin of an aged paper with a small handwritten note including a legible year/date, while the rest is obscured. No faces, IDs, addresses, financial or medical data are visible. The only privacy-relevant cue is the readable date on a document, which is a low-risk generic document/metadata element and does not uniquely identify a person on its own. Thus the risk is low with limited contextual sensitivity.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small handwritten note with a legible year/date near the top center of the paper",
+        "Anonymized_element": "blank margin, faint scribble with no readable numbers, generic header without text",
+        "privacy_element": "readable date/year text on a document header",
+        "target_concept": "handwritten date",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14367145/r1_crops/2017_14367145_1.png"
+}

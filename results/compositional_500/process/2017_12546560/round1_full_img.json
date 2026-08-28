@@ -1,0 +1,90 @@
+{
+  "reasoning": "The image shows three athletes on a podium with clearly visible faces (front/side views) and distinct facial features, constituting biometric identifiers. All three are seated in wheelchairs, which can imply a disability, a sensitive inference. Event signage in the background includes recognizable text and logos indicating location/context. The highest severity present is Level 1 due to multiple identifiable faces, reinforced by Level 2 sensitive inference (disability) and Level 3 location cues. Given the clarity and centrality of these elements, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost athlete\u2019s face in profile with clear facial features",
+        "Anonymized_element": "face blurred, replaced with generic silhouette, turned-away head",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center athlete\u2019s face facing slightly left with glasses visible",
+        "Anonymized_element": "face blurred, generic head shape, turned-away head",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost athlete\u2019s face in three-quarter view",
+        "Anonymized_element": "face blurred, generic silhouette, turned-away head",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "leftmost athlete\u2019s wheelchair with large rear wheel and footrests",
+        "Anonymized_element": "generic chair or cropped lower body, wheelchair replaced with neutral seating",
+        "privacy_element": "wheelchair implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center athlete\u2019s wheelchair, metallic frame and wheels",
+        "Anonymized_element": "generic chair or crop to upper body, remove mobility aid details",
+        "privacy_element": "wheelchair implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost athlete\u2019s wheelchair with visible caster wheels",
+        "Anonymized_element": "generic chair or crop to upper body, remove mobility aid details",
+        "privacy_element": "wheelchair implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background banner with the word 'London' and event logo colors",
+        "Anonymized_element": "blank banner with abstract colors, no text or logos",
+        "privacy_element": "recognizable event/location text and logo",
+        "target_concept": "event signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12546560.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a kneeling person from behind with arms raised; the face is not visible and there are no textual identifiers or location cues. The key privacy signal is partial nudity/intimate exposure of the lower body (buttocks in underwear), which is sensitive on its own even without identity. No government IDs, financial or medical data are present. Given a single clear Level 2 clue without reinforcing identifiers, the overall risk is moderate. Confidence is high because the intimate exposure is unambiguous and central.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rear lower torso and buttocks area visible with minimal underwear while kneeling",
+        "Anonymized_element": "add opaque shorts or full-coverage clothing, blur or crop lower body, neutral pose",
+        "privacy_element": "exposed buttocks/underwear, partial nudity, suggestive intimate region",
+        "target_concept": "intimate body region",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13543740/final/2017_13543740_final.png"
+}

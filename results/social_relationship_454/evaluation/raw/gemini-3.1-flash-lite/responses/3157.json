@@ -1,0 +1,29 @@
+{
+  "img_id": "3157",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 1,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 1,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are walking together in the same direction, suggesting they are a pair of individuals navigating the market together. Their proximity and aligned movement indicate a social connection. => friends\n\n[P1-P3]: These individuals are in the same general area of the street market, but P3 is stationary while P1 is walking past. There is no evidence of interaction between them. => no-relationship\n\n[P1-P4]: P1 is walking away while P4 is standing near the store entrance, showing no engagement or shared activity. They appear to be strangers passing by one another. => no-relationship\n\n[P1-P5]: P1 is walking through the market area, while P5 is positioned in the foreground at a stall. There is no visual evidence of a connection between them. => no-relationship\n\n[P2-P3]: P2 is walking and P3 is standing nearby with bags; they appear to be independent shoppers in the same public space. No clear interaction or shared body language suggests a relationship. => no-relationship\n\n[P2-P4]: P2 is walking past P4, who is standing near a shopfront. They are likely just bystanders in the same market environment. => no-relationship\n\n[P2-P5]: P2 is moving through the market space while P5 is occupied near the front of a shop. They do not appear to be interacting. => no-relationship\n\n[P3-P4]: Both P3 and P4 are standing near the shop entrance, appearing to be browsing or waiting in the same location. It is plausible they are together while shopping at the market. => friends\n\n[P3-P5]: P3 is positioned behind P5, but P5 is clearly focused on the camera or her immediate vicinity at the stall. There is no indication of interaction between them. => no-relationship\n\n[P4-P5]: P4 is standing behind P5, but P5 is interacting with the camera/foreground space while P4 remains oriented toward the shop. There is no evidence they are connected. => no-relationship",
+  "timestamp": 1779942268.6237895
+}

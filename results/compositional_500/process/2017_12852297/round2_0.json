@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a public playground with several people, mostly distant or turned away. No readable text, addresses, or identifiers are visible. Faces are either obscured, tiny, or back-of-head, so biometric identifiability is low. The main privacy signals are the presence of unidentifiable individuals (including children) and benign activity disclosure (playing/relaxing). These combine to a low overall risk without any Level 1\u20132 elements.",
+  "personal_info_privacy_score": {
+    "score": 0.09,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "group of children playing near a metal slide and climbing structure at a distance",
+        "Anonymized_element": "replace with fewer abstract silhouettes, blur heads, generic figures without facial detail",
+        "privacy_element": "presence of people/children, implied play activity in a public place",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "seated adult viewed from behind with a folded newspaper over the head on a bench",
+        "Anonymized_element": "remove person, replace with empty bench, or keep person as silhouette without object",
+        "privacy_element": "presence of a person engaged in leisure/reading behavior",
+        "target_concept": "person from behind",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12852297/r1_crops/2017_12852297_0.png"
+}

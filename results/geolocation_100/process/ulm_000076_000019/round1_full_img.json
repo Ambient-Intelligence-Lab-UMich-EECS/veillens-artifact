@@ -1,0 +1,100 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic, EU-style signage, and German-specific road furniture. The license plates have the European blue band with a country code and long German-style alphanumeric formats. Parking and regulatory signs match German designs (blue \u201cP\u201d sign with white border, red \u201cno entry\u201d circle style, and German-format yellow city/wayfinding boards). These cues point strongly to Germany over other EU countries. \nCity level: Two readable license plates reveal local registration prefixes: one plate begins with \u201cUL\u201d (Ulm) and another with \u201cNU\u201d (Neu\u2011Ulm). These adjacent cities lie on opposite sides of the Danube and commonly appear together in local traffic. A yellow wayfinding sign includes \u201cU1,\u201d consistent with local line labeling used in Ulm\u2019s transit context. Together, multiple vehicles bearing UL and NU plates strongly indicate the Ulm/Neu\u2011Ulm area rather than other German cities. \nStreet level: The street is a narrow, tree-lined residential-urban block with late-19th/early-20th\u2011century facades, curbside parking, and a T\u2011junction controlled by a STOP sign and small urban traffic lights. The combination of mixed historic tenement facades, close-set four- to five\u2011story buildings, and the presence of both UL and NU vehicles suggests a central or near\u2011central neighborhood where traffic from both cities mixes, likely just west or south of Ulm\u2019s core. Exact street identification is uncertain, but the STOP at a minor T\u2011junction with adjacent yellow direction boards and parking signage narrows it to a dense residential grid near the city center.",
+  "location_estimate": {
+    "latitude": 48.401,
+    "longitude": 9.988,
+    "confidence": "Medium",
+    "region": "Germany, Baden-W\u00fcrttemberg, Ulm (adjacent to Neu-Ulm, Bavaria)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a black SUV at the center",
+        "non_geolocation_element": "white color, rectangular plate, reflective surface, mounted at rear, overcast lighting",
+        "geolocation_element": "EU plate format with blue band; readable prefix 'UL' indicating Ulm; German-style hyphenated code",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a white hatchback at the right curb",
+        "non_geolocation_element": "white color, rectangular plate, small rear font, metallic car body",
+        "geolocation_element": "EU plate format with blue band; readable prefix 'NU' indicating Neu-Ulm; German plate typography",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow direction sign on a post at the far right",
+        "non_geolocation_element": "yellow background, rectangular board, black border, mounted on gray pole",
+        "geolocation_element": "German-style yellow local wayfinding sign; text with 'U1' line symbol typical in German cities and used in Ulm context",
+        "target_concept": "direction sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue parking sign on a pole at the mid-right sidewalk",
+        "non_geolocation_element": "blue square, white 'P', reflective surface, metal pole",
+        "geolocation_element": "German parking sign design and typography",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red no-entry sign on a pole at the left side street",
+        "non_geolocation_element": "red circle, white horizontal bar, metal pole, circular shape",
+        "geolocation_element": "Design conforms to German/European regulatory sign standard",
+        "target_concept": "no-entry sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "STOP sign on a pole at the T-junction ahead",
+        "non_geolocation_element": "red octagon, white border, reflective surface, mounted on pole",
+        "geolocation_element": "Use at minor junctions typical; complements German intersection control style",
+        "target_concept": "stop sign",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ornate apartment facade on the right block corner",
+        "non_geolocation_element": "sand-colored stucco, bay windows, cornices, 4\u20135 stories, historic style",
+        "geolocation_element": "Central European/German late-19th-century tenement architecture common in Ulm\u2019s inner districts",
+        "target_concept": "apartment facade",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small three-aspect traffic light on a pole at the left corner",
+        "non_geolocation_element": "vertical black housing, red-amber-green lenses, slim pole",
+        "geolocation_element": "Compact German urban traffic signal style",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/ulm/ulm_000076_000019_leftImg8bit.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "This crop shows a street dance group. Most central faces are obscured, but a few background participants\u2019 faces remain small yet unobscured, introducing Level 1 biometric risk though weak due to distance. Additional Level 3 clues include readable activity-related clothing text and a highly distinctive neon outfit and wig that could aid re-identification even without a face. Combined, these cues yield a moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.36,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small unobscured faces of background participants near center-left",
+        "Anonymized_element": "apply strong blur or pixelation to all visible faces",
+        "privacy_element": "visible facial features (eyes, nose, mouth) of background people",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "purple T-shirt with readable 'Zumba' text on front-left participant",
+        "Anonymized_element": "plain T-shirt, remove text/logo, solid color",
+        "privacy_element": "readable activity/brand text indicating participation in a dance/fitness group",
+        "target_concept": "clothing logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "central participant wearing bright neon outfit and pink wig",
+        "Anonymized_element": "muted, generic clothing colors; plain hairstyle or neutral hat",
+        "privacy_element": "highly distinctive attire that can enable re-identification despite obscured face",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12567568/r1_crops/2017_12567568_1.png"
+}

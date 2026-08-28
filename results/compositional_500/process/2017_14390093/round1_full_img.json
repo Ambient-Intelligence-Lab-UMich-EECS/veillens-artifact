@@ -1,0 +1,38 @@
+{
+  "reasoning": "The image shows a medical professional in scrubs with a clear, identifiable side-profile face and a readable workplace logo/text on the chest pocket. The visible face constitutes Level 1 biometric data. The clinic name/logo is a Level 2 non-unique identifier that can also indicate workplace/location, compounding identifiability when combined with the face. No government IDs, financial, or patient medical records are visible. Given a prominent identifiable face plus reinforcing workplace branding, the overall privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear side-profile face of the person in blue scrubs, with glasses and mask under chin",
+        "Anonymized_element": "blurred or pixelated face, strong depth-of-field blur, face turned fully away, mask covering features",
+        "privacy_element": "distinct facial features, visible profile, eyes/nose/mouth contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "readable clinic logo and text 'Clinica CEMTRO' on the scrub top pocket",
+        "Anonymized_element": "plain scrub pocket with no text or logo, generic patch without wording",
+        "privacy_element": "workplace name, clinic logo, institution branding",
+        "target_concept": "workplace logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14390093.jpg"
+}

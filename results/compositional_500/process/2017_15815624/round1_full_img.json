@@ -1,0 +1,25 @@
+{
+  "reasoning": "The image shows a large outdoor sign announcing a community health center, with readable facility name, organizational names, and a phone number. There are no people, faces, or individual identifiers. The main privacy signal is location-identifying text (place name and contact number) on a public sign, which is moderate risk but not tied to any specific person. No medical, financial, or biometric data are present. Thus the score is low-to-moderate, with high confidence due to clear legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large roadside sign with readable text advertising 'Shinglehouse Community Health Center' and a phone number",
+        "Anonymized_element": "blank or generic sign, remove/blur all text and numbers, generic building image without labels",
+        "privacy_element": "facility name, community name, phone number, organization names and city references",
+        "target_concept": "signboard text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15815624.jpg"
+}

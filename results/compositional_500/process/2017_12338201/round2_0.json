@@ -1,0 +1,56 @@
+{
+  "reasoning": "The crop shows a flag-football scene with no identifiable faces. The clearest cues are activity-related: a visible football, yellow flag belts, and a jersey back with the readable word \u201cCOMMITMENT\u201d and number \u201c33.\u201d These reveal participation in a specific activity but do not uniquely identify a person. Background bystanders are distant and unidentifiable. Highest severity present is Level 3 (activity/behavior). With multiple Level 3 cues and minor Level 4 background presence, the overall risk is low-to-moderate. Confidence is medium due to partial occlusions and lack of direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow flag belt hanging from the waist of the player in a navy jersey",
+        "Anonymized_element": "plain waistband, no flags or strips, neutral dark color",
+        "privacy_element": "flag-football belt indicating participation in a specific sport/activity",
+        "target_concept": "sports belt/flags",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "brown American football held in a player\u2019s hand",
+        "Anonymized_element": "generic ball-like object, blurred markings, neutral color",
+        "privacy_element": "football signaling engagement in a specific recreational activity",
+        "target_concept": "football",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "back of navy jersey with white number 33 and the word 'COMMITMENT'",
+        "Anonymized_element": "plain jersey, no text, no number, solid color",
+        "privacy_element": "readable jersey text and large uniform number suggesting team affiliation",
+        "target_concept": "jersey text/number",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "two distant bystanders near the sideline, faces small and blurry",
+        "Anonymized_element": "remove/background blur of bystanders, indistinct silhouettes",
+        "privacy_element": "presence of unidentifiable individuals in the background",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/r1_crops/2017_12338201_0.png"
+}

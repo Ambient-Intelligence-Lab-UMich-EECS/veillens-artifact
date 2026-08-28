@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a presentation setting with multiple people. Faces of the presenters and attendees are intentionally blurred or turned away, preventing identification. Some lanyard badges are visible but the text is not readable. No government IDs, financial, medical, or explicit personal details are legible. The highest severity present is low-level contextual signals (unidentifiable people and unreadable badges), so the overall privacy risk is low. Confidence is high because the cues are clear and non-identifying.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center-right presenter\u2019s blurred face and head",
+        "Anonymized_element": "neutral-colored oval in place of face, no facial features",
+        "privacy_element": "human face region, but not identifiable due to blurring",
+        "target_concept": "obscured face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "right presenter\u2019s lanyard ID badge with illegible text",
+        "Anonymized_element": "blank ID badge, no text or logo, solid color clip",
+        "privacy_element": "ID badge form factor implying potential name/organization though unreadable",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "audience members seen from behind with no faces visible",
+        "Anonymized_element": "empty chairs or generic silhouettes without distinctive clothing",
+        "privacy_element": "presence of people without identifiable features",
+        "target_concept": "unidentifiable individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10881768/r1_crops/2017_10881768_1.png"
+}

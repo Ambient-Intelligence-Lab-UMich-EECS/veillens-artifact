@@ -1,0 +1,72 @@
+{
+  "mask_level": [
+    "street level clue",
+    "city level clue"
+  ],
+  "counting": "distinct_clues_at_most_specific_level",
+  "level_specificity_order": [
+    "street level clue",
+    "city level clue",
+    "country level clue"
+  ],
+  "round1": {
+    "selected": {
+      "country level clue": 0,
+      "city level clue": 191,
+      "street level clue": 151
+    },
+    "skipped": {
+      "country level clue": 0,
+      "city level clue": 18,
+      "street level clue": 24
+    },
+    "grounded": {
+      "country level clue": 0,
+      "city level clue": 173,
+      "street level clue": 127
+    },
+    "selected_total": 342,
+    "grounded_total": 300,
+    "grounding_rate": 0.8771929824561403
+  },
+  "round2": {
+    "selected": {
+      "country level clue": 0,
+      "city level clue": 124,
+      "street level clue": 81
+    },
+    "skipped": {
+      "country level clue": 0,
+      "city level clue": 25,
+      "street level clue": 13
+    },
+    "grounded": {
+      "country level clue": 0,
+      "city level clue": 99,
+      "street level clue": 68
+    },
+    "selected_total": 205,
+    "grounded_total": 167,
+    "grounding_rate": 0.8146341463414634
+  },
+  "total": {
+    "selected": {
+      "country level clue": 0,
+      "city level clue": 315,
+      "street level clue": 232
+    },
+    "skipped": {
+      "country level clue": 0,
+      "city level clue": 43,
+      "street level clue": 37
+    },
+    "grounded": {
+      "country level clue": 0,
+      "city level clue": 272,
+      "street level clue": 195
+    },
+    "selected_total": 547,
+    "grounded_total": 467,
+    "grounding_rate": 0.8537477148080439
+  }
+}

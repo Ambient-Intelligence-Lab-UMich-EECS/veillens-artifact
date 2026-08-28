@@ -1,0 +1,80 @@
+{
+  "reasoning": "The image shows the front of a United Kingdom national identity card. Multiple high-risk personal identifiers are present: a clear face portrait (biometric), a visible ID/document number area, personal data fields such as name and date of birth, and a holder\u2019s signature. Although much of the text is pixelated, the document type and structure are clear and several fields are partially legible, enabling linkage between biometric data and government ID. The highest severity is Level 1 (biometric face and government identifier). The combination of these elements yields a severe privacy risk. Confidence is high because the items are central and unambiguous despite some redaction.",
+  "personal_info_privacy_score": {
+    "score": 0.82,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "passport-style face portrait printed on the left side of the card",
+        "Anonymized_element": "replace with generic silhouette, blur face region, abstract pattern placeholder",
+        "privacy_element": "full frontal face image with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ID card body with UK crest and 'National Identity Card' labeling",
+        "Anonymized_element": "generic blank card design, remove logos and government text, neutral background pattern",
+        "privacy_element": "government ID format and issuer marks confirming official identification document",
+        "target_concept": "government ID card",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "document number area at the top-right with digits partially visible",
+        "Anonymized_element": "blank area, randomized placeholder digits, remove numbering",
+        "privacy_element": "unique identification number pattern tied to government record",
+        "target_concept": "ID number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "surname and given names fields on the upper-left with pixelated text lines",
+        "Anonymized_element": "blank text lines, lorem ipsum placeholders, remove labels",
+        "privacy_element": "name fields indicating full legal name",
+        "target_concept": "name field",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "date of birth field in the mid-left/right text block",
+        "Anonymized_element": "blanked date text, randomized non-realistic date placeholders",
+        "privacy_element": "date of birth value",
+        "target_concept": "date of birth field",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "holder\u2019s signature box at lower-right with pixelated signature",
+        "Anonymized_element": "empty signature box, generic scribble placeholder",
+        "privacy_element": "personal handwritten signature sample",
+        "target_concept": "signature",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11466217.jpg"
+}

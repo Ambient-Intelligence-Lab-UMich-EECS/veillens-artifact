@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a single golfer mid-swing at an outdoor event with branded banners and a board containing readable Korean event text. The person’s face is obscured, so no identifiable biometrics are visible. The primary privacy signals are moderate: the visible human figure reveals an activity (playing golf) and some bodily appearance, and the signage includes readable event information that could hint at venue/time. No government IDs, financial/medical data, or clear personal identifiers are present. Overall risk is low but nonzero due to activity disclosure and contextual event details.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "golfer’s body mid-swing with partially obscured face",
+        "Anonymized_element": "neutral-colored outfit without logos, pose retained but with generic body silhouette, further blur any facial region",
+        "privacy_element": "observable activity (golf), bodily build and attire, partial facial outline",
+        "target_concept": "person/activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "event banner/board with readable Korean text and sponsor logos near the tee box",
+        "Anonymized_element": "blank banner, generic shapes, nonsensical or blurred text, remove logos",
+        "privacy_element": "event name and details, sponsor logos, possible date information",
+        "target_concept": "event sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16250907/final/2017_16250907_final.png"
+}

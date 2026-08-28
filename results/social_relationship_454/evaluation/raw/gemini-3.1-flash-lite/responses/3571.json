@@ -1,0 +1,39 @@
+{
+  "img_id": "3571",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 6,
+    "1 5": 6,
+    "1 6": 6,
+    "2 3": 1,
+    "2 4": 6,
+    "2 5": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 1,
+    "4 6": 1,
+    "5 6": 1
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "1 2": 4,
+    "1 3": 4,
+    "1 6": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "5 6": 6,
+    "2 3": 4,
+    "2 5": 6,
+    "2 4": 6,
+    "2 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P1-P2]: Both are wearing basketball jerseys and are actively engaged in a game together on the court. They are teammates in a sports context. => friends\n\n[P1-P3]: P1 is actively dribbling during a game while P3 is on the court as a player. They are teammates participating in the same competitive activity. => friends\n\n[P1-P4]: P4 appears to be a spectator or coach standing in the background while P1 is actively playing. Their interaction is limited to the shared setting of a basketball game. => no-relationship\n\n[P1-P5]: P5 is a spectator standing in the background while P1 is actively playing. They are connected only by being in the same venue. => no-relationship\n\n[P1-P6]: P6 is a spectator standing in the background while P1 is actively playing. They do not have a direct social interaction. => no-relationship\n\n[P2-P3]: Both individuals are clearly dressed as basketball players on the court during a game. They are teammates sharing a competitive activity. => friends\n\n[P2-P4]: P4 is a spectator observing from the sidelines while P2 is playing. There is no direct personal interaction between them. => no-relationship\n\n[P2-P5]: P5 is a spectator in the background while P2 is an active player. They are bystanders in the same scene. => no-relationship\n\n[P2-P6]: P6 is a spectator in the background while P2 is an active player. There is no evidence of a social bond. => no-relationship\n\n[P3-P4]: P4 is a bystander in the background while P3 is participating in the game. They share the same setting but have no direct interaction. => no-relationship\n\n[P3-P5]: P5 is a spectator in the background while P3 is an active player. They share the same environment but are not interacting. => no-relationship\n\n[P3-P6]: P6 is a spectator in the background while P3 is an active player. They are independent individuals in the same space. => no-relationship\n\n[P4-P5]: Both individuals are spectators standing together on the sidelines. Their proximity suggests they are attending the event together. => friends\n\n[P4-P6]: Both are spectators standing in the background watching the game. Their shared activity and location suggest they are together. => friends\n\n[P5-P6]: Both are spectators standing together watching the basketball game. Their proximity and shared focus indicate a social connection. => friends",
+  "timestamp": 1779942188.6237504
+}

@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a street scene with a masked vehicle and storefronts. No identifiable faces or government/financial documents are visible. The most privacy-relevant element is a readable storefront sign that could hint at location (Level 3). There are also distant, non-identifiable people seen through a window (Level 4). These clues provide minor contextual risk without directly identifying a person. Overall risk is low with moderate confidence due to limited text legibility and lack of biometric details.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront sign hanging above the sidewalk with readable business name",
+        "Anonymized_element": "blank sign panel, abstract icon without text, generic color block",
+        "privacy_element": "business name text that can reveal specific location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "two people visible through cafe window, seen from behind and partially obscured",
+        "Anonymized_element": "empty seats, frosted/blurred window, generic silhouettes without human detail",
+        "privacy_element": "presence of individuals, partial head shapes and clothing",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "sidewalk sandwich board outside a shop with partially legible writing",
+        "Anonymized_element": "blank board, abstract shapes with no text, generic pattern",
+        "privacy_element": "potential readable text that could include business or event info",
+        "target_concept": "signboard",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11411998/final/2017_11411998_final.png"
+}

@@ -1,0 +1,76 @@
+{
+  "reasoning": "Country-level: The storefront on the left shows a red-and-white SNCF logo, which is the French national railway brand, strongly signaling France. Multiple cars display EU-style plates with the French two-letters\u2013three-digits\u2013two-letters format and the blue \u201cF\u201d euroband, further confirming France. Road markings (solid/segmented lane edges and white bicycle pictogram with chevrons) are consistent with French urban cycling lanes. Architecture mixes Haussmannian/Alsatian stone fa\u00e7ades with carved brackets and narrow balconies, typical of northeastern France. \nCity-level: A tall blue vertical banner on the right reads \u201cINET,\u201d which in France commonly denotes the Institut National des \u00c9tudes Territoriales located in Strasbourg. The streetscape\u2014Germanic-influenced fa\u00e7ades, dense mid-rise blocks, and the flat street with tram/rail infrastructure construction cranes in the distance\u2014fits Strasbourg\u2019s center/south-central districts. The borderland Alsatian architectural feel helps exclude many other French cities. \nStreet-level: The specific co-presence of an INET-branded building on the right side of a broad one-way street, an SNCF boutique-style sign on the left, and a \u201cGames & Toys\u201d orange shop sign in ornate white-framed storefronts narrows to a particular block. The right-side modern white building with the blue \u201cINET\u201d vertical banner across from older stone fa\u00e7ades and a marked with-flow bike lane provides a distinctive combination likely near INET\u2019s Strasbourg premises. \nPutting these together, the scene is best explained as central Strasbourg, France, on a street near the INET campus.",
+  "location_estimate": {
+    "latitude": 48.583,
+    "longitude": 7.745,
+    "confidence": "Medium",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shop sign above a storefront on the left",
+        "non_geolocation_element": "orange panel, rectangular shape, backlit letters, white frame",
+        "geolocation_element": "text 'SNCF' in red logo style associated with French national rail",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a black car at the curb",
+        "non_geolocation_element": "white reflective plate, black alphanumeric text, EU blue band",
+        "geolocation_element": "French format AA-123-AA with blue euroband and 'F' country code",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical banner on a building on the right",
+        "non_geolocation_element": "blue fabric panel, vertical orientation, white sans-serif letters",
+        "geolocation_element": "text 'INET' referencing the Strasbourg-based Institut National des \u00c9tudes Territoriales",
+        "target_concept": "banner",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "road marking with bicycle symbol in the lane",
+        "non_geolocation_element": "white paint, bicycle pictogram with chevrons, worn texture",
+        "geolocation_element": "French-style bike lane iconography and directional chevrons",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "building facade with carved stone brackets above windows",
+        "non_geolocation_element": "beige stone, ornate brackets, narrow balcony rails, vertical windows",
+        "geolocation_element": "Alsatian/Haussmannian style common in Strasbourg and northeastern France",
+        "target_concept": "building facade",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop sign above a door reading 'Games & Toys'",
+        "non_geolocation_element": "orange panel, white casing, simple block lettering",
+        "geolocation_element": "store name that can be cross-referenced to a specific block if present in Strasbourg",
+        "target_concept": "shop sign",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/strasbourg/strasbourg_000001_020956_leftImg8bit.png"
+}

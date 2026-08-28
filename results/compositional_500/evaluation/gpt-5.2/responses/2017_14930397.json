@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a quiet street with houses and one car. No people or faces are visible, and there are no readable texts, addresses, or distinctive signs. The only potentially identifying element is the car’s front license plate area, but characters are not legible. House exteriors are visible but without numbers or signage. Thus, only low-level property/asset clues are present, with no Level 1–2 identifiers. Risk is low and based mainly on generic property context.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "silver car on the right side of the road with front license plate area visible",
+        "Anonymized_element": "blanked plate, solid color rectangle, generic bumper",
+        "privacy_element": "license plate region with potential registration characters (unreadable)",
+        "target_concept": "license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "row of residential house facades along the street without visible numbers",
+        "Anonymized_element": "generic building exteriors, no unique signage or numbers, simplified textures",
+        "privacy_element": "distinctive facade details that may hint at a specific property (no address shown)",
+        "target_concept": "home exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14930397/final/2017_14930397_final.png"
+}

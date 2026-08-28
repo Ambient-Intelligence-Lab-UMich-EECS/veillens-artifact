@@ -1,0 +1,56 @@
+{
+  "reasoning": "A public street scene shows multiple people; some are masked, but at least two unobstructed adult faces are clearly visible, which constitutes biometric identifiers (Level 1). Additionally, readable storefront signage such as “LIBRAIRIE PAPETERIE” and “music store” can suggest a specific location (Level 3). The presence of Level 1 biometric data drives the risk to high, with location cues adding compositional context. Overall visibility is clear, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed adult male face in center background, looking toward camera",
+        "Anonymized_element": "blurred face, pixelated features, turned head/back-of-head, low-detail skin-tone patch",
+        "privacy_element": "full frontal face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "adult female face on right background wearing a green top, partially side-facing but identifiable",
+        "Anonymized_element": "blurred face, pixelated features, occluding object, turned-away pose",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth, hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "awning sign on stone building reading 'LIBRAIRIE PAPETERIE'",
+        "Anonymized_element": "blank awning, generic pattern with no text, obscured sign",
+        "privacy_element": "readable business name that can pinpoint locale",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "hanging storefront sign reading 'music store' above shop entrance",
+        "Anonymized_element": "blank hanging sign, generic icon with no text, removed branding",
+        "privacy_element": "readable store name and distinctive storefront branding",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11730503/final/2017_11730503_final.png"
+}

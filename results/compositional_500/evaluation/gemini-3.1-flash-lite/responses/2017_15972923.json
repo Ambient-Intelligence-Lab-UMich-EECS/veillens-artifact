@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image is a commercial advertisement for a historical company, Astra Fireworks. While it contains business addresses and contact information, these represent commercial entities rather than personal private information about an individual. Therefore, the privacy risk regarding personal information is extremely low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "text at the bottom listing company address in London",
+        "Anonymized_element": "fictional company address, generic location text",
+        "privacy_element": "102 Cleveland Street, London, W.1, England",
+        "target_concept": "business address",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "text at the bottom listing company location in Richborough, Kent",
+        "Anonymized_element": "fictional location name, generic geographic identifier",
+        "privacy_element": "Richborough, Kent",
+        "target_concept": "business location",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15972923/final/2017_15972923_final.png"
+}

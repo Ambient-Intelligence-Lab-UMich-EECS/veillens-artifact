@@ -1,0 +1,107 @@
+{
+  "reasoning": "The image shows a street festival with five prominent participants whose faces are largely unobscured and central, providing clear biometric identifiers (Level 1). Additional elements include a readable photo-credit line with a person\u2019s name (Level 2) and a visible building number plaque that can help triangulate location (Level 3). Numerous small, distant individuals appear in the background (Level 4). The combination of multiple clear faces with a name and minor location cue yields a high overall privacy risk. Confidence is high because the cues are direct and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of the person in the center wearing a black-and-red costume and sunglasses",
+        "Anonymized_element": "blurred face, pixelated features, generic mask covering facial area",
+        "privacy_element": "recognizable facial structure, mouth and jawline, partial eye region despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "leftmost participant\u2019s face with pirate hat and eye patch",
+        "Anonymized_element": "face blur, opaque mask, replace with generic head silhouette",
+        "privacy_element": "visible facial contours and mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second person from left wearing a red lace mask, lower face visible",
+        "Anonymized_element": "full opaque mask, blur remaining facial area",
+        "privacy_element": "exposed nose, mouth, chin and overall facial outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second person from right with yellow bandana and mirrored sunglasses",
+        "Anonymized_element": "blur or replace with opaque mask, remove reflective detail",
+        "privacy_element": "distinct facial outline, nose and mouth visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost person\u2019s face with curly hair and sunglasses",
+        "Anonymized_element": "blur face region, add opaque carnival mask",
+        "privacy_element": "recognizable lower face, mouth and jawline with clear hair style",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small distant faces in the background crowd along the street",
+        "Anonymized_element": "apply depth-of-field blur to crowd, reduce facial detail",
+        "privacy_element": "multiple tiny but still human faces",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white plaque on right-side yellow building showing number '353'",
+        "Anonymized_element": "blank plaque without numbers, generic texture",
+        "privacy_element": "readable building number that can aid precise location",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small top-right margin text with photo credit including a person\u2019s full name",
+        "Anonymized_element": "remove credit line, replace with blank margin or generic label without names",
+        "privacy_element": "readable personal name and affiliation text",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15082239.jpg"
+}

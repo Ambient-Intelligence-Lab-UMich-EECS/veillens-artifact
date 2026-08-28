@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a printed public timetable with readable route/place names (e.g., Dublin, Cork, Killarney) and times. There are no people, faces, or personal identifiers. This is a generic document that incidentally exposes broad location context only. The highest severity present is Level 4 (generic document/location context). With no compositional reinforcement toward an individual, the privacy risk is low. Confidence is high due to clear visibility and lack of sensitive elements.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed train/bus timetable page with readable route header and times",
+        "Anonymized_element": "blank page layout, blurred/unreadable text, generic geometric lines without place names or times",
+        "privacy_element": "readable place names and route information, schedule times",
+        "target_concept": "printed timetable",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12678568/r1_crops/2017_12678568_0.png"
+}

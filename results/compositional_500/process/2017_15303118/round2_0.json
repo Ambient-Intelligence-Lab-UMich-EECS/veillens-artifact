@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a cargo ship at sea with the vessel name clearly painted on the bow and a distant coastline with small buildings and hills. No people, faces, IDs, or sensitive documents are present. The most privacy-relevant element is the readable vessel name, which identifies a specific asset but not a person. The background landscape offers only vague regional context without specific landmarks or addresses. Overall this yields a low privacy risk with Level 4 cues only and limited compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vessel bow with the ship name painted in white letters",
+        "Anonymized_element": "blank hull with no text, generic paint color, subtle weathering",
+        "privacy_element": "readable vessel name text on hull, unique asset identifier",
+        "target_concept": "ship name on hull",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant coastline with small town structures and hillside",
+        "Anonymized_element": "generic coastline, blurred buildings, simplified terrain",
+        "privacy_element": "recognizable shoreline silhouette and clustered buildings suggesting region",
+        "target_concept": "background landscape",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15303118/r1_crops/2017_15303118_0.png"
+}

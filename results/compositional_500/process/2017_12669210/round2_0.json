@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a residential porch facing a street intersection. A house-number plaque beside the door displays digits that appear readable, and an intersection street sign with a street name is visible in the background. These location identifiers can combine to reveal a specific address. No faces, documents, or financial/medical items are present. Risk is driven by Level 3 location information from multiple reinforcing cues, so the score is moderate with medium confidence due to partial legibility at distance.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "house-number plaque mounted beside the front door",
+        "Anonymized_element": "blank plaque, no numerals, neutral color",
+        "privacy_element": "visible house number digits",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "green street sign at the intersection showing a street name",
+        "Anonymized_element": "blank signboard, no text or symbols, generic color",
+        "privacy_element": "street name text",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12669210/r1_crops/2017_12669210_0.png"
+}

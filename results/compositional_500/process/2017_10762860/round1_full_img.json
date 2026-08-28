@@ -1,0 +1,47 @@
+{
+  "reasoning": "A person holds a student ID card close to the camera. The card shows a clear portrait photo and legible text including a full name, student ID number, barcode, and the college\u2019s name. The holder\u2019s real face is also visible. The highest-severity clues are identifiable faces (Level 1) from both the card photo and the person. These are reinforced by Level 2 non-unique identifiers (name and student ID) and partial location/affiliation via the college name. The combination makes the image highly identifying. Score is high with high confidence due to clarity and central framing.",
+  "personal_info_privacy_score": {
+    "score": 0.84,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal portrait photo on the student ID card",
+        "Anonymized_element": "solid-color rectangle, abstract silhouette, pattern-filled placeholder",
+        "privacy_element": "full face, frontal portrait, clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person\u2019s face in the background holding the card",
+        "Anonymized_element": "face blurred, face cropped out, head turned away",
+        "privacy_element": "recognizable facial features, eyes and smile visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "text area on the ID card showing name, student ID number, barcode, and college name/logo",
+        "Anonymized_element": "blank ID badge with no text or logo, generic barcode-like pattern removed, obfuscated digits",
+        "privacy_element": "readable full name 'Lori Wilson', visible student ID number, barcode, college name/logo",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10762860.jpg"
+}

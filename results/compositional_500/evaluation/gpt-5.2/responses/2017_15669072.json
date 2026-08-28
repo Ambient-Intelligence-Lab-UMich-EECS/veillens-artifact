@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows a seated crowd at an event with multiple faces deliberately blurred, so direct biometric identification is removed. The most privacy-relevant visible cue is a foreground person wearing a very low-cut dress with the chest area partially censored, which falls under intimate content though identity is hidden. Other visible cues include a background crowd whose faces would be identifying if unobscured and a person holding a drink indicating a benign activity. With no readable names, documents, or location markers, the overall risk is moderate mainly due to intimate attire combined with a social-event context, but reduced by the anonymized faces.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person wearing a plunging neckline dress; chest area partially censored",
+        "Anonymized_element": "higher neckline or opaque top, neutral fabric, modest coverage",
+        "privacy_element": "exposed cleavage/partial breast contour indicating intimate content",
+        "target_concept": "revealing clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "group of people in background with faces blurred/occluded",
+        "Anonymized_element": "retain crowd with fully blurred or silhouetted heads, no facial detail",
+        "privacy_element": "human faces that would provide biometric identifiers if unobscured",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "person in background holding a glass with a beverage",
+        "Anonymized_element": "replace with empty hand or opaque cup without contents",
+        "privacy_element": "consumption of a beverage indicating attendance at a social event",
+        "target_concept": "handheld drink",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15669072/final/2017_15669072_final.png"
+}

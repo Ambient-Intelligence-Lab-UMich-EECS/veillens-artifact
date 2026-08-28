@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public march with multiple clearly identifiable faces in the foreground and background. Several faces are unobstructed and central, constituting Level 1 biometric data. Prominent rainbow Pride flags introduce sensitive-inference risk (potential LGBTQ+ affiliation or political views). A child\u2019s identifiable face is also visible. The combination of multiple Level 1 faces with a strong sensitive symbol elevates risk. No readable names or government/financial details are present. Overall this yields a high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.84,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a woman in a blue tank top near center-right holding a flagpole",
+        "Anonymized_element": "blurred face, neutralized skin tones, replace with featureless oval",
+        "privacy_element": "clear facial features, eyes and mouth visible enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a young woman in a black tank top at right foreground holding a flagpole",
+        "Anonymized_element": "blur or pixelate face, generic featureless head",
+        "privacy_element": "full face with distinct features in focus",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of identifiable adult faces in the background crowd across mid-frame",
+        "Anonymized_element": "apply crowd face blurring, reduce detail to indistinct silhouettes",
+        "privacy_element": "multiple recognizable faces with visible eyes, noses, and mouths",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child\u2019s face being held by an adult at left background",
+        "Anonymized_element": "blur child\u2019s face, replace with neutral silhouette",
+        "privacy_element": "recognizable child facial features",
+        "target_concept": "child face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large rainbow Pride flag held aloft at left foreground",
+        "Anonymized_element": "plain single-color flag, geometric stripes without Pride color scheme",
+        "privacy_element": "distinct rainbow Pride color pattern suggesting LGBTQ+ affiliation or support",
+        "target_concept": "Pride flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14316005/r1_crops/2017_14316005_0.png"
+}

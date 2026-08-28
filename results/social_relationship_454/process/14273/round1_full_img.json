@@ -1,0 +1,25 @@
+{
+  "img_id": "14273",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They are seated near each other in a conference room with badges and casual-professional attire, appearing to participate in a discussion; no physical contact or intimacy, just attentive body language. => professional\n\n[P1-P3]: Both wear conference badges in the same meeting space; P3 is working on a laptop while P1 holds a cup, with no direct interaction or closeness suggesting anything beyond coworkers/attendees. => professional\n\n[P2-P3]: In the same conference setting with badges, sitting apart and not engaging physically; posture suggests parallel participation in a work/meeting context. => professional",
+  "timestamp": 1776888792.2013826
+}

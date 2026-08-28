@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image depicts a wide mountain lake landscape with no readable text, documents, vehicles, houses, or close-up people. The only possible personal element is one or two very small, distant human silhouettes near the lakeshore, which are unidentifiable. The highest severity present is Level 4 (distant, unidentifiable individuals). There are no compositional reinforcements like faces, names, or location identifiers. Thus, overall privacy risk is very low, with high confidence due to the absence of strong personal information cues.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "tiny, distant human silhouette standing on the lakeshore",
+        "Anonymized_element": "replace with small rock or vegetation, remove figure, blend shoreline texture",
+        "privacy_element": "presence of a person, unidentifiable silhouette",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11876271.jpg"
+}

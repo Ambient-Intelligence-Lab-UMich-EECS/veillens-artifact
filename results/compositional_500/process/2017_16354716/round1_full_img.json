@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows a small meeting/classroom with several people whose faces are clearly visible at close range. These identifiable facial features constitute Level 1 biometric data, which alone creates high privacy risk. There are no readable name badges, documents, or device screens, and no explicit location markers, so additional risks are limited. However, the presence of multiple distinct, unobstructed faces reinforces identifiability. Based on strong Level 1 clues across several individuals, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman seated at far left with curly dark hair, face turned slightly toward camera",
+        "Anonymized_element": "face pixelated or blurred, solid-color oval placeholder for face",
+        "privacy_element": "clear facial features including eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman left-center wearing glasses, face visible above laptop",
+        "Anonymized_element": "blurred facial region, generic eyeglass shape without details",
+        "privacy_element": "recognizable face with glasses framing eyes",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in foreground center leaning forward, partially blurred but face structure visible",
+        "Anonymized_element": "stronger blur/pixelation over facial area",
+        "privacy_element": "visible facial outline and features despite motion blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in back row center between two people, frontal face visible",
+        "Anonymized_element": "face pixelated, generic skin-tone oval",
+        "privacy_element": "clear frontal face with eyes and nose visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman in back row right wearing green jacket, face turned slightly to left",
+        "Anonymized_element": "blurred facial region, simplified oval without features",
+        "privacy_element": "distinct facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man at far right with hand on chin, face visible above laptop",
+        "Anonymized_element": "pixelated face, remove detailed features",
+        "privacy_element": "clear, unobstructed facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_16354716.jpg"
+}

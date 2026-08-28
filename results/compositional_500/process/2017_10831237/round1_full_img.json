@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a person speaking into a microphone at a public event with many attendees behind them. Several faces are clearly visible and front-facing, which constitutes biometric identifiers (Level 1). There are also visible campaign-style buttons and printed shirts suggesting political affiliation or participation (Level 2). The combination of multiple identifiable faces with political-event cues substantially increases privacy risk. Given the clarity and centrality of these elements, the overall risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.78,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central speaker\u2019s full, well-lit face holding a microphone",
+        "Anonymized_element": "face blurred or pixelated, replaced with generic silhouette, maintain microphone and posture",
+        "privacy_element": "distinct facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-left attendee\u2019s clear face (older woman looking at speaker)",
+        "Anonymized_element": "blurred or pixelated facial region, neutral skin-tone patch",
+        "privacy_element": "distinct facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-right attendee\u2019s clear face (woman with short hair)",
+        "Anonymized_element": "blurred or pixelated facial region, neutral patch",
+        "privacy_element": "distinct facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red cap with circular campaign button/logo on attendee behind speaker",
+        "Anonymized_element": "plain red cap without pins, blank circular pin",
+        "privacy_element": "political campaign logo/symbol suggesting affiliation",
+        "target_concept": "campaign button",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white T-shirts in crowd with large campaign-style print",
+        "Anonymized_element": "plain white T-shirts without text or symbols",
+        "privacy_element": "political messaging/branding indicating participation in political event",
+        "target_concept": "clothing with political print",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10831237.jpg"
+}

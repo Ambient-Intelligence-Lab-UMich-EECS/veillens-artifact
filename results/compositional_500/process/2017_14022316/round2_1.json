@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a public march with several participants; at least one person\u2019s face is clearly visible and unobscured (others are partially masked but additional small faces are visible in the crowd). A T\u2011shirt with readable text referencing \u201cHIV STIGMA\u201d creates a sensitive health-related inference tied to the event. A street sign with \u201cW. 8th St\u201d provides location information. The presence of an identifiable face (Level 1) combined with sensitive health-context text (Level 2) and a precise location cue (Level 3) results in a high privacy risk. Confidence is high because the cues are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a woman on the right wearing sunglasses",
+        "Anonymized_element": "blurred face, low-detail facial placeholder, generic skin-tone patch",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth geometry",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black T-shirt on left with large readable text \"HIV STIGMA\"",
+        "Anonymized_element": "plain T-shirt, remove text/logo, generic solid color",
+        "privacy_element": "health-related advocacy text implying HIV context",
+        "target_concept": "apparel text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue street sign reading \"W. 8th St\" near the top center",
+        "Anonymized_element": "blank sign, remove/blur text, generic color block",
+        "privacy_element": "specific street name providing precise location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small, readable faces of multiple participants in the background crowd",
+        "Anonymized_element": "blurred faces, low-detail ovals",
+        "privacy_element": "identifiable facial features of several individuals",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14022316/r1_crops/2017_14022316_1.png"
+}

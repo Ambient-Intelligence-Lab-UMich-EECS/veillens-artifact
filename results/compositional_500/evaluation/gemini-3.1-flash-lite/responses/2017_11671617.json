@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image features an individual covered in mud, with significant portions of the upper body and face digitally masked or obscured to prevent identification. Despite this, the remaining visible physical attributes, specifically the posture and body form, provide information about the subject's gender and physical appearance. The level of masking reduces the risk of biometric identification, but the content still falls under personal attributes and potentially sensitive behavioral context, leading to a moderate risk assessment.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "The visible lower body and limb shape of the person sitting in mud",
+        "Anonymized_element": "generic shape, obscured body, neutral attire",
+        "privacy_element": "gendered body shape, physical appearance",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "The area where the face was digitally removed",
+        "Anonymized_element": "hair or a blurred background",
+        "privacy_element": "digital mask over facial area",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11671617/final/2017_11671617_final.png"
+}

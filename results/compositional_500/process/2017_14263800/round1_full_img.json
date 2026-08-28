@@ -1,0 +1,25 @@
+{
+  "reasoning": "The image shows a single person on a powered wheelchair moving along a sidewalk beside a red brick wall. The face is small, side-on, and not identifiable, and there are no names, documents, or location markers. However, the visible mobility aid enables a sensitive inference about disability, which is a Level 2 risk. With no Level 1 identifiers and limited contextual clues, the overall risk is moderate, driven primarily by the wheelchair cue. Confidence is medium since the disability inference, while likely, is still indirect.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "powered wheelchair with a seated person in profile on the sidewalk",
+        "Anonymized_element": "replace with generic pedestrian silhouette, bicycle, or empty sidewalk; remove medical/assistive design cues",
+        "privacy_element": "mobility aid suggesting disability or health condition",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14263800.jpg"
+}

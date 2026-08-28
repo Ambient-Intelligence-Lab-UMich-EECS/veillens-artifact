@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image is a vintage directory cover featuring printed business and location text only. No identifiable faces or government IDs are visible. The main privacy-relevant clues are readable geographic references and a specific street address for a business, which constitute location information but are not tied to any identifiable private individual. With no Level 1\u20132 elements and only moderate Level 3 location cues on a generic document, the overall privacy risk is low. Confidence is high because the visible content is clear and non-personal.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed address line reading '27 GRAND PARADE, ST. LEONARDS' near the bottom of the cover",
+        "Anonymized_element": "replace with generic placeholder text, blurred line, or omit street number and street name",
+        "privacy_element": "specific street address, street name, and town",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "prominent city/place names 'HASTINGS & ST. LEONARDS' and 'BEXHILL-ON-SEA' across the cover",
+        "Anonymized_element": "generic city names, initials only, or abstract placeholder text",
+        "privacy_element": "explicit city and area names indicating geographic location",
+        "target_concept": "place names text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15436178.jpg"
+}

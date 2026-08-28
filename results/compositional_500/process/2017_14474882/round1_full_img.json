@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows three people (two adults and one child) seated closely and looking at the camera with unobstructed, well-lit faces. Clear facial features constitute biometric identifiers, which are Level 1 risks. Additional low-level context such as age/appearance is visible but there are no government IDs, financial or medical documents, or location details. Given three identifiable faces, the overall privacy risk is high. Confidence is high because the faces are central and clear.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult man's face on the left, looking at camera",
+        "Anonymized_element": "blurred or pixelated face, neutral oval replacement, face turned away",
+        "privacy_element": "full unobstructed face with clear eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "adult woman's face on the right, smiling at camera",
+        "Anonymized_element": "blurred or pixelated face, neutral oval replacement, face turned away",
+        "privacy_element": "full unobstructed face with clear eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child's face in the center wearing a flower headband",
+        "Anonymized_element": "blurred or pixelated face, neutral oval replacement, face turned away",
+        "privacy_element": "full unobstructed face with clear eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14474882.jpg"
+}

@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows two children, one standing and one seated in a stroller, in a tree-lined park area with horses in the background. Faces appear deliberately blurred, so no direct biometric identifiers are visible. The main privacy exposure comes from personal attributes (children\u2019s apparent ages and physical characteristics) and activities/behaviors (use of a stroller, being at a pony-riding/park setting). Location is generic and not uniquely identifiable. With no Level 1\u20132 elements, risk is moderate mainly from Level 3 contextual clues. Confidence is high because the objects are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "standing child wearing a bright blue jacket (face blurred)",
+        "Anonymized_element": "neutral-colored jacket, less distinctive style, reduce visible body details",
+        "privacy_element": "apparent child age and body build, distinctive clothing color",
+        "target_concept": "child body (face obscured)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child seated in a stroller with purple jacket (face blurred)",
+        "Anonymized_element": "generic stroller seat without distinctive colors, neutral clothing tones",
+        "privacy_element": "presence of stroller indicating infant/toddler age and caregiving routine",
+        "target_concept": "child in stroller",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "stroller hardware and side frame with visible brand text",
+        "Anonymized_element": "plain stroller frame without branding or text",
+        "privacy_element": "product branding and specific model cues",
+        "target_concept": "stroller",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "pair of horses with saddles in the background near people",
+        "Anonymized_element": "generic blurred background shapes without recognizable animals or gear",
+        "privacy_element": "implies pony-riding or animal-activity context at a park",
+        "target_concept": "horses",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14057109/r1_crops/2017_14057109_0.png"
+}

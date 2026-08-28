@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image shows a street scene with a bright bicycle, parked cars, a bench, and storefronts across the street. No identifiable faces, IDs, financial or medical items are visible. The most privacy-relevant cue is readable storefront signage that can reveal a specific location. Additional minor context comes from distant unidentifiable pedestrians and visible vehicles without readable license plates. With no Level 1–2 clues and only limited Level 3–4 signals, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront sign with business name on the building facade across the street",
+        "Anonymized_element": "blank awning, generic sign without text or logo, neutral colors",
+        "privacy_element": "business name text, recognizable logo",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "two distant pedestrians near the shop entrance across the street",
+        "Anonymized_element": "remove figures, replace with empty sidewalk, or generic blurred silhouettes",
+        "privacy_element": "presence of people, body outlines",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "parked cars along the curb with visible make/model shapes and plate areas not legible",
+        "Anonymized_element": "generic car silhouettes, de-branded vehicles, blank plate area",
+        "privacy_element": "vehicle appearance that could be recognized, potential plate region",
+        "target_concept": "vehicle exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14123109/final/2017_14123109_final.png"
+}

@@ -1,0 +1,29 @@
+{
+  "img_id": "20691",
+  "predictions": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 1,
+    "2 3": 4,
+    "2 4": 1,
+    "2 5": 1,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 1
+  },
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "raw_response": "[P1-P2]: Both individuals are actively engaged in a competitive baseball play, with one sliding into a base and the other fielding the play. They are opponents in the context of the game. => no-relationship\n\n[P1-P3]: P1 is a base runner and P3 is an umpire standing near the play to observe the action. They are interacting within the rules of the game. => no-relationship\n\n[P1-P4]: P1 is a base runner and P4 is the catcher involved in the defensive play at home plate. They are opponents competing in the game. => no-relationship\n\n[P1-P5]: Both are players on the same team, as indicated by their similar team uniforms and presence on the baseball field. => friends\n\n[P2-P3]: P2 is a player involved in the action and P3 is an umpire overseeing the play. They are in a formal professional/officiating relationship within the sport. => professional\n\n[P2-P4]: P2 is the defensive player (likely infielder/pitcher) and P4 is the catcher, both playing for the same defensive team. They are teammates working together. => friends\n\n[P2-P5]: Both are players on the same baseball team, evidenced by their shared activity and matching team attire. => friends\n\n[P3-P4]: P3 is an umpire watching the play and P4 is a player on the field; their interaction is strictly governed by game rules. => no-relationship\n\n[P3-P5]: P3 is an umpire and P5 is a player waiting on the sidelines or field; they share the same environment but are not interacting. => no-relationship\n\n[P4-P5]: Both are members of the same baseball team, as indicated by the uniform worn by P4 and the team gear held by P5. => friends",
+  "timestamp": 1779942221.9328775
+}

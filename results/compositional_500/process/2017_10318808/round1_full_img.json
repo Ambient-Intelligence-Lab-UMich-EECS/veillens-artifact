@@ -1,0 +1,38 @@
+{
+  "reasoning": "The image shows a concert ticket with branding, event details (city, venue, date/time, price, website), and a visible serial number. There are no people, faces, names, barcodes linked to a person, or government/financial identifiers. The strongest clues are low-level: a unique ticket serial number and detailed event text that could suggest attendance only if linked externally. With no direct linkage to an individual, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical white strip on the right with printed text 'No. 00721'",
+        "Anonymized_element": "blank strip, generic pattern, obfuscated digits like '00000'",
+        "privacy_element": "unique ticket serial number '00721'",
+        "target_concept": "serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed event details line with city, venue, date/time, price, and website near the bottom center",
+        "Anonymized_element": "blurred text block, generic placeholder text, remove city/venue/date specifics",
+        "privacy_element": "city and venue names, specific date and time, ticket price, website URL",
+        "target_concept": "event details text",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10318808.jpg"
+}

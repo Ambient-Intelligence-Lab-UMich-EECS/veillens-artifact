@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a person on a couch holding a credit card and a smartphone with a laptop nearby. The individual’s full face is clearly visible and unobstructed, which is a Level 1 biometric identifier and dominates the risk. Additional contextual clues (visible payment card front though unreadable, shipping boxes suggesting recent purchases, and an active laptop) add moderate behavioral context but do not reveal readable financial or textual details. Combined, these cues raise risk above moderate mainly due to the identifiable face. Confidence is high because the key elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing, well-lit face of the seated person",
+        "Anonymized_element": "blurred or pixelated face, generic silhouette, occluded eyes region",
+        "privacy_element": "full facial features including eyes, nose, and mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "credit card held in right hand with front side facing camera; numbers not legible",
+        "Anonymized_element": "plain blank card, back side without numbers, generic solid-colored rectangle",
+        "privacy_element": "payment card presence and number row layout (unreadable) indicating payment method",
+        "target_concept": "credit card",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Financial data (credit cards, bank statements, account numbers) "
+        ]
+      },
+      {
+        "object_description": "open laptop on the coffee table with a bright blank screen",
+        "Anonymized_element": "closed laptop, screen turned away, generic cover without branding",
+        "privacy_element": "computing device in use implying online activity context",
+        "target_concept": "laptop",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "stack of cardboard shipping boxes in the background with indistinct labels",
+        "Anonymized_element": "plain boxes without labels or logos",
+        "privacy_element": "presence of delivered packages indicating recent purchases",
+        "target_concept": "shipping boxes",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10111313/final/2017_10111313_final.png"
+}

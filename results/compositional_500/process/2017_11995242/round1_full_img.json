@@ -1,0 +1,59 @@
+{
+  "reasoning": "A central person is shown on stage with a clear, well-lit, frontal face, which is directly identifying (Level 1). The backdrop prominently displays an event brand/name, revealing contextual location information. The person\u2019s T\u2011shirt includes a readable company/brand logo and slogan that signal affiliation, and a headset mic indicates public speaking activity. These clues reinforce each other (identity + affiliation + event context), yielding a high privacy risk even without government IDs or financial/medical data.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the person at center, well-lit",
+        "Anonymized_element": "blurred face, pixelated facial region, turned-away head",
+        "privacy_element": "full identifiable face, eyes, nose, mouth, unique facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large event backdrop with readable 'TechCrunch Disrupt' logos",
+        "Anonymized_element": "plain abstract backdrop, no text, no logos",
+        "privacy_element": "event name, distinctive brand logo",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black T-shirt with yellow circular logo and readable text",
+        "Anonymized_element": "plain shirt, generic pattern, no text or logos",
+        "privacy_element": "company/brand logo, readable slogan text",
+        "target_concept": "clothing logo",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "headset or lavalier microphone on chest",
+        "Anonymized_element": "no visible microphone, generic small clip without wire",
+        "privacy_element": "public speaking equipment indicating role at event",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11995242.jpg"
+}

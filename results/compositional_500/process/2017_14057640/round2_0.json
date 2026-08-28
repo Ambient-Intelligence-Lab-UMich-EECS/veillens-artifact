@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a concert stage with a large screen. A musician\u2019s face (drummer) is faintly visible on the screen, partially obscured and not very sharp, which constitutes biometric data but with low clarity. The guitarist is seen from behind with no face visible. Small audience heads/hands are visible at the bottom but are distant and unidentifiable. No names, personal documents, or precise location identifiers are present. Overall risk is driven by the partially visible face, resulting in a moderate but limited privacy risk. Confidence is medium due to distance and partial occlusion.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible drummer\u2019s face on the big stage screen",
+        "Anonymized_element": "blurred face, generic silhouette, turned-away head, abstracted facial area",
+        "privacy_element": "visible facial features enabling biometric recognition (though small/partial)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant audience heads and raised hands along the bottom edge",
+        "Anonymized_element": "remove or blur crowd region, replace with empty foreground or abstract shapes",
+        "privacy_element": "small unidentifiable individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14057640/r1_crops/2017_14057640_0.png"
+}

@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image captures a small aircraft inside a hangar. The primary privacy concern is the visible aircraft registration code G-BHFI painted on the fuselage. This registration is a unique public identifier linked to the aircraft's ownership, registration history, and potentially its operator. While not direct personal biometric data, it facilitates tracking an asset which, in specific contexts, can lead to identifying individuals associated with the aircraft. As this is a public record identifier linked to property, it presents a moderate privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "The alphanumeric registration code 'G-BHFI' printed on the side of the airplane's tail section.",
+        "Anonymized_element": "a generic registration number like G-ABCD or no text",
+        "privacy_element": "unique aircraft registration code G-BHFI",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11200064/final/2017_11200064_final.png"
+}

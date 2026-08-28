@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop prominently shows a seated person with a clear side-profile face, which is directly identifying biometric data. Additional contextual cues include a German-language street sign with a specific date, offering location hints. No financial, medical, or intimate content is visible. The identifiable face (Level 1) drives a high privacy risk, with location text adding minor compositional reinforcement. The image is sharp and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear side-profile face of a seated bald man",
+        "Anonymized_element": "face blurred or pixelated, head turned away, added cap obscuring features",
+        "privacy_element": "identifiable facial features, ear and profile contours",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "public street sign with German text and handwritten date",
+        "Anonymized_element": "blank sign, generic symbols only, remove or obfuscate text and date",
+        "privacy_element": "location language cue (German), specific date on sign",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15018779/r1_crops/2017_15018779_1.png"
+}

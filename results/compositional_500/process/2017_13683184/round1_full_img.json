@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a display/sign reading \u201cNetwork Operations Center\u201d with a clearly readable contact email address. No faces or IDs are present. The highest-severity clue is a Non-unique identifier (an email address) that can directly contact or target a person/group and links to a specific organization. With only a single Level 2 clue and no reinforcing biometric or location details, the overall risk is moderate. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Readable email address text \"wwdc08-noc@apple.com\" on the central display/sign",
+        "Anonymized_element": "generic contact text without email, placeholder like contact@example.com, or blurred/obscured text",
+        "privacy_element": "readable email address, organizational domain, event-specific alias",
+        "target_concept": "email address text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13683184.jpg"
+}

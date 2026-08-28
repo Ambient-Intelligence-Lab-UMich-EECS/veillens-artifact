@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows an art installation with two people visible. The woman on the right has a clear side-profile face that is identifiable, which is Level 1 biometric data. A second person in the background is partially visible with sunglasses; the face is less clear but still a biometric cue. No names, documents, or explicit location identifiers are present. The presence of one clear face plus a secondary person yields a moderate-to-high privacy risk driven mainly by biometric identification, with limited reinforcement from other clues.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face in right side-profile, unobstructed",
+        "Anonymized_element": "blurred face region, replaced with neutral oval, turned-away head, added obstruction",
+        "privacy_element": "visible facial features, hairstyle, profile outline enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distant person in background left wearing sunglasses, partial face visible",
+        "Anonymized_element": "blurred head, remove facial details, replace with generic silhouette",
+        "privacy_element": "facial structure outline, partial facial visibility despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14168009.jpg"
+}

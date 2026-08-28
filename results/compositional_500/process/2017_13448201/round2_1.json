@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows stacked plastic bins and a cardboard shipping/product box with printed labels and barcodes. No people, faces, IDs, addresses, or financial/medical items are readable. The labels appear to be manufacturer/product information and are not legible enough to expose personal identifiers. Some scattered papers are visible in a cabinet but text is not readable. Thus only low-risk generic document elements are present without compositional reinforcement, leading to a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.09,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed product/shipping labels with barcodes on the side of a cardboard box",
+        "Anonymized_element": "plain cardboard surface, labels removed or blurred, generic icon stickers without text or barcodes",
+        "privacy_element": "potential barcodes and small text that could include product serials or logistics info (not readable)",
+        "target_concept": "box label",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "pile of loose papers and packaging in open cabinet at back right",
+        "Anonymized_element": "blank papers, blurred text areas, closed cabinet door",
+        "privacy_element": "unreadable text and logos that could contain incidental information",
+        "target_concept": "papers/documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13448201/r1_crops/2017_13448201_1.png"
+}

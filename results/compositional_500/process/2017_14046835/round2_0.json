@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a small crowd at close range with multiple identifiable, unobstructed faces; this is Level 1 biometric data. Several faces are frontal and well-lit, enabling recognition. Secondary clues include sports team jerseys that indicate fandom/activity context. No government IDs, financial or medical data are visible. The presence of multiple clear faces drives a high privacy risk; context clues add slightly. Overall risk is high with strong visual evidence and high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man holding a beige umbrella facing the camera, full face visible",
+        "Anonymized_element": "blurred/pixelated face, replaced with generic head orientation away from camera, umbrella retained",
+        "privacy_element": "full frontal face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man in patterned white-and-black hoodie behind umbrella holder, looking toward camera",
+        "Anonymized_element": "pixelated/blurred face, or head turned away",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young man at far right in navy/green jacket, side profile of face visible",
+        "Anonymized_element": "profile face blurred or replaced with generic, non-identifying profile",
+        "privacy_element": "identifiable facial profile including nose, mouth, jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "navy-and-green sports jersey with large number on person at right",
+        "Anonymized_element": "plain jacket or shirt without team colors or numbers",
+        "privacy_element": "team colors/number indicating fandom and event participation",
+        "target_concept": "sports jersey",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14046835/r1_crops/2017_14046835_0.png"
+}

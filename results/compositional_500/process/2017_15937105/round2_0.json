@@ -1,0 +1,73 @@
+{
+  "reasoning": "The crop shows a small outdoor group with multiple clearly visible, identifiable faces. Several faces are unobstructed and well lit (e.g., the man in a high-visibility vest, the woman in a dark jacket, a bald man in profile), and another partially visible face in military camouflage. These are Level 1 biometric clues that directly enable identification and also reveal general personal attributes. There are no readable name tags, documents, or addresses to escalate risk further. Given multiple strong Level 1 faces and some contextual personal-attribute cues but no additional identifiers, the privacy risk is high but not severe.",
+  "personal_info_privacy_score": {
+    "score": 0.57,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bald man in black jacket at left, side-profile face visible",
+        "Anonymized_element": "face blurred or replaced with neutral silhouette; head turned away",
+        "privacy_element": "identifiable facial features, profile outline, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man in high-visibility yellow vest near center, smiling frontal face",
+        "Anonymized_element": "blurred face; generic featureless head; visor lowered obscuring face",
+        "privacy_element": "clear frontal facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman in dark blue jacket near center-right, smiling frontal face",
+        "Anonymized_element": "blurred face; generic featureless head",
+        "privacy_element": "clear frontal facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person in military camouflage at right, partial face visible",
+        "Anonymized_element": "blurred face; helmet/hat obscuring face entirely",
+        "privacy_element": "partial but identifiable facial features, military uniform context",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman behind central figure, partial face peeking from behind",
+        "Anonymized_element": "blurred facial area; replaced with neutral silhouette",
+        "privacy_element": "partial yet potentially identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15937105/r1_crops/2017_15937105_0.png"
+}

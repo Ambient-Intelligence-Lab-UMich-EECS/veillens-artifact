@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a handmade collage of torn paper scraps with printed forms, numbers, and small handwritten words. There are no faces, IDs, financial or medical documents, addresses, or unique identifiers. The privacy-relevant elements are limited to generic document fragments and incidental branding/text that provide minimal contextual information. Overall risk is low with Level 4 clues only and no compositional reinforcement.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "torn scrap of a printed form with rows of numbers and partial brand/URL text near the right edge",
+        "Anonymized_element": "plain paper texture, remove logos and URLs, blurred numbers, generic pattern without branding",
+        "privacy_element": "company/website branding, structured form layout with numbers",
+        "target_concept": "printed form fragment",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small piece of paper with handwritten words in black ink along the right side",
+        "Anonymized_element": "blank paper patch, replace with abstract marks or illegible scribbles",
+        "privacy_element": "handwritten text that may reveal personal notes or phrases",
+        "target_concept": "handwritten note fragment",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11120349/r1_crops/2017_11120349_0.png"
+}

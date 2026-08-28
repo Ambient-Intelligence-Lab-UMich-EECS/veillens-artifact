@@ -1,0 +1,43 @@
+{
+  "img_id": "19897",
+  "ground_truth": {
+    "4 5": 2,
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "1 5": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "2 4": 2,
+    "3 4": 2,
+    "3 5": 2
+  },
+  "predictions": {
+    "2 4": 2,
+    "2 5": 2,
+    "4 5": 2
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4",
+    "1 5",
+    "2 3",
+    "3 4",
+    "3 5"
+  ],
+  "subjects_matched": [
+    2,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    1,
+    3
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 5,
+  "raw_response": "[P2-P4]: A casual home gathering (likely gaming) in a living room; they\u2019re near each other with relaxed posture, no direct interaction, wearing casual clothes, which fits a domestic setting. This suggests they\u2019re relatives rather than in a formal or transactional context. => family-members\n\n[P2-P5]: In the same living room, P2 stands nearby while P5 sits on the sofa using a device; relaxed body language, no interaction, casual attire. The home setting points to a familial relationship. => family-members\n\n[P4-P5]: Child near the sofa and a youth/young adult seated comfortably with a pillow; no contact but easy proximity and casual dress in a home environment. This looks like relatives spending time together. => family-members",
+  "timestamp": 1776888078.5467086
+}

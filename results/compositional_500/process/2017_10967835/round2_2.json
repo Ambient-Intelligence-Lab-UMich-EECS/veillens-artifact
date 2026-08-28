@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows multiple printed sports tickets with clearly legible barcodes/serial numbers, event details, venue name (Yankee Stadium), date/time, and seat/section information. There are no faces or personal names. The highest risk comes from Level 3 clues about location and activities (specific venue, match, and scheduled time) combined with Level 4 document identifiers (barcodes/serials) that could enable ticket misuse. Together these create a moderate privacy risk without severe identifiers. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.29,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical barcode with numeric serial along the right edge of a ticket",
+        "Anonymized_element": "blurred barcode, removed digits, generic patterning",
+        "privacy_element": "machine-readable barcode, unique serial number",
+        "target_concept": "barcode on ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "printed event details text showing teams, venue, and date/time on ticket face",
+        "Anonymized_element": "generic placeholder text, remove team/venue names and date/time",
+        "privacy_element": "venue name (Yankee Stadium), event date and time, team names",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "seat information block listing section, row, and seat numbers",
+        "Anonymized_element": "replace with dashes or generic numbers, small blurred text",
+        "privacy_element": "section number 307, row and seat numbers",
+        "target_concept": "seat/section text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/r1_crops/2017_10967835_2.png"
+}

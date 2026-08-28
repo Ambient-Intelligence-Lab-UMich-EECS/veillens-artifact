@@ -1,0 +1,45 @@
+{
+  "reasoning": "In this crop, one adult\u2019s face in the mid\u2011background is clearly visible and identifiable, creating a Level 1 biometric risk. The central child\u2019s face is masked, but body, glasses, and clothing reveal age-related personal attributes (Level 3). Additional small, partially visible faces appear farther in the background, adding low-level crowd exposure (Level 4). With one identifiable face plus supporting contextual clues, the overall risk is moderate-to-high. Confidence is medium due to partial occlusions and distance for some subjects.",
+  "personal_info_privacy_score": {
+    "score": 0.5,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult woman\u2019s face resting on her hand, left-center background",
+        "Anonymized_element": "strong blur over face, mosaic pixelation, replace with featureless silhouette",
+        "privacy_element": "visible full face with recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "kneeling child in center with glasses and distinct clothing (face masked)",
+        "Anonymized_element": "remove glasses, plain hoodie and shirt without distinct patterns or logos, neutral colors",
+        "privacy_element": "apparent minor age from body size and attire, distinctive eyewear and outfit",
+        "target_concept": "child appearance",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "two small, partially visible faces of bystanders at the table in the far background",
+        "Anonymized_element": "heavy background blur, replace with indistinct silhouettes",
+        "privacy_element": "distant, small faces of unidentifiable individuals",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13690277/r1_crops/2017_13690277_0.png"
+}

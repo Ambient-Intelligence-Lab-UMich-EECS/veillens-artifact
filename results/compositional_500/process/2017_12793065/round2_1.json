@@ -1,0 +1,47 @@
+{
+  "reasoning": "This crop shows a decorated parade float with rainbow-themed banners and balloons. Faces are obscured, so no direct biometric identifiers are visible. However, a blue balloon bears a readable political-party style logo/text and the float displays a rainbow flag, together implying political affiliation and/or LGBTQ Pride participation. These are Level 2 sensitive inferences, reinforced by a visible megaphone suggesting rally/protest context. With no Level 1 clues, the risk is moderate, based on multiple Level 2 and Level 3 contextual signals. Confidence is medium due to partial legibility and context-based inference.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue balloon with printed green text and sunflower-like logo",
+        "Anonymized_element": "plain solid-color balloon, no text or logo",
+        "privacy_element": "readable political logo/text implying affiliation or support",
+        "target_concept": "branded balloon",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rainbow flag/banner draped along the side of the float",
+        "Anonymized_element": "single-color bunting or neutral patterned fabric",
+        "privacy_element": "rainbow Pride symbolism implying sexual orientation or support",
+        "target_concept": "rainbow flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white handheld megaphone near the lower-right on the float",
+        "Anonymized_element": "neutral prop or removed item",
+        "privacy_element": "protest/rally equipment suggesting political activity context",
+        "target_concept": "megaphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12793065/r1_crops/2017_12793065_1.png"
+}

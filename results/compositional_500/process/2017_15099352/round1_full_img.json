@@ -1,0 +1,94 @@
+{
+  "reasoning": "The image shows a small group of adults dancing outdoors in a park. Multiple individuals\u2019 faces are visible and reasonably clear, which constitutes biometric data and is the highest-severity clue. Additional moderate signals include the observable activity (dancing/exercise) and the identifiable park-like setting, though no specific address or unique landmark is visible. With several Level 1 facial cues reinforced by contextual activity, the overall privacy risk is high. Confidence is high because the faces are unobstructed and central.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "face of woman wearing blue floral shirt at far left, looking downward-left",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic silhouette",
+        "privacy_element": "full face with clear facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of woman in beige/light sweater, second from left, facing forward",
+        "Anonymized_element": "face blurred, replaced with non-descript oval, head orientation changed away from camera",
+        "privacy_element": "clear frontal facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of gray-haired woman in black shirt at center, side-angled toward camera",
+        "Anonymized_element": "pixelated face, neutralized silhouette without facial detail",
+        "privacy_element": "distinct facial structure and hair enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of man in white T-shirt center-right, looking slightly downward",
+        "Anonymized_element": "blurred face region, head turned away profile without facial detail",
+        "privacy_element": "visible facial features and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile face of man in black cap at right edge",
+        "Anonymized_element": "profile blurred, cap-only silhouette, no facial detail",
+        "privacy_element": "recognizable profile with nose, mouth, and beard visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "mid-ground region of five adults performing synchronized dance steps",
+        "Anonymized_element": "neutral standing poses or walking posture without coordinated action",
+        "privacy_element": "observable group activity (dancing/exercise)",
+        "target_concept": "activity region",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background stone wall and trees indicating an outdoor park setting",
+        "Anonymized_element": "generic blurred background, plain backdrop without environmental cues",
+        "privacy_element": "recognizable public park environment (outdoor greenery, stone wall)",
+        "target_concept": "location cue",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_15099352.jpg"
+}

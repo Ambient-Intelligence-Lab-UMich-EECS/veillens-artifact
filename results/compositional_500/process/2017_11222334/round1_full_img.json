@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a crowded outdoor event with several individuals whose faces are clearly visible at close range. The most prominent clues are multiple identifiable faces (one person in red dress looking toward the camera, another on the left pointing with an unobstructed face, and a background participant with a clear face). No names, documents, addresses, or financial/medical items are visible. The highest severity is Level 1 due to biometric identifiability, and the presence of several faces reinforces overall risk, though resolution and sunglasses on one subject slightly reduce certainty. Final risk is moderate-to-high based on multiple identifiable faces without further corroborating identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing person in a red dress with a red flower and sunglasses, smiling toward the camera",
+        "Anonymized_element": "blurred face, pixelated/mosaic face, turned-away head, opaque mask or visor",
+        "privacy_element": "visible lower facial features and overall facial structure despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on the left side pointing forward with an unobstructed face",
+        "Anonymized_element": "blurred face, pixelated/mosaic face, turned-away head, added sunglasses/hat obscuring features",
+        "privacy_element": "clear view of eyes, nose, mouth, and facial outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background participant in a white sleeveless shirt with a clear face visible",
+        "Anonymized_element": "blurred face, pixelated/mosaic face, turned-away head, added obstruction",
+        "privacy_element": "recognizable facial features and head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11222334.jpg"
+}

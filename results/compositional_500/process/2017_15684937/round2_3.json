@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a person with wrists handcuffed behind their back, a readable vehicle license plate, a visible forearm tattoo, and part of a police vehicle. No faces are visible. The handcuffs imply law-enforcement detainment, a Level 2 sensitive inference. The clear license plate can reveal location/vehicle identity (Level 3). The tattoo adds uniquely identifying physical detail (Level 3). Together these cues create a high privacy risk despite the absence of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s wrists cuffed behind the back",
+        "Anonymized_element": "hands relaxed at sides, no cuffs, neutral pose",
+        "privacy_element": "handcuffs indicating law-enforcement detainment",
+        "target_concept": "handcuffs on person",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "rear license plate on silver car, clearly readable characters",
+        "Anonymized_element": "blank plate, blurred characters, generic plate color with no state text",
+        "privacy_element": "full plate number, state design",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "black ink tattoo on left inner forearm of the handcuffed person",
+        "Anonymized_element": "covered by long sleeve, plain skin, blurred pattern",
+        "privacy_element": "distinct tattoo pattern that can uniquely identify a person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "front corner of a marked police vehicle with light bar and stripe",
+        "Anonymized_element": "unmarked generic car, remove markings and light bar",
+        "privacy_element": "police markings signifying law-enforcement presence",
+        "target_concept": "police vehicle markings",
+        "severity_level": 4,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Metadata or background information "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15684937/r1_crops/2017_15684937_3.png"
+}

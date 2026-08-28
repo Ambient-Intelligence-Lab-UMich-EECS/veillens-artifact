@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a decorative doll on a shelf with household items. No real people, faces, or government/financial/medical identifiers are visible. The only potentially relevant element is a stack of envelopes/folders at the lower left, but no addresses or readable text are legible, making the risk minimal. Overall privacy exposure is very low with only a weak Level 4 clue.",
+  "personal_info_privacy_score": {
+    "score": 0.02,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "stack of envelopes or mail pieces tucked in a holder at the lower left",
+        "Anonymized_element": "blank envelopes, no labels, generic paper stack",
+        "privacy_element": "potential mailing labels or printed text (not legible)",
+        "target_concept": "envelopes/mail",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12217761/r1_crops/2017_12217761_0.png"
+}

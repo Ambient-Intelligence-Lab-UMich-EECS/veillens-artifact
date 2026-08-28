@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a wheelchair tennis athlete on a court with the Paralympic Games logo. The person\u2019s face is visible (partially covered by sunglasses) which constitutes biometric data (Level 1). The wheelchair clearly indicates a disability, a sensitive inference (Level 2). The court branding provides contextual location/event information (Level 3). Together, these cues meaningfully identify and profile the individual, leading to a high privacy risk despite absence of names or government IDs. The clues are clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "athlete\u2019s face with short hair and sunglasses, mid-serve",
+        "Anonymized_element": "blurred face, pixelated features, opaque visor or mask, turned-away head",
+        "privacy_element": "visible facial structure, mouth and nose outline enabling biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "sports wheelchair under the athlete",
+        "Anonymized_element": "cropped lower frame, generic seat without medical cues, motion blur obscuring chair details",
+        "privacy_element": "wheelchair form and wheels indicating mobility impairment",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large \u2018Paralympic Games\u2019 text and logo painted on the blue court",
+        "Anonymized_element": "blank court surface, generic sports logo without event name, solid color area",
+        "privacy_element": "event branding revealing specific competition context and venue type",
+        "target_concept": "event logo/text on court",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10895938.jpg"
+}

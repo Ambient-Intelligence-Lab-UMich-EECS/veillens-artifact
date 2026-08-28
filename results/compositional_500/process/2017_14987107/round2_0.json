@@ -1,0 +1,62 @@
+{
+  "reasoning": "The crop shows a public parade with several clearly visible participants and spectators. At least two foreground participants\u2019 faces are unobstructed, and multiple background spectators\u2019 faces are recognizable, which constitutes Level 1 biometric data. The clothing and props imply participation in a public parade (an activity cue), but no readable names, IDs, addresses, or overtly sensitive text are present. The combination of multiple identifiable faces and contextual activity yields a high privacy risk. Confidence is high due to clear, central visibility of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost foreground participant\u2019s face (woman in orange outfit) facing camera",
+        "Anonymized_element": "blurred face, smooth skin-tone oval, no eyes/nose/mouth details",
+        "privacy_element": "full face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "second foreground participant\u2019s face in profile (blue outfit with yellow sash)",
+        "Anonymized_element": "profile blurred, generic oval without facial features",
+        "privacy_element": "recognizable facial profile with nose, eyes, mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background spectator\u2019s face near metal barricade (center-left)",
+        "Anonymized_element": "face pixelation/blur, generic oval tones",
+        "privacy_element": "recognizable face with clear features despite smaller size",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right-side participant\u2019s rainbow tutu and wrist garland while holding balloon string",
+        "Anonymized_element": "neutral solid-color skirt, plain wristband, remove rainbow colors",
+        "privacy_element": "distinctive rainbow attire indicating participation in a specific public parade/activity",
+        "target_concept": "parade costume/accessories",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14987107/r1_crops/2017_14987107_0.png"
+}

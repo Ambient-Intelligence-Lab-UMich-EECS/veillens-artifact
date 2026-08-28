@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a clearly identifiable man in a military dress uniform holding a diploma. The most sensitive element is the unobstructed face (Level 1 biometric). Additional reinforcing clues include visible rank insignia and a rack of ribbons that disclose military affiliation and role (Level 3), and a diploma with readable institution text that reveals an educational achievement and potentially contains a name though not legible here (Level 4). These combined cues raise re-identification risk beyond the face alone. Final score reflects a strong Level 1 clue plus supporting contextual details. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Unobstructed front-facing male face on the right side of the image",
+        "Anonymized_element": "blurred face, pixelated face, replaced with neutral silhouette, cropped above shoulders",
+        "privacy_element": "full facial features, eyes, nose, mouth enabling biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Military dress uniform with sleeve rank stripes and chest ribbon rack/badges",
+        "Anonymized_element": "plain dark jacket with no insignia or ribbons, generic buttons",
+        "privacy_element": "rank insignia, service ribbons, military badges indicating affiliation and role",
+        "target_concept": "uniform insignia and ribbons",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Diploma/certificate being held, header text of institution visible",
+        "Anonymized_element": "blank certificate, remove all text and logos, generic paper",
+        "privacy_element": "institution name/logo, award details, potential personal name line (not legible)",
+        "target_concept": "diploma certificate",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11158648/r1_crops/2017_11158648_1.png"
+}

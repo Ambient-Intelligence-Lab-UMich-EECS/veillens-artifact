@@ -1,0 +1,69 @@
+{
+  "reasoning": "The crop shows a ceremonial marching band with multiple visible human faces, including a clear frontal face at center. Faces constitute Level 1 biometric identifiers. Distinctive organizational crests/logos appear on uniforms and a drum, which are non-unique identifiers that can reveal affiliation (Level 2). Visible instruments in active use indicate behavior (performing in a parade) but are less sensitive. Together, one strong Level 1 clue reinforced by Level 2 affiliation cues yields a high but not extreme privacy risk. Clues are clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central marching band member\u2019s unobstructed face (eyes closed)",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, neutral mask",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right-side musician\u2019s face partially visible beside brass instrument",
+        "Anonymized_element": "blurred face, generic silhouette, turned head",
+        "privacy_element": "partially visible but identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "ornate crest/patch on the left performer\u2019s sash with colored emblem",
+        "Anonymized_element": "plain sash without emblem or text, generic pattern",
+        "privacy_element": "distinct organization logo/insignia, possible text elements",
+        "target_concept": "uniform logo patch",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "green side drum with large colored crest/emblem",
+        "Anonymized_element": "plain drum shell without crest or text, solid color",
+        "privacy_element": "prominent organization logo/insignia, possible text",
+        "target_concept": "drum with logo",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "raised silver trumpet being played at mouth level",
+        "Anonymized_element": "instrument lowered or cropped, neutral object without action cue",
+        "privacy_element": "active musical performance cue",
+        "target_concept": "trumpet in use",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15101563/r1_crops/2017_15101563_0.png"
+}

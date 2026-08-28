@@ -1,0 +1,36 @@
+{
+  "reasoning": "The region shows a person in a bikini bending forward; the face is obscured by hair, so biometric identification is limited. The primary privacy concern is intimate attire revealing much of the torso and hips (Level 2). Additional but weaker context includes multiple distant beachgoers also in swimwear (Level 4). With no readable identifiers or clear faces, risk is driven mainly by intimate content and personal attributes, yielding a moderate score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman's torso and hips in a bikini, leaning forward with face hidden by hair",
+        "Anonymized_element": "one-piece swimsuit or tank top and shorts, increase coverage, adjust pose upright, crop above chest",
+        "privacy_element": "minimal swimwear exposing abdomen, chest, and upper thighs; pronounced body contours",
+        "target_concept": "swimwear/body exposure",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background group of beachgoers in swimwear, small and out of focus",
+        "Anonymized_element": "apply heavy blur, replace with generic silhouettes, reduce crowd detail",
+        "privacy_element": "partially clothed individuals in the background, though unidentifiable",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Nudity or Intimate content "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15720188/r1_crops/2017_15720188_1.png"
+}

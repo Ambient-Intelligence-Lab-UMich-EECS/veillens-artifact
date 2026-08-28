@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a public gathering with several clearly identifiable faces, which constitutes Level 1 biometric data. Multiple faces are unobstructed and central. Colorful protest flags and banners indicate participation in a political demonstration, enabling sensitive inference about political views (Level 2) and activities. A branded drink can hints at minor behavioral data (Level 3). The presence of several strong Level 1 clues, reinforced by Level 2 political-context cues, results in a high privacy risk. Confidence is high due to clarity and proximity of faces and flags.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smiling woman in white sleeveless top at right-center, full frontal face visible",
+        "Anonymized_element": "blurred face, generic skin-tone patch, head turned away",
+        "privacy_element": "full identifiable face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman with hair bun in white sleeveless top pushing a red stroller, clear side face profile",
+        "Anonymized_element": "blurred face, generic profile silhouette, head turned down",
+        "privacy_element": "identifiable facial profile with nose, mouth, and eye visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young woman in green shirt at left background looking toward camera, face unobstructed",
+        "Anonymized_element": "blurred face, low-detail placeholder face",
+        "privacy_element": "recognizable facial features including eyes and smile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of colorful protest flags and banners held above the crowd",
+        "Anonymized_element": "plain monochrome flags without symbols or text",
+        "privacy_element": "political demonstration context, symbols/colors suggesting political affiliation",
+        "target_concept": "protest flags/banners",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "green 7UP soda can held by person near center-left",
+        "Anonymized_element": "plain generic beverage can without brand or text",
+        "privacy_element": "brand preference, consumption behavior",
+        "target_concept": "beverage can",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12030881/r1_crops/2017_12030881_1.png"
+}

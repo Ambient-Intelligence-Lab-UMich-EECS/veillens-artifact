@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a staged performance with three people. The central person\u2019s face is clearly visible and well-lit, providing identifiable biometric data. A second person at left has a partially visible face, still potentially identifying though less clear. No government IDs, names, documents, or location text are visible, and clothing/props do not reveal sensitive traits. The presence of identifiable faces (Level 1) drives the risk; limited additional clues keep the score moderate rather than extreme.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "well-lit bald person\u2019s face at center of image",
+        "Anonymized_element": "blurred face, pixelated facial area, generic mask",
+        "privacy_element": "full unobstructed face, clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "partially visible face of person in white dress and flower headpiece at left",
+        "Anonymized_element": "face blurred, pixelated, mask or turned away",
+        "privacy_element": "partially unobstructed face with visible features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11456107.jpg"
+}

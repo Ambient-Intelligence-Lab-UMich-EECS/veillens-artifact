@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a religious ceremony with multiple clergy members. Several faces are clearly visible at close-to-medium range, providing strong biometric identifiers (Level 1). The clerical vestments and liturgical setting additionally reveal religious affiliation, a sensitive attribute (Level 2). No readable names, IDs, financial, medical, or location details are present. Given multiple identifiable faces reinforced by sensitive religious context, the overall privacy risk is high but not severe.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a seated man on the left side wearing cream vestments",
+        "Anonymized_element": "blurred face, pixelated facial area, turned head away",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of an older man with glasses seated near the center-back row",
+        "Anonymized_element": "blurred face, pixelated facial area, remove glasses reflections",
+        "privacy_element": "distinct facial structure, visible eyes and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile face of a standing man at right speaking to another person",
+        "Anonymized_element": "motion blur on face, turned further away, pixelation",
+        "privacy_element": "side facial features including nose, jawline, ear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "group of ornate clerical vestments (chasubles/stoles) worn by participants",
+        "Anonymized_element": "plain robes without symbols or patterns, neutral colors",
+        "privacy_element": "religious garments indicating clergy status and faith practice",
+        "target_concept": "religious garment",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13477697.jpg"
+}

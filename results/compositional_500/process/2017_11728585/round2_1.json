@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a person wearing revealing red lingerie with a feather boa, and the face appears obscured, so no biometric identification is present. The primary privacy risk arises from intimate/suggestive attire exposing cleavage and upper chest (Level 2). The feather boa and pose imply a performance or sensual context that can reveal activities/behaviors (Level 3). With no names, documents, or location cues, overall risk is moderate due to intimate content without direct identification.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "low-cut red lingerie top exposing cleavage and upper chest",
+        "Anonymized_element": "non-revealing top, higher neckline, plain shirt or dress",
+        "privacy_element": "intimate clothing, visible cleavage, sexualized presentation",
+        "target_concept": "intimate clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red feather boa draped around shoulders and chest",
+        "Anonymized_element": "plain scarf, neutral shawl, simple fabric wrap without feathers",
+        "privacy_element": "burlesque-style accessory implying sensual performance context",
+        "target_concept": "feather boa",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11728585/r1_crops/2017_11728585_1.png"
+}

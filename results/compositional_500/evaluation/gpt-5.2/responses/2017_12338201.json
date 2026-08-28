@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a sports field with one person visible from the back wearing a flag-football belt and two distant onlookers. No readable text, faces, IDs, or explicit identifiers are visible. The highest-severity cues relate to activities/behaviors and minor personal attributes inferred from body build/clothing, plus distant unidentifiable individuals in the background. With no biometrics or identifiers, overall risk is low, driven only by contextual activity disclosure.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person seen from behind wearing dark athletic shorts with yellow flag-football belt on a sports field",
+        "Anonymized_element": "generic plain shorts, no sport-specific belt, neutral colors",
+        "privacy_element": "sports-specific belt indicating participation in flag football; body build and clothing outline revealing physical appearance",
+        "target_concept": "athletic outfit with flag-football belt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "two distant spectators standing near the sideline in the background",
+        "Anonymized_element": "remove people, replace with blurred foliage or empty background",
+        "privacy_element": "presence of unidentifiable individuals in background",
+        "target_concept": "distant bystanders",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12338201/final/2017_12338201_final.png"
+}

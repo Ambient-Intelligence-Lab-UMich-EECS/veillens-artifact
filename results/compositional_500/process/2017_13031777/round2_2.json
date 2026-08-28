@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person\u2019s side head/neck with the face largely obscured. Visible cues include a clear ear shape, jawline/neck, and distinctive hairstyle. There are no readable identifiers, documents, or explicit intimate exposure. The highest severity comes from Level 3 personal attributes that could aid recognition when combined with other information. Overall risk is low-to-moderate due to partial biometric-like features (ear shape) and hairstyle, but absence of a full identifiable face keeps the score lower.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left ear and adjacent jawline/neck in profile",
+        "Anonymized_element": "slight blur to ear outline, add hair strand overlay, partial occlusion by scarf or collar",
+        "privacy_element": "distinct ear shape, jawline and neck contour",
+        "target_concept": "ear/neck profile",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "shoulder-length dark hair covering side of head",
+        "Anonymized_element": "neutral cap or hood, simplified generic hair mass, altered color with uniform tone",
+        "privacy_element": "distinct hairstyle pattern, hair length and color",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/r1_crops/2017_13031777_2.png"
+}

@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows several athletes playing flag football. Multiple individuals have clearly visible, front-facing or profile faces, which are directly identifying biometric data and represent the highest-severity clue. Jerseys prominently display team names (\u201cARMY\u201d and \u201cNAVY\u201d) and large numbers that indicate activity and possible affiliation, adding moderate contextual risk but not unique identifiers. With multiple unobscured faces as central elements, the overall privacy risk is high, though no financial, medical, or government IDs are present.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center player\u2019s unobstructed face with eye black, mouth slightly open",
+        "Anonymized_element": "blurred or pixelated face region, generic skin-tone patch, no facial details",
+        "privacy_element": "full face with distinct features (eyes, nose, mouth), high resolution, frontal view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left jumping player\u2019s smiling face turned slightly toward camera",
+        "Anonymized_element": "blurred face area, mosaic filter, generic oval with uniform color",
+        "privacy_element": "clear facial features visible including eyes and smile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost player in navy jersey, side-profile face",
+        "Anonymized_element": "profile region blurred or replaced with smooth color patch",
+        "privacy_element": "recognizable side-profile facial features (nose, mouth, jawline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center player\u2019s black jersey with large gold text 'ARMY' and number '52'",
+        "Anonymized_element": "plain jersey with no text or numbers, generic color block",
+        "privacy_element": "organization/team name text and large jersey number indicating affiliation and activity",
+        "target_concept": "sports jersey text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "back of navy jersey with large white number '33' and visible 'NAVY' theme",
+        "Anonymized_element": "plain jersey back without number or team name",
+        "privacy_element": "team name theme and prominent number indicating participation and affiliation",
+        "target_concept": "sports jersey text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12338201.jpg"
+}

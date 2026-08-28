@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows an ornate historical building facade with a richly carved arch, a large religious statue, and a relief panel. There are no real people, IDs, text, or documents. The only privacy-relevant element is potential location disclosure because these distinctive architectural details could identify a specific landmark. Multiple landmark cues reinforce each other slightly, but the absence of direct identifiers keeps the risk low. Score reflects low but nonzero location risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "highly detailed stone archway with intricate carvings",
+        "Anonymized_element": "plain arch, simplified geometric trim, reduced detail texture",
+        "privacy_element": "distinctive architectural motifs that can pinpoint a specific landmark",
+        "target_concept": "architectural facade / archway",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large religious statue mounted on exterior wall niche",
+        "Anonymized_element": "generic abstract statue, softened features, no identifiable iconography",
+        "privacy_element": "recognizable religious sculpture style associated with a known site",
+        "target_concept": "statue",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rectangular relief panel above the arch depicting figures",
+        "Anonymized_element": "blank panel, generic pattern relief, low-detail texture",
+        "privacy_element": "unique relief artwork that can reveal the specific building",
+        "target_concept": "architectural relief panel",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11536083/r1_crops/2017_11536083_0.png"
+}

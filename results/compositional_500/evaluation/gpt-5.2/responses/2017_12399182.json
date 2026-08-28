@@ -1,0 +1,43 @@
+{
+  "reasoning": "The visible people have faces obscured, so no direct biometric identifiers are present. The main privacy signals are moderate: a person’s body and clothing reveal general personal attributes; the distinctive wooden deck and backyard scene could hint at a specific residence; and the pose (arm around another person) indicates a social relationship/behavior. With no names, documents, or readable identifiers, the highest severity is Level 3 and clues are indirect. Thus the overall risk is low-to-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person on left with body fully visible (face blurred), wearing dark t-shirt and shorts",
+        "Anonymized_element": "loose, generic clothing; crop frame above shoulders; reduce detail/texture",
+        "privacy_element": "body shape and size, gender-presenting clothing, visible skin on arms/legs",
+        "target_concept": "person’s body (non-face)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "wooden deck with bench and railing, opening to a tree-filled backyard",
+        "Anonymized_element": "blurred or replaced with generic park background; simplified railing; remove unique deck details",
+        "privacy_element": "distinctive deck layout and railing style; residential-looking backyard environment",
+        "target_concept": "residential deck/backyard",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "left person’s right arm resting around the shoulder area of adjacent figure",
+        "Anonymized_element": "reposition arm to hang neutrally at side; slight crop to remove contact",
+        "privacy_element": "physical contact indicating social relationship or group association",
+        "target_concept": "interpersonal pose/gesture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12399182/final/2017_12399182_final.png"
+}

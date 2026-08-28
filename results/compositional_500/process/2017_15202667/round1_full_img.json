@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows an open passport visa page with security-pattern paper, perforated numbering, and an embassy visa/stamp showing \u201cChinese Legation, Washington\u201d with a handwritten date and an official\u2019s signature. A passport/visa page is a government identifier (Level 1). The perforated number further indicates a unique code tied to the document (Level 1). The visible official\u2019s name/signature is a non-unique identifier (Level 2). The visa stamp also reveals location and date (Level 3). Together these cues strongly expose government-document information even without a face or the holder\u2019s personal bio page, warranting a high privacy risk score. Confidence is high because the document features are clear and centered.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "open passport visa page with patterned security paper labeled for visas",
+        "Anonymized_element": "plain neutral paper texture, no security pattern, no document labels",
+        "privacy_element": "passport/visa page of a government-issued travel document",
+        "target_concept": "passport/visa page",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "perforated numeric/letter code at the top-right of the page",
+        "Anonymized_element": "filled paper area with no perforations or random non-numeric dots",
+        "privacy_element": "unique perforated number/code tied to the passport page",
+        "target_concept": "perforated document number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ink visa stamp reading Chinese Legation, Washington with circular seal",
+        "Anonymized_element": "generic round stamp with abstract shapes, no readable place names or agency",
+        "privacy_element": "legible embassy name and city indicating issuing authority and location",
+        "target_concept": "visa stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten date and official\u2019s signature over the visa stamp",
+        "Anonymized_element": "illegible squiggle signature and generic date masking",
+        "privacy_element": "readable personal name/signature of official and specific date",
+        "target_concept": "signature and date",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15202667.jpg"
+}

@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows a home bedroom interior with people’s faces obscured, so no biometric identifiers are visible. There are no government, financial, medical, or named identifiers. The main privacy cues are contextual: distinctive framed artwork, an identifiable bed and headboard, and children’s stuffed toys and patterned bedding that reveal household lifestyle and a private living space. These are Level 3–4 clues that can hint at activities and property but don’t directly identify a person. Given only low-to-moderate contextual signals and no direct identifiers, the overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "three framed botanical prints on the wall above the bed",
+        "Anonymized_element": "abstract art with generic shapes, blurred or blank frames, muted colors",
+        "privacy_element": "distinctive framed artwork that can be associated with a specific home decor",
+        "target_concept": "framed artwork",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "bed with patterned pillows and several stuffed animals on top",
+        "Anonymized_element": "plain solid-color bedding, minimal pillows, generic plush shapes without distinctive features",
+        "privacy_element": "children’s toys and specific bedding patterns indicating household composition and routines",
+        "target_concept": "bed and toys",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "metal iron headboard of the bed",
+        "Anonymized_element": "simple, generic headboard with minimal design",
+        "privacy_element": "distinctive furniture style recognizable to acquaintances of the household",
+        "target_concept": "bed frame",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15082304/final/2017_15082304_final.png"
+}

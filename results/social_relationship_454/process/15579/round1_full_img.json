@@ -1,0 +1,25 @@
+{
+  "img_id": "15579",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: In a public square, P1 is operating a video camera aimed at P2 from a few feet away; they have focused, task-oriented postures with no physical contact and casual outdoor attire. This looks like a cameraman recording an interviewee. => professional\n\n[P1-P3]: P1 holds the camera while P3 holds a microphone and participates in the filming; their coordinated positions and gear show they are working together on a shoot. => professional\n\n[P2-P3]: P3 holds a microphone toward P2 and faces him closely as he responds; no affectionate cues, just an on-the-street interview setup in a public setting. => professional",
+  "timestamp": 1776887691.301869
+}

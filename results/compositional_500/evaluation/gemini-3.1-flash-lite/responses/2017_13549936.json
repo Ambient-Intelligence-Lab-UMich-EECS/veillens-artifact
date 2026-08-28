@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a Spanish National Lottery ticket. While lottery tickets contain unique serial numbers and codes that function as financial identifiers (Level 2), they are generally considered consumer assets rather than highly sensitive personal identity documents. The visible serial numbers and specific draw information carry a moderate privacy risk as they could potentially be used to identify the ownership of a specific asset or track financial transactions, but the overall risk is tempered by the nature of the document. The confidence is high as the textual and numerical content is clearly legible.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Spanish National Lottery ticket serial numbers and barcode",
+        "Anonymized_element": "random sequence of digits, generic pattern of lines, no identifiable serials",
+        "privacy_element": "full ticket serial numbers, specific issue date, draw information",
+        "target_concept": "lottery ticket serial number",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13549936/final/2017_13549936_final.png"
+}

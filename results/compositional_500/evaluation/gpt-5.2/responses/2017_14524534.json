@@ -1,0 +1,42 @@
+{
+  "reasoning": "The faces in the scene are obscured, eliminating biometric identification. The main privacy-relevant element is a desk nameplate in the lower-left with a partially readable personal name, which is a non-unique identifier. Additional papers and a framed certificate are present but their text is not legible, making them low-risk generic documents. With one weak Level 2 clue and several low-risk Level 4 clues that do not strongly reinforce each other, the overall risk is low-to-moderate. Confidence is medium due to partial legibility of the nameplate.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black desk nameplate with yellow text reading “MS. B...” at the table edge in the lower-left",
+        "Anonymized_element": "blank nameplate, no text, neutral color",
+        "privacy_element": "partially readable personal name text",
+        "target_concept": "nameplate",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "stack of papers and folders with printed lines of text on the table foreground center-right",
+        "Anonymized_element": "blank pages or generic patterned paper with no text",
+        "privacy_element": "printed text on documents (illegible)",
+        "target_concept": "documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "framed certificate with seal and small text on the wall above the wooden doors",
+        "Anonymized_element": "generic abstract artwork or blank frame",
+        "privacy_element": "certificate-like document with text (illegible)",
+        "target_concept": "certificate",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14524534/final/2017_14524534_final.png"
+}

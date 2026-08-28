@@ -1,0 +1,54 @@
+{
+  "img_id": "17118",
+  "ground_truth": {
+    "4 6": 1,
+    "4 5": 1,
+    "1 2": 1,
+    "1 3": 1,
+    "1 6": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "5 6": 1,
+    "2 3": 1,
+    "2 5": 1,
+    "2 4": 1,
+    "2 6": 1,
+    "3 4": 1,
+    "3 5": 1,
+    "3 6": 1
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 6": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "2 6": 4,
+    "3 4": 4,
+    "3 6": 4,
+    "4 6": 4
+  },
+  "missed_pairs": [
+    "1 5",
+    "2 5",
+    "3 5",
+    "4 5",
+    "5 6"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    6
+  ],
+  "subjects_unmatched": [
+    5
+  ],
+  "num_preds_detected": 5,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P2]: Office lunch setting; they sit side-by-side on the right, leaning toward each other while eating, in business-casual attire at a workplace table. => professional\n\n[P1-P3]: Same group meal in an office; they\u2019re across the table with little direct interaction, both eating and dressed business-casual. => professional\n\n[P1-P4]: Workplace lunch; seated apart diagonally with no physical contact, attire and conference-room environment suggest coworkers. => professional\n\n[P1-P6]: At the same office table, very close and chatting/laughing while eating; business-casual clothes in a break-room scene. => professional\n\n[P2-P3]: Office lunch event; they face across the table, casually eating with minimal contact, in work attire. => professional\n\n[P2-P4]: Group meal at work; separated around the table, no direct interaction, business-casual clothing in an office. => professional\n\n[P2-P6]: Seated adjacent and engaging over food (possibly looking at a phone) during a workplace lunch; attire and setting indicate coworkers. => professional\n\n[P3-P4]: On the left side near each other during an office lunch, conversing while eating; business-casual in a workroom. => professional\n\n[P3-P6]: Across the office table with food containers and documents around; interacting as part of the same work lunch. => professional\n\n[P4-P6]: Opposite sides of a workplace lunch table, eating and conversing without intimacy; business-casual in an office environment. => professional",
+  "timestamp": 1776889131.169826
+}

@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image features a person at a podium with their face masked, reducing biometric risk. However, the presence of an overlay watermark containing a company name 'Online Marketing Group inc' alongside the person's professional appearance creates a moderate privacy risk. The context provides information about the individual's workplace or professional activity, which is a non-unique identifier. The combination of personal attributes and specific professional attribution results in a moderate risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "watermark text in the bottom left corner",
+        "Anonymized_element": "no text, blank area",
+        "privacy_element": "Online Marketing Group inc",
+        "target_concept": "company name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "person standing at a podium",
+        "Anonymized_element": "generic business attire, blurred person",
+        "privacy_element": "physical appearance, professional activity",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16117004/final/2017_16117004_final.png"
+}

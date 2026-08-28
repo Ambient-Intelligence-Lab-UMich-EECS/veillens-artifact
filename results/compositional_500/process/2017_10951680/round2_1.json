@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a river scene framed by foliage with a ferry in mid-water and a small house-like structure on the far shore. No people or readable personal identifiers are visible. The most privacy-relevant cues are low-level contextual/location hints: the ferry bears readable letters that might reveal a specific service, and a distant dwelling is visible but without an address. These are Level 4 clues and do not directly identify a person. Thus, overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "ferry on the river with large readable letters on the bow",
+        "Anonymized_element": "remove letters, generic solid color hull, no logos or text",
+        "privacy_element": "readable vessel letters/name, distinctive ferry design that can hint to location",
+        "target_concept": "vehicle text/logo",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small house-like building on the distant shoreline",
+        "Anonymized_element": "replace with trees or generic non-descript structure without unique details",
+        "privacy_element": "visible private dwelling outline indicating habitation/location context",
+        "target_concept": "house/building",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10951680/r1_crops/2017_10951680_1.png"
+}

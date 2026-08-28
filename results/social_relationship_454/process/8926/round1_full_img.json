@@ -1,0 +1,25 @@
+{
+  "img_id": "8926",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "2 3": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: Backyard barbecue; they\u2019re side-by-side carrying the same tray and coordinating, with casual summer clothes in a home setting\u2014suggesting a close, familiar tie rather than work or commerce. => family-members\n\n[P1-P3]: Same cookout; the older man stands nearby watching/around the woman preparing food, both relaxed and casually dressed in a private yard\u2014typical of relatives at a family gathering. => family-members\n\n[P2-P3]: In the home barbecue scene, the younger and older man are near each other with easy, relaxed posture, fitting relatives at a family event more than strangers or coworkers. => family-members",
+  "timestamp": 1776887868.9548988
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a lively street festival with several people visible. Two nearer individuals still have partially visible facial biometrics (one woman in a red masquerade mask with her lower face exposed; one man in the mid-right background with sunglasses but clear lower-face features). Additional small, distant faces are present across the crowd. No government IDs, financial, medical, or explicit location addresses are readable. The highest-severity evidence is biometric data, but many faces are either small, partially occluded, or masked, lowering overall risk. Compositional risk is moderate due to multiple facial cues within a public setting.",
+  "personal_info_privacy_score": {
+    "score": 0.47,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man\u2019s face with dark sunglasses and beard in mid-right background",
+        "Anonymized_element": "blurred face region, generic skin tones, head turned away, opaque mask",
+        "privacy_element": "recognizable lower-face contours, beard shape, nose and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman wearing a red masquerade mask with mouth and lower face exposed (left foreground)",
+        "Anonymized_element": "opaque full-face mask, blank solid color mask, or blur lower-face region",
+        "privacy_element": "visible mouth, jawline, smile, partial facial structure despite mask",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of distant people in the street with tiny, partially visible faces",
+        "Anonymized_element": "blurred crowd faces, simplified silhouettes",
+        "privacy_element": "multiple small facial regions, though not individually identifiable",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "hanging storefront sign with readable text above the street (right side)",
+        "Anonymized_element": "blank signboard, generic shapes without text",
+        "privacy_element": "legible business sign text that can hint at place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15082239/r1_crops/2017_15082239_1.png"
+}

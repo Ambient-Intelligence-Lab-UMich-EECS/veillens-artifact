@@ -1,0 +1,95 @@
+{
+  "reasoning": "Country level: The road infrastructure and signage are distinctly German. I see a yellow diamond priority-road sign and a blue mandatory right-turn sign with German StVO shapes, plus red\u2011white diagonal hazard markers and tall, narrow signal heads typical in Germany. Language on multiple posters is German. These cues rule out neighboring countries with similar infrastructure by the combination of the yellow diamond, the specific hazard marker design, and the small green right-turn arrow light used in Germany.\nCity level: One poster clearly mentions \u201cGr\u00fcne Tage Th\u00fcringen 19.\u201321. September,\u201d pointing to the state of Thuringia. Another poster includes the word \u201cErfurt,\u201d which is the capital of Thuringia, strongly indicating the city. The dense greenery and park-like round corner with a fountain also fit central Erfurt\u2019s streets near parks.\nStreet level: The intersection has a park corner with a circular fountain to the left, an overhead gantry with multiple blank-backed panels above the far lanes, a no-entry sign controlling a narrow side street ahead-right, and a row of roadside advertising boards on the right at the corner. This combination\u2014priority-road sign with a dedicated right-turn phase, bollards lining a curved curb, and the fountain/park edge\u2014helps distinguish this particular junction within Erfurt, even if the exact street name is not visible.",
+  "location_estimate": {
+    "latitude": 50.978,
+    "longitude": 11.029,
+    "confidence": "Medium",
+    "region": "Germany, Thuringia, Erfurt"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow diamond street sign on a pole at the upper right",
+        "non_geolocation_element": "yellow color, diamond shape, reflective surface, metal pole, daylight",
+        "geolocation_element": "German priority-road sign (StVO Zeichen 306), German signage style",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue turn-right street sign on a pole below the traffic light",
+        "non_geolocation_element": "blue circle, white arrow, reflective surface, circular sign, metal pole",
+        "geolocation_element": "German mandatory right-turn sign (StVO Zeichen 209)",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white event poster on a fence to the right",
+        "non_geolocation_element": "white background, green text blocks, rectangular paper, outdoor billboard frame",
+        "geolocation_element": "Readable text: \u201cGr\u00fcne Tage Th\u00fcringen 19.\u201321. September\u201d (German language, references Thuringia)",
+        "target_concept": "poster",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange-and-blue political poster on a fence to the right",
+        "non_geolocation_element": "orange stripe, blue stripe, rectangular paper, glossy print",
+        "geolocation_element": "Readable text including the word \u201cErfurt,\u201d indicating the city",
+        "target_concept": "poster",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-white striped traffic bollard at the left curb",
+        "non_geolocation_element": "red and white diagonal stripes, rectangular panel, mounted on a slim post",
+        "geolocation_element": "German-style hazard marker (Leitbake) design",
+        "target_concept": "traffic bollard",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black traffic light on a pole at the right corner",
+        "non_geolocation_element": "black housing, vertical stack, metal pole, small arrow repeater illuminated",
+        "geolocation_element": "German signal head style with small green right-turn arrow",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round fountain in a flower bed at the far left",
+        "non_geolocation_element": "circular water basin, low stone edge, water spray, surrounding flowers and trees",
+        "geolocation_element": "park fountain immediately at the intersection corner, helping pinpoint a specific junction",
+        "target_concept": "fountain",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead sign gantry with blank-backed panels above the lanes",
+        "non_geolocation_element": "gray metal frame, multiple rectangular panels, suspended over roadway",
+        "geolocation_element": "specific arrangement of multi-panel gantry at this intersection",
+        "target_concept": "gantry",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/erfurt/erfurt_000000_000019_leftImg8bit.png"
+}

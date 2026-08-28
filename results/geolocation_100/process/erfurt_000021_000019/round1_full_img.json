@@ -1,0 +1,86 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand traffic with European road markings (white dashed lane lines, no center yellow). The triangular pedestrian warning signs with red borders depict a single person walking over zebra stripes, a style common in Austria and Switzerland and less typical in Germany or Poland (which use different pedestrian symbols). The cars have long, white European-style license plates with a blue band, which rules out Switzerland (no EU blue band) and supports an EU country such as Austria. Architecture includes mid- to high-rise slab apartment blocks reminiscent of Central European postwar housing, consistent with Austrian urban neighborhoods. \nCity-level: Among Austrian cities, the broad multi-lane boulevard flanked by 1960s\u201380s residential blocks and continuous tree-lined verges is characteristic of Vienna\u2019s outer districts rather than smaller Austrian cities. The scale and density, plus the landscaped median/side green strips and absence of mountainous backdrops, fit Vienna\u2019s flat urban fabric better than Graz, Innsbruck, or Salzburg. \nStreet-level: The presence of paired pedestrian-warning triangles on both sides before a zebra crossing, a grass verge with mature trees tight to the curb on the right, and long fa\u00e7ades of gray panel apartment towers on the left suggest a major arterial through a residential complex\u2014typical of Vienna\u2019s outer-ring avenues. Specific storefronts or unique landmarks aren\u2019t legible, so the exact street can\u2019t be pinned down, but the configuration resembles Vienna\u2019s district boulevards (e.g., in Donaustadt or Favoriten).",
+  "location_estimate": {
+    "latitude": 48.208,
+    "longitude": 16.373,
+    "confidence": "Low",
+    "region": "Austria, Vienna"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "triangular pedestrian sign on a pole at the right",
+        "non_geolocation_element": "red border, white interior, metal pole, reflective surface, overcast lighting",
+        "geolocation_element": "European warning sign style showing a single pedestrian on zebra stripes",
+        "target_concept": "pedestrian sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "triangular pedestrian sign on a pole at the left",
+        "non_geolocation_element": "red border, white interior, mounted above a dark supplementary plate, metal pole",
+        "geolocation_element": "duplicate pedestrian-warning placement before a zebra crossing, typical in Austria",
+        "target_concept": "pedestrian sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a black car ahead",
+        "non_geolocation_element": "rectangular plate, white background, dark characters, rear of sedan",
+        "geolocation_element": "EU-format long plate with blue band on the left",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "apartment building with gray panel facade on the left",
+        "non_geolocation_element": "gray panels, repetitive balconies, mid/high-rise slab, rectangular windows",
+        "geolocation_element": "Central European Plattenbau-style architecture common in Austrian urban districts",
+        "target_concept": "apartment building",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dashed lane marking on the road center",
+        "non_geolocation_element": "white paint, short dashes, asphalt surface",
+        "geolocation_element": "European road marking convention with white center lines and right-hand traffic",
+        "target_concept": "lane marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow corner building at the distant center",
+        "non_geolocation_element": "yellow facade, multi-story, gabled roof, positioned at an intersection",
+        "geolocation_element": "distinct local building acting as a visual anchor for this specific junction",
+        "target_concept": "building",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "grass verge along the right curb",
+        "non_geolocation_element": "green grass, low curb, continuous strip with trees",
+        "geolocation_element": "boulevard-style landscaped verge typical of Vienna outer districts",
+        "target_concept": "verge",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/erfurt/erfurt_000021_000019_leftImg8bit.png"
+}

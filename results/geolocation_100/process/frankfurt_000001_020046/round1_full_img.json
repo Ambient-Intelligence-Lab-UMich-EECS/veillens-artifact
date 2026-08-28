@@ -1,0 +1,87 @@
+{
+  "reasoning": "Country level: The road furniture, traffic signs, and markings are distinctly continental European. On the right, a blue rectangular one\u2011way sign with a white arrow matches Germany\u2019s \u201cEinbahnstra\u00dfe\u201d design. The red/blue no\u2011stopping sign and narrow black bollards are also typical in Germany. Cars have long, white EU license plates with a blue band, consistent with Germany. These clues point strongly to Germany over neighboring countries whose one\u2011way signs differ (e.g., France or Netherlands).  City level: A prominent cylindrical glass office tower with a diamond grid facade stands at the end of the street. This closely matches Frankfurt am Main\u2019s Westhafen Tower on the Main river. The setting also appears riverside (cobblestones and railing to the left, overhead cables and a pedestrian bridge form) which fits the riverfront roads west of central Frankfurt. Other German cities with similar towers (e.g., D\u00fcsseldorf) have different silhouettes; Frankfurt\u2019s Westhafen Tower is a unique round, green\u2011glass cylinder.  Street level: The view is along a straight, two\u2011lane street leading toward the tower, with a low riverside railing and cobbled verge on the left and older stone fa\u00e7ades on the right. The specific alignment toward Westhafen Tower suggests a location just east or northeast of the tower along the Main\u2019s north bank, likely in the Gutleutviertel/Westhafen area. Exact street is uncertain, but the composition is consistent with streets feeding into the Westhafen basin near the river (e.g., Wilhelm\u2011Leuschner\u2011Stra\u00dfe or adjacent connectors).",
+  "location_estimate": {
+    "latitude": 50.103,
+    "longitude": 8.667,
+    "confidence": "Medium",
+    "region": "Germany, Hesse, Frankfurt am Main"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular street sign above a smaller plate on a pole",
+        "non_geolocation_element": "blue background, white arrow, metal plate, reflective surface",
+        "geolocation_element": "German one-way sign style 'Einbahnstra\u00dfe' with right-pointing arrow",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "round traffic sign on a pole at the curb",
+        "non_geolocation_element": "blue circle, red border and X, reflective metal, roadside mounting",
+        "geolocation_element": "German/European no-stopping sign design",
+        "target_concept": "traffic sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver van",
+        "non_geolocation_element": "rectangular plate, black text, blue vertical band on left, reflective",
+        "geolocation_element": "EU-style plate with German formatting proportions",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cylindrical office tower in the distant center",
+        "non_geolocation_element": "green glass, diamond lattice pattern, round silhouette, high-rise",
+        "geolocation_element": "distinctive landmark resembling Frankfurt\u2019s Westhafen Tower",
+        "target_concept": "office tower",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "metal railing along the left sidewalk",
+        "non_geolocation_element": "silver metal, repeating X-brace pattern, low height",
+        "geolocation_element": "riverside safety railing style common along the Main in Frankfurt",
+        "target_concept": "railing",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone shoulder at the left edge of the road",
+        "non_geolocation_element": "small gray stones, uneven texture, curb transition",
+        "geolocation_element": "riverbank cobblestone treatment typical of Frankfurt\u2019s north Main embankment",
+        "target_concept": "cobblestone shoulder",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "painted lane markings at the road center",
+        "non_geolocation_element": "white paint, solid and dashed lines, s-curve pattern",
+        "geolocation_element": "German road marking conventions (line widths and patterns)",
+        "target_concept": "lane markings",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/frankfurt/frankfurt_000001_020046_leftImg8bit.png"
+}

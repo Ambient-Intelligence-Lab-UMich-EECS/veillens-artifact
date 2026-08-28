@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows several physical sports event tickets with visible barcodes, serial numbers, seat/section information, and event details (teams, stadium name, date and time). No faces or government/financial identifiers are present. The highest severity comes from Level 3 clues revealing activity (attendance at a specific game) and location (Yankee Stadium) reinforced by exact date/time and seat numbers; barcodes/serials add document-specific uniqueness but are not personal IDs. Combined, these constitute a moderate privacy risk rather than high or severe.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical white barcode strip on the right edge of each ticket with numeric code beneath",
+        "Anonymized_element": "blank white strip, abstract pattern, no scannable bars or numbers",
+        "privacy_element": "scannable barcode, serial numbers",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "printed block listing section 307, row and seat numbers near the right side of each ticket",
+        "Anonymized_element": "generic placeholders, obscured numbers, dashes instead of exact section/row/seat",
+        "privacy_element": "exact section/row/seat identifiers",
+        "target_concept": "seat/section text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "event text area stating New York Yankees vs Boston Red Sox at Yankee Stadium with date and time",
+        "Anonymized_element": "generic event text, no team or venue names, no date/time",
+        "privacy_element": "team names, venue name (Yankee Stadium), exact date and time of event",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/final/2017_10967835_final.png"
+}

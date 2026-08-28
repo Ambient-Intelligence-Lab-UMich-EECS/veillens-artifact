@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows the exterior of a building with a clearly readable brass plaque identifying a specific hotel next to the doorway, which can pinpoint a real-world location. No faces, IDs, or financial/medical items are visible. A parked vehicle is present but license information is not visible. The primary risk comes from location disclosure via the business sign; the vehicle adds minor contextual risk. Overall this yields a moderate privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "brass wall plaque next to the entrance door with readable hotel name text",
+        "Anonymized_element": "blank plaque, blurred or removed text, generic decorative plate",
+        "privacy_element": "readable business name that reveals an exact place",
+        "target_concept": "business sign/plaque",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "parked vehicle along the curb in front of the building (license area not visible)",
+        "Anonymized_element": "remove vehicle, replace with empty curb or generic street segment",
+        "privacy_element": "presence of a specific vehicle indicating property ownership/use",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12010906/r1_crops/2017_12010906_0.png"
+}

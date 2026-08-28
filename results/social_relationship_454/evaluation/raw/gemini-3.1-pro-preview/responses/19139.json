@@ -1,0 +1,23 @@
+{
+  "img_id": "19139",
+  "predictions": {
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 1,
+    "2 5": 3,
+    "3 5": 6,
+    "4 5": 1
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 3,
+    "2 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: P1 is engaged in a separate activity (handling a bottle) in the background, showing no shared attention or direct interaction with P2. => no-relationship\n[P1-P5]: P1 is focused on his task in the background and exhibits no visual connection or interaction with P5. => no-relationship\n[P2-P3]: P3 is in the far background and largely obscured, showing no visible interaction or shared attention with P2. => no-relationship\n[P2-P4]: P4 is standing close behind P2, smiling and attentively observing the cake-cutting, indicating she is a guest sharing in the social event. => friends\n[P2-P5]: P2 and P5 are standing closely together, sharing the intimate and celebratory act of cutting the cake with overlapping hands. => couple\n[P3-P5]: P3 is a bystander in the background, showing no interaction or connection to P5's activity. => no-relationship\n[P4-P5]: P4 is standing nearby, sharing in the celebratory moment by actively watching P5 and P2 cut the cake together. => friends",
+  "timestamp": 1779942694.8869255
+}

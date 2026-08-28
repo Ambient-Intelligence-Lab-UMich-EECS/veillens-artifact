@@ -1,0 +1,35 @@
+{
+  "reasoning": "This regional crop shows two people whose faces and bodies are heavily obscured, removing biometric identifiers. No names, documents, or readable text are present. Remaining cues are limited to a distinctive polka-dot top and large hoop earrings plus a generic home interior (sofa, wall decor). These provide weak personal-attribute and background context but no direct identification or sensitive data. Therefore risk is low, driven by minor personal attributes and property context only.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "polka-dot patterned top on the person's torso",
+        "Anonymized_element": "plain solid-color top, no distinctive patterns, generic clothing",
+        "privacy_element": "distinctive clothing pattern and style that may hint at gender/appearance",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black leather sofa in a home-like interior background",
+        "Anonymized_element": "generic neutral background, blurred sofa, plain backdrop",
+        "privacy_element": "home furnishing indicating private indoor setting",
+        "target_concept": "sofa",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10769632/r1_crops/2017_10769632_1.png"
+}

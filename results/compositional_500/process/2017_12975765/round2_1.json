@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person at a podium with the facial area deliberately obscured, so no identifiable biometric details are visible. A microphone suggests the person is speaking or presenting, and a projection screen with mostly unreadable text appears in the background. The strongest elements relate to activities/behavior and general personal attributes (hair and head profile), which are moderate risk, while the slide is a low\u2011risk generic document. With no readable identifiers or faces, overall risk is low to moderate. Confidence is medium due to partial visibility and unreadable text.",
+  "personal_info_privacy_score": {
+    "score": 0.19,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s head in profile with face area masked/blurred",
+        "Anonymized_element": "crop out head region, replace with generic silhouette, further blur hair/ear details",
+        "privacy_element": "distinct hairstyle and partial ear/face outline conveying physical appearance",
+        "target_concept": "head/face",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "black microphone positioned near the person at a podium",
+        "Anonymized_element": "remove microphone, replace with neutral background or podium edge",
+        "privacy_element": "context of giving a talk/presentation indicating public-speaking activity",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "projected presentation slide with mostly unreadable text",
+        "Anonymized_element": "blank slide, abstract shapes, no legible text",
+        "privacy_element": "document-like screen content (text elements), no PII readable",
+        "target_concept": "presentation screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12975765/r1_crops/2017_12975765_1.png"
+}

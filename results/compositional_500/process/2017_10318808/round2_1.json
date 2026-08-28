@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a printed concert ticket with legible event details, a unique ticket serial number, a venue/location with date and times, a website URL, and the ticket price. There is no person, face, or personal identifier linking the ticket to an individual. The strongest cues are generic document elements and location/time information, which pose low to moderate contextual risk only. Thus the score remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "vertical white strip with printed serial number '00721' on the right edge",
+        "Anonymized_element": "blank strip, randomized digits, blurred code",
+        "privacy_element": "unique ticket serial number code",
+        "target_concept": "ticket serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "text line: 'Barcelona, 6 de junio 2002 SALA RAZZMATAZZ I' along the bottom left",
+        "Anonymized_element": "generic city name, generic date placeholder, blurred venue name",
+        "privacy_element": "specific city name, precise date, specific venue name",
+        "target_concept": "event location/date text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed website URL 'www.iguapop.com' near the bottom right",
+        "Anonymized_element": "generic placeholder URL, blurred text",
+        "privacy_element": "specific website domain",
+        "target_concept": "website URL text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10318808/r1_crops/2017_10318808_1.png"
+}

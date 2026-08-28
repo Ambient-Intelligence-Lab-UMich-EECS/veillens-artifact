@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image depicts a silhouette of a person in a pose that exposes partial nudity, which falls under the category of intimate content. While the image is stylized and does not reveal a face, identifying features, or other PII, the silhouette clearly suggests an undressed human figure. Given that the image constitutes intimate content, it represents a high privacy risk in terms of personal digital content protection, regardless of the lack of explicit facial identification.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "silhouette of a person with bare skin visible",
+        "Anonymized_element": "fully clothed figure, draped fabric, stylized artistic rendering without anatomical details",
+        "privacy_element": "exposed skin, silhouette suggesting nudity",
+        "target_concept": "nude or semi-nude silhouette",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13543740/final/2017_13543740_final.png"
+}

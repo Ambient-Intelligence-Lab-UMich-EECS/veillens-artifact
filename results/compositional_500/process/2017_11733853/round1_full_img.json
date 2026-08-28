@@ -1,0 +1,70 @@
+{
+  "reasoning": "The image shows multiple participants in a street parade on a float. At least two people have clearly visible, front-facing faces, which are directly identifying (Level 1). A knee brace on the seated participant indicates a possible health-related condition (Level 2). A large vertical building sign with readable partial letters provides potential location context (Level 3). These clues combine to create a high privacy risk primarily due to biometric identifiability, reinforced by health and location hints. The evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central seated participant\u2019s uncovered face wearing sunglasses and feathered headpiece",
+        "Anonymized_element": "face blurred or replaced with neutral mask, generic headpiece, keep sunglasses without facial detail",
+        "privacy_element": "identifiable facial features, mouth and face shape clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left performer\u2019s uncovered face facing camera",
+        "Anonymized_element": "blurred face or neutralized placeholder head without facial detail",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue hinged knee brace on the seated participant\u2019s right knee",
+        "Anonymized_element": "plain fabric legging or generic knee pad without medical appearance",
+        "privacy_element": "orthopedic brace suggesting injury or medical condition",
+        "target_concept": "medical brace",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large vertical building sign with partial readable letters in background",
+        "Anonymized_element": "blank or generic sign with abstract shapes, no readable text or logos",
+        "privacy_element": "distinctive signage/text that can indicate a specific place",
+        "target_concept": "building sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parade float edge with banner and participants in carnival costumes",
+        "Anonymized_element": "generic float edge without text or distinctive branding",
+        "privacy_element": "public participation in a specific event indicating activity/behavior",
+        "target_concept": "parade float/banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11733853.jpg"
+}

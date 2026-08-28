@@ -1,0 +1,43 @@
+{
+  "rule_source": "pipeline2/data_sc/defense.py, replayed over all 454 prediction responses",
+  "replay_reproduces_def_img_dataset_exactly": true,
+  "outcomes": {
+    "protected": {
+      "images": 41,
+      "gt_pairs": 396,
+      "relationship_pairs": 182,
+      "relationship_pair_share": 0.4596,
+      "all_relationship_images": 15,
+      "surviving_pairs": 80,
+      "meaning": "defense.py drew boxes for the non-relationship subjects only; an anonymized image exists and was attacked"
+    },
+    "skip_all_relationship": {
+      "images": 320,
+      "gt_pairs": 824,
+      "relationship_pairs": 776,
+      "relationship_pair_share": 0.9417,
+      "all_relationship_images": 304,
+      "meaning": "every predicted pair was a relationship and <=1 subject was unmatched: removing the relationship subjects leaves nobody to attack. Correctly treated as fully anonymized."
+    },
+    "skip_le1_remaining": {
+      "images": 22,
+      "gt_pairs": 153,
+      "relationship_pairs": 98,
+      "relationship_pair_share": 0.6405,
+      "all_relationship_images": 8,
+      "meaning": "<=1 subject would remain after removing relationship subjects: no pair can be formed. Correctly treated as fully anonymized."
+    },
+    "skip_no_relationship_subject": {
+      "images": 71,
+      "gt_pairs": 145,
+      "relationship_pairs": 102,
+      "relationship_pair_share": 0.7034,
+      "all_relationship_images": 61,
+      "meaning": "gpt-5 predicted no pair with a label < 6, so relationship_subjects() was empty and defense.py returned before writing any image. NOT anonymized: the original image is untouched and remains fully attackable."
+    }
+  },
+  "totals": {
+    "images": 454,
+    "gt_pairs": 1518
+  }
+}

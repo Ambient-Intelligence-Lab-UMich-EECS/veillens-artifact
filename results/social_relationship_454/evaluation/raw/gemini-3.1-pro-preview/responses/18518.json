@@ -1,0 +1,29 @@
+{
+  "img_id": "18518",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "4 5": 6
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "2 4": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are standing closely together and holding game controllers, actively participating in a shared recreational activity. => friends\n[P1-P3]: P1 is focused on a game while P3 is standing to the side behind a barrier, showing no signs of interaction. => no-relationship\n[P1-P4]: P4 is standing behind P1 in the background with no engagement or interaction between them. => no-relationship\n[P1-P5]: P5 is partially visible in the background behind P1, indicating they are just bystanders in the same public space. => no-relationship\n[P2-P3]: P2 is engaged in playing a video game while P3 is a distant bystander with no visible connection. => no-relationship\n[P2-P4]: P2 is focused on the game kiosk while P4 is standing in the background behind P1, showing no interaction. => no-relationship\n[P2-P5]: P5 is standing in the background behind P2 with no signs of interaction or shared activity. => no-relationship\n[P3-P4]: Both individuals appear to be separate bystanders in different parts of the store with no visible interaction. => no-relationship\n[P3-P5]: Both are unconnected individuals standing in the background of a busy public space. => no-relationship\n[P4-P5]: Both are people standing in the background of the store without any interaction between them. => no-relationship",
+  "timestamp": 1779942677.6167662
+}

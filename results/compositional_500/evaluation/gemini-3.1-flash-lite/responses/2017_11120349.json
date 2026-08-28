@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image consists of a collage of various scraps, including pieces of a generic Scantron testing form and handwritten notes. The documents present are generic artifacts (a testing form) rather than sensitive personal documents. No personally identifiable information such as names, addresses, ID numbers, or biometrics are present. The text is fragments of educational or conversational writing. The overall privacy risk is negligible.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Scantron test form paper fragment",
+        "Anonymized_element": "generic paper, blank background",
+        "privacy_element": "none",
+        "target_concept": "generic document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11120349/final/2017_11120349_final.png"
+}

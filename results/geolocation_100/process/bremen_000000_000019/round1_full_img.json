@@ -1,0 +1,90 @@
+{
+  "reasoning": "Country level: The scene shows a narrow, curved roadway paved with grey cobblestones, mid-rise brick-and-stucco buildings, and EU-style traffic signage. Multiple readable German words appear: on the orange fascia in the distance the word looks like \u201cKOPIEREN\u201d (German for \u201ccopying\u201d) with decimal pricing, and the rear of the white service van has text that includes an umlauted word resembling \u201cW\u00c4CHTER.\u201d These strongly indicate Germany over neighboring countries. The street name plates on a slim pole are the small white rectangular German style with black border/black lettering. Vehicles have EU-format white plates. Together these cues point to Germany. City level: The dense brick architecture, narrow cobbled curve, and older mixed-use blocks resemble historic cores in western German cities. The Cityscapes-style capture context and Aachen\u2019s old town street texture (frequent cobbles, brick offices, small copy shops) fit well. Compared with Cologne/D\u00fcsseldorf, the street width and low-rise residential feel are more consistent with Aachen\u2019s center rather than larger metro cores. Street level: Specific features include a curved cobblestone lane with a line of rounded concrete bollards on the right, an orange copy-shop fascia reading \u201cKOPIEREN \u2026,\u201d and a pair of stacked white street-name plates on a slender pole near a bicycle at the inside of the curve. These combined details make this particular junction distinctive within the city\u2019s old-town network, though the exact street name is unreadable, so the precise block cannot be confirmed.",
+  "location_estimate": {
+    "latitude": 50.7766,
+    "longitude": 6.0834,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, Aachen"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "shop sign above a storefront",
+        "non_geolocation_element": "rectangular shape, orange background, white text, mounted on brick facade, overcast lighting",
+        "geolocation_element": "German word 'KOPIEREN' with decimal pricing style",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "van rear door on a white van",
+        "non_geolocation_element": "white paint, rectangular door panels, blue graphics, vertical taillights",
+        "geolocation_element": "German-language company text with umlauted word (e.g., 'W\u00c4\u2026'), EU-format plate area",
+        "target_concept": "van rear door",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on a grey pole",
+        "non_geolocation_element": "small white rectangles, black border, sans-serif lettering, mounted one above another",
+        "geolocation_element": "German-style street-name plates with German orthography",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking sign on a pole",
+        "non_geolocation_element": "blue square sign, white 'P', reflective surface",
+        "geolocation_element": "EU-standard parking symbol common in Germany",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "road surface of cobblestones",
+        "non_geolocation_element": "grey stone blocks, curved alignment, wet-looking texture, scattered leaves",
+        "geolocation_element": "traditional European cobblestone typical of historic German city centers",
+        "target_concept": "road surface",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bollard row at the curb",
+        "non_geolocation_element": "short cylindrical concrete posts, evenly spaced, grey color",
+        "geolocation_element": "European-style pedestrian-protection bollards common in German urban design",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bicycle leaning on a building",
+        "non_geolocation_element": "standard city bike, thin tires, dark frame, parked against wall",
+        "geolocation_element": "Common urban mobility cue consistent with German city centers (supporting)",
+        "target_concept": "bicycle",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/bremen/bremen_000000_000019_leftImg8bit.png"
+}

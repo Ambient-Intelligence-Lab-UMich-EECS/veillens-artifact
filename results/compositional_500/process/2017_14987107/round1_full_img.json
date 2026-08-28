@@ -1,0 +1,82 @@
+{
+  "reasoning": "The image shows a street parade with several participants whose faces are clearly visible at close range, which exposes biometric identifiers (highest severity present). Bright rainbow-themed balloons and attire strongly suggest participation in a Pride-style event, enabling sensitive inferences about social/political/sexual-orientation affiliation. The public setting and crowd barriers reveal an activity/behavior (attending a parade). Numerous bystanders appear in the background but are small and less identifiable. The combination of multiple identifiable faces with sensitive-affiliation cues raises overall risk to high. Confidence is high because the faces and parade symbolism are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing woman in white tank top with hair in a bun at center-right",
+        "Anonymized_element": "face blurred or replaced with neutral silhouette, head turned away, sunglasses added",
+        "privacy_element": "clear full face with eyes, nose, mouth visible enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman in green sash and denim shorts at center-left, face visible",
+        "Anonymized_element": "blurred facial features, generic placeholder face, add hat/sunglasses",
+        "privacy_element": "recognizable facial features and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on far right wearing rainbow tutu, side-profile face visible",
+        "Anonymized_element": "profile blurred, turned further away, add sunglasses",
+        "privacy_element": "distinct facial profile and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow-colored balloon figure (e.g., green/blue/orange human-shaped balloon) carried above participants",
+        "Anonymized_element": "single-color neutral balloon without rainbow scheme or symbolic shapes",
+        "privacy_element": "rainbow pride symbolism suggesting sexual-orientation/political affiliation",
+        "target_concept": "parade balloon",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "participants walking in a street parade with metal crowd-control barriers",
+        "Anonymized_element": "remove barriers and march context; depict plain sidewalk walking without event indicators",
+        "privacy_element": "public participation in a parade/event indicating social activity and potential affiliation",
+        "target_concept": "parade participation",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background crowd behind barriers with many small, distant faces",
+        "Anonymized_element": "heavily blurred crowd, back-of-heads only",
+        "privacy_element": "numerous distant individuals partially visible though largely unidentifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14987107.jpg"
+}

@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows a busy street market with at least two clearly identifiable human faces in the mid-ground (a woman with glasses at left-center and a man in a blue plaid shirt behind the raised legs). These are Level 1 biometric identifiers. Additional background faces are present but smaller/partially occluded. A readable storefront sign with a business name at the top-right can indicate location, adding Level 3 risk. The combination of multiple identifiable faces with location cues yields a moderate-to-high privacy risk. Confidence is high because the facial details and signage are visibly clear.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman with glasses facing the camera near left-center background",
+        "Anonymized_element": "face blurred or replaced, head turned away, generic silhouette",
+        "privacy_element": "full face with eyes, nose, mouth visible; distinctive eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in blue plaid shirt with face visible behind raised legs",
+        "Anonymized_element": "face blurred or replaced, head turned away, generic silhouette",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "older man in light-blue striped shirt at right, side-profile face visible",
+        "Anonymized_element": "face blurred, profile obscured, head turned further away",
+        "privacy_element": "recognizable facial profile including nose, mouth, and hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront signage at top-right with readable business name/logo",
+        "Anonymized_element": "blank signboard, generic colors, remove/alter text and logos",
+        "privacy_element": "readable business name and branding indicating locale",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12667529/r1_crops/2017_12667529_1.png"
+}

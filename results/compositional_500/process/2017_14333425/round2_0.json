@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a dense outdoor crowd with multiple clearly identifiable faces in the foreground and midground. Biometric data is the highest-severity element present, as several faces are unobstructed, well-lit, and close to the camera. No government IDs, financial, or medical data are visible. Contextual clues (public event stage) add little extra risk. Due to the number of identifiable faces and their clarity, the privacy risk is high. Confidence is high because the faces are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman with dark hair and glasses in the left-center foreground, side profile face visible",
+        "Anonymized_element": "blurred face, generic skin-tone patch, sunglasses without facial detail",
+        "privacy_element": "recognizable facial features, eyes/nose/mouth structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "middle-aged man with gray hair and sunglasses resting on head near center foreground, frontal face visible",
+        "Anonymized_element": "blurred facial area, neutral oval mask",
+        "privacy_element": "full facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young woman in turquoise shirt at right-center foreground with tied-back hair, side face visible",
+        "Anonymized_element": "blur over face, replace with featureless silhouette",
+        "privacy_element": "identifiable facial outline and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "older man with receding gray hair at right-center, partial but clear facial features",
+        "Anonymized_element": "pixelated facial region, neutral skin-tone patch",
+        "privacy_element": "distinctive facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man in white shirt and sunglasses in midground center-left, upward-tilted face partly visible but identifiable",
+        "Anonymized_element": "blur/pixelate face region",
+        "privacy_element": "recognizable facial structure despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14333425/r1_crops/2017_14333425_0.png"
+}

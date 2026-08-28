@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows four individuals standing indoors with clearly visible, frontal faces. These unobstructed facial features constitute biometric identifiers (highest severity). No readable names, documents, addresses, or financial/medical items are visible. While the scene suggests a social/event context, the dominant privacy exposure is the set of identifiable faces, which are central and well lit, increasing risk. Overall risk is high due to multiple Level 1 biometric clues; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost person\u2019s unobstructed face with glasses, looking right",
+        "Anonymized_element": "face blurred, pixelated facial area, silhouette with neutral skin tone, glasses simplified without facial detail",
+        "privacy_element": "full frontal facial features, eyes and nose contour, mouth shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "second person from left, unobstructed face with curly hair, smiling",
+        "Anonymized_element": "face blurred, pixelated facial area, neutralized skin tone, remove fine facial details",
+        "privacy_element": "full frontal facial features, eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "third person from left wearing dark shirt, unobstructed face with short hair",
+        "Anonymized_element": "face blurred, pixelated facial area, silhouette without facial detail",
+        "privacy_element": "full frontal facial features, eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rightmost person\u2019s unobstructed face with wavy hair, speaking gesture",
+        "Anonymized_element": "face blurred, pixelated facial area, neutral silhouette",
+        "privacy_element": "full frontal facial features, eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11438445.jpg"
+}

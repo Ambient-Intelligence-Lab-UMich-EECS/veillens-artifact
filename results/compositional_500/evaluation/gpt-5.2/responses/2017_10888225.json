@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a surgical operation in progress with multiple clinicians wearing masks and caps around a draped patient. No readable names, badges, or identifiable faces are visible. The strongest privacy signal is the visible surgical site indicating an ongoing medical procedure on a specific patient (Level 2: medical data). Additional context such as gloved hands manipulating a scalpel reinforces the medical activity (Level 3: activities/behaviors) but does not identify anyone. With one clear Level 2 clue but no biometrics or identifiers, the overall risk is moderate. Confidence is medium due to limited, partially occluded details.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "draped patient with an exposed surgical site at the center of the table",
+        "Anonymized_element": "fully covered drape with no incision, use of a lifelike training manikin, simulated skin with no procedure",
+        "privacy_element": "visible surgical field indicating an active medical procedure on a patient",
+        "target_concept": "surgical site",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "surgeon’s gloved hands holding a scalpel over the operative field",
+        "Anonymized_element": "hands holding a blunt tool, empty hands, instrument placed on tray away from body",
+        "privacy_element": "depiction of surgical action confirming a medical procedure is being performed",
+        "target_concept": "surgical instrument in use",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10888225/final/2017_10888225_final.png"
+}

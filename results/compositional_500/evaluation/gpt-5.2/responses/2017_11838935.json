@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows a group standing on a home’s porch. At least two people have unobscured, identifiable faces (biometric data), which is a Level 1 clue. A house-number plaque is also visible, providing location information that, when combined with faces, increases identifiability. Other individuals appear masked or obscured, reducing additional risk. Overall, the presence of clear faces plus a house number yields a moderate-to-high privacy risk. Confidence is medium due to partial occlusions for some people but clear visibility for the noted features.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of the person in the center wearing a brown T-shirt",
+        "Anonymized_element": "blurred/pixelated face, replaced with neutral skin-toned patch, face turned away",
+        "privacy_element": "full face with identifiable eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of the person behind and slightly left, wearing a light blue top and white headband",
+        "Anonymized_element": "blurred/pixelated face, neutral patch over face, face turned away",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "house number plaque above the front door showing a single digit",
+        "Anonymized_element": "blank plaque, abstract pattern with no numbers",
+        "privacy_element": "street/house number",
+        "target_concept": "house number",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11838935/final/2017_11838935_final.png"
+}

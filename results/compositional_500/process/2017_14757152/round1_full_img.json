@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows two people posing closely with both faces clearly visible and in focus, which exposes identifiable biometric data. There are no readable names, documents, or location markers present, and no financial or medical information. The highest-severity clues are the identifiable faces (Level 1). With two clear faces but no additional reinforcing identifiers, the overall risk is high but not extreme. Confidence is high because the faces are central and unobstructed.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Front-facing head and shoulders of a bald man smiling",
+        "Anonymized_element": "blurred face, pixelated face, cropped above nose, turned-away head, generic silhouette",
+        "privacy_element": "clear full face with distinct facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Front-facing head and shoulders of a woman smiling, partially wrapped in light fabric",
+        "Anonymized_element": "blurred face, pixelated face, cropped above nose, turned-away head, generic silhouette",
+        "privacy_element": "clear full face with distinct facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14757152.jpg"
+}

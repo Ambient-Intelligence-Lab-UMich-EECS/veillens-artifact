@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows people in a park-like setting. Two individuals have visible, reasonably clear faces, which constitute biometric identifiers (Level 1). Their poses indicate a group exercise/dance activity (Level 3), providing behavioral context. The background is a generic stone wall and trees with no readable signs or specific location markers. With Level 1 biometric exposure as the primary risk and moderate reinforcing context from activity, but no names, IDs, or financial/medical data, the overall privacy risk is moderate-to-high. Confidence is medium due to mid-distance faces and partially turned angles.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left participant’s uncovered face (woman in blue patterned shirt)",
+        "Anonymized_element": "blurred face, neutral oval mask, replace with non-descript silhouette",
+        "privacy_element": "visible facial features including eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "center participant’s uncovered face (gray-haired person in black outfit)",
+        "Anonymized_element": "blurred face, neutral oval mask, replace with non-descript silhouette",
+        "privacy_element": "visible facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "body posture of participants performing exercise/dance movement",
+        "Anonymized_element": "neutral standing pose, arms at sides, reduce gesture emphasis",
+        "privacy_element": "discernible exercise/dance action implying activity pattern",
+        "target_concept": "activity pose",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "park background with stone wall and trees",
+        "Anonymized_element": "generic blurred greenery, simplified wall texture without distinct features",
+        "privacy_element": "environmental context suggesting public park but no specific landmark",
+        "target_concept": "background context",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15099352/final/2017_15099352_final.png"
+}

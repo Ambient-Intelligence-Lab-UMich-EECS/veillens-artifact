@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a kneeling person with arms raised; the frontal face is visible and potentially identifiable, which is Level 1 biometric data. The torso and legs appear largely uncovered, suggesting partial/artistically styled nudity (Level 2). These cues together create a high privacy risk despite no names or documents present. The central, clear framing raises confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.78,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing head and face of the kneeling person centered in the frame",
+        "Anonymized_element": "blurred or pixelated face, blank oval, turned-away head, added mask or shadow over facial area",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, facial outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "largely uncovered upper body and thighs of the kneeling person with powder on skin",
+        "Anonymized_element": "add opaque clothing or leotard, increase coverage, replace with neutral fabric texture, crop to remove body below shoulders",
+        "privacy_element": "partial nudity and visible body contours of chest, abdomen, and thighs",
+        "target_concept": "body exposure",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13543740/r1_crops/2017_13543740_1.png"
+}

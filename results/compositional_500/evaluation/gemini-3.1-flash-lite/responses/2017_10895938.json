@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image features an individual in a wheelchair performing a tennis serve. While the athlete's body is partially masked and the face is not visible, the context clearly indicates a physical disability and engagement in professional or competitive sports. This combination of physical ability attributes and contextually identifying information regarding their athletic status constitutes a moderate privacy risk. The confidence is high because the core activity and the presence of assistive equipment are clearly visible and unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Person sitting in a wheelchair, holding a tennis racket while serving.",
+        "Anonymized_element": "standing athlete, generic sports figure, silhouette of an able-bodied person",
+        "privacy_element": "use of a wheelchair, athletic activity, physical disability status",
+        "target_concept": "athlete in wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10895938/final/2017_10895938_final.png"
+}

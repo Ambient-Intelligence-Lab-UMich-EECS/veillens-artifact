@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a vintage printed map and advertisement text for \u201cHotel Claremont\u201d in Berkeley, California, including readable place names and street listings. There are no people or direct personal identifiers. Visible cues mainly reveal general location information and document metadata (handwritten note and a red serial/stamp). These are moderate-to-low risk on their own and not tied to any individual, so the overall risk is low. Confidence is high because the clues are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed advertisement text reading 'HOTEL CLAREMONT ... BERKELEY, CALIFORNIA' with rate details",
+        "Anonymized_element": "replace with generic hotel text, remove city/state names, nonspecific wording",
+        "privacy_element": "explicit city name, hotel name, venue details",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "map segment with street listings and grid near Oakland/Bay Area",
+        "Anonymized_element": "abstract map shapes without street names, blurred labels",
+        "privacy_element": "readable street names and area labels indicating specific geography",
+        "target_concept": "map",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten pencil note at bottom margin mentioning 'Alameda'",
+        "Anonymized_element": "blank margin, generic scribble without legible words",
+        "privacy_element": "legible place reference in handwriting",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red stamped number '39703X' near lower right",
+        "Anonymized_element": "blank area or generic stamp without numbers",
+        "privacy_element": "document serial/registration-style number",
+        "target_concept": "stamp/serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11578145.jpg"
+}

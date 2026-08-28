@@ -1,0 +1,9 @@
+{
+  "reasoning": "Step 1 (Country Level): The view from a vehicle with a Mercedes emblem, the 2:1 aspect ratio, and the overall aesthetic strongly suggest this image is from the Cityscapes dataset, captured in Central Europe. The specific style of the traffic lights (black backboards with white borders suspended on a web of wires over the intersection), the road markings (German StVO bicycle symbol in the bike lane), and the format of the license plates confirm this is Germany. \n\nStep 2 (City Level): The Cityscapes validation set predominantly features three cities: Frankfurt, Lindau, and Münster. The scale of the wide, multi-lane one-way street and the dense, monumental commercial architecture immediately rule out the smaller cities of Lindau and Münster, pointing directly to Frankfurt am Main. \n\nStep 3 (Street Level): The key visual anchor is the historic corner building in the distance with a prominent green copper dome and classical pillars. In Frankfurt, this perfectly matches the Industrie- und Handelskammer (IHK) building located at Börsenplatz. \n\nStep 4 (Refinement): The camera is driving on a multi-lane one-way street with a bike lane on the right. On the left is a modern commercial building with vertical stone columns, followed by a gap with trees, and then the domed IHK building. This precisely aligns with the view driving south on Börsenstraße, just north of the intersection with Taubenstraße and Meisengasse. The trees visible on the left are located on Börsenplatz, which sits exactly between the modern office building and the IHK dome.",
+  "location_estimate": {
+    "latitude": 50.115,
+    "longitude": 8.677,
+    "confidence": "High",
+    "region": "Frankfurt am Main, Hesse, Germany"
+  }
+}

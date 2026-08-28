@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a sheet of paper with several handwritten notes. No people, faces, IDs, names, addresses, or financial/medical data are visible. The only privacy-relevant element is legible personal handwriting content on a generic document, which is low-risk on its own and not tied to any identifiable person. Thus the highest severity is Level 4, yielding a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white sheet of paper with legible handwritten notes in blue and red ink",
+        "Anonymized_element": "blank paper, blurred or blocked text, generic scribbles without readable words",
+        "privacy_element": "readable handwritten personal comments",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12342392.jpg"
+}

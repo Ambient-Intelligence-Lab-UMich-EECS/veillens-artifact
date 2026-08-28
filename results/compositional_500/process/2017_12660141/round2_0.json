@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a person in graduation attire with the face fully obscured, removing direct biometric identification. No names, logos, or documents are visible. However, the graduation cap, tassel, and academic gown clearly indicate an educational milestone and associated behavior, and the exposed ear/neck provide minor cues to personal attributes such as approximate age and gender. With only Level 3 contextual clues and no Level 1\u20132 identifiers, the privacy risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "green graduation cap with yellow tassel on the person\u2019s head",
+        "Anonymized_element": "plain cap without tassel, neutral beanie, generic hat",
+        "privacy_element": "graduation cap and tassel indicating completion of studies/ceremony",
+        "target_concept": "graduation cap",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "blue-trimmed academic gown/stole over white shirt and tie",
+        "Anonymized_element": "casual jacket or sweater, plain shawl without academic styling",
+        "privacy_element": "academic regalia signaling education status and event",
+        "target_concept": "academic gown",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "exposed right ear and neck of the person",
+        "Anonymized_element": "covered neck and ears with scarf or higher collar",
+        "privacy_element": "visible physical traits enabling age/gender inference",
+        "target_concept": "ear and neck",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12660141/r1_crops/2017_12660141_0.png"
+}

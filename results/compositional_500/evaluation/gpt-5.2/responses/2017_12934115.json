@@ -1,0 +1,78 @@
+{
+  "reasoning": "The image shows a street scene with multiple clearly visible faces of individuals, including adults and children, which are strong biometric identifiers. These faces are central, unobstructed, and well-lit. Additional contextual clues like a readable storefront sign and a street parking sign provide location context but are less identifying alone. The highest severity is Level 1 due to biometric data, and multiple such clues compound the risk, yielding a high overall privacy risk. Confidence is high because the cues are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Woman in navy shirt and white shorts at mid-right, side-profile face visible",
+        "Anonymized_element": "blurred face, pixelated features, blank oval in place of face",
+        "privacy_element": "clear facial features including eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Boy in blue shirt standing on curb at right side, front-facing face visible",
+        "Anonymized_element": "blurred or masked face, generic skin-toned oval",
+        "privacy_element": "full facial features, identifiable child appearance",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Man in gray T-shirt with glasses near center-right, profile face visible",
+        "Anonymized_element": "blurred face area, removed glasses details",
+        "privacy_element": "recognizable facial structure and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Seated patron behind black fence at cafe patio (right background), face visible",
+        "Anonymized_element": "pixelated face region, neutralized head shape with no features",
+        "privacy_element": "unobstructed facial features in well-lit area",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Green storefront awnings with readable brand name on brick building (right background)",
+        "Anonymized_element": "blank awnings with no text or logo",
+        "privacy_element": "readable business name that narrows public location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "White-and-red street parking sign on left sidewalk",
+        "Anonymized_element": "generic blank sign with no text or symbols",
+        "privacy_element": "traffic/parking sign that provides location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12934115/final/2017_12934115_final.png"
+}

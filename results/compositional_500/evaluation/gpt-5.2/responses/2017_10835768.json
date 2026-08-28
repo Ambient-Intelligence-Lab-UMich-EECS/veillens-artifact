@@ -1,0 +1,66 @@
+{
+  "reasoning": "The image shows a dense public crowd with multiple unobstructed, clearly identifiable faces, which are Level 1 biometric data. Some storefront signage and recognizable urban facades offer potential location cues. Raised blank flags and the gathering context indicate participation in a public event, adding behavioral context. The presence of several clear faces dominates the risk; location and activity clues compound it. Overall this yields a high privacy risk with clear, direct evidence; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center young person's unobstructed face looking left",
+        "Anonymized_element": "blurred face region, pixelated features, generic skin-tone patch",
+        "privacy_element": "full facial features visible (eyes, nose, mouth), distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "right-side elevated person's profile face above the crowd",
+        "Anonymized_element": "blurred profile, soft-occluded facial area, generic silhouette",
+        "privacy_element": "clear facial profile with nose, mouth, and eye contour visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "left foreground person in yellow hat with visible side face",
+        "Anonymized_element": "blanked facial area, pixelation, generic color fill",
+        "privacy_element": "side facial features, ear and jawline identifiable",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "storefront signage and windowed facade in background with partial lettering",
+        "Anonymized_element": "blank awning, generic texture, removed/blurred text and logos",
+        "privacy_element": "business name/lettering and distinctive storefront that can pinpoint place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "large raised flag on pole above crowd",
+        "Anonymized_element": "neutral pole without flag, lowered hand, generic object without symbolic meaning",
+        "privacy_element": "public demonstration cue indicating attendance at a mass event",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10835768/final/2017_10835768_final.png"
+}

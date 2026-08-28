@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a parade crowd with multiple spectators\u2019 faces clearly visible at mid distance; these are identifiable biometric signals (Level 1). Several rainbow flags are present, which can imply sensitive affiliations when linked to identifiable people (Level 2). No readable addresses or financial/medical items are seen. The combination of multiple clear faces and symbols raises the privacy risk to high. Confidence is high due to clarity and centrality of the faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "two women\u2019s uncovered faces near right-center behind the barrier, looking toward the parade",
+        "Anonymized_element": "blurred faces, pixelated facial area, generic skin-tone oval without features",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "row of spectators\u2019 faces along the sidewalk at mid-ground left of center",
+        "Anonymized_element": "faces blurred uniformly, heads replaced with low-detail silhouettes",
+        "privacy_element": "multiple recognizable faces with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small rainbow pride flag attached to the crowd barrier near left-mid",
+        "Anonymized_element": "solid-color pennant without rainbow pattern, desaturated neutral flag",
+        "privacy_element": "rainbow pride symbolism that can imply sexual-orientation or political affiliation when associated with identifiable people",
+        "target_concept": "rainbow flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14387314/r1_crops/2017_14387314_0.png"
+}

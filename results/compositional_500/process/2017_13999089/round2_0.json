@@ -1,0 +1,38 @@
+{
+  "reasoning": "The crop shows a UK National Rail paper ticket with clearly readable travel details (origin Cogan, destination Ninian Park), date, and validity. No person or name is visible, but the ticket includes unique numbers and time of printing. These cues expose specific location and travel behavior on a particular date, which are Level 3 risks. The presence of unique ticket/serial numbers adds traceability but not direct identity. Combined, they pose a moderate privacy risk without Level 1\u20132 elements. Confidence is high due to legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "UK rail ticket surface with readable origin and destination text and travel date",
+        "Anonymized_element": "generic blank ticket design, blurred/unreadable text, placeholder station names, remove date",
+        "privacy_element": "station names (COGAN, NINIAN PARK), travel date and validity, route information",
+        "target_concept": "train ticket travel details",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Printed ticket area showing ticket/serial numbers and print time",
+        "Anonymized_element": "numbers replaced with zeros or random placeholders, remove/blur timestamp",
+        "privacy_element": "ticket number 339133, long reference number, printed time",
+        "target_concept": "ticket serial/reference numbers",
+        "severity_level": 3,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13999089/r1_crops/2017_13999089_0.png"
+}

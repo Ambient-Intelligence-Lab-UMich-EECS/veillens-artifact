@@ -1,0 +1,96 @@
+{
+  "reasoning": "Country level: The scene shows several distinctly German cues. A round yellow sign with a green H indicates a Haltestelle (public transport stop) used widely in Germany. The advertising poster in the glass shelter contains clear German-language text and a .de web address. Vehicles display EU-style plates with a blue band that appears to include the D country code. Architecture with mid-rise stucco and brick residential blocks, separated tram corridor, and street furniture also match German cities. These elements point strongly to Germany while ruling out neighboring countries with different stop symbols (e.g., Austria\u2019s different bus-stop signage, Netherlands\u2019 different shelter/post styles). City level: The tram reservation running parallel to the road with overhead catenary and curbside platforms is common in Rhine-Ruhr cities. The dense prewar/postwar mix of 5\u20136 story blocks and a rounded red-brick corner building is characteristic of the Ruhrgebiet. While Cologne or D\u00fcsseldorf share some features, the overall look (narrower carriageway, older blocks, Ruhr-style corner shops) is very typical of Essen/Bochum/Dortmund. No landmark cleanly names the city, but the combination of tram alignment, building stock, and signage suggests Essen as a plausible candidate within North Rhine\u2013Westphalia. Street level: The street curves gently left with a centerline broken marking, a tram stop platform and glass shelter on the left, and a distinctive rounded red-brick corner building with multiple shop signs just past the intersection. Tall grey catenary poles line the right verge, with small trees in a grassy strip and a separate sidewalk. A blue street sign sits beneath the bus-stop disk. These features could help match a specific corridor in Essen where trams run on a parallel reservation beside a two-lane carriageway and stops use the yellow H disk with platform shelters near a corner brick building.",
+  "location_estimate": {
+    "latitude": 51.455,
+    "longitude": 7.012,
+    "confidence": "Low",
+    "region": "Germany, North Rhine\u2013Westphalia, Essen (approx.)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bus stop sign on a grey pole",
+        "non_geolocation_element": "yellow circle, green letter, metal pole, overcast lighting",
+        "geolocation_element": "German Haltestelle symbol (yellow circle with green H)",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on a black hatchback",
+        "non_geolocation_element": "white plate, black text, reflective finish, EU blue band",
+        "geolocation_element": "EU plate with D country code style and German font/format",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bus shelter with glass panels",
+        "non_geolocation_element": "transparent glass, metal frame, rectangular roof",
+        "geolocation_element": "poster inside showing German words and .de domain",
+        "target_concept": "bus shelter",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "poster on a bus shelter",
+        "non_geolocation_element": "multicolor print, rectangular layout, glossy surface",
+        "geolocation_element": "visible German-language text and .de URL",
+        "target_concept": "poster",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "catenary wire over the roadway",
+        "non_geolocation_element": "thin dark cable, suspended across street",
+        "geolocation_element": "electric tram/bus overhead wiring typical of German tram corridors",
+        "target_concept": "catenary wire",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram track in a grassy median",
+        "non_geolocation_element": "steel rails, grass bed, linear alignment",
+        "geolocation_element": "side-running reserved tramway common in Rhine-Ruhr cities",
+        "target_concept": "tram track",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign on a short pole",
+        "non_geolocation_element": "blue rectangle, white border, metal post",
+        "geolocation_element": "German-style blue street name sign format",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "corner building with red-brick facade",
+        "non_geolocation_element": "rounded corner, multi-window brick walls, ground-floor shops",
+        "geolocation_element": "Ruhrgebiet-style mixed-use brick corner block typical for Essen/Bochum districts",
+        "target_concept": "building",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result/test_iter3/intermediate/bremen_000252_000019_leftImg8bit/round1/bremen_000252_000019_leftImg8bit_round1.png"
+}

@@ -1,0 +1,50 @@
+{
+  "reasoning": "The regional crop shows a person seated with their face deliberately obscured, removing direct biometric identification. Visible clues include a bare hand/forearm and general body build/clothing, which reveal limited personal attributes and behavior (gesturing). Digital devices (a smartphone and a tablet) are present but show no readable content or identifiers. With no faces, IDs, or sensitive documents visible, the highest severity is moderate (Level 3) from appearance/behavior, combined with low-risk contextual/device clues, yielding a low overall risk score. Confidence is high because the visible elements are clear and non-ambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left hand and forearm of the seated person extended in a gesturing pose",
+        "Anonymized_element": "crop or blur the hand region, add longer sleeve covering skin, neutral resting pose",
+        "privacy_element": "visible skin and palm shape revealing physical appearance and gesture",
+        "target_concept": "hand/forearm",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "black smartphone lying on the table near the person",
+        "Anonymized_element": "generic blank rectangular object with no branding or details",
+        "privacy_element": "presence of personal device implying ownership/usage",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "tablet with reflective dark screen on the table",
+        "Anonymized_element": "plain tablet with fully blank matte screen",
+        "privacy_element": "digital device context without readable content",
+        "target_concept": "tablet screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16339024/r1_crops/2017_16339024_0.png"
+}

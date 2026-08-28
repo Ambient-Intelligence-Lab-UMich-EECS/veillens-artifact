@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public parade with many clearly visible, unobstructed faces (biometric identifiers), which alone present a high privacy risk. The scene contains multiple rainbow pride flags indicating LGBTQ pride participation and a readable banner for a religious organization, both enabling sensitive inferences about beliefs/affiliations and activities. These elements are central and legible, and together they reinforce identifiability with sensitive context. Thus the risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center young woman in gray tank top, unobstructed face",
+        "Anonymized_element": "turned head profile, blurred facial features, generic face without identifiable details",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground woman in red sweater on right side, clear frontal face",
+        "Anonymized_element": "face blurred or replaced with neutral silhouette, sunglasses and hat obscuring features",
+        "privacy_element": "identifiable facial features in clear view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of large rainbow pride flags carried by marchers near front",
+        "Anonymized_element": "plain multicolor decorative flags without recognizable symbolism, generic solid-color banners",
+        "privacy_element": "distinct LGBTQ pride flag symbolism linked to participants",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parade banner at bottom-left with readable text 'First Unitarian Universalist Society'",
+        "Anonymized_element": "blank banner, blurred or generic text without organization name or symbols",
+        "privacy_element": "religious organization name legible, implying affiliation of nearby participants",
+        "target_concept": "event banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14316005.jpg"
+}

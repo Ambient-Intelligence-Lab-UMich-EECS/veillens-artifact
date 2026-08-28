@@ -1,0 +1,32 @@
+{
+  "img_id": "22884",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 9,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They appear to be at a robotics/lab demonstration; P1 is explaining while P2 listens closely. They stand near each other with formal posture, no physical affection, both in business suits in an institutional setting. => professional\n\n[P1-P3]: In the same demo setting, P1 is presenting and P3 is observing. Close but formal stance, no touching, business attire suggests a work-related meeting. => professional\n\n[P1-P4]: P1 seems to brief the group, including P4, about the equipment; P4 watches attentively. Formal body language, suits, and a lab/hallway environment indicate a work interaction. => professional\n\n[P2-P3]: They stand side-by-side as part of the visiting group, listening to the presenter. Their suits and reserved posture in a research setting suggest colleagues or delegates. => professional\n\n[P2-P4]: Both are observing the presentation together, maintaining formal distance and demeanor. Matching business attire in a lab/tech tour context points to a work relationship. => professional\n\n[P3-P4]: They are adjacent, watching the demonstration with professional composure, no physical contact. Suits and the institutional/robotics environment imply colleagues on a formal visit. => professional",
+  "timestamp": 1776887620.1283693
+}

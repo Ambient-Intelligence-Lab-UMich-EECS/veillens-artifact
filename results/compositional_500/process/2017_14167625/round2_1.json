@@ -1,0 +1,80 @@
+{
+  "reasoning": "The crop shows a medical procedure in progress with multiple clinicians whose faces are clearly visible, including a close side profile in the foreground. Identifiable faces are Level 1 biometric data. The scene also reveals medical treatment context via an IV bag and gloved hands performing a procedure, which is sensitive medical imagery and activity. The combination of several clear faces with explicit medical context elevates risk. Score reflects strong, central, and unoccluded cues; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-foreground person\u2019s side profile face (ear, cheek, nose, haircut visible)",
+        "Anonymized_element": "blurred face region, solid-color oval mask overlay, turned further away from camera",
+        "privacy_element": "identifiable facial features, side profile contour",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "leftmost clinician\u2019s face with protective glasses",
+        "Anonymized_element": "blurred face, opaque visor without transparency, generic head silhouette",
+        "privacy_element": "full facial structure visible despite glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-left clinician\u2019s face looking downward with goggles",
+        "Anonymized_element": "pixelated face area, opaque goggles/face shield, neutral head shape",
+        "privacy_element": "recognizable facial outline and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "clinician in green shirt with partial side face visible near IV pole",
+        "Anonymized_element": "blur or mask the face area, adjust angle to obscure profile",
+        "privacy_element": "partial but identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "transparent IV fluid bag hanging from pole above the team",
+        "Anonymized_element": "plain opaque bag or generic equipment without medical cues",
+        "privacy_element": "explicit medical treatment equipment indicating ongoing care",
+        "target_concept": "IV bag",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of gloved hands using medical instruments over patient area",
+        "Anonymized_element": "neutral hands without instruments, repositioned away from body, generic tools not medical",
+        "privacy_element": "active medical procedure imagery implying treatment",
+        "target_concept": "medical instruments and gloved hands",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14167625/r1_crops/2017_14167625_1.png"
+}

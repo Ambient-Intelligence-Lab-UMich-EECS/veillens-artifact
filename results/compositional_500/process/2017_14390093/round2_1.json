@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a medical/clinical interior with equipment and a person in blue scrubs at left, but the central figure is redacted. No readable text, IDs, or documents are present. The only human biometric cue is a small partial cheek/ear profile that is not sufficient for identification. The scene still reveals context about a healthcare setting and work activity. Highest visible severity is Level 3 due to contextual location/activity cues and minor personal attributes, resulting in a moderate but limited privacy risk. Confidence is medium because the key identifying elements are obscured or out of frame.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partial cheek and ear profile of a person at the left edge",
+        "Anonymized_element": "crop further, apply soft blur, replace with neutral sleeve edge",
+        "privacy_element": "partial facial profile, skin tone, ear contour",
+        "target_concept": "partial face/ear",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue medical scrubs sleeve and shoulder on the left person",
+        "Anonymized_element": "plain non-medical shirt sleeve, neutral color, no contextual cues",
+        "privacy_element": "distinctive medical scrubs implying professional role",
+        "target_concept": "clothing (scrubs)",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "hospital/clinic interior with bed and medical equipment in background",
+        "Anonymized_element": "generic office or blank wall background with no equipment",
+        "privacy_element": "clinical equipment and bed revealing healthcare setting",
+        "target_concept": "medical environment",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14390093/r1_crops/2017_14390093_1.png"
+}

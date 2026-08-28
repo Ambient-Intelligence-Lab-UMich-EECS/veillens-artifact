@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a public parade with many people whose faces are anonymized. No legible names, IDs, or financial/medical data are visible. The strongest privacy signal is a readable storefront sign that can help pinpoint location, and a shirtless flag performer revealing personal attributes and participation in a specific public event. Distant spectators contribute minimal additional risk since faces are obscured. With highest severity at Level 3 and no Level 1–2 clues, the overall risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront facade with readable sign text \"ST. JOHN\" on the left background",
+        "Anonymized_element": "blank facade, remove/blur text, generic store signage",
+        "privacy_element": "readable store name, distinctive storefront enabling geolocation",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "shirtless parade performer holding a purple flag at the front-right of the scene",
+        "Anonymized_element": "plain t-shirt, generic clothing, neutral flag",
+        "privacy_element": "exposed torso indicating physical appearance, participation in a specific public event/activity",
+        "target_concept": "person/body appearance",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "row of spectators behind metal barricades with faces obscured",
+        "Anonymized_element": "silhouetted figures, reduced detail",
+        "privacy_element": "presence of multiple individuals in a public setting without identifiable faces",
+        "target_concept": "crowd of people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10114078/final/2017_10114078_final.png"
+}

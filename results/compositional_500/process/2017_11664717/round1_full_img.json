@@ -1,0 +1,69 @@
+{
+  "reasoning": "A central adult person stands in a city street with a clear, front-facing face (partly with sunglasses) that is easily identifiable, which is the highest-severity clue. The person also wears only underwear on the lower body, which qualifies as intimate content. Multiple recognizable location cues (a luxury store sign and a distinctive church-like facade on a well-known avenue with national flags) increase identifiability via place context. There are additional background crowds with visible but distant faces. Combining a strong Level 1 biometric with Level 2 intimate attire and Level 3 location cues yields a high overall privacy risk. The evidence is clear and unobstructed, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing adult person's face wearing sunglasses in the foreground center",
+        "Anonymized_element": "blurred or pixelated face, add face mask, turn head away, generic non-identifiable visage",
+        "privacy_element": "full facial structure, recognizable features, direct gaze",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black underwear/briefs worn by the foreground person",
+        "Anonymized_element": "knee-length athletic shorts, generic swim trunks, neutral opaque shorts",
+        "privacy_element": "intimate clothing exposing upper thighs and hips",
+        "target_concept": "intimate clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront awning and sign with luxury brand name on the left-side building",
+        "Anonymized_element": "blank awning with no text or logo, generic storefront",
+        "privacy_element": "readable store brand that anchors a specific street location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large gothic-style church facade and adjacent distinctive buildings in background",
+        "Anonymized_element": "generic modern facade without unique architectural details",
+        "privacy_element": "recognizable landmark architecture enabling city/street identification",
+        "target_concept": "landmark building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background crowd along sidewalks with multiple small visible faces",
+        "Anonymized_element": "blurred faces of bystanders, anonymized silhouettes",
+        "privacy_element": "numerous bystander faces visible though distant",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11664717.jpg"
+}

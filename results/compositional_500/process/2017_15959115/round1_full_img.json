@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image prominently shows a United Kingdom passport booklet placed on top of various euro banknotes. The passport is a government identifier even though the inner data page is not visible, which is a Level 1 risk. The banknotes indicate possession of cash but do not expose account numbers or personal financial records, contributing only a low contextual risk. With one clear Level 1 clue and minor supporting context, the overall privacy risk is high but not maximal. Confidence is high because the objects and texts are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "maroon UK passport cover with crest and the word PASSPORT visible",
+        "Anonymized_element": "plain notebook cover, generic booklet, solid color cover with no crest or text",
+        "privacy_element": "recognizable passport document type, country text, official emblem",
+        "target_concept": "passport",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "scattered euro banknotes (5, 10, 20 denominations) beneath the passport",
+        "Anonymized_element": "generic patterned paper, blank notes without currency symbols or denominations",
+        "privacy_element": "visible currency type and denominations",
+        "target_concept": "cash banknotes",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15959115.jpg"
+}

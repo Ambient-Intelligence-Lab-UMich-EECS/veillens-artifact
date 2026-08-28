@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows part of a bicycle with readable brand/model decals against a chain-link fence. No people, faces, documents, addresses, or other identifiers are visible. The only privacy-relevant element is ownership implication of a specific bicycle model/brand, which is a low-risk property clue without direct link to identity. Therefore the risk is low and confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black bicycle frame top tube with white model text",
+        "Anonymized_element": "solid-color frame paint, no logos or text, generic decals",
+        "privacy_element": "readable brand/model decals on the frame",
+        "target_concept": "bicycle frame branding",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10163146/r1_crops/2017_10163146_0.png"
+}

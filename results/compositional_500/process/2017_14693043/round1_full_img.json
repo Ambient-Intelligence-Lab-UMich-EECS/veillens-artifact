@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image prominently features a single person with a clear, unobstructed face in focus. No government IDs, names, or financial/medical documents are visible. Background offers no identifiable landmarks. The highest-severity clue is biometric data (identifiable face), which alone poses a strong privacy risk; minor contextual personal attributes reinforce identifiability. Given the central, high-quality facial visibility and lack of other sensitive data, the overall risk is high but not extreme.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear, front-facing face of a person looking toward the camera",
+        "Anonymized_element": "blurred or pixelated face region, generic silhouette, head turned away",
+        "privacy_element": "full identifiable face with visible eyes, nose, mouth, and unique features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14693043.jpg"
+}

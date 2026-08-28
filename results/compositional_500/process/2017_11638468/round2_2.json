@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop excludes the face, leaving an upper-body view of a person in a white crocheted crop top with exposed midriff. No readable text, documents, or government/financial identifiers are visible. The main privacy signal is personal attributes (body shape, skin tone, gender-presenting features). With no identifiable face or sensitive documents, risk is moderate and based primarily on physical appearance exposure rather than direct identification.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "upper torso and midriff of a person wearing a white crocheted crop top",
+        "Anonymized_element": "plain loose shirt, higher neckline, no crochet pattern, neutral solid color covering midriff",
+        "privacy_element": "exposed midriff and chest outline, skin tone, body shape providing gender-presenting cues",
+        "target_concept": "torso/upper body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11638468/r1_crops/2017_11638468_2.png"
+}

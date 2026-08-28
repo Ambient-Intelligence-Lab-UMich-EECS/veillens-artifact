@@ -1,0 +1,70 @@
+{
+  "reasoning": "The image shows a large street demonstration with numerous clearly visible faces at close-to-mid range, which constitutes identifiable biometric data (highest severity). Several rainbow pride flags and themed banners indicate participation in an LGBTQ-related protest, enabling sensitive inferences about political/social views or sexual orientation. Readable storefront branding and French-language placards provide location context and document-like text that reinforces the scene. Combined, the identifiable faces (Level 1) plus sensitive-symbol flags (Level 2) and location/behavior clues (Level 3) create a high privacy risk. Clues are sharp and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.74,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground man\u2019s profile face on the right side near a pole",
+        "Anonymized_element": "blurred face, pixelated features, generic silhouette",
+        "privacy_element": "clear facial features including eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of mid-ground faces at center front row of march",
+        "Anonymized_element": "uniform blur over faces, generic ovals without detail",
+        "privacy_element": "multiple identifiable faces with distinct features",
+        "target_concept": "faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow flag held above the crowd near image center-right",
+        "Anonymized_element": "solid-color flag with no symbolic pattern",
+        "privacy_element": "rainbow pride colors implying LGBTQ affiliation or support",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white protest placard with readable French text held by participants in background",
+        "Anonymized_element": "blank placard or blurred/garbled text, generic symbol",
+        "privacy_element": "legible slogans and organization logos revealing cause and stance",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront with visible brand sign 'orange' on the left side",
+        "Anonymized_element": "plain storefront, no brand text or logo",
+        "privacy_element": "distinct store branding and locale-specific signage",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12685055.jpg"
+}

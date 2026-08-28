@@ -1,0 +1,29 @@
+{
+  "img_id": "14334",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6,
+    "4 5": 5,
+    "4 6": 6,
+    "4 7": 5,
+    "5 6": 6,
+    "5 7": 6,
+    "6 7": 6
+  },
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "3 4": 6,
+    "5 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "raw_response": "[P3-P4]: Outdoor market scene; P3 is walking past while P4 is engaged at a stall, with several people between them and no shared focus or interaction. Different body orientation and no physical contact suggest they\u2019re just nearby shoppers/bystanders. => no-relationship\n\n[P3-P5]: P3 appears to be a passerby carrying a bag, while P5 is another person near/behind the vendor area; they aren\u2019t facing each other or coordinating. No contact and separated by the stall activity indicates no evident connection. => no-relationship\n\n[P3-P6]: P6 is only partially visible at the far right edge and not engaged with P3; they\u2019re in different parts of the market frame with no mutual attention. No interaction or proximity cues beyond being in the same public place. => no-relationship\n\n[P3-P7]: P7 is a small child near the produce area while P3 is an adult walking by; they\u2019re not oriented toward each other and there\u2019s no contact. The setting is a busy market with unrelated individuals passing through. => no-relationship\n\n[P4-P5]: P4 is the vendor/handler at the stall (bagging goods) while P5 stands very close as if waiting to be served; their proximity is consistent with a customer at the counter. No clear affection\u2014context suggests a transaction. => commercial\n\n[P4-P6]: P6 is marginal/partially shown and not engaged with the stall interaction; P4 is focused on handling produce/bags. No shared attention or proximity that indicates any relationship. => no-relationship\n\n[P4-P7]: P7 is positioned at the front of the stall facing the vendor area, and P4 is actively working with produce and bags, suggesting a seller-to-customer interaction (possibly buying for/with an adult nearby). Close proximity at the counter with market context implies a transactional relationship. => commercial\n\n[P5-P6]: P5 stands near the stall while P6 is off to the side/right edge; they don\u2019t face each other or interact. The distance and lack of coordinated behavior suggests they\u2019re unrelated bystanders. => no-relationship\n\n[P5-P7]: P7 is a child near the stall and P5 is an adult nearby, but there\u2019s no visible contact or clear coordinated body language between them. In a crowded market, this looks like coincidental proximity. => no-relationship\n\n[P6-P7]: P6 is only partially visible and not attending to P7; they are separated with no interaction cues. The environment is public and busy, consistent with strangers sharing space. => no-relationship",
+  "timestamp": 1779952712.7947698
+}

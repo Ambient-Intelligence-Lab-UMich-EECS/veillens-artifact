@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public demonstration with multiple clearly visible faces, including a central person holding a large sign. Identifiable faces constitute Level 1 biometric data. The main sign and a hat carry readable political/advocacy messages, enabling sensitive inference about political views and participation in a protest (Level 2). Numerous additional background faces add to identifiability. The combination of several Level 1 faces with explicit political messaging increases overall privacy risk. Score reflects strong, central, and legible cues. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of central person holding the sign (wearing sunglasses and mustache)",
+        "Anonymized_element": "blurred face, generic smooth skin tone, remove distinctive facial hair, opaque sunglasses without facial detail",
+        "privacy_element": "identifiable facial structure, facial hair pattern, partial eye region around sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large handheld protest sign with readable text 'College Students Need Health Reform Now'",
+        "Anonymized_element": "blank poster with abstract shapes, generic colors, no readable text",
+        "privacy_element": "explicit political/issue advocacy text indicating stance and participation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white baseball cap on central person with readable advocacy text/logo",
+        "Anonymized_element": "plain cap with no text or logos, solid color",
+        "privacy_element": "organization/slogan text revealing political/advocacy affiliation",
+        "target_concept": "clothing with political text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of background attendees with multiple visible faces (left and right of the central person)",
+        "Anonymized_element": "blurred faces, turned-away heads, reduced facial detail",
+        "privacy_element": "identifiable facial features of several individuals",
+        "target_concept": "background faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13244350.jpg"
+}

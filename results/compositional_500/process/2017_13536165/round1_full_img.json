@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a small meeting with two clearly visible, identifiable human faces (a woman in profile and a man in partial profile). These constitute biometric data, which is a Level 1 risk. No readable names, documents, or other identifiers are legible, and the remaining people are mostly turned away. With two identifiable faces but no reinforcing textual identifiers or sensitive context, the overall risk is high-moderate. Confidence is high because the faces are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face in right-center of frame, side profile with clear facial features",
+        "Anonymized_element": "blurred face, pixelated face, replaced with generic silhouette, turned away head",
+        "privacy_element": "identifiable facial features, clear profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man\u2019s face on left side of frame, partial profile with visible features",
+        "Anonymized_element": "blurred face, pixelated face, generic silhouette, turned away head",
+        "privacy_element": "identifiable facial features, partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13536165.jpg"
+}

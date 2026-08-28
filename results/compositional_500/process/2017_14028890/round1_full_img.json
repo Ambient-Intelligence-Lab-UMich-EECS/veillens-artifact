@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows an open booklet with Italian text and diagrams placed on a chair; no faces, IDs, bank cards, or other direct PII are visible. The only potentially identifying element is a readable institutional logo/text \u201cProvincia di Trento\u201d on the right page, which can reveal geographic location. Other visible elements are generic documents and background context that provide minimal personal details. With no Level 1\u20132 clues and only a minor Level 3 location signal plus low-risk contextual content, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bottom-right logo and text on the right page reading Provincia di Trento",
+        "Anonymized_element": "generic emblem, blurred text, placeholder symbol with no readable words",
+        "privacy_element": "regional authority name and emblem, readable geographic reference",
+        "target_concept": "organization logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "open booklet with Italian title text on the left page",
+        "Anonymized_element": "blank cover, abstract shapes, non-readable placeholder text",
+        "privacy_element": "readable language-specific title text hinting regional context",
+        "target_concept": "printed document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14028890.jpg"
+}

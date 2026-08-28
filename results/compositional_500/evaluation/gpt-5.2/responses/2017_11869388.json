@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a concert ticket with clearly readable event, venue, city, date/time, and seat information. There are no faces, names, barcodes, or government/financial identifiers. The strongest privacy signals are location and activity details that could suggest attendance at a specific event, but they are not tied to a specific person in the image. Thus the highest severity is Level 3 (location/activity), composed mainly of legible venue/city and event details reinforced by seat numbers and date. Overall risk is low-to-moderate, with medium confidence due to the clear legibility of the text but lack of direct personal linkage.",
+  "personal_info_privacy_score": {
+    "score": 0.17,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center text on the ticket showing event and venue (e.g., 'MICHAEL NYMAN BAND', 'SALA MOZART', 'Jazz Zaragoza 2004')",
+        "Anonymized_element": "generic patterned ticket area, non-descriptive text, blurred or replaced venue/event names",
+        "privacy_element": "event name, venue name, city reference",
+        "target_concept": "event/venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "lower section of ticket with legible date/time and seat info (door 9, row 08, seat 04) and price",
+        "Anonymized_element": "blank fields or randomized numbers, remove date/time and price text",
+        "privacy_element": "specific date and time of event, door/row/seat numbers, price",
+        "target_concept": "seat/date text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11869388/final/2017_11869388_final.png"
+}

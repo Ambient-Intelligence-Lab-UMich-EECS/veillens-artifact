@@ -1,0 +1,62 @@
+{
+  "condition": "gpt-image",
+  "condition_note": "GPT Image 2, one single-shot privacy edit from a fixed prompt",
+  "evaluator_label": "gemini-2.5-flash",
+  "model_id_recorded_in_artifacts": "gemini-2.5-flash",
+  "attribution": "recorded in the source results.json under metadata.model",
+  "role": "independent scorer; none of these four models is inside a protection loop",
+  "scored_image": "readydata/dataset_random_500/gpt-image/defended/<image_id>_defended.png",
+  "images_in_set": 500,
+  "responses": 500,
+  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
+  "error_km": {
+    "n": 500,
+    "mean_km": 153.901,
+    "median_km": 72.025,
+    "min_km": 0.025,
+    "max_km": 1873.512,
+    "within_0.5km_pct": 7.6,
+    "within_1km_pct": 15.8,
+    "within_5km_pct": 26.6,
+    "within_10km_pct": 27.6,
+    "within_25km_pct": 31.2,
+    "within_100km_pct": 54.4
+  },
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 500 responses, to 0.0 km at R = 6371.0",
+  "source_runs": [
+    {
+      "dataset": "dataset_random_100",
+      "run": "gpt_image_100_resume_a_20260813_152619",
+      "manifest": "dataset.json",
+      "images": 100,
+      "declared_failures": 0
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_a_20260820_001002",
+      "manifest": "dataset_new400.json",
+      "images": 400,
+      "declared_failures": 0
+    }
+  ],
+  "vs_raw_on_the_same_images": {
+    "n": 500,
+    "raw": {
+      "mean_km": 86.303,
+      "median_km": 18.19,
+      "within_5km_pct": 45.8,
+      "within_25km_pct": 53.4
+    },
+    "gpt-image": {
+      "mean_km": 153.901,
+      "median_km": 72.025,
+      "within_5km_pct": 26.6,
+      "within_25km_pct": 31.2
+    },
+    "images_moved_further_away": 316,
+    "images_located_closer_after_the_edit": 183,
+    "median_per_image_change_km": 1.244,
+    "identical_coordinate_before_and_after": 1,
+    "note": "'moved further away' + 'located closer' + 'identical coordinate before and after' = n. An identical pair is the model returning the same rounded lat/lon for both images — a city-centroid guess the edit did not disturb."
+  }
+}

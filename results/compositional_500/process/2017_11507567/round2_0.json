@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a public street scene with one partially visible face on the left (wearing sunglasses), while the prominent person on the right has their face obscured. No names, documents, or explicit identifiers are readable. The highest-severity clue is Level 1 due to the identifiable facial region, though it is small and partly covered, reducing risk. A distinctive costume on the right contributes to potential re-identification (Level 3), and several distant bystanders add minimal risk. Combined, these support a moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.33,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-side woman\u2019s face in profile wearing orange top and sunglasses",
+        "Anonymized_element": "blurred face, pixelated facial area, turned-away head, generic sunglasses and hat",
+        "privacy_element": "visible facial features, nose and mouth contour, hairstyle outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right-foreground person wearing a distinctive black-and-white costume with red strap (face out of frame)",
+        "Anonymized_element": "plain t-shirt or jacket, muted solid colors, generic pattern with no theme",
+        "privacy_element": "unique costume style that could help re-identification, gender-presenting clothing cues",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background group of small, out-of-focus pedestrians on sidewalk",
+        "Anonymized_element": "low-detail silhouettes, reduced crowd detail, motion blur",
+        "privacy_element": "presence of multiple bystanders, minimal facial detail",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11507567/r1_crops/2017_11507567_0.png"
+}

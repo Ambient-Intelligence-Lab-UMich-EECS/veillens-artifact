@@ -1,0 +1,82 @@
+{
+  "reasoning": "The crop shows a crowded parade float and street scene with multiple clearly identifiable faces in the foreground and on the float. Visible street signage (\u201cBLEECKER ST\u201d and one-way) provides precise location information. Rainbow pride flags suggest an LGBTQ-related event, enabling a potential sensitive inference about participants. A banner for a community health center is also readable, reinforcing location/context. The presence of several unobscured faces (Level 1) combined with explicit location cues and sensitive-event context elevates overall risk, leading to a high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man in sleeveless light-blue shirt at right-center with unobscured face looking left",
+        "Anonymized_element": "apply strong face blur, replace with turned-away head, add hat obscuring eyes",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman on parade float near center-right with clear frontal face between two speakers",
+        "Anonymized_element": "blur face, replace with generic silhouette, turn head away",
+        "privacy_element": "frontal facial features distinctly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person on float left of center wearing sunglasses with face mostly visible",
+        "Anonymized_element": "strong blur, opaque visor covering facial area, turn head profile",
+        "privacy_element": "recognizable facial structure despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "street sign reading BLEECKER ST with one-way arrow at top-left",
+        "Anonymized_element": "blank sign with no text, generic colored panel, remove street name",
+        "privacy_element": "specific street name and directional sign",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rainbow pride flags held by attendees near mid-right and throughout crowd",
+        "Anonymized_element": "replace with plain single-color flags, remove distinctive rainbow pattern",
+        "privacy_element": "rainbow LGBTQ pride symbolism indicating event context",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "banner on float reading CALLEN LORDE COMMUNITY HEALTH CENTER",
+        "Anonymized_element": "blank banner with generic shapes, remove organization name and text",
+        "privacy_element": "organization name providing contextual and geographic clues",
+        "target_concept": "banner/sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15146106/r1_crops/2017_15146106_1.png"
+}

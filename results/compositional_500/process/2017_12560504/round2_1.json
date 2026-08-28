@@ -1,0 +1,57 @@
+{
+  "reasoning": "The crop shows a clear restaurant receipt containing a full street address with city and postal code, a precise timestamp, itemized food and drink purchases, and the business name plus a VAT-like identifier. No biometric or financial card data are visible. The highest-severity cue is the printed name/identifier (Level 2). Combined with specific location and consumption details (Level 3) and metadata (Level 4), this yields a moderate privacy risk. The text is legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.41,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed address line reading street, number, postal code and city near the top of the receipt",
+        "Anonymized_element": "generic city only, placeholder street name, partial ZIP masked (e.g., XX###)",
+        "privacy_element": "full street address, postal code, city name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "timestamp line with date and time (e.g., 22/06/2015 16:33) under the header",
+        "Anonymized_element": "approximate date, remove time, replace with 'Date: --/--/----'",
+        "privacy_element": "exact visit date and time",
+        "target_concept": "timestamp",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "itemized purchase list showing dishes and quantities in the receipt body",
+        "Anonymized_element": "generic placeholders like 'Item A', remove quantities/prices detail",
+        "privacy_element": "specific food/drink items ordered, quantities and prices",
+        "target_concept": "itemized purchase list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "business identification block at the bottom showing 'TERESA PARDO, S.L.' and a VAT/ID string",
+        "Anonymized_element": "generic business label like 'Restaurant, S.L.', mask ID as 'B-XXXXXXXX'",
+        "privacy_element": "business/person name, company identifier string",
+        "target_concept": "name/ID text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12560504/r1_crops/2017_12560504_1.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a government-issued marriage certificate. A unique certificate number \u201cMXG 315984\u201d is clearly legible, which is a direct government identifier. Additional readable text reveals the document type, a partial registration district name, and a specific event date (\u201c1st day of August\u201d). These cues together expose sensitive personal-record details even without names. The highest severity present is Level 1 due to the visible unique certificate number, reinforced by location and date context, leading to a high privacy risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "alphanumeric code 'MXG 315984' printed at the lower left of the certificate",
+        "Anonymized_element": "blurred or masked digits/letters, placeholder 'XXXX XXXX', generic numbering without uniqueness",
+        "privacy_element": "unique certificate serial/record number",
+        "target_concept": "certificate number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "document header text 'CERTIFIED COPY OF AN ENTRY OF MARRIAGE' with crest at the top",
+        "Anonymized_element": "generic form header, neutral emblem, remove specific wording",
+        "privacy_element": "explicit government document type indicating marriage record",
+        "target_concept": "document header",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partial place text 'Registration District of St Thom...' along the lower middle line",
+        "Anonymized_element": "generic district label without place name, placeholder text",
+        "privacy_element": "specific registration district indicating locale",
+        "target_concept": "district text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "date wording '1st day of August' near the lower center",
+        "Anonymized_element": "redacted or approximate date, month-only placeholder, dashes",
+        "privacy_element": "specific event date associated with a personal record",
+        "target_concept": "date text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14720865/r1_crops/2017_14720865_0.png"
+}

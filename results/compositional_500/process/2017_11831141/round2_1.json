@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows the interior of a church with prominent religious symbols (altar, crucifix, stained-glass) and a seated congregation mostly seen from behind. No readable names or government/financial data are visible, and faces are not identifiable. The highest-severity clue is Level 2 due to clear religious context enabling sensitive inference about attendees\u2019 religion. Additional Level 3 clues include activity (participating in a service) and potential location cues from distinctive architecture and stained glass. Crowded but unidentifiable individuals add low-level risk. These combine to a moderate privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "altar area with crucifix and multiple lit candles at the front of the church",
+        "Anonymized_element": "plain decorative table, abstract art piece, remove cross and specific religious symbols",
+        "privacy_element": "explicit Christian religious symbol (crucifix) indicating religious affiliation/context",
+        "target_concept": "religious symbol on altar",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large stained-glass window with recognizable Christian imagery above the altar",
+        "Anonymized_element": "frosted or plain glass window, geometric abstract pattern with no identifiable iconography",
+        "privacy_element": "distinctive stained-glass design that can suggest venue identity and religion",
+        "target_concept": "stained-glass window",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of seated attendees viewed from behind in pews",
+        "Anonymized_element": "empty pews, silhouettes with heavier blur, fewer or generic figures",
+        "privacy_element": "presence at a religious service implying participation; individuals not identifiable",
+        "target_concept": "congregants in pews",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11831141/r1_crops/2017_11831141_1.png"
+}

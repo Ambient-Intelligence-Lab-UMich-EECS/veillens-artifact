@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows a clear restaurant receipt with readable text. The most sensitive element is a visible personal name (\u201cJULIE\u201d) that appears to be the server identifier, which is a Level 2 non-unique identifier. Additional details include the full business address and phone number (location information) and precise timestamp and ordered items (behavior/consumption patterns). No payment card or government IDs are visible. Combined, these cues present a moderate privacy risk mainly due to the name plus contextual details. Confidence is high because the text is legible and unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed line showing '11031 JULIE' near the top section of the receipt",
+        "Anonymized_element": "generic 'Server' label, placeholder ID like 'Staff #', no name",
+        "privacy_element": "human first name, potential staff/workplace ID number",
+        "target_concept": "employee name line",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Receipt header with restaurant street address and phone number",
+        "Anonymized_element": "generic business name, city/state only, no street address or phone",
+        "privacy_element": "specific street address, city/ZIP, phone number",
+        "target_concept": "business address header",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Timestamp line '02/13/2011 05:20AM' on the receipt",
+        "Anonymized_element": "approximate date only, or placeholder time",
+        "privacy_element": "exact date and time of visit",
+        "target_concept": "timestamp",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Itemized order list (water, coffee, grits, biscuits, pancakes, bacon)",
+        "Anonymized_element": "generic items or aggregated total only, no specific items",
+        "privacy_element": "specific food and drink items purchased",
+        "target_concept": "itemized purchase list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12448340.jpg"
+}

@@ -1,0 +1,84 @@
+{
+  "reasoning": "The cropped region shows a dense crowd with multiple visible faces, including children and adults. Although slightly out of focus, several faces are front-facing and sufficiently clear to enable recognition by acquaintances, which constitutes biometric data exposure (highest severity). No readable names, IDs, or financial/medical items are visible. Location cues are generic signage only. The presence of many faces compounds the risk despite some blur, so the score is high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-right girl\u2019s face looking at camera",
+        "Anonymized_element": "pixelated face, heavy blur over facial area, face masked or turned away",
+        "privacy_element": "visible eyes, nose, mouth, overall facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center-right older woman\u2019s face in profile",
+        "Anonymized_element": "pixelated face, strong gaussian blur, replace with generic head silhouette",
+        "privacy_element": "distinct facial features and profile outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-left boy wearing glasses, face visible",
+        "Anonymized_element": "blurred/pixelated face area, remove glasses details, turn head away",
+        "privacy_element": "facial features and unique eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center child\u2019s face with ponytail and heart-print shirt",
+        "Anonymized_element": "pixelated face, heavy blur, generic non-descript head",
+        "privacy_element": "visible facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center woman with short hair, soft-focus face",
+        "Anonymized_element": "increase blur to obscure features, replace with neutral silhouette",
+        "privacy_element": "recognizable facial structure despite blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bottom-center man\u2019s face partially visible at frame edge",
+        "Anonymized_element": "crop out face region, pixelate or mask lower frame area",
+        "privacy_element": "partial but identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10085019/r1_crops/2017_10085019_1.png"
+}

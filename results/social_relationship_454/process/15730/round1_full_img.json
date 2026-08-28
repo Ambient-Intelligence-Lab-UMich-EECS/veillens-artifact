@@ -1,0 +1,25 @@
+{
+  "img_id": "15730",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "2 3": 6
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: They are in an office, both in business suits, standing close and shaking hands with formal smiles\u2014typical of a work meeting. => professional\n\n[P1-P3]: P3 is a framed portrait on the wall, with no interaction or shared activity with P1 in the room. => no-relationship\n\n[P2-P3]: P3 is just a wall portrait; P2 has no interaction or proximity to this person. => no-relationship",
+  "timestamp": 1776888568.9715462
+}

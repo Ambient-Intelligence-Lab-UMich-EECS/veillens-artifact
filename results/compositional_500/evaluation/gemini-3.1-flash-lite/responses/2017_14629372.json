@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image captures a public religious or cultural procession in a busy street, featuring many individuals in traditional attire. While the individuals are recognizable, they are part of a large public crowd, which inherently reduces the privacy risk associated with any single person. There is a commercial sign reading 'QUINC. MT TRADING' and 'MavMac' visible, which provides contextual location information. The presence of numerous participants in a public space, without clear evidence of sensitive medical, financial, or personal data beyond the public appearance itself, results in a moderate-low risk score. The confidence is high because the content is clearly visible as a public event.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A crowd of people participating in a procession on a street.",
+        "Anonymized_element": "Generic blurred crowd silhouettes, anonymous group of people",
+        "privacy_element": "multiple recognizable human faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Storefront sign with text 'QUINC. MT TRADING' and 'MavMac'.",
+        "Anonymized_element": "generic storefront sign, no text, placeholder shop name",
+        "privacy_element": "visible company names and location-related text",
+        "target_concept": "signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14629372/final/2017_14629372_final.png"
+}

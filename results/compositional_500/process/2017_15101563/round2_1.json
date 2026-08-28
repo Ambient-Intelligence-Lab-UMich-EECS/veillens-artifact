@@ -1,0 +1,62 @@
+{
+  "reasoning": "The crop shows a marching band in ceremonial uniforms. Several members\u2019 faces are clearly visible and unobstructed, which are strong biometric identifiers (Level 1). Uniforms with medals and a distinctive crest on instruments and hats suggest organizational affiliation and a specific public event, contributing to activity and potential location context (Level 3). No legible names, IDs, or financial/medical data are visible. Given multiple clear faces plus contextual uniforms/emblems, the privacy risk is high. Confidence is high due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of band member at far left holding cymbals",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with neutral skin-toned patch",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "unobstructed face of band member at right playing a woodwind instrument",
+        "Anonymized_element": "blurred face, pixelated facial region, neutral mask over face",
+        "privacy_element": "identifiable facial features, expression, skin details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive crest/emblem printed on green drum shell at center-left",
+        "Anonymized_element": "plain green drum shell, no emblem or text",
+        "privacy_element": "organizational crest that may reveal group/locale",
+        "target_concept": "organizational emblem",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "military-style uniform with medals and shoulder cords on band members",
+        "Anonymized_element": "plain ceremonial attire without insignia or medals",
+        "privacy_element": "service-style insignia and medals indicating organizational affiliation and role",
+        "target_concept": "uniform with insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15101563/r1_crops/2017_15101563_1.png"
+}

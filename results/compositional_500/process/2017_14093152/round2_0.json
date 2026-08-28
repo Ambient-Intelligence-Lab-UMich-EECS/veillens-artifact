@@ -1,0 +1,68 @@
+{
+  "reasoning": "The crop shows a crowded outdoor scene with several unobscured faces in the foreground that are clearly identifiable, which constitutes Level 1 biometric data. The central shirtless person\u2019s face is obscured, but the presence of multiple other identifiable faces raises risk. Additional contextual cues include a readable \u201cONE WAY\u201d street sign suggesting potential location context and the central subject\u2019s near-nude upper body and distinctive leather shorts indicating personal attributes and public-event activity. Combined, these yield a high but not extreme privacy risk; the strongest evidence is the visible faces, while other cues moderately reinforce context.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground left man\u2019s side-profile face above the crowd",
+        "Anonymized_element": "blurred face, pixelated features, generic head silhouette",
+        "privacy_element": "recognizable facial features, hairline, profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "foreground right man\u2019s face with sunglasses visible above arms",
+        "Anonymized_element": "blurred face and eyewear, generic sunglasses shape without facial details",
+        "privacy_element": "recognizable facial structure, nose/mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "center-bottom person\u2019s face partially visible next to gray-masked head",
+        "Anonymized_element": "pixelated or smoothed facial area, generic skin patch",
+        "privacy_element": "distinct facial features despite partial occlusion",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "shirtless torso and black leather shorts of central elevated person",
+        "Anonymized_element": "plain T-shirt and neutral shorts, less form-fitting clothing",
+        "privacy_element": "near-nude torso revealing physique, distinctive attire suggesting event participation",
+        "target_concept": "clothing/torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "street sign reading 'ONE WAY' on right side of background",
+        "Anonymized_element": "blank sign, generic arrow symbol without text",
+        "privacy_element": "readable street-direction sign providing contextual location cue",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14093152/r1_crops/2017_14093152_0.png"
+}

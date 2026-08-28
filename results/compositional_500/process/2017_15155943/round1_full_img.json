@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public parade with many spectators and performers. Several faces are clearly visible and unobstructed, which are biometric identifiers and represent the highest severity level. Additional contextual clues such as a readable storefront sign (\u201cBAKERY\u201d) and branded character balloons can hint at the venue, reinforcing location disclosure. With multiple clear faces and some location context, the overall privacy risk is high. Confidence is high because the faces and signs are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central performer\u2019s unobstructed face, looking forward",
+        "Anonymized_element": "blurred or pixelated face, replace with neutral mask/helmet, head turned away",
+        "privacy_element": "clear full face with identifiable eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of spectators along curb with multiple clearly visible faces",
+        "Anonymized_element": "blur the faces, replace with generic silhouettes, add hats or masks",
+        "privacy_element": "multiple distinguishable faces with unique features",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign reading \u201cBAKERY\u201d in the background",
+        "Anonymized_element": "blank awning or sign with no text, generic pattern",
+        "privacy_element": "venue name text that can hint at a specific location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of character-themed balloons with mouse-face design near center-right",
+        "Anonymized_element": "plain balloons with solid colors or abstract shapes",
+        "privacy_element": "recognizable branded character that can imply venue or franchise",
+        "target_concept": "themed balloons",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15155943.jpg"
+}

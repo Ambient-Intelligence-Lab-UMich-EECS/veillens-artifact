@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image captures a partial view of an official identification document, likely a card containing a photograph and potentially sensitive data. The presence of a clear portrait makes this a Level 1 privacy risk due to biometric identification. The overall score is set to 0.75, reflecting the high identification potential of the visible face, even though parts of the document are obscured. Confidence is high as the face is clearly recognizable.",
+  "personal_info_privacy_score": {
+    "score": 0.75,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A close-up of a face depicted on an identity card",
+        "Anonymized_element": "a generic placeholder portrait, blank human silhouette",
+        "privacy_element": "a clearly identifiable portrait of a person's face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "The physical card holding the identifying portrait",
+        "Anonymized_element": "a blank white rectangular card, plain surface",
+        "privacy_element": "official identity document framing",
+        "target_concept": "ID card",
+        "severity_level": 2,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11374375/final/2017_11374375_final.png"
+}

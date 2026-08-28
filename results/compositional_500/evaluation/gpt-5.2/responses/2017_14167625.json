@@ -1,0 +1,52 @@
+{
+  "reasoning": "Multiple people are present in what appears to be a medical or training setting, but all faces and potentially identifying details are obscured. There are no visible names, documents, or legible text. The main privacy risk comes from the observable activity (a person on a stretcher with staff in gowns and gloves), which can reveal participation in a medical-type procedure, though individuals are not identifiable. With no Level 1 or Level 2 identifiers present and only contextual Level 3–4 clues, overall risk is low-to-moderate. Confidence is medium due to partial occlusion and ambiguity of the scene.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person lying on a stretcher surrounded by attendants",
+        "Anonymized_element": "blank padded table without a person, generic covered equipment",
+        "privacy_element": "presence of a patient-like figure implying medical treatment",
+        "target_concept": "patient on stretcher",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "disposable medical gowns and gloves worn by multiple people",
+        "Anonymized_element": "plain long-sleeve clothing without medical appearance, no gloves",
+        "privacy_element": "medical attire indicating involvement in healthcare activity",
+        "target_concept": "medical gowns and gloves",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "blue stretcher or hospital bed frame",
+        "Anonymized_element": "generic table or neutral cart with no clinical features",
+        "privacy_element": "clinical equipment suggesting medical procedure context",
+        "target_concept": "stretcher/bed",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "wall posters with small, illegible text",
+        "Anonymized_element": "blank posters or abstract patterns without text",
+        "privacy_element": "background printed material that might contain contextual info (not readable)",
+        "target_concept": "wall posters",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14167625/final/2017_14167625_final.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a book/directory cover with clearly readable printed text, including a full street address (27 Grand Parade, St. Leonards) and place names (Hastings, Bexhill). There are no people or biometric elements. The highest-severity clue is location information via a precise address, which can reveal a physical place though not linked to a specific person here. This is supported by the generic document context of a directory cover. Overall risk is low-to-moderate due to legible location details without personal identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.17,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed line reading '27 GRAND PARADE, ST. LEONARDS' near the bottom center of the cover",
+        "Anonymized_element": "replace with generic placeholder text, blur specific numbers and street name, use nonspecific city label",
+        "privacy_element": "exact street number and street name, town name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "book cover text showing regional names 'HASTINGS & ST. LEONARDS' and 'BEXHILL'",
+        "Anonymized_element": "use generic region text like 'CITY & DISTRICT', remove or obfuscate specific place names",
+        "privacy_element": "specific town and district names indicating geographic area",
+        "target_concept": "place names text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "directory/book cover design with publisher and business name 'PIKE'S ... DIRECTORY' and 'JOHN BRAY & SONS'",
+        "Anonymized_element": "generic book cover with neutral title and no names or logos",
+        "privacy_element": "business name and directory branding indicating real-world entities",
+        "target_concept": "document cover",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15436178/r1_crops/2017_15436178_1.png"
+}

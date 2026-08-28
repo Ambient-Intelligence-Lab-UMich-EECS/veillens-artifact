@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a person lying on a bed in a private bedroom. The most privacy-relevant cue is a partially visible face with eyes and facial contours, which constitutes biometric data even though partly covered by a hand. Additional contextual clues include the intimate home interior (bedroom) and visible body/clothing revealing general personal attributes. Combined, these cues create a moderate privacy risk, though no names, documents, financial or medical items are visible and the face is partially obscured, reducing severity. Confidence is medium due to partial occlusion and absence of explicit identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.36,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s face partially covered by a hand while lying on the bed",
+        "Anonymized_element": "blurred face, face turned away, replace with generic silhouette, crop above shoulders",
+        "privacy_element": "visible facial features (eyes, nose outline), skin texture enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bed and pillows in a small bedroom corner with nightstand",
+        "Anonymized_element": "neutral plain wall background, generic sofa or blank surface, crop to remove room context",
+        "privacy_element": "private home interior indicating a bedroom location",
+        "target_concept": "bed/bedroom interior",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person\u2019s exposed lower leg and foot with casual dress",
+        "Anonymized_element": "add blanket covering legs, longer generic clothing, crop below waist",
+        "privacy_element": "visible physical appearance and clothing style revealing general personal attributes",
+        "target_concept": "body/clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10272356.jpg"
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a tennis player mid-swing on a court; the face is not visible and one distant spectator\u2019s face appears blurred. No readable names, IDs, or financial/medical documents are present. The main privacy signals are moderate: visible physical appearance/clothing and a clear depiction of the activity (playing tennis), which together can hint at personal attributes and habits. With no identifiable biometrics or direct identifiers, overall risk is low-to-moderate. Confidence is high due to clear visibility of these elements and absence of severe clues.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person in teal tennis dress and sneakers, body visible from neck down",
+        "Anonymized_element": "looser generic sportswear, neutral colors, partial body crop to reduce distinct physique",
+        "privacy_element": "body shape and attire revealing physical appearance and gender cues",
+        "target_concept": "person\u2019s body (no face)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "tennis racket held during a swing on a hardcourt",
+        "Anonymized_element": "empty hand, generic stick-like object, crop to omit racket",
+        "privacy_element": "clear activity cue indicating tennis participation and playing behavior",
+        "target_concept": "tennis racket",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small blurred spectator head in background stands",
+        "Anonymized_element": "fully remove head, replace with empty seat, further blur",
+        "privacy_element": "presence of another person even though face is unidentifiable",
+        "target_concept": "distant spectator",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16097202/r1_crops/2017_16097202_0.png"
+}

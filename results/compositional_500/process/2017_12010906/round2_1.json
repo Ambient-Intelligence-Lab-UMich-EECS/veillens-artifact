@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows the entrance of a building with a shiny brass plaque near the door and a parked scooter. No faces, IDs, or readable text are clearly visible. The brass plaque suggests a specific business or hotel and can reveal location if legible, representing the strongest cue (Level 3). The scooter indicates property/assets but lacks a visible license plate, making it lower risk (Level 4). With no direct identifiers, the combined cues yield a moderate but limited privacy risk. Confidence is medium due to partial legibility of signage.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "polished brass plaque mounted beside the entrance door",
+        "Anonymized_element": "plain matte plaque, no text or logo, neutral color",
+        "privacy_element": "business or hotel name/logo, location-specific text",
+        "target_concept": "business sign plaque",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "parked scooter near curb with mirror and rear section visible",
+        "Anonymized_element": "generic unbranded scooter silhouette, remove any stickers or plate details",
+        "privacy_element": "vehicle make/model cues, unique stickers or markings",
+        "target_concept": "scooter",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12010906/r1_crops/2017_12010906_1.png"
+}

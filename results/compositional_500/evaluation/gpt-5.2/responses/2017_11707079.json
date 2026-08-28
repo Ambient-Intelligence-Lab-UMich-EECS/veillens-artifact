@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a single sheet of paper with handwritten, largely generic technical notes (e.g., config paths like /usr/local, terms such as DHCP, curl, proxy). There are no people, faces, IDs, financial or medical details, addresses, or unique identifiers visible. The highest-severity elements present are low-risk Level 4 generic document content that weakly implies work-related activity. With no legible personal identifiers, the overall privacy risk is low. Confidence is high because the content is clear and non-identifying.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "sheet of paper with handwritten technical notes and paths (e.g., '/usr/local', 'config', 'DHCP', 'curl')",
+        "Anonymized_element": "blank paper, blurred or abstract scribbles without legible text, replace with generic shapes or lines",
+        "privacy_element": "legible handwritten text indicating technical topics and file paths",
+        "target_concept": "handwritten notes",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11707079/final/2017_11707079_final.png"
+}

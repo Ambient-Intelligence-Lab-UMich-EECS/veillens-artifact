@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a public street scene with several people. Faces are not identifiable due to occlusion or facing away, so biometric risk is minimal. However, a clearly visible wheelchair with a seated older-looking person introduces a sensitive inference about disability (Level 2). Additional moderate cues include apparent age of the seated person and presence of a public crowd with non-identifiable individuals. With one strong Level 2 clue and supporting Level 3\u20134 context, the overall risk is moderate. Confidence is high because the wheelchair is unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manual wheelchair with a person seated in it at the left foreground",
+        "Anonymized_element": "standard chair without wheels, generic stroller silhouette, neutral cart-like object, crop/blur of wheels and frame",
+        "privacy_element": "mobility aid indicative of disability, medical-style wheelchair frame and wheels",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "seated person\u2019s head and hair showing lighter/gray hair and posture (face not identifiable)",
+        "Anonymized_element": "neutral adult hair color, hat or hood covering hair, reduce age-specific features",
+        "privacy_element": "apparent older age suggested by gray hair and posture",
+        "target_concept": "age-indicative appearance",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of pedestrians in the background walking away from the camera",
+        "Anonymized_element": "silhouettes with heavier blur, fewer background people, increased depth-of-field blur",
+        "privacy_element": "presence of multiple bystanders though not identifiable",
+        "target_concept": "crowd of people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12430610/r1_crops/2017_12430610_1.png"
+}

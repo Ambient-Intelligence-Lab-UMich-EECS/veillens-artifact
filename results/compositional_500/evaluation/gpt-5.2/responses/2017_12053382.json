@@ -1,0 +1,55 @@
+{
+  "reasoning": "The image shows a crowded street parade with multiple unmasked, clearly visible faces, which are directly identifying (Level 1). Additional contextual cues include a large event banner reading “CARNAVAL,” implying participation in a specific public event, and a shirtless participant with distinctive body paint that reveals personal appearance traits (Level 3). The combination of several identifiable faces with reinforcing activity context yields a high overall privacy risk. The faces are central and unobstructed enough for recognition, so the score is elevated with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unmasked man's face wearing sunglasses at the left front of the crowd",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic oval without facial detail",
+        "privacy_element": "full face outline, nose and mouth shape, hairstyle and jawline enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unmasked man's face in black-and-white striped shirt at right-middle",
+        "Anonymized_element": "face blurred or pixelated, head turned away, generic oval without facial detail",
+        "privacy_element": "visible facial features including profile, nose and mouth, hairstyle enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "large hand-painted parade banner with the word 'CARNAVAL' across the bottom foreground",
+        "Anonymized_element": "plain blank banner, abstract patterns with no text or event name",
+        "privacy_element": "event name text indicating participation in a specific festival, language hinting region",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "shirtless torso with bright yellow body paint design at left",
+        "Anonymized_element": "plain t-shirt, remove body paint, neutral clothing",
+        "privacy_element": "distinctive body paint pattern and bare torso revealing unique physical traits",
+        "target_concept": "body paint on torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12053382/final/2017_12053382_final.png"
+}

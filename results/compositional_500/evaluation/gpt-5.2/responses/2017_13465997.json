@@ -1,0 +1,42 @@
+{
+  "reasoning": "The scene shows a nighttime street with vehicles and a few people standing at a stop. No identifiable faces or government IDs are visible. The strongest privacy cue is a clearly readable vehicle license plate on a parked minivan, and a second, less legible plate on a taxi. These reveal a uniquely identifiable asset and could indirectly link to an owner. Other elements (distant people silhouettes) do not provide biometric identification. With only Level 4 clues present, the overall risk is low-to-moderate, driven mainly by the legible plate.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front license plate on silver minivan at right-center foreground",
+        "Anonymized_element": "blank plate, blurred characters, generic solid rectangle",
+        "privacy_element": "readable license plate number and region code",
+        "target_concept": "vehicle license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "front license plate on green taxi at mid-left",
+        "Anonymized_element": "blank plate, blurred characters, generic solid rectangle",
+        "privacy_element": "partially readable license plate number",
+        "target_concept": "vehicle license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "group of people standing at the bus stop on the far right, faces turned away/in shadow",
+        "Anonymized_element": "fewer people, silhouettes further away, obscured heads",
+        "privacy_element": "distant unidentifiable individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13465997/final/2017_13465997_final.png"
+}

@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a shirtless person with hands cuffed behind their back surrounded by police officers. No faces are visible, so direct biometric identification is limited. However, the handcuffs strongly imply police detention, which enables sensitive inferences about possible criminal involvement. The bare torso introduces partial nudity and reveals body attributes. Police shoulder patches may hint at a specific locality, and a vehicle plate region appears but is not legible. The highest severity present is Level 2 (sensitive inferences and nudity), reinforced by multiple contextual clues, leading to a high-moderate risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal handcuffs on the person\u2019s wrists behind their back",
+        "Anonymized_element": "hands at sides without restraints, plain wristband, remove handcuffs",
+        "privacy_element": "visible handcuffs indicating police detention/arrest",
+        "target_concept": "handcuffs",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bare upper torso of the central person (no shirt)",
+        "Anonymized_element": "add plain T-shirt or jacket, neutral clothing colors",
+        "privacy_element": "partial nudity of chest/torso; distinctive body build",
+        "target_concept": "partial nudity",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "police officer\u2019s shoulder patch with emblem on uniform sleeve",
+        "Anonymized_element": "blank patch, generic solid color without text or logo",
+        "privacy_element": "agency insignia potentially revealing locality/department",
+        "target_concept": "uniform patch",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rear license-plate area of a red car in the background (text not legible)",
+        "Anonymized_element": "blank plate or generic placeholder without characters",
+        "privacy_element": "license plate region that could reveal vehicle/location if readable",
+        "target_concept": "license plate area",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11110878/r1_crops/2017_11110878_0.png"
+}

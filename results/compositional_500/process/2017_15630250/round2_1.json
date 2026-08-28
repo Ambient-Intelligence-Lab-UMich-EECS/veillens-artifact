@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a section of a printed receipt with partially legible text such as \u201cRECEIPT/STATUS/CODE\u201d and rows of numbers. On the left, there is a typical masked card-number line with asterisks followed by a few trailing digits, suggesting exposure of payment details. No faces or names are clearly visible. The highest-severity clue is potential financial data (masked PAN with last digits). Combined with purchase details on a receipt (activities/behavior), this yields a moderate privacy risk, tempered by low legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-side line of text on receipt showing asterisks followed by a few trailing digits",
+        "Anonymized_element": "generic placeholder text, remove digits and asterisks pattern, nonspecific lorem text",
+        "privacy_element": "masked payment card number pattern with trailing digits",
+        "target_concept": "credit/debit card number line",
+        "severity_level": 2,
+        "attributes": [
+          "Financial data (credit cards, bank statements, account numbers) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "right-side block of thermal-printed receipt text including words like 'RECEIPT' and numeric codes",
+        "Anonymized_element": "plain text block with random letters, no transaction terms, no numbers",
+        "privacy_element": "transaction terms, codes and numbers indicating purchase details",
+        "target_concept": "receipt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15630250/r1_crops/2017_15630250_1.png"
+}

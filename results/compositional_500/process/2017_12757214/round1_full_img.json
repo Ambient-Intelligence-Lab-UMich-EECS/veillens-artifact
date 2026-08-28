@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows a small group of youths and children seated on a couch indoors with six clearly visible, front-facing faces. These constitute biometric identifiers that can directly reveal identity. No government IDs, financial, medical, or explicit location text are visible. Brand logos on shirts are non-personal. The presence of multiple identifiable faces (Level 1) is the primary driver of risk, raising the overall score despite the lack of other identifiers. Confidence is high due to the clarity and centrality of the faces.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of boy in red hoodie at far left wearing glasses",
+        "Anonymized_element": "blurred or pixelated face, replaced with generic oval, head turned away",
+        "privacy_element": "clear frontal facial features with glasses, eyes and nose fully visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of teen in black shirt with medium-length hair second from left",
+        "Anonymized_element": "blurred or pixelated face, generic oval, head turned away",
+        "privacy_element": "clear frontal facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of boy in navy shirt at center of couch",
+        "Anonymized_element": "blurred or pixelated face, generic oval, head turned away",
+        "privacy_element": "clear, centered facial features at close range",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of young man in gray striped shirt seated with arms crossed",
+        "Anonymized_element": "blurred or pixelated face, generic oval, head turned away",
+        "privacy_element": "high-resolution frontal face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of girl in red shirt standing on right arm of couch",
+        "Anonymized_element": "blurred or pixelated face, generic oval, head turned away",
+        "privacy_element": "clear facial features, eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of young girl in striped shirt at far right",
+        "Anonymized_element": "blurred or pixelated face, generic oval, head turned away",
+        "privacy_element": "clear, front-facing child\u2019s facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12757214.jpg"
+}

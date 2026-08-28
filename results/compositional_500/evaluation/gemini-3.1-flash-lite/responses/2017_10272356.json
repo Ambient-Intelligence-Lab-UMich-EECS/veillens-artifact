@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a person lying on a mattress in a private domestic setting. While the face is partially obscured, the image reveals a person's physical appearance and presence in a private living space, which constitutes moderate privacy risk due to the contextual nature of the setting. The risk is mitigated by the partial occlusion of the face, but the overall composition captures personal behavior and private space, leading to a moderate score.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "A person lying on a mattress in a domestic room.",
+        "Anonymized_element": "Generic silhouette, neutral background, obscured features",
+        "privacy_element": "identifiable person in a private space, physical appearance",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10272356/final/2017_10272356_final.png"
+}

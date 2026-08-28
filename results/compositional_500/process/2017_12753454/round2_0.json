@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a city street and construction area. No readable text, faces, or unique identifiers are visible. A single pedestrian is far away and unidentifiable, and a few cars are distant behind a fence with no readable plates. The highest severity present is Level 4 due to a distant individual and generic vehicles, which pose low standalone risk and do not combine to reveal identity or location. Accordingly, the overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small, distant person walking on the far-right sidewalk",
+        "Anonymized_element": "remove person, replace with empty sidewalk, or obscure with generic silhouette",
+        "privacy_element": "presence of a person, human silhouette",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant parked cars behind chain-link fence at construction site",
+        "Anonymized_element": "remove vehicles or replace with generic blurred shapes",
+        "privacy_element": "presence of personal vehicles (no plates readable)",
+        "target_concept": "vehicles",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12753454/r1_crops/2017_12753454_0.png"
+}

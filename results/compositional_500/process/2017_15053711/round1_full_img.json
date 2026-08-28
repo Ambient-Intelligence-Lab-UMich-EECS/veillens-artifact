@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image is a monochrome portrait of a single person with a clear, front-facing, well-lit face that is easily identifiable, which is a Level 1 biometric exposure. Additional context includes revealing lingerie-style top (intimate content, Level 2) and a lit cigarette with visible smoke indicating smoking behavior (Level 3). While no names, documents, or location cues appear, the strong, central facial visibility combined with sensitive attire raises overall risk. Final score is high with high confidence due to clarity and centrality of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.78,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the person with clear eyes, nose, and mouth visible",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with neutral silhouette or turned-away head",
+        "privacy_element": "identifiable facial features enabling biometric recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "revealing bra-like top exposing cleavage and midriff",
+        "Anonymized_element": "plain t-shirt or tank top with full coverage, non-revealing clothing",
+        "privacy_element": "intimate clothing revealing body areas",
+        "target_concept": "intimate attire",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "lit cigarette held in the left hand with rising smoke",
+        "Anonymized_element": "empty hand, pen or neutral prop without smoke, removed smoke effects",
+        "privacy_element": "visible cigarette and smoke indicating smoking habit",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15053711.jpg"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a wheelchair tennis scene on a blue court with a clear Paralympic symbol and partial \u201cParalympic Games\u201d text. No identifiable face or government/financial data is visible. The strongest privacy signal is a sensitive inference of disability from the visible sports wheelchair combined with explicit Paralympic branding; this also reveals an athletic activity. These Level 2 cues raise risk to moderate, despite no direct biometric identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "sports wheelchair with large cambered wheels beneath the player",
+        "Anonymized_element": "continue court surface to cover chair, or replace with generic seating outline without wheels or medical cues",
+        "privacy_element": "wheelchair frame, large angled wheels implying mobility disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Paralympic symbol and partial 'Paralympic Games' text painted on the court",
+        "Anonymized_element": "plain court paint, generic lines, no logo or event text",
+        "privacy_element": "recognizable Paralympic logo, event name text indicating disability-related event",
+        "target_concept": "event logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tennis racket near the player\u2019s hand",
+        "Anonymized_element": "plain, unbranded racket or remove/blur equipment",
+        "privacy_element": "sports equipment revealing participation in tennis",
+        "target_concept": "sports equipment",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10895938/r1_crops/2017_10895938_1.png"
+}

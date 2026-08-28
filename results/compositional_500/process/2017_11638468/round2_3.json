@@ -1,0 +1,24 @@
+{
+  "reasoning": "This crop shows a person\u2019s upper torso in a revealing crocheted crop top. The face is fully obscured, so there is no biometric identification. The main privacy risks arise from intimate/revealing apparel and exposed chest/torso which convey personal attributes (apparent gender/body features). No names, documents, or location identifiers are visible. Overall risk is moderate due to sensitive intimate content without direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "exposed upper chest and midriff wearing a white crocheted crop top",
+        "Anonymized_element": "replace with plain non-revealing T-shirt, higher neckline, cover midriff, neutral solid fabric",
+        "privacy_element": "revealing intimate apparel, visible cleavage and torso skin",
+        "target_concept": "intimate apparel/exposed torso",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11638468/r1_crops/2017_11638468_3.png"
+}

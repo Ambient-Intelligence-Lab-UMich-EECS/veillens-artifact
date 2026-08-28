@@ -1,0 +1,34 @@
+{
+  "reasoning": "The central person\u2019s face is obscured, removing direct biometric identification. The most privacy-relevant clue is a conference-style name badge pinned to the person\u2019s chest that appears to contain printed text, though it is not clearly readable in this crop. Additional low-risk elements include papers on the table with small, illegible text. With no visible government IDs, credit cards, or readable names, the highest clear severity is a potential Level 2 identifier via the badge, leading to a moderate overall risk. Confidence is medium due to partial legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.26,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white rectangular name badge pinned to the person\u2019s chest",
+        "Anonymized_element": "blank badge, blurred/erased text, generic solid-color rectangle",
+        "privacy_element": "printed attendee name and/or organization on badge",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "papers on the table with small printed text",
+        "Anonymized_element": "blank sheets, abstract lines without text, low-detail papers",
+        "privacy_element": "potential written information on documents (illegible)",
+        "target_concept": "documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13536165/r1_crops/2017_13536165_1.png"
+}

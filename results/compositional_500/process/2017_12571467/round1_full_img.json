@@ -1,0 +1,38 @@
+{
+  "reasoning": "The image shows a live music scene with two people whose faces are visible. The foreground subject\u2019s face is close, well-lit, and identifiable (with distinctive glasses), which is Level 1 biometric data. A second person\u2019s face is visible in the background, though less clear. No government IDs, names, addresses, or other sensitive documents are legible. The primary risk comes from identifiable faces, slightly reinforced by observable activity (performing music). Given clear biometric visibility, the overall risk is high-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person\u2019s face with glasses, looking downward while playing guitar",
+        "Anonymized_element": "blurred face, generic face without distinct features, head turned away, sunglasses replacing clear eyes",
+        "privacy_element": "full facial features, eyes and nose visible, distinctive eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background person\u2019s face near amplifier, partially lit",
+        "Anonymized_element": "blurred or pixelated face, head turned away, obscured by shadow",
+        "privacy_element": "recognizable facial structure with eyes and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12571467.jpg"
+}

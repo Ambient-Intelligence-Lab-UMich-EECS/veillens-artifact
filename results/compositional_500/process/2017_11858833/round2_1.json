@@ -1,0 +1,36 @@
+{
+  "reasoning": "This crop shows a festive group wearing ornate costumes and fringe headpieces. Most faces are concealed, but one person on the right has a partially visible face with glasses beneath the fringe, which can carry biometric cues even if partly obscured. A few distant bystanders in the background have small, indistinct faces. No names, IDs, financial, medical, or explicit location details are visible. The highest severity cue is partial biometric data, supported weakly by small background faces, leading to a moderate privacy risk with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible face with glasses under golden fringe headpiece on the right side of the group",
+        "Anonymized_element": "fully obscure face with solid-color mask, add denser fringe to cover facial features, blur face region",
+        "privacy_element": "eyes and nose contour partially visible, eyeglasses framing facial area",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small background bystander faces near top-right, partially occluded and distant",
+        "Anonymized_element": "blur distant faces, replace with generic head shapes or turned-away heads",
+        "privacy_element": "tiny facial regions with general features visible at a distance",
+        "target_concept": "distant faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11858833/r1_crops/2017_11858833_1.png"
+}

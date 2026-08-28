@@ -1,0 +1,88 @@
+{
+  "reasoning": "The crop shows a conference audience with several clearly visible, unobstructed faces, which are strong biometric identifiers (Level 1). Some attendees wear lanyard badges that could contain names and affiliations (Level 2), though specific text is not legible. The setting also implies participation in a professional event (Level 3) but without explicit location signage. The combination of multiple identifiable faces with visible ID badges yields a high privacy risk. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central attendee in patterned shirt, smiling, facing camera with clear facial features",
+        "Anonymized_element": "pixelated face, blurred facial region, generic placeholder head without details",
+        "privacy_element": "unobstructed face with identifiable eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "attendee in white shirt and tie, glasses, mid-right, clear frontal face",
+        "Anonymized_element": "blurred/pixelated face, generic eyeglass shape without facial detail",
+        "privacy_element": "unobstructed face with glasses enhancing recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "attendee in dark suit with orange tie at left-center, visible face turned slightly toward camera",
+        "Anonymized_element": "pixelated face, neutralized head silhouette",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "attendee in striped shirt at left side, visible face looking forward",
+        "Anonymized_element": "blurred face, remove distinct facial details",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lanyard ID badge on foreground-right attendee\u2019s chest (text not legible)",
+        "Anonymized_element": "blank badge with no text or logo, solid color card",
+        "privacy_element": "name field, organization logo/branding, possible barcode/QR layout",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "lanyard ID badge on foreground-left attendee\u2019s chest (text not legible)",
+        "Anonymized_element": "plain, text-free badge, generic color card",
+        "privacy_element": "potential name/affiliation text, company/event logo",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13724675/r1_crops/2017_13724675_0.png"
+}

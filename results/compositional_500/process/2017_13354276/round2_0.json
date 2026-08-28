@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a fleece garment with a clearly visible interior label and a small size tag. There are no faces, people, or unique identifiers. The visible size tag can hint at personal body attributes, and the branded logo can reveal consumption preferences. These are low to moderate risks and not directly identifying. Thus the score is low, driven mainly by the size information and brand cue.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small black size tag attached near the collar seam",
+        "Anonymized_element": "blank tag, solid color with no text or numbers, removed tag",
+        "privacy_element": "readable clothing size indicator",
+        "target_concept": "clothing size tag",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "fabric brand label sewn inside the collar area",
+        "Anonymized_element": "plain label with no logo or text, generic stitching",
+        "privacy_element": "recognizable brand logo/text indicating product brand",
+        "target_concept": "brand label",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13354276/r1_crops/2017_13354276_0.png"
+}

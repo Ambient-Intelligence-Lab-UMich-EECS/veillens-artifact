@@ -1,0 +1,34 @@
+{
+  "reasoning": "A person stands behind a lectern with teleprompters, but the face is obscured and no readable name tags, badges, or documents are visible. The primary privacy signal is the observable activity (public speaking) and general personal attributes like clothing/hands, which are Level 3 and not uniquely identifying on their own. A visible watermark with a company name appears in the lower-left corner, which is metadata rather than personal information. With no Level 1–2 identifiers present, the overall risk is low to modest, driven mainly by activity context.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "standing person behind a wooden lectern, face obscured",
+        "Anonymized_element": "empty lectern with no person, crop to podium only, generic blurred hands and clothing",
+        "privacy_element": "public speaking activity, visible hands and attire suggesting personal presence",
+        "target_concept": "person at lectern",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "watermark text reading a company name in the bottom-left corner",
+        "Anonymized_element": "remove watermark, replace with blank corner or neutral texture",
+        "privacy_element": "publisher/company watermark text embedded in the image",
+        "target_concept": "watermark text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16117004/final/2017_16117004_final.png"
+}

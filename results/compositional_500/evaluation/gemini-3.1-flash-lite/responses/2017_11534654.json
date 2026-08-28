@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows an empty professional football stadium from an elevated vantage point. There are three distant, unrecognizable individuals on the field who are too small to be identified. The location is an identifiable landmark (Lumen Field, home of the Seattle Seahawks), which falls under level 4 privacy risk. Given the absence of any personally identifiable information, biometric data, or other sensitive details, the privacy risk is minimal.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Three distant, unrecognizable individuals standing on the football field",
+        "Anonymized_element": "remove individuals, replace with empty grass",
+        "privacy_element": "distant unidentifiable figures",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "Seattle Seahawks logo painted on the field",
+        "Anonymized_element": "blank green grass area",
+        "privacy_element": "identifiable stadium landmark",
+        "target_concept": "landmark",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11534654/final/2017_11534654_final.png"
+}

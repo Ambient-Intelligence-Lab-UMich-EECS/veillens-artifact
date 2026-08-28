@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a patient undergoing an eye examination using specialized medical equipment. The presence of a medical context implies health-related data. Although the individuals' faces are obscured (anonymized), the setting, the medical instrument, and the document on the desk collectively constitute a moderate privacy risk as they relate to medical care and activities.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Medical eye examination machine with a chin rest.",
+        "Anonymized_element": "Generic, non-branded eye diagnostic equipment",
+        "privacy_element": "Specific medical diagnostic device indicating an eye examination",
+        "target_concept": "medical equipment",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Small paper document or receipt resting on the machine's table.",
+        "Anonymized_element": "Blank, unlabeled white paper slip",
+        "privacy_element": "Visible text on a document that may contain patient or medical information",
+        "target_concept": "document",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12164895/final/2017_12164895_final.png"
+}

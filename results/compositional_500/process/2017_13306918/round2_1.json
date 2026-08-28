@@ -1,0 +1,35 @@
+{
+  "reasoning": "This crop shows a single person\u2019s right-profile face in moderate focus, which is directly identifying biometric data. No names, badges, or readable text are visible. A paper/document is present in the foreground but illegible. The highest severity is Level 1 due to the identifiable face; minor additional risk comes from generic document context and visible personal attributes. Overall risk is driven mainly by the face, with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.57,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-profile face of a person on the right side of the image",
+        "Anonymized_element": "blurred/pixelated face, generic silhouette head, occluded facial features",
+        "privacy_element": "recognizable facial features, profile with ear and hairline, skin tone and contours enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white paper or document held in the foreground",
+        "Anonymized_element": "blank sheet, solid-color pad, fully blurred page with no markings",
+        "privacy_element": "document surface that could contain text or notes (content not readable)",
+        "target_concept": "document/page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13306918/r1_crops/2017_13306918_1.png"
+}

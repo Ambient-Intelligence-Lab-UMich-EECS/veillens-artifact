@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows a patient in a hospital bed receiving a nasal temperature or swab check from a caregiver. Both individuals\u2019 faces are clearly visible and unobstructed, providing strong biometric identifiers (Level 1). Additional sensitive elements include a readable name tape on the patient\u2019s military uniform (non-unique identifier, Level 2) and an active medical procedure/device at the patient\u2019s nose implying healthcare activity (medical data, Level 2). Hospital room fixtures further reveal a clinical location (Level 3). These mutually reinforce identity and health-context exposure, yielding a high privacy risk. Confidence is high due to clarity and centrality of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "male patient\u2019s face looking upward on hospital bed, fully visible",
+        "Anonymized_element": "blurred face, pixelated features, turned-away head, generic silhouette",
+        "privacy_element": "full face, clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "female caregiver\u2019s left-profile face close to patient",
+        "Anonymized_element": "blurred face, pixelated features, turned-away profile",
+        "privacy_element": "recognizable facial profile with clear features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "name tape on patient\u2019s military uniform chest area with readable surname",
+        "Anonymized_element": "blank uniform patch, scrambled text, solid-color strip",
+        "privacy_element": "readable surname on uniform name tape",
+        "target_concept": "name tag",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld medical thermometer/swab touching the patient\u2019s nostril",
+        "Anonymized_element": "neutral object without medical context, object repositioned away from face",
+        "privacy_element": "active medical measurement implying current health interaction",
+        "target_concept": "medical device/procedure",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "hospital room wall panel with medical gas outlets and equipment behind bed",
+        "Anonymized_element": "plain wall panel without medical markings or devices",
+        "privacy_element": "recognizable hospital-room fixtures indicating clinical location",
+        "target_concept": "hospital room fixtures",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14595859.jpg"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image shows a sheet of paper on a desk with handwritten notes listing project/lesson topics (e.g., MinecraftEDU, 3D Printing, Circuits & LEDs) and planning annotations like circled numbers and \u201c26 lessons.\u201d No faces, names, addresses, government or financial identifiers are visible. The clues primarily reflect generic document content and a person\u2019s activities/planning behavior, which are low-risk individually and in combination. Thus the highest severity present is Level 4, yielding a low overall privacy score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "sheet of paper with legible handwritten lesson/project list in the center",
+        "Anonymized_element": "blank paper, blurred text, generic scribbles without readable words",
+        "privacy_element": "readable activity topics and planning structure revealing work/school-related tasks",
+        "target_concept": "handwritten notes on paper",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "circled note reading about total lessons near the lower-right of the page",
+        "Anonymized_element": "blank circle with no numbers, generic mark without text",
+        "privacy_element": "readable planning count indicating workload/schedule detail",
+        "target_concept": "handwritten annotation",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10301631.jpg"
+}

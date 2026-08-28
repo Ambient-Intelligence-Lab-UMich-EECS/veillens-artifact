@@ -1,0 +1,90 @@
+{
+  "reasoning": "Country-level: The scene shows a cobblestoned square, pastel stucco buildings with steep red-clay tile roofs and dormer windows, and many German-brand cars. A bus-stop style post at right resembles Germany\u2019s common yellow/green \u201cH\u201d stop sign, and several vehicles carry long, white EU plates with a blue band that look consistent with German formats. Temporary roadside signs on slim galvanized posts and the white bordered windows on the beige civic-style building also match central European\u2014especially German\u2014streetscapes. These cues collectively point to Germany rather than neighboring Austria/Switzerland (which often show different stop/bus signage styles and parking markings). City-level: Architecture suggests a small historic town in southern Germany: cobblestone paving across the whole square, compact pastel houses with half-hipped/gabled roofs, and VW/MB prevalence fit Baden\u2011W\u00fcrttemberg or Bavaria. The general look feels Swabian/Franconian rather than large-city urban cores. Without a readable place name, I favor Baden\u2011W\u00fcrttemberg based on the civic building style and bus-stop post shape common there. Street-level: This appears to be a quiet courtyard/parking square bordered by a beige civic building with tall white-trim sash windows on the left and a peach gabled house cluster at the back. The square has painted white corner ticks marking parking bays along the right edge, two mature trees framing the entrance, and temporary no-entry/works signs at the left. These features narrow to a small-town inner square rather than a through street.",
+  "location_estimate": {
+    "latitude": 48.4,
+    "longitude": 9.99,
+    "confidence": "Low",
+    "region": "Germany, Baden-W\u00fcrttemberg, small historic town (exact city unknown)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a gray hatchback",
+        "non_geolocation_element": "white color, rectangular shape, reflective surface, front-mounted, daylight",
+        "geolocation_element": "EU-style long plate with blue band at left and black Latin letters/numbers typical of Germany",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow bus stop sign on a white post",
+        "non_geolocation_element": "circular emblem, white rectangular backing, metal post, outdoor lighting",
+        "geolocation_element": "German-style \u2018H\u2019 bus stop symbol inside a green ring on a white board",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone roadway at the center",
+        "non_geolocation_element": "gray stones, rectangular cobbles, worn texture, even surface",
+        "geolocation_element": "full-width historic cobblestone paving typical of older German town centers",
+        "target_concept": "roadway",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "pastel gabled house at the back",
+        "non_geolocation_element": "peach stucco facade, steep red tile roof, dormer windows, white trim",
+        "geolocation_element": "central European/German small-town architectural style",
+        "target_concept": "house",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "temporary traffic sign on a slim metal pole",
+        "non_geolocation_element": "round sign face, red border, white center, galvanized pole, portable base",
+        "geolocation_element": "European no-entry/temporary works sign design used in Germany",
+        "target_concept": "traffic sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking bay markers on the right roadway edge",
+        "non_geolocation_element": "short white corner ticks, painted on pavement, aligned in a row",
+        "geolocation_element": "German-style discrete white corner markings designating individual parking spaces",
+        "target_concept": "marker",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "beige civic building with tall white-trim windows",
+        "non_geolocation_element": "rectangular windows, stucco facade, wall-mounted lantern",
+        "geolocation_element": "central-European municipal/school building style common in southern Germany",
+        "target_concept": "building",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/lindau/lindau_000033_000019_leftImg8bit.png"
+}

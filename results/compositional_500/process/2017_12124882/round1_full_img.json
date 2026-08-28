@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a museum catalog card with handwritten text about an artifact, including site/location names and collection/catalog references. There are no people, faces, IDs, financial or medical data. The most privacy-relevant element is specific location information (site and barrow details), which is not tied to a private individual. Other visible elements are generic document metadata like museum name and catalog numbers. Given the lack of personal identifiers and only low-sensitivity contextual data, the overall privacy risk is low. Confidence is high due to clear legible content and absence of personal data.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Handwritten site field listing 'England, Wiltshire, Winterbourne Stoke, Barrow 15 (Hoare)'",
+        "Anonymized_element": "generic location label, redacted place names, placeholder text",
+        "privacy_element": "specific place names, barrow number reference",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Collection field with 'Devizes Museum, Stourhead Coll: 80'",
+        "Anonymized_element": "generic institution label, no specific collection name or number",
+        "privacy_element": "institution name, specific collection identifier",
+        "target_concept": "collection text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "References/publications section with catalog codes and numbers",
+        "Anonymized_element": "blank references area, nonspecific placeholder numbers",
+        "privacy_element": "specific catalog references and inventory numbers",
+        "target_concept": "catalog reference text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12124882.jpg"
+}

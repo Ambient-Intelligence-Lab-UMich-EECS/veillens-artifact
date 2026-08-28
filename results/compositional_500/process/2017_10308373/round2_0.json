@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows only a partial human hand near a dark object with no face, text, documents, or identifiable numbers. There are no government IDs, financial or medical items, nor explicit sensitive symbols. The only potentially personal clue is a close-up of a hand that may reveal minor physical attributes, but it is not uniquely identifying. Thus the risk is low and limited to general personal attributes; no strong compositional signals are present.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partial human hand at lower-left edge touching a dark surface",
+        "Anonymized_element": "gloved hand, sleeve covering hand, remove hand via crop, generic object without visible skin",
+        "privacy_element": "visible skin and hand shape revealing minor physical traits",
+        "target_concept": "hand",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10308373/r1_crops/2017_10308373_0.png"
+}

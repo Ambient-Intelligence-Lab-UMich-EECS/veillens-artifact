@@ -1,0 +1,100 @@
+{
+  "reasoning": "Country level: The image shows multiple German-specific transit and civic cues. The blue square \u201cU\u201d rapid-transit sign and the accompanying pedestrian-down-stairs pictogram are the standard U\u2011Bahn symbols used in Germany. The large facade text \u201cRATHAUS\u201d (German for town hall) strongly indicates German language. The red \u201cA\u201d pharmacy logo (Apotheke) is the distinctive German pharmacy emblem. Together with right-hand traffic, EU-style street furniture, and tram tracks embedded in the roadway, these cues point to Germany rather than neighboring countries. \nCity level: Several German cities have U\u2011Bahn and trams. The combination of surface tram tracks next to a U\u2011Bahn entrance, dense mid-rise postwar buildings, and blue street-name plates is typical of Ruhr/Rhine cities such as D\u00fcsseldorf, Cologne, and Frankfurt. The D\u00fcsseldorf region is especially consistent because its Stadtbahn uses the blue \u201cU\u201d signage and often runs at street level beside tram tracks in the city center. The presence of a nearby \u201cRathaus\u201d and pharmacy on a mixed commercial street matches D\u00fcsseldorf\u2019s central districts around Altstadt/Innenstadt, where U\u2011Bahn entrances sit close to tram corridors. \nStreet level: The scene includes a curved tram alignment with bollards, a U\u2011Bahn entrance sign cluster, and a blue street-name plate beginning with \u201cBo\u2026\u201d. In D\u00fcsseldorf\u2019s core, streets like B\u00f6rsenstra\u00dfe/Bolkerstra\u00dfe intersect near public buildings and transit. The specific co-location of a Rathaus-labeled building facade, a U\u2011Bahn entrance sign, and street-running tram tracks suggests a spot in D\u00fcsseldorf\u2019s central area close to those streets, though the exact corner cannot be pinned with certainty from this single view. \nOverall, the strongest evidence fixes the country as Germany and suggests D\u00fcsseldorf city center, near a Rathaus and a U\u2011Bahn stop adjacent to tram tracks, but the precise street remains uncertain.",
+  "location_estimate": {
+    "latitude": 51.2277,
+    "longitude": 6.7735,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, D\u00fcsseldorf (city center)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue U-Bahn sign on a pole",
+        "non_geolocation_element": "blue square sign, white letter, metal pole, overcast lighting",
+        "geolocation_element": "white letter 'U' used for German U\u2011Bahn",
+        "target_concept": "U-Bahn sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white RATHAUS sign on a building facade",
+        "non_geolocation_element": "white sans-serif letters, mounted on dark facade, evening lighting",
+        "geolocation_element": "German word 'Rathaus' meaning town hall",
+        "target_concept": "RATHAUS sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red pharmacy sign on a wall",
+        "non_geolocation_element": "red illuminated letter, boxy shape, mounted above storefront",
+        "geolocation_element": "German 'Apotheke' logo (red 'A' with serpent)",
+        "target_concept": "pharmacy sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue bicycle sign on a pole",
+        "non_geolocation_element": "blue circular sign, white bicycle pictogram, metal pole",
+        "geolocation_element": "EU-style traffic sign design common in Germany",
+        "target_concept": "bicycle sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tram tracks in the roadway",
+        "non_geolocation_element": "steel rails embedded in light aggregate pavement, curved alignment",
+        "geolocation_element": "street-running tram infrastructure typical of German cities",
+        "target_concept": "tram tracks",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "pedestrian stairs sign on a pole",
+        "non_geolocation_element": "blue square sign, white figure descending stairs, reflective surface",
+        "geolocation_element": "German-style U\u2011Bahn entrance pictogram",
+        "target_concept": "pedestrian stairs sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue street name sign on a pole",
+        "non_geolocation_element": "rectangular blue plate, white text starting with 'Bo', metal bracket",
+        "geolocation_element": "German-style blue street-name plate with Latin text suggesting local street name",
+        "target_concept": "street name sign",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "disabled parking sign on a pole",
+        "non_geolocation_element": "blue square 'P' plate with wheelchair sub-plate, reflective metal",
+        "geolocation_element": "German parking sign style and iconography",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/bochum/bochum_000000_015645_leftImg8bit.png"
+}

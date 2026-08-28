@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows several people at a color-festival style event. At least one person\u2019s face (bald man at right background) is fully visible and identifiable, which is a Level 1 biometric risk. Another prominent participant\u2019s face is mostly visible despite sunglasses/partial occlusion, adding to biometric identifiability. A placard with readable text/logo (\u201cTHE FIRM\u201d) introduces a potential organizational identifier (Level 2) that could link people to a group. Visible paint-covered clothing and gestures reveal participation in a specific activity (Level 3). These clues reinforce each other, yielding a high privacy risk. Evidence is clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bald man\u2019s unobstructed face at right background",
+        "Anonymized_element": "blurred face region, pixelated facial features, replaced with generic silhouette",
+        "privacy_element": "clear facial features, eyes, nose, mouth fully visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "central participant\u2019s face with sunglasses and partial occlusion",
+        "Anonymized_element": "fully blurred face, remove facial detail, generic mask",
+        "privacy_element": "distinct facial structure, nose/mouth contour, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "sparkly placard held up with readable text/logo \u201cTHE FIRM\u201d",
+        "Anonymized_element": "blank sparkly board, abstract pattern with no text or logos",
+        "privacy_element": "readable organization name/logo on sign",
+        "target_concept": "sign with text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "paint-covered tank tops and skin indicating participation in a color event",
+        "Anonymized_element": "clean clothing without paint, muted solid colors",
+        "privacy_element": "colored powder stains implying event participation",
+        "target_concept": "activity evidence on clothing/skin",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background cluster of additional participants with raised arms",
+        "Anonymized_element": "reduce detail of distant people, replace with indistinct silhouettes",
+        "privacy_element": "presence of multiple bystanders potentially identifiable as a group",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15857351/r1_crops/2017_15857351_1.png"
+}

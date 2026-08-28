@@ -1,0 +1,37 @@
+{
+  "reasoning": "The crop centers on a person wearing a bikini at a beach, showing exposed midriff and body contours. No names, documents, or clear faces are visible; the person\u2019s face is mostly obscured by hair and angle. Background includes a crowd with small, blurred faces. The highest severity is Level 2 due to intimate attire and body exposure, with minor added risk from distant bystanders (Level 4). Overall risk is moderate; lack of identifiable facial features or explicit identifiers lowers the score. Confidence is high given the clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central person\u2019s torso and hips in a bikini, bending forward",
+        "Anonymized_element": "replace with higher-coverage swimwear or t-shirt and shorts, reduce skin exposure, neutral colors",
+        "privacy_element": "exposed midriff and body contours in bikini, intimate body regions emphasized by posture",
+        "target_concept": "person in swimwear",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background crowd with multiple small, out-of-focus people",
+        "Anonymized_element": "blur faces further, increase background blur, replace with generic silhouettes",
+        "privacy_element": "distant bystanders\u2019 small faces and bodies",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15720188/r1_crops/2017_15720188_0.png"
+}

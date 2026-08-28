@@ -1,0 +1,45 @@
+{
+  "reasoning": "In this crop, all visible faces and the large sign are obscured, preventing biometric or textual identification. The most privacy-relevant elements are small, unreadable documents: a lanyard ID badge, a slip of paper in a hand, and a large posterboard with its content hidden. These are weak cues on their own and do not reveal names, numbers, or affiliations. With no legible identifiers and no clear location markers, the overall risk is low. Score reflects minor potential if these items were readable.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lanyard with a plastic ID badge hanging from a person\u2019s neck; text not readable",
+        "Anonymized_element": "plain lanyard without badge, solid fabric ribbon, blank placeholder card",
+        "privacy_element": "ID card form factor with potential name/photo/logo fields (unreadable)",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small white paper slip held in the left foreground hand; no readable text",
+        "Anonymized_element": "blank paper, folded plain note, remove text-like markings",
+        "privacy_element": "document-like slip that could contain notes or identifiers (unreadable)",
+        "target_concept": "paper slip",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large posterboard held by a child; surface content obscured",
+        "Anonymized_element": "plain neutral-colored board without markings",
+        "privacy_element": "sign/poster that could carry personal or sensitive messages (hidden)",
+        "target_concept": "sign/poster",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10003252/r1_crops/2017_10003252_0.png"
+}

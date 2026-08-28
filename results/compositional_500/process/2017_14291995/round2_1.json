@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a person on stage with their face fully obscured, so no biometric identifiers are visible. However, several Level 3 cues are present: distinctive striped suit and tie revealing appearance style, an acoustic guitar indicating performance behavior, and a microphone stand reinforcing the on-stage activity. These moderate-risk clues combine to suggest a musician performing but without direct identifiers or sensitive Level 1/2 data. Overall risk is moderate-low with clear visual evidence and high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "striped suit jacket and tie on the person\u2019s torso (face obscured)",
+        "Anonymized_element": "plain solid-color jacket, generic shirt, remove distinctive patterns",
+        "privacy_element": "distinctive clothing pattern and style, body build cues",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "acoustic guitar held across the torso",
+        "Anonymized_element": "generic unbranded guitar, neutral color, no stickers or logos",
+        "privacy_element": "specific instrument model/finish, potential custom details indicating ownership or habits",
+        "target_concept": "guitar",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "hand gripping a microphone stand at the left side",
+        "Anonymized_element": "plain stand or crop out the microphone, generic pole",
+        "privacy_element": "performance equipment signaling on-stage activity",
+        "target_concept": "microphone stand",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14291995/r1_crops/2017_14291995_1.png"
+}

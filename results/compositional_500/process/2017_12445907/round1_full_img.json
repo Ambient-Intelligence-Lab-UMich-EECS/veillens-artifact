@@ -1,0 +1,94 @@
+{
+  "reasoning": "The image shows a public parade with multiple unobstructed human faces, which are strong biometric identifiers (highest severity). A large banner reading \u201cgay city\u201d and several rainbow pride flags reveal association with LGBTQ identity, enabling sensitive inference about participants. A front license plate on a car is partially readable, linking a vehicle and possible location. These clues are central and mutually reinforcing (identifiable people tied to a sensitive cause), so the overall privacy risk is high. Confidence is high because the elements are clear and near the camera.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rightmost person holding the banner with a clear, unobstructed face",
+        "Anonymized_element": "blurred face, pixelated facial features, generic head shape without details",
+        "privacy_element": "full identifiable face with eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left banner holder in front row with visible face and hairband",
+        "Anonymized_element": "blurred face, pixelated facial features, generic head shape without details",
+        "privacy_element": "full identifiable face with eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "driver\u2019s face visible through the windshield of the black sedan",
+        "Anonymized_element": "blurred face through glass, frosted windshield effect",
+        "privacy_element": "identifiable facial features visible through window",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white banner with large purple oval and the words \u201cgay city\u201d carried by two people",
+        "Anonymized_element": "blank banner, generic symbol, neutral text with no organization name",
+        "privacy_element": "explicit LGBTQ organization name indicating sexual orientation affiliation",
+        "target_concept": "banner/sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of rainbow pride flags along the right side of the street",
+        "Anonymized_element": "plain colored flags without symbolic pattern",
+        "privacy_element": "LGBTQ pride symbolism implying sexual orientation or affiliation",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large penis-shaped costume worn by a participant at the front of the parade",
+        "Anonymized_element": "non-explicit mascot costume, abstract character suit",
+        "privacy_element": "explicit sexual imagery suggestive of genitalia",
+        "target_concept": "costume",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front license plate on the black sedan in the parade",
+        "Anonymized_element": "blank plate, blurred alphanumeric characters, generic plate color",
+        "privacy_element": "partially readable plate characters and possible state design",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12445907.jpg"
+}

@@ -1,0 +1,65 @@
+{
+  "reasoning": "The image shows a public gathering or demonstration with several clearly visible, identifiable faces, which constitutes biometric data (highest severity). Handheld flags and banners indicate participation in a public demonstration, adding behavioral context. No names, documents, or addresses are readable. The combination of multiple identifiable faces with protest-related objects creates a high privacy risk. Score is elevated mainly by Level 1 facial biometrics, reinforced by activity cues. Confidence is high because the faces and flags are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult woman’s face in profile near right-middle, white sleeveless top",
+        "Anonymized_element": "blurred face, neutralized oval without facial features, turned-away head",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "bearded man’s face in right background facing left",
+        "Anonymized_element": "blurred facial area, generic skin-toned oval, back-of-head view",
+        "privacy_element": "distinct facial features allowing recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "smiling woman’s face on left side behind foreground silhouettes",
+        "Anonymized_element": "face pixelation, featureless oval, head turned away",
+        "privacy_element": "visible facial features that can identify the person",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "large handheld flag on pole in center of crowd",
+        "Anonymized_element": "plain solid-color flag without symbols or slogans",
+        "privacy_element": "protest flag indicating participation in a public demonstration",
+        "target_concept": "flag/banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "cluster of distant faces in background under trees",
+        "Anonymized_element": "soft blur of background crowd, indistinct silhouettes",
+        "privacy_element": "multiple partially visible faces of bystanders",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12030881/final/2017_12030881_final.png"
+}

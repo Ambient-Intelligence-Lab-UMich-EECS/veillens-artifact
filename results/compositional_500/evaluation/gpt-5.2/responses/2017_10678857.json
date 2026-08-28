@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a commercial airplane on an airport apron. No identifiable faces or personal identifiers are visible. The most privacy-relevant element is the readable aircraft registration number on the fuselage/tail, which is an asset identifier rather than personal data. A few ground staff appear far away and are unidentifiable. The highest severity present is Level 4, with weak contextual risk only. Thus, overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable aircraft registration number printed on the rear fuselage/tail",
+        "Anonymized_element": "blank tail section, generic livery without numbers or letters, low-resolution texture",
+        "privacy_element": "unique vehicle identifier (aircraft registration)",
+        "target_concept": "vehicle registration number",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      },
+      {
+        "object_description": "small group of distant ground staff near a service vehicle",
+        "Anonymized_element": "remove people, replace with empty apron or generic silhouettes",
+        "privacy_element": "presence of humans engaged in work activity though faces are not identifiable",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10678857/final/2017_10678857_final.png"
+}

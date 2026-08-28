@@ -1,0 +1,83 @@
+{
+  "reasoning": "The image shows a large group of cyclists outdoors, with several individuals\u2019 faces clearly visible and oriented toward the camera. These exposed faces constitute Level 1 biometric identifiers. Secondary context reveals a recreational cycling activity (Level 3), but there are no readable names, IDs, addresses, or financial/medical data. Because multiple identifiable faces are present and centrally framed, the privacy risk is elevated primarily by biometric exposure, leading to a moderate-to-high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unmasked face of cyclist wearing orange reflective vest near center-right, looking toward camera",
+        "Anonymized_element": "blurred or pixelated face, visor down, face turned away",
+        "privacy_element": "full face with eyes, nose, and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of cyclist in white helmet and dark jacket near image center, visible under helmet",
+        "Anonymized_element": "blur or pixelate facial region, opaque visor, turn head away",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bearded cyclist\u2019s face wearing orange safety vest slightly right of center",
+        "Anonymized_element": "blur/pixelate face, add opaque face shield, turn body away",
+        "privacy_element": "distinct facial features including beard and facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of cyclist in white jacket and sunglasses left of center",
+        "Anonymized_element": "blur/pixelate, dark opaque glasses with lowered head",
+        "privacy_element": "visible lower-face structure and identifiable outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "face of cyclist in yellow reflective vest at far right edge",
+        "Anonymized_element": "blur/pixelate face, crop out head region",
+        "privacy_element": "recognizable face with visible features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "region showing person standing with bicycle and wearing reflective vest (center group)",
+        "Anonymized_element": "crop to bicycle only, replace vest with non-descript jacket, obscure person",
+        "privacy_element": "depiction of participation in group cycling activity",
+        "target_concept": "person-bicycle region",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14270851.jpg"
+}

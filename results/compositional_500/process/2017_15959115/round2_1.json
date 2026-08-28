@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows several Euro banknotes (5, 10, 20 denominations). No faces, IDs, names, account numbers, or other personal identifiers are visible. The scene only reveals possession of cash, which is a low-risk property/asset cue without direct linkage to an individual. Thus the highest severity is Level 4, with no compositional reinforcement from higher-risk elements.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "spread of Euro banknotes (5, 10, 20 denominations) across the frame",
+        "Anonymized_element": "generic patterned paper notes, blurred denominations and currency symbols, neutral vouchers",
+        "privacy_element": "visible cash amount, recognizable Euro currency design",
+        "target_concept": "cash banknotes",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15959115/r1_crops/2017_15959115_1.png"
+}

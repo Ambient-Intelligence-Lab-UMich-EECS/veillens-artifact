@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows a public event flyer with legible printed/handwritten text. No faces or personal identifiers are present. The clearest privacy-relevant element is explicit location text (\u201cOxfam, Western Rd, Brighton\u201d), which is Level 3 location information. Additional low-risk elements include a specific event date/time, a website URL, and a recognizable organization logo. These clues indicate place and context but are not tied to an individual, resulting in a low overall risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.17,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten address line reading 'Oxfam, Western Rd, Brighton' on the flyer",
+        "Anonymized_element": "replace with generic venue text, blurred line, nonspecific city name",
+        "privacy_element": "readable venue and street, city name",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "event date and time line 'Friday 23rd February 7pm' on the flyer",
+        "Anonymized_element": "replace with generic date placeholder, nonspecific time, or blur",
+        "privacy_element": "specific date and time of event",
+        "target_concept": "date/time text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "website URL 'www.woodlandrecordings.com' at bottom of flyer",
+        "Anonymized_element": "remove or replace with generic placeholder URL",
+        "privacy_element": "readable website address",
+        "target_concept": "URL text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Oxfam round logo on the lower-right animal graphic",
+        "Anonymized_element": "generic symbol or blank area without branding",
+        "privacy_element": "recognizable organization logo indicating venue/affiliation",
+        "target_concept": "organization logo",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14306254/r1_crops/2017_14306254_1.png"
+}

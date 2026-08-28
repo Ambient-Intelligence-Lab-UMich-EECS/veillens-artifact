@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a person with their face obscured, so no identifiable biometrics are visible. However, the subject wears revealing red lingerie with a feather boa over the chest and a suggestive hand placement, which constitutes intimate content. There are no names, documents, or location cues. The highest severity is Level 2 due to intimate attire/pose, with minor personal-attribute exposure (body/physical appearance). Overall risk is moderate for personal information because of the sexualized context without direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "low-cut red lingerie top with black lace trim visible on chest",
+        "Anonymized_element": "modest solid-color top with high neckline, no lace details",
+        "privacy_element": "revealing lingerie, visible cleavage",
+        "target_concept": "intimate clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "red feather boa draped across chest area",
+        "Anonymized_element": "plain scarf or shawl with neutral fabric, less revealing placement",
+        "privacy_element": "suggestive accessory emphasizing chest/cleavage",
+        "target_concept": "feather boa",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11728585/r1_crops/2017_11728585_0.png"
+}

@@ -1,0 +1,66 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic with European road markings and signage. The large yellow directional sign with black text and the Autobahn symbol is characteristic of Germany\u2019s federal road signage. The traffic lights, blue cycle sign style, and the EU-format plates further support Germany while ruling out neighboring countries with different sign colors (e.g., France green/white, UK left-hand driving). \nCity level: The rear license plate on the silver car appears to begin with \u201cD-\u2026\u201d, which is the city code for D\u00fcsseldorf in Germany\u2019s plate system. Additionally, the roadside billboard reads \u201cKATHARINA GROSSE \u2013 Inside the Speaker \u2013 8.11.2014\u20131.2.2015,\u201d which corresponds to a known exhibition held in D\u00fcsseldorf in that timeframe, reinforcing D\u00fcsseldorf rather than other German cities where the artist also exhibits. The dense, mixed residential/office architecture and multilane arterial with gantry signs are also typical for central\u2013north D\u00fcsseldorf corridors. \nStreet level: The road has a grassy median tapering toward a junction with gantry-mounted yellow direction boards and a slight rise ahead. Tree-lined sidewalks with mid-rise offices on the right and apartments on the left, plus a busier junction controlled by multiple signal heads, match major inner-city arterials near D\u00fcsseldorf\u2019s museum/office districts. Without a readable street name, the precise street is uncertain, but the configuration suggests a central arterial in D\u00fcsseldorf rather than a suburban feeder.\n",
+  "location_estimate": {
+    "latitude": 51.2277,
+    "longitude": 6.7735,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine\u2013Westphalia, D\u00fcsseldorf"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow road sign on a gantry",
+        "non_geolocation_element": "yellow background, rectangular shape, overhead mounting, black border, reflective surface, overcast lighting",
+        "geolocation_element": "German-style yellow directional sign, DIN typeface, Autobahn symbol on blue inset, German-language place names",
+        "target_concept": "road sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver car",
+        "non_geolocation_element": "white plate, black characters, reflective material, rectangular shape, rear bumper mounting",
+        "geolocation_element": "EU blue band with country code, German plate format with hyphen; initial letter 'D' indicating D\u00fcsseldorf",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular billboard on grass",
+        "non_geolocation_element": "large rectangle, multicolor print, metal frame, mounted on two posts, outdoor lighting",
+        "geolocation_element": "readable text 'KATHARINA GROSSE \u2013 Inside the Speaker \u2013 8.11.2014\u20131.2.2015' in German date format referencing a D\u00fcsseldorf exhibition",
+        "target_concept": "billboard",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue bicycle sign on a pole",
+        "non_geolocation_element": "blue circular sign, white bicycle pictogram, metal pole, roadside placement",
+        "geolocation_element": "German-style cycleway pictogram/sign standard",
+        "target_concept": "bicycle sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "black traffic light on a pole",
+        "non_geolocation_element": "vertical housing, black body, green light illuminated, mounted on grey pole",
+        "geolocation_element": "German traffic signal design with supplemental low-mounted repeaters common in Germany",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/dusseldorf/dusseldorf_000132_000019_leftImg8bit.png"
+}

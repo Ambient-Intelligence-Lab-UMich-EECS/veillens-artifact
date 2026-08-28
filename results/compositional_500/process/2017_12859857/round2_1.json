@@ -1,0 +1,51 @@
+{
+  "reasoning": "This crop shows a street protest with several identifiable faces visible, the clearest being a man at right in close view. Protest placards with partially readable German text are present, revealing political activity and viewpoints. The highest-severity element is Level 1 biometric data (clear faces), which is compounded by Level 2 sensitive inferences from the protest context and readable slogans. Together these cues yield a high privacy risk. Confidence is high because the faces and signs are plainly visible and central.",
+  "personal_info_privacy_score": {
+    "score": 0.69,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a tall man on the right side of the frame",
+        "Anonymized_element": "blurred face, pixelated facial area, generic skin-tone patch",
+        "privacy_element": "clear facial features, eyes/nose/mouth visible enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background man's face with sunglasses behind the central sign",
+        "Anonymized_element": "pixelated face region, opaque oval over face",
+        "privacy_element": "recognizable facial outline and features despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white protest placard in mid-background with partially readable German text",
+        "Anonymized_element": "blank placard, abstract shapes, non-legible scribbles",
+        "privacy_element": "readable political message fragments indicating viewpoint and participation",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12859857/r1_crops/2017_12859857_1.png"
+}

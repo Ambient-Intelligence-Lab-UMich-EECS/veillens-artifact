@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a single person in a meeting-like setting with a clear, unobstructed view of their face in profile, which is directly identifying biometric data (highest severity). No government IDs, names, or sensitive documents are visible, and background elements are generic. The primary risk is the identifiable face, with minor contextual exposure of general appearance. Given one strong Level 1 clue and little else reinforcing it, the overall risk is high-moderate. Confidence is high because the face is clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear side-profile face of the seated person",
+        "Anonymized_element": "blurred/pixelated face, generic placeholder face, cropped to remove head",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth contours, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16339024.jpg"
+}

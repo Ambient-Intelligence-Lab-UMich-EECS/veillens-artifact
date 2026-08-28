@@ -1,0 +1,33 @@
+{
+  "reasoning": "The street scene shows multiple people with faces obscured. The most privacy-relevant clue is a clearly visible wheelchair with a person seated, which can imply a disability (sensitive inference). No readable names, documents, financial info, or government IDs are visible, and location is generic. Crowded background figures are distant and not identifiable. With a single Level 2 sensitive-inference clue and otherwise low-risk context, the overall risk is moderate. Confidence is medium because the inference is based on the visible mobility aid rather than explicit text or identity.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground wheelchair with a person seated",
+        "Anonymized_element": "ordinary chair without wheels, neutral lower-body occlusion, generic stroller-like silhouette, crop to upper body only",
+        "privacy_element": "mobility aid implying disability or health condition",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "distant pedestrians in the background walking away from camera",
+        "Anonymized_element": "reduced crowd density, generic silhouettes, increased background blur",
+        "privacy_element": "presence of multiple unidentifiable individuals",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12430610/final/2017_12430610_final.png"
+}

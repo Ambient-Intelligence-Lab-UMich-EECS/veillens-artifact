@@ -1,0 +1,80 @@
+{
+  "reasoning": "The image shows a close-up of an event badge with clearly readable personal details. The most sensitive elements are Level 2 non-unique identifiers: a full name, company affiliation, a role label, a numeric attendee ID, and machine-readable barcodes/QR codes that likely encode unique IDs. Location text (city, state) adds Level 3 context. These multiple high-clarity identifiers reinforce each other even without a face, leading to a high privacy risk assessment. Confidence is high because the text and codes are legible and centered.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Large printed full name text centered on the badge",
+        "Anonymized_element": "replace with generic placeholder text, blurred text, solid color block",
+        "privacy_element": "full first and last name text",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Vertical 1D barcode along the left side of the badge",
+        "Anonymized_element": "remove barcode, replace with decorative stripe, non-encoded pattern",
+        "privacy_element": "machine-readable barcode that can encode attendee ID",
+        "target_concept": "barcode",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Square QR/2D code at the lower right of the badge",
+        "Anonymized_element": "replace with blank square or abstract pattern, no data encoding",
+        "privacy_element": "machine-readable QR code likely containing unique identifier or contact details",
+        "target_concept": "QR code",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed numeric identifier near the right edge of the badge",
+        "Anonymized_element": "replace with random placeholder digits or dashes, or blank area",
+        "privacy_element": "unique attendee/reference number",
+        "target_concept": "numeric ID number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Company/affiliation text printed vertically on the badge",
+        "Anonymized_element": "replace with generic organization name or blank text area",
+        "privacy_element": "employer/organization name indicating workplace affiliation",
+        "target_concept": "organization text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "City and state text printed near the bottom right",
+        "Anonymized_element": "replace with generic location or remove text",
+        "privacy_element": "specific location information (city, state)",
+        "target_concept": "location text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14187578.jpg"
+}

@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows the top of a printed restaurant receipt with the business name/logo “Restaurant La Gondola” visible; the rest appears redacted. There are no people, faces, government IDs, or financial/personal identifiers readable. The main privacy signal is location-related, since the specific restaurant name can reveal a venue. The presence of a receipt is a generic document cue but contains no legible sensitive details. Given only mild location context and a generic document without personal data, the overall privacy risk is low. Confidence is high due to clear visibility of the limited clues.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed header on receipt with restaurant name and gondola logo",
+        "Anonymized_element": "generic header text, remove logo, replace with plain “Restaurant”",
+        "privacy_element": "specific restaurant name, distinctive logo that identifies venue",
+        "target_concept": "business name on receipt header",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "paper receipt document with most content blanked/redacted",
+        "Anonymized_element": "plain blank slip of paper, no receipt formatting",
+        "privacy_element": "receipt formatting implying transactional document",
+        "target_concept": "receipt",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12560504/final/2017_12560504_final.png"
+}

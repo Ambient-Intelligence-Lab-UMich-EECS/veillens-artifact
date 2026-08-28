@@ -1,0 +1,77 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic with EU-style blue-banded license plates and German-format plates visible on the rear of cars. Road edge markings consist of dashed white parking lane lines typical in Germany. Multiple German-language beer branding signs appear, notably \u201cK\u00f6lsch/Gilden\u201d styles. Most decisive is a large wall sign reading \u201cBrauerei Degraa,\u201d clearly German. Architecture features North Rhine-Westphalia style brick rowhouses. Together these cues strongly indicate Germany.\nCity level: \u201cBrauerei Degraa\u201d is a historic brewery brand from Aachen, and its name painted prominently on a gable strongly points to Aachen rather than other German cities. K\u00f6lsch branding also fits the Rhineland region near Cologne; Aachen lies within this distribution area. The dense, older residential blocks with narrow carriageway and parallel parking match Aachen\u2019s inner districts (e.g., Frankenberger Viertel/Pontviertel).\nStreet level: The distinctive white gable end with the large \u2018BRAUEREI DEGRAA\u2019 lettering facing the T-junction ahead serves as a unique local marker. Flanking rows of mid-rise brick and stucco townhouses, a tree-lined curb on the right, and a pub with hanging green beer sign on the left narrow it further to a specific block in an inner Aachen neighborhood. Exact street identification is uncertain without a readable street name, but the combination of the Degraa wall sign orientation and adjacent pub frontage differentiates this block from nearby streets.\n",
+  "location_estimate": {
+    "latitude": 50.7766,
+    "longitude": 6.0834,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, Aachen"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white wall sign on a gable",
+        "non_geolocation_element": "white paint, large sans-serif letters, triangular roofline, overcast lighting",
+        "geolocation_element": "text 'BRAUEREI DEGRAA' in German",
+        "target_concept": "wall sign",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green beer sign on a pole",
+        "non_geolocation_element": "hexagonal shape, green background, white border, metal pole, storefront mounting",
+        "geolocation_element": "German beer branding style with readable German words",
+        "target_concept": "beer sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue EU license plate on a white SUV",
+        "non_geolocation_element": "rectangular plate, blue left band, reflective surface",
+        "geolocation_element": "EU band with German-format character spacing and layout",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "dashed white road marking at the curb",
+        "non_geolocation_element": "short white dashes, right edge of lane, asphalt surface",
+        "geolocation_element": "German-style dashed parking/edge delineation",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "brick rowhouse facade on the left",
+        "non_geolocation_element": "brown brick, narrow vertical windows, 4-5 stories, continuous terrace",
+        "geolocation_element": "Northern German/Rhineland urban townhouse style",
+        "target_concept": "facade",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop sign above a door",
+        "non_geolocation_element": "black rectangle, white text, backlit panel, mounted above entrance",
+        "geolocation_element": "German-language shop naming conventions/typography",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/aachen/aachen_000034_000019_leftImg8bit.png"
+}

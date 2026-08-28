@@ -1,0 +1,34 @@
+{
+  "img_id": "12746",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "missed_pairs": [
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    4
+  ],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: This looks like a police motorcycle training/demo with cones and tents; P1 is riding a marked police bike while P2, also in law-enforcement uniform, stands nearby observing without physical interaction. Their matching professional attire and setting suggest coworkers. => professional\n\n[P1-P3]: At the same event, P3 stands close to P1 near the motorcycle, appearing to monitor or assist; no physical contact, both in police gear. This indicates colleagues on duty. => professional\n\n[P2-P3]: Both are in similar law-enforcement uniforms, standing in the event area and observing the activity without personal interaction. The context points to coworkers at a work setting. => professional",
+  "timestamp": 1776888010.21045
+}

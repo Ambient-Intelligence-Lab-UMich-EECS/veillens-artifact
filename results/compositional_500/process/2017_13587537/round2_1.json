@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows multiple people in a public setting. A child\u2019s face on the right is clearly visible and potentially identifiable, which is a Level 1 biometric risk. An adult woman\u2019s face at mid-right is also visible, though slightly angled downward, adding more Level 1 risk. A person at left in a Santa hat has a partially occluded side face with a mask, contributing lower but present biometric exposure. Additional small, blurred background faces add minor risk. Combined, these faces elevate the privacy risk despite the public context.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "child\u2019s face on the right side wearing a blue patterned jacket",
+        "Anonymized_element": "blurred/pixelated face, generic shaded oval, turned-away head",
+        "privacy_element": "exposed facial features, eyes/nose/mouth clearly visible, identifiable child",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "adult woman\u2019s face mid-right with headband, looking downward",
+        "Anonymized_element": "blurred face, neutral mask overlay, turned-away head",
+        "privacy_element": "recognizable facial features, hairstyle and headband aiding identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "person at far left in Santa hat with partially visible side face and mask",
+        "Anonymized_element": "fully covered face area, blank scarf, remove facial contours",
+        "privacy_element": "partial facial profile (ear, cheekline), distinctive costume context",
+        "target_concept": "face",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small blurred face of a bystander in background near center",
+        "Anonymized_element": "fully blurred silhouette, generic background figure",
+        "privacy_element": "faint facial outline, human figure indicating presence",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13587537/r1_crops/2017_13587537_1.png"
+}

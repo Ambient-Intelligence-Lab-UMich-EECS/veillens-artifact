@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows a crowded beach scene with multiple people in swimwear. Faces in the background are small and out of focus, making individuals hard to identify. There are no readable names, documents, or government/financial identifiers. The most privacy-relevant cues are activity/appearance signals (people sunbathing in swimwear) and the presence of a crowd with partially visible but unidentifiable faces. These are Level 3–4 clues without strong identifiers, resulting in a low-to-moderate risk score. Confidence is medium due to blur and partial occlusion.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "group of blurred background people with small, partially visible faces",
+        "Anonymized_element": "increase blur on faces, replace with back-of-head silhouettes, reduce facial detail",
+        "privacy_element": "multiple human faces, partial biometric features though not identifiable",
+        "target_concept": "faces in crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "reclining person on a towel in a colorful swimsuit at lower left",
+        "Anonymized_element": "add cover-up clothing or towel overlay, reduce body detail, neutral colors",
+        "privacy_element": "swimwear exposing body contours, sunbathing posture indicating leisure activity",
+        "target_concept": "person in swimwear",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15720188/final/2017_15720188_final.png"
+}

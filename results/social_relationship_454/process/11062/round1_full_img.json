@@ -1,0 +1,32 @@
+{
+  "img_id": "11062",
+  "ground_truth": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 2,
+    "2 3": 2,
+    "2 4": 2,
+    "3 4": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are children decorating a cake together at a home table; P1\u2019s small hand and P2\u2019s hand pouring toppings are close and coordinated, with casual clothing and relaxed body language in a kitchen/dining setting. => family-members\n\n[P1-P3]: During the same cake-decorating event at home, P3 excitedly faces the table while P1\u2019s hand works near the cake; casual attire and shared activity suggest a comfortable, familiar bond. => family-members\n\n[P1-P4]: Both are closely reaching toward the cake on the same table, participating in the shared home activity with casual clothes and easy proximity. => family-members\n\n[P2-P3]: P2 is pouring toppings while P3 cheers nearby in the kitchen/dining area; their enthusiastic, cooperative participation and casual home wear indicate a familiar relationship. => family-members\n\n[P2-P4]: Both are at arm\u2019s length around the cake, working on the same task in a relaxed home setting with casual attire and no transactional cues. => family-members\n\n[P3-P4]: They are side-by-side around the table during a home cake-decorating moment; casual clothes, playful energy, and shared focus imply a comfortable, familial connection. => family-members",
+  "timestamp": 1776889272.2216232
+}

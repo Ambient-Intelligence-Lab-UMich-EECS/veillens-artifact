@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a single page of a handwritten letter. A personal name appears as a readable signature at the end, which is a non-unique identifier. The body text also references specific meeting days/times, revealing elements of schedule/activities. No faces, government IDs, or financial/medical data are visible. The highest severity is Level 2 (name), supported by Level 3 activity details and the generic presence of a personal letter. Together these suggest moderate privacy risk. Confidence is medium due to potential partial legibility of handwriting.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten signature at the bottom of the page with a full name",
+        "Anonymized_element": "blurred signature, initials only, generic scribble with no letters",
+        "privacy_element": "full personal name legible in signature",
+        "target_concept": "signature",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten lines mentioning specific meeting days and times within the body text",
+        "Anonymized_element": "redacted time/day terms, generic phrasing without dates or hours",
+        "privacy_element": "schedule details such as days of week and clock times",
+        "target_concept": "handwritten schedule text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "the page of personal handwritten correspondence",
+        "Anonymized_element": "generic blank paper texture, non-readable placeholder text",
+        "privacy_element": "personal letter format and narrative content",
+        "target_concept": "handwritten letter",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14719032.jpg"
+}

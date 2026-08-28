@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a parked hatchback at sunset with a visible retail store sign reading \u201cSTAPLES Business Depot.\u201d No faces or readable license plate details are visible. The clearest privacy signals are a recognizable business sign that can hint at location (Level 3) and the presence of a specific vehicle (Level 4). With no Level 1\u20132 identifiers, the overall risk is low-to-moderate, driven mainly by potential location inference from the sign. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bright retail sign reading STAPLES Business Depot on the left side of the scene",
+        "Anonymized_element": "generic blank billboard, abstract logo shape, unreadable text, neutral colors",
+        "privacy_element": "recognizable store name and branding that can indicate a specific location or chain",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rear of silver hatchback with taillights on and an indistinct license plate area",
+        "Anonymized_element": "generic vehicle silhouette, plate area fully blanked or replaced with plain rectangle",
+        "privacy_element": "unique vehicle appearance and implied license plate region (unreadable)",
+        "target_concept": "vehicle rear/license plate area",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14095003/r1_crops/2017_14095003_1.png"
+}

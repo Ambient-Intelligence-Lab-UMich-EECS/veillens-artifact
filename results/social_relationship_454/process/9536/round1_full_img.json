@@ -1,0 +1,41 @@
+{
+  "img_id": "9536",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "2 5": 4,
+    "3 4": 4,
+    "3 5": 4,
+    "4 5": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are racers in a cross-country/biathlon event on a snowy course, wearing matching competition bibs and gear. Close by and moving in the same direction with no physical contact\u2014typical of competitors. => professional\n\n[P1-P3]: Both are athletes in the same ski race, wearing bibs and racing suits on the course. They are a bit apart and not interacting, just competing. => professional\n\n[P1-P4]: Ski racers on the same course with bibs and poles; P4 is slightly ahead/right of P1. No physical contact, just overtaking/competing. => professional\n\n[P1-P5]: Both wear race bibs and skis in the snowy competition setting. They are far apart with no interaction beyond sharing the event. => professional\n\n[P2-P3]: Two ski racers with bibs on the same course. Moderate distance, focused forward, not touching\u2014competitive context. => professional\n\n[P2-P4]: Both are competitors in the race; P4 is passing in front of P2. No affectionate or transactional behavior, only sport action. => professional\n\n[P2-P5]: Athletes in the same ski event wearing bibs, seen at a distance from each other. No interaction beyond participating in the competition. => professional\n\n[P3-P4]: Right-side racers very close as one overtakes the other, both in full race attire. Their body language is competitive with no personal interaction. => professional\n\n[P3-P5]: Both are bib-wearing skiers on the course but on opposite sides of the frame with no contact. Shared sporting context only. => professional\n\n[P4-P5]: Two competitors in the ski race, identifiable by uniforms and equipment, on a snowy track. Distant from each other and not interacting. => professional",
+  "timestamp": 1776889397.7027318
+}

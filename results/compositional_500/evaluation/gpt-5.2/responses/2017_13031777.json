@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a sepia-toned portrait with the facial region fully obscured, preventing facial identification. No names, documents, or location cues are present. Some physical appearance details like hair, ear shape, and neck/shoulder are visible, which provide minimal identifying information but do not enable direct recognition. With no Level 1 or Level 2 elements, the risk stems only from limited Level 3 personal-attribute cues, leading to a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left side of head with visible ear and dark shoulder-length hair",
+        "Anonymized_element": "soft blur to ear and hair, generic silhouette fill, crop to exclude head region",
+        "privacy_element": "distinct ear shape, unique hairstyle/length/texture",
+        "target_concept": "hair/ear region",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "neck and shoulder area with visible skin texture",
+        "Anonymized_element": "neutral clothing coverage or blur, generic silhouette fill",
+        "privacy_element": "skin/neck features and contours that contribute to appearance",
+        "target_concept": "neck/shoulder",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/final/2017_13031777_final.png"
+}

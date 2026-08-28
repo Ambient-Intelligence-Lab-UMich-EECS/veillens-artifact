@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image is a scan of a historical document written in Spanish. It contains administrative or religious directives with names of specific individuals, such as 'P. Guardian Fr. Franco Pangua'. While these names represent historical figures, they constitute non-unique identifiers linked to a specific organizational role. The document itself is a historical artifact, posing minimal risk to contemporary personal privacy. The score reflects the presence of specific personal names, though they are of low sensitivity due to the historical context.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Handwritten name 'P. Guardian Fr. Franco Pangua' within the text of the document.",
+        "Anonymized_element": "generic religious title, illegible handwriting",
+        "privacy_element": "full name of a person",
+        "target_concept": "personal name",
+        "severity_level": 4,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "Historical text document containing administrative instructions.",
+        "Anonymized_element": "generic parchment, blurred text, illegible script",
+        "privacy_element": "handwritten text",
+        "target_concept": "generic documents or digital artifacts",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15579819/final/2017_15579819_final.png"
+}

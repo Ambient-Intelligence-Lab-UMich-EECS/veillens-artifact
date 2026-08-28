@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image features a person's head and neck with the face intentionally masked or obscured, significantly reducing the direct identifiability of the individual. As the facial features are hidden, the primary biometric risk is neutralized. The remaining visual information consists only of hair and the shape of the neck and ears, which are insufficient for unique personal identification. Therefore, the privacy risk score is low, as no specific identifiers or highly sensitive personal traits are exposed.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Masked facial region of a person",
+        "Anonymized_element": "Generic skin tone, smooth texture, featureless surface",
+        "privacy_element": "Obscured facial features",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13031777/final/2017_13031777_final.png"
+}

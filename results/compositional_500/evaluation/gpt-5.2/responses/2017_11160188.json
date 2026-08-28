@@ -1,0 +1,42 @@
+{
+  "reasoning": "The image shows a coastal landscape with a very distinctive monolithic rock and three tall smokestacks from an industrial facility. No people, documents, or identifiers are visible. The main privacy relevance is location inference from recognizable landmarks, which is a Level 3 risk. Without any faces or personal identifiers, overall privacy risk is low but nonzero due to the strong place recognition these structures provide. Confidence is high because the landmarks are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large isolated monolithic rock formation on the shoreline",
+        "Anonymized_element": "generic rounded hill, less distinctive rock texture, softened silhouette",
+        "privacy_element": "distinctive natural landmark shape enabling place recognition",
+        "target_concept": "landmark rock",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "three tall smokestacks of an industrial plant on the right side of the coast",
+        "Anonymized_element": "low industrial buildings without stacks, generic warehouse shapes",
+        "privacy_element": "unique triple-stack configuration revealing specific site",
+        "target_concept": "industrial smokestacks",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "harbor-side buildings and small marina area near the plant",
+        "Anonymized_element": "simplified coastline with generic low structures, fewer distinctive details",
+        "privacy_element": "coastal town waterfront features aiding geolocation when combined with landmarks",
+        "target_concept": "waterfront buildings",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11160188/final/2017_11160188_final.png"
+}

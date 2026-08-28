@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person seated with visible wheelchair components (handles and large wheel) and two other distant, blurred individuals on a street at night. Faces are not identifiable due to blur/occlusion. The wheelchair is a strong cue that can reveal sensitive health/disability information (Level 2). The distant individuals contribute minimal additional risk. With no readable identifiers or faces, the overall risk is moderate, driven mainly by the mobility aid implying a sensitive inference.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "wheelchair handles and large rear wheel next to a seated person on the right side of the frame",
+        "Anonymized_element": "replace with generic bench or plain chair, remove handles and wheel silhouette, neutral seating",
+        "privacy_element": "mobility aid implying disability or health status",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "distant standing person in the background with blurred, unidentifiable features",
+        "Anonymized_element": "further blur/silhouette, reduce detail, remove human figure",
+        "privacy_element": "presence of unidentifiable bystanders",
+        "target_concept": "distant person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13376940/r1_crops/2017_13376940_0.png"
+}

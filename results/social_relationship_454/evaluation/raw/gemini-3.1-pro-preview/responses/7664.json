@@ -1,0 +1,29 @@
+{
+  "img_id": "7664",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 2,
+    "1 5": 1,
+    "2 3": 1,
+    "2 4": 2,
+    "2 5": 1,
+    "3 4": 2,
+    "3 5": 1,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 1,
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "1 5": 1,
+    "2 3": 1,
+    "2 5": 1,
+    "2 4": 1,
+    "3 4": 1,
+    "3 5": 1
+  },
+  "raw_response": "[P1-P2]: Both are young adults in casual attire holding red cups at a house party, indicating a shared social activity and camaraderie. => friends\n[P1-P3]: Both are young men attending the same casual gathering in a home kitchen, suggesting they belong to a shared social circle. => friends\n[P1-P4]: P4 is significantly older and dressed more conservatively than P1 in this home setting, suggesting an intergenerational relationship typical of a family gathering. => family-members\n[P1-P5]: Both are young men present at the same casual house party, participating in a shared social event. => friends\n[P2-P3]: Both are young men at the same social gathering, indicating they are likely part of the same peer group. => friends\n[P2-P4]: The noticeable age difference and shared home environment during meal preparation suggest a family relationship, such as father and son or uncle and nephew. => family-members\n[P2-P5]: Both are young men at the same casual party, suggesting a shared social activity among peers. => friends\n[P3-P4]: The presence of an older man (P4) alongside a younger man (P3) in a home kitchen points towards a likely family relationship. => family-members\n[P3-P5]: Both are young men in a casual home setting, likely socializing as part of a shared peer group. => friends\n[P4-P5]: The age gap between the older P4 and the younger P5 in this home gathering suggests they are extended family members. => family-members",
+  "timestamp": 1779942603.049685
+}

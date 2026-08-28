@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a person having blood pressure taken with a cuff on the upper arm connected to a digital monitor. Faces are obscured, so no biometric identifiers are visible. However, the clear medical procedure and equipment reveal health-related context and behavior, which are Level 2 risks. Without names or government IDs, risk is moderate rather than severe. Score reflects visible, central medical context with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blood pressure cuff wrapped around the person\u2019s upper right arm with tube attached",
+        "Anonymized_element": "plain short sleeve, generic armband without tubing, neutral fabric without medical context",
+        "privacy_element": "medical device on body indicating health measurement/medical check",
+        "target_concept": "blood pressure cuff",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "digital blood pressure monitor on the desk with cable connected to cuff",
+        "Anonymized_element": "blank rectangular box, generic electronic device without medical features or cable",
+        "privacy_element": "recognizable blood pressure monitor indicating medical vital sign recording",
+        "target_concept": "blood pressure monitor",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15433942/r1_crops/2017_15433942_1.png"
+}

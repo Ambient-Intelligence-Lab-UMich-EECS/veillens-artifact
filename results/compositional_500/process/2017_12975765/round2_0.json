@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person at a microphone with their face obscured. No readable names, IDs, or documents are visible. The main privacy-relevant cues are moderate: a wedding ring (personal attribute) and the act of speaking/presenting indicated by a microphone. A partially visible projection screen has indistinct content and does not reveal specific data. With no Level 1 or 2 elements, risk remains low but nonzero due to Level 3 attributes/activities. Confidence is high because these objects are clear and centered.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "gold wedding band on the person\u2019s left hand",
+        "Anonymized_element": "bare finger, plain blurred band, neutral accessory removed",
+        "privacy_element": "marital status implied by wedding ring",
+        "target_concept": "ring",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "black microphone on a stand positioned in front of the person",
+        "Anonymized_element": "no microphone, neutral desk edge, muted stand without mic head",
+        "privacy_element": "public speaking activity implied by microphone",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "projection screen at right edge showing faint red numbers/shapes",
+        "Anonymized_element": "blank white screen, abstract shapes without text or numbers",
+        "privacy_element": "presentation slide elements (partial numeric content)",
+        "target_concept": "projected slide",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12975765/r1_crops/2017_12975765_0.png"
+}

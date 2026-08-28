@@ -1,0 +1,65 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand traffic, European-style road markings, and architecture typical of Central Europe. Two strong cues point specifically to Germany: (1) the round yellow circle with green \u201cH\u201d bus-stop symbol, which is a standardized German sign for Haltestelle; and (2) multiple white EU plates with the blue EU band and formatting consistent with German license plates. A scaffold banner on the left also appears to contain German words (e.g., \u201cGmbH\u201d), reinforcing German language presence.\nCity-level: No unique skyline or landmark is visible. The street layout is suburban/residential with a covered bus shelter, detached houses with steep roofs, and tree-lined sidewalks\u2014common across many German cities. The license plate prefixes are not legible enough to identify a registration district. Therefore, I cannot confidently narrow to a specific city.\nStreet-level: Distinguishing details for this exact street include the specific bus stop configuration: a freestanding German \u201cH\u201d bus stop sign paired with a glass-roofed shelter on the right sidewalk, a narrow bay with light-gray concrete pavers and a ramped curb at the stop, tree guards around young trees along the left sidewalk, and a yellow-diamond priority road sign visible ahead. These elements together make this a recognizable stop along a two-lane residential collector road, but they are not unique enough to pinpoint an exact address without readable stop names.\nConclusion: The image is in Germany, on a suburban residential road near a bus stop, but city and street cannot be uniquely identified from the visible clues.",
+  "location_estimate": {
+    "latitude": 51.0,
+    "longitude": 10.0,
+    "confidence": "Medium",
+    "region": "Germany, unknown state, unknown city"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "round bus stop sign on a pole",
+        "non_geolocation_element": "round shape, green symbol, yellow border, metal pole, daylight",
+        "geolocation_element": "German 'H' Haltestelle symbol in a yellow circle, standardized German bus stop design",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver car",
+        "non_geolocation_element": "rectangular shape, white background, black text, reflective material",
+        "geolocation_element": "EU blue band with country code format and German-style typeface/spacing",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular banner on scaffolding",
+        "non_geolocation_element": "white fabric, printed dark text, hung on metal scaffolding",
+        "geolocation_element": "visible German words/abbreviations such as 'GmbH' indicating German language",
+        "target_concept": "banner",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "diamond road sign on a post",
+        "non_geolocation_element": "diamond shape, yellow center, white border, mounted on gray post",
+        "geolocation_element": "German priority-road symbol (yellow diamond)",
+        "target_concept": "road sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "glass-roofed bus shelter on the sidewalk",
+        "non_geolocation_element": "transparent glass panels, dark metal frame, flat roof, sidewalk setting",
+        "geolocation_element": "paired placement with German 'H' stop sign typical of German public transport stops",
+        "target_concept": "bus shelter",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/jena/jena_000000_000019_leftImg8bit.png"
+}

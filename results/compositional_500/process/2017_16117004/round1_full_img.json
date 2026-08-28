@@ -1,0 +1,47 @@
+{
+  "reasoning": "A central speaker\u2019s face is clearly visible and unobstructed, which constitutes identifiable biometric data. A large projected portrait of the same person appears in the background, reinforcing identifiability. Event branding and a small watermark with organization text are present but do not reveal personal identifiers of the subject. The highest severity is Level 1 due to the clear faces, leading to a high but not extreme risk since no names, IDs, or other sensitive personal details are shown. Confidence is high because the visual evidence is clear.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing woman\u2019s face at the podium",
+        "Anonymized_element": "blurred or pixelated face, face covered, turned away profile, generic silhouette",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large projected portrait of a woman\u2019s face on the backdrop screen",
+        "Anonymized_element": "abstract background pattern, gradient colors, non-facial shapes",
+        "privacy_element": "enlarged facial features recognizable despite stylization",
+        "target_concept": "projected face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small watermark text at bottom-left corner with organization name and phone number",
+        "Anonymized_element": "cropped edge, blurred or removed watermark, generic copyright symbol without text",
+        "privacy_element": "readable organization name and contact number",
+        "target_concept": "watermark text",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16117004.jpg"
+}

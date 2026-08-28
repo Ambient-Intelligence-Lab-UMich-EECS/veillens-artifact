@@ -1,0 +1,68 @@
+{
+  "reasoning": "Country level: The round yellow-green \u201cH\u201d bus stop symbol on a white sign is characteristic of Germany\u2019s Haltestelle signage. Text on multiple signs and posters is in German, and vehicles show EU-style white plates consistent with Germany. Overhead trolley wires indicate a tram network common in German cities.\nCity level: The bus stop name on the tall sign reads \u201cTheater am Leibnizplatz,\u201d which is a known tram/bus stop in Bremen (Neustadt district). The listed lines include 4, 6, and N4, matching Bremen\u2019s tram and night bus numbering. Urban form with mid-rise prewar/1950s blocks and a curving arterial with tram infrastructure aligns with Bremen Neustadt.\nStreet level: The stop \u201cTheater am Leibnizplatz\u201d sits on Friedrich-Ebert-Stra\u00dfe near Leibnizplatz. The scene shows the curved roadway with tram wires, a glass bus shelter on the left, grass verge on the right, and a red-brick corner building with a second \u201cH\u201d stop disk\u2014features consistent with imagery of that specific stop on Friedrich-Ebert-Stra\u00dfe approaching Leibnizplatz from the northeast. The explicit stop name and line numbers uniquely identify this location within Bremen.\nStep-by-step narrowing: European city -> German-specific bus stop symbol and language -> Bremen via stop name and line numbers -> Friedrich-Ebert-Stra\u00dfe at Theater am Leibnizplatz stop via matching streetscape and duplicated stop disks on both sides of the junction.",
+  "location_estimate": {
+    "latitude": 53.071,
+    "longitude": 8.795,
+    "confidence": "High",
+    "region": "Germany, Bremen, Bremen (Neustadt) \u2014 Friedrich-Ebert-Stra\u00dfe at Theater am Leibnizplatz"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bus stop sign on a pole at the left sidewalk",
+        "non_geolocation_element": "white rectangular sign, green-yellow circular emblem, metal pole, glass shelter nearby, overcast lighting",
+        "geolocation_element": "readable stop name 'Theater am Leibnizplatz'; German language; tram/bus line numbers 4, 6, N4; German 'H' Haltestelle symbol",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on the black hatchback at the road center",
+        "non_geolocation_element": "white plate, black alphanumeric text, blue left strip, EU stars, standard rear mounting",
+        "geolocation_element": "EU plate with German 'D' country identifier and German-style font/format",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead wire above the roadway at the center",
+        "non_geolocation_element": "thin dark cable, suspended over street, small hangers, cloudy sky background",
+        "geolocation_element": "tram/trolley overhead line indicating a city with tram system matching Bremen lines",
+        "target_concept": "overhead wire",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bus stop disk on a pole at the corner building on the right",
+        "non_geolocation_element": "round sign, yellow rim with green 'H', mounted on gray pole, adjacent red-brick facade",
+        "geolocation_element": "German 'H' Haltestelle disk confirming transit stop placement near Leibnizplatz",
+        "target_concept": "bus stop disk",
+        "properties": [
+          "country level clue",
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "advertising poster inside the glass shelter on the left",
+        "non_geolocation_element": "rectangular poster, red-blue-white colors, glossy paper, inside glass frame",
+        "geolocation_element": "German-language words on the poster supporting location in Germany",
+        "target_concept": "advertising poster",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/bremen/bremen_000252_000019_leftImg8bit.png"
+}

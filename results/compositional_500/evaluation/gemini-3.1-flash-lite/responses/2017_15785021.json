@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image features an individual in a performance costume, which qualifies as personal attribute data. While the face has been redacted, the overall physical appearance and the specific context of the performance represent a moderate privacy risk. The person's identity is concealed, lowering the risk compared to an unredacted face, but personal physical traits remain visible.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Upper body and torso of a person in a belly dancing costume",
+        "Anonymized_element": "Generic theatrical costume, non-distinctive stage attire, neutral background",
+        "privacy_element": "Physical appearance, body type, age-related traits, specific performance attire",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15785021/final/2017_15785021_final.png"
+}

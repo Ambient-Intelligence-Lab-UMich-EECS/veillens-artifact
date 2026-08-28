@@ -1,0 +1,71 @@
+{
+  "reasoning": "The crop shows a public street gathering with multiple clearly identifiable faces and readable storefront signage. The highest-severity elements are several unobstructed faces (biometric identifiers). Additional contextual clues like a readable business sign and a distinctive building facade can reveal location, and a hand-held national flag indicates participation in a public demonstration (activity). These cues together raise identification and contextual exposure risk. Given multiple Level 1 faces reinforced by Level 3 location and activity signals, the privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bearded man on the right wearing a brown shirt, side-profile face visible",
+        "Anonymized_element": "blurred face region, generic skin-tone patch, removed facial hair detail",
+        "privacy_element": "identifiable facial features, side-profile biometrics, beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person near center-left in dark jacket with a clear frontal face",
+        "Anonymized_element": "blurred face, generic oval without eyes/nose/mouth",
+        "privacy_element": "full frontal facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman left-middle wearing sunglasses with lower face visible",
+        "Anonymized_element": "blur lower face and eye region, replace with neutral shading",
+        "privacy_element": "partially occluded yet identifiable facial structure, mouth and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront sign reading DRYFAST on the building at upper left",
+        "Anonymized_element": "blank storefront fascia, remove text/logo, generic solid panel",
+        "privacy_element": "readable business name indicating place",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "American flag on a pole held above the crowd near center-left",
+        "Anonymized_element": "plain generic flag with no emblem or text",
+        "privacy_element": "flag as indicator of public demonstration context",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12904841/r1_crops/2017_12904841_0.png"
+}

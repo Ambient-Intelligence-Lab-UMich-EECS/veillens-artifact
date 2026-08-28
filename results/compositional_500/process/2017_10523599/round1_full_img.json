@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows football players from behind wearing helmets and pads, so no identifiable faces are visible. The most privacy-relevant element is a jersey back with a readable team name and large number, which indicates the person\u2019s activity (team sport participation) and could weakly identify them within a specific team context. No government IDs, financial, medical, or explicit location details are present. Overall risk is low due to absence of Level 1 or 2 identifiers and obscured biometrics.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "back of a football jersey with the word 'RAVENS' and the number '22'",
+        "Anonymized_element": "plain jersey back, no team name, no number, generic texture",
+        "privacy_element": "readable team name text, jersey number",
+        "target_concept": "sports jersey",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10523599.jpg"
+}

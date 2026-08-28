@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows two individuals standing on a wooden deck outdoors. Both have unobstructed, front-facing faces that are clearly identifiable, which constitutes Level 1 biometric data. Additionally, the person on the right wears a gray polo with a readable organization logo/acronym, introducing a Level 2 non-unique identifier that could link identity to an affiliation. These cues reinforce each other, yielding a high overall privacy risk. No government IDs, financial, or medical data are visible. Confidence is high due to clarity and central placement of the clues.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person's face in frontal view, unobstructed",
+        "Anonymized_element": "blurred or pixelated face, face covered with mask, head turned away",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "center-right person's face in frontal view, unobstructed",
+        "Anonymized_element": "blurred or pixelated face, face covered with mask, head turned away",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "embroidered logo/text on gray polo shirt chest",
+        "Anonymized_element": "plain polo shirt, no text or logo, solid color",
+        "privacy_element": "readable organization acronym/logo on clothing",
+        "target_concept": "shirt logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12399182/r1_crops/2017_12399182_0.png"
+}

@@ -1,0 +1,21 @@
+{
+  "img_id": "1867",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 6,
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are walking side-by-side in a synchronized manner, suggesting they are companions. Their coordinated presence in this setting indicates a social bond. => friends\n\n[P1-P3]: P3 is walking in the same general direction as P1 and P2, but maintains a slight distance and doesn't show direct interaction. It is most likely they are part of the same social group walking together. => friends\n\n[P1-P4]: P4 is walking away from the group in a different direction and does not appear to be interacting with P1. Their separation in space and orientation suggests they are not connected. => no-relationship\n\n[P2-P3]: P2 and P3 are walking in the same direction alongside P1, implying they are all part of a larger group walking together. Their spatial proximity and shared context suggest a social connection. => friends\n\n[P2-P4]: P4 is walking away from the area while P2 continues in their original path, with no indication of interaction or recognition. They appear to be unrelated individuals in a public space. => no-relationship\n\n[P3-P4]: P4 is walking in a separate direction and is physically distant from P3. There is no visual evidence of communication or affiliation between them. => no-relationship",
+  "timestamp": 1779942214.1660001
+}

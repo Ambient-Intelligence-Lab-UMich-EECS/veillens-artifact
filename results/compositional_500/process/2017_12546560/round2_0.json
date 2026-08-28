@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows two identifiable faces of athletes seated on a podium, with a third person\u2019s face obscured. Visible wheelchairs imply disability, which is a sensitive attribute. Uniform cues include a large \u201cAUSTRALIA\u201d text and a national flag patch, and a stadium banner with partial \u201cLond\u2026\u201d suggests a specific event/location. The highest-severity elements are the clear faces (Level 1), reinforced by sensitive-inference (wheelchairs) and location/affiliation clues, yielding a high overall privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left athlete\u2019s profile face visible above yellow jacket",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, generic head silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right athlete\u2019s face in three-quarter view above white polo",
+        "Anonymized_element": "blurred or pixelated face, turned-away head, generic head silhouette",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wheelchair under left athlete with large wheel and frame visible",
+        "Anonymized_element": "neutral seating platform, generic chair base without medical/assistive cues",
+        "privacy_element": "wheelchair indicating disability/assistive device",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "purple stadium banner in background with partial text 'Lond\u2026'",
+        "Anonymized_element": "blank banner, abstract pattern, no readable text",
+        "privacy_element": "event/location text suggesting a specific venue/city",
+        "target_concept": "event banner text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow jacket with large vertical 'AUSTRALIA' text on chest",
+        "Anonymized_element": "plain jacket, no text or logos, generic solid color",
+        "privacy_element": "team/country name indicating affiliation",
+        "target_concept": "team uniform text",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small rectangular national flag patch on right athlete\u2019s white polo",
+        "Anonymized_element": "blank patch, solid color, no emblem",
+        "privacy_element": "national flag indicating country affiliation",
+        "target_concept": "flag patch",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12546560/r1_crops/2017_12546560_0.png"
+}

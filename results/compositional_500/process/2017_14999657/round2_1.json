@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a waterfront walkway with a dock and part of a residential house exterior; the person is fully masked so no biometric details are visible. There are no readable signs, addresses, or unique identifiers. The remaining privacy risk stems from contextual location cues (a distinctive lakeside dock/shoreline) and the visible house exterior, which can hint at property. These are moderate-to-low level clues without direct identifiers, leading to a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "corner of a beige house with horizontal siding along the left edge",
+        "Anonymized_element": "replace with generic hedge or sky, smooth texture with no architectural details",
+        "privacy_element": "recognizable home exterior style and materials suggesting a specific residence",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "narrow dock extending into a lake at the center background",
+        "Anonymized_element": "generic shoreline, blur dock shape, replace with open water",
+        "privacy_element": "distinctive waterfront structure and shoreline that could hint at a specific location",
+        "target_concept": "dock/shoreline landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14999657/r1_crops/2017_14999657_1.png"
+}

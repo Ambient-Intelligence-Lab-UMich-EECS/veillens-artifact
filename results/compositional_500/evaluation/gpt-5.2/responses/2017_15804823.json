@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image shows two people at a street protest. At least two identifiable faces are clearly visible (center seated person and left-standing person), which is Level 1 biometric data. Multiple protest placards include legible text expressing a stance about Scientology, enabling sensitive inference about religious/political views (Level 2). The combination of identifiable faces with explicit belief-related signage substantially elevates risk. No government IDs, financial, or medical data are visible. Given clear, central faces and readable sensitive text, the overall privacy risk is high.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated person at center with unobstructed face looking left",
+        "Anonymized_element": "blurred face, pixelated facial region, replaced with generic silhouette",
+        "privacy_element": "full face, clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "standing person on the left with side-profile face visible",
+        "Anonymized_element": "blurred face, pixelated profile, generic silhouette",
+        "privacy_element": "recognizable facial profile, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "white protest sign held by the seated person reading 'SCIENTOLOGY IS NOT A RELIGION!'",
+        "Anonymized_element": "blank poster, abstract pattern, generic slogan with no beliefs",
+        "privacy_element": "explicit stance on religion/politics, readable text",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "additional protest placard on the ground right of the chair with readable warning/cult-related text",
+        "Anonymized_element": "blank board, non-informative geometric pattern",
+        "privacy_element": "belief-related messaging enabling sensitive inference",
+        "target_concept": "protest placard",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15804823/final/2017_15804823_final.png"
+}

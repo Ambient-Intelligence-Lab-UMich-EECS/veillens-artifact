@@ -1,0 +1,47 @@
+{
+  "reasoning": "A single person is centered and clearly visible while riding a recumbent tricycle. The full unobstructed face provides strong biometric identification (Level 1). Additional contextual clues include the specific activity of cycling and a distinctive tricycle with visible model branding, which add moderate contextual risk but do not reveal explicit identifiers. With a high-quality, front-facing face as the dominant element, the overall privacy risk is high. Confidence is high due to clarity and proximity of the subject.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of the rider with clear facial features",
+        "Anonymized_element": "blurred or pixelated face, solid-color oval mask, visor obscuring facial features",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth, smile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rider actively pedaling a recumbent tricycle",
+        "Anonymized_element": "neutral seated posture without motion cue, generic stationary pose",
+        "privacy_element": "specific activity of cycling/recumbent trike riding",
+        "target_concept": "activity posture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red recumbent tricycle frame with visible model branding",
+        "Anonymized_element": "generic unbranded bicycle frame, solid color with no logos",
+        "privacy_element": "distinctive vehicle type and brand text",
+        "target_concept": "bicycle frame/branding",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12307170.jpg"
+}

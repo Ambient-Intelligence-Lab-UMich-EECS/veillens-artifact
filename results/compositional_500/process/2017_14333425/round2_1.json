@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a dense outdoor crowd with multiple clearly visible faces in the foreground and midground. These unobscured facial features constitute biometric identifiers (Level 1). No government IDs, names, or financial/medical info are visible. The presence of several identifiable faces reinforces the risk, while other contextual clues are minimal. Overall, the risk is driven by multiple Level 1 biometric cues, yielding a high but not extreme score. Confidence is high because the faces are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a woman with short light-brown hair wearing glasses on the right foreground",
+        "Anonymized_element": "face blurred or pixelated, turned away, generic silhouette head",
+        "privacy_element": "clear facial features with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a man with short gray hair in the center-left foreground",
+        "Anonymized_element": "face blurred, pixelated, or replaced with neutral head shape",
+        "privacy_element": "distinct facial structure and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "profile face of a woman with dark hair in a ponytail wearing glasses on the left foreground",
+        "Anonymized_element": "profile turned further away, blurred or pixelated silhouette",
+        "privacy_element": "recognizable profile with nose, mouth, and jawline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of an older man with thinning gray hair near the center-right",
+        "Anonymized_element": "apply blur/pixelation or replace with generic head without features",
+        "privacy_element": "unobstructed facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a man wearing dark sunglasses in the mid-left area",
+        "Anonymized_element": "face turned away or fully blurred/pixelated",
+        "privacy_element": "exposed lower-face features and head shape enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14333425/r1_crops/2017_14333425_1.png"
+}

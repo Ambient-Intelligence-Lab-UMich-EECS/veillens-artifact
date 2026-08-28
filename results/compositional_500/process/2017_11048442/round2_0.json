@@ -1,0 +1,45 @@
+{
+  "reasoning": "The primary subject\u2019s face is obscured, reducing direct biometric risk, but multiple background individuals have visible, potentially identifiable faces. Additionally, the central subject wears a bondage-style harness over a tight bodysuit, which constitutes intimate/sexualized attire. The combination of Level 1 background faces and Level 2 intimate content yields a moderate-to-high privacy risk despite the main face being blurred. Score reflects identifiable bystanders plus sensitive attire; confidence is medium due to midground distance of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "background person in pink shirt with uncovered face, right-middle of frame",
+        "Anonymized_element": "blurred face, pixelated features, masked or turned-away head",
+        "privacy_element": "visible facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background person in white shirt with backpack, uncovered profile face at right side",
+        "Anonymized_element": "blurred profile, pixelation, mask or head turned away",
+        "privacy_element": "recognizable facial profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "subject\u2019s black bondage-style harness straps over white bodysuit at center",
+        "Anonymized_element": "plain non-suggestive straps or removed harness, generic clothing without sexualized elements",
+        "privacy_element": "sexualized/fetish-style harness implying intimate content",
+        "target_concept": "intimate attire",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11048442/r1_crops/2017_11048442_0.png"
+}

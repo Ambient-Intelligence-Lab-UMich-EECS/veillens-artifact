@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a UK rail ticket with clearly legible printed details. No faces or government IDs are present (no Level 1). However, the ticket reveals specific travel metadata: origin and destination stations, an exact date and print time, route validity, and a visible ticket/serial number. These provide location information and indicate an activity (a particular journey at a particular time). Multiple Level 3 clues (location and behavior) combine with a Level 4 document/identifier clue (ticket number) to create a moderate privacy risk. The information is central, sharp, and readable, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed origin and destination text on the ticket reading From COGAN and To NINIAN PARK",
+        "Anonymized_element": "replace station names with generic placeholders, blur or mask station text, use nonspecific labels like FROM A / TO B",
+        "privacy_element": "readable station names revealing travel endpoints",
+        "target_concept": "origin/destination text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed date and time fields on the ticket (e.g., 27-SEP-15 and printed time 16:10)",
+        "Anonymized_element": "obscure or replace with dummy dates/times, partial masking of numerals",
+        "privacy_element": "specific travel date and exact print time indicating when the trip occurred",
+        "target_concept": "date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ticket serial/reference number printed near the top right of the ticket",
+        "Anonymized_element": "blank area or randomized digits, blur the number string",
+        "privacy_element": "readable ticket number that can be tied to a specific transaction",
+        "target_concept": "ticket number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13999089.jpg"
+}

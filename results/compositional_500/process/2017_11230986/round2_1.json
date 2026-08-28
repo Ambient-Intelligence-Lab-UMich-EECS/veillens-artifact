@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a Spanish \u201cLoter\u00eda Nacional\u201d lottery ticket with clearly legible barcode/serial numbers, series and fraction identifiers, date, and price. No faces or names are present. The most sensitive aspect is the behavioral/location inference (participation in a specific national lottery in Spain on a given date), which is Level 3. Additional Level 4 elements (barcode and serial identifiers on a generic document) reinforce traceability but do not on their own identify a person. Overall this yields a moderate privacy risk with high confidence due to readable details.",
+  "personal_info_privacy_score": {
+    "score": 0.26,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "machine-readable barcode with long numeric code along the bottom edge of the ticket",
+        "Anonymized_element": "blank strip, generic barcode placeholder without numbers, solid color band",
+        "privacy_element": "barcode pattern, full numeric serial code string",
+        "target_concept": "barcode/serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "central ticket text panel showing 'LOTER\u00cdA NACIONAL', draw date, and price '20 euros'",
+        "Anonymized_element": "generic voucher design with no organization name, no date, no price text",
+        "privacy_element": "organization name, draw date, price indicating lottery purchase",
+        "target_concept": "lottery ticket text panel",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "right-side vertical ribbon with '118\u00aa SERIE' and '5\u00aa FRACCI\u00d3N' numbers",
+        "Anonymized_element": "blank decorative ribbon without numbers or labels",
+        "privacy_element": "series and fraction identifiers unique to the ticket",
+        "target_concept": "ticket series/fraction panel",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11230986/r1_crops/2017_11230986_1.png"
+}

@@ -1,0 +1,19 @@
+{
+  "img_id": "14724",
+  "predictions": {
+    "1 2": 4,
+    "1 3": 6,
+    "1 4": 4,
+    "2 3": 6,
+    "2 4": 4
+  },
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 6,
+    "2 3": 6,
+    "2 4": 4,
+    "1 4": 4
+  },
+  "raw_response": "[P1-P2]: Both individuals are wearing the same military uniform and are present in the same setting, indicating they are colleagues in the armed forces. => professional\n[P1-P3]: P1 is a soldier standing in the background while P3, a reporter, conducts an interview with someone else, showing no direct interaction or relationship between them. => no-relationship\n[P1-P4]: Both men are wearing matching military uniforms, suggesting they serve together and are professional colleagues. => professional\n[P2-P3]: P2 is in the background observing or waiting while P3 conducts an interview, making them mere bystanders to each other with no direct connection. => no-relationship\n[P2-P4]: The shared military attire indicates they belong to the same organization, pointing to a professional relationship as colleagues. => professional",
+  "timestamp": 1779942579.5243092
+}

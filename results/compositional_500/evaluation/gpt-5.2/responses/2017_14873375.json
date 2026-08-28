@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a close-up of a person’s hand holding a fully blank/obscured rectangular card. No face, IDs, financial numbers, or readable text are present. The only potentially identifying element is the visible hand, which provides minor physical characteristics but not strong biometric detail. Thus the highest severity is Level 3 (personal attributes) with weak supporting context, yielding a low overall risk. Confidence is high because the card content is clearly unreadable and no other identifiers are visible.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up of a person’s hand and fingertips holding the card",
+        "Anonymized_element": "gloved hand, cropped frame excluding hand, blurred skin texture",
+        "privacy_element": "distinctive skin features or marks on fingers and nails",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "blank rectangular card with rounded corners held in foreground",
+        "Anonymized_element": "plain generic rectangle, solid-color prop without card-like detailing",
+        "privacy_element": "card-like form factor implying a document, but no readable data",
+        "target_concept": "generic card/document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14873375/final/2017_14873375_final.png"
+}

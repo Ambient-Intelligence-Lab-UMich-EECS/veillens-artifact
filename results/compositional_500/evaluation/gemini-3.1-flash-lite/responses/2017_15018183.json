@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image features a large commercial tanker ship. The vessel's name 'STENA PENGUIN' and the company name 'Stena Bulk' are visible. These identify a commercial asset rather than a private individual. As there is no identifiable human, personal data, or private location being revealed, the privacy risk is extremely low, categorizing it as property-related information without compromising individual privacy.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Large cargo ship hull with text lettering",
+        "Anonymized_element": "generic ship hull, no text, plain paint",
+        "privacy_element": "ship name 'STENA PENGUIN', company name 'Stena Bulk'",
+        "target_concept": "ship name",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15018183/final/2017_15018183_final.png"
+}

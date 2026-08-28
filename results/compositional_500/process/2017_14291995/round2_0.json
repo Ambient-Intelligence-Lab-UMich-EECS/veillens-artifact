@@ -1,0 +1,37 @@
+{
+  "reasoning": "The crop shows a dimly lit stage with a musician on the left whose face is partially visible under red lighting, and hands playing a violin. The right person\u2019s face is obscured. The clearest privacy signal is the partially identifiable face (Level 1 biometric). Additional contextual clues reveal musical performance behavior via close-up hands holding a violin and bow (Level 3). No names, documents, or location identifiers are visible. Given one partially visible face and activity cues, the privacy risk is moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially lit left-side musician\u2019s face in profile under red stage light",
+        "Anonymized_element": "face blurred or replaced with generic smooth skin patch, stronger shadow, turned-away head",
+        "privacy_element": "visible facial structure (eyes, nose, mouth), hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "close-up of left musician\u2019s hands holding a violin and bow",
+        "Anonymized_element": "hands simplified or occluded, instrument shown without hand details, plain gloves",
+        "privacy_element": "unique hand features, jewelry; clear depiction of playing an instrument",
+        "target_concept": "hands with instrument",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14291995/r1_crops/2017_14291995_0.png"
+}

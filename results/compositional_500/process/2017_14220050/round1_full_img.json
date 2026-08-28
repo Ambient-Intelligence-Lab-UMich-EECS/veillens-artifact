@@ -1,0 +1,86 @@
+{
+  "reasoning": "The image shows two SNCF memo e-tickets with clearly legible personal and trip details. The highest-severity elements are Level 2 non-unique identifiers: the passenger\u2019s full name appears on both tickets, along with booking reference (dossier) and e-ticket numbers. These are reinforced by Level 3 location and behavior data, including specific travel dates, times, routes between identifiable stations, and seat/coach assignments. The combination of multiple Level 2 identifiers with detailed itinerary information yields a high privacy risk. The text is sharp and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed passenger name at the right end of the top ticket",
+        "Anonymized_element": "blank area, generic placeholder text, blurred text region",
+        "privacy_element": "full passenger name text",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed passenger name at the right end of the bottom ticket",
+        "Anonymized_element": "blank area, generic placeholder text, blurred text region",
+        "privacy_element": "full passenger name text",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Alphanumeric booking reference labeled Dossier near the lower left of the top ticket",
+        "Anonymized_element": "randomized code, masked characters, blank label",
+        "privacy_element": "booking reference (PNR/dossier code)",
+        "target_concept": "booking code",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Numeric e-ticket number string near the bottom left of the bottom ticket",
+        "Anonymized_element": "masked number, generic placeholder digits, blank field",
+        "privacy_element": "unique e-ticket number",
+        "target_concept": "ticket number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Route and schedule block on the top ticket showing Paris Gare Lyon \u2192 Marseille St Char \u2192 Antibes with dates/times and seat/coach",
+        "Anonymized_element": "generic route labels, removed station names and times, randomized seat/coach",
+        "privacy_element": "travel dates and times, station names, coach and seat numbers",
+        "target_concept": "itinerary text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Route and schedule block on the bottom ticket showing Antibes \u2192 Marseille St Char \u2192 Paris Gare Lyon with dates/times and seat/coach",
+        "Anonymized_element": "generic route labels, removed station names and times, randomized seat/coach",
+        "privacy_element": "travel dates and times, station names, coach and seat numbers",
+        "target_concept": "itinerary text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14220050.jpg"
+}

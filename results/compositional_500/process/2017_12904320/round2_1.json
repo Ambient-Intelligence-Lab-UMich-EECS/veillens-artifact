@@ -1,0 +1,57 @@
+{
+  "reasoning": "This office crop shows two people with faces obscured, so biometric identification is mitigated. The main privacy risk is a visible workplace ID badge on a lanyard that could reveal a name, photo, or company if legible (Level 2). Additional low-risk elements include an open laptop and a wall calendar and notes that might contain details, though text is not readable. With one Level 2 clue and several weak Level 4 clues, the regional risk is moderate. Confidence is medium because specific text on the badge or documents is not legible.",
+  "personal_info_privacy_score": {
+    "score": 0.34,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "plastic ID badge on a lanyard worn by the standing person",
+        "Anonymized_element": "blank card, no text or logo, solid-color lanyard",
+        "privacy_element": "potential employee name, photo, company logo, barcode/ID number",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "open laptop on the desk with screen angled toward the right",
+        "Anonymized_element": "closed laptop or blank lock screen, no visible stickers",
+        "privacy_element": "on-screen content, open applications, visible documents",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "wall calendar pinned on the blue partition behind the seated person",
+        "Anonymized_element": "blank calendar with no dates or text, generic grid",
+        "privacy_element": "dates, schedules, event names, workplace details",
+        "target_concept": "calendar",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "sticky notes pinned on the partition board",
+        "Anonymized_element": "blank notes or abstract shapes with no writing",
+        "privacy_element": "handwritten notes, task details, names or phone numbers",
+        "target_concept": "sticky notes",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12904320/r1_crops/2017_12904320_1.png"
+}

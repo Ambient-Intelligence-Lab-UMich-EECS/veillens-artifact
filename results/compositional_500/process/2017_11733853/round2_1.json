@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a parade scene with one background participant\u2019s side-profile face visible and another central person wearing a conspicuous blue orthopedic knee brace. The visible face constitutes biometric data (Level 1). The knee brace visually implies medical information about an injury or condition (Level 2). These clues jointly elevate the risk beyond general context. No names or explicit location markers are legible. Given a clear biometric cue plus sensitive medical device, the overall risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bright blue orthopedic knee brace strapped around the seated person\u2019s right knee",
+        "Anonymized_element": "plain leggings covering knee, generic non-medical knee sleeve, remove brace hardware",
+        "privacy_element": "orthopedic knee brace, medical device implying injury or treatment",
+        "target_concept": "knee brace",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background participant\u2019s side-profile face beneath a feathered headpiece",
+        "Anonymized_element": "face blurred, turned fully away, replaced with mask or back-of-head",
+        "privacy_element": "identifiable facial features profile including nose, mouth, eye outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11733853/r1_crops/2017_11733853_1.png"
+}

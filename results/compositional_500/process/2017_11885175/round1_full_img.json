@@ -1,0 +1,72 @@
+{
+  "reasoning": "The scene shows a group of people at an outdoor venue. Several individuals\u2019 faces are clearly visible at close range, providing biometric identifiers and enabling inference of personal attributes. No names, documents, or explicit addresses are readable. The highest severity present is Level 1 due to multiple identifiable faces, which together increase re-identification risk even without other identifiers. Therefore the score is high-moderate, driven primarily by several unobstructed faces; confidence is high because these cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground man in gray long-sleeve shirt facing right; full side-profile face visible",
+        "Anonymized_element": "blurred or pixelated face, turned head away, generic skin-tone patch",
+        "privacy_element": "identifiable facial features, eyes/nose/mouth profile, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in red cardigan and yellow shirt at center-left; face in three-quarter view",
+        "Anonymized_element": "face blurred, pixelated, or replaced with neutral oval; head turned away",
+        "privacy_element": "clear facial features, eyes and nose visible, distinct beard/hair",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in blue jacket behind center figures; front-facing face",
+        "Anonymized_element": "blurred face, pixelation, add obstructing object like sunglasses/hat",
+        "privacy_element": "frontal facial features visible, hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person in floral top with headband near center; partial front face visible",
+        "Anonymized_element": "pixelated or blurred face, head turned, neutral placeholder",
+        "privacy_element": "eyes, nose, mouth visible enough for recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young person at far left wearing cap, bending forward; face partially visible in profile",
+        "Anonymized_element": "face blurred or occluded, cap brim extended to hide face",
+        "privacy_element": "partial facial profile, nose/mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11885175.jpg"
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows an indoor scene with an ornate mirror and a large gray silhouette of a person. Facial features and identifiers are completely obscured, with no readable text, documents, or unique location indicators. There are no Level 1\u20132 elements; only a weak Level 4 cue from the human silhouette implying presence and vague physical attributes. Thus the privacy risk is low, with high confidence due to clear absence of identifying details.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "gray silhouette of a person\u2019s head and shoulders on the left side of the frame",
+        "Anonymized_element": "replace with generic wall texture or background, remove human outline",
+        "privacy_element": "human silhouette implying presence and body outline without identifiable facial features",
+        "target_concept": "person silhouette",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12706979/r1_crops/2017_12706979_0.png"
+}

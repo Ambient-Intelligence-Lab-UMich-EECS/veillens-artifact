@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows the corner/edge of a rectangular paper or photo placed on a wooden surface, with the central content fully obscured. There are no visible faces, names, numbers, or other identifiable details. The only privacy-relevant cue is the presence of a generic document-like object, which is a low-risk Level 4 clue without any legible information. Hence, overall risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "edge of a rectangular paper/photo on a wooden table; interior content is fully greyed out",
+        "Anonymized_element": "remove paper; replace with plain table surface; or blank sheet with no text or imagery",
+        "privacy_element": "document-like object presence (content obscured)",
+        "target_concept": "document edge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12356862/r1_crops/2017_12356862_1.png"
+}

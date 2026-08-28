@@ -1,0 +1,50 @@
+{
+  "reasoning": "The crop shows a music festival stage with large, legible event banners (\u201cSummer of Love/40th\u201d) and a dense crowd viewed from a distance. Individual faces are small/blurred and not personally identifiable, so no biometric identifiers are exposed. Privacy signals mainly come from contextual clues: public event participation (activity) and the event name that could hint at location/time. These cues are moderate to low risk and not strongly identifying on their own, leading to a low overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "orange overhead banner with readable text \u2018SUMMER OF LOVE\u2019",
+        "Anonymized_element": "plain banner with abstract pattern, no text or logos",
+        "privacy_element": "legible event name text, distinctive logo style",
+        "target_concept": "event banner/sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "center stage backdrop with readable text \u2018Summer of Love 40th\u2019",
+        "Anonymized_element": "colorful backdrop without text or recognizable branding",
+        "privacy_element": "event name and anniversary text, distinctive graphics/logo",
+        "target_concept": "event banner/sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "dense crowd of attendees seen from behind and at a distance",
+        "Anonymized_element": "smaller or blurred crowd silhouettes",
+        "privacy_element": "presence at a public concert/festival, unidentifiable faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16061365/r1_crops/2017_16061365_1.png"
+}

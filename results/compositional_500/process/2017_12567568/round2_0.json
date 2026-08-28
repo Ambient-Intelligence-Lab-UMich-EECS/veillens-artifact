@@ -1,0 +1,68 @@
+{
+  "reasoning": "The crop shows a public street dance event with multiple participants whose faces are obscured, reducing biometric risk. However, several readable storefront signs (e.g., distinct restaurant and shop names and an hours sign) provide concrete location cues. Clothing with prominent \u201cZUMBA\u201d text and the visible group activity reveal behavioral information. Combined location and activity clues create a moderate privacy risk despite masked faces.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular storefront sign reading a distinctive restaurant name mounted above a building entrance",
+        "Anonymized_element": "blank signboard, generic colors, no text or logo",
+        "privacy_element": "readable business name that can pinpoint location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical signboard with legible text showing breakfast hours on the street side",
+        "Anonymized_element": "blank board, generic pattern, no readable text or numbers",
+        "privacy_element": "operating hours text that is unique to a specific venue",
+        "target_concept": "business hours sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "storefront awning/sign with the shop name visible above windows",
+        "Anonymized_element": "plain awning, no lettering, neutral color",
+        "privacy_element": "distinct shop name providing geolocation clue",
+        "target_concept": "shop sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "purple tank top on central participant with large readable word 'ZUMBA'",
+        "Anonymized_element": "plain tank top, solid color, no text or branding",
+        "privacy_element": "activity-revealing text indicating dance/fitness participation",
+        "target_concept": "clothing text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of participants marching/dancing in the street (faces obscured)",
+        "Anonymized_element": "reduced-detail silhouettes, motion blur, fewer distinct individuals",
+        "privacy_element": "presence of a crowd engaged in a public event",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12567568/r1_crops/2017_12567568_0.png"
+}

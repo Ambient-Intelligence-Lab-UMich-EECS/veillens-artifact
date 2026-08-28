@@ -1,0 +1,32 @@
+{
+  "img_id": "6450",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 4,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: They are on a house roof removing shingles; both wear work clothes/jeans and hold tools, standing several feet apart with task-focused posture and no physical interaction. The setting and attire suggest coworkers on a roofing job. => professional\n\n[P1-P3]: Both are engaged in roof demolition; P1 stands to the right while P3 uses a tool on the left, not interacting or showing affection. Their similar work attire and the construction setting indicate a work crew. => professional\n\n[P1-P4]: On the same roof job, P1 and P4 are a few meters apart, each handling debris/tools with no physical contact. Matching workwear and the construction environment imply colleagues. => professional\n\n[P2-P3]: These two are closest on the left side, both using tools and focused on the task without contact or personal gestures. Their gear and the roofing setting point to coworkers. => professional\n\n[P2-P4]: They are separated across the roof, each working independently with tools and wearing work jeans/boots. The scene is a construction site, indicating a professional relationship. => professional\n\n[P3-P4]: Both are mid-roof, moving/working on shingles with similar attire and no intimate interaction. The shared construction activity suggests they are colleagues. => professional",
+  "timestamp": 1776888897.2675855
+}

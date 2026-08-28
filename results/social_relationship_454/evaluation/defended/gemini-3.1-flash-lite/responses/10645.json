@@ -1,0 +1,21 @@
+{
+  "img_id": "10645",
+  "predictions": {
+    "3 4": 4,
+    "3 5": 6,
+    "3 6": 6,
+    "4 5": 4,
+    "4 6": 4,
+    "5 6": 6
+  },
+  "ground_truth": {
+    "4 6": 6,
+    "4 5": 6,
+    "5 6": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "raw_response": "[P3-P4]: P3 and P4 appear to be engaged in a shared public presentation or event, with P4 positioned as a speaker and P3 as a participant or assistant. Their interaction is formal and centers around the activity on screen. => professional\n\n[P3-P5]: P5 is in the audience and appears to be observing the presentation on stage, sharing the same environmental context as P3. There is no evidence of direct interaction or personal connection between them. => no-relationship\n\n[P3-P6]: P6 is a member of the audience in the foreground, showing no direct social engagement with the speaker P3 on stage. Their spatial relationship suggests they are merely bystanders in the same venue. => no-relationship\n\n[P4-P5]: P5 is an audience member recording or watching the presentation given by P4. This represents a typical, non-personal interaction between a presenter and an attendee. => professional\n\n[P4-P6]: P6 is an audience member attending the presentation given by P4. There is no direct personal connection or interaction between them beyond the speaker-audience dynamic. => professional\n\n[P5-P6]: Both P5 and P6 are situated in the audience, likely as members of the crowd at the same event. There is no indication that they know each other or are interacting. => no-relationship",
+  "timestamp": 1779945366.9112396
+}

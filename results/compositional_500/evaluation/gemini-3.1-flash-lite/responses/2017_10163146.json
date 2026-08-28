@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image features a high-end bicycle, which is a piece of personal property. There are no identifiable faces, personal identifiers, location-specific markers, or other sensitive information visible. The bike frame shows a brand name, but this is a generic consumer product and does not constitute a personal privacy risk. Therefore, the risk score is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Road bicycle frame",
+        "Anonymized_element": "Generic blank bicycle frame with no branding or logos",
+        "privacy_element": "Brand name BURA SL and RYDE visible on the frame",
+        "target_concept": "property",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10163146/final/2017_10163146_final.png"
+}

@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image features a woman posing on a wooden deck. While her face is obscured by a digital mask, her body, hair, and clothing remain visible, which provides personal attribute information. Two other individuals in the frame have also been digitally masked or silhouettes, further reducing identifiable biometric risk. The scene is set in an outdoor, generic residential or recreational area with no unique identifiers or landmarks. The overall privacy risk is low, primarily limited to personal physical attributes and non-identifiable activities.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Woman standing on a wooden deck wearing a black t-shirt and shorts",
+        "Anonymized_element": "generic figure, silhouette, stylized person, no discernible personal features",
+        "privacy_element": "physical appearance, body shape, hair style, clothing",
+        "target_concept": "personal attributes",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Wooden deck and forested background",
+        "Anonymized_element": "neutral outdoor background, blurred foliage, generic wooden surface",
+        "privacy_element": "background information, non-identifiable location context",
+        "target_concept": "location/background",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12399182/final/2017_12399182_final.png"
+}

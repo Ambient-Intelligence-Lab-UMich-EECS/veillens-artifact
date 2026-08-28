@@ -1,0 +1,43 @@
+{
+  "reasoning": "A single person is visible from behind with no face or readable text, so there are no biometric or identifier exposures. The main privacy cues are personal attributes such as body shape, hairstyle, and distinctive clothing, plus contextual activity of being near a recognizable graffiti mural. These are Level 3 clues and do not on their own reveal identity or sensitive data. Given the absence of faces, IDs, or text, the overall risk is low but nonzero due to potentially recognizable appearance and context.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Back view of a person wearing a patterned skirt and tank top",
+        "Anonymized_element": "plain clothing, muted colors, generic pattern, slight blur of body contour",
+        "privacy_element": "recognizable body shape, distinctive clothing pattern, visible shoulders and legs",
+        "target_concept": "person from behind",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Double ponytails with red hair ties on the person's head",
+        "Anonymized_element": "neutral hair bun or cap, plain hair ties, blur hair details",
+        "privacy_element": "unique hairstyle and accessories that can aid recognition",
+        "target_concept": "hairstyle",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Colorful graffiti mural on a concrete slab near the person",
+        "Anonymized_element": "plain painted surface, generic abstract shapes without unique style",
+        "privacy_element": "distinctive artwork that may hint at specific place or subculture",
+        "target_concept": "graffiti mural",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14726150/final/2017_14726150_final.png"
+}

@@ -1,0 +1,83 @@
+{
+  "reasoning": "The crop shows a public parade with multiple clearly identifiable faces on and around a float (Level 1). Readable street signs reveal an exact intersection, providing precise location (Level 3). Event signage (\u201cCommunity Health Center\u201d) and prominent rainbow Pride graphics/flags suggest participation in an LGBTQ-themed event, enabling sensitive inference about attendees (Level 2). The combination of several Level 1 biometric cues with specific location and sensitive-context indicators yields a high privacy risk. Confidence is high due to clear visibility and legible text.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing man on parade float wearing a white tank top with a rainbow graphic",
+        "Anonymized_element": "blurred face, neutral solid-color shirt without graphics",
+        "privacy_element": "clear facial features (eyes, nose, mouth), distinctive clothing graphic",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man on right side of float holding microphone, face partially turned toward camera with sunglasses",
+        "Anonymized_element": "blurred face, remove sunglasses detail",
+        "privacy_element": "identifiable facial structure and profile, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "woman standing on float near right speaker looking toward camera",
+        "Anonymized_element": "blurred face",
+        "privacy_element": "full facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "intersection street signs reading 'Christopher St' and 'Bleecker St' mounted on a pole",
+        "Anonymized_element": "blank street signs, no text, generic shapes",
+        "privacy_element": "specific street names indicating precise location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "float banner reading 'CALLEN LORDE Community Health Center'",
+        "Anonymized_element": "plain banner with no text or logos",
+        "privacy_element": "organization name and health-related context visible",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow Pride graphics on participants\u2019 shirts and rainbow flags on the float",
+        "Anonymized_element": "solid-color shirts without symbols, plain flags with neutral colors",
+        "privacy_element": "Pride symbolism suggesting LGBTQ-related event or affiliation",
+        "target_concept": "Pride symbols",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15146106/r1_crops/2017_15146106_0.png"
+}

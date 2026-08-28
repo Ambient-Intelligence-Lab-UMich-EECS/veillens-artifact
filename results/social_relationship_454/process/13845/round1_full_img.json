@@ -1,0 +1,41 @@
+{
+  "img_id": "13845",
+  "ground_truth": {
+    "4 5": 4,
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "1 5": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "2 4": 4,
+    "3 4": 4,
+    "3 5": 4
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 1,
+    "2 4": 6,
+    "2 5": 6,
+    "3 4": 1,
+    "3 5": 6,
+    "4 5": 2
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 5,
+  "raw_response": "[P1-P2]: They are skiers on a snowy slope; P2 stands very close to P1 and turns toward him as if chatting, with relaxed posture and no contact, both in ski gear. => friends\n\n[P1-P3]: Same skiing scene, but they are separated by another person and face different directions with no engagement; just adjacent skiers on the slope. => no-relationship\n\n[P1-P4]: On the ski slope in similar attire, but they are several meters apart and not acknowledging each other; no visible interaction. => no-relationship\n\n[P1-P5]: Both are skiers in the same environment, but far apart with no eye contact or contact; the smaller skier appears occupied with someone else. => no-relationship\n\n[P2-P3]: Adjacent skiers in similar gear, standing side-by-side on the slope and oriented similarly as if pausing together. => friends\n\n[P2-P4]: Though in the same skiing setting, they are separated by another person and show no interaction or shared focus. => no-relationship\n\n[P2-P5]: Distant along the line on the slope with no engagement; only sharing the recreational space. => no-relationship\n\n[P3-P4]: These two stand very close in similar skiing stance and direction, suggesting they paused together during the activity. => friends\n\n[P3-P5]: Not next to each other and no sign of communication or contact despite the shared ski setting. => no-relationship\n\n[P4-P5]: Adult and child in ski gear standing very close and facing the same way, suggesting accompaniment/supervision during skiing. => family-members",
+  "timestamp": 1776887385.2924583
+}

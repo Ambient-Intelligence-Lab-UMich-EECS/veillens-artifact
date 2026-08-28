@@ -1,0 +1,60 @@
+{
+  "reasoning": "The crop shows several identifiable human faces in a public outdoor setting. At least three adults\u2019 faces are visible (one in profile center-left, one woman facing left with a headband, and one man on the right wearing sunglasses and a cap), plus a child\u2019s side face on the far left. These are Level 1 biometric clues, and they also reveal some personal attributes like apparent age and physical appearance. No readable names, IDs, or explicit location markers are visible. Multiple Level 1 faces drive a high privacy risk; clarity is moderate-to-good, so the score is elevated with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult male face in side profile near image center-left",
+        "Anonymized_element": "blurred face, pixelated features, solid-color oval mask",
+        "privacy_element": "identifiable facial structure with nose, mouth, hairline clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult female face with headband, looking left, mid-frame",
+        "Anonymized_element": "blurred face, pixelated features, neutral head covering without facial details",
+        "privacy_element": "recognizable facial features including eyes, nose, mouth; hairstyle visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult male face with sunglasses and cap on right side",
+        "Anonymized_element": "fully blurred facial area, opaque mask, remove distinct eyewear details",
+        "privacy_element": "facial outline and lower-face features with distinctive accessories (sunglasses, cap)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child\u2019s side face on far left while walking",
+        "Anonymized_element": "pixelated/blurred facial region, solid-color oval over face",
+        "privacy_element": "identifiable child facial profile with nose and mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11885175/r1_crops/2017_11885175_0.png"
+}

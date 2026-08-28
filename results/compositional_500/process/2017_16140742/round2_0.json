@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a close-up of hands playing an acoustic guitar with motion blur. No face, names, documents, or numbers are visible. The main privacy cues are activity evidence (playing guitar) and indirect context of a private indoor setting (bed frame), plus the presence of a personal asset (guitar). These are Level 3\u20134 clues and do not directly identify a person. Compositional risk remains low as there is no biometric or textual identifier. Score is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right hand strumming guitar strings in motion blur",
+        "Anonymized_element": "crop to instrument only, replace with neutral hand silhouette, increase blur to remove gesture detail",
+        "privacy_element": "visible human hand performing a specific hobby (guitar playing) indicating activity pattern",
+        "target_concept": "hand performing activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "acoustic guitar body with strings and sound hole",
+        "Anonymized_element": "generic instrument shape, no brand marks, simplified texture",
+        "privacy_element": "personal property implying ownership/possession of a guitar",
+        "target_concept": "guitar",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "wooden bed frame in the background",
+        "Anonymized_element": "plain wall background, abstract blur with no furniture details",
+        "privacy_element": "indoor bedroom furniture suggesting private home setting",
+        "target_concept": "bed frame",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16140742/r1_crops/2017_16140742_0.png"
+}

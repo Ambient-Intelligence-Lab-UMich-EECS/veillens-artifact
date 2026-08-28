@@ -1,0 +1,23 @@
+{
+  "reasoning": "This regional crop shows an event stage with many product boxes and three on-stage people already anonymized. The audience at the bottom includes several partially visible faces in dim light, but they are distant and not individually identifiable. There are no readable names, IDs, addresses, or financial/medical items. The highest visible risk is low-level from a crowd of unidentifiable individuals, so the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "group of audience members\u2019 heads and partially visible faces at the bottom of the frame in dim lighting",
+        "Anonymized_element": "convert to solid silhouettes, apply strong blur, reduce facial detail, darker shading",
+        "privacy_element": "multiple human faces partially visible though not individually identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12808296/r1_crops/2017_12808296_1.png"
+}

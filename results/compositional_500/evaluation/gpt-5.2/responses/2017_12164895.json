@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image shows an eye-exam machine in use with two people whose faces are fully obscured, so no biometric identifiers are visible. The scene clearly implies a medical/vision examination activity, which is a sensitive inference though not directly tied to an identifiable face. Some small pamphlets/documents with printed text appear on the table but no legible personal data is readable. The highest-severity element is the sensitive health-related activity (Level 2). With no readable IDs or faces, overall risk is moderate-low. Confidence is medium because the medical inference relies on contextual cues rather than explicit records.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "eye-exam machine with a person positioned at the chin rest and an operator’s hand on the control",
+        "Anonymized_element": "crop to machine only, remove people, generic lab equipment without interaction",
+        "privacy_element": "depicts ongoing medical eye examination, implies health/vision status and clinic visit",
+        "target_concept": "eye exam machine with patient",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "pamphlets and small papers on the instrument table",
+        "Anonymized_element": "blank papers, solid-color cards with no text or logos",
+        "privacy_element": "printed text and numbers that could contain personal or service details (not legible)",
+        "target_concept": "documents on table",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12164895/final/2017_12164895_final.png"
+}

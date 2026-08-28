@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows no identifiable faces. The main privacy-relevant elements are symbolic items suggesting LGBTQ pride and potential political affiliation: a blue balloon with a printed party-like logo/text, rainbow decorations (heart plush and draped fabric), and a rainbow wristband on a person\u2019s arm. These cues fall under sensitive inferences and activities/behavior, but lack direct identifiers. Overall risk is moderate due to multiple reinforcing sensitive-symbol clues without biometrics.",
+  "personal_info_privacy_score": {
+    "score": 0.36,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue balloon with printed logo and small text",
+        "Anonymized_element": "plain blue balloon, no logo, no text",
+        "privacy_element": "political-style logo, readable/recognizable text",
+        "target_concept": "balloon with logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow-striped heart plush decoration on float",
+        "Anonymized_element": "solid-color heart plush, muted single color",
+        "privacy_element": "rainbow pride symbolism implying sexual orientation or event participation",
+        "target_concept": "rainbow symbol",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow-colored fabric draped over railing",
+        "Anonymized_element": "plain fabric with neutral single color",
+        "privacy_element": "rainbow pride symbolism implying sexual orientation or affiliation",
+        "target_concept": "rainbow fabric",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow wristband on person\u2019s forearm at right edge",
+        "Anonymized_element": "plain single-color wristband, no rainbow pattern",
+        "privacy_element": "rainbow pride symbolism implying sexual orientation or event participation",
+        "target_concept": "wristband",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12793065/r1_crops/2017_12793065_0.png"
+}

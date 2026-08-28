@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows a man in a wheelchair from behind, a seated person in the background with a fairly visible face, and a nearby signboard with partial venue text. The most sensitive element is the identifiable face of the background person (Level 1). The wheelchair clearly implies a possible disability (Level 2), and a cigarette in the foreground person\u2019s hand reveals smoking behavior (Level 3). Partial signage may hint at a location but is not fully legible. Together these clues yield a moderate-to-high privacy risk; however, some elements are not perfectly clear, so confidence is medium.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of a seated person in the right background",
+        "Anonymized_element": "blurred face, turned head, generic silhouette",
+        "privacy_element": "full facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "foreground wheelchair frame and large rear wheel next to the person",
+        "Anonymized_element": "regular chair or neutralized mobility device with ambiguous form",
+        "privacy_element": "visible mobility aid implying disability status",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cigarette held in the foreground person\u2019s left hand",
+        "Anonymized_element": "empty hand, small neutral object like a pen, remove smoke",
+        "privacy_element": "smoking behavior",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical signboard on the left with multiple lines of partial 'Entrance' text",
+        "Anonymized_element": "blank sign, blurred text, generic pattern",
+        "privacy_element": "venue-related text hinting at location",
+        "target_concept": "signboard text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11845054/r1_crops/2017_11845054_0.png"
+}

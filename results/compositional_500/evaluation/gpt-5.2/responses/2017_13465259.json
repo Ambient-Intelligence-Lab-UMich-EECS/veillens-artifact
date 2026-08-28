@@ -1,0 +1,85 @@
+{
+  "reasoning": "The faces in the scene are fully obscured, and there are no visible names, documents, or financial/ID items. The primary privacy signals are contextual: multiple alcoholic drinks and an ashtray suggest specific leisure behaviors, and several personal electronic devices are present on the table. These are Level 3–4 clues that modestly reveal activities and possessions but do not directly identify anyone. With no Level 1–2 identifiers, overall risk is low-to-moderate based on combined behavioral context and personal items.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "two stemmed wine glasses containing white wine on the table",
+        "Anonymized_element": "empty water glasses, opaque cups, non-alcoholic beverage with no color cues",
+        "privacy_element": "visible alcoholic beverages implying drinking behavior",
+        "target_concept": "alcoholic drink",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "tall cocktail glass with pink mixed drink and straw",
+        "Anonymized_element": "plain tumbler with water, opaque mug, empty glass",
+        "privacy_element": "cocktail indicating alcohol consumption",
+        "target_concept": "alcoholic drink",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "glass ashtray with a cigarette butt near the front right of the table",
+        "Anonymized_element": "empty coaster, removed ashtray, clean table surface",
+        "privacy_element": "smoking paraphernalia indicating tobacco use",
+        "target_concept": "ashtray and cigarette butt",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "smartphone with green case placed on the table",
+        "Anonymized_element": "generic rectangular object with no screen details, coaster",
+        "privacy_element": "personal device presence implying ownership/usage",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "compact digital camera resting on the table",
+        "Anonymized_element": "generic box-shaped object without buttons or branding, coaster",
+        "privacy_element": "personal camera suggesting possession and potential stored photos",
+        "target_concept": "digital camera",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "tablet in a red cover lying on the table",
+        "Anonymized_element": "closed plain folio with no device details, book-shaped prop",
+        "privacy_element": "personal tablet device indicating ownership/usage",
+        "target_concept": "tablet",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "distant people standing in the background with faces not identifiable",
+        "Anonymized_element": "blurred silhouettes, empty background area",
+        "privacy_element": "presence of bystanders in a public setting",
+        "target_concept": "bystanders",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13465259/final/2017_13465259_final.png"
+}

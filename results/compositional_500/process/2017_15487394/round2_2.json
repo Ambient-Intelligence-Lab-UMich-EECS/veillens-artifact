@@ -1,0 +1,45 @@
+{
+  "reasoning": "This crop shows a crowd with several visible faces. The most prominent is a seated person in the lower center with discernible facial features despite some blur. Additional faces are partially visible in the background, including a standing woman and a man in a cap photographing. No names, documents, or location markers are legible. The highest severity present is Level 1 due to biometric facial data, but occlusion and motion blur lower identifiability. Combined faces in a public crowd imply moderate risk overall.",
+  "personal_info_privacy_score": {
+    "score": 0.44,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated person's face at lower center, slightly blurred but with eyes, nose, and mouth visible",
+        "Anonymized_element": "pixelated face, blurred oval, generic silhouette without facial details",
+        "privacy_element": "visible facial features enabling recognition (eyes, nose, mouth, hairstyle)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "standing woman's face in mid-left background wearing a light yellow top",
+        "Anonymized_element": "pixelated/blurred face, neutralized oval without features",
+        "privacy_element": "partially clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "2"
+      },
+      {
+        "object_description": "man with beige cap holding a camera at right-center, side profile of face visible",
+        "Anonymized_element": "obscured profile, blurred facial area, generic cap without facial details",
+        "privacy_element": "side-profile facial features (nose, mouth, cheek outline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15487394/r1_crops/2017_15487394_2.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a construction area with signage: a company banner on a trailer that includes a business name, website, and a phone number, and a roadside sign reading \u201cPEDESTRIAN WALKWAY.\u201d There are no people or faces, no government IDs, and no private personal identifiers. The visible text offers only generic or corporate information and weak location context. Thus risk is low, driven by minimal location cues and readable business contact text. Confidence is high due to clear visibility and straightforward content.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular company banner on the trailer with readable business name, website, and phone number",
+        "Anonymized_element": "blank banner, no text or logos, generic solid color panel",
+        "privacy_element": "readable company name, website URL, phone number",
+        "target_concept": "company banner/sign",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "metal roadside sign reading 'PEDESTRIAN WALKWAY' on a post",
+        "Anonymized_element": "blank sign, generic symbol only, no location-specific text",
+        "privacy_element": "readable location-related text indicating pedestrian path",
+        "target_concept": "street sign",
+        "severity_level": 4,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12981479/r1_crops/2017_12981479_0.png"
+}

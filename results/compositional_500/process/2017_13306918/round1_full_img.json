@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a small office meeting with four people whose faces are clearly visible and front-facing. These identifiable faces constitute Level 1 biometric data and dominate the privacy risk. Additional weak context about workplace activity is present but not revealing specific identifiers. No readable names, documents, or screens are visible. Given multiple clear faces and central framing, the overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman on the left with dark hair leaning forward, clear frontal face",
+        "Anonymized_element": "face blurred, cropped to back of head, replace with generic silhouette",
+        "privacy_element": "full identifiable face, eyes and facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in green polo standing center, looking down with unobstructed face",
+        "Anonymized_element": "face blurred, head turned away, generic placeholder head",
+        "privacy_element": "full identifiable face with eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on the right wearing glasses, partial profile but identifiable face",
+        "Anonymized_element": "face blurred, glasses without facial detail, side/back of head",
+        "privacy_element": "identifiable facial features visible despite glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in foreground right pointing, side profile with recognizable features",
+        "Anonymized_element": "profile blurred, crop to hand only, generic silhouette",
+        "privacy_element": "distinct facial profile with nose, mouth, and hairline visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13306918.jpg"
+}

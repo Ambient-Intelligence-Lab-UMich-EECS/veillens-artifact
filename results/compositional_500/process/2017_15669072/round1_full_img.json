@@ -1,0 +1,58 @@
+{
+  "reasoning": "The image shows a seated woman in the foreground with a clear, front-facing, high-resolution face and a very low-cut dress revealing pronounced cleavage. Several other audience members\u2019 faces are also visible, though slightly less sharp. The presence of identifiable faces constitutes Level 1 biometric data. The revealing neckline introduces Level 2 intimate content. There are no visible names, documents, or location markers. Combined Level 1 faces and Level 2 intimate exposure result in a high privacy risk. Confidence is high because these cues are central and unoccluded.",
+  "personal_info_privacy_score": {
+    "score": 0.69,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground woman\u2019s full, front-facing face",
+        "Anonymized_element": "face blurred or pixelated, partial profile, occluded with generic object, replaced with non-identifiable silhouette",
+        "privacy_element": "clear identifiable facial features (eyes, nose, mouth, skin texture)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "deep-plunge neckline on the woman\u2019s dress exposing cleavage",
+        "Anonymized_element": "higher neckline, modest cut, opaque fabric, added scarf or jacket",
+        "privacy_element": "exposed cleavage, intimate body area visibility",
+        "target_concept": "revealing clothing/cleavage",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background man\u2019s face in profile near center-left",
+        "Anonymized_element": "face blurred, motion blur added, head turned further away, occluded by generic object",
+        "privacy_element": "recognizable facial features despite partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "background woman\u2019s face with glasses on left side",
+        "Anonymized_element": "face blurred, remove glasses detail, occlude with depth-of-field blur",
+        "privacy_element": "recognizable facial features and eyewear detail",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_15669072.jpg"
+}

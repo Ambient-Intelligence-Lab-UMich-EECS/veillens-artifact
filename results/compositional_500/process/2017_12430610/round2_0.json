@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a person seated in a wheelchair being pushed along a public walkway, with surrounding pedestrians whose faces are not identifiable. The wheelchair is a clear, central cue enabling sensitive inference about disability (Level 2). The pushing action reinforces activity context (Level 3). Background pedestrians are distant and non-identifiable (Level 4). No readable faces, names, or documents are visible. Given one strong Level 2 clue and supporting contextual clues, the privacy risk is moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manual wheelchair with large rear wheels and footrests under a seated person",
+        "Anonymized_element": "generic chair silhouette, neutral cart without medical cues, crop/blur wheelchair frame and footrests",
+        "privacy_element": "recognizable wheelchair frame, large wheels, footrests implying mobility aid/disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person standing directly behind gripping the wheelchair handles",
+        "Anonymized_element": "person walking nearby with hands at sides, remove hand-to-handle contact",
+        "privacy_element": "pushing posture and hands on wheelchair handles indicating assistance",
+        "target_concept": "caregiver pushing action",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of pedestrians in the background at a distance",
+        "Anonymized_element": "fewer abstract silhouettes, heavier blur of background figures",
+        "privacy_element": "multiple distant individuals present but not identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12430610/r1_crops/2017_12430610_0.png"
+}

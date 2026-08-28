@@ -38,3 +38,8 @@ external pins it down — so which model produced `geolocation/evaluation_result
 `compositional/run_evaluation_results.json` cannot be established from this repository. Anyone
 citing a number from them should confirm the model separately rather than assume it matches
 `configs/*.yaml`, whose `evaluation.model` is only the default for a *new* run.
+
+These are the aggregates. The individual VLM responses they roll up from — the oracle's reasoning during protection, and each evaluator's reasoning about the protected image — are one folder per experiment under `results/`:
+[`results/compositional_500/`](../../results/compositional_500/) for the two compositional files, and
+[`results/geolocation_100/`](../../results/geolocation_100/) for `geolocation/evaluation_results.json`, whose
+344 responses also record what the oracle saw at each verification of the three-iteration loop.

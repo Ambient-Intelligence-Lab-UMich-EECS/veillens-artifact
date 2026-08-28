@@ -1,0 +1,76 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic with European-style road furniture. The square blue pedestrian-crossing signs with a white triangle and a walking figure match German StVO sign 350. The red-blue circular no-parking sign also matches German designs. The vehicle plates have the EU blue band and appear to show a \u201cD\u201d country code, indicating Germany. Together these cues point strongly to Germany and rule out nearby countries with different sign designs (e.g., UK, Italy, Nordics with variant icons). City level: The white van\u2019s front license plate appears to begin with the letter \u201cL-\u201d, which in Germany denotes Leipzig. German plates use city/kreis prefixes, and \u201cL\u201d is assigned to Leipzig, narrowing the location from country to city. The urban fabric\u2014cobblestone/paver sidewalks, wrought-iron fence with stone pillars bordering a large green space\u2014fits Leipzig\u2019s central parks and historic areas. Street level: The specific combination of elements\u2014dual pedestrian-crossing signs flanking a zebra, a curved two-lane road skirting a walled park with an ornate iron fence and stone gateposts, cobbled verge with benches, and an arched street lamp\u2014suggests a road edge adjacent to a major park in Leipzig (likely near Clara-Zetkin-Park or similar). While the exact street name is uncertain, these features describe a particular stretch bordering a park rather than a generic inner-city block.",
+  "location_estimate": {
+    "latitude": 51.332,
+    "longitude": 12.354,
+    "confidence": "Medium",
+    "region": "Germany, Saxony, Leipzig"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue pedestrian crossing sign on a pole",
+        "non_geolocation_element": "blue square panel, white triangle, black stick figure, reflective surface, metal pole",
+        "geolocation_element": "German StVO sign 350 design, EU-style signage conventions",
+        "target_concept": "pedestrian crossing sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver van",
+        "non_geolocation_element": "rectangular plate, black text, reflective white background, silver MPV body",
+        "geolocation_element": "EU blue band with D country code, German DIN typeface, city prefix 'L' indicating Leipzig",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "no parking sign on a black pole",
+        "non_geolocation_element": "round sign, red border, blue field, diagonal bar, reflective finish",
+        "geolocation_element": "German/European no-stopping sign style per StVO",
+        "target_concept": "no parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "zebra crosswalk on dark asphalt",
+        "non_geolocation_element": "white transverse stripes, painted on grey road surface, standard width",
+        "geolocation_element": "continental European zebra style accompanying StVO sign 350",
+        "target_concept": "crosswalk",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wrought-iron fence on a stone wall",
+        "non_geolocation_element": "black metal bars, decorative finials, grey stone base and pillars, weathered texture",
+        "geolocation_element": "park-bordering historic fence consistent with Leipzig inner-park perimeters",
+        "target_concept": "fence",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "arched street lamp at the curve",
+        "non_geolocation_element": "tall black pole, curved top arm, single luminaire, daylight shadowing",
+        "geolocation_element": "lamp style common on Leipzig park-adjacent streets",
+        "target_concept": "street lamp",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/weimar/weimar_000056_000019_leftImg8bit.png"
+}

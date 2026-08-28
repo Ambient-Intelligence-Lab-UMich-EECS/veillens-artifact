@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a small airplane inside a hangar with no people or faces present. The most privacy-relevant element is the clearly readable aircraft registration number painted on the fuselage, which can potentially link the aircraft to an owner. There are no government IDs, financial or medical data, names, or exact addresses visible. Thus, the highest severity is low (Level 4: property/asset identifier), and the overall risk remains low with high confidence due to clear visibility of the registration code but lack of other identifying personal information.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "registration code 'G-BHFI' painted on the airplane fuselage near the tail",
+        "Anonymized_element": "blank fuselage area, generic stripes without letters, obfuscated alphanumeric code",
+        "privacy_element": "readable aircraft registration number",
+        "target_concept": "vehicle registration number",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11200064/final/2017_11200064_final.png"
+}

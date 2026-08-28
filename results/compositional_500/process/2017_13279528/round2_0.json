@@ -1,0 +1,81 @@
+{
+  "reasoning": "The crop shows a large public demonstration with many individuals; several faces are visible at medium distance and some are frontal enough to enable recognition, introducing biometric risk (Level 1). Numerous national flags and protest placards with legible political slogans indicate participation in a political event, creating sensitive inference risk (Level 2) and activity/behavior disclosure (Level 3). Banners and text in a specific language and a recognizable public statue further hint at location (Level 3). The combination of visible faces with explicit political context elevates the overall privacy risk. Confidence is medium due to partial occlusion and crowd distance for some faces.",
+  "personal_info_privacy_score": {
+    "score": 0.63,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man near the podium area on the right side",
+        "Anonymized_element": "blurred face, replaced with generic skin-tone oval, low-detail facial features",
+        "privacy_element": "recognizable facial features, eyes, nose, mouth orientation",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a person in the crowd near center-top beneath a large banner",
+        "Anonymized_element": "blurred/obscured face, generic low-detail silhouette",
+        "privacy_element": "recognizable facial features, direct view of face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cluster of red national flags with white crescent-and-star symbols held by participants",
+        "Anonymized_element": "plain red flags without symbols or text",
+        "privacy_element": "national symbols implying political/national affiliation",
+        "target_concept": "political flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white protest placards with printed slogans held above the crowd",
+        "Anonymized_element": "blank placards with no text or symbols",
+        "privacy_element": "political messages on signs indicating participation in a protest",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "speaker\u2019s podium with microphones at the right with people gathered around",
+        "Anonymized_element": "generic podium, no microphones, fewer people nearby",
+        "privacy_element": "public speaking at a political event indicating political activity",
+        "target_concept": "podium with speaker",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large banner with text in a specific language above the crowd near center-top",
+        "Anonymized_element": "blank banner without text or with abstract pattern",
+        "privacy_element": "language-specific text hinting at geographic/cultural location",
+        "target_concept": "banner with text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13279528/r1_crops/2017_13279528_0.png"
+}

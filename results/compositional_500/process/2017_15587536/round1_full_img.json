@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a hospital room with multiple beds; a patient\u2019s body (appears child-sized) is visible on the left bed but the face is not shown. This creates a sensitive medical context revealing that an individual is hospitalized, which is Level 2 risk. Additional contextual clues include a posted room number and wall notices, but they are generic and unreadable, adding only minor risk. With no identifiable face, names, or readable records, the overall risk is moderate. Confidence is medium because the patient is partially visible without facial identification.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible patient lying in the left hospital crib-style bed (face out of frame)",
+        "Anonymized_element": "empty bed, fully covered blanket with no visible body, generic pillow only",
+        "privacy_element": "patient body indicating current hospitalization, child-sized limbs implying age group",
+        "target_concept": "patient in bed",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange wall sign with room number '02' near the door",
+        "Anonymized_element": "blank colored square, generic icon without numbers or text",
+        "privacy_element": "room number indicating specific internal location",
+        "target_concept": "room number sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "two small paper notices posted on the tiled wall under the windows (text not legible)",
+        "Anonymized_element": "blank sheets or solid-colored posters without text",
+        "privacy_element": "documents/posters that could carry identifying or procedural information if readable",
+        "target_concept": "wall notices",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15587536.jpg"
+}

@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image features a cargo ship with the name 'ANTARI' clearly visible on its bow. While this is a commercial vessel and not a private individual, the name of the ship functions as a unique identifier for its current location and activity. Since ships are tracked publicly and the information does not link to personal, intimate, or private individual data, the privacy risk is categorized as low. The assessment reflects that this is a public-facing asset rather than sensitive personal information.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "The name 'ANTARI' written on the port side of the cargo ship bow.",
+        "Anonymized_element": "empty space, no text, plain hull color",
+        "privacy_element": "ship name 'ANTARI'",
+        "target_concept": "ship name",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15303118/final/2017_15303118_final.png"
+}

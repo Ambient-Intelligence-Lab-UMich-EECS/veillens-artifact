@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a riverside cityscape with a distinctive brick tower on a hill, a recognizable arched bridge, and rows of historic buildings. A single person appears far away on the riverbank, too small to identify. No faces, texts, numbers, or documents are legible. The primary privacy risk is location inference from the prominent landmark and unique infrastructure (Level 3). The distant person weakly adds activity context (fishing) but remains unidentifiable (Level 4). Combined, these cues suggest a moderate but limited privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "brick tower structure on the hilltop in the background",
+        "Anonymized_element": "remove tower, replace with generic gazebo or trees, alter skyline to non-descript hill",
+        "privacy_element": "recognizable historic tower shape and placement that can disclose city/location",
+        "target_concept": "landmark tower",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "arched bridge spanning the river at mid-frame",
+        "Anonymized_element": "generic plain bridge with simplified arches, neutral color, fewer distinctive details",
+        "privacy_element": "distinctive bridge design that can help pinpoint the city when combined with skyline",
+        "target_concept": "bridge",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small distant person fishing on the riverside path in the lower left",
+        "Anonymized_element": "remove person or replace with indistinct silhouette without gear",
+        "privacy_element": "visible individual engaging in fishing activity",
+        "target_concept": "person (distant)",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12866523.jpg"
+}

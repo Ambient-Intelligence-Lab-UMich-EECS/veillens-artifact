@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image shows a small group scene at night with people holding large placards and candles; faces and most text are obscured, so no biometric or direct identifiers are visible. The strongest privacy signals are Level 3: observable participation in a public demonstration/vigil (placards and lit candles) and partial location cues from a readable storefront sign in the background. Additional low-risk context is the presence of distant, unidentifiable bystanders. With no Level 1/2 items, the combined behavioral and location cues suggest a moderate but limited privacy risk. Confidence is medium due to partial legibility and occlusions.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large placard/poster held by the person on the right side of the group",
+        "Anonymized_element": "neutral-colored blank poster with no slogans or symbols, or remove/replace with a generic folded cardboard",
+        "privacy_element": "visible act of holding a protest-style sign indicating participation in a public demonstration/vigil",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "lit candle held by a person near the center of the group",
+        "Anonymized_element": "empty hands, unlit generic cup, or small neutral object without flame",
+        "privacy_element": "candlelight vigil participation suggesting involvement in a specific public event",
+        "target_concept": "candle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "storefront sign with partially readable business name in the background (center-right)",
+        "Anonymized_element": "blank awning, generic light panel with no text or logo",
+        "privacy_element": "business name signage that can help pinpoint a specific location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "small group of distant bystanders in the background left",
+        "Anonymized_element": "empty walkway, blurred silhouettes with reduced detail",
+        "privacy_element": "presence of unidentifiable individuals in a public setting",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10837455/final/2017_10837455_final.png"
+}

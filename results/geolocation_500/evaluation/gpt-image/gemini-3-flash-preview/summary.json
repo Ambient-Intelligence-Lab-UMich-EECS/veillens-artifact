@@ -1,0 +1,71 @@
+{
+  "condition": "gpt-image",
+  "condition_note": "GPT Image 2, one single-shot privacy edit from a fixed prompt",
+  "evaluator_label": "gemini-3-flash-preview",
+  "model_id_recorded_in_artifacts": "gemini-3-flash-preview",
+  "attribution": "recorded in the source results.json under metadata.model",
+  "role": "independent scorer; none of these four models is inside a protection loop",
+  "scored_image": "readydata/dataset_random_500/gpt-image/defended/<image_id>_defended.png",
+  "images_in_set": 500,
+  "responses": 498,
+  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
+  "error_km": {
+    "n": 498,
+    "mean_km": 131.232,
+    "median_km": 70.415,
+    "min_km": 0.028,
+    "max_km": 1052.579,
+    "within_0.5km_pct": 14.3,
+    "within_1km_pct": 22.3,
+    "within_5km_pct": 32.7,
+    "within_10km_pct": 33.7,
+    "within_25km_pct": 37.3,
+    "within_100km_pct": 55.0
+  },
+  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 498 responses, to 0.0 km at R = 6371.0",
+  "source_runs": [
+    {
+      "dataset": "dataset_random_100",
+      "run": "gpt_image_100_20260813_122752",
+      "manifest": "dataset.json",
+      "images": 100,
+      "declared_failures": 1
+    },
+    {
+      "dataset": "dataset_random_500",
+      "run": "gpt_image_500_new400_b_20260820_000954",
+      "manifest": "dataset_new400.json",
+      "images": 400,
+      "declared_failures": 1
+    }
+  ],
+  "unscored": {
+    "count": 2,
+    "why": "the API call failed; the run recorded a null error for these images",
+    "image_ids": [
+      "weimar_000000_000019",
+      "aachen_000083_000019"
+    ],
+    "coverage_pct": 99.6
+  },
+  "vs_raw_on_the_same_images": {
+    "n": 498,
+    "raw": {
+      "mean_km": 46.574,
+      "median_km": 0.784,
+      "within_5km_pct": 67.5,
+      "within_25km_pct": 72.5
+    },
+    "gpt-image": {
+      "mean_km": 131.232,
+      "median_km": 70.415,
+      "within_5km_pct": 32.7,
+      "within_25km_pct": 37.3
+    },
+    "images_moved_further_away": 377,
+    "images_located_closer_after_the_edit": 121,
+    "median_per_image_change_km": 19.333,
+    "identical_coordinate_before_and_after": 0,
+    "note": "'moved further away' + 'located closer' + 'identical coordinate before and after' = n. An identical pair is the model returning the same rounded lat/lon for both images — a city-centroid guess the edit did not disturb."
+  }
+}

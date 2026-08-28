@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a person in a Santa outfit viewed mostly from behind with only a small partial side of the face visible; facial details are limited and not readily identifiable. Several bystanders appear in the blurred background at small scale. No names, documents, or explicit identifiers are present. The highest severity element is a partially visible face (Level 1), but it is occluded and low-detail. Additional low-risk context includes distant crowd faces and activity cues of playing instruments. Together these suggest a low-to-moderate privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible side of head of person wearing a Santa hat, turned away from the camera",
+        "Anonymized_element": "replace with full back-of-head texture, remove facial region, neutral hat without fur trim",
+        "privacy_element": "partial facial features, ear shape, glasses frame edge",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small, blurred faces of bystanders in the distant background",
+        "Anonymized_element": "silhouettes only, further blur or replace with generic crowd shapes",
+        "privacy_element": "faces of bystanders (low detail)",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "brass sousaphone and trumpet being held/played in a street setting",
+        "Anonymized_element": "generic unbranded instruments, hands without distinctive features",
+        "privacy_element": "activity inference of public musical performance",
+        "target_concept": "musical instrument",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13587537/r1_crops/2017_13587537_0.png"
+}

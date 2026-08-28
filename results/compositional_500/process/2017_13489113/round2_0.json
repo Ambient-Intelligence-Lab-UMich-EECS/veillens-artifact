@@ -1,0 +1,63 @@
+{
+  "reasoning": "The crop shows two Lollapalooza 2009 event tickets with visible barcodes/serial numbers and legible event details (date, venue in Chicago). An envelope beneath shows a readable city/state and ZIP code (Austin, TX 78768). No faces or government IDs appear. The strongest risks are unique ticket identifiers (barcodes/serials) and location/behavioral details indicating attendance. Combined, these create a moderate privacy risk. Confidence is medium because the address/name on the envelope is only partially visible.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Right-edge barcode and serial strip on the top event ticket",
+        "Anonymized_element": "remove/blur barcode area, replace with generic pattern, no numbers or codes",
+        "privacy_element": "readable barcode, numeric serial string",
+        "target_concept": "event ticket",
+        "severity_level": 3,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Right-edge barcode and serial strip on the bottom event ticket",
+        "Anonymized_element": "remove/blur barcode area, replace with generic pattern, no numbers or codes",
+        "privacy_element": "readable barcode, numeric serial string",
+        "target_concept": "event ticket",
+        "severity_level": 3,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Printed text on the tickets indicating event name, date (Sunday 8/9), and venue (Grant Park, Chicago, IL)",
+        "Anonymized_element": "generic event text, remove date and location, use placeholder wording",
+        "privacy_element": "specific event details and timing, city and venue name",
+        "target_concept": "ticket text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Upper-left portion of a white envelope with partial address line showing 'Austin, TX 78768'",
+        "Anonymized_element": "blank envelope, remove/crop address text",
+        "privacy_element": "city, state, and ZIP code",
+        "target_concept": "envelope address",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13489113/r1_crops/2017_13489113_0.png"
+}

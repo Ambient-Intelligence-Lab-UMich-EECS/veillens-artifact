@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows two people (faces obscured) shaking hands in front of U.S. military flags. A uniformed service member has a readable surname tape and visible unit/affiliation markings. The highest-severity element is the legible last name (Level 2 non-unique identifier). Additional reinforcing cues include the \u201cU.S. ARMY\u201d tape, unit patches/insignia, and Corps of Engineers flags that can indicate organizational location or event context. With no visible faces or government IDs, risk is moderate-to-high mainly due to the name combined with military affiliation cues. Confidence is medium because the surname legibility may be partial depending on resolution.",
+  "personal_info_privacy_score": {
+    "score": 0.54,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "surname name tape on the right chest of the military uniform",
+        "Anonymized_element": "blank fabric tape, no text, generic pattern",
+        "privacy_element": "readable last name text on uniform name tape",
+        "target_concept": "name tape",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "left chest tape reading \"U.S. ARMY\" on the uniform",
+        "Anonymized_element": "blank tape, remove text/logo",
+        "privacy_element": "organizational label indicating military affiliation",
+        "target_concept": "organization label",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "unit patches and insignia on the uniform sleeves and chest",
+        "Anonymized_element": "plain patches with no symbols or text",
+        "privacy_element": "specific unit/branch insignia that can reveal organizational unit",
+        "target_concept": "unit patches",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red military flags with white castle emblem behind the subjects",
+        "Anonymized_element": "plain red flags, no emblems or text",
+        "privacy_element": "distinctive Corps of Engineers-style emblem indicating organization/location context",
+        "target_concept": "organizational flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15624433/r1_crops/2017_15624433_1.png"
+}

@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a large outdoor event with a dense crowd. Several individuals’ faces are clearly visible and unobscured, which constitutes biometric identifiers (highest severity). Some other faces are partially masked, but multiple identifiable faces remain. The scene also reveals attendance at a specific public event, a behavioral clue, though less sensitive. With multiple Level 1 facial cues reinforced by the event-context clue, overall privacy risk is high. Confidence is high because the faces are central and distinct.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a man in a blue-green striped shirt at the left foreground facing right",
+        "Anonymized_element": "blurred or pixelated face, cropped above shoulders, turned-away head silhouette",
+        "privacy_element": "clear facial features including eyes, nose, and mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "profile face of a woman with glasses near the center-left foreground",
+        "Anonymized_element": "remove glasses detail, blur/pixelate face, replace with back-of-head view",
+        "privacy_element": "distinct facial profile and eyewear details",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "child’s face being carried on an adult’s shoulders toward the left-middle area",
+        "Anonymized_element": "mask/blur the child’s face, replace with turned-away head",
+        "privacy_element": "clear facial features of a minor",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of an older woman with short hair at right foreground",
+        "Anonymized_element": "pixelated face, generic head silhouette facing away",
+        "privacy_element": "clear frontal facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "dense crowd region at the front of an outdoor stage",
+        "Anonymized_element": "reduced crowd density, backs of heads only, generic silhouettes",
+        "privacy_element": "attendance at a specific public event",
+        "target_concept": "crowd at event",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14333425/final/2017_14333425_final.png"
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a conference scene where the person\u2019s face is obscured, so no biometric identifiers are visible. The clearest privacy signal is a readable organizational name and logo on the table banner, which can reveal workplace affiliation (Level 2). Additional contextual clues include a projected slide with readable technical content and a desk microphone indicating the person is speaking at an event, contributing Level 3\u20134 context. Combined, these yield a moderate privacy risk without severe identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable CTBTO logo and organization name on the front table banner",
+        "Anonymized_element": "plain banner, no text or logo, generic solid color",
+        "privacy_element": "organization name, distinctive logo, institutional branding",
+        "target_concept": "workplace logo/text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "projected slide with readable technical text and diagram behind the speaker",
+        "Anonymized_element": "abstract shapes, blurred text, generic background graphic",
+        "privacy_element": "legible document content, meeting materials",
+        "target_concept": "presentation slide",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "desk-mounted gooseneck microphone in front of the speaker",
+        "Anonymized_element": "remove microphone, replace with neutral desk object",
+        "privacy_element": "public speaking cue, event participation context",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16257673/r1_crops/2017_16257673_0.png"
+}

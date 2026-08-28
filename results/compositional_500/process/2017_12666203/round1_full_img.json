@@ -1,0 +1,49 @@
+{
+  "reasoning": "The image shows a whiteboard with the heading \u201cDEV TEAM CHARTER\u201d and several colorful sticky notes containing generic workplace phrases. There are no people, faces, IDs, or sensitive numbers. The only privacy-relevant elements are readable handwritten notes that reveal non-sensitive workplace behaviors and processes. The highest severity present is Level 4 (generic documents/activities). These weak clues provide minimal risk, with no strong compositional reinforcement toward identity or sensitive attributes.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large poster heading reading 'DEV TEAM CHARTER' at top of board",
+        "Anonymized_element": "blank header area, generic abstract title, blurred text",
+        "privacy_element": "readable document title indicating internal team process",
+        "target_concept": "poster/document title",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow sticky note with handwritten text 'TEAM LUNCH' near center-right",
+        "Anonymized_element": "blank sticky note, doodle without words, generic symbol",
+        "privacy_element": "readable text describing team social activity",
+        "target_concept": "sticky note with text",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange sticky note with handwritten text 'Monitor CI progress after push' on right side",
+        "Anonymized_element": "blank sticky note, blurred/obscured text, generic icon",
+        "privacy_element": "readable text revealing internal technical workflow",
+        "target_concept": "sticky note with text",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12666203.jpg"
+}

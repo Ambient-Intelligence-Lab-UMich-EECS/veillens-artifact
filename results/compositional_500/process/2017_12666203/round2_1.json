@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a whiteboard titled \u201cTEAM CHARTER\u201d with multiple readable sticky notes about team practices (e.g., team lunch, monitoring CI, fixing builds). There are no faces, names, identifiers, or sensitive personal traits. The visible privacy signals are limited to generic workplace documents and descriptions of activities/behaviors, which are low-to-moderate risk and not tied to a specific person. Hence the score remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large poster/whiteboard area with title 'TEAM CHARTER' and various handwritten notes",
+        "Anonymized_element": "blank poster, abstract doodles, blurred or nonsensical text shapes",
+        "privacy_element": "readable workplace document text, team process descriptions",
+        "target_concept": "whiteboard/poster",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow sticky note reading 'TEAM LUNCH \"it's good to talk\"'",
+        "Anonymized_element": "blank sticky note, generic shapes/lines without legible words",
+        "privacy_element": "readable text describing a team activity (lunch)",
+        "target_concept": "sticky note",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow sticky note reading 'MONITOR CI PROGRESS AFTER PUSH'",
+        "Anonymized_element": "blank sticky note, illegible scribbles, generic icons",
+        "privacy_element": "readable text revealing workflow/technical practice",
+        "target_concept": "sticky note",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12666203/r1_crops/2017_12666203_1.png"
+}

@@ -1,0 +1,99 @@
+{
+  "reasoning": "Country-level: The scene shows right-hand traffic, EU-style road furniture, and blue square \u201cP\u201d parking signs with white \u2018P\u2019, plus a round blue no\u2011parking sign with a red border. Direction signs are white panels with black text on slim poles. These are typical of continental Western Europe. The architecture includes a church tower with an onion-dome top, common in Germanic regions (southern Germany, Austria, Switzerland) and the Alsace region of France. The absence of Germany\u2019s frequent yellow wayfinding boards on this approach, and the prevalence of trimmed green hedges with slim black bollards and French-style multi-panel white direction signs, point more to France than Germany. Thus I narrow to France, particularly Grand Est (Alsace).  City-level: The onion-dome church tower and low, pale plaster buildings with grey slate roofs match Alsatian towns and Strasbourg suburbs. The road design\u2014bifurcating carriageway with a raised curb island and a narrow bike/parking bay at right\u2014matches many Strasbourg urban approaches. No unique landmark text is readable, but the architecture and signage style best fit Strasbourg/Mulhouse area, with Strasbourg more likely given the urban density visible ahead and prevalence of this signage mix.  Street-level: The specific street has a central lane splitting, a hedge-lined sidewalk on both sides, a blue parking sign with two blank auxiliary plates on the left, a small blue bus-stop style sign mid-left, and stacked white direction boards on the right just before a gentle rightward curve over a small bridge or dip. A distinctive onion-dome church tower sits slightly left of center behind hedges. These combined cues would distinguish this stretch from nearby streets.",
+  "location_estimate": {
+    "latitude": 48.585,
+    "longitude": 7.745,
+    "confidence": "Low",
+    "region": "France, Grand Est, Strasbourg"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue parking sign on a pole",
+        "non_geolocation_element": "blue square sign, white letter, metal pole, matte finish, daytime lighting",
+        "geolocation_element": "European-style blue 'P' parking symbol; auxiliary white plates beneath typical of French signage",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white direction sign on a pole",
+        "non_geolocation_element": "stacked rectangular panels, black border, slim grey pole, reflective surface",
+        "geolocation_element": "white multi-panel wayfinding boards with black text typical of France for local directions",
+        "target_concept": "direction sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "no parking sign on a pole",
+        "non_geolocation_element": "round sign, blue face, red border, slim pole, slight tilt",
+        "geolocation_element": "European no-parking symbol used in France and neighboring countries",
+        "target_concept": "no parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "church tower with an onion dome",
+        "non_geolocation_element": "tan masonry tower, bulbous dark roof, small windows, distant background",
+        "geolocation_element": "onion-dome steeple characteristic of Germanic/Alsatian architecture",
+        "target_concept": "church tower",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bus stop sign on a short pole",
+        "non_geolocation_element": "small blue square sign, white pictogram, short grey pole near hedge",
+        "geolocation_element": "European bus pictogram style common in French cities",
+        "target_concept": "bus stop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "raised curb island at the right of the roadway",
+        "non_geolocation_element": "light grey concrete curb, elongated shape, separates lanes",
+        "geolocation_element": "urban French road layout with lane split and raised separator",
+        "target_concept": "curb island",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "hedge along the sidewalk",
+        "non_geolocation_element": "dense green hedge, trimmed flat top, runs along edge of walkway",
+        "geolocation_element": "landscaping style common in Strasbourg residential/arterial streets",
+        "target_concept": "hedge",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center lane road marking",
+        "non_geolocation_element": "solid white line tapering, asphalt texture, slight wear",
+        "geolocation_element": "French-style white lane markings without yellow center lines",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/strasbourg/strasbourg_000001_043748_leftImg8bit.png"
+}

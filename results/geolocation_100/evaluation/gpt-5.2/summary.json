@@ -1,0 +1,124 @@
+{
+  "evaluator_label": "in-loop oracle (model id not recorded)",
+  "model_id_recorded_in_artifacts": null,
+  "note": "The same VLM that drives the protection loop, called once more on the finished image. Nothing in this run records which model that was: neither the response files nor evaluation_results.json carries a model field, and no run log survives. configs/geolocation.yaml names reasoning.model / evaluation.model, but those are defaults for a new run, not a record of this one. The directory is therefore named by role rather than by model.",
+  "scored_image": "intermediate/<image_id>_leftImg8bit/final/<image_id>_leftImg8bit_final.png",
+  "images": 100,
+  "metric": "great-circle error in km between the oracle's guess and the Cityscapes GPS ground truth",
+  "raw": {
+    "n": 100,
+    "mean": 65.836,
+    "median": 4.326,
+    "min": 0.11,
+    "max": 694.36,
+    "frac_ge_5km": 0.5,
+    "frac_ge_25km": 0.45,
+    "source": "results/geolocation_100/process/<image_id>/round1_full_img.json",
+    "cross_check": "equals feature_removed='none' in examples/results/geolocation/evaluation_results.json for all 100"
+  },
+  "protected": {
+    "n": 100,
+    "mean": 130.061,
+    "median": 71.657,
+    "min": 0.138,
+    "max": 569.142,
+    "frac_ge_5km": 0.78,
+    "frac_ge_25km": 0.73,
+    "source": "results/geolocation_100/evaluation/in_loop_oracle/responses/<image_id>.json",
+    "cross_check": "equals feature_removed='street level clue, city level clue' in examples/results/geolocation/evaluation_results.json for all 100"
+  },
+  "in_loop_last_verification": {
+    "n": 100,
+    "mean": 137.912,
+    "median": 78.971,
+    "min": 0.088,
+    "max": 533.951,
+    "frac_ge_5km": 0.87,
+    "frac_ge_25km": 0.82,
+    "source": "the highest-numbered iter*_full_img.json per image, carried forward for early-stopped images",
+    "note": "reads the same pixels as the evaluation response \u2014 byte-identical file for all 100 images \u2014 so the gap between the two is the oracle's own sampling variance, not a difference in input"
+  },
+  "per_iteration_carried_forward": {
+    "iter1": {
+      "n": 100,
+      "mean": 111.748,
+      "median": 62.847,
+      "min": 0.12,
+      "max": 533.951,
+      "frac_ge_5km": 0.73,
+      "frac_ge_25km": 0.69
+    },
+    "iter2": {
+      "n": 100,
+      "mean": 126.449,
+      "median": 72.078,
+      "min": 0.139,
+      "max": 533.951,
+      "frac_ge_5km": 0.83,
+      "frac_ge_25km": 0.78
+    },
+    "iter3": {
+      "n": 100,
+      "mean": 137.912,
+      "median": 78.971,
+      "min": 0.088,
+      "max": 533.951,
+      "frac_ge_5km": 0.87,
+      "frac_ge_25km": 0.82
+    }
+  },
+  "per_iteration_observed_only": {
+    "iter1": {
+      "n": 100,
+      "mean": 111.748,
+      "median": 62.847,
+      "min": 0.12,
+      "max": 533.951,
+      "frac_ge_5km": 0.73,
+      "frac_ge_25km": 0.69
+    },
+    "iter2": {
+      "n": 27,
+      "mean": 55.657,
+      "median": 2.059,
+      "min": 0.139,
+      "max": 318.749,
+      "frac_ge_5km": 0.37,
+      "frac_ge_25km": 0.333
+    },
+    "iter3": {
+      "n": 17,
+      "mean": 68.78,
+      "median": 1.79,
+      "min": 0.088,
+      "max": 393.345,
+      "frac_ge_5km": 0.235,
+      "frac_ge_25km": 0.235
+    }
+  },
+  "mask_coverage_pct": {
+    "mean": 22.098,
+    "median": 9.561,
+    "min": 0.204,
+    "max": 78.931,
+    "source": "mask_percentage in examples/results/geolocation/evaluation_results.json"
+  },
+  "iterations": {
+    "verifications_per_image": {
+      "1": 73,
+      "2": 10,
+      "3": 17
+    },
+    "stop_reason": {
+      "threshold_met": 87,
+      "max_iter": 13
+    },
+    "stop_rule": "stop once the oracle's error on the edited image is >= val_dist (5.0 km), or after max_iter (3) verifications"
+  },
+  "loop_vs_evaluation_agreement": {
+    "agree_on_5km_criterion": 89,
+    "loop_ge_5km_but_evaluation_below": 10,
+    "loop_below_5km_but_evaluation_ge": 1,
+    "median_absolute_gap_km": 7.091
+  }
+}

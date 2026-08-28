@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a nighttime street with vehicles and a readable front license plate on a silver minivan, which is a unique vehicle identifier and can connect to an owner. No identifiable faces are visible; people at the right edge are distant silhouettes. Additional vehicles (e.g., green taxis) indicate property/assets but add limited risk alone. The highest severity is a Level 3 clue (license plate), reinforced slightly by other vehicles and distant people. Overall risk is moderate with high confidence due to clear legibility of the plate.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front license plate on a silver minivan facing the camera (reads clearly)",
+        "Anonymized_element": "blank plate, blurred characters, generic solid color plate with no numbers",
+        "privacy_element": "readable license plate number, unique vehicle identifier, region-specific plate format",
+        "target_concept": "license plate",
+        "severity_level": 3,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two green taxis parked along the curb in the midground",
+        "Anonymized_element": "generic unbranded cars, muted colors without commercial livery",
+        "privacy_element": "distinct taxi livery and commercial markings implying service locale",
+        "target_concept": "vehicle with commercial livery",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distant people standing at a bus stop on the right edge, faces not visible",
+        "Anonymized_element": "empty stop or blurred silhouettes",
+        "privacy_element": "presence of individuals in public place, general activity of waiting for transit",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13465997/r1_crops/2017_13465997_1.png"
+}

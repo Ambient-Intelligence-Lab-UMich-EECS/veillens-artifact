@@ -1,0 +1,48 @@
+{
+  "reasoning": "The regional crop shows a person from neck to thighs with the face obscured. The most privacy-relevant element is revealing/lingerie-style clothing exposing cleavage, which falls under intimate content (Level 2). Additional contextual clues include a cigarette with visible smoke indicating a smoking behavior (Level 3) and a distinctive ring on the hand (Level 4) that could help recognition when combined with other clues. Absence of a visible face or explicit identifiers lowers the overall risk, but the intimate attire keeps the risk moderate-to-high. Confidence is high because these cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "revealing bra-like top with exposed cleavage and multiple thin straps on the upper torso",
+        "Anonymized_element": "non-revealing plain top, higher neckline, solid straps, no lingerie details",
+        "privacy_element": "exposed cleavage, lingerie-style design",
+        "target_concept": "intimate attire",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "lit cigarette held between fingers with visible smoke plume",
+        "Anonymized_element": "empty hand, no cigarette, remove smoke",
+        "privacy_element": "cigarette, smoke indicating active smoking",
+        "target_concept": "cigarette",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinct ring worn on the hand resting on the hip",
+        "Anonymized_element": "remove jewelry, plain finger",
+        "privacy_element": "distinctive jewelry that could aid recognition",
+        "target_concept": "ring",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15053711/r1_crops/2017_15053711_1.png"
+}

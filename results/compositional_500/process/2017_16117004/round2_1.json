@@ -1,0 +1,50 @@
+{
+  "reasoning": "The crop shows a presenter at a podium with a clearly identifiable face (biometric data). The podium sign contains readable event text (\u201cCHCC Latina Hall of Fame\u201d), revealing activity/affiliation and potential location context. A small numeric watermark in the lower-left corner appears to show a telephone-like number, which is a direct contact identifier. The highest severity is Level 1 due to the visible face, reinforced by Level 2 contact digits and Level 3 contextual signage, leading to a high overall risk. Confidence is high because these elements are clear and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman\u2019s face at the podium, front-left view with clear facial features",
+        "Anonymized_element": "blurred or pixelated face, generic silhouette, occluded with neutral shape",
+        "privacy_element": "identifiable facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "podium front panel with readable event text and logo",
+        "Anonymized_element": "blank panel, abstract logo with no readable text, generic pattern",
+        "privacy_element": "readable organization/event name that reveals affiliation or event participation",
+        "target_concept": "event signage",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "small numeric watermark in the lower-left corner (looks like a phone number)",
+        "Anonymized_element": "removed digits, blurred corner, generic non-readable watermark",
+        "privacy_element": "readable sequence of digits resembling a phone/contact number",
+        "target_concept": "phone number watermark",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16117004/r1_crops/2017_16117004_1.png"
+}

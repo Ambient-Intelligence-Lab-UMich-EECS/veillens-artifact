@@ -1,0 +1,56 @@
+{
+  "reasoning": "This crop shows a crowd with several visible faces that are reasonably identifiable despite some blur and partial occlusions. These constitute Level 1 biometric data. No names, documents, or precise location markers are visible, so risk is primarily from multiple faces in a public setting. The combination of several identifiable faces elevates risk to moderate-high; confidence is medium due to partial blur and occlusion.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in yellow shirt on left with glasses, frontal face visible",
+        "Anonymized_element": "pixelated face, blurred facial area, replaced with generic head silhouette",
+        "privacy_element": "visible eyes, nose, mouth, overall facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "man in cap at center using a camera, side-profile face visible",
+        "Anonymized_element": "blurred face, generic cap with no facial detail, turned-away head",
+        "privacy_element": "profile facial features including nose and mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "seated young person near bottom center with partially blurred frontal face",
+        "Anonymized_element": "pixelated face, neutral head shape without features",
+        "privacy_element": "frontal facial features discernible despite blur",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "man on right in gray shirt and cap with face visible",
+        "Anonymized_element": "obscured face, pixelation, generic featureless head",
+        "privacy_element": "recognizable facial features in three-quarter view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15487394/r1_crops/2017_15487394_3.png"
+}

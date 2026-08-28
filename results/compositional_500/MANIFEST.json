@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "experiment": {
+    "name": "compositional_500",
+    "privacy_setting": "compositional",
+    "metric": "CPRT privacy risk score (0-1, higher = more residual risk)",
+    "images": 500,
+    "image_manifest": "manifests/compositional_500.json",
+    "high_concern_subset": {
+      "rule": "ground_truth_score >= 0.5",
+      "n": 273
+    },
+    "contents": "VLM reasoning responses only. No images are included."
+  },
+  "source_run": {
+    "protection_run": "veillens-runs/result_pi/test_large",
+    "process_reasoning": "veillens-runs/result_pi/test_large/original_cache/<image_id>/*.json",
+    "gpt_evaluation": "veillens-runs/result_pi/test_large/eval_cache/<image_id>_eval.json",
+    "gemini_evaluation": "pipeline2/data_pi/evaluation_results/eval_cache/<image_id>_eval.json",
+    "eval_script": "pipeline2/data_pi/eval.py",
+    "note": "Response bodies are copied byte-for-byte; only the evaluation filenames were shortened from <image_id>_eval.json to <image_id>.json."
+  },
+  "parts": {
+    "process": {
+      "path": "process/<image_id>/",
+      "what": "Reasoning the in-loop oracle produced while protecting the image.",
+      "images": 500,
+      "files": 1490,
+      "bytes": 2794739,
+      "files_per_image": {
+        "round1_full_img.json": {
+          "count": 500,
+          "present_for_all_500": true,
+          "scored_image": "resized_inputs/<image_id>.jpg (the unprotected input)",
+          "doubles_as": "the raw baseline; its score equals feature_removed='none' for all 500 images"
+        },
+        "round2_<k>.json": {
+          "count": 990,
+          "scored_image": "intermediate/<image_id>/r1_crops/<image_id>_<k>.png (crops re-read after round 1's edits)",
+          "distribution": {
+            "0 files": 42,
+            "2 files": 421,
+            "4 files": 37
+          },
+          "note": "Count varies by image: 0 when round 1 already satisfied the stop condition, otherwise 2 or 4."
+        }
+      }
+    },
+    "evaluation": {
+      "path": "evaluation/<model>/responses/<image_id>.json",
+      "what": "Independent re-scoring of the final protected image, one response per image per evaluator.",
+      "scored_image": "intermediate/<image_id>/final/<image_id>_final.png",
+      "present": [
+        {
+          "label": "GPT-5.2",
+          "dir": "evaluation/gpt-5.2",
+          "responses": 500,
+          "bytes": 815576,
+          "model_id_in_artifacts": null,
+          "attribution": "run author; not recorded in the response files",
+          "role": "the attacker inside the protection loop"
+        },
+        {
+          "label": "Gemini 3F",
+          "dir": "evaluation/gemini-3.1-flash-lite",
+          "responses": 500,
+          "bytes": 613041,
+          "model_id_in_artifacts": "gemini-3.1-flash-lite",
+          "attribution": "recorded in the source evaluation_results.json",
+          "role": "independent scorer, outside the loop"
+        }
+      ],
+      "not_present": [
+        {
+          "label": "Gemini 3P",
+          "expected_dir": "evaluation/gemini-3.1-pro-preview",
+          "responses": 0,
+          "status": "no such run exists for this image set"
+        },
+        {
+          "label": "Gemini 2.F",
+          "expected_dir": "evaluation/gemini-2.5-flash",
+          "responses": 0,
+          "status": "no such run exists for this image set"
+        }
+      ]
+    }
+  },
+  "response_schema": {
+    "reasoning": "free text: why the score was assigned",
+    "personal_info_privacy_score": {
+      "score": "float 0-1",
+      "confidence": "Low | Medium | High"
+    },
+    "critical_features.features[]": [
+      "object_description",
+      "Anonymized_element",
+      "privacy_element",
+      "target_concept",
+      "severity_level (1-4)",
+      "attributes[]",
+      "region (process responses only)"
+    ],
+    "image_path": "which image was scored (process responses only)"
+  },
+  "verification": {
+    "checked_on": "2026-08-27",
+    "image_ids_match_manifest": true,
+    "round1_score_equals_feature_none": "500/500",
+    "gpt_response_score_equals_feature_severity_le_2": "500/500",
+    "gemini_response_score_equals_predicted_score": "500/500",
+    "ground_truth_score_agrees_across_both_evaluators": "500/500 (tol 1e-9)",
+    "missing_or_unparseable_response_files": 0,
+    "gemini_responses_scoring_a_non_final_image": 0
+  },
+  "headline_numbers": {
+    "mean_risk": {
+      "raw": 0.31376,
+      "gpt-5.2": 0.16114,
+      "gemini-3.1-flash-lite": 0.1641
+    },
+    "mean_risk_high_concern": {
+      "raw": 0.522418,
+      "gpt-5.2": 0.245568,
+      "gemini-3.1-flash-lite": 0.245604
+    },
+    "relative_reduction": {
+      "gpt-5.2": 0.4864,
+      "gemini-3.1-flash-lite": 0.477
+    },
+    "caveat": "Only GPT-5.2 measured the raw images. The Gemini reduction is computed against GPT-5.2's raw baseline, not one of its own."
+  }
+}

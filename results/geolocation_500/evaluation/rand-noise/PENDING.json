@@ -1,0 +1,16 @@
+{
+  "label": "Random noise",
+  "kind": "baseline",
+  "status": "not run",
+  "why": "An implementation exists (benchmark/methods/defenses/rand_noise/) but no defended images for this set exist on disk, and no evaluation run references it.",
+  "condition": "rand-noise",
+  "expected_path": "evaluation/rand-noise/<evaluator>/responses/<image_id>.json",
+  "expected_evaluators": [
+    "gpt-5.2",
+    "gemini-3-flash-preview",
+    "gemini-3.1-pro-preview",
+    "gemini-2.5-flash"
+  ],
+  "expected_responses": 2000,
+  "present": 0
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image depicts a distant mountaintop with a prominent statue silhouette. No people, documents, or identifiers are visible. The only privacy-relevant element is the recognizable landmark that can imply a specific geographic location. With no linkage to a person or additional identifiers, the overall personal-information risk is low, driven solely by potential location disclosure from the landmark\u2019s distinctive shape. Confidence is high because the scene is clear and uncluttered.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large statue silhouette with outstretched arms on a mountaintop",
+        "Anonymized_element": "generic abstract monument, altered pose or shape, remove/blur distinctive features, replace with simple rock formation",
+        "privacy_element": "recognizable landmark silhouette, unique mountaintop placement indicating a specific city/region",
+        "target_concept": "landmark statue",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10740453.jpg"
+}

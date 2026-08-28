@@ -1,0 +1,87 @@
+{
+  "reasoning": "The crop shows a street performance with multiple spectators whose faces are clearly visible and identifiable, which constitutes Level 1 biometric data. The performer\u2019s face is obscured, but her revealing costume introduces Level 2 nudity/intimate content. The scene also depicts behaviors (dancing, clapping). The presence of several unobscured faces is the dominant risk, reinforced by the intimate attire. Therefore the privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman in floral sundress clapping with a clear front-facing face on the left-center",
+        "Anonymized_element": "pixelated face, blurred facial features, generic skin-tone oval",
+        "privacy_element": "clear facial features (eyes, nose, mouth) enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "older man with gray hair and sunglasses, center background, full face visible",
+        "Anonymized_element": "blurred face region, opaque sunglasses and pixelated skin",
+        "privacy_element": "distinct facial outline and mouth/jaw visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man in yellow T-shirt at right side holding a phone, unobstructed face",
+        "Anonymized_element": "pixelated face, blurred features, neutral oval",
+        "privacy_element": "clear eyes, nose, mouth and hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "child in white and pink dress at left foreground with visible face",
+        "Anonymized_element": "blurred/pixelated face, simplified oval with no features",
+        "privacy_element": "clear child facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bald older man in green shirt at left background smiling with face visible",
+        "Anonymized_element": "pixelated or masked face region",
+        "privacy_element": "distinct facial features and expression",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "performer\u2019s bright pink feathered carnival costume with bikini-style top and bare midriff",
+        "Anonymized_element": "less revealing dance attire, opaque top with higher coverage, neutral colors",
+        "privacy_element": "revealing clothing and exposed torso regarded as intimate content",
+        "target_concept": "revealing costume",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12171505/r1_crops/2017_12171505_0.png"
+}

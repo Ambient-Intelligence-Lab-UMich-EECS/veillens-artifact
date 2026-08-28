@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a street march with numerous visible faces, including several close, clear frontal faces, which are strong biometric identifiers (Level 1). A large banner being carried indicates participation in a public demonstration, enabling potential sensitive inference about political views and specific activities (Level 2). Many additional but smaller faces appear in the background crowd, adding contextual risk. With multiple Level 1 clues reinforced by Level 2 activity context, the privacy risk is high. Confidence is high because these cues are plainly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left woman\u2019s unobstructed face near the banner edge",
+        "Anonymized_element": "blurred or pixelated face, face turned away, generic silhouette",
+        "privacy_element": "full frontal face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "mid-ground woman in white coat walking toward camera with visible face",
+        "Anonymized_element": "blurred face, low-detail rendering, head turned down",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large banner held by people at front of march (text area obscured)",
+        "Anonymized_element": "no banner or plain crowd without signage, neutral handheld object",
+        "privacy_element": "visible protest banner indicating demonstration participation",
+        "target_concept": "protest banner",
+        "severity_level": 2,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background crowd with multiple small, partially visible faces",
+        "Anonymized_element": "more distance blur, back-of-head silhouettes",
+        "privacy_element": "many individuals\u2019 faces, though small and less distinct",
+        "target_concept": "crowd of faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14588632/r1_crops/2017_14588632_1.png"
+}

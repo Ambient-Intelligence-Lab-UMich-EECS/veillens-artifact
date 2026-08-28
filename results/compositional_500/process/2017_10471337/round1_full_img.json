@@ -1,0 +1,24 @@
+{
+  "reasoning": "The primary privacy risk is a clear, identifiable side-profile of a person at a meeting table. The face is unobstructed enough to enable recognition, which is Level 1 biometric data. Other items (tablet, papers, water bottle) do not display legible personal or sensitive information, and the setting appears generic with no clear location identifiers. With one strong Level 1 clue and minimal supporting context, overall risk is high but not severe across multiple dimensions.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear side-profile of a seated man\u2019s face at the conference table",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette without facial details, turned-away head",
+        "privacy_element": "identifiable facial features including eyes, nose, mouth, hairline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10471337.jpg"
+}

@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows three people posing closely with unobstructed, front-facing faces that are clear enough for recognition. These constitute biometric identifiers (highest severity). No government IDs, names, or other textual identifiers are visible on the phones, which only display abstract graphics. The combination of multiple identifiable faces slightly increases risk through redundant biometric evidence and visible personal attributes, but there are no additional sensitive elements. Hence the score is high but not extreme, with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing woman's face on the left side of the frame",
+        "Anonymized_element": "blurred face, anonymized oval, turned-away head, occluding sticker",
+        "privacy_element": "clear facial features including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-facing woman's face at center holding a phone",
+        "Anonymized_element": "blurred face, generic silhouette, turned-away head",
+        "privacy_element": "recognizable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front-facing man's face on the right side of the frame",
+        "Anonymized_element": "blurred face, anonymized oval, turned-away head",
+        "privacy_element": "distinct facial features with visible eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12838786/r1_crops/2017_12838786_1.png"
+}

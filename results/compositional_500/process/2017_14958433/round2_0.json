@@ -1,0 +1,46 @@
+{
+  "reasoning": "The cropped image shows a shirtless person seated cross\u2011legged on a mat indoors. The face is fully obscured, so no biometric identifier is visible. The primary privacy signals are personal physical attributes (body build, chest hair, skin marks) and an observable activity (yoga/exercise habit). A generic indoor background with a baseboard heater weakly implies a residential setting but is not location-identifying. With no faces, names, or documents, the highest severity present is Level 3, yielding a moderate but limited risk. Confidence is high because clues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare upper torso and chest of a person centered in the frame",
+        "Anonymized_element": "add plain athletic shirt or tank top, smooth skin texture, reduce distinctive marks",
+        "privacy_element": "exposed chest and body hair revealing body build and physical features",
+        "target_concept": "torso/upper body",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "cross-legged seated pose on a mat with hands holding feet",
+        "Anonymized_element": "neutral seated pose with legs extended, remove mat and adjust hand placement",
+        "privacy_element": "yoga/exercise posture indicating fitness or meditation habit",
+        "target_concept": "yoga pose/mat",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "baseboard heater along interior wall in the background",
+        "Anonymized_element": "plain wall without fixtures, generic background gradient",
+        "privacy_element": "residential interior fixture suggesting home environment",
+        "target_concept": "baseboard heater",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14958433/r1_crops/2017_14958433_0.png"
+}

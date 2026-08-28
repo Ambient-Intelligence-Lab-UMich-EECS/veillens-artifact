@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a single person riding a recumbent tricycle on a road. The face is deliberately blurred and covered by a helmet, so no identifiable biometric data is visible. However, the image reveals the individual\u2019s activity (cycling on a distinctive recumbent trike) and some body/clothing details that indicate personal attributes. A visible bike brand mark is not personally identifying. With no names, documents, or faces, the highest severity is Level 3 from activities and personal attributes, yielding a moderate but limited privacy risk. Confidence is high because the visible cues are clear.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s torso, arms, and legs in athletic clothing while pedaling a recumbent tricycle",
+        "Anonymized_element": "looser generic clothing, reduced skin visibility, neutral colors, slight motion blur",
+        "privacy_element": "body shape and clothing style indicating a specific person\u2019s appearance, clear depiction of cycling behavior",
+        "target_concept": "person body/clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red recumbent tricycle with visible frame and components",
+        "Anonymized_element": "generic unbranded cycle frame, muted color, partial crop of vehicle",
+        "privacy_element": "distinctive vehicle type signaling specific activity and potential hobby",
+        "target_concept": "bicycle/tricycle",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12307170/r1_crops/2017_12307170_1.png"
+}

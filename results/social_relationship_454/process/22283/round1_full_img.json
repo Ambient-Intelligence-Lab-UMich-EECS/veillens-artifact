@@ -1,0 +1,38 @@
+{
+  "img_id": "22283",
+  "ground_truth": {
+    "4 6": 4,
+    "1 3": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6
+  },
+  "predictions": {
+    "1 3": 4,
+    "2 3": 4,
+    "2 5": 4,
+    "3 4": 6,
+    "3 5": 4
+  },
+  "missed_pairs": [
+    "3 6",
+    "4 6"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "subjects_unmatched": [
+    6
+  ],
+  "num_preds_detected": 6,
+  "num_preds_matched": 5,
+  "num_gt_subjects": 6,
+  "raw_response": "[P1-P3]: The scene looks like a formal/military cake-cutting event; P1 stands by a tripod/camera in a staff polo while P3 is in a suit near the cake. They aren\u2019t interacting but appear to be participants in the same official function. => professional\n\n[P2-P3]: Both are standing close near the center at the event, dressed in business/formal attire and not showing personal affection. This suggests colleagues/attendees rather than a personal tie. => professional\n\n[P2-P5]: P2 is an attendee in formal clothes near P5, who is in military uniform, at the same ceremony with no personal interaction. This fits a work/official context. => professional\n\n[P3-P4]: P3 (suited adult) and P4 (person in casual yellow jacket) are merely near each other without engagement or contact in the public event setting. There\u2019s no clear social connection shown. => no-relationship\n\n[P3-P5]: P3 in a suit and P5 in military uniform share the ceremony space without intimacy, indicating an official function. Their roles suggest a work-related interaction. => professional",
+  "timestamp": 1776888701.8658504
+}

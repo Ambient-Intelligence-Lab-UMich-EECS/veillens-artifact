@@ -1,0 +1,45 @@
+{
+  "reasoning": "This crop shows a small group of people on a couch with faces obscured, so no identifiable biometrics are visible. There are no government IDs, financial or medical documents, and no address information. The remaining privacy signals are personal attributes of minors and teens (age appearance, body build, hairstyles) and distinctive clothing/brand logos that could aid recognition. Multiple such Level-3 clues are present but not directly identifying, leading to a moderate-low overall risk.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "young girl on right wearing a red logo T-shirt and jeans, sitting on couch arm",
+        "Anonymized_element": "plain red T-shirt with no logo, generic jeans, neutral color palette",
+        "privacy_element": "age appearance of a minor, distinctive clothing style, recognizable brand logo",
+        "target_concept": "distinctive clothing on person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young child in front-right wearing striped shirt and red shoes, seated on couch",
+        "Anonymized_element": "plain long-sleeve shirt with solid color, neutral shoes without bright color",
+        "privacy_element": "age appearance of a minor, distinctive outfit and footwear",
+        "target_concept": "distinctive clothing on person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "teen wearing a graphic T-shirt with large text, seated on left side of couch",
+        "Anonymized_element": "plain T-shirt, no text or graphics, muted color",
+        "privacy_element": "distinctive graphic text and casual style that can aid recognition",
+        "target_concept": "distinctive clothing on person",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12757214/r1_crops/2017_12757214_1.png"
+}

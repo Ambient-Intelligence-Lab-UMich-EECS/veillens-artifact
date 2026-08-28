@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a person on a dark stage holding a microphone; the face is blurred and lacks identifiable detail. No readable text, logos, or government/financial/medical items are visible. The main privacy signals are moderate: approximate physical appearance and the activity of performing music (microphone and visible brass instrument), which can reveal hobbies or occupation but do not identify the person. With no Level 1 or 2 clues and only Level 3\u20134 contextual cues, the privacy risk is low to moderate. Confidence is medium due to low image clarity.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blurry face and upper body of a person holding a microphone at center-left",
+        "Anonymized_element": "silhouetted head and torso with no facial detail, hands-only holding a generic rod, stronger blur",
+        "privacy_element": "approximate physical appearance, participation in a live performance",
+        "target_concept": "person at microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handheld microphone near the person\u2019s mouth",
+        "Anonymized_element": "generic rod-shaped object, microphone without recognizable form, removed item",
+        "privacy_element": "indicates singing/speaking activity at an event",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "brass trombone on a stand at right side",
+        "Anonymized_element": "generic stand, indistinct metallic object, blurred instrument",
+        "privacy_element": "specific musical instrument implying hobby/profession",
+        "target_concept": "musical instrument",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12592908/r1_crops/2017_12592908_1.png"
+}

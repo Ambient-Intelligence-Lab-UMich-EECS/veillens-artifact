@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a close-up of a phone screen with clearly readable notification text from a specific institution (“Darien Library Patron Notification System”) and a full URL on the same domain. This reveals a concrete organization/location and indicates a work-related activity (responding to a patron request at a service desk). A precise date/time is also visible. No faces, IDs, or financial/medical data are present. The highest-severity clues are Level 3 (location and activity), reinforced by metadata and a unique-looking link, leading to a moderate overall risk. Confidence is high because the text is sharp and legible.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Phone screen header text reading “Darien Library Patron Notification System”",
+        "Anonymized_element": "generic app header, neutral title like “Notification”, no organization name or logo",
+        "privacy_element": "explicit institution name, system name indicating affiliation",
+        "target_concept": "notification header text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Clickable URL displayed in the message body: dobby.darienlibrary.org/... with query token",
+        "Anonymized_element": "redacted or generic URL (example.com/link), no domain or tokens",
+        "privacy_element": "organization domain revealing location/affiliation, unique query parameter that may grant access",
+        "target_concept": "URL link",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "Message timestamp text showing date and time (e.g., October 22, 2010, 9:47 am) and status bar time 9:50 AM",
+        "Anonymized_element": "blanked or approximate time/date, or removed timestamp",
+        "privacy_element": "exact date and time of activity",
+        "target_concept": "timestamp",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14719464/final/2017_14719464_final.png"
+}

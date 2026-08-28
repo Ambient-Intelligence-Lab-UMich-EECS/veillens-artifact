@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a tennis player mid-swing with their face obscured, and a spectator in the background whose face is visible. A courtside banner reads a tourism slogan that indicates a likely city name. The clearest privacy element is the identifiable spectator face (Level 1 biometric). Additional contextual clues include readable location text on signage (Level 3) and the person\u2019s activity of playing tennis (Level 3). Because the primary face is not the player\u2019s but a smaller background subject and other clues are contextual, the overall risk is moderate. Confidence is medium due to distance/partial blurriness of the spectator\u2019s face.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "spectator\u2019s face visible between bleacher rails in the background center-right",
+        "Anonymized_element": "blurred face, neutral texture fill, obfuscated facial features",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "courtside banner with readable text 'Visit Orla\u2026' suggesting a city name",
+        "Anonymized_element": "blank banner, solid color panel, non-readable abstract pattern",
+        "privacy_element": "readable location-indicative text on signage",
+        "target_concept": "signage text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "athlete in turquoise outfit actively swinging a tennis racquet on court",
+        "Anonymized_element": "generic silhouette of player without distinctive body details, or empty court without person",
+        "privacy_element": "visible participation in a specific sport at a moment in time",
+        "target_concept": "person performing activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16097202.jpg"
+}

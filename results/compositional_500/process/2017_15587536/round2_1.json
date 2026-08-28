@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows an empty hospital-style room with beds/gurney, wall notices, and a wall placard showing the room number \u201c02.\u201d No people, faces, or patient-specific documents are visible or readable. The most privacy-relevant element is the room-number sign, which can contribute to location disclosure within a facility. The other clues are generic posted notices and medical equipment that only indicate a healthcare setting without tying to an identifiable person. Given the absence of individuals and legible identifiers, the overall risk is low to mild.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "orange wall placard with the number '02' near the door",
+        "Anonymized_element": "plain blank placard with no digits, neutral color",
+        "privacy_element": "room number digits identifying a specific room",
+        "target_concept": "room number sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two printed notices posted on the tiled wall below the windows",
+        "Anonymized_element": "blank sheets or patterned posters with no text or logos",
+        "privacy_element": "printed text that could reveal policies or contextual details",
+        "target_concept": "paper notice",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "blue-padded hospital gurney/bed on wheels at right side of room",
+        "Anonymized_element": "generic bench or cot with non-clinical styling",
+        "privacy_element": "medical equipment implying a healthcare setting",
+        "target_concept": "hospital bed",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15587536/r1_crops/2017_15587536_1.png"
+}

@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a crowded scene with multiple children and a few adults, several of whom have clearly visible faces. These constitute biometric identifiers that can reveal identity. No names, addresses, or other identifiers are legible, and there is no explicit sensitive or financial/medical data. The main risk is from multiple identifiable faces in close view, which raises the overall privacy risk despite the lack of reinforcing textual identifiers. Given several clear faces and good image quality, the risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left foreground child\u2019s face in profile with braided hair and straw hat",
+        "Anonymized_element": "blurred face, turned-away head, blank oval without facial details",
+        "privacy_element": "full facial features in profile including nose, mouth, eye contour",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right side child\u2019s face looking downward wearing green striped dress and straw hat",
+        "Anonymized_element": "face blurred or replaced with featureless oval, head turned further away",
+        "privacy_element": "visible facial features including eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "adult man with gray hair and glasses seated in background, face visible in profile",
+        "Anonymized_element": "blurred facial area, featureless oval, head turned away",
+        "privacy_element": "distinct facial profile with eye, nose, mouth, and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "older adult wearing cap behind group, side-view face visible",
+        "Anonymized_element": "blur facial region, replace with neutral oval, increase occlusion",
+        "privacy_element": "recognizable facial profile features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center child partially turned with some facial features visible near ear and cheek",
+        "Anonymized_element": "crop or blur facial area, rotate head away",
+        "privacy_element": "partial but still identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13940745.jpg"
+}

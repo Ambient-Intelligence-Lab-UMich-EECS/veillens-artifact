@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows two people; the left person is fully anonymized. The right person’s face is partially visible despite oversized novelty glasses and a censored mouth, which still exposes some biometric cues and appearance details. No names, documents, addresses, or financial/medical data are present. Clothing and jewelry provide additional, low-risk identifying context. Overall risk stems mainly from the partially visible face, with minor reinforcement from distinctive attire and accessories. Score reflects moderate risk with medium confidence due to occlusion reducing identifiability.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible face of right person wearing oversized orange glasses; mouth area obscured but eyes/cheeks/nose and hairstyle partly visible",
+        "Anonymized_element": "fully blurred face, generic oval placeholder, remove or replace glasses with plain mask, neutral hair cap",
+        "privacy_element": "exposed facial structure around eyes and nose, partial hairstyle, skin features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "distinctive turquoise cardigan over patterned blue-and-black dress on right person",
+        "Anonymized_element": "solid-color generic top and dress without patterns",
+        "privacy_element": "unique clothing colors and patterns that aid recognition",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "silver bracelet and ring on right person’s left hand",
+        "Anonymized_element": "remove jewelry or replace with plain, non-descript accessories",
+        "privacy_element": "distinct accessories that can aid person recognition",
+        "target_concept": "jewelry",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12071035/final/2017_12071035_final.png"
+}

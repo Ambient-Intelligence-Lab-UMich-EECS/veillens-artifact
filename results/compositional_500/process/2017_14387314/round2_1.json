@@ -1,0 +1,82 @@
+{
+  "reasoning": "The crop shows a street crowd with multiple clearly visible, unobstructed faces. These constitute Level 1 biometric identifiers. Clothing and physical appearance reveal personal attributes, and the storefront facade provides weak location context. The combination yields a high privacy risk primarily driven by several identifiable faces. Confidence is high due to clarity and central framing of these faces.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "woman on right wearing sunglasses and white skirt, frontal face visible",
+        "Anonymized_element": "blurred face, generic oval head, opaque sunglasses, neutral clothing colors",
+        "privacy_element": "identifiable facial features, hairstyle, body build",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in center-right wearing white shirt, head turned slightly left with face visible",
+        "Anonymized_element": "blurred facial region, generic head shape, neutral shirt with no details",
+        "privacy_element": "recognizable face, hairline, skin features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman in center wearing white sunhat and glasses, face visible",
+        "Anonymized_element": "blurred face, simplified glasses shape, generic hat without details",
+        "privacy_element": "distinct face geometry, glasses style, mouth and chin",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man in center-left wearing light hat, face visible over barrier",
+        "Anonymized_element": "blurred facial area, generic hat, reduced detail",
+        "privacy_element": "eyes, nose, mouth, facial hair pattern",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "cluster of smaller, partially visible faces further back in the crowd",
+        "Anonymized_element": "abstracted silhouettes, blurred heads with no facial detail",
+        "privacy_element": "multiple human faces with partial features",
+        "target_concept": "distant faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront facade and upper-floor windows behind the crowd",
+        "Anonymized_element": "generic blank facade, plain windows with no distinctive signs",
+        "privacy_element": "distinctive building style and window signage hinting at locale",
+        "target_concept": "building facade",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14387314/r1_crops/2017_14387314_1.png"
+}

@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a parade scene with one foreground participant clearly visible, including an identifiable side-profile face. This constitutes Level 1 biometric data. The person also wears rainbow-themed accessories and tutu in a pride-like parade, which can imply support for LGBTQ+ causes and participation in a public event, adding Level 2 sensitive inference and behavior. A background crowd contains many small, distant faces with low identifiability, contributing minor risk. Combined, the identifiable face plus suggestive context yields a high overall privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-foreground adult person\u2019s side-profile face with visible features",
+        "Anonymized_element": "blurred face, solid-color oval, turned-away head, generic hairstyle",
+        "privacy_element": "identifiable facial features, recognizable profile, distinct hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rainbow tutu and rainbow wrist/neck accessories worn by the foreground participant",
+        "Anonymized_element": "solid-color skirt and plain accessories without rainbow colors or symbols",
+        "privacy_element": "rainbow pride-themed colors implying LGBTQ+ support/affiliation",
+        "target_concept": "clothing/accessories",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background crowd behind barricade with many small, distant faces",
+        "Anonymized_element": "blurred crowd, abstract silhouettes, reduced facial detail",
+        "privacy_element": "multiple faces partially visible though not individually identifiable",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14987107/r1_crops/2017_14987107_1.png"
+}

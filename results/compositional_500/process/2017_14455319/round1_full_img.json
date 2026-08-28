@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows a handwritten letter with clearly legible text. It contains multiple non-unique identifiers: a recipient\u2019s full name in the salutation and a sender\u2019s full name/signature. The letterhead includes a specific place name (\u201cCedar Hill, Anacostia, D.C.\u201d), revealing location information, and the handwritten date is present. The body text also includes explicit references to racial identity, constituting sensitive inferences. The highest severity here is Level 2 (names and sensitive inferences), reinforced by the location and date, so the overall privacy risk is moderate-to-high. The text is central and readable, yielding high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Handwritten salutation line at top left reading the recipient\u2019s name",
+        "Anonymized_element": "generic greeting text with placeholder name, blurred text, replaced with lorem text",
+        "privacy_element": "readable personal name of the addressee",
+        "target_concept": "name in salutation",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Handwritten signature at the bottom of the letter",
+        "Anonymized_element": "blank signature line, generic initials, blurred signature",
+        "privacy_element": "readable full name/signature of the sender",
+        "target_concept": "signature name",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Printed letterhead text at the top left showing place name 'Cedar Hill, Anacostia, D.C.'",
+        "Anonymized_element": "blank letterhead, generic location text, removed place name",
+        "privacy_element": "specific location/place name revealing locality",
+        "target_concept": "letterhead address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Handwritten date near the top reading 'March 23, 1888'",
+        "Anonymized_element": "removed or obfuscated date, generic placeholder date",
+        "privacy_element": "exact date of correspondence",
+        "target_concept": "handwritten date",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Body text segment containing phrase referencing a 'colored man' and slavery",
+        "Anonymized_element": "paraphrased neutral wording, redacted phrase, generic filler text",
+        "privacy_element": "explicit reference enabling sensitive inference about racial identity/history",
+        "target_concept": "handwritten sensitive text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14455319.jpg"
+}

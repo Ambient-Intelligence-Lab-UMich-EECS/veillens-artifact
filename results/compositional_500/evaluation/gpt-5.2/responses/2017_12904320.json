@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows three people in an office; their faces are obscured, removing direct biometric risk. The clearest privacy cue is a visible employee ID badge on a lanyard, which can contain a name, photo, and workplace logo (Level 2). Additional low-risk elements include a wall calendar/papers and a laptop, which could reveal schedules or work content if readable, but here details are not legible (Level 4). With one high-risk-but-unreadable identifier and a couple of contextual office artifacts, overall risk is moderate. Confidence is medium due to unreadable text/details.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "employee ID badge on lanyard worn by the standing person in the center",
+        "Anonymized_element": "plain blank badge, no text or photo, generic lanyard color, or remove badge entirely",
+        "privacy_element": "workplace ID card form factor, potential name/photo/company logo/barcode",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "wall calendar and pinned papers on the blue partition behind the group",
+        "Anonymized_element": "blank calendar template with no dates or notes, generic papers without text",
+        "privacy_element": "calendar layout and notes could reveal schedules or tasks if readable",
+        "target_concept": "calendar/documents on board",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "open laptop on the desk at right with screen angled away",
+        "Anonymized_element": "closed laptop or blank screen, generic device without visible UI",
+        "privacy_element": "potential exposure of on-screen work content or files if visible",
+        "target_concept": "laptop",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12904320/final/2017_12904320_final.png"
+}

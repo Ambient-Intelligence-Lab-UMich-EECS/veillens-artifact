@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a Malaysian driver\u2019s license lying on a table. A clear portrait photo is visible, along with readable text fields including a national ID/license number, the holder\u2019s full name, and a full mailing address. The highest severity is Level 1 due to the identifiable face and government identifier. These clues are direct, legible, and mutually reinforcing, resulting in a severe privacy risk. Confidence is high because the card details are clearly captured.",
+  "personal_info_privacy_score": {
+    "score": 0.97,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "portrait headshot photo on the ID card",
+        "Anonymized_element": "blank color block silhouette, abstract avatar, low-detail head shape",
+        "privacy_element": "full identifiable face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed national ID/license number line on the card",
+        "Anonymized_element": "blurred digits, placeholder XXXX numbers, decorative lines",
+        "privacy_element": "readable government ID/NRIC or license number",
+        "target_concept": "government ID number",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "printed full name text line on the card",
+        "Anonymized_element": "blurred text, random initials, generic placeholder name",
+        "privacy_element": "readable full personal name",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "address block text with street, city, and postcode on the card",
+        "Anonymized_element": "blanked lines, generic city label, partial redaction",
+        "privacy_element": "readable full postal address and postcode",
+        "target_concept": "address text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_11174421.jpg"
+}

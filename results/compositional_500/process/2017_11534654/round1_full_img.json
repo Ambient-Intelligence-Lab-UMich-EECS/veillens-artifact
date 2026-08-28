@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows an American football stadium from the stands with a clearly visible Seattle Seahawks team logo on the field and an NFL shield near the end zone. A few people are present on the field but are very small and not identifiable. There are no readable faces, names, documents, or personal identifiers. The main privacy signal is location inference via the distinctive team/league logos that can reveal the venue or city. Distant people contribute minimal additional risk. Overall risk is low-to-moderate, driven by Level 3 location information without any Level 1\u20132 identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large Seattle Seahawks team logo painted on the field near the sideline",
+        "Anonymized_element": "generic abstract emblem, blurred or replaced with plain turf pattern, no team-specific graphics",
+        "privacy_element": "distinctive team logo revealing specific franchise and probable city/venue",
+        "target_concept": "sports team logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "NFL shield logo on the turf near the end zone corner",
+        "Anonymized_element": "plain turf patch, generic non-branded marking",
+        "privacy_element": "league branding that supports identifying the type of venue and event context",
+        "target_concept": "league logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small group of people standing on the field far from the camera",
+        "Anonymized_element": "remove or blur silhouettes to indistinct shapes",
+        "privacy_element": "presence of individuals (unidentifiable) indicating activity timing/usage",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11534654.jpg"
+}

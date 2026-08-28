@@ -1,0 +1,97 @@
+{
+  "reasoning": "Country level: The scene shows right-hand traffic on a narrow European street with stucco rowhouses, roller shutters, and red\u2013white roadside bollards. A bright yellow car with very large \u201cADAC\u201d lettering is parked at the corner; ADAC is Germany\u2019s national automobile club and its branded roadside-assistance cars are common in Germany. Road furniture also matches German standards: the blue one\u2011way arrow sign design, red\u2011white diagonal construction marker, EU-style white license plates with the long, narrow German format, and vertical traffic signals with black housings. These indicators collectively point strongly to Germany, while ruling out neighboring countries whose signage and construction markers differ (e.g., France\u2019s chevrons, UK left-hand traffic).  City level: The dense prewar/postwar plastered rowhouses with brown tiled plinths and narrow sidewalks are typical of older neighborhoods in North Rhine\u2011Westphalia cities (Cologne, D\u00fcsseldorf, Bonn, Wuppertal). The street width, cobbled edge gutters, and mixed-use corner buildings resemble residential side streets in Cologne\u2019s inner districts. No unique landmark is visible to fix a specific district, but the overall urban texture aligns well with Cologne.  Street level: A T-intersection with a dashed stop line and a central red\u2011white construction bollard partially blocking the lane defines the geometry. At the right corner, the yellow ADAC estate car is stopped beside a pole and traffic lights; on the left, a short red\u2011white boundary bollard stands at the curb. The combination of these elements\u2014the ADAC car at the right corner, the specific construction marker mid-lane, the tiled lower fa\u00e7ades, and the blue one\u2011way sign pointing right\u2014distinguishes this specific junction from nearby streets, even if the exact street name is not readable.",
+  "location_estimate": {
+    "latitude": 50.9375,
+    "longitude": 6.9603,
+    "confidence": "Medium",
+    "region": "Germany, North Rhine-Westphalia, Cologne"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow car at the corner",
+        "non_geolocation_element": "yellow color, station-wagon shape, glossy paint, daylight",
+        "geolocation_element": "large black ADAC lettering on the side, ADAC brand specific to Germany",
+        "target_concept": "car",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue street sign on a pole",
+        "non_geolocation_element": "blue color, rectangular shape, metal sign, white arrow, mounted on grey pole",
+        "geolocation_element": "German one-way sign design and typography",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on the black car",
+        "non_geolocation_element": "white background, narrow rectangular plate, black characters",
+        "geolocation_element": "EU plate format with German-style long narrow proportions and spacing",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-white striped construction bollard in the lane",
+        "non_geolocation_element": "plastic material, vertical rectangular panel, diagonal red stripes, mounted on base",
+        "geolocation_element": "German Baustellenbake pattern and proportions",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "red-white boundary bollard at the curb",
+        "non_geolocation_element": "cylindrical post, red and white bands, reflective surface",
+        "geolocation_element": "German sidewalk delineator style",
+        "target_concept": "bollard",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white crosswalk marking on asphalt",
+        "non_geolocation_element": "white paint, dashed stop line with transverse bars, worn texture",
+        "geolocation_element": "German intersection marking style and layout",
+        "target_concept": "crosswalk marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white window shutter on a building",
+        "non_geolocation_element": "white color, horizontal slats, closed position, mounted in window frame",
+        "geolocation_element": "common Central European residential feature (non-unique)",
+        "target_concept": "window shutter",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical traffic light on a pole",
+        "non_geolocation_element": "black housing, three circular lenses, mounted on grey pole",
+        "geolocation_element": "German traffic signal style and mounting",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result/test_iter3/intermediate/frankfurt_000000_000294_leftImg8bit/working/frankfurt_000000_000294_leftImg8bit_working.png"
+}

@@ -1,0 +1,61 @@
+{
+  "reasoning": "The crop shows a crowded street festival with multiple clearly visible faces in the foreground, which constitutes Level 1 biometric data. Additional contextual clues include a readable street banner with website/venue/date and vendor stall signage that indicate location and event participation (Level 3). The combination of identifiable faces with location/activity context raises overall risk. No government IDs, financial, or medical data are visible. Given several direct facial identifiers and reinforcing location cues, the privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man in the lower center-left foreground, facing camera",
+        "Anonymized_element": "blurred face, replaced with generic skin-toned oval, no facial details",
+        "privacy_element": "full face with distinctive features, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "male face on right side near the edge, partially turned but identifiable",
+        "Anonymized_element": "blurred or pixelated face, generic placeholder features",
+        "privacy_element": "recognizable facial features and profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "vertical street banner at top-left with event text and website",
+        "Anonymized_element": "plain colored banner with abstract graphic, no text or URLs",
+        "privacy_element": "readable event name, venue reference, date, website with country domain",
+        "target_concept": "street banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "food stall signboard on right with menu/text",
+        "Anonymized_element": "blank sign with solid colors and generic shapes, no legible text",
+        "privacy_element": "readable vendor signage indicating market/festival context",
+        "target_concept": "stall sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11360448/r1_crops/2017_11360448_0.png"
+}

@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image shows a meeting scene. One participant on the right has a largely visible but slightly occluded face, which constitutes biometric data and is the highest-severity clue. The central person’s face appears deliberately masked, so it does not contribute. Additional low-risk elements include visible paper documents with small, unreadable text and personal devices (tablet, smartphone). The Level 1 facial biometric increases risk, while the other clues add minor contextual exposure. Because the identifiable face is partially blocked/blurred and not centered, the overall risk is high-moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.46,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "partially visible face of the person on the right, seen over their raised hand",
+        "Anonymized_element": "blurred face region, solid-color mask over face, crop to exclude head",
+        "privacy_element": "recognizable facial features (eyes/nose/mouth outline), unique facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "stack of printed documents with small, partially visible text on the table near the center-right",
+        "Anonymized_element": "blank sheets, low-detail textures, removed/blurred text",
+        "privacy_element": "potential readable text such as names, titles, or contact details (not legible here but present as documents)",
+        "target_concept": "printed documents",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "black smartphone placed on the table in the foreground",
+        "Anonymized_element": "generic featureless phone shape, screen off with no branding",
+        "privacy_element": "personal device that could contain notifications or identifiers if screen were visible",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "tablet in a folio case on the table in front of the central person (screen facing away)",
+        "Anonymized_element": "generic tablet silhouette, no logos, screen fully blanked",
+        "privacy_element": "personal device that could display emails, names, or accounts if visible",
+        "target_concept": "tablet",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10471337/final/2017_10471337_final.png"
+}

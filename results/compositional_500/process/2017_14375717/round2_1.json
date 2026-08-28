@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a waterfall with a very motion-blurred human figure at the lower-left. No face or identifiers are visible, but the figure suggests a person bathing or swimming, which reveals a minor activity-related clue. With no names, documents, or clear biometrics, the highest severity present is Level 3 (activity). Given the heavy blur and ambiguity, overall privacy risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "motion-blurred person with bare shoulders/torso at the lower-left near the water",
+        "Anonymized_element": "remove person and fill with water splash/rocks, or replace with fully clothed generic silhouette with no skin detail",
+        "privacy_element": "human presence, partial bare torso, implied bathing/swimming activity",
+        "target_concept": "person",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14375717/r1_crops/2017_14375717_1.png"
+}

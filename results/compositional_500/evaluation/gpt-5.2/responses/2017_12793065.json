@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows a parade float with colorful balloons and decorations. All visible faces are heavily obscured and a large banner area is blanked, leaving no readable names, logos, or text. There are no legible location markers, documents, or identifiers. The only residual privacy signal is that people are present and engaged in a public event, which can imply activity but does not identify individuals. Therefore the highest severity present is Level 4, resulting in a low overall privacy risk score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "group of people on a parade float with faces fully obscured by overlays",
+        "Anonymized_element": "empty float without people, abstract silhouettes with no human likeness, decorative props only",
+        "privacy_element": "presence of individuals participating in a public event implying activity/attendance",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12793065/final/2017_12793065_final.png"
+}

@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a clearly identifiable face of a person working at a laptop, which is Level 1 biometric data. A second person\u2019s face is partially visible but less identifiable. Additionally, a laptop screen displays readable code/text, a generic digital artifact that can hint at activities. The identifiable face is the dominant risk, with the on-screen text adding minor contextual risk, leading to a high overall score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.59,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-left person\u2019s unobstructed face in profile, eyes/nose/mouth visible",
+        "Anonymized_element": "pixelated face, heavy blur, solid-color oval mask, turned-away head",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "laptop screen on right showing readable code/text in an editor window",
+        "Anonymized_element": "blank screen, blurred text, abstract shapes or generic UI without legible content",
+        "privacy_element": "readable on-screen text/code, application UI elements",
+        "target_concept": "laptop screen",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13597673/r1_crops/2017_13597673_0.png"
+}

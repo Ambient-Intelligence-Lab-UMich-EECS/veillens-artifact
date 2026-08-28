@@ -1,0 +1,84 @@
+{
+  "reasoning": "The image shows a public street event with multiple clearly visible faces, including a close-up of a child, an interviewer, and other attendees. Identifiable facial features constitute Level 1 biometric data, which is the highest-severity clue. Additional contextual signals include readable storefront signs that could narrow down location (Level 3). The combination of several unobstructed faces\u2014especially of a child\u2014plus legible place indicators raises the overall privacy risk. No government IDs, financial, or medical data are present. Given the clarity and number of faces and some location context, the risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up face of seated boy at lower right speaking into a microphone",
+        "Anonymized_element": "blurred/pixelated face, turned-away head, generic oval without features",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth) clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "kneeling man's face at left holding microphone toward the child",
+        "Anonymized_element": "blurred/pixelated face, back-of-head view, generic silhouette",
+        "privacy_element": "identifiable facial features with glasses and beard visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "seated bald man's face at right-center wearing lime green shirt",
+        "Anonymized_element": "blurred/pixelated face, head turned away, generic silhouette",
+        "privacy_element": "identifiable facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young girl's face with headband at far left foreground",
+        "Anonymized_element": "blurred/pixelated face, turned-away head, generic oval without features",
+        "privacy_element": "identifiable facial features visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign reading 'LIBRAIRIE PAPETERIE' above awning in background right",
+        "Anonymized_element": "blank awning, generic sign with unreadable/abstract text",
+        "privacy_element": "readable shop name and distinctive facade that hint at a specific location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign 'muzik store' above entrance in mid-background",
+        "Anonymized_element": "generic blank signage with non-descript shapes",
+        "privacy_element": "readable business name that can narrow down location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11730503.jpg"
+}

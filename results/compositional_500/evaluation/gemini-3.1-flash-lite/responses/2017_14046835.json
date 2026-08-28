@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image depicts a crowd of individuals in an outdoor, public setting. Several faces are identifiable, contributing to privacy risk. There is also a person wearing a team-branded scarf and holding a promotional item, which indicates participation in a specific public event. While the faces represent Level 1 biometric data, the context is a public gathering where individuals have a reduced expectation of privacy, yet the presence of multiple clear faces necessitates a moderate risk assessment. The score reflects the identifiability of multiple people within the crowd.",
+  "personal_info_privacy_score": {
+    "score": 0.45,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Face of an individual on the far right wearing glasses and a scarf",
+        "Anonymized_element": "blurred face, obscured features",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Face of the individual in the foreground on the left wearing a baseball cap",
+        "Anonymized_element": "blurred face, obscured features",
+        "privacy_element": "clear facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Group of people standing in a line outdoors",
+        "Anonymized_element": "generic crowd, blurred individuals",
+        "privacy_element": "identifiable individuals in a group",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14046835/final/2017_14046835_final.png"
+}

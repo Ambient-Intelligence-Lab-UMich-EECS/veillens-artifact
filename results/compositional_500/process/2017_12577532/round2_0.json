@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a hand holding a Nokia smartphone with a fitness app screen displaying activity details such as running splits, distances (3K, 5K, 7K, 10K), and times. These performance metrics reveal behavioral patterns but no names, faces, or unique identifiers. A small timestamp (21.01) appears on the status bar, which is weak metadata. The highest severity is Level 3 (activities/behaviors). Combined with light metadata, the overall privacy risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smartphone screen showing fitness app with running splits and performance times",
+        "Anonymized_element": "blank or abstract UI, generic chart shapes without text or numbers, blurred metrics",
+        "privacy_element": "activity detail label, running distances (3K/5K/7K/10K), split times and durations",
+        "target_concept": "smartphone screen",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "status bar at top-right of phone with visible time/number '21.01'",
+        "Anonymized_element": "blank status bar, no time or date, generic icons only",
+        "privacy_element": "timestamp indicating time/date context",
+        "target_concept": "timestamp on phone",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12577532/r1_crops/2017_12577532_0.png"
+}

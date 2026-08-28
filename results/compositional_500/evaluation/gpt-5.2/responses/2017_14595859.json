@@ -1,0 +1,54 @@
+{
+  "reasoning": "The image shows a healthcare setting with a patient in a hospital bed and a caregiver. The caregiver’s face is clearly visible, which is biometric data (Level 1). The presence of an IV line and the patient in bed conveys ongoing medical care, exposing medical information (Level 2). A wall whiteboard with partial room notation provides minor location context (Level 3). Combined, an identifiable person in a medical context raises privacy risk to high. Evidence is direct and legible, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "caregiver’s unobscured face in left profile near the patient’s bed",
+        "Anonymized_element": "blurred face, pixelated face, solid-color oval mask over face",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth, profile)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "IV line with red clamp connected to wall port beside the bed",
+        "Anonymized_element": "remove IV tubing, blank wall fixture, generic non-medical cable",
+        "privacy_element": "medical treatment equipment indicating active patient care",
+        "target_concept": "IV line",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "hospital bed with patient lying under blanket",
+        "Anonymized_element": "generic bed without medical rails, remove patient presence",
+        "privacy_element": "patient lying in hospital bed implying medical treatment",
+        "target_concept": "hospital bed with patient",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "wall whiteboard showing partial text including 'Adult RRT Rm#'",
+        "Anonymized_element": "blank whiteboard, no text or symbols",
+        "privacy_element": "room/area notation that hints at specific internal location",
+        "target_concept": "whiteboard room info",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14595859/final/2017_14595859_final.png"
+}

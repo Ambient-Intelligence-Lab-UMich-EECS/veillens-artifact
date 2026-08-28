@@ -1,0 +1,54 @@
+{
+  "reasoning": "The image shows a public parade with multiple people. At least one unobscured adult face (even with sunglasses) and a visible child’s face are present, which are biometric identifiers and constitute Level 1 risks. A readable street sign provides location information (Level 3), and there is a background region with many distant, smaller faces (Level 4). The identifiable faces combined with contextual location cues elevate the overall risk beyond moderate. Score reflects clear but limited count of strong identifiers and supportive context. Confidence is medium because some faces are partially obscured and background text is small.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured adult face wearing sunglasses on the right side of the parade line",
+        "Anonymized_element": "strong blur over face, pixelation, replace with generic head silhouette",
+        "privacy_element": "visible facial structure, mouth and jawline contours enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "child participant’s face visible near the center-right background",
+        "Anonymized_element": "blur/pixelate face, replace with generic child-like silhouette without facial details",
+        "privacy_element": "visible minor’s facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "blue street sign at the intersection with street name readable",
+        "Anonymized_element": "blank blue sign without text, generic shape and color",
+        "privacy_element": "street name text revealing precise location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "background region containing multiple distant parade participants with small faces",
+        "Anonymized_element": "apply uniform blur to background crowd, reduce facial detail",
+        "privacy_element": "numerous small but recognizable faces in a public crowd",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14022316/final/2017_14022316_final.png"
+}

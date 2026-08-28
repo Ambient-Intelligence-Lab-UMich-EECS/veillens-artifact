@@ -1,0 +1,32 @@
+{
+  "img_id": "14606",
+  "ground_truth": {
+    "1 2": 6,
+    "1 3": 6,
+    "1 4": 4,
+    "2 3": 6,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "1 2": 4,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 4,
+    "2 4": 4,
+    "3 4": 4
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 5,
+  "num_preds_matched": 4,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Scene appears to be a press interview; P1 operates a video camera while P2 holds a microphone toward a speaker, standing close and coordinating. Their gear and posture indicate they\u2019re working together. => professional\n\n[P1-P3]: In the same interview setting, P1 films while P3 stands nearby with the group, seemingly assisting or documenting; no personal interaction, just shared task focus. => professional\n\n[P1-P4]: P1 is filming and P4 is the person being interviewed; they face each other via the camera/mic without any personal contact. => professional\n\n[P2-P3]: P2 is the reporter with the mic and P3 stands right behind him as part of the press group, aligned to the same task. => professional\n\n[P2-P4]: P2 extends a microphone toward P4, who speaks to it; clear interviewer\u2013interviewee interaction. => professional\n\n[P3-P4]: Both are part of the same interview scene, with P3 near the reporter and P4 speaking; no intimacy or casual social behavior, just involvement in a media interaction. => professional",
+  "timestamp": 1776887816.2752247
+}

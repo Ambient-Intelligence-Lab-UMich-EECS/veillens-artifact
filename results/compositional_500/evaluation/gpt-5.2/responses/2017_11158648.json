@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a person in a formal military uniform receiving a certificate. Faces are obscured, so no biometric identifiers are exposed. However, the certificate displays a readable institution name and seal, and the uniform’s insignia and ribbons disclose military affiliation and rank, revealing occupational/organizational information. These are Level 3 clues that can identify affiliation and achievements but lack names, IDs, or financial/medical data. With multiple moderate cues but no Level 1–2 elements, the overall risk is moderate-low.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "certificate/diploma held at center with visible institution name and seal",
+        "Anonymized_element": "blank certificate, blurred text, generic award without logos",
+        "privacy_element": "readable institution name, official seal",
+        "target_concept": "certificate/diploma",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "military dress uniform with rank insignia and service ribbons on the chest and sleeves",
+        "Anonymized_element": "plain dark suit or uniform with no insignia, ribbons, or rank markings",
+        "privacy_element": "branch affiliation cues, rank insignia, service ribbons indicating career details",
+        "target_concept": "uniform insignia/ribbons",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11158648/final/2017_11158648_final.png"
+}

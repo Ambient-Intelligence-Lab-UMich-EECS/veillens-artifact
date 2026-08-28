@@ -1,0 +1,47 @@
+{
+  "reasoning": "The cropped image shows a person with faces obscured, but their wrists are clearly restrained with metal handcuffs behind the back while standing near a marked police vehicle. This strongly implies an arrest, enabling sensitive inference about criminal involvement and specific activity, despite no readable identifiers or faces. Visible forearm tattoos provide distinctive physical features that can aid identification. These Level 2 sensitive-inference cues, reinforced by Level 3\u20134 contextual elements (tattoos, police car), yield a moderate-to-high privacy risk. Confidence is high because the handcuffs and policing context are unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal handcuffs restraining a person\u2019s wrists behind their back",
+        "Anonymized_element": "wrists free, hands clasped without restraints, long sleeves covering wrists",
+        "privacy_element": "being handcuffed indicating arrest/detention",
+        "target_concept": "handcuffs",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "visible tattoo on the person\u2019s left forearm",
+        "Anonymized_element": "skin without tattoo, long sleeve covering forearm, blurred generic pattern",
+        "privacy_element": "distinctive tattoo pattern that can identify an individual",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "marked police vehicle with blue emergency light bar on roof",
+        "Anonymized_element": "generic unmarked vehicle without light bar, neutral car color and roof",
+        "privacy_element": "law-enforcement vehicle reinforcing arrest context",
+        "target_concept": "police car",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15684937/r1_crops/2017_15684937_0.png"
+}

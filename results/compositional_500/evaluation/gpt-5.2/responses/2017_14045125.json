@@ -1,0 +1,43 @@
+{
+  "reasoning": "The image shows a group at a graduation event with faces obscured, and no readable names, IDs, documents, or addresses. The strongest cues are graduation gowns, caps, and celebratory bouquets that reveal participation in an educational milestone and hint at age/student status (Level 3). Background people are distant and not identifiable (Level 4). With no biometric visibility or explicit identifiers, overall risk is low-to-moderate based on activity disclosure only.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central person wearing a black graduation gown with green-trimmed sash and mortarboard",
+        "Anonymized_element": "plain casual clothing, no sash, no cap, neutral colors",
+        "privacy_element": "graduation attire indicating participation in an academic ceremony, suggests student status and approximate age group",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "large wrapped bouquet of flowers held by person on the right",
+        "Anonymized_element": "neutral gift bag without flowers, plain object with no event-specific cues",
+        "privacy_element": "ceremonial gift implies celebration timing and context (graduation)",
+        "target_concept": "bouquet",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "small group of people in the distant background on steps",
+        "Anonymized_element": "background blur, reduce crowd detail",
+        "privacy_element": "presence of other attendees though faces are not identifiable",
+        "target_concept": "crowd in background",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14045125/final/2017_14045125_final.png"
+}

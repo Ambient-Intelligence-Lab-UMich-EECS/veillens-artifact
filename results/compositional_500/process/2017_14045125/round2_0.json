@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a small group at a graduation. Two individuals\u2019 faces are unobscured and clearly identifiable, constituting Level 1 biometric data. Graduation attire (caps and gowns) reveals the activity/event (education milestone), a Level 3 clue that complements the faces by adding contextual personal information. Background people are distant and not identifiable, adding minimal risk. With multiple clear faces and supporting activity context, the privacy risk is high. Confidence is high due to clear visibility of these elements.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "leftmost person\u2019s unobstructed face with glasses and medium-length hair",
+        "Anonymized_element": "blurred or pixelated face, generic oval skin-tone patch, remove glasses or replace with plain frames without facial detail",
+        "privacy_element": "full face with distinct facial features, eyes, mouth, hairstyle, eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "third person from left, smiling face clearly visible",
+        "Anonymized_element": "pixelated/blurred face, generic oval mask, reduce facial detail",
+        "privacy_element": "full face with teeth visible, eyes, nose, mouth, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "graduation cap and gown worn by central subject holding plush toy",
+        "Anonymized_element": "generic dark clothing without academic styling, remove cap tassel and colored trim",
+        "privacy_element": "graduation attire indicating participation in an academic ceremony",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "background group of distant people near building entrance",
+        "Anonymized_element": "reduce detail of background figures, replace with abstract silhouettes or plain backdrop",
+        "privacy_element": "distant individuals present but not identifiable",
+        "target_concept": "distant crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14045125/r1_crops/2017_14045125_0.png"
+}

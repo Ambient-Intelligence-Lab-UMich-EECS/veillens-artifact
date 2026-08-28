@@ -1,0 +1,52 @@
+{
+  "reasoning": "The image shows a large indoor audience with multiple clearly visible faces, which reveals biometric identifiers. Several attendees also wear conference name badges on lanyards that likely contain names and affiliations, compounding identifiability even if text is not fully legible. These Level 1 biometric clues dominate the risk, reinforced by Level 2 non-unique identifier cues from badges. Together they justify a high privacy score. Confidence is high because the faces and badges are central and unobstructed for multiple individuals.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center attendee’s full face, smiling, facing camera",
+        "Anonymized_element": "blurred face, pixelated features, neutral oval with no facial detail",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), frontal pose",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "left-center attendee with glasses, full face visible in seated row",
+        "Anonymized_element": "pixelated/blurred face area, generic skin-tone patch, remove eye details",
+        "privacy_element": "recognizable facial features, eyes visible through glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "right-side attendee with yellow tie, full face turned slightly toward camera",
+        "Anonymized_element": "blur or replace face with smooth mask, no distinct features",
+        "privacy_element": "clear facial geometry and features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "rectangular conference name badge on lanyard worn by right-side attendee",
+        "Anonymized_element": "blank badge with no text or logo, solid color card",
+        "privacy_element": "badge surface likely containing name, organization, and role text",
+        "target_concept": "ID badge",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13724675/final/2017_13724675_final.png"
+}

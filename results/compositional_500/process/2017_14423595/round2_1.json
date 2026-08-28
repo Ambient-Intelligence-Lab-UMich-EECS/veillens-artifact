@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows the front portion of a red car in a showroom with a visible manufacturer emblem on the hood, a display plate reading a model name, and a photographer/site watermark in the corner. No people, faces, addresses, documents, or identifiers tied to an individual are present. The visible elements relate to property/brand and a digital watermark only, which are low-risk clues that do not identify a person. Thus the overall risk remains low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "manufacturer emblem on the car hood",
+        "Anonymized_element": "plain circular badge, de-branded, solid color",
+        "privacy_element": "recognizable car brand logo",
+        "target_concept": "car brand logo",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "front display plate with model text 'XL1'",
+        "Anonymized_element": "blank plate, no text or logo",
+        "privacy_element": "car model name text/logo on plate",
+        "target_concept": "model badge/plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bottom-right image watermark/logo text",
+        "Anonymized_element": "no watermark, plain background corner",
+        "privacy_element": "publisher/website watermark text/logo",
+        "target_concept": "watermark/logo",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14423595/r1_crops/2017_14423595_1.png"
+}

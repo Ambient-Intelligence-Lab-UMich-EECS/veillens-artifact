@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a printed concert setlist on a worn sheet of paper with song titles and a large symbol. There are no people, faces, names, addresses, financial or government identifiers. The only privacy-relevant element is a generic document that could imply music interests or event context, which is low risk on its own. Therefore the highest severity is Level 4 and the overall risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "worn printed paper setlist with multiple song titles and a circular symbol",
+        "Anonymized_element": "blank sheet, generic geometric graphic, placeholder lines with no readable text",
+        "privacy_element": "readable specific song titles, recognizable band-related symbol",
+        "target_concept": "paper document / setlist",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_12207544.jpg"
+}

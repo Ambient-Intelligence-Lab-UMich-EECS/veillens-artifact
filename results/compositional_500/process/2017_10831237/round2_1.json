@@ -1,0 +1,72 @@
+{
+  "reasoning": "This crop shows multiple identifiable audience faces despite the main speaker\u2019s face being obscured. Clear frontal faces enable biometric identification (highest severity). The backdrop and a visible campaign-style button indicate a political event, enabling sensitive inference about political participation. These cues together pose a high privacy risk even without explicit names or IDs. Confidence is high because the faces and political symbols are clearly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.67,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a woman in the center background (short blonde hair)",
+        "Anonymized_element": "blurred face, generic skin tone, featureless oval",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a child with red hair on upper-left background",
+        "Anonymized_element": "blurred/occluded face, generic child silhouette",
+        "privacy_element": "identifiable child\u2019s facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a youth with glasses in upper-right background",
+        "Anonymized_element": "blurred face, remove glasses details",
+        "privacy_element": "identifiable facial features, distinctive glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "frontal face of a blonde woman at far right foreground",
+        "Anonymized_element": "blurred face, featureless oval",
+        "privacy_element": "identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "round campaign-style button with patriotic colors on attendee\u2019s shirt (right side)",
+        "Anonymized_element": "plain blank button, solid color with no symbols",
+        "privacy_element": "political campaign logo/symbol suggesting political affiliation or event participation",
+        "target_concept": "political button",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10831237/r1_crops/2017_10831237_1.png"
+}

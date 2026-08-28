@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a person outdoors holding a blanked-out sign; faces are obscured and no readable text or government/financial data is visible. The strongest privacy signal is the visible participation in a public gathering (sign-holding) which can reveal activities/behavior, plus some non-specific personal attributes from clothing and build. Background includes a few unidentifiable bystanders. Without identifiable faces or legible identifiers, the risk is moderate-low. Score reflects Level 3 clues without reinforcing Level 1\u20132 elements. Confidence is medium due to contextual ambiguity of the event.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "rectangular signboard held with both hands in front of torso",
+        "Anonymized_element": "plain neutral-colored board with no text or symbols, crop tighter to hands only, replace with generic object (e.g., blank folder)",
+        "privacy_element": "participation in public demonstration or rally implied by sign-holding",
+        "target_concept": "protest sign",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "distinctive blue-and-black winter jacket with green hoodie underneath",
+        "Anonymized_element": "generic solid-color outerwear without distinctive layers or colors",
+        "privacy_element": "clothing style and build suggesting age/gender appearance",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two unidentifiable bystanders partially visible (torsos/legs) in background",
+        "Anonymized_element": "further blur or replace with generic silhouettes, reduce detail",
+        "privacy_element": "presence of nearby crowd in a public setting",
+        "target_concept": "background bystanders",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16175243/r1_crops/2017_16175243_1.png"
+}

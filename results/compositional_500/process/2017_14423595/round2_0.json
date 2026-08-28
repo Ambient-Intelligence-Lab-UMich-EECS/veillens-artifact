@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows the front of a red car on an indoor showroom floor. No people, faces, addresses, or license numbers are visible. The only readable text is the model name on a display-style plate and a vehicle brand logo. These are not personal identifiers and only indicate a type of property. Thus the highest severity is Level 4 (property/assets, generic artifacts). With no compositional reinforcement toward identity or location, the overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front exterior of a red car with visible brand emblem on hood",
+        "Anonymized_element": "generic car front, remove or blur emblem, neutral color finish",
+        "privacy_element": "distinct vehicle model appearance, brand logo",
+        "target_concept": "vehicle front",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rectangular front plate area showing readable model text 'XL1'",
+        "Anonymized_element": "blank plate, no text or logos",
+        "privacy_element": "model name text on plate-like area",
+        "target_concept": "model name plate",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14423595/r1_crops/2017_14423595_0.png"
+}

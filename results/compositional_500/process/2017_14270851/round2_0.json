@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows a group of cyclists outdoors with several unobscured, clearly identifiable faces. These constitute Level 1 biometric data. Distinctive clothing (e.g., a bright orange hi\u2011vis vest and a yellow wide\u2011brim hat) and the evident cycling activity add Level 3 contextual signals about behaviors and personal appearance. No names, government IDs, or financial/medical data are visible. Due to multiple clear faces and reinforcing activity context, the privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central man with full beard wearing bright orange high-visibility vest; face unobscured",
+        "Anonymized_element": "blurred face, pixelated face, featureless oval, lower head tilt, opaque visor",
+        "privacy_element": "full face with eyes, nose, mouth; distinctive beard",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person near center wearing black T\u2011shirt and helmet; face visible despite sunglasses",
+        "Anonymized_element": "blurred face, pixelated face, opaque sunglasses/visor, turned head",
+        "privacy_element": "recognizable facial structure and mouth/chin",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person left-of-center in neon jacket on bicycle; face unobscured",
+        "Anonymized_element": "blurred face, pixelated face, replace with generic mask, head turned away",
+        "privacy_element": "full face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person right-of-center wearing large yellow hat; face visible",
+        "Anonymized_element": "blurred face, pixelated face, brim lowered to hide face, generic helmet obscuring features",
+        "privacy_element": "full face, distinctive headwear aiding recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person on far right with bicycle helmet; face visible",
+        "Anonymized_element": "blurred face, pixelated face, opaque visor, turned profile",
+        "privacy_element": "recognizable face with eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group members mounted on bicycles wearing cycling gear",
+        "Anonymized_element": "bicycles without riders, empty ground in place of riders, generic props without activity cues",
+        "privacy_element": "visible engagement in cycling activity, gear indicating hobby/routine",
+        "target_concept": "cycling activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14270851/r1_crops/2017_14270851_0.png"
+}

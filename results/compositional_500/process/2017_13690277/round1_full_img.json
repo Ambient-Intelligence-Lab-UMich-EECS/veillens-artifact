@@ -1,0 +1,83 @@
+{
+  "reasoning": "The image shows a small group of people, including several children, with multiple full, front-facing and well-lit faces clearly visible. These constitute biometric identifiers (Level 1) that can uniquely identify individuals, especially given their central framing and clarity. No government IDs, names, or documents are present. Background people are more distant and less clear. The combination of several highly identifiable faces drives the risk, while the absence of other identifiers tempers it. Overall risk is high with high confidence due to multiple clear biometric cues.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "adult woman's full face in the left foreground, smiling and looking toward the camera",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic skin-tone oval without features",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "girl with black hair and glasses, full face near center of image",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head, generic eyeglass frames without lenses or details",
+        "privacy_element": "clear facial features, eyes behind glasses enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "boy in blue striped shirt, full face slightly right of center",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child with blonde hair, right-center profile face",
+        "Anonymized_element": "blurred profile, turned-away head, pixelated facial region",
+        "privacy_element": "distinct facial profile and features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "child in red-and-blue striped sports jersey, full face at right foreground",
+        "Anonymized_element": "blurred face, pixelated face, turned-away head",
+        "privacy_element": "clear facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "distant seated people in background with partially visible faces",
+        "Anonymized_element": "strong blur, silhouettes without facial detail",
+        "privacy_element": "partially visible facial features in the background",
+        "target_concept": "background faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_13690277.jpg"
+}

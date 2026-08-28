@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a small street protest with two identifiable faces (left-standing person and center-seated person). Visible, unobstructed faces constitute Level 1 biometric data. The center person also holds a readable protest sign explicitly criticizing Scientology, revealing religious/political stance and activism (Level 2 sensitive inference and activity). These clues are central and mutually reinforcing, linking identity to a sensitive belief and behavior. No government IDs, financial or medical data are visible. Given clear faces and explicit stance, overall privacy risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left-standing person's unobstructed face looking right",
+        "Anonymized_element": "blurred face region, pixelated facial features, generic skin tone, low-detail head shape",
+        "privacy_element": "full face with eyes, nose, mouth visible enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "center-seated person's unobstructed face looking left",
+        "Anonymized_element": "blurred face region, pixelated facial features, generic skin tone, low-detail head shape",
+        "privacy_element": "full face with clear identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white protest sign held by the center-seated person reading 'SCIENTOLOGY IS NOT A RELIGION!'",
+        "Anonymized_element": "blank sign, abstract pattern, blurred or removed text",
+        "privacy_element": "readable message revealing anti-Scientology stance and participation in protest",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_15804823.jpg"
+}

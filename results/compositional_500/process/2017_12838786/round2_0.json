@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows two people facing the camera with clear, front-facing smiles. Their facial features are recognizable and unobstructed, constituting biometric identifiers. No names, documents, or other identifiers are visible. The presence of multiple identifiable faces elevates risk, while other elements (phones, background) add little. Overall risk is driven by Level 1 biometric data, with some ancillary personal-attribute cues.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing smiling face of person on the left-center",
+        "Anonymized_element": "pixelated face, gaussian blur, solid-color oval mask, turned-away head",
+        "privacy_element": "full face with visible eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "front-facing smiling face of person on the right",
+        "Anonymized_element": "pixelated face, gaussian blur, solid-color oval mask, turned-away head",
+        "privacy_element": "full face with visible eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12838786/r1_crops/2017_12838786_0.png"
+}

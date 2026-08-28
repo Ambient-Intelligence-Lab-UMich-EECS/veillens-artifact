@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows a baseball field with several people, most of whom have faces obscured or turned away. One player on the right has a partially visible profile face under a cap, which provides limited biometric information. No readable names, numbers, documents, or location-specific signs are visible. The highest severity element is the partially visible face (Level 1), but it is small and not fully clear, so overall risk is limited.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side baseball player’s face in left profile under a cap",
+        "Anonymized_element": "face blurred or replaced with featureless skin patch, head turned fully away, visor shadow deepened",
+        "privacy_element": "recognizable facial features in profile (eye region, nose, mouth outline)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10681054/final/2017_10681054_final.png"
+}

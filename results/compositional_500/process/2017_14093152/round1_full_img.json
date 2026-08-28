@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a crowded outdoor event with multiple clearly visible faces, including a central shirtless person elevated above the crowd. These unobscured, identifiable faces constitute Level 1 biometric data. A prominent \u201cONE WAY\u201d street sign provides location context. The distinctive striped flag with a heart motif being waved could reveal sensitive affiliation or inference about personal identity or subculture, adding Level 2 sensitivity and activity context. The combination of several Level 1 faces with additional Level 2 and Level 3 clues yields a high overall privacy risk. Confidence is high because the cues are large, central, and unoccluded.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "central elevated person\u2019s face wearing sunglasses and leather cap",
+        "Anonymized_element": "blurred face, neutral skin-tone gradient, generic hat with no distinctive style",
+        "privacy_element": "identifiable facial structure, visible eyes region despite sunglasses, distinctive headwear",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "foreground man\u2019s face with leather cap and sunglasses near center-left",
+        "Anonymized_element": "blurred face, neutral shading, generic cap without distinctive style",
+        "privacy_element": "identifiable face shape and facial hair, visible nose/mouth, distinctive accessories",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "midground attendee\u2019s side-profile face left of center",
+        "Anonymized_element": "profile face blur, smooth color patch, de-identified head contour",
+        "privacy_element": "identifiable facial profile with ear and nose silhouette",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "street sign reading ONE WAY on right side of scene",
+        "Anonymized_element": "blank rectangular sign with no text or arrow",
+        "privacy_element": "readable street direction sign providing location context",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "striped blue/black/white flag with red heart held by central person",
+        "Anonymized_element": "plain solid-color fabric with no symbols or distinctive pattern",
+        "privacy_element": "recognizable subculture/identity flag pattern implying sensitive affiliation, event participation",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14093152.jpg"
+}

@@ -1,0 +1,34 @@
+{
+  "reasoning": "The region shows multiple people in theatrical attire with faces obscured, so no identifiable biometrics are visible. There are no readable names, documents, or numbers. Privacy-relevant cues are limited to personal attributes (apparent gender presentation via clothing) and activities/behaviors (theatrical/performance context suggested by costumes and pose). These are Level 3 clues without reinforcement from higher-severity elements, resulting in a low overall risk. Confidence is medium because activity inference relies on visual context but remains plausible.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "tulle dress with floral headpiece worn by the person on the left",
+        "Anonymized_element": "plain neutral dress, remove floral headpiece, generic styling",
+        "privacy_element": "distinct costume indicating performance role/theme",
+        "target_concept": "costume",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "crossed legs wearing patterned knee-high stockings and black heels on the person leaning forward",
+        "Anonymized_element": "plain pants or opaque leggings, neutral shoes",
+        "privacy_element": "apparent gender presentation and body shape",
+        "target_concept": "clothed legs",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11456107/r1_crops/2017_11456107_0.png"
+}

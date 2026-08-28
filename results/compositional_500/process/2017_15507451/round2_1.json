@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a banquet setting with multiple attendees. Several background faces are visible (though small), providing biometric identifiers. No readable names, documents, or location markers are present. The highest-severity cues are identifiable faces, with minor contextual clues about social activity (dining/drinking). Because the faces are somewhat distant and partially angled, the risk is moderate rather than high. Confidence is medium due to size and partial occlusion of faces.",
+  "personal_info_privacy_score": {
+    "score": 0.38,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated man at center looking downward with visible face",
+        "Anonymized_element": "face blurred or pixelated, replace with neutral oval, remove distinctive hairstyle details",
+        "privacy_element": "recognizable facial features, hairstyle, skin texture",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "profile face of man on right side of table, looking left",
+        "Anonymized_element": "profile blurred/pixelated, neutral silhouette with no facial detail",
+        "privacy_element": "recognizable facial profile, nose and jawline, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partial face of blonde woman at far right edge",
+        "Anonymized_element": "edge region smoothed or cropped, apply blur/pixelation over facial area",
+        "privacy_element": "visible eye and cheek, hair color/style enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "wine bottle and glasses on table near attendees",
+        "Anonymized_element": "generic unlabeled bottle, reduce label detail, replace with water bottle",
+        "privacy_element": "drinking context suggesting alcohol consumption",
+        "target_concept": "table setting with alcohol",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15507451/r1_crops/2017_15507451_1.png"
+}

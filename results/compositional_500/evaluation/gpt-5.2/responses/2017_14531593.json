@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows plates of burgers, fries, and sauces on a restaurant table. No readable text, documents, payment cards, or identifiable faces are visible. The only privacy-relevant clues are weak: it reveals a dining activity/food preference and includes a partially visible person without a face. Highest severity present is Level 3 (activity/consumption pattern), with an additional minor Level 4 clue (unidentifiable person). These weak, non-identifying clues justify a low privacy-risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground plate with burger, fries, and salad on a restaurant table",
+        "Anonymized_element": "generic dish shape or blurred food details, non-descript plate and condiments",
+        "privacy_element": "visible meal type indicating dining preference/consumption habit",
+        "target_concept": "meal plate",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "upper torso silhouette of a seated person in the background with no face visible",
+        "Anonymized_element": "crop out person, replace with empty chair or generic blur",
+        "privacy_element": "presence of person without identifiable facial features",
+        "target_concept": "unidentifiable person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14531593/final/2017_14531593_final.png"
+}

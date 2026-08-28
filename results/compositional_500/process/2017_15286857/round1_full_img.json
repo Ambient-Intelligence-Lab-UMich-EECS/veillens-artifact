@@ -1,0 +1,71 @@
+{
+  "reasoning": "The image shows an open passport spread with multiple immigration/visa stamps. Several stamps have readable place names (e.g., Dublin Airport, Schiphol, Paris Nord) and clear entry/exit dates, revealing travel history and locations. A handwritten note appears to include a specific date and a given name, which is a non-unique identifier. No faces or direct biometric data are visible. The highest-severity cue is the readable given name (Level 2), compounded by multiple Level 3 location and behavior clues from dated travel stamps. This combination yields a moderate-to-high privacy risk. Confidence is medium because the handwritten name is somewhat interpretive though legible, while the stamps and dates are clear.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten note on the left page with a date and the given name 'Mark'",
+        "Anonymized_element": "blank scribble without legible characters, generic squiggle, remove date and name",
+        "privacy_element": "readable given name, specific written date",
+        "target_concept": "handwritten note",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green immigration/visa stamp on the right page reading 'DUBLIN AIRPORT' with a specific date",
+        "Anonymized_element": "generic stamp shape with blurred text, no place name, no date",
+        "privacy_element": "place name 'Dublin Airport', clear entry/exit date",
+        "target_concept": "immigration stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular black stamp labeled 'SCHIPHOL' with an arrow and date",
+        "Anonymized_element": "abstract stamp design with unreadable text, no airport name, no date",
+        "privacy_element": "airport name 'Schiphol', specific date",
+        "target_concept": "entry/exit stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tall rectangular black stamp marked 'PARIS NORD' with time/date numerals",
+        "Anonymized_element": "generic stamp graphic without legible station name or numerals",
+        "privacy_element": "location 'Paris Nord', clear date/time",
+        "target_concept": "rail entry stamp",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large green visa box with official headings and codes on the left page",
+        "Anonymized_element": "plain textured area or generic patterned box without text or codes",
+        "privacy_element": "official visa formatting and reference text indicating government document type",
+        "target_concept": "visa box",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15286857.jpg"
+}

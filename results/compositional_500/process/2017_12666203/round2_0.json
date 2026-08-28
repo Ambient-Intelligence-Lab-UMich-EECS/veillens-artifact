@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a whiteboard with multiple sticky notes containing legible handwritten phrases about team processes and activities (e.g., team lunch, monitoring CI after push). There are no faces, names, or unique identifiers. The highest severity present is Level 3 due to observable activities/behaviors; most content is generic documentation (Level 4). These weak cues indicate workplace routines but not an individual\u2019s identity. Overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue sticky note reading \"Monitor CI progress after push\"",
+        "Anonymized_element": "blank sticky note, illegible scribbles, abstract icons without text",
+        "privacy_element": "readable work task text indicating development workflow",
+        "target_concept": "sticky note with work task",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "yellow sticky note reading \"TEAM LUNCH 'it's good to talk'\"",
+        "Anonymized_element": "blank note, generic doodle without legible words",
+        "privacy_element": "readable activity text describing team lunch",
+        "target_concept": "sticky note with activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large header text \"DEV TEAM CHAR...\" at the top of the board",
+        "Anonymized_element": "blank header strip, generic geometric banner with no text",
+        "privacy_element": "readable header indicating team type and charter",
+        "target_concept": "document header text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12666203/r1_crops/2017_12666203_0.png"
+}

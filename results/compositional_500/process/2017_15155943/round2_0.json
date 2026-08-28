@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a parade with many spectators whose faces are clearly visible and front-facing, enabling biometric identification. This constitutes Level 1 risk. There are no names or IDs, but several minors\u2019 faces are visible, and a recognizable Mickey Mouse balloon suggests a specific themed location, adding moderate location risk. The combination is driven mainly by multiple unobstructed faces, so the overall risk is high. Confidence is high due to clear, central visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing adult male in blue-and-gray striped shirt seated near curb, face unobstructed",
+        "Anonymized_element": "pixelated face, blurred facial region, turned-away head",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "adult female wearing red Minnie-style headband at center-left, looking forward",
+        "Anonymized_element": "remove facial details, generic blank oval, change head orientation",
+        "privacy_element": "clear frontal facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "young child in yellow cap leaning on brown bin, face visible",
+        "Anonymized_element": "blur/pixelate face, replace with neutral oval, adjust pose to profile",
+        "privacy_element": "minor\u2019s identifiable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "toddler in stroller at center-right with face visible",
+        "Anonymized_element": "pixelated face, blanket covering face, turned-away head",
+        "privacy_element": "minor\u2019s face with distinguishable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Mickey Mouse character balloon behind parade performers",
+        "Anonymized_element": "generic plain balloon without character, neutral color",
+        "privacy_element": "recognizable branded character implying specific theme park location",
+        "target_concept": "landmark/balloon",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15155943/r1_crops/2017_15155943_0.png"
+}

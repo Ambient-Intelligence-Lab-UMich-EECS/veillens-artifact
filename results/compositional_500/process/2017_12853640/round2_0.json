@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a vintage car in a landscape and a very small, distant human figure on a hill. No readable faces, names, IDs, license plates, addresses, or sensitive documents are visible. The highest-severity cues are low-level contextual ones: a vehicle (property/asset) and a distant unidentifiable person. These do not directly identify an individual or reveal sensitive data, so the overall privacy risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white vintage coupe with visible model branding and trim details",
+        "Anonymized_element": "generic unbranded car, remove model badges and logos, neutralized trim",
+        "privacy_element": "distinct vehicle make/model styling, visible branding/badges",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small distant human figure standing on a hill",
+        "Anonymized_element": "remove person, replace with rock/shrub, silhouette without human detail",
+        "privacy_element": "presence of a person (unidentifiable due to distance)",
+        "target_concept": "person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12853640/r1_crops/2017_12853640_0.png"
+}

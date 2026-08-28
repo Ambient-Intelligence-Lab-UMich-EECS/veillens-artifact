@@ -1,0 +1,57 @@
+{
+  "reasoning": "The image shows a public crowd with several individuals’ faces unobscured and clearly visible, which constitutes biometric identifiers (Level 1). Additional minor clues include sports team logos on clothing that suggest event attendance (behavior/location context) and a visible crowd-control sign, but these are much lower risk. Because at least two identifiable faces are directly visible and central, the overall risk is high. Confidence is high due to clear facial details and legible context elements.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobscured face of a person with a shaved head holding a smartphone near the center-left",
+        "Anonymized_element": "blurred face, turned-away head, pixelated facial region",
+        "privacy_element": "full face with eyes, nose, and mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "unobscured face of a person wearing glasses and a striped scarf on the far right",
+        "Anonymized_element": "blurred face, pixelated facial region, opaque sunglasses blocking eyes",
+        "privacy_element": "full face with identifiable features and eyes visible through glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "team logo on scarf/jersey worn by people in the crowd",
+        "Anonymized_element": "plain clothing with no logos or text, generic colors",
+        "privacy_element": "distinct sports team branding indicating fandom and probable event attendance",
+        "target_concept": "clothing logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "barrier ribbon with readable text 'Please Wait Here' at the front of the crowd",
+        "Anonymized_element": "blank ribbon with no text or symbols",
+        "privacy_element": "legible public sign text giving contextual location cues",
+        "target_concept": "sign text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14046835/final/2017_14046835_final.png"
+}

@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a computer monitor with a software visualization interface. No faces, IDs, or personal documents are visible. The only potentially identifying clue is a readable website URL along the screen\u2019s bottom, which can hint at an organization but not a specific person. With no Level 1\u20132 clues and only minor contextual text, the personal\u2011information risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.1,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "readable website URL text along the bottom edge of the displayed software window",
+        "Anonymized_element": "replace with generic placeholder text, blur text, crop out the line",
+        "privacy_element": "company domain/URL text that could reveal organization",
+        "target_concept": "URL text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13683184/r1_crops/2017_13683184_1.png"
+}

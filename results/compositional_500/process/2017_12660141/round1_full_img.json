@@ -1,0 +1,36 @@
+{
+  "reasoning": "The image is a well-lit portrait of a single person in graduation attire against a plain background. The person\u2019s full frontal face is clearly visible and unobstructed, which is strong biometric data and highly identifying (highest severity). The graduation cap and gown additionally reveal an activity/context (graduation) and some personal attributes, though no school name or text is visible. With a central, high-resolution face and reinforcing contextual attire, the privacy risk is high. Confidence is high due to clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed frontal face of the person occupying the center of the image",
+        "Anonymized_element": "blurred face, pixelated facial region, cropped above shoulders, generic silhouette",
+        "privacy_element": "full facial features including eyes, nose, mouth, and overall facial geometry",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green graduation cap with yellow tassel and matching gown with blue/yellow trim",
+        "Anonymized_element": "plain casual clothing, remove cap and tassel, neutral-colored shirt without regalia",
+        "privacy_element": "graduation attire indicating education milestone or event participation",
+        "target_concept": "graduation attire",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12660141.jpg"
+}

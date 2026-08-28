@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image captures a public sporting event featuring numerous athletes and a referee on a pitch. While faces are visible, they are distant and part of a public event where individuals have a reasonable expectation of being filmed. The athletes are identifiable as professional players in a public, professional capacity, which qualifies as Level 4 moderate risk due to their status as public figures. No highly sensitive personal information, identifiers, or biometric data outside of this public context are present, resulting in a low overall privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Multiple professional athletes in team uniforms on a football pitch",
+        "Anonymized_element": "blurred faces, generic team jerseys",
+        "privacy_element": "visible faces of professional athletes",
+        "target_concept": "face",
+        "severity_level": 4,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14806724/final/2017_14806724_final.png"
+}

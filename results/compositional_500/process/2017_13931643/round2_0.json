@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a live performance scene with one performer\u2019s face on the left clearly visible while singing into a microphone; another performer\u2019s face is obscured. The identifiable face constitutes Level 1 biometric data. The stage activity (singing into a handheld microphone, instruments) adds Level 3 behavioral context but does not reveal names or location. Given one visible face in moderate clarity and reinforcing performance context, the privacy risk is high-moderate. Confidence is medium due to low-light noise but facial features are still discernible.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left performer\u2019s face in profile near a microphone",
+        "Anonymized_element": "blurred or pixelated face, generic silhouette, low-detail skin tone, reduce facial feature contrast",
+        "privacy_element": "recognizable facial features, partial profile, eyes/nose/mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "handheld microphone at the singer\u2019s mouth",
+        "Anonymized_element": "remove microphone, replace with generic stage prop or blank space",
+        "privacy_element": "singing action implies participation in a live performance",
+        "target_concept": "microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13931643/r1_crops/2017_13931643_0.png"
+}

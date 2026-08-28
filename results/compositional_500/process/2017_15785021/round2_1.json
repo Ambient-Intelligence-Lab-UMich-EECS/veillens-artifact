@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a person in a distinctive turquoise belly-dance style costume with an exposed midriff and raised-arm pose. The face is obscured, so no Level 1 biometric identifiers are present. Visible cues mainly reveal personal attributes (body shape, likely gender presentation) and an activity/behavior (dancing or performance). These Level 3 clues carry moderate privacy risk without reinforcement from names, location, or government/financial data.",
+  "personal_info_privacy_score": {
+    "score": 0.3,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "turquoise beaded belly-dance style top and skirt exposing the abdomen",
+        "Anonymized_element": "plain, less-revealing top and skirt in muted colors without distinctive decorations",
+        "privacy_element": "distinctive costume style suggesting dance/performance, exposed abdomen revealing body shape and gender-presenting traits",
+        "target_concept": "costume/outfit",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "raised-arm dance pose with hands near head",
+        "Anonymized_element": "neutral relaxed stance with arms down",
+        "privacy_element": "gesture and posture indicating dancing/performance activity",
+        "target_concept": "pose/gesture",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15785021/r1_crops/2017_15785021_1.png"
+}

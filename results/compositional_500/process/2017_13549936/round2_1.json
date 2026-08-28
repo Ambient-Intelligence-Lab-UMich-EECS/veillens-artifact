@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a close-up of a Spanish lottery ticket with clearly legible ticket number, series code, draw date, and a partial barcode. No person, face, or personal identifiers are present, but the document contains unique serial identifiers that could be misused (e.g., ticket validation or fraud) if still valid. These are generic document identifiers, not tied to an individual. Highest severity is Level 4, with multiple reinforcing document identifiers visible. Overall privacy risk is low but nonzero. Confidence is high due to clear legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large printed lottery ticket number in the center of the ticket",
+        "Anonymized_element": "replace with random placeholder digits or Xs, reduce contrast, or remove number entirely",
+        "privacy_element": "unique lottery ticket number/serial digits",
+        "target_concept": "ticket number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "partial barcode with adjacent small digits at the bottom edge of the ticket",
+        "Anonymized_element": "blank area or decorative line without bars or digits",
+        "privacy_element": "machine-readable barcode with numeric code",
+        "target_concept": "barcode",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed series code in a circle and draw/date text ('22 de diciembre de 2007')",
+        "Anonymized_element": "generic text without specific dates or codes",
+        "privacy_element": "specific series identifier and exact draw date",
+        "target_concept": "document text (date/series)",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13549936/r1_crops/2017_13549936_1.png"
+}

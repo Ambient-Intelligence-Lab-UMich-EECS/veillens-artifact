@@ -1,0 +1,37 @@
+{
+  "reasoning": "The image is a close-up of a government-issued International Driving Permit. The document text is clear and readable, showing the permit type, issuing country (Japan), and issuance details including location (Saitama, Japan) and date. Even without a person\u2019s name or face, a readable government ID document constitutes a severe privacy risk. The issuance location and date further reinforce identifiability and potential linking. Overall risk is high with clear, legible government-identifier content; confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.74,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Close-up of an International Driving Permit page with visible country name and permit titles",
+        "Anonymized_element": "plain booklet cover, no government text or logos, solid color paper",
+        "privacy_element": "government ID document format, readable country name 'JAPAN', readable permit type 'INTERNATIONAL DRIVING PERMIT'",
+        "target_concept": "ID document",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "Issuance details line showing 'SAITAMA, JAPAN' and date 'DEC 25, 2012'",
+        "Anonymized_element": "blank line or placeholder text with no city or date, blurred text",
+        "privacy_element": "issuing location, issuance date on government ID",
+        "target_concept": "issue details text",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16361409.jpg"
+}

@@ -1,0 +1,24 @@
+{
+  "reasoning": "The image shows a cargo ship at sea with no visible or identifiable people. There are no government IDs, financial or medical documents, nor any clearly legible addresses. The only potentially identifying element is the vessel\u2019s readable name painted on the hull, which relates to an asset rather than a person. Background coastline features are generic and not uniquely localizing. Overall, privacy risk is very low with no personal information exposed.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "ship hull with readable vessel name painted near the bow",
+        "Anonymized_element": "blank hull area, blurred or generic text, obstructed nameplate",
+        "privacy_element": "readable vessel name text",
+        "target_concept": "asset name text",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15303118.jpg"
+}

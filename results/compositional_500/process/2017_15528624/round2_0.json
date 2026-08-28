@@ -1,0 +1,84 @@
+{
+  "reasoning": "The crop shows a dense crowd with multiple clearly visible, identifiable faces along with national flags and a protest-style banner. The highest-severity evidence is Level 1 biometric data from several unobstructed faces that could enable identification. Additional contextual clues (Brazilian flags and a rally banner) indicate a specific public gathering and suggest location and activity, which compounds exposure. Given multiple distinct faces and reinforcing context, the privacy risk is high. Confidence is high because the faces and contextual items are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man with glasses near center-right, looking slightly downward",
+        "Anonymized_element": "blurred face, smooth skin texture, remove glasses, neutral oval shape",
+        "privacy_element": "full face, identifiable facial features, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "profile face of a person in a yellow headwrap near lower center-left",
+        "Anonymized_element": "blurred profile, generic head shape, plain head covering",
+        "privacy_element": "clear facial profile, nose and jawline outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a bearded man in gray shirt near right-center",
+        "Anonymized_element": "blurred face, remove beard detail, neutral skin tone",
+        "privacy_element": "full face, beard, distinctive facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "face of a man in a blue shirt at mid-left, partially turned to camera",
+        "Anonymized_element": "blurred face, generic features, desaturated tones",
+        "privacy_element": "recognizable facial features in partial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "Brazilian national flag held aloft near right-center foreground",
+        "Anonymized_element": "plain green-yellow cloth without emblem, abstract pattern",
+        "privacy_element": "national flag indicating country context and event association",
+        "target_concept": "national flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "large white banner with black text in back-left of crowd",
+        "Anonymized_element": "blank banner with no text or symbols",
+        "privacy_element": "protest-style banner suggesting organized public demonstration",
+        "target_concept": "protest banner",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15528624/r1_crops/2017_15528624_0.png"
+}

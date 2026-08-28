@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a postcard-like card with a handwritten motivational note and a visible \u201cREDBUBBLE\u201d logo. There are blank address lines but no names, addresses, faces, or unique identifiers. This is a generic document with legible text but no personal information. Risk remains very low and primarily stems from the presence of a branded document artifact with readable content.",
+  "personal_info_privacy_score": {
+    "score": 0.03,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "postcard with handwritten note and visible REDBUBBLE logo in the lower-left corner",
+        "Anonymized_element": "plain unbranded card, remove/blur all text, generic color block",
+        "privacy_element": "readable handwritten text, visible brand logo, postcard address lines",
+        "target_concept": "handwritten note/postcard",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15560413/r1_crops/2017_15560413_0.png"
+}

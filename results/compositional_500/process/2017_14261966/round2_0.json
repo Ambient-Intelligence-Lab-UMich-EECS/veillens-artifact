@@ -1,0 +1,60 @@
+{
+  "reasoning": "This crop shows a parade float with multicolored streamers and bead necklaces, several people whose faces are obscured, and a crowd with raised hands. There are no readable names or IDs and no identifiable faces. The main risk comes from sensitive inference: rainbow-style decorations and rainbow bead necklaces can imply participation in or support for an LGBTQ-related event. Additional moderate cues include a shirtless participant and visible crowd activity, which reveal behaviors and some physical attributes. Together these yield a moderate but not high privacy risk, with some ambiguity about the exact event context.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "multicolored streamers (red, orange, purple) attached along the side of the float railing",
+        "Anonymized_element": "single-color streamers, muted colors, abstract decorative ribbons",
+        "privacy_element": "rainbow-like color scheme suggesting Pride-themed event affiliation",
+        "target_concept": "event decorations",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "person on float wearing multiple colorful bead necklaces",
+        "Anonymized_element": "plain single-color necklace, no rainbow palette, remove symbolic charms",
+        "privacy_element": "rainbow-like bead colors associated with LGBTQ events implying affiliation",
+        "target_concept": "bead necklaces",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "shirtless person\u2019s back on the right side of the float",
+        "Anonymized_element": "add plain T-shirt, crop to mid-torso, neutral clothing",
+        "privacy_element": "exposed torso revealing body build and physical features",
+        "target_concept": "exposed torso",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "foreground crowd with raised hands and wristbands, faces not visible",
+        "Anonymized_element": "blur hands and accessories, reduce crowd detail",
+        "privacy_element": "presence in a specific public event/activity without identifiable faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14261966/r1_crops/2017_14261966_0.png"
+}

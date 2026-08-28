@@ -1,0 +1,95 @@
+{
+  "reasoning": "The image shows a public parade with multiple clearly identifiable faces, including minors, which is Level 1 biometric data. Readable text on a large banner and T\u2011shirts reveals the organization and city name (\u201cEast Grand Rapids Wrestling\u201d), adding location information and activity/affiliation context. A readable storefront sign further anchors place. These cues together enable identification of specific individuals at a specific event/location. Given several unobstructed faces plus reinforcing location/activity text, the overall privacy risk is high with clear evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "teen boy at left foreground wearing a cap, full face visible",
+        "Anonymized_element": "face blurred or replaced with generic faceless silhouette, neutral cap",
+        "privacy_element": "full unobstructed face with distinctive features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "teen boy in center holding a yellow banner, face clearly visible",
+        "Anonymized_element": "blurred face, generic hand-held placard without readable text",
+        "privacy_element": "full unobstructed face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on right side smiling and talking, face visible in profile",
+        "Anonymized_element": "blur or replace facial region, generic hairstyle",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "young girl at right holding a green bucket, face visible",
+        "Anonymized_element": "blurred face, generic bucket",
+        "privacy_element": "recognizable facial features of a minor",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large yellow banner reading 'EAST GRAND RAPIDS WRESTLING' held by participant",
+        "Anonymized_element": "plain yellow banner with abstract logo, no text or location name",
+        "privacy_element": "city name and team/club name indicating specific location and affiliation",
+        "target_concept": "event banner",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "gray T\u2011shirt on marcher with readable text 'EAST WRESTLING'",
+        "Anonymized_element": "plain T\u2011shirt without text or logos",
+        "privacy_element": "team/activity name indicating affiliation",
+        "target_concept": "branded clothing text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront awnings with readable 'STARBUCKS COFFEE' sign behind crowd",
+        "Anonymized_element": "blank green awnings with no text or logos",
+        "privacy_element": "readable business signage that helps pinpoint location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12934115.jpg"
+}

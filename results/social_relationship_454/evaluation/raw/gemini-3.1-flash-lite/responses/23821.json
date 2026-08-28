@@ -1,0 +1,21 @@
+{
+  "img_id": "23821",
+  "predictions": {
+    "1 2": 1,
+    "1 3": 4,
+    "1 4": 4,
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 4
+  },
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "raw_response": "[P1-P2]: P1 and P2 are interacting directly as P1 pours wine for P2, suggesting a social gathering where they are attendees or hosts together. Their collaborative focus on the serving activity indicates a shared social context. => friends\n\n[P1-P3]: P1 and P3 are positioned close together in the same work area, with P3 observing the wine pouring while P1 performs it. Their coordinated participation in the catering activity suggests they are colleagues working together. => professional\n\n[P1-P4]: P1 and P4 are both involved in the setup or management of the food/wine station, with P4 handling boxes nearby. Their presence in a service-oriented capacity suggests they are colleagues working at the same event. => professional\n\n[P2-P3]: P2 and P3 are standing near each other in the same social/event space, participating in the same gathering. While they are not interacting directly, their shared proximity and presence at the same event imply a common social connection. => friends\n\n[P2-P4]: P2 is a guest or participant at the event, while P4 is actively handling supplies, suggesting a potential service-provider interaction. However, in the context of this casual outdoor gathering, they are more likely just two people at the same event. => no-relationship\n\n[P3-P4]: P3 and P4 are both positioned around the food and drink preparation area, likely colleagues or event staff coordinating the service. Their shared presence in a functional, service-oriented space strongly indicates a professional relationship. => professional",
+  "timestamp": 1779942264.623237
+}

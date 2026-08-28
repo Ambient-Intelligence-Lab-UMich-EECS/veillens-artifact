@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows close-up Spanish lottery tickets with clearly legible serial numbers, barcodes, ticket numbers, series/fraction, price, and draw date. No people, faces, or government/financial identifiers tied to an individual are visible. These are generic documents with machine-readable codes that could allow misuse but are not linked to a person. The highest severity present is Level 4, and the risk is low but nonzero due to readable codes and numbers. Confidence is high because the elements are clear and unambiguous.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "black-and-white barcode with adjacent numeric serial on the lower ticket",
+        "Anonymized_element": "blank area, blurred barcode, random placeholder digits, generic pattern without codes",
+        "privacy_element": "readable barcode, full serial number sequence",
+        "target_concept": "barcode and serial number",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large printed lottery number and series/fraction panel on right side of ticket",
+        "Anonymized_element": "generic patterned panel without numbers or labels, placeholder symbols",
+        "privacy_element": "distinct ticket number, series and fraction identifiers",
+        "target_concept": "ticket number and series panel",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11230986.jpg"
+}

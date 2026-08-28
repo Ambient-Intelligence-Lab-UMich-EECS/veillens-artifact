@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a private bedroom interior with two human figures fully anonymized (faces obscured). No readable names, documents, or government/financial identifiers are visible. Privacy signals come from contextual clues of activities and lifestyle: a breakfast-in-bed tray with a lit candle, plush toys on the bed, and distinctive bedroom decor. These are Level 3\u20134 indicators about behaviors, preferences, and home property, without biometric exposure. Combined they present a moderate but limited privacy risk. Confidence is high given clear visibility of objects and absence of direct identifiers.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "silhouetted person sitting on the bed with body outline visible",
+        "Anonymized_element": "remove person, replace with folded blankets or neutral pillow shapes",
+        "privacy_element": "presence of person, private indoor context, body outline suggesting activity in bedroom",
+        "target_concept": "person silhouette",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "white breakfast tray with cup and lit candle on bedside table",
+        "Anonymized_element": "empty tray without food or candle, generic decor item",
+        "privacy_element": "food/drink service and candle implying celebration or morning routine",
+        "target_concept": "breakfast tray",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "plush stuffed animals lying on the bed",
+        "Anonymized_element": "plain pillows or folded blankets, no toys",
+        "privacy_element": "toys indicating personal preferences and lifestyle",
+        "target_concept": "stuffed animals",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "bedroom decor including framed floral art and metal bedframe",
+        "Anonymized_element": "plain wall, generic abstract art, simplified bedframe",
+        "privacy_element": "distinctive home interior elements revealing property and taste",
+        "target_concept": "home interior decor",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15082304/r1_crops/2017_15082304_1.png"
+}

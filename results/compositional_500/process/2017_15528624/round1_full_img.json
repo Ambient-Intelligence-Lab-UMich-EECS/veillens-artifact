@@ -1,0 +1,60 @@
+{
+  "reasoning": "The scene shows a crowded public demonstration with multiple clearly visible, front-facing human faces that are identifiable, representing biometric data (highest severity). Several handheld placards with political text indicate participation in a political protest, creating sensitive inference about political views and behavior. No names, IDs, or addresses are visible. The combination of multiple Level 1 facial clues with contextual political signage elevates the overall risk. Score is high with high confidence due to clear, central, unobstructed faces and readable protest signage indicating political context.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing male face with glasses near center-right, looking upward",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing woman\u2019s face wearing a green-yellow headband near left-center",
+        "Anonymized_element": "blurred face, pixelated facial region, generic head shape",
+        "privacy_element": "identifiable facial features, hairstyle, headband detail",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-left man\u2019s face in foreground with short dark hair, mouth open, profile-to-front view",
+        "Anonymized_element": "blurred face, pixelated region, neutralized silhouette",
+        "privacy_element": "distinct facial structure, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handheld protest placard with printed political text toward right side of crowd",
+        "Anonymized_element": "blank sign, abstract symbol, non-text graphic",
+        "privacy_element": "political slogan text indicating participation in a political demonstration",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15528624.jpg"
+}

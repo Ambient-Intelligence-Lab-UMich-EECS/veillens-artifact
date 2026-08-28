@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a hand holding a Thai Airways boarding pass with clearly readable passenger information. The most sensitive elements are the full passenger name, an e-ticket number, and two machine-readable barcodes that can encode booking data\u2014these are Level 2 non-unique identifiers and directly expose personal travel records. Additional itinerary details (route BKK\u2192SIN, flight number, date, seat, gate, and time) reveal location and activity patterns (Level 3). With multiple clear, legible Level 2 clues reinforced by Level 3 context, the privacy risk is high. Confidence is high because the text and codes are sharp and central.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "passenger name text printed near top-left of the boarding pass",
+        "Anonymized_element": "blanked name field, generic placeholder text, low-resolution smear",
+        "privacy_element": "full passenger name visible and readable",
+        "target_concept": "name text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "ETKT line with long e-ticket number in the left-center of the pass",
+        "Anonymized_element": "masked digits (e.g., **** **** ****), truncated number, placeholder digits",
+        "privacy_element": "readable e-ticket/booking number",
+        "target_concept": "ticket number",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "2D barcode at bottom-left of the boarding pass",
+        "Anonymized_element": "blank rectangle, generic noise pattern, removed barcode",
+        "privacy_element": "machine-readable barcode likely encoding name and itinerary",
+        "target_concept": "barcode",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "2D barcode at bottom-right of the boarding pass",
+        "Anonymized_element": "blank rectangle, generic noise pattern, removed barcode",
+        "privacy_element": "machine-readable barcode likely encoding booking and passenger data",
+        "target_concept": "barcode",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "itinerary details text showing BANGKOK/BKK to SINGAPORE/SIN with flight TG403, date, time, gate, and seat",
+        "Anonymized_element": "generic route codes, blurred times and seat, placeholder flight info",
+        "privacy_element": "origin/destination, flight number, date/time, seat and gate",
+        "target_concept": "travel itinerary text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14873375.jpg"
+}

@@ -1,0 +1,97 @@
+{
+  "reasoning": "Country-level: Multiple cues indicate Germany. The blue pedestrian-zone sign on the pole uses the German design with a parent-and-child pictogram in a blue square. Several readable shop signs show German words, notably \u201cBierbrezel.\u201d The orange storefront placard at right has German text about service/repair. Cars display EU-style white plates with the blue EU band typical of Germany. Architecture features narrow cobbled-looking lane, stucco facades with wooden shutters common in southern German old towns.\nCity-level: The street is in a hilly, medieval-core setting with closely packed, pastel buildings and brown wooden shutters\u2014characteristic of Swabian towns in Baden\u2011W\u00fcrttemberg. \u201cBierbrezel\u201d and pretzel motifs are strongly associated with Swabia. Among Cityscapes-like German towns, the slope, tight lanes, and building styles align well with T\u00fcbingen\u2019s Altstadt rather than flatter cities like M\u00fcnster or Frankfurt\u2019s modern core. No tram tracks (rules out many larger cities like Freiburg\u2019s center). Thus, T\u00fcbingen is a plausible fit.\nStreet-level: The specific mix of a narrow uphill lane, a \u201cBierbrezel\u201d sign on the right facade, an orange repair/service sign in the window next to it, and a small trailer parked curbside helps distinguish this block from nearby streets. The pedestrian-zone sign placement at the left corner and the clustered bicycles by a storefront also help pinpoint the exact segment within the old town grid of short, winding streets.\nStep-by-step elimination: EU -> German signage and language -> southern German/Swabian architecture and pretzel branding -> university town with steep, narrow lanes -> T\u00fcbingen Altstadt -> specific block with \u201cBierbrezel\u201d sign and adjacent orange service sign on a gently rising lane.",
+  "location_estimate": {
+    "latitude": 48.5216,
+    "longitude": 9.0576,
+    "confidence": "Medium",
+    "region": "Germany, Baden-W\u00fcrttemberg, T\u00fcbingen"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue street sign on a pole at the corner",
+        "non_geolocation_element": "blue color, square shape, reflective surface, metal pole, daylight",
+        "geolocation_element": "German pedestrian-zone pictogram style (adult with child) in blue square typical to Germany",
+        "target_concept": "street sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver car at the curb",
+        "non_geolocation_element": "white rectangle, black text, reflective surface, mounted on bumper",
+        "geolocation_element": "EU-style plate with blue band and black DIN-style font consistent with German plates",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop sign above a door on the right",
+        "non_geolocation_element": "rectangular panel, black letters, wall-mounted, metal/bracket",
+        "geolocation_element": "text 'Bierbrezel' in German language",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "orange shop sign in a window on the right",
+        "non_geolocation_element": "orange background, rectangular sticker, window-mounted",
+        "geolocation_element": "German text about service/repair visible on the sign",
+        "target_concept": "shop sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of wooden window shutters on a beige facade",
+        "non_geolocation_element": "brown wood, louvered panels, repetitive pattern, old plaster wall",
+        "geolocation_element": "southern German/Swabian shuttered facade style typical of Baden\u2011W\u00fcrttemberg towns",
+        "target_concept": "window shutters",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "pair of bicycles leaned on a storefront at the left",
+        "non_geolocation_element": "metal frames, upright posture, baskets, daylight",
+        "geolocation_element": "common bicycle clustering in university old towns like T\u00fcbingen (contextual urban character)",
+        "target_concept": "bicycles",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white cargo trailer parked at the right curb",
+        "non_geolocation_element": "boxy white body, two wheels, hitch, parked position",
+        "geolocation_element": "fixed street-side landmark aiding micro-level visual matching for this block",
+        "target_concept": "trailer",
+        "properties": [
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white road marking at the edge of a parking bay",
+        "non_geolocation_element": "white paint, right-angle line, worn texture on asphalt",
+        "geolocation_element": "German-style narrow bay markings typical for old-town streets",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/tubingen/tubingen_000056_000019_leftImg8bit.png"
+}

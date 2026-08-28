@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows a suited person with the face obscured, so no identifiable biometrics are visible. The most privacy-relevant element is a lapel pin bearing a small emblem/logo that can reveal organizational affiliation (a non-unique identifier). There are also printed documents on the table with text that could contain details if legible, and a tablet device, but no readable sensitive content is visible. With one Level 2 clue (logo/affiliation) and several low-risk artifacts, overall risk is moderate-low. Score reflects the small size and limited legibility of the logo. Confidence is medium due to partial ambiguity in the tiny text.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small gold lapel pin with an emblem on the suit jacket",
+        "Anonymized_element": "plain unbranded pin, solid color, no logo or text",
+        "privacy_element": "organizational logo/emblem indicating affiliation",
+        "target_concept": "lapel pin",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "printed paper documents on the conference table with faint, unreadable text",
+        "Anonymized_element": "blank paper, fully blurred text, generic sheets",
+        "privacy_element": "printed text and possible letterhead that could contain identifiers if legible",
+        "target_concept": "printed document",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tablet in a folio case on the table with screen angled down",
+        "Anonymized_element": "closed folio, blank screen, generic device",
+        "privacy_element": "potential on-screen information (not visible)",
+        "target_concept": "tablet device",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10471337/r1_crops/2017_10471337_1.png"
+}

@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows an operating room with a patient\u2019s exposed surgical site and at least one healthcare worker\u2019s partially visible face (side profile with mask and hairnet). The face constitutes biometric data (Level 1). The illuminated surgical field and anesthesia equipment clearly indicate an ongoing medical procedure, which is sensitive medical data (Level 2). These cues together increase risk even though much of the scene is obscured. No readable names or IDs are visible. Overall risk is elevated due to the combination of a face and explicit medical treatment context. Confidence is medium given partial occlusions.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "side-profile face of healthcare worker wearing glasses, mask, and hairnet on the right side",
+        "Anonymized_element": "fully blurred face region, opaque mask and face shield without visible features, replace with generic head silhouette",
+        "privacy_element": "partially visible facial structure, eyes and profile outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "illuminated surgical site with exposed patient skin surrounded by surgical drapes at image center",
+        "Anonymized_element": "fully covered drape area with no exposed skin, replace with instrument tray or blank drape",
+        "privacy_element": "exposed patient skin indicating active surgery, medical procedure context",
+        "target_concept": "medical imagery/patient body",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "anesthesia/medical machine with breathing circuit tubing near surgical area on left",
+        "Anonymized_element": "generic storage cabinet or blank equipment without medical-specific features",
+        "privacy_element": "specialized medical device and tubing indicating active treatment",
+        "target_concept": "anesthesia machine and breathing circuit",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13454459/r1_crops/2017_13454459_1.png"
+}

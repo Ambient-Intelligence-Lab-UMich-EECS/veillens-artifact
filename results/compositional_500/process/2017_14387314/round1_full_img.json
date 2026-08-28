@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a public parade with multiple clearly visible faces, including a foreground participant and several spectators, which constitutes biometric identifiers (Level 1). A costumed performer\u2019s face is also visible though partially obscured by makeup and glasses. Rainbow pride flags are present, revealing participation in a potentially sensitive event that could allow inferences about sexual orientation or political views (Level 2). The combination of multiple identifiable faces with context signaling a specific event increases privacy risk. No government IDs, financial, or medical data are visible. Overall risk is high due to Level 1 clues reinforced by sensitive contextual signals.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground man in white tank top with unobstructed face and sunglasses on his head",
+        "Anonymized_element": "blurred face or pixelation, replace with turned head profile, neutral-colored tank without distinctive accessories",
+        "privacy_element": "clear frontal face, eyes, nose, mouth, skin texture enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "row of spectators behind metal barrier with several mid-distance faces looking toward camera",
+        "Anonymized_element": "apply face blurring across the crowd region, replace with silhouettes or heads turned away",
+        "privacy_element": "multiple identifiable faces with distinct features",
+        "target_concept": "faces in crowd",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small handheld rainbow flags among spectators at the curb",
+        "Anonymized_element": "solid-color flags, generic festival pennants, remove rainbow stripe pattern",
+        "privacy_element": "rainbow pride pattern indicating LGBTQ+ event attendance",
+        "target_concept": "pride flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "costumed performer in pink outfit with visible face covered by makeup and sunglasses",
+        "Anonymized_element": "mask covering entire face, blur facial region, alter makeup and eyewear to obscure identity",
+        "privacy_element": "facial structure and features still partly visible enabling recognition despite makeup",
+        "target_concept": "performer face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14387314.jpg"
+}

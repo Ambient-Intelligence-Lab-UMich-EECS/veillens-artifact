@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a busy street crowd with multiple clearly visible, identifiable faces at mid-range. This is Level 1 biometric data. Additionally, rainbow-themed elements (flag/stripes) indicate participation in a Pride-style public event, enabling sensitive inference about sexual orientation or related affiliations (Level 2) and revealing an activity (Level 3). These clues are central and legible, compounding risk despite the masked foreground. Hence a high privacy score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a person with bright pink wig near the left side of the crowd",
+        "Anonymized_element": "blurred face, generic skin-toned oval without features, neutral-colored hair cap",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a person with short dark hair standing behind the barrier near center-left",
+        "Anonymized_element": "face blurred or replaced with featureless silhouette",
+        "privacy_element": "distinct eyes, nose, mouth visible for recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "frontal face of a bald man smiling in the central crowd row",
+        "Anonymized_element": "apply mosaic blur, replace with low-detail placeholder",
+        "privacy_element": "full unobstructed face with distinctive bald head shape",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "rainbow-striped flag/fabric draped along the crowd barrier on the left-center",
+        "Anonymized_element": "solid single-color fabric with no stripes or symbols",
+        "privacy_element": "rainbow pride coloration signaling LGBTQ+-related event or affiliation",
+        "target_concept": "rainbow flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "crowd-control barrier spanning the foreground with people standing behind it",
+        "Anonymized_element": "remove barrier, replace with uninterrupted walkway or generic low wall",
+        "privacy_element": "event participation context (parade/rally)",
+        "target_concept": "event barrier",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14348696/r1_crops/2017_14348696_0.png"
+}

@@ -1,0 +1,70 @@
+{
+  "reasoning": "The crop shows a dense crowd with several clearly visible, front-facing or profile faces that are large and identifiable, which constitutes Level 1 biometric data. A raised plain flag suggests participation in a public gathering, adding an activities/behaviors signal, but no readable slogans or explicit affiliations are visible. Background individuals are smaller and less identifiable. Multiple strong Level 1 faces drive a high privacy risk; contextual elements modestly reinforce it. Confidence is high due to clear visibility of facial details.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man wearing a black hat and yellow sunglasses near center-right, smiling with face largely visible",
+        "Anonymized_element": "pixelated face, replaced with turned-away head, neutral sunglasses without facial detail",
+        "privacy_element": "distinct facial structure, mouth and nose visible, hairstyle and accessories aiding recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "young man in lower-center facing left in close profile, unobstructed facial features",
+        "Anonymized_element": "blurred/profile simplified, occluding mask, turned-away head",
+        "privacy_element": "clear profile including nose, mouth, jawline, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "woman in lower-left wearing glasses, side-facing but identifiable facial features",
+        "Anonymized_element": "pixelated face, remove glasses and blur eyes, turned head",
+        "privacy_element": "visible facial outline, nose and mouth, distinctive glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "large plain flag on a red pole raised above the crowd at upper-right",
+        "Anonymized_element": "remove flag, leave empty sky/background, or replace with plain sky area",
+        "privacy_element": "indicator of participation in a public demonstration or rally",
+        "target_concept": "flag",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "background cluster of small, distant people under trees with tiny, indistinct faces",
+        "Anonymized_element": "further blur distant heads, replace with generic crowd silhouettes",
+        "privacy_element": "presence of bystanders with minimally visible faces",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10835768/r1_crops/2017_10835768_1.png"
+}

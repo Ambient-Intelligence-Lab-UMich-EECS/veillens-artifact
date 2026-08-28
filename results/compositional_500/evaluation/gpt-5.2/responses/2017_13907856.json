@@ -1,0 +1,54 @@
+{
+  "reasoning": "The image shows an open notebook page with legible handwritten text listing items like “5 things on Friday #11,” “TEDx,” “Venice,” and a reading list. There are no faces, IDs, financial/medical info, or explicit personal identifiers. The primary privacy risk comes from activity and interest disclosure and a possible location reference (“Venice”). Multiple Level 3 clues (habits/routines, interests, and location mention) raise moderate but limited risk. Overall, the absence of Level 1–2 identifiers keeps the score modest, with clear visibility yielding high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Top line header reading '5 things on Friday #11' on the notebook page",
+        "Anonymized_element": "blank header line, generic title without numbers, blurred text region",
+        "privacy_element": "routine title, numbered installment implying recurring personal habit",
+        "target_concept": "handwritten header",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Middle list item containing the text 'TEDx' among other handwriting",
+        "Anonymized_element": "generic placeholder word, blurred or redacted item text",
+        "privacy_element": "interest/affiliation reference revealing personal interests or activities",
+        "target_concept": "handwritten list item",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "List item reading 'Venice' near the bottom of the page",
+        "Anonymized_element": "neutral place-holder word, blurred or redacted location term",
+        "privacy_element": "explicit place name that could suggest travel or location context",
+        "target_concept": "location reference in handwriting",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Lower section note 'Reading Bonuses: ...' with specific titles/acronyms",
+        "Anonymized_element": "generic 'Reading list' text with no specific titles, blurred text lines",
+        "privacy_element": "reading list revealing consumption patterns and interests",
+        "target_concept": "handwritten reading list",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13907856/final/2017_13907856_final.png"
+}

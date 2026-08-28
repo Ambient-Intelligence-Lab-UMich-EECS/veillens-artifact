@@ -1,0 +1,70 @@
+{
+  "reasoning": "The image shows a public march with multiple clearly visible, front-facing individuals; these constitute biometric identifiers (Level 1). A large red banner explicitly references an HIV-related campaign, creating a sensitive inference about participants\u2019 affiliation with a health/political cause (Level 2). A readable street sign reveals specific location context (Level 3). The combination of identifiable faces with sensitive-cause affiliation and location elevates the overall privacy risk. Clues are central, sharp, and unoccluded, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of a man wearing a green cap near the center of the march",
+        "Anonymized_element": "face blurred, replaced with generic silhouette, head turned away",
+        "privacy_element": "full frontal face with clear eyes, nose, and mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of a man in a red shirt holding the banner near center-left",
+        "Anonymized_element": "face blurred, replaced with generic silhouette, head turned away",
+        "privacy_element": "full frontal face with distinct facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of a woman in sunglasses holding the banner at center-right",
+        "Anonymized_element": "face blurred or replaced, head turned away",
+        "privacy_element": "identifiable facial structure and features despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large red parade banner reading HIV STIGMA STOPS HERE with organization logo and URL",
+        "Anonymized_element": "plain banner, neutral slogan without health/political content, no logo or URL",
+        "privacy_element": "explicit HIV-related cause text, organization branding, campaign URL indicating cause affiliation",
+        "target_concept": "event banner",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue street sign at an intersection with readable street names",
+        "Anonymized_element": "blank or blurred sign text, generic colors",
+        "privacy_element": "readable street names revealing specific location",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14022316.jpg"
+}

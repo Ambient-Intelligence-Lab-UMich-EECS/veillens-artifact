@@ -1,0 +1,69 @@
+{
+  "reasoning": "This crop shows a social setting at a bar/lounge with faces obscured. No readable names, IDs, or financial data are visible. The main privacy-relevant signals are behavioral: multiple alcoholic drinks on the table and an ashtray with cigarette butts, which reveal consumption habits. Secondary, low-risk elements include a smartphone and a compact camera, which are generic devices without legible personal data. With no identifiable faces or direct identifiers, the highest severity is Level 3 (activities/behaviors), producing a moderate but limited privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.32,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "wine glass with white wine near the front of the table",
+        "Anonymized_element": "empty clear glass, opaque cup, glass of water",
+        "privacy_element": "alcoholic beverage indicating alcohol consumption",
+        "target_concept": "alcoholic drink",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "pink cocktail in a tall glass on the left side of the table",
+        "Anonymized_element": "clear water, empty glass, soda without alcohol cues",
+        "privacy_element": "alcoholic cocktail suggesting drinking behavior",
+        "target_concept": "alcoholic drink",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "ashtray with cigarette butts on a napkin near the front right of the table",
+        "Anonymized_element": "empty ashtray, clean napkin without cigarettes, small dish",
+        "privacy_element": "presence of smoked cigarettes indicating smoking behavior",
+        "target_concept": "ashtray with cigarettes",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "compact silver digital camera on the table near the center",
+        "Anonymized_element": "generic unbranded camera shape, blurred device, removed device",
+        "privacy_element": "personal device potentially linked to owner though no data visible",
+        "target_concept": "digital camera",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "smartphone with green case placed on a red notebook at the left of the table",
+        "Anonymized_element": "blank slab without screen details, closed case, removed device",
+        "privacy_element": "personal device that could display notifications though none are legible",
+        "target_concept": "smartphone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13465259/r1_crops/2017_13465259_1.png"
+}

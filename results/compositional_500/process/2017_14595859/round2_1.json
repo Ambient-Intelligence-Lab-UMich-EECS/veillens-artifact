@@ -1,0 +1,59 @@
+{
+  "reasoning": "The crop shows a patient in a hospital bed receiving care. Two identifiable faces are clearly visible (patient and caregiver), which are Level 1 biometric data. The patient\u2019s uniform displays a readable surname on a name tape, adding a Level 2 non\u2011unique identifier. A handheld medical device is being used on the patient\u2019s face, revealing an ongoing medical exam, a Level 2 medical privacy signal. These cues reinforce each other (identity + name + medical context), leading to a high privacy risk with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.8,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "patient\u2019s full face in profile while lying in hospital bed",
+        "Anonymized_element": "face blurred, replaced with neutral skin-toned patch, turned away",
+        "privacy_element": "clear identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "caregiver\u2019s face in left profile next to bed",
+        "Anonymized_element": "face blurred, neutralized skin-tone patch, turned away",
+        "privacy_element": "identifiable facial features in profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "embroidered name tape on the patient\u2019s uniform chest showing a readable surname",
+        "Anonymized_element": "blank fabric strip, no text or logos",
+        "privacy_element": "readable surname text on clothing",
+        "target_concept": "name badge/patch",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "handheld medical thermometer/device touching the patient\u2019s face",
+        "Anonymized_element": "neutral handheld object with no medical markings, or remove device",
+        "privacy_element": "visible medical device in active use indicating clinical examination",
+        "target_concept": "medical device in use",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14595859/r1_crops/2017_14595859_1.png"
+}

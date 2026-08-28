@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows a stone tower and surrounding buildings. There are no readable texts, faces, ID cards, financial or medical items. The only potential personal-information cues are a small, distant pedestrian who is not identifiable and the depiction of a generic building facade, which does not reveal an address. These are low-severity, context-only clues and do not compose into stronger identification. Hence the overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.04,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small pedestrian on the far-right sidewalk near the street opening",
+        "Anonymized_element": "remove the figure, leave empty street/sidewalk, generic background fill",
+        "privacy_element": "presence of a person’s body silhouette",
+        "target_concept": "person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "exterior facade of a stone tower building with windows",
+        "Anonymized_element": "generic plain wall facade, less distinctive architecture",
+        "privacy_element": "distinctive building appearance that could loosely hint at locale",
+        "target_concept": "building exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13944027/final/2017_13944027_final.png"
+}

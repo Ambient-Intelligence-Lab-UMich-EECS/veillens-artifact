@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows two people’s lower bodies reclining on a sofa with bare legs and feet visible; faces and any direct identifiers are not shown. There are no IDs, documents, or readable text. The main privacy signals are limited to personal physical appearance (legs/feet) and the activity of lounging, with a blurred urban background that offers minimal location specificity. No Level 1 or 2 clues appear. Given only moderate Level 3 context and minor Level 4 property cues, overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "bare legs and feet of two individuals resting on a sofa",
+        "Anonymized_element": "crop to exclude limbs, add blanket covering legs, apply strong blur to skin areas",
+        "privacy_element": "visible skin and body features of lower limbs, casual lounging posture",
+        "target_concept": "exposed legs and feet",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "out-of-focus cityscape beyond balcony rail",
+        "Anonymized_element": "replace with generic sky or abstract gradient, increase background blur",
+        "privacy_element": "urban skyline hinting at general location context",
+        "target_concept": "city skyline",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "distinctive orange leather sofa on balcony",
+        "Anonymized_element": "generic fabric sofa in neutral color, reduce texture detail",
+        "privacy_element": "recognizable household furnishing style",
+        "target_concept": "sofa",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14900393/final/2017_14900393_final.png"
+}

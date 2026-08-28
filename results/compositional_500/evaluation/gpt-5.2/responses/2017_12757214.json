@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image shows several children on a couch in a private home. One child on the right has a clearly visible, unobstructed face (biometric data), which is a Level 1 risk. Another child on the left has most of the face visible though the eyes are obscured, still contributing biometric risk though slightly mitigated. The domestic interior provides weak location context but no readable addresses or names. With at least one clear identifiable face, overall risk is high; other clues add modestly. Confidence is high because the cues are directly visible.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "unobstructed face of the child in a red T-shirt sitting on the right arm of the couch",
+        "Anonymized_element": "blurred face, pixelated face, replaced with neutral smooth skin patch, turned head away",
+        "privacy_element": "full face with eyes, nose, mouth clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "partially obscured face of the child in a red hoodie seated on the left side of the couch (eyes covered but facial structure visible)",
+        "Anonymized_element": "fully blurred/pixelated face, neutral mask covering entire face, turned head away",
+        "privacy_element": "partial face with identifiable facial structure and lower-face features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "visible interior of a private living room with furniture and decor",
+        "Anonymized_element": "generic blurred background, simplified non-descript room, removed distinctive decor",
+        "privacy_element": "private home setting indicating domestic location context",
+        "target_concept": "home interior",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12757214/final/2017_12757214_final.png"
+}

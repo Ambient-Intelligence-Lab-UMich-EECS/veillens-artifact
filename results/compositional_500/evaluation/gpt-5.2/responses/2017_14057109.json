@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows two minors in a park; their faces are clearly blurred so no identifiable biometric data is exposed. There are no legible names, IDs, or financial/medical items. The remaining privacy-relevant cues relate to personal attributes (children/age) and general activities (public park outing), which are moderate when combined but not directly identifying. Thus the highest level present is Level 3, with limited contextual clues and no strong reinforcement toward a specific identity or location. Overall risk is low-to-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "young child seated in a stroller, face obscured",
+        "Anonymized_element": "empty stroller seat, generic blanket, remove distinctive clothing colors or patterns",
+        "privacy_element": "child’s small stature, use of stroller, body size indicating young age",
+        "target_concept": "child in stroller",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "young child standing next to the stroller in a blue jacket, face obscured",
+        "Anonymized_element": "replace with generic adult silhouette or crop out person, neutral solid-color clothing without size cues",
+        "privacy_element": "child’s height and build indicating young age, presence in casual outdoor activity",
+        "target_concept": "standing child",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14057109/final/2017_14057109_final.png"
+}

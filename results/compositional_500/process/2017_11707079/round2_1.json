@@ -1,0 +1,25 @@
+{
+  "reasoning": "The crop shows a single sheet of handwritten technical notes with partially readable words like configuration filenames and networking terms. No faces, names, accounts, addresses, or government/financial/medical identifiers are visible. The main privacy exposure is a generic document that may hint at technical topics or work activity. Thus the highest severity is Level 4, yielding a low overall risk with medium confidence due to partial legibility.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten notes on a sheet of paper with partially legible technical terms (e.g., config filenames, networking notes)",
+        "Anonymized_element": "blank paper, blurred/unreadable text, generic scribbles without specific terms or numbers",
+        "privacy_element": "readable configuration terms and network-related notes, visible numbers such as '135' that suggest technical details",
+        "target_concept": "handwritten note",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11707079/r1_crops/2017_11707079_1.png"
+}

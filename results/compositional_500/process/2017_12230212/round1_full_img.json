@@ -1,0 +1,82 @@
+{
+  "reasoning": "The image shows a public gathering with several clearly visible, front-facing individuals. Multiple faces are sharp, central, and unobstructed, which constitutes biometric identifiers (highest severity). Additional contextual cues\u2014such as ribbon pins and flowers\u2014suggest participation in a public event, revealing activities/behaviors but without readable names or explicit political/medical/financial information. The combination of multiple identifiable faces (Level 1) with event-participation context (Level 3) yields a high privacy risk. Confidence is high because the faces are clear and prominent.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man on the right with a clear, front-facing smiling face",
+        "Anonymized_element": "blurred face, obfuscated facial features, generic placeholder head shape",
+        "privacy_element": "full face with distinct features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman on the left foreground with a clear, angled but identifiable face",
+        "Anonymized_element": "blurred face, smoothed features, generic placeholder head shape",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman at center wearing an orange scarf with a clear face",
+        "Anonymized_element": "blurred face, smoothed features, generic placeholder head shape",
+        "privacy_element": "recognizable facial features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of several background faces behind the central figures",
+        "Anonymized_element": "blurred region over faces, depth-of-field blur",
+        "privacy_element": "multiple partially but still identifiable faces",
+        "target_concept": "crowd faces",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tricolor ribbon pin on the man\u2019s coat lapel (right foreground)",
+        "Anonymized_element": "plain solid-color pin or no pin",
+        "privacy_element": "symbolic ribbon indicating participation in a public event",
+        "target_concept": "ribbon pin",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "tricolor ribbon pin on the woman\u2019s coat lapel (left foreground)",
+        "Anonymized_element": "plain solid-color pin or no pin",
+        "privacy_element": "symbolic ribbon indicating participation in a public event",
+        "target_concept": "ribbon pin",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12230212.jpg"
+}

@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows two foreground people fully masked as gray silhouettes, with no visible faces or readable identifiers, and a distant person in a background poster seen from behind. There are no government IDs, names, financial/medical documents, or legible text. The only human-related cues are non-identifying body outlines that reveal minimal personal attributes. The highest severity present is Level 4 (unidentifiable individuals). With no Level 1–3 clues and weak compositional risk, the overall privacy risk is very low.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left foreground human silhouette with hair outline, no facial details",
+        "Anonymized_element": "remove silhouette, replace with neutral background texture or abstract shape",
+        "privacy_element": "human body outline, hair contour",
+        "target_concept": "unidentifiable person",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "right foreground human silhouette with shoulder and torso outline, no facial details",
+        "Anonymized_element": "remove silhouette, replace with neutral background texture or abstract shape",
+        "privacy_element": "human body outline",
+        "target_concept": "unidentifiable person",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Crowds or distant unidentifiable individuals "
+        ]
+      },
+      {
+        "object_description": "small background person in a poster, viewed from behind, no face visible",
+        "Anonymized_element": "replace with generic scenery in poster, no people",
+        "privacy_element": "back-of-head and body outline",
+        "target_concept": "distant person in background",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13140959/final/2017_13140959_final.png"
+}

@@ -1,0 +1,25 @@
+{
+  "img_id": "20636",
+  "ground_truth": {
+    "1 2": 4,
+    "1 3": 4,
+    "2 3": 4
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [],
+  "num_preds_detected": 3,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 3,
+  "raw_response": "[P1-P2]: At a winter sports/awards event, they stand close side\u2011by\u2011side in matching team jackets and hats, each holding a ribbon, with no physical contact; the snowy venue and banner suggest a team context. => friends\n\n[P1-P3]: They are together at the same winter sporting event, wearing identical team gear and holding ribbons, standing near each other without intimate interaction. => friends\n\n[P2-P3]: Both wear the same team uniform and ribbons at a snowy competition/awards area and stand near each other without touching, indicating teammates rather than family or a couple. => friends",
+  "timestamp": 1776889448.1791768
+}

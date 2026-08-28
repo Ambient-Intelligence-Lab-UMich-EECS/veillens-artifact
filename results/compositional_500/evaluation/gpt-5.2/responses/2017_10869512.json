@@ -1,0 +1,69 @@
+{
+  "reasoning": "The image shows a clearly legible paper concert ticket with printed venue, event, date/time, and seating information. No faces or government IDs are present. The strongest clues are Level 3: location information (University of Texas at Austin, Frank Erwin Center) and activities/behaviors (attendance at a Jimmy Buffett concert on a specific date/time with section/row/seat). These details can link a person to a place and event even without a name. Overall risk is moderate due to clear text but absence of direct identifiers or biometrics.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Printed venue text reading 'UNIV. OF TEXAS AT AUSTIN FRANK ERWIN CENTER' in the center of the ticket",
+        "Anonymized_element": "generic venue name, placeholder text like 'CITY ARENA', remove university name",
+        "privacy_element": "explicit venue name, university reference, city implication",
+        "target_concept": "venue text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Event and performer text block 'JIMMY BUFFETT IN CONCERT'",
+        "Anonymized_element": "generic performer name like 'ARTIST NAME', or remove performer text",
+        "privacy_element": "performer/event type indicating specific concert attended",
+        "target_concept": "event text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Date and time text 'SUN MAR 7, 1982 - 8PM' at bottom of ticket",
+        "Anonymized_element": "approximate or placeholder date/time like 'DATE - TIME'",
+        "privacy_element": "exact date and time of event",
+        "target_concept": "date/time text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Seating information text on left margin showing 'SECTION 23', 'ROW 11', 'SEAT 43' (and similar)",
+        "Anonymized_element": "remove numbers or replace with 'SEC X', 'ROW Y', 'SEAT Z'",
+        "privacy_element": "specific seating assignment indicating precise location within venue",
+        "target_concept": "seat/section text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Generic documents or digital artifacts "
+        ]
+      },
+      {
+        "object_description": "Ticket category label 'ADULT' on the top right",
+        "Anonymized_element": "generic category label like 'TICKET' without age indication",
+        "privacy_element": "age category implying adult status",
+        "target_concept": "ticket category text",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10869512/final/2017_10869512_final.png"
+}

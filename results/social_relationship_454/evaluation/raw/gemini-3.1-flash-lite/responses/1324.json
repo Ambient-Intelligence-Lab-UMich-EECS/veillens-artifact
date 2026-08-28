@@ -1,0 +1,27 @@
+{
+  "img_id": "1324",
+  "predictions": {
+    "1 2": 2,
+    "1 3": 2,
+    "1 4": 6,
+    "1 5": 2,
+    "2 3": 2,
+    "2 5": 2,
+    "3 4": 2,
+    "3 5": 2,
+    "4 5": 2
+  },
+  "ground_truth": {
+    "4 5": 6,
+    "1 2": 2,
+    "1 3": 6,
+    "1 4": 6,
+    "1 5": 6,
+    "2 3": 6,
+    "2 5": 6,
+    "3 4": 6,
+    "3 5": 6
+  },
+  "raw_response": "[P1-P2]: Both individuals are children/teenagers eating a meal in a domestic setting, suggesting a sibling relationship. => family-members\n\n[P1-P3]: P3 is an adult sitting in the same domestic space where P1 and P2 are eating, implying a parent-child relationship. => family-members\n\n[P1-P4]: P4 is essentially the same person as P1 (part of the same bounding box/individual), so no social relationship can be defined between them. => no-relationship\n\n[P1-P5]: P1 and P5 are both present in a private domestic setting sharing a meal, suggesting they are members of the same household. => family-members\n\n[P2-P3]: P3 is an adult in the same home environment as the child P2, consistent with a parent or caregiver relationship. => family-members\n\n[P2-P5]: P2 and P5 are both in the same shared domestic space, likely siblings or household members. => family-members\n\n[P3-P4]: P3 is an adult in the same home environment as P4 (who is P1), consistent with a parent or caregiver relationship. => family-members\n\n[P3-P5]: P3 and P5 are both adults present in the same domestic space, likely sharing a household or family bond. => family-members\n\n[P4-P5]: P4 is the same person as P1, and both are part of the same domestic group sharing the environment. => family-members",
+  "timestamp": 1779942247.250426
+}

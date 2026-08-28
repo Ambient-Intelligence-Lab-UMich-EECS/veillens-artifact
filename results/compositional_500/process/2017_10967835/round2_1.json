@@ -1,0 +1,58 @@
+{
+  "reasoning": "The crop shows multiple New York Yankees event tickets with clearly readable text and barcodes. No names or faces appear, but the tickets reveal specific event details (teams, venue, date), seat/section/row numbers, and scannable barcodes/serials. These clues expose location and a concrete activity/attendance at a particular time, which are Level 3 risks. The barcodes and ticket price are additional Level 4 document details that reinforce linkability. Combined, they justify a moderate privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.4,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Vertical barcode with numeric serial alongside on the right edge of a ticket",
+        "Anonymized_element": "blank white strip, generic barcode placeholder with random non-unique digits, or fully blurred code",
+        "privacy_element": "readable barcode, visible serial numbers, event code near barcode",
+        "target_concept": "barcode/serial on ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Printed event details area reading teams, venue name, and date on the lower ticket",
+        "Anonymized_element": "generic placeholder text (e.g., 'Sports Event', 'Stadium', no date), or blurred text block",
+        "privacy_element": "readable team names, venue 'Yankee Stadium', specific date 'FRI AUG 07'",
+        "target_concept": "event details text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Seat information block showing 'SECTION 307', 'ROW 1', 'SEAT 12' on the ticket edge",
+        "Anonymized_element": "remove seat/row/section numbers or replace with generic placeholders like 'SEC ---', 'ROW --', 'SEAT --'",
+        "privacy_element": "readable section, row, and seat numbers",
+        "target_concept": "seat/section/row text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "Ticket price and event code text near the top right ('PRICE 48.00', 'EVENT CODE ENY8807')",
+        "Anonymized_element": "price replaced with '--.--', event code removed or randomized",
+        "privacy_element": "readable ticket price and unique event code",
+        "target_concept": "price/event code text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10967835/r1_crops/2017_10967835_1.png"
+}

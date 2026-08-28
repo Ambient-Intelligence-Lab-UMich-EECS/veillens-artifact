@@ -1,0 +1,73 @@
+{
+  "reasoning": "The crop shows a public gathering with several clearly visible, identifiable faces, which are Level 1 biometric data. One foreground participant wears a pink top with a readable slogan referencing \u201cKink?\u201d, enabling sensitive inference about sexuality/sexual interests (Level 2). A visible commercial sign (\u201cPenske Truck Rental\u201d) may hint at location (Level 3). The combination of multiple unobscured faces with a sensitive slogan raises risk beyond simple crowd context. Clues are clear and central, so the score is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.73,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground woman on right with pale makeup and styled hair, face turned slightly left",
+        "Anonymized_element": "blurred/pixelated face, turned away profile, generic skin-toned patch",
+        "privacy_element": "full face with distinct features (eyes, nose, mouth), makeup pattern",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "man near center-right with short afro standing by fence, face toward camera",
+        "Anonymized_element": "blurred/pixelated face, occluded with neutral shape",
+        "privacy_element": "full face with distinct features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "older person in center wearing glasses, holding camera, face visible in profile",
+        "Anonymized_element": "blurred/pixelated face, turned fully away, neutral patch over facial area",
+        "privacy_element": "recognizable facial profile and glasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "pink tank top on participant at mid-right with readable text 'Kink?'",
+        "Anonymized_element": "plain shirt, no text or logos, solid color",
+        "privacy_element": "readable slogan referencing sexual interests",
+        "target_concept": "shirt slogan/text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "yellow and black commercial sign reading 'Penske Truck Rental' on fence in background",
+        "Anonymized_element": "blank sign, no logo or text, generic color block",
+        "privacy_element": "business name that may narrow location context",
+        "target_concept": "business sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14533164/r1_crops/2017_14533164_1.png"
+}

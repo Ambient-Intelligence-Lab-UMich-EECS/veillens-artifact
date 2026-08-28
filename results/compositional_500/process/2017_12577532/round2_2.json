@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a close-up of a smartphone displaying a running app with readable split distances and times, indicating exercise activity patterns. No names, faces, GPS map, or other unique identifiers are visible. The highest-severity clue is Level 3 (activities and behaviors). With only one moderate clue and no reinforcing Level 1\u20132 elements, the overall risk is low-to-moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.2,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smartphone screen showing running app with split distances and times list and bar chart",
+        "Anonymized_element": "generic blank screen, abstracted chart with no numbers, blurred text and metrics",
+        "privacy_element": "readable exercise splits, distances (Km), timestamps indicating workout patterns",
+        "target_concept": "workout splits on phone screen",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "2"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12577532/r1_crops/2017_12577532_2.png"
+}

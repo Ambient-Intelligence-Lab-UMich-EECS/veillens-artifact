@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a single person centered against a dark background with arms raised and water splashing. A forward-facing head/face is visible, though somewhat shadowed, which constitutes biometric data. The upper torso/shoulders appear bare, implying partial nudity. The water spray suggests a bathing/showering-like activity. The highest-severity element is the identifiable face (Level 1), reinforced by intimate content (Level 2) and an activity cue (Level 3). Given lighting and partial detail, risk is high but not maximal, with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "forward-facing head and face of a person at the center of the frame",
+        "Anonymized_element": "blurred face, pixelation, turned-away head, masked oval over face",
+        "privacy_element": "identifiable facial structure with eyes, nose, mouth outline",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "bare upper torso and shoulders with water droplets",
+        "Anonymized_element": "add swimsuit or tank top, towel-draped shoulders, crop above shoulders",
+        "privacy_element": "exposed skin of chest/shoulders indicating partial nudity",
+        "target_concept": "bare upper torso",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "concentrated water splash above the raised hands",
+        "Anonymized_element": "remove splash, replace with neutral mist or plain background, dry hands",
+        "privacy_element": "water spray suggesting bathing/showering activity",
+        "target_concept": "water splash",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13543740/r1_crops/2017_13543740_0.png"
+}

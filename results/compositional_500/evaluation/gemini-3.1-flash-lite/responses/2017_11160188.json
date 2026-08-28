@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image features a landscape with Morro Rock and the Morro Bay Power Plant stacks in the background. These are prominent geographic landmarks that reveal the specific location of the photograph. As there are no individuals, sensitive documents, or other direct personal identifiers, the risk is limited to the potential for location identification, which is considered moderate due to the specificity of the landmarks. The confidence is high as the landmarks are clearly identifiable.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Large volcanic rock formation on the coast",
+        "Anonymized_element": "Generic large rock formation, generic mountain, no specific geographical features",
+        "privacy_element": "Morro Rock, identifiable geographic landmark",
+        "target_concept": "landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "Three tall industrial power plant smokestacks",
+        "Anonymized_element": "Generic industrial towers, blank grey pillars, no specific architectural style",
+        "privacy_element": "Morro Bay Power Plant stacks, highly identifiable industrial landmark",
+        "target_concept": "landmark",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11160188/final/2017_11160188_final.png"
+}

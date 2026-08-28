@@ -1,0 +1,67 @@
+{
+  "reasoning": "This street scene shows no identifiable faces or government/financial documents. The strongest cues relate to activities and potential location: a person in a high-visibility vest is actively performing maintenance with tools, and storefront signage with business names is visible. Additional weak cues include distant unidentifiable pedestrians and a parked car without readable plates. With no Level 1\u20132 clues, the highest severity is Level 3, yielding a low-to-moderate risk mainly from behavior and location context. Confidence is medium due to partial legibility and distance of some elements.",
+  "personal_info_privacy_score": {
+    "score": 0.24,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "kneeling person wearing a high-visibility orange safety vest working at a street lamp",
+        "Anonymized_element": "plain non-descript jacket, neutral color, no reflective stripes, neutral pose not indicating work",
+        "privacy_element": "visible occupational activity, distinctive work uniform suggesting employer role",
+        "target_concept": "person working",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "tool bag and hand tools placed on the pavement beside the worker",
+        "Anonymized_element": "closed plain bag with no tools visible",
+        "privacy_element": "work tools indicating trade/occupation and current activity",
+        "target_concept": "tools",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "storefront signage across the canal with business name text",
+        "Anonymized_element": "blank signage, abstract shapes without readable text or logos",
+        "privacy_element": "readable business name that can hint at location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "group of small, distant pedestrians along the bridge and sidewalks",
+        "Anonymized_element": "remove/blur tiny figures, generic silhouettes",
+        "privacy_element": "presence of people albeit unidentifiable",
+        "target_concept": "distant pedestrians",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "parked blue car with no readable license plate",
+        "Anonymized_element": "generic car shape, no brand or plate details",
+        "privacy_element": "personal property (vehicle) without direct identifiers",
+        "target_concept": "car",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16206149/r1_crops/2017_16206149_1.png"
+}

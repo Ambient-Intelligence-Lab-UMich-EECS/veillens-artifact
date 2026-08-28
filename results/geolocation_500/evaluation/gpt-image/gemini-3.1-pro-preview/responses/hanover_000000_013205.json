@@ -1,0 +1,9 @@
+{
+  "reasoning": "1. Country level: The visual evidence strongly points to Germany. Key indicators include the long white European license plates on parked vehicles, the standard German road markings for bicycle lanes (dashed white lines with specific bicycle pictograms), and typical street furniture like the grey advertising/transit shelter. Furthermore, the Mercedes-Benz hood ornament visible at the bottom of the frame is a hallmark of the 'Cityscapes' dataset, a widely used autonomous driving dataset collected largely in Germany by Daimler. \n2. City level: The Cityscapes validation set, which provides the most commonly circulated sample images from this dataset, primarily features Frankfurt, Münster, and Lindau. Lindau's small-town character doesn't align with this dense, multi-lane avenue. While Münster has extensive bicycle infrastructure, the heavy, wide-arch bridge (likely a railway viaduct) and the massive post-war modernist building on the right suggest a larger, more heavily reconstructed and infrastructural city like Frankfurt. Given Frankfurt's prominence in the dataset for dense urban scenes like this, it is the most probable candidate. \n3. Street level: The exact location is defined by a distinct combination of features: a straight, wide road with dual bike lanes, mature street trees, leading under a prominent, low-arch stone or concrete bridge. Crucially, the building on the right features a specific brutalist/modernist ground-floor arcade with thick, chamfered pillars. While pinpointing the exact street requires matching these specific structures, the visual fingerprint is unique within the context of major German cities. The estimate reflects a central location in Frankfurt based on the dataset's typical operational areas.",
+  "location_estimate": {
+    "latitude": 50.11,
+    "longitude": 8.68,
+    "confidence": "Medium",
+    "region": "Frankfurt, Hesse, Germany"
+  }
+}

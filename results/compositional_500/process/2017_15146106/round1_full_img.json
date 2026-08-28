@@ -1,0 +1,59 @@
+{
+  "reasoning": "The image shows a crowded street parade with many visible faces, an intersection street sign that reveals the exact location, and several people prominently holding rainbow Pride flags. The highest-severity clues are multiple identifiable faces (Level 1). These are reinforced by Level 2 sensitive-inference cues (participation in an LGBTQ Pride event) and Level 3 location disclosure via readable street names. Together these raise the privacy risk beyond a generic crowd scene. Because faces are fairly clear in the foreground and on the float, the overall risk is high with medium-to-high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "foreground person wearing a red cap with a clear, unobstructed face facing camera",
+        "Anonymized_element": "blurred face, face turned away, generic cap without logos",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person on the float at center-right with sunglasses and visible face above black speaker",
+        "Anonymized_element": "blurred face, replaced with non-human silhouette, head turned away",
+        "privacy_element": "identifiable facial structure despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green street sign reading Christopher St and Bleecker St at the intersection above the float",
+        "Anonymized_element": "blank sign, generic unreadable street sign, removed text",
+        "privacy_element": "readable street names indicating exact intersection",
+        "target_concept": "street sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "individual in front-left holding a rainbow Pride flag aloft",
+        "Anonymized_element": "plain multicolor-less flag, generic solid-color banner",
+        "privacy_element": "association with LGBTQ Pride symbol while being present in the scene",
+        "target_concept": "flag held by person",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15146106.jpg"
+}

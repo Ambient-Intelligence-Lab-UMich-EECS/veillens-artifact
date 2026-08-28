@@ -1,0 +1,34 @@
+{
+  "reasoning": "The central subject\u2019s face is intentionally obscured, reducing biometric risk. No readable names, IDs, or financial/medical details are visible. Only a few background individuals show small, partial faces that are distant and not clearly identifiable. There are no clear location markers or sensitive content. Thus, privacy risk is low, driven mainly by distant unidentifiable people in the background.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "small side-profile face of a background person on the right side of the frame",
+        "Anonymized_element": "slightly increased blur, crop to remove face, replace with generic head shape without facial details",
+        "privacy_element": "partial facial features (nose, cheek, eye outline) of a distant person",
+        "target_concept": "background face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "partially visible face of a person bending on the left background",
+        "Anonymized_element": "apply blur to head region, crop to exclude face, generic silhouette",
+        "privacy_element": "obscured facial contours of a distant individual",
+        "target_concept": "background face",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15090335/r1_crops/2017_15090335_0.png"
+}

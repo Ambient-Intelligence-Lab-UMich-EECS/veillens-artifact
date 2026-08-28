@@ -1,0 +1,95 @@
+{
+  "reasoning": "Country-level: The scene shows a modern low-floor tram running on embedded rails in a narrow cobblestone street. Road furniture and traffic signs follow German standards: blue \u201cP\u201d parking sign, red-bordered 30 speed-limit disc, and the EU-style license plate with the blue band and a \u201cD\u201d-like layout. The destination LED on the tram shows a German word beginning with \u201cWiesen\u2026\u201d. These collectively indicate Germany and rule out neighboring countries with different signage conventions. \nCity-level: The combination of an old-town corridor with tight-radius tram tracks, cobblestones, and red-white tram livery fits several German cities, but the readable \u201c4\u201d line number together with a destination beginning \u201cWiesen\u2026\u201d strongly suggests Erfurt, whose Line 4 runs to Wiesenh\u00fcgel. Other cities with Line 4 exist, but their common termini do not match the visible stem \u201cWiesen\u2026\u201d. The dense medieval streetscape and Catholic-style corner statue are also consistent with Erfurt\u2019s historic center. \nStreet-level: The distinctive S-curve of twin tram tracks through a very narrow, stone-walled corridor, a building corner with a religious statue niche on the right, scaffolding with blue netting ahead, and a 30-zone sign at the bend create a recognizable micro-location along Erfurt\u2019s old-town tram alignment near the central area. Exact street naming is uncertain, but the features point to a constricted section of the inner-city route used by Line 4 toward Wiesenh\u00fcgel. \nOverall, the evidence best supports central Erfurt, Germany, though street pinpointing remains uncertain due to limited landmark text clarity.",
+  "location_estimate": {
+    "latitude": 50.978,
+    "longitude": 11.032,
+    "confidence": "Medium",
+    "region": "Germany, Thuringia, Erfurt"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "tram front with red-white body on tracks",
+        "non_geolocation_element": "white body, red sides, rounded nose, LED display, overcast lighting",
+        "geolocation_element": "LED line number 4 and German-looking destination starting with 'Wiesen\u2026'",
+        "target_concept": "tram",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "speed limit sign on a post",
+        "non_geolocation_element": "round sign, white face, red border, mounted on gray pole",
+        "geolocation_element": "number 30 in German/European style",
+        "target_concept": "speed limit sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "parking sign on a pole",
+        "non_geolocation_element": "rectangular plate, blue field with white P, gray pole",
+        "geolocation_element": "German parking symbol format and supplementary plate style",
+        "target_concept": "parking sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "license plate on the white van rear",
+        "non_geolocation_element": "rectangular plate, white background, black text",
+        "geolocation_element": "EU blue band with German-style layout",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cobblestone roadway between tram rails",
+        "non_geolocation_element": "gray cobblestones, embedded twin rails, curved alignment",
+        "geolocation_element": "European old-town tramway paving typical in German cities",
+        "target_concept": "roadway",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "building statue in a corner niche",
+        "non_geolocation_element": "stone statue, light-colored niche, ornamental trim",
+        "geolocation_element": "Catholic-style corner niche common in central German historic cores",
+        "target_concept": "statue",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead tram wire above street",
+        "non_geolocation_element": "thin catenary wire, small hanger, urban setting",
+        "geolocation_element": "electric tram infrastructure typical of German tram networks",
+        "target_concept": "wire",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "scaffolding with blue net on facade",
+        "non_geolocation_element": "metal scaffolding, blue mesh wrap, rectangular banner",
+        "geolocation_element": "German-language contractor banner style (illegible specifics)",
+        "target_concept": "scaffolding",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/erfurt/erfurt_000084_000019_leftImg8bit.png"
+}

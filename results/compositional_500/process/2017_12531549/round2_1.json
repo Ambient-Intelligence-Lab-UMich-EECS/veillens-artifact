@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a close-up of a person\u2019s mouth during a dental procedure: an open oral cavity with gums/teeth visible and gloved hands using an instrument. There is no readable text or full identifiable face, but the medical imagery clearly reveals health-related information and the activity of receiving dental care. Partial facial features (nose, lips) provide limited personal attributes but are not enough to identify the person. Highest severity is Level 2 (medical data). The strong, central medical clue yields a moderate-to-high privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "open mouth with visible gums/teeth inside the oral cavity",
+        "Anonymized_element": "replace with generic dental model or blank mouth interior, reduce detail, subtle blur",
+        "privacy_element": "detailed dental/oral condition, health status implied by clinical examination",
+        "target_concept": "oral cavity",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "purple medical gloves holding an instrument near the mouth",
+        "Anonymized_element": "neutral-colored generic gloves or bare hands in non-clinical pose, crop to exclude hands",
+        "privacy_element": "clinical context indicating ongoing medical/dental treatment",
+        "target_concept": "gloved hands",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "lower half of a person\u2019s face showing lips and part of the nose/cheek",
+        "Anonymized_element": "crop to exclude facial area, apply soft blur to skin features",
+        "privacy_element": "distinct facial features of the lower face revealing appearance traits",
+        "target_concept": "partial face",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12531549/r1_crops/2017_12531549_1.png"
+}

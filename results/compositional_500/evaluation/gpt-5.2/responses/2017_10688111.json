@@ -1,0 +1,54 @@
+{
+  "reasoning": "A single person is shown with the face deliberately obscured, removing direct biometric identification. However, several personal-identifying attributes remain: a clearly visible and unique ankle tattoo, distinctive hairstyle, and a recognizable patterned outfit and accessories. These Level 3–4 clues can still help re-identify someone or reveal style preferences and behaviors, though no names, IDs, financial, medical, or explicit location data are visible. Given multiple moderate cues without Level 1–2 content, the overall risk is moderate. Confidence is medium due to absence of legible identifiers but presence of unique marks.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "flower-shaped tattoo on the inside of the right ankle",
+        "Anonymized_element": "plain skin, subtle skin tone patch, ankle covered by sock or neutral band",
+        "privacy_element": "distinct tattoo pattern and placement that can uniquely identify the person",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "long light-brown hairstyle visible above shoulders",
+        "Anonymized_element": "generic haircut, neutral cap or hat, hair color desaturated",
+        "privacy_element": "distinct hairstyle, color, and length contributing to re-identification",
+        "target_concept": "hair",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "patterned strapless dress with recognizable multicolor stripes",
+        "Anonymized_element": "plain solid-color dress, simplified pattern with low contrast",
+        "privacy_element": "distinctive clothing pattern and style indicating appearance and fashion preferences",
+        "target_concept": "clothing",
+        "severity_level": 4,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "black handbag on the floor with a small metal brand plaque",
+        "Anonymized_element": "unbranded plain bag, logo plate removed or blurred",
+        "privacy_element": "brand/logo and specific bag style suggesting consumption preferences",
+        "target_concept": "bag logo",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10688111/final/2017_10688111_final.png"
+}

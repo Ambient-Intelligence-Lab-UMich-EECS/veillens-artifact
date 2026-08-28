@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows a clearly identifiable adult male on the left with an unobscured face, glasses, and distinctive mustache, which is strong biometric data (Level 1). A small lapel pin with a logo suggests organizational affiliation (Level 2) but is minor and not fully legible. Background text is blurred and not readable. The presence of a clear face drives a high privacy risk, slightly reinforced by possible affiliation cues. Overall risk is high with clear visual evidence, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.66,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s unobscured face with glasses and mustache",
+        "Anonymized_element": "blurred or pixelated face, generic oval with no facial details, remove glasses and facial hair",
+        "privacy_element": "full face with eyes, nose, mouth, identifiable facial structure, distinctive glasses and mustache",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small circular lapel pin with a logo on the left person\u2019s jacket lapel",
+        "Anonymized_element": "plain round pin, no logo, solid color",
+        "privacy_element": "organization/company logo emblem",
+        "target_concept": "company logo pin",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15418699/r1_crops/2017_15418699_0.png"
+}

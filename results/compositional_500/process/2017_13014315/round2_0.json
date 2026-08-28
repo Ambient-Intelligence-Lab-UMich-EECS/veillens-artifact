@@ -1,0 +1,48 @@
+{
+  "reasoning": "The crop shows a street protest scene with readable text on a placard stating \u201cFAITH IS FREE,\u201d which can reveal a sensitive religious stance and participation in a public demonstration. Faces are not identifiable, but multiple people and signs indicate crowd participation. A decorative building-mounted clock is partially visible and could act as a recognizable landmark for location inference. The highest severity is Level 2 due to the explicit religious message; combined with activity context and a possible landmark, this yields a moderate privacy risk. Confidence is medium given partial occlusions and lack of identifiable faces.",
+  "personal_info_privacy_score": {
+    "score": 0.35,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handheld protest placard with readable slogan 'FAITH IS FREE'",
+        "Anonymized_element": "blank sign, generic abstract pattern, unreadable scribbles",
+        "privacy_element": "readable word 'FAITH', explicit message about religion, legible protest slogan",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "group of raised hands and placards held by people in a crowd, faces not visible",
+        "Anonymized_element": "silhouetted crowd shapes, fewer indistinct figures, blurred people",
+        "privacy_element": "presence at a public protest, crowd participation",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "decorative building-mounted clock on facade in the background",
+        "Anonymized_element": "plain facade, remove or simplify clock, generic wall feature",
+        "privacy_element": "distinctive architectural clock that may serve as a landmark",
+        "target_concept": "landmark clock",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13014315/r1_crops/2017_13014315_0.png"
+}

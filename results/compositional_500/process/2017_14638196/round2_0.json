@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows the front side of a blue pickup truck with no visible license plate, VIN, documents, or faces. The only human presence is a tiny, distorted reflection of a person on the chrome bumper, which is not identifiable. Thus the dominant signal is ownership of a specific vehicle (low risk) with a minor, unidentifiable person reflection. No Level 1\u20132 clues are present. Overall risk remains low.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue pickup truck front quarter (grille, headlight, fender, wheel)",
+        "Anonymized_element": "generic vehicle without logos, crop tighter on wheel, remove distinctive badges",
+        "privacy_element": "distinct vehicle make/model badges and custom wheel style indicating specific asset ownership",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small distorted person reflection on chrome front bumper",
+        "Anonymized_element": "matte bumper finish, angle without reflection, blur reflection region",
+        "privacy_element": "person\u2019s silhouette reflected in chrome surface (unidentifiable)",
+        "target_concept": "reflected person",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14638196/r1_crops/2017_14638196_0.png"
+}

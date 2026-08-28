@@ -1,0 +1,35 @@
+{
+  "reasoning": "The crop shows a Spanish lottery ticket with a clearly readable ticket number, organization name, and date, plus a second slip with a visible serial number/QR-like square. There are no faces, names, or government/financial identifiers tied to a person. The primary risk is a generic document revealing a unique ticket number that could be linked to a purchase or activity, mildly indicating behavior. No strong identifiers are present, so risk remains low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Spanish lottery ticket with large printed number and date text",
+        "Anonymized_element": "replace number with placeholder digits, remove/blur date and logos, generic patterned ticket",
+        "privacy_element": "unique ticket number, organization name, event date",
+        "target_concept": "lottery ticket",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "white slip at top with partial numeric code and small square mark",
+        "Anonymized_element": "blank slip, remove numeric code and square mark",
+        "privacy_element": "serial/reference number, machine-readable mark",
+        "target_concept": "printed slip with code",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13549936/r1_crops/2017_13549936_0.png"
+}

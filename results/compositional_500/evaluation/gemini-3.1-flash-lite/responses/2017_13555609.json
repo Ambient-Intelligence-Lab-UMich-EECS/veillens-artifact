@@ -1,0 +1,56 @@
+{
+  "reasoning": "The image captures a gathering of people in an outdoor setting. Several faces are visible or partially visible, representing biometric data, which constitutes a Level 1 privacy risk. While some figures are obscured or silhouetted, the visibility of individual facial features for several subjects contributes to a high privacy concern. The overall context is a social or professional event, and while there are no specific identifiers like badges or documents, the combination of multiple identifiable individuals in a specific location results in a moderate-to-high privacy risk score.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Face of a man wearing a brown jacket",
+        "Anonymized_element": "generic blurred face, randomized facial features, generic skin tone",
+        "privacy_element": "identifiable human face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Face of a woman standing near a white tent",
+        "Anonymized_element": "generic blurred face, randomized facial features",
+        "privacy_element": "identifiable human face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Face of a man in a light brown shirt",
+        "Anonymized_element": "generic blurred face, randomized facial features",
+        "privacy_element": "identifiable human face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "Group of people in an outdoor setting",
+        "Anonymized_element": "anonymous crowd, blurred individuals, indistinct silhouettes",
+        "privacy_element": "multiple identifiable individuals gathered in one place",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13555609/final/2017_13555609_final.png"
+}

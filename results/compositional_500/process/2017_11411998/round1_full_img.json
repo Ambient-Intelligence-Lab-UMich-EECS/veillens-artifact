@@ -1,0 +1,61 @@
+{
+  "reasoning": "The image shows a public bus with several passengers whose faces are visible through the windshield; at least one face is clear enough to identify, which constitutes Level 1 biometric data. Additional contextual clues include a readable destination sign with place names (location information) and a legible vehicle license plate (vehicle identifier). These elements reinforce each other by linking identifiable individuals to a specific transit route and vehicle. Given the clarity is moderate due to glass but still recognizable, the overall privacy risk is high-moderate with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated passenger\u2019s face visible through the front windshield, right side of the bus",
+        "Anonymized_element": "blurred face, pixelated features, darker tinted glass",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth), unobstructed view",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "another passenger\u2019s face visible through the front windshield near center",
+        "Anonymized_element": "blurred face, pixelated features, darker tinted glass",
+        "privacy_element": "recognizable facial features through glass",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front destination display showing route number and place names (e.g., Bodmin Parkway)",
+        "Anonymized_element": "generic route number only, no place names, low-contrast unreadable text",
+        "privacy_element": "readable place names and route information indicating geographic location",
+        "target_concept": "destination sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vehicle license plate on the bus front bumper",
+        "Anonymized_element": "blank plate, scrambled characters, obscured plate",
+        "privacy_element": "readable alphanumeric registration number",
+        "target_concept": "license plate",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11411998.jpg"
+}

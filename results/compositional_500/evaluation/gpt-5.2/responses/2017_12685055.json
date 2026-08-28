@@ -1,0 +1,74 @@
+{
+  "reasoning": "The image shows a street demonstration with many clearly visible faces and several readable protest elements. Multiple front-facing individuals are identifiable (Level 1 biometrics). Rainbow flags and protest placards indicate political/sexual-orientation viewpoints and participation in a public protest (Level 2 sensitive inferences and activities). A storefront brand sign provides contextual location cues (Level 3). The combination of several identifiable faces with sensitive political/identity signaling elevates the risk. Score is high, with high confidence due to clear, central visibility of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.72,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing person near center-left with clear facial features",
+        "Anonymized_element": "blurred face, low-detail oval head, generic skin-tone gradient",
+        "privacy_element": "discernible facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "front-facing person near center-right wearing a black hat with clear face",
+        "Anonymized_element": "obscured face, generic shadowed head, no distinct features",
+        "privacy_element": "clear eyes, nose, mouth visible for identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ]
+      },
+      {
+        "object_description": "rainbow flag held above the crowd",
+        "Anonymized_element": "solid-color neutral flag, patterned but non-symbolic colors",
+        "privacy_element": "rainbow pride pattern implying LGBTQ affiliation or support",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "handheld protest placard with partially readable text",
+        "Anonymized_element": "blank sign, abstract shapes, non-legible scribbles",
+        "privacy_element": "political message text linking individuals to a cause",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "storefront with visible brand signage on the left side",
+        "Anonymized_element": "plain facade, generic signage without text or logos",
+        "privacy_element": "distinct store name and branding that hints at geographic context",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "distant background crowd with many tiny, unidentifiable heads",
+        "Anonymized_element": "soft silhouettes, increased blur, indistinct forms",
+        "privacy_element": "presence of many people though not individually identifiable",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12685055/final/2017_12685055_final.png"
+}

@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a projected slide that includes two people standing by a vehicle; both faces are visible though somewhat soft due to projection and distance. Faces constitute Level 1 biometric data. No names, IDs, financial, or medical information are visible. The slide text is generic and non-PII. Given two facial regions but with reduced clarity and no reinforcing identifiers or location cues, the overall privacy risk is moderate.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "left person\u2019s face on the projected image",
+        "Anonymized_element": "mask or face blurred, head turned away, crop to neck down",
+        "privacy_element": "visible facial features (eyes, nose, mouth) enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right person\u2019s face on the projected image",
+        "Anonymized_element": "mask or face blurred, head turned away, crop to neck down",
+        "privacy_element": "visible facial features (eyes, nose, mouth) enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "projected presentation slide with readable headline and bullet text",
+        "Anonymized_element": "replace with abstract graphic or blurred text blocks",
+        "privacy_element": "legible generic text content (no PII)",
+        "target_concept": "presentation slide text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_16131602.jpg"
+}

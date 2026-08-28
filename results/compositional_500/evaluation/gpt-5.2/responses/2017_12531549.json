@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a close-up of a person’s partial face (profile with ear, cheek, nose outline, lips and open mouth) during what appears to be a dental/medical procedure performed by someone wearing purple gloves. The partial facial region can enable recognition, constituting biometric data. The clinical context of an oral examination implies medical information. These Level 1 (biometric) and Level 2 (medical) clues together raise the privacy risk despite the absence of names or documents. Overall risk is high with medium confidence due to the partial, not full, face.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "close-up profile of a person’s face showing ear, cheek, nose outline, and open mouth",
+        "Anonymized_element": "apply strong blur to facial region, crop to remove face, replace with generic silhouette skin-toned area without distinct features",
+        "privacy_element": "recognizable facial features including ear shape, mouth/lip contours, nose profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "gloved hands holding an instrument near the person’s open mouth in a clinical setting",
+        "Anonymized_element": "remove instrument and gloves, replace with neutral objects or empty space, depict closed mouth without clinical tools",
+        "privacy_element": "medical/dental examination context implying health-related activity",
+        "target_concept": "medical procedure",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12531549/final/2017_12531549_final.png"
+}

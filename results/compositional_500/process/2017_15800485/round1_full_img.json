@@ -1,0 +1,47 @@
+{
+  "reasoning": "The image shows a topless person indoors holding a cloth over their chest while looking at the camera. A clear, unobstructed face is centered and identifiable (Level 1 biometric data). There is visible partial breast/nipple exposure constituting nudity/intimate content (Level 2). Additional distinctive appearance details like a nose piercing further characterize the individual (Level 3). The combination of an identifiable face with visible nudity produces a severe privacy risk. The clues are clear and central, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.88,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the person, well-lit and unobstructed",
+        "Anonymized_element": "blurred/pixelated face, strong Gaussian blur, face masked or cropped out, head turned away",
+        "privacy_element": "full facial features including eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "exposed upper chest with partial nipple visible held by a light cloth",
+        "Anonymized_element": "opaque shirt or robe covering chest, repositioned cloth fully covering torso, neutral clothing",
+        "privacy_element": "visible breast and nipple indicating nudity/intimate exposure",
+        "target_concept": "nudity",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "small nose stud on the person\u2019s right nostril",
+        "Anonymized_element": "remove piercing, smooth skin texture, plain nose without jewelry",
+        "privacy_element": "distinctive facial jewelry contributing to unique appearance",
+        "target_concept": "facial jewelry",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15800485.jpg"
+}

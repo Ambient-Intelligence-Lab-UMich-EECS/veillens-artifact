@@ -1,0 +1,36 @@
+{
+  "reasoning": "The crop shows an airliner on an airport apron with visible airline branding and model text, plus a shoreline/airport environment in the background. There are no people or readable identifiers like tail numbers, addresses, or documents. The strongest signals are low-to-moderate contextual location cues from the airport and coastline, and a property/asset (aircraft) with company branding. No Level 1\u20132 clues are present. Thus the privacy risk remains low, with minor composition from brand/location context only. Confidence is high due to clear visibility and absence of sensitive elements.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "commercial airplane fuselage with visible airline branding and model text",
+        "Anonymized_element": "plain fuselage, remove logos and text, generic color scheme",
+        "privacy_element": "airline name and logo, aircraft model text",
+        "target_concept": "airline branding on aircraft",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "airport apron and runway with distant shoreline and city skyline",
+        "Anonymized_element": "generic tarmac, blurred/neutralized background skyline and shoreline",
+        "privacy_element": "coastal landscape, runway layout, distant skyline suggesting region",
+        "target_concept": "location context",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10678857/r1_crops/2017_10678857_0.png"
+}

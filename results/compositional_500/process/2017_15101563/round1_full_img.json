@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a marching band in uniform with several clear, front-facing human faces that are identifiable. This constitutes Level 1 biometric data. Additional contextual cues include military-style uniforms with medals/rank insignia and visible unit crests/logos on drums and music cards, which can hint at organizational affiliation and approximate location/activity. The combination of multiple identifiable faces with reinforcing affiliation/location cues yields a high privacy risk. Score is set high but not maximal since no names, government IDs, or financial/medical data are readable. Confidence is high due to clear, central visibility of the faces and insignia.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-center man's unobstructed face wearing a peaked cap",
+        "Anonymized_element": "blurred face, generic featureless oval, keep cap and pose",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "right-side musician's face partially covered by sunglasses but otherwise visible",
+        "Anonymized_element": "blurred face, generic featureless oval, keep sunglasses shape",
+        "privacy_element": "recognizable facial structure despite sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "left drummer's face visible in profile between baton and drum",
+        "Anonymized_element": "blurred face, generic featureless oval",
+        "privacy_element": "identifiable facial profile",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "colorful unit crest/logo printed on the front of the central snare drum",
+        "Anonymized_element": "plain solid-color drum head, no logos or text",
+        "privacy_element": "distinctive organizational insignia that can reveal affiliation/location",
+        "target_concept": "logo/insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rows of medals and rank insignia on the front-center man's uniform jacket",
+        "Anonymized_element": "plain uniform with generic buttons, remove medals/insignia",
+        "privacy_element": "specific decorations and rank marks indicating organizational affiliation and role",
+        "target_concept": "uniform insignia/medals",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15101563.jpg"
+}

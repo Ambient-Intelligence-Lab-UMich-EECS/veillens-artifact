@@ -1,0 +1,34 @@
+{
+  "img_id": "261",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 1,
+    "2 3": 1,
+    "2 4": 1,
+    "3 4": 1
+  },
+  "predictions": {
+    "1 2": 1,
+    "1 3": 1,
+    "2 3": 1
+  },
+  "missed_pairs": [
+    "1 4",
+    "2 4",
+    "3 4"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3
+  ],
+  "subjects_unmatched": [
+    4
+  ],
+  "num_preds_detected": 4,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P1-P2]: Casual hangout with music and snacks; P1 plays guitar while P2 sits close, facing him and smiling, but there\u2019s no intimate contact. Casual attire in an informal room suggests a friendly social gathering. => friends\n\n[P1-P3]: At the same social gathering; P3 sits nearby turned toward P1, watching/listening and chatting without physical contact or romantic cues. Casual clothes and relaxed setting. => friends\n\n[P2-P3]: They sit very close, smiling and conversing during the hangout, but show no affectionate touch or exclusivity; attire and environment are informal. => friends",
+  "timestamp": 1776888624.9129462
+}

@@ -1,0 +1,23 @@
+{
+  "reasoning": "The crop shows a close-up of handwritten text on paper with a generic, non-identifying sentiment. No faces, names, dates, addresses, financial/medical data, or unique identifiers are visible. The only privacy-relevant element is a readable handwritten note, which falls under generic documents and presents minimal risk on its own. Thus, risk is low with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.05,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue handwritten note on white paper with readable sentence",
+        "Anonymized_element": "blank paper, blurred text, abstract doodles, generic lines",
+        "privacy_element": "legible handwritten message content",
+        "target_concept": "handwritten text",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12342392/r1_crops/2017_12342392_0.png"
+}

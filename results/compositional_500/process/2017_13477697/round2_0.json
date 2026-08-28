@@ -1,0 +1,72 @@
+{
+  "reasoning": "The crop shows a religious ceremony with several clergy in ornate vestments. Multiple unobscured faces are clearly visible, which constitutes Level 1 biometric data. The clerical robes and setting enable sensitive inference of religious affiliation and participation in a religious event (Level 2). These cues reinforce each other, elevating risk beyond simple context. No government IDs, financial, or medical documents are visible. Given several identifiable faces plus sensitive-inference attire, the privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "elderly man\u2019s unobstructed face at far left, seated in white and red vestment",
+        "Anonymized_element": "face blurred or pixelated, head turned away, replaced with neutral oval",
+        "privacy_element": "clear facial features, eyes, nose, mouth visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "man with glasses, center-left, facing camera while seated in vestment",
+        "Anonymized_element": "blurred face, remove glasses detail, head turned down",
+        "privacy_element": "identifiable facial features with eyeglasses enhancing recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "middle-aged man seated mid-right, looking down, short hair",
+        "Anonymized_element": "pixelated face, motion blur, head turned away",
+        "privacy_element": "distinct facial profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "balding man mid-right in cream vestment, side profile visible",
+        "Anonymized_element": "face smoothed/blanked, angle changed to back-of-head",
+        "privacy_element": "recognizable side-profile facial structure",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "ornate white and red clerical vestments worn by seated participants",
+        "Anonymized_element": "plain neutral robes without religious symbols or patterns",
+        "privacy_element": "religious vestments indicating clergy role and faith tradition",
+        "target_concept": "religious clothing",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13477697/r1_crops/2017_13477697_0.png"
+}

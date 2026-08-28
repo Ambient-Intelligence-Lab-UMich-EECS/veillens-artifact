@@ -1,0 +1,45 @@
+{
+  "reasoning": "The image is a vintage commercial poster for a fireworks brand. No real identifiable people or biometric features are present; only stylized silhouettes appear. The only legible text contains company branding and a business address/phone number, which is not personal to an individual. Thus, the highest severity is low-level contextual information (Level 4). Combined clues yield only a minor privacy risk, leading to a low score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.08,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "printed business address and phone number at the bottom margin",
+        "Anonymized_element": "blank footer bar, decorative lines, lorem ipsum without numbers, remove phone/address",
+        "privacy_element": "readable street address, city/region, phone number",
+        "target_concept": "printed address and phone",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "large company name and slogan text across the poster",
+        "Anonymized_element": "generic brand placeholder text, abstract shapes, no recognizable brand name",
+        "privacy_element": "company name and slogan, corporate branding",
+        "target_concept": "poster text/logo",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Metadata or background information "
+        ]
+      },
+      {
+        "object_description": "small distant human silhouettes near fireworks at bottom",
+        "Anonymized_element": "abstract shapes without human form, simplified blobs",
+        "privacy_element": "presence of people as non-identifiable figures",
+        "target_concept": "crowd silhouettes",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15972923/final/2017_15972923_final.png"
+}

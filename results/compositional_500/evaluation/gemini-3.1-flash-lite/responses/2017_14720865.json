@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image displays a government document, specifically a General Register Office certificate, which contains unique identifier information and official registration details. The presence of a specific certificate number is a government identifier that could be used for verification or tracing purposes, leading to a high privacy risk score. The overall context is that of an official sensitive document.",
+  "personal_info_privacy_score": {
+    "score": 0.7,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "General Register Office certificate document identifier number 5836199/1",
+        "Anonymized_element": "Generic document header, randomized alphanumeric string, redacted registration number",
+        "privacy_element": "unique government certificate registration number",
+        "target_concept": "government identifier",
+        "severity_level": 1,
+        "attributes": [
+          "Government identlfiers (passport, driver's license, SSN, national ID)"
+        ]
+      },
+      {
+        "object_description": "Official branding and document type indicating General Register Office",
+        "Anonymized_element": "Generic border design, plain paper texture, no specific agency branding",
+        "privacy_element": "official document type indicating governmental source",
+        "target_concept": "document metadata",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14720865/final/2017_14720865_final.png"
+}

@@ -1,0 +1,29 @@
+{
+  "img_id": "14334",
+  "predictions": {
+    "3 4": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "3 7": 6,
+    "4 5": 4,
+    "4 6": 6,
+    "4 7": 5,
+    "5 6": 6,
+    "5 7": 5,
+    "6 7": 6
+  },
+  "ground_truth": {
+    "4 7": 6,
+    "4 6": 6,
+    "4 5": 6,
+    "3 4": 6,
+    "5 6": 6,
+    "3 7": 6,
+    "5 7": 6,
+    "3 5": 6,
+    "3 6": 6,
+    "6 7": 6
+  },
+  "raw_response": "[P3-P4]: P3 is walking past the market area where P4 is vending, showing no clear social interaction or shared focus. => no-relationship\n\n[P3-P5]: P3 is passing by the area where P5 is located, with no signs of engagement or interaction. => no-relationship\n\n[P3-P6]: P3 and P6 are both distant from each other in the background of the scene, not interacting. => no-relationship\n\n[P3-P7]: P3 is in the background near the market stall while P7 is an object/product being sold by P4, not a person. => no-relationship\n\n[P4-P5]: P5 is behind the counter assisting or working alongside P4 at the market stall. => professional\n\n[P4-P6]: P4 is engaged in market activity while P6 is further away, showing no interaction. => no-relationship\n\n[P4-P7]: P4 is the vendor selling the product P7 at the market stall. => commercial\n\n[P5-P6]: P5 is working at the stall and P6 is distant in the background, showing no interaction. => no-relationship\n\n[P5-P7]: P5 is working at the stall where P7 is a product being offered for sale. => commercial\n\n[P6-P7]: P6 is in the background and P7 is a product on a table, showing no relationship. => no-relationship",
+  "timestamp": 1779945372.1232593
+}

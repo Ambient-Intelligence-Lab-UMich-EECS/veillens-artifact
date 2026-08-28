@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a person\u2019s fingers holding a rectangular card whose surface is completely obscured, with no readable text, numbers, logos, or faces. The only mildly identifying cue is the hand\u2019s visible skin and fingernails (personal appearance). The card itself is a generic document-like object without exposed content. Highest severity is Level 3 (personal attributes), but cues are weak and non-specific, so overall risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "person\u2019s fingers and thumb holding the object at the lower-left",
+        "Anonymized_element": "gloved hand, cropped-out hand, stylized neutral hand without skin detail",
+        "privacy_element": "skin texture and fingernails revealing personal appearance",
+        "target_concept": "hand",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rectangular card-like object with its surface fully redacted",
+        "Anonymized_element": "plain blank card, generic solid color rectangle, abstract pattern card",
+        "privacy_element": "document/card form factor that typically contains identifiers (no content visible)",
+        "target_concept": "card",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14873375/r1_crops/2017_14873375_1.png"
+}

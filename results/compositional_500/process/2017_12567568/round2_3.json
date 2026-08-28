@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a colorful outdoor dance/fitness group on a city street. Faces appear blurred/covered, so no direct biometric identification is visible. However, the scene reveals personal attributes (body shape, gender presentation) and a clear activity/behavior (group dance/fitness, suggested by the clothing and a top reading \u201cZumba\u201d). No government IDs, financial, or medical details are present, and no specific address or landmark is readable. Overall risk stems from Level 3 attributes and activity cues without Level 1\u20132 identifiers, yielding a moderate but limited privacy risk.",
+  "personal_info_privacy_score": {
+    "score": 0.25,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "neon athletic outfit on the central foreground person (pink sports bra and bright top)",
+        "Anonymized_element": "muted generic workout clothing, plain colors, looser fit",
+        "privacy_element": "body shape visibility, gender presentation suggesting personal attributes, fitness context",
+        "target_concept": "clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "group of people dancing/exercising in formation along the street",
+        "Anonymized_element": "sparser crowd, neutral walking poses, non-coordinated attire",
+        "privacy_element": "observable participation in public dance/fitness activity",
+        "target_concept": "activity/behavior region",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "purple tank top on left participant with readable 'Zumba' text",
+        "Anonymized_element": "blank tank top with no text or logo",
+        "privacy_element": "'Zumba' wording revealing specific fitness program involvement",
+        "target_concept": "apparel text/logo",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12567568/r1_crops/2017_12567568_3.png"
+}

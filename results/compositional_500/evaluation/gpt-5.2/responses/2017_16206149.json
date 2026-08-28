@@ -1,0 +1,53 @@
+{
+  "reasoning": "The image shows a public street/canal scene with two foreground workers whose faces are obscured, and distant patrons at an outdoor cafe. No readable government IDs, credit cards, or clear faces are visible. The main privacy-relevant cues are business/storefront signage that can reveal location and the observable work activity/uniform of a worker, plus a visible crowd of distant individuals. These are Level 3–4 clues and do not strongly identify a person on their own. Thus the overall risk is low but nonzero due to potential location inference and activity disclosure.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "storefront sign on the curved building with partially readable business names/branding",
+        "Anonymized_element": "blank signage, generic awning with no text or logos, neutral colors",
+        "privacy_element": "business names, distinctive storefront branding that can reveal location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ]
+      },
+      {
+        "object_description": "group of people seated at an outdoor cafe across the canal",
+        "Anonymized_element": "empty tables and chairs, blurred or removed patrons, distant silhouettes",
+        "privacy_element": "multiple individuals present in a public setting",
+        "target_concept": "crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "worker wearing a high-visibility orange vest kneeling by a lamp post",
+        "Anonymized_element": "plain dark jacket without reflective strips or logos, neutral posture not implying task",
+        "privacy_element": "work uniform and ongoing maintenance activity implying occupation",
+        "target_concept": "worker uniform/activity",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "blue car parked on the street near the trees",
+        "Anonymized_element": "generic car with simplified shape and no distinctive make/model cues",
+        "privacy_element": "distinct vehicle appearance that could be linked to an owner",
+        "target_concept": "vehicle",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16206149/final/2017_16206149_final.png"
+}

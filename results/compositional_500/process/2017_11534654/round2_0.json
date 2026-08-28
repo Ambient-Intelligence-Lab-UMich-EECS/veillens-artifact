@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows a football stadium interior with a large, clearly visible team logo painted near the end zone, which can identify the venue and city, constituting location information. A few small, distant people are present on the field but are not identifiable. No faces, IDs, or other sensitive personal details are legible. The highest severity is Level 3 due to the explicit location cue, with minor contribution from distant individuals. This yields a low-to-moderate overall privacy risk with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.28,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large team logo painted near the end zone on the football field",
+        "Anonymized_element": "blank end zone, generic field markings, no team branding or text",
+        "privacy_element": "distinctive team logo/branding that reveals specific team and stadium location",
+        "target_concept": "team logo",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "three small, distant people standing on the field near the sideline",
+        "Anonymized_element": "empty field, remove/blur figures, generic ground texture",
+        "privacy_element": "presence of human figures (unidentifiable due to distance)",
+        "target_concept": "distant individuals",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11534654/r1_crops/2017_11534654_0.png"
+}

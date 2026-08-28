@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows three performers on a dim stage; their faces are clearly obscured, and there are no readable names, documents, numbers, or location cues. Without identifiable biometrics or explicit identifiers, the main privacy relevance comes from visible body shapes, clothing, and a suggestive stage pose that reveals some personal attributes and activities/behavior (theatrical performance). These Level-3 clues are limited and not strongly identifying, resulting in a low overall risk. Confidence is medium due to clear visibility of bodies but masked faces and lack of text or IDs.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "seated person in a suit and tie with body and clothing visible (face obscured)",
+        "Anonymized_element": "looser, plain clothing with muted solid colors; crop to reduce body distinctiveness; maintain face obfuscation",
+        "privacy_element": "body shape, attire style indicating personal attributes and possible profession/activity",
+        "target_concept": "person’s body (face obscured)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "standing performer in a white tulle dress and floral headpiece (face obscured)",
+        "Anonymized_element": "generic plain dress without distinctive style; neutral headwear; maintain face obfuscation",
+        "privacy_element": "distinctive costume indicating participation in a performance",
+        "target_concept": "costumed performer",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "person draped across another’s lap in a suggestive stage pose (faces obscured)",
+        "Anonymized_element": "neutral standing or seated pose with more distance between subjects",
+        "privacy_element": "behavioral cue suggesting interpersonal interaction on stage",
+        "target_concept": "pose/interaction region",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11456107/final/2017_11456107_final.png"
+}

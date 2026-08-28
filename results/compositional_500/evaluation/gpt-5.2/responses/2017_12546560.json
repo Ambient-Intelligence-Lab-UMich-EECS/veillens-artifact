@@ -1,0 +1,74 @@
+{
+  "reasoning": "The image shows three podiumed athletes with faces obscured but seated in visible wheelchairs, which strongly implies a disability (a Level 2 sensitive inference). Additional contextual elements—Paralympic-branded signage reading “London,” medals on ribbons, and a national team uniform with “AUS” text—reveal sports participation and event/location context (Level 3). While no faces or direct identifiers are visible, the disability inference combined with clear event context yields a moderate-to-high privacy risk. Confidence is high due to clear visibility of these cues.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "wheelchair beneath the left seated person on the podium",
+        "Anonymized_element": "standard chair or cropped lower body, no mobility aid visible",
+        "privacy_element": "mobility aid implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "wheelchair beneath the center seated person on the podium",
+        "Anonymized_element": "standard chair or cropped lower body, no mobility aid visible",
+        "privacy_element": "mobility aid implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "wheelchair beneath the right seated person on the podium",
+        "Anonymized_element": "standard chair or cropped lower body, no mobility aid visible",
+        "privacy_element": "mobility aid implying disability",
+        "target_concept": "wheelchair",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ]
+      },
+      {
+        "object_description": "purple event signage on trackside barrier with Paralympic logo and partial 'London' text",
+        "Anonymized_element": "blank banner with abstract colors, no text or logos",
+        "privacy_element": "event/brand logo and city name indicating a specific sports event and location",
+        "target_concept": "event signage",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "medals hanging on purple ribbons around athletes’ necks",
+        "Anonymized_element": "plain ribbon without medal or blank pendant with no insignia",
+        "privacy_element": "award medals indicating participation and achievement in a specific sports event",
+        "target_concept": "medal",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "green athletic pants with visible 'AUS' text on left athlete",
+        "Anonymized_element": "solid-color pants with no country text or symbols",
+        "privacy_element": "country abbreviation revealing national team affiliation and indirect location context",
+        "target_concept": "team uniform text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12546560/final/2017_12546560_final.png"
+}

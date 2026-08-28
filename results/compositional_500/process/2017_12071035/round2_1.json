@@ -1,0 +1,24 @@
+{
+  "reasoning": "The crop shows a single person posing against a backdrop with a clear, front-facing view of their face. Although wearing oversized novelty glasses and a stick-on lip prop, their facial structure and eyes are visible enough for recognition. No names, documents, or location identifiers are present. The highest-severity element is Level 1 biometric data (identifiable face), with additional low-level personal appearance cues. Overall risk is driven by the identifiable face alone, yielding a moderate-to-high score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.52,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of a person wearing oversized orange glasses and holding a lip prop",
+        "Anonymized_element": "blurred/pixelated face, opaque mask or solid-colored glasses without transparency, replace with generic silhouette",
+        "privacy_element": "identifiable facial features including visible eyes through lenses, facial outline, distinctive hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12071035/r1_crops/2017_12071035_1.png"
+}

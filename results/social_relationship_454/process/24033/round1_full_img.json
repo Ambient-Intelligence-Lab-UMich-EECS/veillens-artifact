@@ -1,0 +1,50 @@
+{
+  "img_id": "24033",
+  "ground_truth": {
+    "4 6": 6,
+    "5 6": 6,
+    "5 7": 6,
+    "1 6": 6,
+    "1 7": 6,
+    "3 8": 5,
+    "6 7": 6,
+    "7 8": 6,
+    "2 6": 6,
+    "6 8": 6,
+    "3 6": 6,
+    "3 7": 6
+  },
+  "predictions": {
+    "1 6": 6,
+    "2 6": 6,
+    "3 6": 6,
+    "3 8": 6,
+    "4 6": 6,
+    "5 6": 6,
+    "6 8": 6
+  },
+  "missed_pairs": [
+    "1 7",
+    "3 7",
+    "5 7",
+    "6 7",
+    "7 8"
+  ],
+  "subjects_matched": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "subjects_unmatched": [
+    7
+  ],
+  "num_preds_detected": 8,
+  "num_preds_matched": 7,
+  "num_gt_subjects": 8,
+  "raw_response": "[P1-P6]: The scene is a barbershop; P6 is a seated customer in an orange cape, while P1 is another person seen in the mirror at a different station with no eye contact or touch. Different positions and no interaction. => no-relationship\n\n[P2-P6]: In the barbershop setting, P2 appears in the left mirror and P6 is the seated customer in orange on the left foreground; they are apart and not engaging physically or visually. => no-relationship\n\n[P3-P6]: P3 stands near the mirrors while P6 sits in a cape facing away; no contact or shared activity between them despite being in the same shop. => no-relationship\n\n[P3-P8]: Both appear in the mirror area, standing near each other but with neutral posture and no physical interaction; one may wear green like a barber while the other is casual, and there\u2019s no clear service exchange. => no-relationship\n\n[P4-P6]: P4, in green like a barber, is at a different station and focused elsewhere, while P6 is another seated customer; no proximity or interaction. => no-relationship\n\n[P5-P6]: P5 (barber in green) is actively working on a different client, while P6 is another customer in the shop with no engagement between them. => no-relationship\n\n[P6-P8]: P6 is a seated customer in an orange cape; P8 (in green, likely a barber) is seen in the mirrors but not attending to P6 and there\u2019s no contact or shared focus. => no-relationship",
+  "timestamp": 1776887515.9327657
+}

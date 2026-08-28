@@ -1,0 +1,60 @@
+{
+  "reasoning": "A person stands on a sidewalk near a waterfront. The clearest privacy-relevant element is a mostly frontal, unobstructed face, which is directly identifying (Level 1). Secondary clues include distinctive clothing (bright scarf, denim jacket, boots) that contributes to personal attributes, and a recognizable waterfront with a pier/path that provides some location context but lacks readable signs or addresses. No government IDs, financial, or medical data are visible. Given one strong Level 1 biometric cue reinforced by moderate contextual clues, the overall risk is high but not extreme. Confidence is high because the cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal view of a person\u2019s face with glasses",
+        "Anonymized_element": "face blurred or pixelated, turned-away head pose, add neutral mask or occlusion",
+        "privacy_element": "full facial features visible (eyes, nose, mouth), identifiable facial geometry, eyeglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "bright orange scarf around the person\u2019s neck with denim jacket and tall brown boots",
+        "Anonymized_element": "neutral-colored scarf or no scarf, generic jacket and boots with subdued colors and minimal detail",
+        "privacy_element": "distinctive clothing colors and style that can aid recognition",
+        "target_concept": "distinctive clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "waterfront background with a narrow pier or jetty extending into the water and adjacent sidewalk/grass",
+        "Anonymized_element": "blurred or generic shoreline without identifiable structures, replace with plain sky/trees",
+        "privacy_element": "recognizable pier/shoreline layout that may hint at location",
+        "target_concept": "waterfront pier/shoreline",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "exterior house siding at the edge of the frame",
+        "Anonymized_element": "plain wall texture or cropped edge",
+        "privacy_element": "residential exterior suggesting a private property context (no address visible)",
+        "target_concept": "house exterior",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_14999657.jpg"
+}

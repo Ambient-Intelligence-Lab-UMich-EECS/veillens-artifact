@@ -1,0 +1,47 @@
+{
+  "reasoning": "The crop shows a person\u2019s unobstructed face in the background, which is directly identifying. Additional contextual details include a visible forearm tattoo and band-logo T\u2011shirts that signal music preferences and appearance traits. The presence of one clear Level 1 biometric clue elevates risk, reinforced by Level 3 personal/behavioral context. Overall this yields a high privacy risk with high confidence due to clear visibility.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "background person\u2019s face with visible eyes, nose, mouth and hair",
+        "Anonymized_element": "blurred face, pixelated face, replaced with a neutral oval or shadowed face",
+        "privacy_element": "identifiable facial features, skin texture, hairstyle",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "small tattoo on the inner right forearm of the background person",
+        "Anonymized_element": "plain skin, bandage or sleeve covering, generic skin texture",
+        "privacy_element": "distinct tattoo pattern and placement",
+        "target_concept": "tattoo",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "band-logo graphic on the front of a black T-shirt worn by the guitarist",
+        "Anonymized_element": "plain solid-color T-shirt with no text or graphics",
+        "privacy_element": "readable band/graphic indicating music preference",
+        "target_concept": "clothing logo/text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12571467/r1_crops/2017_12571467_0.png"
+}

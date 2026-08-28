@@ -1,0 +1,34 @@
+{
+  "reasoning": "The image shows a large outdoor concert with a colorful stage backdrop and a dense crowd viewed from behind. Individual faces are mostly small, partially turned away, and not readily identifiable, so biometric risk is minimal. The most privacy-relevant elements are the visible crowd (indicating attendance/behavior) and a readable stage banner that names the event, which can hint at time/place context. No names, IDs, financial, medical, or intimate content are visible. Overall risk is low due to distant, non-identifiable people and contextual event text only.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "dense crowd of attendees with small, partially turned-away faces",
+        "Anonymized_element": "back-of-heads only, apply face blur, increase distance or depth-of-field to obscure features",
+        "privacy_element": "multiple human faces in crowd, partial facial features",
+        "target_concept": "faces in crowd",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "large stage banner with readable text \"Summer of Love 40th\"",
+        "Anonymized_element": "blank colorful banner, no text or logos, abstract pattern only",
+        "privacy_element": "readable event name and edition indicating a specific gathering",
+        "target_concept": "event banner text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16061365/final/2017_16061365_final.png"
+}

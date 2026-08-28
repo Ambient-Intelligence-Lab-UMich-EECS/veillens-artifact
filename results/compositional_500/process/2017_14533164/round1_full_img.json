@@ -1,0 +1,72 @@
+{
+  "reasoning": "The image shows a public protest with numerous clearly identifiable faces in the foreground, which constitutes biometric data (Level 1). A large handheld cardboard sign contains a legible political/sexual-stance message, adding sensitive-inference risk (Level 2). One participant wears revealing, lingerie-style attire that could be considered intimate content (Level 2). These clues are direct, central, and mutually reinforcing (identities linked to a public stance/activity), yielding a high overall privacy risk. Confidence is high because details are sharp and readable.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "front-facing face of central participant in purple outfit",
+        "Anonymized_element": "blurred face, pixelated facial region, surgical-style mask, turned head",
+        "privacy_element": "clear facial features, eyes, nose, mouth enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "front-facing face of woman with glasses at right foreground",
+        "Anonymized_element": "blurred face, pixelated facial region, generic sunglasses, turned head",
+        "privacy_element": "distinct facial features and eyes visible for identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile/three-quarter face of older man with glasses in background center-right",
+        "Anonymized_element": "blurred face, pixelated facial region, occluding shadow, turned away",
+        "privacy_element": "recognizable facial structure and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large cardboard protest sign with handwritten slogan held above crowd",
+        "Anonymized_element": "blank cardboard, abstract scribbles not readable, generic graphic icon",
+        "privacy_element": "readable political/sexual-stance message revealing beliefs",
+        "target_concept": "protest sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "revealing lingerie-style top and exposed midriff on central participant",
+        "Anonymized_element": "non-revealing plain T-shirt or jacket, neutral colors",
+        "privacy_element": "intimate attire exposing chest area and torso",
+        "target_concept": "intimate attire",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_14533164.jpg"
+}

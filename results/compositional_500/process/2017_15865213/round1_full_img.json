@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a single person speaking at a podium with a clear, unobstructed view of their face. This constitutes biometric data and is the highest-severity cue. Secondary clues include recognizable flags that can hint at venue or institutional affiliation (location inference) and the visible podium/microphone indicating the activity of public speaking. There are no visible names, documents, or government/financial identifiers. Given a prominent identifiable face plus moderate contextual signals, the overall privacy risk is high but not extreme. Confidence is high because cues are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of the person at the podium",
+        "Anonymized_element": "blurred face, pixelated facial region, generic silhouette without facial details",
+        "privacy_element": "identifiable facial features enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue flag with circle of yellow stars near the speaker",
+        "Anonymized_element": "plain blue flag, abstract pattern without symbols, neutral curtain",
+        "privacy_element": "distinctive emblem that suggests a specific institution/region",
+        "target_concept": "flag with identifiable emblem",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "wooden podium with attached microphone in front of the speaker",
+        "Anonymized_element": "plain lectern without microphone, cropped frame excluding podium",
+        "privacy_element": "public speaking setup indicating participation in a talk/event",
+        "target_concept": "podium and microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15865213.jpg"
+}

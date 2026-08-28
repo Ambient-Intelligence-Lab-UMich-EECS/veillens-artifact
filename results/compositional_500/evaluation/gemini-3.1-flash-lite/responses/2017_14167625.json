@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image captures a medical procedure in a clinical or research environment involving multiple staff members. The primary privacy risk stems from the presence of visible documents on the wall, which contain clinical protocols, medical abbreviations, and dosage information (Level 2). While the faces are partially obscured or turned, the combination of professional attire, clinical setting, and legible medical documentation constitutes a high privacy concern regarding potential sensitive patient-care data and workplace identity.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "Documents posted on the wall behind the medical personnel",
+        "Anonymized_element": "Blank white papers, generic charts, non-specific diagrams",
+        "privacy_element": "Legible medical protocols, medication names, dosage instructions, and clinical guidelines",
+        "target_concept": "medical document",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) "
+        ]
+      },
+      {
+        "object_description": "Group of individuals in a clinical setting",
+        "Anonymized_element": "Unidentified people in generic lab attire, masked faces, blurred silhouettes",
+        "privacy_element": "Physical appearance and professional roles, identifiable presence in a specific clinical context",
+        "target_concept": "medical personnel",
+        "severity_level": 3,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14167625/final/2017_14167625_final.png"
+}

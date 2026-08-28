@@ -1,0 +1,76 @@
+{
+  "reasoning": "Country level: The cars drive on the right with European-style traffic lights and lane markings. The strongest cue is the rear license plates: they are long, white EU plates with a blue band at the left. One plate on the right follows the old French format (two digits at the end) and clearly shows \u201c76,\u201d which is a French department code. This anchors the country as France. City level: Department 76 corresponds to Seine-Maritime (Normandy), whose principal cities include Rouen, Le Havre, and Dieppe. The scene shows a leafy arterial with concrete guardrails, curbside parallel parking bays, and overhead lamps strung on wires\u2014features common in Rouen\u2019s suburban boulevards and some corridors entering the city. There are no coastal cues (e.g., port cranes) that might suggest Le Havre, and the dense forested verge resembles approaches into Rouen\u2019s valleys. However, signage is too distant to read, so distinguishing Rouen from Le Havre cannot be done with high certainty. Street level: The street has a right-side parking lane separated by a solid line, a merge arrow and diverging lane marking, concrete noise-barrier/retaining wall on the left with a metal handrail, and suspended lanterns over the carriageway leading to a signalized junction ahead. These elements help characterize a specific arterial segment but are not uniquely identifying without readable signs.",
+  "location_estimate": {
+    "latitude": 49.443,
+    "longitude": 1.099,
+    "confidence": "Low",
+    "region": "France, Normandy (Seine-Maritime, likely Rouen)"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "white license plate on a beige hatchback",
+        "non_geolocation_element": "white color, rectangular shape, reflective surface, rear-mounted, daylight",
+        "geolocation_element": "old French plate format with spaced numbers and letters ending in '76' indicating Seine-Maritime department, EU blue band at left",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white license plate on a silver hatchback",
+        "non_geolocation_element": "white color, rectangular shape, reflective surface, centered on rear bumper",
+        "geolocation_element": "French EU plate with blue band and FR country code, French typeface and spacing",
+        "target_concept": "license plate",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead streetlight on a cable",
+        "non_geolocation_element": "rounded lamp housings, metallic color, suspended by wire, daytime lighting off",
+        "geolocation_element": "lamp units strung across carriageway, a style common on French and some central European arterials",
+        "target_concept": "streetlight",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white merge arrow on asphalt",
+        "non_geolocation_element": "white paint, elongated arrow shape, mid-lane position, worn texture",
+        "geolocation_element": "European-style lane marking conventions used in France",
+        "target_concept": "road marking",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "concrete guardrail on the left shoulder",
+        "non_geolocation_element": "light gray concrete panels, vertical metal posts, linear placement along sidewalk",
+        "geolocation_element": "French urban arterial roadside barrier style seen in many Normandy cities",
+        "target_concept": "guardrail",
+        "properties": [
+          "country level clue",
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "vertical traffic light at the far intersection",
+        "non_geolocation_element": "black housing, three circular lenses, pole-mounted, red lens illuminated",
+        "geolocation_element": "European vertical traffic signal design consistent with France",
+        "target_concept": "traffic light",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/stuttgart/stuttgart_000000_000019_leftImg8bit.png"
+}

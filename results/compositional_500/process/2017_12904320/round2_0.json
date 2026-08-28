@@ -1,0 +1,36 @@
+{
+  "reasoning": "This crop shows three people in an office but their faces are already obscured, removing primary biometric risk. No readable text, names, or logos are visible. A lanyard with an ID badge is present but the badge content is not legible, posing only a small compositional risk of workplace identification. A laptop is on the desk with no screen content shown, adding minimal context. With no clear Level 1 or readable Level 2 identifiers, the remaining clues are low-to-moderate and not mutually reinforcing, so overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.16,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lanyard with an ID badge hanging from the neck of the standing person",
+        "Anonymized_element": "remove lanyard, blank card with no text or logo, generic clip without badge",
+        "privacy_element": "employee badge form factor suggesting workplace ID (text/logo not legible)",
+        "target_concept": "ID badge",
+        "severity_level": 3,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "closed laptop at the edge of the desk",
+        "Anonymized_element": "generic closed notebook, laptop with brand/logo removed and no visible ports",
+        "privacy_element": "personal/work device presence (no screen or data visible)",
+        "target_concept": "laptop",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12904320/r1_crops/2017_12904320_0.png"
+}

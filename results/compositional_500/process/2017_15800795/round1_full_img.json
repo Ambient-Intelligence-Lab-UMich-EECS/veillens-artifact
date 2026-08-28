@@ -1,0 +1,67 @@
+{
+  "reasoning": "The image shows a parade scene with many clearly visible spectator faces along the barrier; these are identifiable biometric cues (Level 1). The main marcher holds two rainbow pride flags that can imply LGBTQ+ affiliation or related sensitive inferences (Level 2). A partially readable storefront sign in the background may hint at a specific location (Level 3). The combination of multiple identifiable faces with sensitive-symbol flags yields a high privacy risk. The faces are central and clear; the sign is secondary. Overall risk is high with strong evidence, so the score is elevated with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.65,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "spectator\u2019s clear face in front row behind blue fence, left of center",
+        "Anonymized_element": "blurred face, pixelated region, generic head silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "spectator\u2019s clear face in front row behind blue fence, right of center",
+        "Anonymized_element": "blurred face, pixelated region, generic head silhouette",
+        "privacy_element": "identifiable facial features (eyes, nose, mouth)",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rainbow pride flag held high in performer\u2019s left hand",
+        "Anonymized_element": "solid-color flag, abstract multicolor without rainbow order, patterned non-symbolic flag",
+        "privacy_element": "distinct rainbow stripes associated with LGBTQ+ pride",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rainbow pride flag held high in performer\u2019s right hand",
+        "Anonymized_element": "solid-color flag, abstract multicolor without rainbow order, patterned non-symbolic flag",
+        "privacy_element": "distinct rainbow stripes associated with LGBTQ+ pride",
+        "target_concept": "flag",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront sign in background with partially readable text 'Select'",
+        "Anonymized_element": "blank signboard, no text or logo, solid color panel",
+        "privacy_element": "store name text and logo that can reveal location",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_15800795.jpg"
+}

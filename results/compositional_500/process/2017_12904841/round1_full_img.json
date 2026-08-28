@@ -1,0 +1,60 @@
+{
+  "reasoning": "The image shows a crowded street scene with numerous clearly visible, front-facing individuals. Several faces are close to the camera with unobstructed features, constituting biometric identifiers (highest severity). Secondary cues include a readable storefront sign that can help triangulate location. There are no visible government IDs, financial/medical data, or explicit sensitive text. Due to multiple identifiable faces and some location context, the overall privacy risk is high. Confidence is high because the faces and signage are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.6,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "man in gray hoodie at right edge with unobstructed face looking left, holding a phone",
+        "Anonymized_element": "turn head away, blur face region, replace with generic non-descript face, add mask/sunglasses",
+        "privacy_element": "full frontal face, eyes and facial features clearly visible",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man wearing straw hat near center-right with side/front face visible",
+        "Anonymized_element": "obscure facial area with blur, replace with hat-only back-of-head, add shadow over eyes",
+        "privacy_element": "partially frontal face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "woman with curly blonde hair at left foreground with visible facial profile",
+        "Anonymized_element": "turn head away, blur/profile smooth, add sunglasses and brimmed hat",
+        "privacy_element": "recognizable facial profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "storefront facade at upper-left with readable DRYFAST signage",
+        "Anonymized_element": "blank facade, remove/blur text and logos, generic building front",
+        "privacy_element": "business name text that can help pinpoint location",
+        "target_concept": "store sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12904841.jpg"
+}

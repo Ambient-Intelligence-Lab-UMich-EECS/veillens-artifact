@@ -1,0 +1,45 @@
+{
+  "reasoning": "The crop shows an ornate historical building facade with a highly distinctive arched gateway, detailed relief carvings, a clear coat-of-arms shield, and mounted religious statues. There are no people, faces, documents, or textual identifiers. The main privacy signal is potential location inference from recognizable landmark-style architectural details. With no direct identifiers, the risk is low but nonzero due to the uniqueness of the structure. Confidence is medium because landmark recognition depends on viewer knowledge.",
+  "personal_info_privacy_score": {
+    "score": 0.18,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "carved stone coat-of-arms shield above the arch",
+        "Anonymized_element": "plain stone plaque, blurred emblem, generic geometric relief",
+        "privacy_element": "distinct heraldic shield design that can hint at a specific site or institution",
+        "target_concept": "coat of arms relief",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "ornate horseshoe arch with intricate Moorish-style patterns",
+        "Anonymized_element": "simplified arch, uniform texture, minimal decorative detail",
+        "privacy_element": "unique decorative motifs and craftsmanship identifiable to a specific landmark",
+        "target_concept": "architectural arch",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "two mounted religious statues on the right wall niche",
+        "Anonymized_element": "generic un-detailed figures, abstract shapes, blurred features",
+        "privacy_element": "recognizable statue arrangement and style linked to a known building",
+        "target_concept": "exterior statues",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11536083/r1_crops/2017_11536083_1.png"
+}

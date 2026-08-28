@@ -1,0 +1,34 @@
+{
+  "img_id": "18987",
+  "ground_truth": {
+    "1 2": 1,
+    "1 3": 1,
+    "1 4": 6,
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "predictions": {
+    "2 3": 1,
+    "2 4": 6,
+    "3 4": 6
+  },
+  "missed_pairs": [
+    "1 2",
+    "1 3",
+    "1 4"
+  ],
+  "subjects_matched": [
+    2,
+    3,
+    4
+  ],
+  "subjects_unmatched": [
+    1
+  ],
+  "num_preds_detected": 8,
+  "num_preds_matched": 3,
+  "num_gt_subjects": 4,
+  "raw_response": "[P2-P3]: In a park setting, both casually dressed and leaning in close to pet the same dog, showing cooperative, friendly body language without romantic contact. => friends\n\n[P2-P4]: Park scene but P2 is focused on the dog while P4 is farther back walking past, with no orientation or interaction toward each other. => no-relationship\n\n[P3-P4]: P3 kneels to pet the dog while P4 is in the background walking away; there\u2019s clear distance and no engagement. => no-relationship",
+  "timestamp": 1776888214.5795546
+}

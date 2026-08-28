@@ -1,0 +1,49 @@
+{
+  "reasoning": "The crop shows a formal ceremony with one clearly visible face on the right, which is strong biometric information. A diploma/certificate is held between them with legible institution name and signatures, revealing affiliation and event details that indicate activities and potential location context. Military uniforms with rank insignia and ribbons further disclose personal role/affiliation. The highest severity is Level 1 due to the identifiable face; the certificate and uniforms add reinforcing context, yielding a high but not extreme risk. Confidence is high because these elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.55,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side person\u2019s unobstructed face, smiling, in profile-front view",
+        "Anonymized_element": "blurred or pixelated face, face masked, turned-away head silhouette",
+        "privacy_element": "full facial features enabling biometric identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "certificate/diploma held between two people with visible text 'United States Naval War College' and signatures",
+        "Anonymized_element": "blank certificate, remove all text/logos/signatures, generic parchment",
+        "privacy_element": "institution name, event details, signatures providing affiliation and context",
+        "target_concept": "certificate",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "0"
+      },
+      {
+        "object_description": "right person\u2019s military dress uniform with rank insignia and service ribbons on chest and sleeves",
+        "Anonymized_element": "plain dark suit or uniform without insignia or ribbons",
+        "privacy_element": "rank insignia and ribbons indicating service role and affiliation",
+        "target_concept": "military uniform insignia",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "0"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11158648/r1_crops/2017_11158648_0.png"
+}

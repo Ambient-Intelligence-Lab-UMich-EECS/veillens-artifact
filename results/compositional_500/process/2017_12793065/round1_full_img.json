@@ -1,0 +1,68 @@
+{
+  "reasoning": "The image shows a pride parade float with multiple clearly visible faces and a large rainbow banner with readable anti\u2011homophobia text. The most severe clue is identifiable faces (Level 1 biometric data). These faces combine with an explicit LGBTQ+ themed banner, enabling sensitive inference about participants\u2019 political/social alignment or sexual orientation (Level 2). No government IDs or financial/medical info are visible. Given several unobstructed faces and reinforcing sensitive\u2011context messaging, the overall privacy risk is high with clear visual evidence.",
+  "personal_info_privacy_score": {
+    "score": 0.62,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "smiling person wearing a dark cap on the right side, face fully visible",
+        "Anonymized_element": "blurred face, pixelated or masked face, turned-away head",
+        "privacy_element": "full unobstructed face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in sunglasses at far right, face partially visible but identifiable",
+        "Anonymized_element": "blurred face, pixelated face, mask or crop to remove face",
+        "privacy_element": "recognizable facial structure even with sunglasses",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "man in red shirt on float, right-center, profile face visible",
+        "Anonymized_element": "blurred profile, occluded with object, turned-away head",
+        "privacy_element": "recognizable facial profile and features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "person in green dress on float, left-center, partial face visible through railing",
+        "Anonymized_element": "blurred or cropped face region, head turned away",
+        "privacy_element": "partially visible but recognizable face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large rainbow banner on float with readable anti-homophobia text",
+        "Anonymized_element": "plain banner with no text, neutral colors without pride symbolism",
+        "privacy_element": "readable political/social message, rainbow pride symbolism indicating LGBTQ+ advocacy",
+        "target_concept": "banner with text",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12793065.jpg"
+}

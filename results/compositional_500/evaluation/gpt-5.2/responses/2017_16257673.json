@@ -1,0 +1,44 @@
+{
+  "reasoning": "The image shows two people at a conference table with faces and desk nameplates visibly obscured. No readable names, government IDs, financial/medical data, or biometric details are present. The remaining privacy-relevant elements are weak contextual clues: conference lanyard badges with partial branding, blurred desk placards that would normally contain names/affiliations, and a projected slide with generic technical text. With no Level 1 or Level 2 evidence and only low-risk contextual artifacts, the overall privacy risk is low.",
+  "personal_info_privacy_score": {
+    "score": 0.12,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "lanyard ID badge on the person at right with partial logo/branding visible but no readable name",
+        "Anonymized_element": "plain lanyard, blank badge, no logos or text",
+        "privacy_element": "organizational logo/branding, potential attendee name/affiliation if readable",
+        "target_concept": "ID badge",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "desk nameplate/placard in front of the left speaker with text obscured",
+        "Anonymized_element": "blank placard, solid color strip, no text",
+        "privacy_element": "participant name, title, affiliation if readable",
+        "target_concept": "nameplate",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts ",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ]
+      },
+      {
+        "object_description": "projected presentation slide with technical text and diagram",
+        "Anonymized_element": "abstract shapes or generic diagram with no legible text",
+        "privacy_element": "potential organizational or project information if readable",
+        "target_concept": "presentation slide",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16257673/final/2017_16257673_final.png"
+}

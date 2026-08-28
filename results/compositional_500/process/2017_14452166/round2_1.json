@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a commercial street with multiple readable storefront signs and a distinctive installation of fish-shaped decorations strung across the road. No people or direct identifiers appear. The primary privacy signal is location information: unique business names/logos and a recognizable street decoration that could pinpoint a specific area. These Level 3 clues combine to create moderate but not high risk. Score is limited due to absence of faces, government or financial/medical data.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "gray storefront sign on the right with bold colored logo/text",
+        "Anonymized_element": "blank sign panel, solid color, no logo or text",
+        "privacy_element": "readable business name/logo that can pinpoint a venue",
+        "target_concept": "storefront sign",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "red shop awning in lower right-center with white printed text",
+        "Anonymized_element": "plain awning, no printed text or branding",
+        "privacy_element": "readable shop name/slogan revealing a specific business",
+        "target_concept": "shop awning text",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "rows of fish-shaped decorations suspended across the street",
+        "Anonymized_element": "plain bunting or generic shapes without distinctive pattern",
+        "privacy_element": "distinctive public installation that can uniquely identify a street or event",
+        "target_concept": "street decoration",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Metadata or background information "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_14452166/r1_crops/2017_14452166_1.png"
+}

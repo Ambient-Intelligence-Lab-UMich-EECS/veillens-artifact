@@ -1,0 +1,23 @@
+{
+  "reasoning": "The image shows blue handwritten text on a wall that legibly includes a given name (\u201cCarol\u201d) and relational context (\u201cmy \u2026 wife\u201d). No faces, IDs, or documents are present. The highest-severity element is a non-unique identifier (a personal name) with relational info, which poses limited risk on its own but can contribute to identification when combined elsewhere. Thus the overall risk is low-to-moderate, with clear visibility of the text.",
+  "personal_info_privacy_score": {
+    "score": 0.22,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "blue handwritten phrase on wall including the name 'Carol'",
+        "Anonymized_element": "generic placeholder text, blurred characters, random letters with no names, plain mark without words",
+        "privacy_element": "readable given name 'Carol', relational term 'wife'",
+        "target_concept": "handwritten text",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10330032.jpg"
+}

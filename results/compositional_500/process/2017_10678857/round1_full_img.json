@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a commercial airplane on an airport apron with distant ground crew. No identifiable faces or personal identifiers are visible. The most privacy-relevant elements are low-risk: small, unidentifiable people in the background and readable aircraft branding/registration that refer to a corporate asset, not a private individual. With no Level 1\u20132 clues and only weak Level 4 elements, the overall privacy risk is very low. Confidence is high due to clear visibility of the scene and absence of personal information.",
+  "personal_info_privacy_score": {
+    "score": 0.07,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "three small, distant ground crew members near service vehicles",
+        "Anonymized_element": "remove people, replace with empty apron or generic equipment silhouettes",
+        "privacy_element": "presence of people, though faces are not identifiable",
+        "target_concept": "distant people",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "airplane fuselage and tail with readable airline branding and registration code",
+        "Anonymized_element": "generic aircraft livery with no text or logos, blurred or removed registration code",
+        "privacy_element": "corporate branding text, aircraft registration number",
+        "target_concept": "vehicle branding/registration",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) ",
+          "Metadata or background information "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10678857.jpg"
+}

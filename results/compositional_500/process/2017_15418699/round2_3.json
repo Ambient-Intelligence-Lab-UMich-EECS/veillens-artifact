@@ -1,0 +1,34 @@
+{
+  "reasoning": "The crop shows two individuals in suits with faces fully obscured, removing direct biometric identification. No readable text, names, or organization logos are visible. The remaining privacy-relevant cues are limited to clothing style (formal pinstripe suit with red striped tie) and a metal wristwatch, which reflect personal appearance and possessions but do not identify the person. With no Level 1 or Level 2 elements present, the highest severity is Level 3 from personal attributes, resulting in a low overall risk. Confidence is medium due to limited and non-identifying details.",
+  "personal_info_privacy_score": {
+    "score": 0.14,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "metal wristwatch on the right-side person\u2019s left wrist",
+        "Anonymized_element": "bare wrist, simple unbranded leather band, sleeve covering watch",
+        "privacy_element": "distinctive accessory that could be linked to an individual if cross-referenced",
+        "target_concept": "wristwatch",
+        "severity_level": 4,
+        "attributes": [
+          "Property & assets (vehicles, homes without addresses) "
+        ],
+        "region": "3"
+      },
+      {
+        "object_description": "torso of person wearing a dark pinstripe suit with a red striped tie and white shirt",
+        "Anonymized_element": "plain dark suit without pinstripes, solid-color neutral tie, minimal texture",
+        "privacy_element": "distinctive clothing style and fit revealing aspects of physical appearance",
+        "target_concept": "clothing (suit and tie)",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "3"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_15418699/r1_crops/2017_15418699_3.png"
+}

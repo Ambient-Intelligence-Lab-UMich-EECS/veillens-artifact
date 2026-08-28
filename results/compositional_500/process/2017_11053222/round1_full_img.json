@@ -1,0 +1,24 @@
+{
+  "reasoning": "The scene shows a presenter standing beside a projected screen. The only personal-information cue is the presenter\u2019s visible face, which constitutes biometric data and reveals basic personal attributes. No names, IDs, financial, medical, or location identifiers are visible. Because the face is partially side-on and not very large, the identifiability is moderate rather than maximal. With a single Level 1 feature and little reinforcing context, the overall risk is moderate-high with medium confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.48,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "male-presenting person at right side of stage with visible face wearing glasses",
+        "Anonymized_element": "blurred face, cropped at neck down, face turned away, generic silhouette without facial details",
+        "privacy_element": "recognizable facial features, eyes and nose profile, glasses framing the face",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11053222.jpg"
+}

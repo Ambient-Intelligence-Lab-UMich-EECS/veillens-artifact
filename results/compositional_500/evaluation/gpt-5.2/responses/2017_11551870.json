@@ -1,0 +1,22 @@
+{
+  "reasoning": "The image shows an open booklet resembling interior passport/visa pages with a small page number at the top. No biodata page, photo, names, numbers, stamps, addresses, or other legible identifiers are visible. There are no people. The only privacy-relevant cue is the recognizable government-document page design, which is a low-risk generic document context. Thus, the highest severity present is Level 4, yielding a low overall privacy score with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.06,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "open booklet with patterned visa-style pages and a small page number at the top center",
+        "Anonymized_element": "plain blank notebook pages, generic paper texture, remove distinctive security pattern and page number",
+        "privacy_element": "recognizable passport-style security pattern, page number style indicating a government document",
+        "target_concept": "passport visa page",
+        "severity_level": 4,
+        "attributes": [
+          "Generic documents or digital artifacts "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_11551870/final/2017_11551870_final.png"
+}

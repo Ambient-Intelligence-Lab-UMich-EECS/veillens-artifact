@@ -1,0 +1,37 @@
+{
+  "reasoning": "The image shows a conference audience watching a large projection of a speaker at a podium. The most prominent privacy cue is the clear, frontal face of the speaker on the big screen, which is strong biometric data. Several audience members are also partially visible, with at least one face discernible, adding additional biometric exposure. There are no readable names, badges, documents, or precise location identifiers. Given one highly identifiable face plus minor additional faces, the risk is high but not severe across multiple categories.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "large projected image of a man\u2019s face on the main screen while speaking at a podium",
+        "Anonymized_element": "blurred face, substituted generic silhouette, low-detail avatar, obscured facial region",
+        "privacy_element": "full frontal face, distinct facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "audience member in right foreground with side-profile face partially visible",
+        "Anonymized_element": "face blurred, replaced with generic head shape, motion smear",
+        "privacy_element": "partially visible face with identifiable features",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10956560.jpg"
+}

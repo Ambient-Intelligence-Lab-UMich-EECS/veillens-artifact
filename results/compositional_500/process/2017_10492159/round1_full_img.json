@@ -1,0 +1,95 @@
+{
+  "reasoning": "The image shows a public protest with multiple clearly visible faces and readable political signs and a large banner stating an organization name. The highest-severity elements are several identifiable faces (biometric data), which alone present high risk. These are reinforced by Level-2 sensitive cues revealing political opinions and affiliations through readable placards and the organization banner, plus contextual activity (participation in a political demonstration). Together these create a strong, mutually reinforcing risk of personal identification and sensitive inference. The visibility is clear and central, so the overall risk is high with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.64,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal face of person holding a torch at the center-right of the banner",
+        "Anonymized_element": "blurred face, low-detail generic face, mask overlay",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "frontal face of man wearing a red headband near the left side of the banner",
+        "Anonymized_element": "blurred face, low-detail generic face, mask overlay",
+        "privacy_element": "clear facial features enabling identification",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "profile/three-quarter face of person with glasses on the far left foreground",
+        "Anonymized_element": "blurred face, low-detail generic face, mask overlay",
+        "privacy_element": "distinct facial features and glasses that aid recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "large red banner reading 'BURMESE DEMOCRATIC COMMUNITY (NL)'",
+        "Anonymized_element": "plain red banner with no text or logos",
+        "privacy_element": "organization name indicating political/advocacy affiliation and regional context",
+        "target_concept": "protest banner with organization name",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "white placard held left-center reading 'STOP MILITARY REGIME IN BURMA'",
+        "Anonymized_element": "blank placard or generic geometric pattern, no readable text",
+        "privacy_element": "explicit political stance displayed by participants",
+        "target_concept": "political placard",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "green sign in back-left reading 'STOP CHINESE SUPPORT BURMA DICTATORS'",
+        "Anonymized_element": "blank green sign with no readable text",
+        "privacy_element": "explicit political message revealing viewpoint",
+        "target_concept": "political sign",
+        "severity_level": 2,
+        "attributes": [
+          "Sensitive inferences (race/ethnicity, religion, politics, sexual orientation, disabilities, mental health) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "cluster of small, partially visible faces in the background under umbrellas",
+        "Anonymized_element": "blurred crowd, abstract silhouettes without facial detail",
+        "privacy_element": "multiple human faces, though distant and less identifiable",
+        "target_concept": "crowd faces",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_10492159.jpg"
+}

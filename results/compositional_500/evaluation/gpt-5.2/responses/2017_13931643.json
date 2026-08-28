@@ -1,0 +1,32 @@
+{
+  "reasoning": "The image shows two stage performers with their faces obscured, so no identifiable biometric data is visible. There are no readable names, logos, documents, or numbers. The remaining privacy-relevant information is limited to observable activities: one person is playing an electric guitar and another is singing into a microphone, which reveals a public performance behavior but not identity. With only Level 3 activity clues and no strong identifiers, the overall privacy risk is low. Confidence is high because the scene is clear and lacks sensitive or identifying details.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "center-stage person holding and playing an electric guitar near a microphone stand",
+        "Anonymized_element": "generic instrument silhouette, crop to torso without stage context, remove microphone and guitar details",
+        "privacy_element": "on-stage musical performance, guitar-playing behavior",
+        "target_concept": "person performing guitar",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "left-side person holding a microphone while singing",
+        "Anonymized_element": "hand without microphone, generic hand pose, crop to remove performance context",
+        "privacy_element": "singing behavior, microphone use indicating stage performance",
+        "target_concept": "person singing with microphone",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_13931643/final/2017_13931643_final.png"
+}

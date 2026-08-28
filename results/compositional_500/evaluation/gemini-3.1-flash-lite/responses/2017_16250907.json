@@ -1,0 +1,33 @@
+{
+  "reasoning": "The image captures a golfer in a professional event setting. While the individual's face is obscured, their physical appearance (gender, age group) remains visible. The presence of corporate sponsorship banners establishes the location and context of the activity, but these are generic promotional materials and do not inherently expose private personal information. The overall privacy risk is low, as the subject is participating in a public-facing, professional sporting event and no highly identifying or sensitive personal identifiers (such as government IDs, home addresses, or unique personal records) are visible. The score reflects the contextual nature of the image as a public event photograph.",
+  "personal_info_privacy_score": {
+    "score": 0.15,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "The person performing a golf swing, with face obscured.",
+        "Anonymized_element": "person in generic sportswear, blurred or modified clothing details",
+        "privacy_element": "visible gender, visible athletic build",
+        "target_concept": "human figure",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "Large promotional banners with corporate logos and event text.",
+        "Anonymized_element": "generic solid-colored banners, abstract design",
+        "privacy_element": "event branding, corporate sponsor logos",
+        "target_concept": "event banner",
+        "severity_level": 4,
+        "attributes": [
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_16250907/final/2017_16250907_final.png"
+}

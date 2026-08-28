@@ -1,0 +1,46 @@
+{
+  "reasoning": "The image shows a person taking a bathroom mirror selfie. The face is clearly visible and identifiable, which is Level 1 biometric data. The person is wrapped in a towel with bare shoulders/legs in a private bathroom setting, constituting intimate content (Level 2). These two strong clues combine to create high privacy risk, with additional minor context from the bathroom/mirror indicating personal behavior. No government IDs, names, or location-specific text are visible. Overall risk is high with clear, central evidence, so confidence is high.",
+  "personal_info_privacy_score": {
+    "score": 0.68,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "clear frontal face reflected in the bathroom mirror",
+        "Anonymized_element": "blurred face region, pixelation, emoji overlay, crop above face, turned-away head",
+        "privacy_element": "identifiable facial features, eyes, nose, mouth, unique facial geometry",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ]
+      },
+      {
+        "object_description": "upper body wrapped in a white towel with bare shoulders and legs visible",
+        "Anonymized_element": "replace towel with robe or full clothing, extend towel to reduce exposed skin, crop to above shoulders",
+        "privacy_element": "exposed skin suggesting post-shower state, towel indicating private bathing context",
+        "target_concept": "towel-wrapped body",
+        "severity_level": 2,
+        "attributes": [
+          "Nudity or Intimate content ",
+          "Personal attributes (age, gender, physical appearance) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ]
+      },
+      {
+        "object_description": "large bathroom mirror and sink counter visible in the background",
+        "Anonymized_element": "generic plain wall, remove mirror reflection, blur background",
+        "privacy_element": "private home bathroom context showing personal grooming area",
+        "target_concept": "bathroom mirror",
+        "severity_level": 4,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Metadata or background information "
+        ]
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_12063264/final/2017_12063264_final.png"
+}

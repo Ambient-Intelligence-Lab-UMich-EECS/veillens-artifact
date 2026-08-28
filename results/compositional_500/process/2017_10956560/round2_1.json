@@ -1,0 +1,46 @@
+{
+  "reasoning": "The crop shows a conference setting with a large stage screen, partial event branding, a U.S. flag, and an audience where individuals are distant and largely unidentifiable. No readable names, IDs, or financial/medical details are visible, and the speaker\u2019s face on screen is obscured. The strongest cues relate to activities/behaviors (attendance at a specific event or organization suggested by partial logo) and broad location context via the flag. Distant attendee heads contribute low-risk crowd biometrics but are not identifiable. Overall risk is moderate-low due to Level 3 contextual clues reinforced by Level 4 crowd presence.",
+  "personal_info_privacy_score": {
+    "score": 0.27,
+    "confidence": "Medium"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "right-side green screen with partial glowing text logo ('GOO...')",
+        "Anonymized_element": "abstract gradient panel, no text or logo, geometric shapes",
+        "privacy_element": "partial organizational/event logo implying affiliation or attendance",
+        "target_concept": "event logo text",
+        "severity_level": 3,
+        "attributes": [
+          "Activities & behaviors (habits, routines, consumption patterns) ",
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "U.S. flag visible on large projected screen at left side of stage",
+        "Anonymized_element": "generic patterned banner, plain color backdrop, abstract stripes",
+        "privacy_element": "national flag indicating country-level location context",
+        "target_concept": "national flag",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)"
+        ],
+        "region": "1"
+      },
+      {
+        "object_description": "seated audience region with multiple distant heads and shoulders facing stage",
+        "Anonymized_element": "empty chairs, generic silhouettes with heavy blur, back-of-head shapes only",
+        "privacy_element": "distant, non-identifiable faces and heads of attendees",
+        "target_concept": "crowd attendees",
+        "severity_level": 4,
+        "attributes": [
+          "Crowds or distant unidentifiable individuals "
+        ],
+        "region": "1"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/intermediate/2017_10956560/r1_crops/2017_10956560_1.png"
+}

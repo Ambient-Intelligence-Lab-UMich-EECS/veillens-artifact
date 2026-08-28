@@ -1,0 +1,35 @@
+{
+  "reasoning": "The image shows a single person outdoors. The clearest privacy-relevant element is an identifiable face (partly covered by sunglasses but still recognizable through facial structure and hairstyle), which is Level 1 biometric data. Additional minor risk comes from visible torso and distinctive crocheted top that reveal personal appearance traits but no nudity or explicit identifiers. No readable text, documents, or precise location markers are present. Given a strong Level 1 clue and a minor Level 3 clue, the overall risk is high-moderate with high confidence.",
+  "personal_info_privacy_score": {
+    "score": 0.58,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "frontal view of a person\u2019s face with large dark sunglasses and visible smile/hair",
+        "Anonymized_element": "face blurred or pixelated, replace with generic silhouette, crop above shoulders, opaque visor",
+        "privacy_element": "facial structure, mouth/nose contours, hairstyle enabling recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "exposed midriff and distinctive white crocheted crop top",
+        "Anonymized_element": "plain solid-color tank top with higher neckline, generic texture, less skin exposure",
+        "privacy_element": "body shape and skin exposure, unique clothing pattern that can aid recognition",
+        "target_concept": "torso/clothing",
+        "severity_level": 3,
+        "attributes": [
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_11638468.jpg"
+}

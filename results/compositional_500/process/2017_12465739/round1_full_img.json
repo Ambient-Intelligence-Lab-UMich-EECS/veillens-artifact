@@ -1,0 +1,73 @@
+{
+  "reasoning": "The image shows a handwritten genealogy note with multiple clearly legible personal names and dates of birth/death, plus kinship relations and a county reference. The strongest clues are Level 2 non-unique identifiers (full names and birth dates), appearing several times and mutually reinforcing. Location information (a county name) and the presence of an identifiable document add moderate risk context. No biometric data is present. Given multiple readable identifiers and family relationships, the overall privacy risk is moderate-to-high. Confidence is high because the handwriting is largely legible and central.",
+  "personal_info_privacy_score": {
+    "score": 0.42,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "handwritten line reading 'Patsy Ann Davis born Sept 1930' near top left",
+        "Anonymized_element": "scribbled placeholder text, generic initials only, no dates or names",
+        "privacy_element": "full personal name, birth month and year",
+        "target_concept": "handwritten name with birth date",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten entry 'Oliver Cofield Davis June 24, 1877' near upper center",
+        "Anonymized_element": "randomized text string, remove specific given/surnames and exact date",
+        "privacy_element": "full personal name, exact birth date",
+        "target_concept": "handwritten name with birth date",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten pair 'James Alfred Davis 1833\u20131875' mid-left and again upper-right",
+        "Anonymized_element": "generic label like 'Person A 18xx\u201318xx', no real names or exact years",
+        "privacy_element": "full name with lifespan years",
+        "target_concept": "handwritten name with dates",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "handwritten note at bottom '...have the same (great) grandfather'",
+        "Anonymized_element": "neutral sentence without kinship, e.g., 'connected in family tree'",
+        "privacy_element": "explicit kinship relationship disclosure",
+        "target_concept": "kinship note",
+        "severity_level": 2,
+        "attributes": [
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "phrase 'Martha Hawkins from Halifax County' on right side",
+        "Anonymized_element": "replace county with generic term like 'from a county' or fictitious place",
+        "privacy_element": "county-level location tied to a named person",
+        "target_concept": "location reference with name",
+        "severity_level": 3,
+        "attributes": [
+          "Location information (addresses, GPS, identifiable landmarks)",
+          "Non-unique identifiers (names, usernames, workplace ID, data of birth) ",
+          "Generic documents or digital artifacts "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "result_pi/test_large/resized_inputs/2017_12465739.jpg"
+}

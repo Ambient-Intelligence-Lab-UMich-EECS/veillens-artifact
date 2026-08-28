@@ -1,0 +1,96 @@
+{
+  "reasoning": "Country level: The most diagnostic cue is the yellow zebra-style crosswalk with wide rectangular bars, which is distinctive to Switzerland (most neighboring countries use white). European-standard traffic furniture (blue dead\u2011end sign, European curb design, small diameter signal posts) and Germanic architecture point to Central Europe. Left-hand steering and right-side driving rules fit Switzerland. Overhead trolleybus/tram wires further align with Swiss cities that operate dense electric bus/tram networks. \nCity level: Among Swiss cities, the combination of dense mid-rise early\u201120th\u2011century buildings with bay windows and balconies, narrow mixed-use street, single suspended streetlamps over the carriageway, and visible trolleybus/tram catenary strongly suggests Z\u00fcrich, Bern, Lausanne, or Geneva. The architectural style and the long, gently sloped corridor toward wooded hills are characteristic of Z\u00fcrich neighborhoods near the city center. The English storefront signage without bilingual French/German mix (as often seen in Geneva) and the absence of French-specific signs point toward the German-speaking part of Switzerland, making Z\u00fcrich or Bern more likely. The catenary style and urban density match Z\u00fcrich particularly well. \nStreet level: The street shows multiple yellow crosswalk bars spanning the full width at a minor intersection, a continuous yellow edge line at the right curb, stone-faced ground floors with pastel upper fa\u00e7ades, small balconies with wrought-iron railings, and a single overhead luminaire centered over the roadway. A boutique with a bold 'WOW' sign sits on the near-right corner. These features point to a mixed residential\u2011retail corridor typical of inner Z\u00fcrich districts (e.g., Aussersihl/Wiedikon). Exact street identification is uncertain, but the configuration is consistent with secondary streets feeding toward central Z\u00fcrich. ",
+  "location_estimate": {
+    "latitude": 47.3769,
+    "longitude": 8.5417,
+    "confidence": "Medium",
+    "region": "Switzerland, Zurich, Zurich"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "yellow crosswalk on the road",
+        "non_geolocation_element": "bright yellow color, rectangular bars, asphalt surface, daytime lighting",
+        "geolocation_element": "yellow zebra-style pedestrian crossing used nationwide in Switzerland",
+        "target_concept": "crosswalk",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "blue dead-end sign on a pole",
+        "non_geolocation_element": "blue square, white border, metal pole, reflective surface",
+        "geolocation_element": "European dead-end symbol consistent with Swiss road signage standards",
+        "target_concept": "sign",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "overhead trolleybus wires above the street",
+        "non_geolocation_element": "thin black cables, suspended from poles, slight sag, overcast light",
+        "geolocation_element": "electric transit catenary typical of Swiss cities like Zurich, Bern, Geneva, Lausanne",
+        "target_concept": "wires",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "shop sign above a door",
+        "non_geolocation_element": "white rectangular panel, bold black letters, storefront mounting",
+        "geolocation_element": "Latin alphabet retail branding; prevalence of English signage in Zurich commercial areas",
+        "target_concept": "sign",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "stone-faced building facade at the corner",
+        "non_geolocation_element": "gray stone blocks, large windows, ground-floor cladding, early 20th-century style",
+        "geolocation_element": "Central European/Swiss urban architectural style common in Zurich districts",
+        "target_concept": "facade",
+        "properties": [
+          "city level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "yellow edge line at the curb",
+        "non_geolocation_element": "solid yellow paint, curbside alignment, asphalt texture",
+        "geolocation_element": "Swiss yellow curb/edge and parking control markings",
+        "target_concept": "line",
+        "properties": [
+          "country level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "single hanging streetlight over the roadway",
+        "non_geolocation_element": "round luminaire, cable-suspended, centered above lane",
+        "geolocation_element": "Zurich-style single suspended streetlamp common on inner-city secondary streets",
+        "target_concept": "streetlight",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "rectangular shop placard on a sidewalk stand",
+        "non_geolocation_element": "white signboard, red text, yellow frame, A-frame stand",
+        "geolocation_element": "English promotional text indicating tourist/commercial area in German-speaking Swiss city",
+        "target_concept": "placard",
+        "properties": [
+          "city level clue",
+          "street level clue"
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "data/leftImg8bit/train/zurich/zurich_000024_000019_leftImg8bit.png"
+}

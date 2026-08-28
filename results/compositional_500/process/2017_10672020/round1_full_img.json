@@ -1,0 +1,48 @@
+{
+  "reasoning": "The image shows a dental procedure in progress. The clinician\u2019s upper face (eyes/forehead) is clearly visible despite a mask, which constitutes identifiable biometric data (Level 1). The patient\u2019s open mouth with instruments and the reclined position in a dental chair reveal ongoing medical treatment (Level 2), indicating sensitive health information and activity. These cues together elevate risk even though the patient\u2019s full face is obscured. Overall risk is moderate-to-high due to one Level 1 biometric clue plus multiple Level 2 medical-context clues that reinforce each other. Confidence is high because the elements are clear and central.",
+  "personal_info_privacy_score": {
+    "score": 0.56,
+    "confidence": "High"
+  },
+  "critical_features": {
+    "features": [
+      {
+        "object_description": "upper half of clinician\u2019s face with eyes and forehead visible, lower half covered by mask",
+        "Anonymized_element": "blur or pixelate eye region, add opaque eye shield, add cap to cover hair",
+        "privacy_element": "visible eyes, eyebrows, hairstyle, forehead contours enabling facial recognition",
+        "target_concept": "face",
+        "severity_level": 1,
+        "attributes": [
+          "Biometric data (identifiable faces, fingerprints, iris scans)",
+          "Personal attributes (age, gender, physical appearance) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "patient\u2019s open mouth with teeth illuminated and dental mirror/tool inserted",
+        "Anonymized_element": "closed mouth without tools, generic mouth rendered, or area blurred",
+        "privacy_element": "active dental exam implying health/dental condition",
+        "target_concept": "mouth during dental exam",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      },
+      {
+        "object_description": "reclined patient on dental chair with a dark cloth covering the eyes",
+        "Anonymized_element": "remove/replace cloth with neutral pillow, crop to exclude patient head area",
+        "privacy_element": "patient visibly undergoing clinical treatment",
+        "target_concept": "patient on dental chair",
+        "severity_level": 2,
+        "attributes": [
+          "Medical data (prescriptions, heath records, medical imagery) ",
+          "Activities & behaviors (habits, routines, consumption patterns) "
+        ],
+        "region": "across region"
+      }
+    ]
+  },
+  "image_path": "/scratch/kesuniot_root/kesuniot0/jackyjin/pi/test2017/2017_10672020.jpg"
+}
