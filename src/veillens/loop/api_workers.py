@@ -46,7 +46,7 @@ class APIQueueHandler:
     Attributes:
         queue_manager: QueueManager instance
         global_state: GlobalState instance
-        geo_api: GeoLocationAPI instance
+        geo_api: PrivacyOracle instance
         config: Pipeline configuration
         output_base: Base output directory for caching
     """
@@ -55,7 +55,7 @@ class APIQueueHandler:
         self,
         queue_manager: QueueManager,
         global_state: GlobalState,
-        geo_api,  # GeoLocationAPI instance
+        geo_api,  # PrivacyOracle instance
         config: Dict[str, Any]
     ):
         """
@@ -64,7 +64,7 @@ class APIQueueHandler:
         Args:
             queue_manager: QueueManager instance
             global_state: GlobalState instance
-            geo_api: GeoLocationAPI instance
+            geo_api: PrivacyOracle instance
             config: Pipeline configuration dict
         """
         self.qm = queue_manager

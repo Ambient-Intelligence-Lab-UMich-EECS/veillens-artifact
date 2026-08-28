@@ -91,8 +91,10 @@ configs/          one file per privacy setting
 prompts/          the prompts and JSON schemas the oracle is given, verbatim
 manifests/        image identifiers and ground-truth labels for the evaluated sets
 examples/         per-example records from finished runs, for veillens-score
+results/          every VLM response behind a finished experiment, one file per response
 tests/            offline test suite: no key, no GPU, no data
 docs/             usage, architecture, and where the data comes from
+third_party/      the Grounded-SAM-2 submodule — needs building, see Install
 ```
 
 ## Where data goes

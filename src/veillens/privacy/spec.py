@@ -5,9 +5,9 @@ A `PrivacyClassSpec` bundles everything that differs between privacy classes —
 paths, which cues count as in-scope for a given mask level, how round-2 context is phrased, and
 what "error" means — so the loop can stay generic instead of branching on a class name.
 
-This is the extension point of the whole system. To add a fourth privacy class, see
-`docs/EXTENDING.md`; you write one spec instance and register it, and nothing in
-`veillens.loop` changes.
+This is the extension point of the whole system. Adding a privacy setting means writing one
+spec instance and registering it in `veillens.privacy.registry`; nothing in `veillens.loop`
+changes. See `docs/ARCHITECTURE.md` for how the loop consumes a spec.
 """
 
 from __future__ import annotations

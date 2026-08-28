@@ -17,7 +17,7 @@ import pytest
 
 pytest.importorskip("openai", reason="core dependency; not installed in this environment")
 
-from veillens.reason.oracle import GeoLocationAPI  # noqa: E402
+from veillens.reason.oracle import PrivacyOracle  # noqa: E402
 from veillens.vlm.base import VLMError, encode_image_data_url  # noqa: E402
 from veillens.vlm.registry import build_client, client_from_config  # noqa: E402
 
@@ -110,7 +110,7 @@ def _run(coro):
 )
 def test_role_routes_independently_of_schema_type(schema_type, role, expected):
     reason, evaluate = _FakeClient("reason"), _FakeClient("eval")
-    api = GeoLocationAPI(spec=_Spec(), reason_client=reason, eval_client=evaluate)
+    api = PrivacyOracle(spec=_Spec(), reason_client=reason, eval_client=evaluate)
 
     result = _run(api.get_geolocation_prediction("x.png", schema_type=schema_type, role=role))
 
@@ -121,7 +121,7 @@ def test_role_routes_independently_of_schema_type(schema_type, role, expected):
 def test_reason_defaults_to_the_eval_backend():
     """A config with no `reasoning:` section must behave exactly as it did before the split."""
     evaluate = _FakeClient("eval")
-    api = GeoLocationAPI(spec=_Spec(), eval_client=evaluate)
+    api = PrivacyOracle(spec=_Spec(), eval_client=evaluate)
     assert api.reason_client is evaluate
 
 
@@ -135,12 +135,12 @@ def test_backend_error_becomes_none_not_an_exception():
         async def infer(self, **kwargs):
             raise VLMError("hit the token ceiling inside <think>")
 
-    api = GeoLocationAPI(spec=_Spec(), reason_client=_Truncating("boom"),
+    api = PrivacyOracle(spec=_Spec(), reason_client=_Truncating("boom"),
                          eval_client=_FakeClient("eval"))
     assert _run(api.get_geolocation_prediction("x.png", schema_type="original")) is None
 
 
 def test_unknown_role_is_rejected():
-    api = GeoLocationAPI(spec=_Spec(), eval_client=_FakeClient("eval"))
+    api = PrivacyOracle(spec=_Spec(), eval_client=_FakeClient("eval"))
     with pytest.raises(ValueError, match="Unknown role"):
         _run(api.get_geolocation_prediction("x.png", role="attacker"))

@@ -1,13 +1,14 @@
-#!/usr/bin/python
 """
-Main Geolocation Pipeline
+The protection loop.
 
-Orchestrates the full pipeline for visual clue removal and geolocation evaluation:
-1. Dataset loading
-2. Original image evaluation (GPT API with schema_original)
-3. Grounded-SAM-2 detection and clue removal
-4. Processed image evaluation (GPT API with schema_eval)
-5. Comparison and reporting
+`ProtectionLoop` owns the run: it loads the manifest, starts the API workers and the segmentation
+thread, drains the batched diffusion queue, and writes the evaluation the paper reports. The four
+stages themselves live in `reason/`, `ground/`, `edit/` and -- for verification -- in the gate
+inside `loop/api_workers.py`.
+
+Nothing here is specific to geolocation. Which clues are asked for, which of them a mask level
+admits, and what "error" means are all supplied by the `PrivacyClassSpec` (see `privacy/`), so the
+same loop drives both shipped settings.
 """
 
 import asyncio
@@ -37,13 +38,13 @@ from veillens.loop.state import LEVELS, ClueStatsTracker, GlobalState
 from veillens.metrics.geodesic import DistanceCalculator
 from veillens.paths import FINAL_DIR, INTERMEDIATE_DIR, RUN_SUBDIRS
 from veillens.privacy.spec import get_spec
-from veillens.reason.oracle import GeoLocationAPI
+from veillens.reason.oracle import PrivacyOracle
 from veillens.vlm.registry import client_from_config
 
 logger = logging.getLogger(__name__)
 
 
-class GeoLocationPipeline:
+class ProtectionLoop:
     """
     Main pipeline orchestrator for geolocation clue removal and evaluation.
     """
@@ -68,10 +69,6 @@ class GeoLocationPipeline:
             dir_path = self.output_base / subdir
             dir_path.mkdir(parents=True, exist_ok=True)
             self.dirs[key] = dir_path
-
-        # Add debug_cache directory for storing Round 2 regional images
-        self.dirs['debug_cache'] = self.output_base / 'debug_cache'
-        self.dirs['debug_cache'].mkdir(parents=True, exist_ok=True)
 
         # Phase cache path
         self.phase_cache_path = self.dirs['phase_cache'] / 'phase_cache.json'
@@ -103,17 +100,14 @@ class GeoLocationPipeline:
         print(f"[Pipeline] Evaluation backend: {eval_cfg.get('backend', 'openai')} "
               f"({eval_cfg['model']})")
 
-        self.geo_api = GeoLocationAPI(
+        self.geo_api = PrivacyOracle(
             model=config['evaluation']['model'],
             # Outer bound across both backends; each client enforces its own limit.
             concurrent_requests=max(
                 eval_cfg['concurrent_requests'],
                 reason_cfg.get('concurrent_requests', 0),
             ),
-            # Removed: cache_responses parameter (caching removed from GeoLocationAPI)
-            cache_path=self.output_base,
-            original_cache_dir=RUN_SUBDIRS['original_cache'],
-            eval_cache_dir=RUN_SUBDIRS['eval_cache'],
+            debug_dir=self.output_base / 'debug_cache',
             spec=self.spec,
             reason_client=reason_client,
             eval_client=eval_client,

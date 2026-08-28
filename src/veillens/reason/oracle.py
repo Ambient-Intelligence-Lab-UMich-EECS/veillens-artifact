@@ -1,19 +1,21 @@
-#!/usr/bin/python
-#
-# Structured-output oracle for privacy reasoning.
-#
-# Owns everything that is the same whichever model answers: prompt and schema selection (delegated
-# to the privacy spec), concurrency, rate limiting, parsing, and the truncated-response debug dump.
-# The provider-specific half -- how a request is built and issued -- lives behind a VLMClient in
-# veillens.vlm. See docs/EXTENDING.md.
-#
-# Two clients, chosen per call by `role`:
-#   role='reason'  the attacker inside the defense loop (rounds 1 and 2, the iteration gate)
-#   role='eval'    the final measurement pass, whose numbers are compared across runs
-# They default to the same OpenAI client, so a config that does not mention a local backend
-# behaves exactly as it did before the split.
+"""
+Stage 1 (reasoning), and the same client re-used for stage 4 (verification).
 
-from __future__ import absolute_import, division, print_function
+`PrivacyOracle` owns everything that is the same whichever model answers: prompt and schema
+selection (delegated to the privacy spec), concurrency, rate limiting, parsing, and the dump of a
+response that came back unparseable. How a request is actually built and issued lives behind a
+VLMClient in `veillens.vlm`.
+
+It holds two clients and picks between them per call, by `role` rather than by schema:
+
+    role='reason'   the defense's own oracle -- rounds 1 and 2, and the iteration gate
+    role='eval'     the attacker, whose numbers are the reported measurement
+
+Routing on role and not on schema is deliberate. The compositional setting uses one schema for
+both jobs, so a schema-based rule would silently bill a measurement to the defense's model and
+make the evaluation depend on the thing it is supposed to be measuring.
+"""
+
 
 import asyncio
 import json
@@ -33,7 +35,7 @@ from veillens.vlm.base import VLMError
 logger = logging.getLogger(__name__)
 
 
-class GeoLocationAPI:
+class PrivacyOracle:
     """
     Runs structured-output vision requests against one or two VLM backends.
 
@@ -42,11 +44,15 @@ class GeoLocationAPI:
     personal-information removal depending on configuration.
     """
 
-    def __init__(self, model="gpt-5.1-2025-11-13", concurrent_requests=5, cache_path="", original_cache_dir="original_cache", eval_cache_dir="eval_cache", spec=None, reason_client=None, eval_client=None):
+    def __init__(self, model="gpt-5", concurrent_requests=5, debug_dir=None, spec=None,
+                 reason_client=None, eval_client=None):
         load_dotenv()
         self.model = model
         self.concurrent_requests = concurrent_requests
-        # Removed: cache_responses parameter and caching code
+        # Where to dump a response that came back unparseable. Defaults into the run's own
+        # output tree; it used to be a bare relative path, which wrote into whatever
+        # directory the command happened to be launched from.
+        self.debug_dir = Path(debug_dir) if debug_dir else Path("debug")
 
         # Rate limiting. This semaphore is the outer bound across both backends; each client also
         # holds its own limit, since a local server and a metered vendor API tolerate very
@@ -192,11 +198,10 @@ class GeoLocationAPI:
                 # Save truncated response for debugging
                 if 'data' in locals():
                     from datetime import datetime
-                    from pathlib import Path as PathLib
-                    debug_dir = PathLib("debug/truncated_responses")
+                    debug_dir = self.debug_dir / "truncated_responses"
                     debug_dir.mkdir(parents=True, exist_ok=True)
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    image_stem = cache_key_override if cache_key_override else PathLib(image_path).stem
+                    image_stem = cache_key_override if cache_key_override else Path(image_path).stem
                     if region_name:
                         debug_file = debug_dir / f"{timestamp}_{image_stem}_{region_name.replace(' ', '_')}_TRUNCATED.txt"
                     else:

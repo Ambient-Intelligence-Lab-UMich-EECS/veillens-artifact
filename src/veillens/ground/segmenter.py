@@ -39,10 +39,39 @@ from torchvision.ops import box_convert  # noqa: E402
 logger = logging.getLogger(__name__)
 
 
+def _require_deformable_attention_kernel() -> None:
+    """
+    Fail now if GroundingDINO's compiled kernel is missing, rather than on every detection.
+
+    Upstream wraps `from grounding_dino.groundingdino import _C` in a try/except that only warns,
+    so a source-only checkout imports cleanly, loads weights cleanly, and then raises
+    `name '_C' is not defined` inside each forward pass. The loop catches that per clue and
+    records "no ground", which means a whole run can finish, report success, and score images
+    nothing ever edited. Checking here turns an hour of quiet wrongness into a startup error.
+
+    `--dry-run` checks for the built object on disk, which needs no torch. This checks that it
+    actually loads -- an extension built against a different libstdc++ or CUDA runtime is present
+    but unimportable, and the two failures need different fixes.
+    """
+    try:
+        from grounding_dino.groundingdino import _C  # noqa: F401
+    except ImportError as exc:
+        raise RuntimeError(
+            "GroundingDINO's deformable-attention kernel could not be loaded, so every detection "
+            f"would silently return nothing.\n  {exc}\n"
+            "Build it in the submodule:\n"
+            "    pip install --no-build-isolation -e third_party/Grounded-SAM-2/grounding_dino\n"
+            "It needs nvcc, CUDA_HOME, and a compiler new enough for your torch build. If the "
+            "object exists but will not load, it was built against a different toolchain than the "
+            "one running now -- rebuild it in this environment."
+        ) from exc
+
+
 class GroundedSAM2Segmenter:
     """Handles object detection and segmentation using Grounded-SAM-2"""
 
     def __init__(self, config: Dict[str, Any]):
+        _require_deformable_attention_kernel()
         self.config = config
         self.device = config['detection']['device']
         self.logger = logging.getLogger(__name__)

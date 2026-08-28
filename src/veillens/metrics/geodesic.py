@@ -1,11 +1,10 @@
-#!/usr/bin/python
-#
-# Distance Calculation Utilities for Geolocation Evaluation
-#
-# This module provides accurate distance calculations between geographic coordinates
-# and related utilities for geolocation error analysis.
+"""
+Great-circle distance, and the summary statistics built on it.
 
-from __future__ import absolute_import, division, print_function
+This is the geolocation error metric: how far the attacker's guess landed from the truth. It is
+load-bearing twice -- once as the reported number, and once as the iteration gate, which stops
+working on an image when the guess is at least `experiment.val_dist` km off.
+"""
 
 import math
 from typing import Dict, List, Tuple

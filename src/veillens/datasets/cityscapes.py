@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Data Discovery Utility for Visual Cue Evaluation Pipeline
+Build a geolocation manifest from a Cityscapes checkout.
 
 This script generates JSON dataset files by discovering image/GPS pairs
 from Cityscapes dataset structure. This separates data discovery from pipeline execution.

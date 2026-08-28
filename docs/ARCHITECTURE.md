@@ -4,7 +4,7 @@ The four stages of the paper map onto the package like this:
 
 | Stage | Module | Entry point |
 |---|---|---|
-| I — reason | `reason/oracle.py` | `GeoLocationAPI.get_geolocation_prediction` |
+| I — reason | `reason/oracle.py` | `PrivacyOracle.get_geolocation_prediction` |
 | II — ground | `ground/segmenter.py` | `GroundedSAM2Segmenter.segment` |
 | III — edit | `edit/{pipeline,inpaint,control}.py` | `ControlNetInpainter.inpaint_batch` |
 | IV — verify | `loop/{driver,api_workers,seg_worker}.py` | the gate and final-eval tasks |

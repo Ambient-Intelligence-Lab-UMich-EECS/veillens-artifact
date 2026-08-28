@@ -2,7 +2,7 @@
 The privacy-class registry.
 
 Maps a name to a :class:`~veillens.privacy.spec.PrivacyClassSpec`. Adding a class means adding
-one entry here — see `docs/EXTENDING.md`.
+one entry here.
 
 Note the legacy aliases. The paper's vocabulary is *compositional privacy*, but the code and
 several thousand cached result JSONs were written against the older name ``personal_info``.

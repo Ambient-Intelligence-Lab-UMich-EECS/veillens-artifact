@@ -128,9 +128,9 @@ def _summarise(config: dict) -> None:
 async def _run(config: dict) -> None:
     # Imported here, not at module scope: the heavy GPU stack should not be required for
     # --help or --dry-run.
-    from veillens.loop.driver import GeoLocationPipeline
+    from veillens.loop.driver import ProtectionLoop
 
-    pipeline = GeoLocationPipeline(config)
+    pipeline = ProtectionLoop(config)
     await pipeline.run()
 
 

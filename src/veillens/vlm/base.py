@@ -6,8 +6,8 @@ and a JSON schema, and returns the raw JSON text the model produced. Everything 
 prompt selection, schema selection, parsing, retries, the privacy spec -- is provider-agnostic
 and lives in :mod:`veillens.reason.oracle`.
 
-This is the extension point described in docs/EXTENDING.md ("Swap the reasoning model"). To add a
-provider, implement :class:`VLMClient` and register it in :mod:`veillens.vlm.registry`.
+This is where a new provider goes: implement :class:`VLMClient` and add it to
+:data:`veillens.vlm.registry.CLIENT_CLASSES`. Nothing above this layer changes.
 
 Provider quirks belong *here*, never in the caller. Two live examples: OpenAI tolerates a wrong
 ``data:`` MIME type by sniffing the bytes and vLLM does not, so :func:`encode_image_data_url`
