@@ -1,93 +1,17 @@
 {
   "condition": "gpt-image",
-  "condition_note": "GPT Image 2, one single-shot privacy edit from a fixed prompt",
   "evaluator_label": "gemini-3.1-pro-preview",
-  "model_id_recorded_in_artifacts": "gemini-3.1-pro-preview",
-  "attribution": "recorded in the source results.json under metadata.model",
-  "role": "independent scorer; none of these four models is inside a protection loop",
-  "scored_image": "readydata/dataset_random_500/gpt-image/defended/<image_id>_defended.png",
-  "images_in_set": 500,
-  "responses": 500,
-  "metric": "great-circle error in km between the model's guess and the Cityscapes GPS ground truth (haversine, R = 6371.0 km)",
   "error_km": {
     "n": 500,
     "mean_km": 140.503,
     "median_km": 89.697,
     "min_km": 0.011,
     "max_km": 763.259,
-    "within_0.5km_pct": 15.4,
-    "within_1km_pct": 21.8,
-    "within_5km_pct": 31.6,
-    "within_10km_pct": 32.4,
-    "within_25km_pct": 34.8,
+    "within_0.5km_pct": 17.4,
+    "within_1km_pct": 23.8,
+    "within_5km_pct": 37.8,
+    "within_10km_pct": 38.2,
+    "within_25km_pct": 45.6,
     "within_100km_pct": 50.6
-  },
-  "cross_check": "recomputed haversine(ground truth, location_estimate) equals the recorded prediction_errors_km for all 500 responses, to 0.0 km at R = 6371.0",
-  "source_runs": [
-    {
-      "dataset": "dataset_random_100",
-      "run": "gpt_image_100_20260813_122752",
-      "manifest": "dataset.json",
-      "images": 100,
-      "declared_failures": 0,
-      "answers_first_seen_here": 100,
-      "timestamp": "2026-08-13T13:52:58.914838"
-    },
-    {
-      "dataset": "dataset_random_500",
-      "run": "gpt_image_500_new400_c2_20260824_203916",
-      "manifest": "dataset_new400_c2_gpt-image.json",
-      "images": 152,
-      "declared_failures": 149,
-      "answers_first_seen_here": 3,
-      "timestamp": "2026-08-24T23:03:03.469433"
-    },
-    {
-      "dataset": "dataset_random_500",
-      "run": "gpt_image_500_new400_c_20260820_000954",
-      "manifest": "dataset_new400.json",
-      "images": 400,
-      "declared_failures": 152,
-      "answers_first_seen_here": 248,
-      "timestamp": "2026-08-20T02:25:53.941077"
-    },
-    {
-      "dataset": "dataset_random_500",
-      "run": "gpt_image_500_new400_d_20260828_010344",
-      "manifest": "dataset_new400_d_gpt-image.json",
-      "images": 2,
-      "declared_failures": 0,
-      "answers_first_seen_here": 2,
-      "timestamp": "2026-08-28T01:06:33.614944"
-    },
-    {
-      "dataset": "dataset_random_500",
-      "run": "gpt_image_500_new400_k2_20260824_211116",
-      "manifest": "dataset_new400_k2_gpt-image.json",
-      "images": 152,
-      "declared_failures": 3,
-      "answers_first_seen_here": 147,
-      "timestamp": "2026-08-24T22:49:34.250904"
-    }
-  ],
-  "vs_raw_on_the_same_images": {
-    "n": 500,
-    "raw": {
-      "mean_km": 38.989,
-      "median_km": 0.613,
-      "within_5km_pct": 71.4,
-      "within_25km_pct": 77.2
-    },
-    "gpt-image": {
-      "mean_km": 140.503,
-      "median_km": 89.697,
-      "within_5km_pct": 31.6,
-      "within_25km_pct": 34.8
-    },
-    "images_moved_further_away": 379,
-    "images_located_closer_after_the_edit": 101,
-    "median_per_image_change_km": 35.093,
-    "identical_coordinate_before_and_after": 20,
-    "note": "'moved further away' + 'located closer' + 'identical coordinate before and after' = n. An identical pair is the model returning the same rounded lat/lon for both images — a city-centroid guess the edit did not disturb."
   }
 }

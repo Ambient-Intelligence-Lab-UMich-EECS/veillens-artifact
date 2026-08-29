@@ -1,7 +1,7 @@
 """
 Dataset manifest format, and the loader that makes it portable.
 
-**Schema v2** (current) stores a dataset name and a relative path, joined against
+**Schema v2** stores a dataset name and a relative path, joined against
 ``$VEILLENS_DATA`` when the manifest is read::
 
     {

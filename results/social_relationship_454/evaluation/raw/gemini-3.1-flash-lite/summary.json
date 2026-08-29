@@ -1,44 +1,12 @@
 {
   "condition": "raw",
   "evaluator_label": "gemini-3.1-flash-lite",
-  "model_id_recorded_in_artifacts": "gemini-3.1-flash-lite",
-  "attribution": "recorded in the source run directory name and in attack.py's MODEL_MAP",
-  "scored_image": "annotated/<image_id>.jpg \u2014 the original PISC image with a numbered box drawn for EVERY subject (annotation.py over dataset_large.json)",
-  "boxes": "ground-truth boxes; no detector in the loop, so every ground-truth pair is answerable",
-  "images": 454,
-  "gt_pairs": 1518,
   "six_way": {
     "correct": 1030,
     "accuracy": 0.6785
   },
   "three_way": {
     "correct": 1136,
-    "accuracy": 0.7484,
-    "grouping": "intimate {friends, family-members, couple} / non-intimate {professional, commercial} / no-relation {no-relationship}"
-  },
-  "cross_check": "equals overall_accuracy in attack_output/gemini_gemini-3.1-flash-lite_20260528_002253/metrics.json",
-  "coverage": {
-    "note": "this run covers the full 454-image set; every ground-truth pair received an answer opportunity"
-  },
-  "on_the_71_never_anonymized_images": {
-    "images": 71,
-    "gt_pairs": 145,
-    "six_way_accuracy": 0.7241,
-    "three_way_accuracy": 0.7724,
-    "note": "these images were never modified by defense.py; the attacker's score here is what the defense leaves on the table"
-  },
-  "on_the_41_defended_images": {
-    "images": 41,
-    "gt_pairs": 396,
-    "six_way": {
-      "correct": 284,
-      "accuracy": 0.7172
-    },
-    "three_way": {
-      "correct": 310,
-      "accuracy": 0.7828
-    },
-    "note": "the BEFORE half of the paired comparison: same images and same pairs as this model's defended run"
-  },
-  "source_run": "attack_output/gemini_gemini-3.1-flash-lite_20260528_002253"
+    "accuracy": 0.7484
+  }
 }

@@ -1,12 +1,6 @@
 """
 `rand-noise` — Gaussian blur applied to a random scatter of pixels.
 
-The weakest defense in the table and the cheapest: no model, no weights, no GPU. It blurs the
-whole frame once, then copies a uniformly random 10% of the blurred pixels back over the
-original. The damage is spread as isolated speckles rather than regions, which is why it costs
-far more perceptually than its 10% pixel budget suggests (SSIM 0.957, LPIPS 0.143) while leaving
-most geolocation evidence readable.
-
 Included because it is the control: any method that does not beat scattered blur at the same
 pixel budget is not exploiting structure.
 """

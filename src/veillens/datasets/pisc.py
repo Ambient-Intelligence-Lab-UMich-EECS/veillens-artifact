@@ -1,31 +1,11 @@
 """
 Build a social-relationship manifest from a PISC checkout.
 
-PISC ships person boxes and pairwise relationship labels but no images the pipeline can use as-is:
-the boxes live in a separate JSON, and a VLM asked about "the pair P1 and P2" has no way to know
-which people those are. So this builder does the paper's preprocessing step -- "we overlay
-dataset-provided boxes and IDs so VLM predictions can be matched to subject pair" -- writing an
-annotated copy of each image beside a schema-v2 manifest that carries the boxes and the labels.
-
-    python -m veillens.datasets.pisc \\
-        --pisc-root $VEILLENS_DATA/pisc \\
-        --num-images 500 --seed 0 \\
-        --annotated-dir $VEILLENS_DATA/pisc_annotated \\
-        --output manifests/social_relation_500.json
-
-Three details about PISC's own files are worth knowing before reading the code:
-
-* **Person ids are positions.** There is no id field on a box. The subject called ``"3"`` in
-  ``relationship.json`` is ``bbox[2]`` in ``annotation_image_info.json`` -- 1-indexed.
-* **Ids are spelled two ways.** Annotation keys are unpadded strings (``"599"``) while image files
-  are zero-padded to five digits (``00599.jpg``), and ``annotation_image_info.json`` stores its id
-  as an int while every other file uses a string.
-* **The image directory is ``image/``**, singular. Upstream scripts that say ``images/`` are
-  written against a different unpacking of the same archive.
-
-The annotated copy is written as ``<image_id>.jpg``, unpadded, so that a manifest item's file stem
-equals its ``image_id``. The run tree, the eval cache and the verification report all key on one or
-the other, and keeping them identical is what stops the three from drifting apart.
+python -m veillens.datasets.pisc \\
+    --pisc-root $VEILLENS_DATA/pisc \\
+    --num-images 500 --seed 0 \\
+    --annotated-dir $VEILLENS_DATA/pisc_annotated \\
+    --output manifests/social_relation_500.json
 """
 
 from __future__ import annotations

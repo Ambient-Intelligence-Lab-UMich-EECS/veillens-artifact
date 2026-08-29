@@ -1,34 +1,12 @@
 """
 `geoshield` — ensemble feature-matching PGD over three CLIP surrogates.
 
-The strongest geolocation-specific prior defense, and the one this work is most directly compared
-against. It pushes an image's CLIP embedding toward that of an unrelated *target* photograph while
-a second term pushes it away from a geographic text direction, for 100 sign-gradient steps at
-alpha = 1/255 inside an L-infinity ball of 8/255.
-
 Upstream: <https://github.com/thinwayliu/Geoshield>, vendored as the `third_party/GeoShield`
 submodule. **The attack objective is upstream's, imported verbatim** — the three CLIP feature
 extractors, `EnsembleFeatureLoss`, and its `geo_loss` all come from `surrogates/`. What is written
 here is the iteration loop (`_attack_canvas` below), because upstream's is wrapped in a Hydra
 entry point, a Weights & Biases session, and a dataloader that scans a directory, none of which
 can be pointed at a VeilLens manifest. `docs/BASELINES.md` maps the two line by line.
-
-Three things about how this is run are worth stating, because they affect the numbers:
-
-* **A target image per input.** This is a feature-*matching* attack, so it needs something to
-  match toward. Upstream pairs by directory order; the original pairing for the published
-  comparison did not survive. :func:`pair_targets` re-derives one deterministically, pairing each
-  image with one from a different city, and records it in the run metadata.
-* **Square tiles.** Upstream's transform is `Resize(res)` then `CenterCrop(res)`, which is square:
-  feed it a 2048x1024 frame and half the image is cropped away before the attack ever runs. The
-  frame is therefore split along its longer axis into square tiles, attacked, and reassembled. At
-  the default `input_res: 1024` a Cityscapes frame becomes two 1024x1024 tiles and both transforms
-  are the identity, so the perturbation lands on the true pixel grid.
-* **The text description is upstream's placeholder.** `geo_loss` wants a caption of the scene;
-  upstream ships `describe_image_placeholder()`, a stub returning one fixed sentence with a TODO
-  above it, and the published comparison was run with that stub in place. It is exposed as
-  `description:` in `configs/baselines.yaml` rather than quietly hidden — but the shipped value is
-  the stub's, because changing it would no longer be the method that was measured.
 """
 
 from __future__ import annotations

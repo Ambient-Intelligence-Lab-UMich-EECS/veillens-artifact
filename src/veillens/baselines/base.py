@@ -6,15 +6,6 @@ loading the manifest, running the attacker over the result, writing a score tabl
 `veillens-score` reads — is the runner's job, and is identical for all five. That split is
 deliberate: the only thing that differs between the rows of the baseline table should be the
 transform itself, so a difference in the numbers can only come from the method.
-
-Five are shipped. Two are pixel transforms with no learned component (`rand-noise`, `ocr-blur`),
-two are adversarial perturbations against a surrogate (`mm-pgd`, `geoshield`), and one hands the
-whole job to an image-editing model (`gpt-image`).
-
-Subclasses implement :meth:`apply`. They may also override :meth:`prepare` (one-off model
-loading, or anything that needs to see the whole manifest first) and
-:meth:`check_prerequisites` (weights and keys, checked before a run starts rather than an hour
-in).
 """
 
 from __future__ import annotations

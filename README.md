@@ -39,7 +39,7 @@ To run the loop you also need SAM 2 and GroundingDINO, which are not on PyPI and
 submodule. **Both build CUDA extensions, and GroundingDINO's is not optional:** without it every
 detection fails at inference time, so the loop grounds nothing, edits nothing, and still finishes.
 
-```bash
+```bashX
 pip install --no-build-isolation -e third_party/Grounded-SAM-2
 pip install --no-build-isolation -e third_party/Grounded-SAM-2/grounding_dino
 ```

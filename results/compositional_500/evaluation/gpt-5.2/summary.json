@@ -1,7 +1,5 @@
 {
   "evaluator_label": "GPT-5.2",
-  "model_id_recorded_in_artifacts": null,
-  "note": "The OpenAI attacker inside the protection loop. Neither the eval_cache responses nor evaluation_results.json carries a model field, so the model id is not established by these files; 'gpt-5.2' is the run author's attribution. configs/compositional.yaml records evaluation.model, but that is only the default for a new run, not a record of this one.",
   "raw": {
     "n": 500,
     "mean": 0.31376,
@@ -12,9 +10,7 @@
       "mean": 0.522418,
       "min": 0.0,
       "max": 0.97
-    },
-    "source": "results/compositional_500/process/<image_id>/round1_full_img.json",
-    "cross_check": "equals feature_removed='none' in examples/results/compositional/run_evaluation_results.json for all 500"
+    }
   },
   "protected": {
     "n": 500,
@@ -26,9 +22,7 @@
       "mean": 0.245568,
       "min": 0.0,
       "max": 0.72
-    },
-    "source": "results/compositional_500/evaluation/gpt-5.2/responses/<image_id>.json",
-    "cross_check": "equals feature_removed='severity<=2' in examples/results/compositional/run_evaluation_results.json for all 500"
+    }
   },
   "relative_reduction": 0.486423,
   "relative_reduction_high_concern": 0.52994

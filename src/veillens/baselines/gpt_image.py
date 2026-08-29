@@ -1,17 +1,6 @@
 """
 `gpt-image` — hand the whole job to an image-editing model, in one call.
 
-Unlike the other four this is not a local pixel transform. It gives the *reasoning prompt itself*
-to `gpt-image-2` and lets the model do everything at once: read the photograph, work out what
-leaks, and paint over it. That is the point of the baseline. VeilLens spends four stages on this
-(reason, ground, edit, verify) and 10-20 calls per image; this measures what a single strong
-editor achieves from the same instructions and one call.
-
-It is the strongest baseline in the accuracy table, at a perceptual cost the masked edit avoids by
-construction: the model regenerates the photograph rather than editing it, so 99.8% of pixels move
-and SSIM lands at 0.861. There is no fidelity dial to turn — `input_fidelity: high`, the obvious
-one, is `gpt-image-1` only, and `gpt-image-2` rejects it outright.
-
 The prompt is `prompts/<class>/defense_image_edit_prompt.txt`: the same reasoning prompt as the
 loop's round 1, with only its ending swapped from "emit JSON" to "emit the edited image". Keeping
 those two files in step is what makes the comparison a comparison.

@@ -1,11 +1,6 @@
 """
 `ocr-blur` — detect text with EAST, blur inside the boxes.
 
-The intuition every reviewer has first: geolocation leaks through readable text, so blur the
-text. It is the weakest row in the accuracy table, and the measurement explains why — it modifies
-0.5% of the frame on average (SSIM 0.997), because street signs are small and most of what
-localises a photograph is not writing at all.
-
 Needs one weight file, `frozen_east_text_detection.pb` (92 MB, `scripts/fetch_baseline_weights.py`).
 It runs on CPU through OpenCV's DNN module; no GPU, no torch.
 """

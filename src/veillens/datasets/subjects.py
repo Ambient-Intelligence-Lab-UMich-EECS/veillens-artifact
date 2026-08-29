@@ -1,37 +1,5 @@
 """
 Dataset-supplied subject boxes: the overlay that names them, and the face box derived from one.
-
-The social-relationship setting does not discover its own regions. The dataset already says where
-each person is and which numbered subject they are, so this module holds the two pure geometric
-pieces that follow from that:
-
-* :func:`draw_subject_boxes` renders the ``P1..Pn`` overlay. The paper's preprocessing step -- "we
-  overlay dataset-provided boxes and IDs so VLM predictions can be matched to subject pair" -- is
-  what makes a pair reference like "P1 and P2" mean anything to a VLM, so the overlay is part of
-  the measurement, not a debugging aid.
-* :func:`head_band` narrows a person *mask* to the region the intervention actually edits. The
-  policy is to "anonymize the face regions within the corresponding boxes", and a whole-person
-  mask would also remove the posture and clothing that the relationship signal partly lives in, so
-  the edit has to be cut down to the head.
-
-  It narrows the mask rather than the box, which is not a detail. An annotation box is drawn
-  around a whole person and its top band is only the head if that person is standing upright; on
-  someone crouched, bent forward or leaning, the top band is background and shoulder, and the edit
-  lands next to the face instead of on it. The silhouette SAM 2 returns is tight to the actual
-  body, so its own top band tracks the head whatever the pose.
-
-  How *tall* that band should be is the harder half, and a fixed share of the figure's height does
-  not answer it: a head is a small fraction of a standing silhouette and a large one of a crouched
-  silhouette, so any single fraction under-covers one pose or floods the other. So the band's
-  height is taken from the head's own **width** -- the mask's horizontal extent in its topmost
-  rows, which is a head width whatever the pose -- and the height fraction is kept only as a
-  floor. Both rules can only make the band taller, never shorter, which is the safe direction for
-  an edit whose job is to remove something.
-
-It lives under ``datasets/`` and not under ``ground/`` because the boxes are the dataset's, not
-something a detector produced, and because ``veillens.ground`` re-exports the segmenter and so
-cannot be imported without torch -- while both callers here (the PISC manifest builder and the
-privacy spec) must stay importable on a machine with no GPU stack.
 """
 
 from __future__ import annotations

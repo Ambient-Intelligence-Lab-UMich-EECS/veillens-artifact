@@ -7,14 +7,7 @@ surviving boxes into masks.
 
 Grounding DINO scores every text token against every box, and the box with the highest overall
 score is often not the one that matches the cue: a prompt like "campaign poster on a fence" will
-happily return the fence. `select_boxes_by_target_concept` aligns the target concept's tokens to
-their positions in the caption and re-ranks on those columns alone, which is why the segmenter
-carries its own `predict_with_token_scores` instead of calling upstream's `predict`.
-
-Detection is the half a setting can skip. `segment_boxes` takes boxes that are already known and
-goes straight to SAM 2, which is what the social-relationship setting does with the person boxes
-its dataset ships. With `detection.use_grounding_dino: false` the detector is never loaded at all,
-so that path needs neither the SwinT weights nor the compiled deformable-attention kernel.
+happily return the fence. 
 """
 
 from __future__ import annotations

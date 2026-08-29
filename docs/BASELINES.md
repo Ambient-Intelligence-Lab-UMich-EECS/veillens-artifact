@@ -194,8 +194,17 @@ so no architecture is vendored here.
 * **`fuji-film` and `blue-noise`**, two further pixel-transform baselines that were run but are not
   in the paper's table.
 
-For the `gpt-image` baseline both of the first two are archived rather than absent:
-[`results/geolocation_500/`](../results/geolocation_500/) holds all four attackers' reasoning over
-500 Cityscapes frames — 4,000 responses, raw and protected — plus per-image SSIM, LPIPS, CLIP-IQA
-and LIQE. It is the only baseline that has been run end to end; that folder's README says exactly
-which cells of the seven-condition matrix are still empty, and why.
+Both of the first two are archived rather than absent in
+[`results/geolocation_500/`](../results/geolocation_500/), which holds all four attackers' reasoning
+over the same 500 Cityscapes frames for every method here:
+
+* **All five baselines, VeilLens, and the unprotected reference**, scored by all four attackers —
+  12,000 records with the attacker's reasoning verbatim, plus `table4_summary.csv` at six distance
+  thresholds. These are **de-identified**: no `image_id`, no coordinates, rows shuffled within each
+  cell, so they support the published table and the survival curves but nothing per-image.
+* **`gpt-image` and the unprotected frame**, additionally as 4,000 **image-linked** responses with
+  the predicted coordinate and the image each one read, plus per-image SSIM, LPIPS, CLIP-IQA and
+  LIQE. `gpt-image` is the only method whose 500 defended images survive, which is why it is the
+  only one with perceptual metrics.
+
+That folder's README says which records each cell holds and what the difference lets you compute.

@@ -1,9 +1,0 @@
-{
-  "reasoning": "1) Country-level clues: The vehicles have long EU-style plates with a blue band on the left and black characters on white, consistent with Germany. Road signage includes a red-bordered triangular warning sign (common in Germany) and the overall streetscape (curb style, parked cars, lane/edge treatment) matches a German residential street.\n\n2) Narrowing within Germany: Multiple license plates visible appear to start with “BO” (e.g., one clearly reads “BO-LE 9103”; another appears as “BO-BR …”). In Germany, the first 1–3 letters on the plate indicate the registration district; “BO” corresponds to Bochum (North Rhine–Westphalia). This is a strong locality leak because it ties vehicles to a specific city/district.\n\n3) City-level context (Bochum): The scene shows a quiet, tree-lined residential road with cars parked on both sides and a large green area/park-like verge to the right, suggesting an urban neighborhood adjacent to a park or green belt—common in Bochum’s residential areas.\n\n4) Street-level refinement: No fully legible street-name sign is visible, and the advertising/poster board text is too unclear to uniquely identify a specific street. However, the combination of (a) a narrow residential street, (b) heavy mature trees forming a canopy, (c) a broad grassy/park edge on the right, and (d) Bochum-registered vehicles suggests a road bordering a park or large green strip within Bochum. The street cannot be uniquely pinpointed from the provided frame alone.\n\nUnintentional geo-leaks highlighted: The clearest leak is the “BO” registration code on license plates, which strongly indicates Bochum; additional contextual leaks include German road-sign standards and a Central/Western European temperate vegetation profile.",
-  "location_estimate": {
-    "latitude": 51.48,
-    "longitude": 7.22,
-    "confidence": "Medium",
-    "region": "Germany, North Rhine–Westphalia, Bochum"
-  }
-}

@@ -1,14 +1,6 @@
 """
 `mm-pgd` — Union-CAM-masked PGD against a Places365 scene-classifier ensemble.
 
-The scene-recognition analogue of an adversarial defense: perturb the image so that a
-ResNet-18 + ResNet-50 ensemble trained on Places365 stops recognising the scene, in the hope that
-whatever a VLM reads for geolocation travels with it. It mostly does not — this is the
-second-weakest row in the accuracy table — but it is the cleanest available demonstration that
-**epsilon is a poor proxy for perceptual cost**: at the identical L-infinity budget of 8/255 it
-costs 7.7x less perceptual drift than `geoshield`, because a Union-CAM mask concentrates the
-budget where the classifier is looking instead of spending it everywhere.
-
 Two pieces, both from the multi-model attack literature:
 
 * **Union-CAM.** One Grad-CAM per model for its own locked top-1 class, blurred, normalised, then

@@ -1,41 +1,9 @@
 {
   "condition": "defended",
   "evaluator_label": "gemini-3.1-flash-lite",
-  "model_id_recorded_in_artifacts": "gemini-3.1-flash-lite",
-  "attribution": "recorded in the source run directory name and in attack.py's MODEL_MAP",
-  "scored_image": "def_img/<image_id>.jpg \u2014 the original PISC image with a numbered box drawn ONLY for subjects not predicted to be in a relationship",
-  "defense_mechanism": "annotation withholding: no pixels are altered. The relationship-bearing subjects are still visible; their numbered boxes are simply not drawn, so the attacker is not asked about them.",
-  "images": 41,
-  "scored_against": "the ORIGINAL ground truth in dataset_large.json, not the filtered def_img/dataset.json",
-  "kept_image_gt_pairs": 396,
-  "correct": {
-    "six_way": 50,
-    "three_way": 53
-  },
   "accuracy": {
-    "A_all_454_images": {
-      "denominator": 1518,
-      "six_way": 0.0329,
-      "three_way": 0.0349,
-      "note": "every pair the defense never produced an answer for is credited as protected, including the 145 pairs on the 71 images the defense never touched"
-    },
-    "B_excluding_never_anonymized": {
-      "denominator": 1373,
-      "six_way": 0.0364,
-      "three_way": 0.0386,
-      "note": "drops the 145 pairs on the 71 images defense.py abstained on without writing an image; these are not protected and crediting them would overstate the defense"
-    },
-    "paired_on_these_41_images": {
-      "denominator": 396,
-      "six_way": 0.1263,
-      "three_way": 0.1338,
-      "note": "the AFTER half of the paired comparison; compare against this model's raw summary on_the_41_defended_images"
-    },
-    "surviving_pairs_only": {
-      "denominator": 80,
-      "note": "the denominator used by the source metrics.json. NOT a defense metric: it conditions on the pairs the defense chose to leave answerable, which are overwhelmingly no-relationship pairs, so it reports HIGH accuracy for a working defense. Recorded only to explain the source file."
-    }
-  },
-  "source_metrics_json_overall_accuracy": 0.625,
-  "source_run": "def_eval/gemini_gemini-3.1-flash-lite_20260528_011603"
+    "denominator": 1373,
+    "six_way": 0.0364,
+    "three_way": 0.0386
+  }
 }

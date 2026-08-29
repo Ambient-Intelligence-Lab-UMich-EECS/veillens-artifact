@@ -1,9 +1,0 @@
-{
-  "reasoning": "1) Country-level indicators:\n- Road signage matches continental Europe: red-bordered triangular warning sign and a circular “no stopping” sign (blue with red X).\n- The typography and sign style strongly match German StVO standards.\n- Vehicle license plate format appears German (white plate with black text and a left-side EU band). The prefix visible on the nearer car reads like “BO …”, a known German city code.\n\n2) Narrowing to region/city:\n- The apparent plate prefix “BO” is the registration code for Bochum (North Rhine–Westphalia). This is a strong geolocation leak because German plates encode the registration district.\n- Urban form and environment (mature deciduous trees, overcast lighting typical of western Germany, masonry walls and suburban villas) fit the Ruhrgebiet/North Rhine–Westphalia context.\n\n3) Street-level refinement:\n- The scene shows a narrow two-way residential street with parallel parking, a long stone/masonry wall on the right, and a heavily wooded green corridor on the left (suggesting a park edge, embankment, or stream/canal corridor).\n- A blue street-name sign is present on the right but is too small/blurred to read reliably; without legible street text or unique landmarks, pinpointing an exact street is not possible from this frame alone.\n- Therefore, the best street-level inference is “a leafy residential road along a green corridor in Bochum,” rather than a specific named street.\n\nUnintentional geo-information leaked:\n- German traffic sign standards and (most importantly) a visible German license plate prefix (“BO”) strongly imply Bochum, NRW, Germany.",
-  "location_estimate": {
-    "latitude": 51.481,
-    "longitude": 7.216,
-    "confidence": "Medium",
-    "region": "Germany, North Rhine–Westphalia, Bochum"
-  }
-}

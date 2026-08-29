@@ -1,9 +1,0 @@
-{
-  "reasoning": "1) Country-level indicators:\n- The storefront sign reads “APOTHEKE” (German for pharmacy) with the typical German pharmacy green cross motif, strongly indicating Germany.\n- The vehicles have long European-style plates with a left-side EU band; the typography/format matches German license plates.\n- Street infrastructure (tram tracks embedded in asphalt, German-style traffic lights and signage) fits a German city.\n\n2) Regional/city-level narrowing (within Germany):\n- A clearly readable plate on the left taxi appears to begin with “BO-…”, which is the German registration prefix for Bochum (North Rhine–Westphalia, Ruhr area). This is one of the strongest geolocation leaks in the scene.\n- Urban form (mid-rise postwar buildings, dense commercial frontage, mature street trees) and the presence of trams align well with Ruhrgebiet cities; Bochum is a good fit given the “BO” plate.\n\n3) Street-level refinement:\n- The scene shows a tram corridor running down a commercial street with curbside parking, a pharmacy on the left, and multiple small shops on the right (including a visible “COMPUTER” sign), plus a marked bicycle lane/signage.\n- Without a legible street name sign or a distinctive landmark, the exact street cannot be uniquely determined from this single frame; however, it is likely a central Bochum commercial/tram street rather than a suburban stop.\n\nUnintentional location leakage:\n- The “BO” registration prefix on the license plate(s) effectively narrows the location to the Bochum registration district.\n- German-language business signage (“APOTHEKE”) and German transit/road design confirm the country and typical urban context.",
-  "location_estimate": {
-    "latitude": 51.482,
-    "longitude": 7.218,
-    "confidence": "Medium",
-    "region": "Germany, North Rhine–Westphalia, Bochum"
-  }
-}

@@ -11,13 +11,6 @@ transform itself:
 4. write `evaluation_results/evaluation_results.json` in exactly the shape the protection loop
    writes, so `veillens-score` reads a baseline run with no flags and no special case.
 
-**One difference from the loop's own bookkeeping, worth knowing before comparing tables.** The
-loop reports the unprotected column from its round-1 reading — the defense oracle's own first look
-at the image, taken with the defense prompt. This runner has no round 1, so it measures the
-unprotected column with the attacker, the same call it uses on the protected image. The protected
-columns are attacker readings in both cases and are directly comparable; the unprotected columns
-are two different measurements of the same thing and may differ slightly.
-
 Attacker predictions on unmodified images are cached in `baselines/_attacker_cache/`, shared
 across methods, because five baselines over one manifest would otherwise pay for the same
 unprotected reading five times.

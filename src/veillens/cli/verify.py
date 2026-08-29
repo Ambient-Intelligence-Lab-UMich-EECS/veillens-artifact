@@ -2,20 +2,7 @@
 """
 Verify a completed run against the granularity it targeted, offline.
 
-``veillens-score`` reports a distribution: how far off the attacker was. This reports a verdict:
-whether the cue granularities the run promised to remove are actually gone. Two criteria, because
-they answer different questions and can disagree —
-
-    metric    the attacker's estimate is at least `threshold` km from the truth, where the
-              threshold is derived from experiment.mask_level rather than set by hand
-    residual  the attacker's own report names no surviving cue at a protected granularity
-
-No API calls, no GPU, no model weights, and no config file: a run records the granularity it
-targeted in its own results, so archived runs verify too.
-
-    veillens-verify runs/geolocation/test_iter3
-    veillens-verify examples/results/geolocation
-    veillens-verify examples/results/compositional
+``veillens-score`` reports a distribution: how far off the attacker was. 
 """
 
 from __future__ import annotations

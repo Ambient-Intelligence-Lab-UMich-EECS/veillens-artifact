@@ -1,9 +1,0 @@
-{
-  "reasoning": "The image contains multiple strong visual clues that allow for a precise geolocation. First, the language on all signs is German ('Einbahnstraße', 'Lieferverkehr frei'). The tall advertising column (Litfaßsäule) on the right explicitly reads 'Hamburger Abendblatt Hamburg', immediately identifying the city as Hamburg, Germany. This is corroborated by the license plate of the Audi on the right, which begins with 'HH' (Hansestadt Hamburg). The camera vehicle has a Mercedes-Benz hood ornament, typical of the Cityscapes dataset which extensively mapped German cities including Hamburg. To narrow down the street level, I analyzed the intersection's geometry and traffic rules: the camera is positioned on a cobblestone street facing straight into a narrow pedestrian zone ('ZONE' sign with a pedestrian symbol and retractable metal bollards). The delivery hours ('21-11h') are typical for inner-city shopping streets. Crucially, a blue 'Einbahnstraße' (one-way street) sign with an arrow pointing left indicates that the cross street intersecting the start of the pedestrian zone only allows traffic to the left. The shadows, falling slightly to the right and towards the camera, suggest the sun is in the South-West, meaning the camera is facing North. In central Hamburg, a location that perfectly matches these constraints—a northbound cobblestone approach, an east-to-west one-way cross street, and a narrow pedestrian street continuing straight north—is the intersection where the cobblestoned 'Alter Fischmarkt' meets 'Schmiedestraße' (one-way westbound) and continues straight into the 'Pelzerstraße' pedestrian zone. The architectural mix of a modern dark-facaded building on the left corner and commercial shopfronts on the right further aligns with this specific intersection.",
-  "location_estimate": {
-    "latitude": 53.548,
-    "longitude": 9.993,
-    "confidence": "High",
-    "region": "Hamburg, Germany"
-  }
-}

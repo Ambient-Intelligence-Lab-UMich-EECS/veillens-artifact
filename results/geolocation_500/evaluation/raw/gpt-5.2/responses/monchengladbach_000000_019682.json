@@ -1,9 +1,0 @@
-{
-  "reasoning": "1) Country-level clues:\n- The vehicles have long, white EU-style license plates with a blue EU band. The rear plate on the silver van is readable as starting with “MG …”, which matches German registration formatting (1–3 letter city/district code + seals + letters/numbers).\n- Road signage style fits continental Europe, and specifically Germany: the blue circular “keep right”/direction sign and the red/blue no-stopping sign are consistent with German StVO sign design.\n- The street surface (small cobblestones/sets) and dense masonry buildings are typical for older German city centers.\n\n2) Narrowing to region/city:\n- The plate prefix “MG” is the registration code for Mönchengladbach (North Rhine-Westphalia). This is a strong, specific geographic leak because German plates encode the registration district.\n- Architecture (multi-story masonry with plastered facades), curb style, and compact street width align with an inner-city/older quarter in NRW.\n\n3) Street/area-level refinement:\n- The scene shows a short, cobbled street segment ending at/meeting a stone retaining wall with greenery above and a building mass rising behind—suggesting a location near an elevated terrace/fortification-like retaining wall in an old town area.\n- The combination of tight street geometry, older stonework, and urban retaining wall points to a historic-core neighborhood rather than a modern suburb. However, no unique shop name or clearly readable street sign is visible to pinpoint the exact street.\n\nConclusion: The strongest unintentional geolocation leak is the German license plate prefix “MG”, pointing to Mönchengladbach, NRW, Germany; the environment supports a historic/central neighborhood within that city.",
-  "location_estimate": {
-    "latitude": 51.194,
-    "longitude": 6.435,
-    "confidence": "Medium",
-    "region": "Germany, North Rhine-Westphalia, Mönchengladbach"
-  }
-}
